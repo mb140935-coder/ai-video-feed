@@ -363,10 +363,11 @@
 
       // Shared watched state lives in Supabase (table watched_items, see tools/supabase-setup.sql);
       // localStorage remains the fallback when it is unreachable or not configured.
-      const SUPABASE_URL = '';
-      const SUPABASE_ANON_KEY = '';
+      const SUPABASE_URL = 'https://dsqpkdksnsdiiaawikga.supabase.co';
+      // Publishable key: safe in the browser because RLS limits it to the watched_items policies.
+      const SUPABASE_ANON_KEY = 'sb_publishable_QVHY1GNIxibOtw0xuYszUg_LmBE6spD';
       const watchedTable = `${SUPABASE_URL}/rest/v1/watched_items`;
-      const supabaseHeaders = { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
+      const supabaseHeaders = { apikey: SUPABASE_ANON_KEY };
       const watchedMigrationKey = 'ai-video-feed-supabase-migrated-v1';
       const pendingSharedChanges = new Map();
       const sharedSyncStatus = document.getElementById('watch-sync-status');

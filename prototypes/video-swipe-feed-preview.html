@@ -50,6 +50,27 @@
     .watch-undo button { border: 1px solid #ffffff35; border-radius: 999px; padding: 6px 11px; background: #ffffff12; color: #f5f5f7; font: inherit; cursor: pointer; }
     .sync-status { padding: 4px 12px; border-bottom: 1px solid #ffffff12; color: #888994; text-align: right; font-size: 9px; }
     .sync-status.connected { color: #8ed9b8; }
+    .tab { padding: 0 6px; }
+    .history-button { flex: none; min-height: 38px; border: 1px solid #ff4d6d80; border-radius: 12px; padding: 0 10px; background: #2a0d14; color: #ffc2cc; font: inherit; font-size: 12px; font-weight: 700; white-space: nowrap; cursor: pointer; }
+    .phone.no-snap { scroll-snap-type: none; }
+    .brief { display: flex; flex-direction: column; gap: 8px; padding: 18px; border-bottom: 1px solid #ffffff15; }
+    .brief-meta { color: #a6a6af; font-size: 11px; }
+    .brief h2 { margin: 0; font-size: 17px; line-height: 1.4; }
+    .brief p { margin: 0; color: #dedee3; font-size: 13px; line-height: 1.6; }
+    .brief .brief-why { color: #c9c9d1; font-size: 12px; border-left: 2px solid #ff4d6d; padding-left: 8px; }
+    .brief-links { display: flex; flex-wrap: wrap; gap: 8px; }
+    .brief-links a { border: 1px solid #ffffff30; border-radius: 10px; padding: 8px 11px; background: #ffffff10; color: #f5f5f7; font-size: 12px; text-decoration: none; }
+    .history-sheet { position: fixed; z-index: 30; inset: 0; display: flex; align-items: flex-end; justify-content: center; background: #000000aa; }
+    .history-sheet[hidden] { display: none; }
+    .history-panel { width: min(100%, 430px); max-height: 82vh; display: flex; flex-direction: column; border: 1px solid #ffffff20; border-radius: 20px 20px 0 0; background: #17181d; }
+    .history-head { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px; border-bottom: 1px solid #ffffff15; font-weight: 700; }
+    .history-head button, .history-item button { flex: none; border: 1px solid #ffffff30; border-radius: 999px; padding: 6px 11px; background: #ffffff10; color: #f5f5f7; font: inherit; font-size: 11px; cursor: pointer; }
+    .history-list { overflow-y: auto; padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)); }
+    .history-item { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding: 12px 18px; border-bottom: 1px solid #ffffff10; }
+    .history-item-text { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+    .history-item-title { font-size: 13px; line-height: 1.4; }
+    .history-item-meta { color: #9a9aa4; font-size: 11px; }
+    .history-empty { padding: 24px 18px; color: #a6a6af; font-size: 12px; line-height: 1.6; }
     h1 { font-size: 21px; line-height: 1.34; margin: 0; }
     .source { color: #a6a6af; font-size: 12px; }
     .person-context-label { color: #c7b8ff; font-size: 11px; font-weight: 700; margin-top: 2px; }
@@ -75,11 +96,23 @@
   <main class="shell">
     <div class="phone" aria-label="可上下滑动的视频信息流">
       <nav class="tabbar" role="tablist" aria-label="信息流分类">
-        <button class="tab active" id="tab-curated" data-feed-target="feed-curated" type="button" role="tab" aria-selected="true" aria-controls="feed-curated">精选 · 重点领域</button>
-        <button class="tab" id="tab-appearances" data-feed-target="feed-appearances" type="button" role="tab" aria-selected="false" aria-controls="feed-appearances">演讲 &amp; Podcast · <span id="appearance-count">人物媒体库</span></button>
+        <button class="tab" id="tab-briefs" data-feed-target="feed-briefs" type="button" role="tab" aria-selected="false" aria-controls="feed-briefs">简报 · <span id="brief-count">文字</span></button>
+        <button class="tab active" id="tab-curated" data-feed-target="feed-curated" type="button" role="tab" aria-selected="true" aria-controls="feed-curated">精选视频</button>
+        <button class="tab" id="tab-appearances" data-feed-target="feed-appearances" type="button" role="tab" aria-selected="false" aria-controls="feed-appearances">演讲 &amp; Podcast · <span id="appearance-count">人物</span></button>
+        <button class="history-button" id="watch-history-button" type="button" aria-haspopup="dialog" aria-controls="watch-history">✓ 已看 <span id="watch-history-count">0</span></button>
       </nav>
       <div class="watch-undo" id="watch-undo" role="status" hidden><span id="watch-undo-text"></span><button type="button" id="watch-undo-button">撤销</button></div>
       <div class="sync-status" id="watch-sync-status" role="status">正在连接在线已看记录…</div>
+      <div class="history-sheet" id="watch-history" role="dialog" aria-modal="true" aria-labelledby="watch-history-title" hidden>
+        <div class="history-panel">
+          <div class="history-head"><span id="watch-history-title">已看历史 · 手动标记看完的视频</span><button type="button" id="watch-history-close">关闭</button></div>
+          <div class="history-list" id="watch-history-list"></div>
+        </div>
+      </div>
+      <div class="feed-panel" id="feed-briefs" role="tabpanel" aria-labelledby="tab-briefs" hidden>
+        <div class="feed-note" id="brief-note">文字简报：没有视频或音频的资讯、文字稿和资源索引。已有视频的内容不在这里重复。</div>
+        <div id="brief-list"></div>
+      </div>
       <div class="feed-panel" id="feed-curated" role="tabpanel" aria-labelledby="tab-curated">
       <section class="card">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 4</span></div>
@@ -177,6 +210,8 @@
       const watchUndo = document.getElementById('watch-undo');
       const watchUndoText = document.getElementById('watch-undo-text');
       let lastWatchedKey = '';
+      // Reassigned once the watched-history sheet is wired up; refreshCuratedCounters runs before that.
+      let updateWatchHistoryCount = () => {};
 
       const playerUrl = (frame, start, end, autoplay = false) => {
         const params = new URLSearchParams({
@@ -305,6 +340,7 @@
           if (counter) counter.textContent = `${index + 1} / ${cards.length}`;
         });
         curatedEmpty.hidden = cards.length > 0;
+        updateWatchHistoryCount();
       };
 
       document.getElementById('watch-undo-button').addEventListener('click', () => {
@@ -375,6 +411,8 @@
       const supabaseHeaders = { apikey: SUPABASE_ANON_KEY };
       const watchedMigrationKey = 'ai-video-feed-supabase-migrated-v1';
       const pendingSharedChanges = new Map();
+      // When each key was marked (from Supabase created_at, or this device's click), for history ordering.
+      const watchedTimes = new Map();
       const sharedSyncStatus = document.getElementById('watch-sync-status');
       let sharedSyncAvailable = false;
       // Bumped after every write so a poll that started before it cannot restore stale state.
@@ -436,9 +474,10 @@
         if (!SUPABASE_URL) return;
         const writesBefore = sharedWriteCount;
         try {
-          const response = await fetch(`${watchedTable}?select=key`, { headers: supabaseHeaders, cache: 'no-store' });
+          const response = await fetch(`${watchedTable}?select=key,created_at`, { headers: supabaseHeaders, cache: 'no-store' });
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           const rows = await response.json();
+          rows.forEach(row => { if (typeof row.key === 'string' && row.created_at) watchedTimes.set(row.key, row.created_at); });
           sharedSyncAvailable = true;
           showSharedSyncStatus('已连接：手机、iPad、电脑共享已看状态', true);
           if (sharedWriteCount === writesBefore) applySharedWatchedItems(rows.map(row => row.key).filter(key => typeof key === 'string'));
@@ -485,6 +524,7 @@
             if (item.dataset.watchKey === watchKey) syncWatchedButton(item, watchedItems.has(watchKey));
           });
           if (watched) {
+            watchedTimes.set(watchKey, new Date().toISOString());
             lastWatchedKey = watchKey;
             const title = button.closest('.card')?.querySelector('h1')?.textContent || '视频';
             watchUndoText.textContent = `“${title}”已从信息流隐藏。`;
@@ -807,26 +847,36 @@
         cardObserver.observe(card);
       };
 
+      // Shared by the 演讲 & Podcast and 简报 tabs; rows with a content_type (text, index) have no playable media.
+      let appearanceRowsPromise = null;
+      const loadAppearanceRows = () => {
+        appearanceRowsPromise ||= fetch('../docs/person-appearances-v1.csv', { cache: 'no-store' })
+          .then(async response => {
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const rows = parseCsv((await response.text()).replace(/^\uFEFF/, ''));
+            const headers = rows.shift() || [];
+            return rows.map(values => Object.fromEntries(headers.map((header, i) => [header, values[i] || ''])))
+              .filter(item => item.status === 'verified' && item.format !== 'Not found' && item.official_publisher_url);
+          })
+          .catch(error => { appearanceRowsPromise = null; throw error; });
+        return appearanceRowsPromise;
+      };
+
+      const appearanceMediaKey = item => {
+        const media = mediaLink(item);
+        return media?.videoId ? `youtube:${media.videoId}` : canonicalMediaKey(item.official_media_url || item.official_publisher_url);
+      };
+
       const loadAppearances = async () => {
         if (appearancesLoaded) return;
         appearancesLoaded = true;
         appearanceNote.textContent = '正在读取已登记的人物演讲与 Podcast 来源…';
         try {
-          const response = await fetch('../docs/person-appearances-v1.csv', { cache: 'no-store' });
-          if (!response.ok) throw new Error(`HTTP ${response.status}`);
-          const rows = parseCsv((await response.text()).replace(/^\uFEFF/, ''));
-          const headers = rows.shift() || [];
-          const registeredEntries = rows.map(values => Object.fromEntries(headers.map((header, i) => [header, values[i] || ''])))
-            .filter(item => item.status === 'verified' && item.format !== 'Not found' && item.official_publisher_url);
+          const registeredEntries = (await loadAppearanceRows()).filter(item => !item.content_type);
           const curatedMediaKeys = new Set([...document.querySelectorAll('#feed-curated .watch-toggle')]
             .map(button => button.dataset.watchKey)
             .filter(Boolean));
-          const entries = registeredEntries.filter(item => {
-            const media = mediaLink(item);
-            const mediaKey = media?.videoId ? `youtube:${media.videoId}`
-              : canonicalMediaKey(item.official_media_url || item.official_publisher_url);
-            return !curatedMediaKeys.has(mediaKey);
-          });
+          const entries = registeredEntries.filter(item => !curatedMediaKeys.has(appearanceMediaKey(item)));
           const excludedDuplicates = registeredEntries.length - entries.length;
           appearanceTotal = entries.length;
           appearanceCount.textContent = `${entries.length} 条`;
@@ -841,6 +891,147 @@
           appearanceNote.textContent = '人物出现目录暂时无法加载。请通过本地 HTTP 预览地址打开页面，再重试这个 TAB。';
         }
       };
+
+      const briefList = document.getElementById('brief-list');
+      const briefNote = document.getElementById('brief-note');
+      const briefCount = document.getElementById('brief-count');
+      let briefsLoaded = false;
+
+      const renderBrief = ({ meta, title, tags, summary, why, links }) => {
+        const article = document.createElement('article');
+        article.className = 'brief';
+        makeText(article, 'div', 'brief-meta', meta);
+        makeText(article, 'h2', '', title);
+        if (tags.length) {
+          const tagRow = document.createElement('div');
+          tagRow.className = 'tags';
+          tags.forEach(tag => makeText(tagRow, 'span', 'tag', tag));
+          article.appendChild(tagRow);
+        }
+        makeText(article, 'p', '', summary);
+        if (why) makeText(article, 'p', 'brief-why', why);
+        const linkRow = document.createElement('div');
+        linkRow.className = 'brief-links';
+        links.forEach(({ label, url }) => {
+          const link = document.createElement('a');
+          link.href = url;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.textContent = label;
+          linkRow.appendChild(link);
+        });
+        article.appendChild(linkRow);
+        briefList.appendChild(article);
+      };
+
+      const loadBriefs = async () => {
+        if (briefsLoaded) return;
+        briefsLoaded = true;
+        briefNote.textContent = '正在读取文字简报…';
+        try {
+          const [briefData, appearanceRows] = await Promise.all([
+            fetch('../docs/text-briefs-v1.json', { cache: 'no-store' }).then(response => {
+              if (!response.ok) throw new Error(`HTTP ${response.status}`);
+              return response.json();
+            }),
+            loadAppearanceRows()
+          ]);
+          // A brief is dropped when a video covering the same story is in either video tab.
+          const videoKeys = new Set([...document.querySelectorAll('#feed-curated .watch-toggle')].map(button => button.dataset.watchKey));
+          appearanceRows.filter(item => !item.content_type).forEach(item => videoKeys.add(appearanceMediaKey(item)));
+          const allBriefs = briefData.briefs || [];
+          const briefs = allBriefs.filter(brief => !(brief.video_keys || []).some(key => videoKeys.has(key)));
+          const textRows = appearanceRows.filter(item => item.content_type === 'text' || item.content_type === 'index');
+          briefList.replaceChildren();
+          briefs.forEach(brief => renderBrief({
+            meta: `${brief.published} · 优先级 ${brief.priority}`,
+            title: brief.title,
+            tags: brief.tags || [],
+            summary: brief.summary,
+            why: brief.why ? `为什么推：${brief.why}` : '',
+            links: brief.links || []
+          }));
+          textRows.forEach(item => renderBrief({
+            meta: `${item.content_type === 'index' ? '资源索引' : '文字稿'} · ${item.name} · ${item.publisher}`,
+            title: item.appearance_title,
+            tags: [item.format].filter(Boolean),
+            summary: getAppearanceHighlight(item),
+            why: personAIContext[item.person_id] ? `人物：${personAIContext[item.person_id]}` : '',
+            links: [{ label: item.content_type === 'index' ? '打开索引页' : '打开原文', url: item.official_publisher_url }]
+          }));
+          const total = briefs.length + textRows.length;
+          const covered = allBriefs.length - briefs.length;
+          briefCount.textContent = `${total} 条`;
+          briefNote.textContent = `共 ${total} 条：${briefs.length} 条资讯简报，${textRows.length} 条没有视频或音频的文字稿和资源索引。${covered ? `另有 ${covered} 条已有视频，在视频 TAB 里看，这里不重复。` : ''}`;
+        } catch {
+          briefsLoaded = false;
+          briefCount.textContent = '未加载';
+          briefNote.textContent = '文字简报暂时无法加载，请稍后再点一次这个 TAB。';
+        }
+      };
+
+      const historySheet = document.getElementById('watch-history');
+      const historyList = document.getElementById('watch-history-list');
+      const historyCount = document.getElementById('watch-history-count');
+
+      const renderWatchHistory = () => {
+        historyList.replaceChildren();
+        const cardsByKey = new Map();
+        document.querySelectorAll('.watch-toggle').forEach(button => {
+          const card = button.closest('.card');
+          if (card && !cardsByKey.has(button.dataset.watchKey)) cardsByKey.set(button.dataset.watchKey, card);
+        });
+        const keys = [...watchedItems].reverse().sort((a, b) => (watchedTimes.get(b) || '').localeCompare(watchedTimes.get(a) || ''));
+        if (!keys.length) {
+          makeText(historyList, 'div', 'history-empty', '还没有标记为已看的视频。看完一条后点卡片上的“○ 未看”，它就会出现在这里。');
+          return;
+        }
+        keys.forEach(key => {
+          const card = cardsByKey.get(key);
+          const row = document.createElement('div');
+          row.className = 'history-item';
+          const text = document.createElement('div');
+          text.className = 'history-item-text';
+          makeText(text, 'div', 'history-item-title', card?.querySelector('h1')?.textContent || '这条视频已不在当前信息流里');
+          const markedAt = watchedTimes.get(key);
+          const meta = [card?.querySelector('.source')?.textContent, markedAt ? `标记于 ${new Date(markedAt).toLocaleDateString('zh-CN')}` : '']
+            .filter(Boolean).join(' · ');
+          if (meta) makeText(text, 'div', 'history-item-meta', meta);
+          row.appendChild(text);
+          const restore = document.createElement('button');
+          restore.type = 'button';
+          restore.textContent = '移出已看';
+          restore.addEventListener('click', () => {
+            watchedItems.delete(key);
+            persistWatchedItems();
+            sendSharedWatchChange(key, false);
+            document.querySelectorAll('.watch-toggle').forEach(button => {
+              if (button.dataset.watchKey === key) syncWatchedButton(button, false);
+            });
+            appearanceSearch.dispatchEvent(new Event('input'));
+            refreshCuratedCounters();
+          });
+          row.appendChild(restore);
+          historyList.appendChild(row);
+        });
+      };
+
+      updateWatchHistoryCount = () => {
+        historyCount.textContent = String(watchedItems.size);
+        if (!historySheet.hidden) renderWatchHistory();
+      };
+
+      document.getElementById('watch-history-button').addEventListener('click', async () => {
+        historySheet.hidden = false;
+        renderWatchHistory();
+        // 演讲 & Podcast cards are built on demand; load them so their titles show in the list.
+        await loadAppearances();
+        if (!historySheet.hidden) renderWatchHistory();
+      });
+      document.getElementById('watch-history-close').addEventListener('click', () => { historySheet.hidden = true; });
+      historySheet.addEventListener('click', event => { if (event.target === historySheet) historySheet.hidden = true; });
+      document.addEventListener('keydown', event => { if (event.key === 'Escape') historySheet.hidden = true; });
+      updateWatchHistoryCount();
 
       appearanceSearch.addEventListener('input', event => {
         const previousActiveCard = activeCard;
@@ -880,6 +1071,7 @@
             item.setAttribute('aria-selected', String(selected));
           });
           panels.forEach(panel => { panel.hidden = panel.id !== targetId; });
+          feed.classList.toggle('no-snap', targetId === 'feed-briefs');
           feed.scrollTop = 0;
           activeCard = document.querySelector(`#${targetId} .card:not(.is-watched):not([hidden])`);
           pauseAllExcept(activeCard);
@@ -889,6 +1081,7 @@
             activateCard(activeCard);
             pauseAllExcept(activeCard);
           }
+          if (targetId === 'feed-briefs') await loadBriefs();
         });
       });
 

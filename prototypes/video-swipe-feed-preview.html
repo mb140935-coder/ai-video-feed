@@ -124,7 +124,7 @@
     .history-panel { width: min(100%, 430px); max-height: 82vh; display: flex; flex-direction: column; border: 1px solid var(--line-strong); border-radius: 20px 20px 0 0; background: var(--raised); }
     .history-head { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px; border-bottom: 1px solid var(--line); font-weight: 700; }
     .history-head button, .history-item button { flex: none; border: 1px solid var(--line-strong); border-radius: 999px; padding: 6px 11px; background: var(--surface); color: var(--text); font: inherit; font-size: 11px; cursor: pointer; }
-    .history-list { overflow-y: auto; padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)); }
+    .history-list { overflow-y: auto; overscroll-behavior: contain; padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)); }
     .history-item { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding: 12px 18px; border-bottom: 1px solid var(--line); }
     .history-item-text { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
     .history-item-title { font-size: 13px; line-height: 1.4; }
@@ -234,6 +234,7 @@
         <div class="menu-wrap">
           <button class="menu-button" id="menu-button" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="menu-dropdown" aria-label="菜单：已看历史、添加视频">☰</button>
           <div class="menu-dropdown" id="menu-dropdown" role="menu" hidden>
+            <button type="button" role="menuitem" id="toc-button" aria-haspopup="dialog" aria-controls="toc-sheet"><span>📑 目录 · 跳到某个视频</span></button>
             <button type="button" role="menuitem" id="watchlist-button" aria-haspopup="dialog" aria-controls="watchlist"><span>☆ 追踪名单</span><span class="menu-count" id="watchlist-count"></span></button>
             <button type="button" role="menuitem" id="watch-history-button" aria-haspopup="dialog" aria-controls="watch-history"><span>✓ 已看历史</span><span class="menu-count" id="watch-history-count">0</span></button>
             <button type="button" role="menuitem" id="search-button" aria-controls="search-bar"><span>🔍 搜索演讲 &amp; Podcast</span></button>
@@ -2112,8 +2113,10 @@
       // 目录: tapping a card's "3 / 72" lists that tab's cards (the same ones the counter numbers) to jump to.
       const tocSheet = document.getElementById('toc-sheet');
       const tocList = document.getElementById('toc-list');
+      // Also in the ☰ menu, since on phones the counter sits under the top bar.
       const openToc = card => {
-        const panel = card.closest('.feed-panel');
+        const panel = card?.closest('.feed-panel') || panels.find(item => !item.hidden && item.querySelector('.card'));
+        if (!panel) { showToast(['这一栏没有视频目录。'], 2500); return; }
         const cards = [...panel.querySelectorAll('.card:not(.is-watched):not([hidden])')];
         document.getElementById('toc-title').textContent = `目录 · ${cards.length} 条 · 点标题跳转`;
         tocList.replaceChildren();
@@ -2137,13 +2140,14 @@
           tocList.appendChild(row);
         });
         tocSheet.hidden = false;
-        tocList.scrollTop = 0;
-        current?.scrollIntoView({ block: 'center' });
+        // Centers the current title by scrolling only the list (scrollIntoView would also move the feed behind).
+        tocList.scrollTop = current ? current.offsetTop - tocList.offsetTop - (tocList.clientHeight - current.offsetHeight) / 2 : 0;
       };
       document.addEventListener('click', event => {
         const counter = event.target.closest('.card .counter');
         if (counter) openToc(counter.closest('.card'));
       });
+      document.getElementById('toc-button').addEventListener('click', () => openToc(activeCard?.closest('.feed-panel:not([hidden])') ? activeCard : null));
       document.getElementById('toc-close').addEventListener('click', () => { tocSheet.hidden = true; });
       tocSheet.addEventListener('click', event => { if (event.target === tocSheet) tocSheet.hidden = true; });
 

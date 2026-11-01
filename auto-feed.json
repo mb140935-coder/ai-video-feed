@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T17:50:31.743Z",
+ "updated": "2026-11-01T18:50:31.954Z",
  "items": [
   {
    "key": "youtube:KM3VQZKjpiY",
@@ -82,6 +82,22 @@
    "channelId": "UCSI7h9hydQ40K5MJHnCrQvw"
   },
   {
+   "key": "youtube:iMsUcCYNKqY",
+   "url": "https://www.youtube.com/watch?v=iMsUcCYNKqY",
+   "title": "Why Sam Altman is against a single superintelligence",
+   "channel": "Cheeky Pint",
+   "channelId": "UCXi7Hg2nSB40ujzM2CMtF-Q",
+   "published": "2026-10-29",
+   "summary": "Sam Altman, CEO of OpenAI, joins John to break down how models uncovered critical PHP vulnerabilities, why test-time compute unlocks massive agent swarms, and OpenAI's internal experiments proving complex math problems l…",
+   "about": "你手动关注的频道：Cheeky Pint。",
+   "tab": "appearances",
+   "tags": [
+    "你关注的频道"
+   ],
+   "minutes": null,
+   "found": "2026-11-01"
+  },
+  {
    "key": "youtube:6ep8Vvm4Bdw",
    "url": "https://www.youtube.com/watch?v=6ep8Vvm4Bdw",
    "title": "Why Merge CEO Shensi Ding stays hands-on with Codex",
@@ -144,6 +160,22 @@
    "found": "2026-11-01",
    "minutes": null,
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ"
+  },
+  {
+   "key": "youtube:3Lc0xfW4r9Q",
+   "url": "https://www.youtube.com/watch?v=3Lc0xfW4r9Q",
+   "title": "Why United’s CEO thinks air traffic control is the problem",
+   "channel": "Cheeky Pint",
+   "channelId": "UCXi7Hg2nSB40ujzM2CMtF-Q",
+   "published": "2026-10-27",
+   "summary": "Scott Kirby, CEO of United Airlines, joins John and Ben Thompson to break down the airline business and United’s contrarian bets shaping commercial aviation. Scott details United’s massive COVID fleet expansion while com…",
+   "about": "你手动关注的频道：Cheeky Pint。",
+   "tab": "appearances",
+   "tags": [
+    "你关注的频道"
+   ],
+   "minutes": null,
+   "found": "2026-11-01"
   },
   {
    "key": "youtube:ZAzWPE9CItg",
@@ -586,6 +618,12 @@
    "url": "https://www.youtube.com/@xiaojunpodcast",
    "id": "UC3Sv1JuKpbOx3csUO8FAo5g",
    "name": "张小珺 Podcast",
+   "count": 2
+  },
+  "channel:@cheekypint": {
+   "url": "https://www.youtube.com/@CheekyPint",
+   "id": "UCXi7Hg2nSB40ujzM2CMtF-Q",
+   "name": "Cheeky Pint",
    "count": 2
   }
  },
@@ -1169,7 +1207,9 @@
    ],
    "headlines": [
     "Ottawa takes stake in Cohere as AI company opens $4.5 billion funding round"
-   ]
+   ],
+   "summary": "加拿大渥太华政府在人工智能公司Cohere开启45亿美元融资轮之际入股该公司。",
+   "meaning": "国家资本直接入局头部通用AI创业公司，凸显出基础模型已成为各国的关键战略资产。"
   },
   {
    "title": "AI law firm Crosby bids on disintegrating, famed firm Weil Gotshal",
@@ -1188,7 +1228,9 @@
    "headlines": [
     "AI law firm Crosby bids on disintegrating, famed firm Weil Gotshal",
     "Legal AI Startup Bids for Assets of Fallen Law Firm Weil Gotshal"
-   ]
+   ],
+   "summary": "AI律所Crosby竞标收购陷入解体危机的知名律所Weil Gotshal的资产。",
+   "meaning": "法律AI初创公司开始反向收购传统知名大律所的资产，标志着AI驱动的新兴律所正加速重塑法律行业竞争格局。"
   },
   {
    "title": "Mistral says its new model, Large 4, is the best open model for agentic coding and cyber defense",
@@ -1205,7 +1247,9 @@
    ],
    "entities": [
     "Mistral AI"
-   ]
+   ],
+   "summary": "Mistral推出新模型Large 4，并称其是用于智能体编程（agentic coding）和网络防御的最佳开源模型。",
+   "meaning": "开源大模型在智能体代码生成和网络安全等高阶专业场景上持续发力，是通用AI领域不容忽视的重要进展。"
   },
   {
    "title": "Is Anthropic Pursuing a Cash-Burning IPO? Key Insights for Domestic Large Language Models",
@@ -1222,7 +1266,28 @@
    ],
    "entities": [
     "Anthropic"
-   ]
+   ],
+   "summary": "市场关注Anthropic是否正在推进一场烧钱式的IPO，并分析这为国内大语言模型发展带来的关键启示。",
+   "meaning": "头部通用大模型企业的IPO预期与资金消耗模式，将为中国AI大模型企业的商业化探索提供直接参考。"
+  },
+  {
+   "title": "Prediction market bets set the tone for Anthropic's much-awaited IPO",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZ3hmM3czNEdSNnpYeVB5eGZpZVB5QzJSa3ZNdDVsVVd4WHVZTkhyMjFpM3J1czNvMFprVU1NZmN3cDJmT1FTN0ZCRXFkYzI4TFVpbkZ0alFuY2l1QmhXWmJ3V1duQVhaSThlSjY3djh6empxXzM3VGIxQmVsMUFXSGdEVjRZMW1EeXZnU2Q3cHRITE5XWElQbG4zOERNUW44WXd0RkdYVDdQc0xERGdPdWRn?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "Prediction market bets set the tone for Anthropic's much-awaited IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "预测市场就Anthropic备受期待的IPO展开下注，为其市场预期定调。",
+   "meaning": "通用AI顶尖独角兽的上市动向正成为资本市场焦点，反映出投资者对大模型商业化前景的高度关注。"
   },
   {
    "title": "AI Is Upending Law Firm Pricing; IBM and Mastercard Want a Share of the Savings",
@@ -1239,7 +1304,9 @@
    "entities": [],
    "headlines": [
     "AI Is Upending Law Firm Pricing; IBM and Mastercard Want a Share of the Savings"
-   ]
+   ],
+   "summary": "AI正在颠覆律师事务所的定价模式，IBM和Mastercard（万事达卡）等企业客户希望从中分享降本收益。",
+   "meaning": "法律AI的应用正在打破律所传统的计费体系，催生企业客户与外部法律服务商利益分配规则的重构。"
   },
   {
    "title": "Reading the Bench: How Appellate Lawyers Are Using AI in Oral Argument Prep",
@@ -1256,7 +1323,9 @@
    "entities": [],
    "headlines": [
     "Reading the Bench: How Appellate Lawyers Are Using AI in Oral Argument Prep"
-   ]
+   ],
+   "summary": "上诉律师正在口头辩论准备过程中引入AI，以研判法官倾向。",
+   "meaning": "AI在法律领域的渗透已从日常文书延伸到复杂的诉讼辩论策略，显示出法律AI在专业高阶场景的应用潜力。"
   },
   {
    "title": "AI Is Changing What In-House Lawyers Need to Learn",
@@ -1273,7 +1342,9 @@
    "entities": [],
    "headlines": [
     "AI Is Changing What In-House Lawyers Need to Learn"
-   ]
+   ],
+   "summary": "AI正在改变企业法务人员（In-House Lawyers）需要学习的知识与技能。",
+   "meaning": "法律AI的普及正倒逼企业法律团队全面升级知识结构，重塑法务岗位的职业标准。"
   },
   {
    "title": "DOJ Inquires About Nvidia’s Hugging Face Deal, Reuters Says",
@@ -1294,7 +1365,9 @@
     "DOJ Inquires About Nvidia’s Hugging Face Deal, Reuters Says",
     "Nvidia's $12.9 billion Hugging Face deal draws DOJ scrutiny",
     "The DOJ is reportedly looking into Nvidia’s Hugging Face acquisition."
-   ]
+   ],
+   "summary": "路透社报道称，美国司法部（DOJ）正对Nvidia以约129亿美元收购Hugging Face的交易展开调查或质询。",
+   "meaning": "算力巨头收购核心开源AI社区引发反垄断审查，可能对全球通用AI的开源生态和市场竞争产生深远影响。"
   },
   {
    "title": "The DOJ is reportedly looking into Nvidia’s Hugging Face acquisition.",
@@ -1313,7 +1386,9 @@
    "headlines": [
     "Dept of Justice reportedly probes Nvidia over $13 billion Hugging Face AI platform acquisition — concerns raised over competition in AI and pressure on customers",
     "The DOJ is reportedly looking into Nvidia’s Hugging Face acquisition."
-   ]
+   ],
+   "summary": "美国司法部据报正调查Nvidia对AI平台Hugging Face约130亿美元的收购案，担忧其影响AI行业竞争并给客户带来压力。",
+   "meaning": "监管机构对芯片巨头与AI平台联手的反垄断关注升级，预示着AI产业垂直整合将面临更加严苛的监管环境。"
   },
   {
    "title": "OpenAI CEO Sam Altman comments on cyber risk: What you need to know",
@@ -1371,25 +1446,6 @@
    ],
    "summary": "Sam Altman表示对MBA学生感到“长期的失望”，认为他们仍停留在“五年前很酷的东西”上。",
    "meaning": "作为通用AI领域的领军人物，Altman的言论折射出顶尖AI行业对传统商业管理思维与创新节奏的审视。"
-  },
-  {
-   "title": "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTmRhT3BCTmVkRHA3TlQzSXpCNFlISlpqbms5MVozSVhwd2NMR0RoTUV2MDJfbklENXFZOWpHNm50NHZzNkhzTFhDdHUydHRiVXExVW5MUFBDWkN4a0dFRG5DRzlFa0JsN0g4UGpYZ0dXRGktMWNGSlE0RE5XX01OYWYyUmo?oc=5",
-   "source": "Financial Times",
-   "domain": "ft.com",
-   "published": "2026-10-28",
-   "outlets": [
-    "Financial Times"
-   ],
-   "themes": [],
-   "entities": [
-    "Anthropic"
-   ],
-   "headlines": [
-    "Anthropic’s seven founders tighten grip ahead of blockbuster IPO"
-   ],
-   "summary": "在备受瞩目的重磅IPO前夕，Anthropic的七位创始人正在进一步收紧对公司的控制权。",
-   "meaning": "随着通用大模型商业化进程加速，Anthropic核心团队在资本化前强化控制权，以平衡外部投资者诉求与AI安全治理。"
   },
   {
    "title": "Microsoft cuts capex forecast on AI capacity delays",
@@ -1506,25 +1562,6 @@
    "meaning": "这一做法进一步体现了AI超算基础设施建设对周边房产及社区法律纠纷的直接影响，引发对算力中心落地合规性的广泛讨论。"
   },
   {
-   "title": "Anthropic is going public—1 number from its filing is an encouraging sign for investors, says IPO expert",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Vc2N5SUR3WmY1a1l1cWJRbFM1RXVLakdBUGc1YWZ0dWRjLVhfN2ZZX2lHUG9pcU1HVno0cnMyY096UWp5b1lmYmlSRTN6SnI5ZFhGTGE2NGtUWkM0cUhCazlDM0l1LTh6ZkNYWFlwbGZuQ3pDdUZjLUc2bU9JZ9IBgwFBVV95cUxPbnp1REdiQWJ3c1Vic0N1cEtITFRkbDlraEY0VzJhTVhLdmd5RHYweHVCWllTNlJsajJ3d3gxa2RhV0ZWRjZJNkRZYjFjQm0zZWJkTTRPSlBrRjZnQmk1RFlsUXpjc3NiakxuVlZfckNxcC1lbHUwMTZNQnJOR2FNbzMyRQ?oc=5",
-   "source": "CNBC",
-   "domain": "cnbc.com",
-   "published": "2026-10-28",
-   "outlets": [
-    "CNBC"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic is going public—1 number from its filing is an encouraging sign for investors, says IPO expert"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic正准备上市，IPO专家指出其招股申报文件中的一个关键数据为投资者释放了令人鼓舞的信号。",
-   "meaning": "Anthropic的IPO进展是今年通用AI资本市场的风向标，其申报财务与运营指标将成为衡量大模型独角兽真实商业价值的标杆。"
-  },
-  {
    "title": "Anthropic’s public benefit structure creates unusual risks for IPO investors",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNelBxRXdTMXd2cXlSM2haZGI3d0xUekJ4Y082TzBwekJrVHRIYUp4NGxpR3B2Q3RfZGlTZjM5bG8taWdKUGczdUxtU3B0cUZRQktvLTBDUXBSZzg3TGhHcHhQdjRlUTAydVQ5MXFGU2RPM1lURFlzY2piTkd5aTB6cm1iNGg0SnZsX29VdzVpNG1kdGJs0gGaAUFVX3lxTFAyakJWQllhd0lLR1NmVmh2UGlnUWxPOWNjRkRRWlhZZGJoY0RwS2FiVDJ3WjJGdEMya1UzNDNXcTFlaEtMbEZqM1lJWG9LNFVCSlVkaVYyZ2NPNGZlT3dBTnFtaXJoRWVwLWF6TnQzS0hVSG9lMld1VTFSM1VvdGtvWHdxYktqcmQxdVNIMUtVQ0FjX3Bla2RSQXc?oc=5",
    "source": "CNBC",
@@ -1580,6 +1617,40 @@
    ],
    "summary": "马斯克（Elon Musk）表示，未来机器人对内存的需求将远超地球上现有的一切。",
    "meaning": "通用AI与具身智能的发展将对底层存储硬件供应链带来极限考验，预示着半导体产业可能迎来颠覆性需求。"
+  },
+  {
+   "title": "Anthropic IPO filing warns some risks may be uninsurable. AI coverage will be issue for every company",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0WTJPMm53OUM5OE10RlZxeF9fQjktNUU5SjM5UFJlUnhsT2VKV250WkdpME1wUnFRVTZES1l0M3hEeUZ2d0pIVFZ2bmFvVHE4dWx4WVJGcEVKQ3NMamt4NDcwLWpZWEZvY3QzdjhQeS1ud1BQV0puaNIBfkFVX3lxTE13dU95SnVEdkdhSzN2QVNmV3lCZDlfZ1NYVlFmZG4zblcyVjA3ZU54WGFmSG5VSk1oV0JTMEl5WlpWZkpFTmdWRHNNZl9aUkNXODlmUjNNcEVyM3FjYm9vVDBEWTZFLTc5a2E1UVhGSVdLM0F5UWZ4RzR4bF9nQQ?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic IPO filing warns some risks may be uninsurable. AI coverage will be issue for every company"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic Said to Pick JPMorgan to Lead IPO’s US Retail Offering",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOWdYcFFPZlJNOVktU05PdTRoWVNxSVUyQ2l6ek9ibU13cnVTczNGNVZkLTNrZ0h3bGVSRFdnNTVaQVNGUExjVGVkRFNFOE1QbklFT3JyWmNiNDdycE96ZmZ1VDBLOGtOdmNYWkZMZHlxMTd2WENNTU1kWVFYOEgtXzgtUHBOcndzZlZOclNXWWMtR0FYT3JnR19TSEI5YUNmRG1xcTVPdWJqcjlCOWZXaFE0NkJ6QQ?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Said to Pick JPMorgan to Lead IPO’s US Retail Offering"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
   },
   {
    "title": "Biden’s Antitrust Enforcers Are Starting an A.I. Legal Company",
@@ -1872,25 +1943,6 @@
    "meaning": "这体现了资本市场对头部大模型企业极高估值与商业化兑现能力的巨大分歧。"
   },
   {
-   "title": "What Smart People Are Saying About Anthropic's IPO Paperwork",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMV9KRlFKc285NkN5VDFQcTd5NWFWajJQM0NHaUFGTjU5V05NX1lrNDFwaTIzVnktYXZHM24xVXJUV000SmJXMGdJZHhUTmFFdHItZGF3OHZfLVRmOU4tMm5EcEV4Y25ZM0RIOHpDeDI4aERqVWx2SHFPWE85WGsyaU1JOE9aTzRmbGs3MVp3?oc=5",
-   "source": "Business Insider",
-   "domain": "businessinsider.com",
-   "published": "2026-10-27",
-   "outlets": [
-    "Business Insider"
-   ],
-   "themes": [],
-   "headlines": [
-    "What Smart People Are Saying About Anthropic's IPO Paperwork"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "业内人士正对Anthropic提交的IPO相关文件展开深入探讨与评价。",
-   "meaning": "其披露的财务与业务细节将为通用AI行业的真实营收水平、亏损情况和增长质量提供关键参考。"
-  },
-  {
    "title": "Nvidia investing $3 billion in Meta in Muse partnership",
    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA4WWFCR1ItajdJSVpLRVB2U0FhNVRSRG1YMTBxSVRJeEYtZUNZVnFGa2RPd0NCN3M0RjRmQUpRUUhCYjBkRFQxVW1IS0RvMXMzdGN2YWdWVUlZN3RKdVRFeVUtLVNTZE5pUlJDZw?oc=5",
    "source": "Axios",
@@ -1988,6 +2040,23 @@
    "meaning": "这是房产 AI 的实际落地应用，展示了大语言模型如何赋能垂直领域的商业不动产交易与标的筛选。"
   },
   {
+   "title": "Why Anthropic’s Rivals are Rooting for its IPO",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbHJlbWNoRkNORmhFU0p2MEJ1d3ctZm1RRXBycmhOMHpTNTF4Y0ZzZGdiOWVWQVI4ZENkamgweTBWRENsNHBJc1p1M3htTUloY0xnOGxlVWRiNGhYcG5JVnlCY01nVVlpdEp2YmFvOGcwQmN2XzNlajlJbGg0RWVPTE4tMl9Gb0pCb3c?oc=5",
+   "source": "WSJ",
+   "domain": "wsj.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "WSJ"
+   ],
+   "themes": [],
+   "headlines": [
+    "Why Anthropic’s Rivals are Rooting for its IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
    "title": "AI Enters the Courtroom as Dubai Rethinks How Lawyers Train and Judges Work",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZnNsOUpnZl9vdTBta2ktMkdBTmxOdTRnSTVUX1ItR3B1Qjl0ZlVkMU5KZC03bnBMRjFPbXJNWXNFLWxGY2YtQVVMbkNkZEVCWFYtSG5PTUx5MTM5eVdlRktxUjE5OVYyT002QjZKM0FPTmwxdVFZRFJzd3o2QkROY09VQm1lT0h1eXMwdmVOcWsyeW55OXkteldSY21nUmwyZk9RYlhtZWtDeGZTRkoxZlA0YUwyUzdQejFhYXhUZ3d1SDUybWpVblFB?oc=5",
    "source": "Law.com",
@@ -2045,10 +2114,10 @@
    "meaning": "切中房产 AI 议题，探讨了房地产行业在推进自动化转型过程中如何平衡技术效率与人力价值。"
   },
   {
-   "title": "The Biggest Takeaways From Anthropic’s IPO Prospectus",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1ocFhISXowTzhvOEN4cFBXWDdCdE9XUEkxNzNYd2xhYnhBN2xQaVlnVGtCT3YzSkhMT3dubmxRV041cFl3U1Z5UTJ5RERqRldhdERaM1Zfa1FCMUZMRkxRcGVBWDFLTlRwczFDQkN3MlFJMkZUdVJ1Tmpn?oc=5",
-   "source": "WSJ",
-   "domain": "wsj.com",
+   "title": "Anthropic's potential mega IPO joins ranks of world's biggest listings",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTGdsSFROVFREMW5FMGs1dGlzcXBGZlRlUTVoaUdqek43TzBPUDFFUS00Umd2elBzZ3Zja3VQeThmLTVvajcxcnRnRGJlaW5laF9ZaHBrd1k4akdaLWNyamd6UjVsOExSY2k5b0RxSGtvcnR1VXhKXzMyREc1QUxOd0lRdkVzNm1jOEVJZDVPM0RTTVllQ051N2tCeHZsRnlNQ2dYZGZ2RDctSkJBdjZmN3ZDa2hoQkZ6QlE?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
    "published": "2026-10-26",
    "outlets": [
     "CNBC",
@@ -2056,7 +2125,8 @@
     "WSJ",
     "WIRED",
     "Fortune",
-    "AP News"
+    "AP News",
+    "Reuters"
    ],
    "themes": [],
    "entities": [
@@ -2069,35 +2139,64 @@
     "Why Anthropic’s IPO Prospectus Is Missing So Many Key Figures",
     "Anthropic’s IPO prospectus shows $16.3 billion in revenue, an $80.7 billion net loss, and goal of an 'age of miracles'",
     "Anthropic’s IPO Prospectus Reveals What’s Under the Hood",
-    "Anthropic files for potentially the biggest IPO ever as CEO warns of risk to humanity from AI"
+    "Anthropic files for potentially the biggest IPO ever as CEO warns of risk to humanity from AI",
+    "Anthropic's potential mega IPO joins ranks of world's biggest listings"
    ],
    "summary": "Anthropic 提交招股书筹备可能是有史以来规模最大的 IPO，文件披露其营收为 163 亿美元、净亏损 807 亿美元，CEO 同时警示 AI 对人类的风险。",
    "meaning": "作为备受瞩目的通用 AI 巨头，其巨额营收与庞大亏损首次曝光，对整个 AI 创投和资本市场格局影响深远。"
   },
   {
-   "title": "Anthropic begins countdown to IPO with prospectus filing",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNN1ZwVC1NWWxLRjZWU2dLUDF4S3hCQk1rSHdQaHZDQkxBNlBGR3hGbk04TEpVeG1nUVlpWER2QlZJdmtoeFJfUnpMOGN2SWRMUDI2LWFZZUluY29lZjg2bnhHS0gxdU9nNHF6RV9XamFxdUdTZFJMTWFPWFpuMERqR0ZIbmM?oc=5",
-   "source": "Financial Times",
-   "domain": "ft.com",
+   "title": "Anthropic's filing for blockbuster US IPO shows key executives and board",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONVlWQUstQThaSGFMX1o0NmNNOWV3M1pSWlF6bmNINUJPaXB0T2RTQjBwNDhkaTdrSlNlRGJKWHc2R3RFaHFYMjNodDF4YUhTaGtZUTItbUE4VjVDVzVXRmFxMUxLRk1FRzQ5cldRSGlxc3dZVHlIYzNkcUJZZWxId2JYZXpZWnFKODFLenNVbjZuY1BYWDEtMlRmVjk?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
    "published": "2026-10-26",
    "outlets": [
     "CNBC",
     "The Verge",
     "Financial Times",
-    "Fortune"
+    "Fortune",
+    "Reuters",
+    "Quartz"
    ],
    "themes": [],
    "headlines": [
     "Anthropic IPO filing warns some risks may be uninsurable. AI coverage will be issue for every company",
     "Five weird details from Anthropic’s IPO filing",
     "Anthropic begins countdown to IPO with prospectus filing",
-    "Anthropic’s IPO filing spends 69,800 words on AI’s risks to investors and says little about the risks to the rest of us"
+    "Anthropic’s IPO filing spends 69,800 words on AI’s risks to investors and says little about the risks to the rest of us",
+    "‘Bold but sane’: what we learnt from Anthropic’s 240,000-word IPO filing",
+    "Anthropic's filing for blockbuster US IPO shows key executives and board",
+    "Anthropic's IPO filing shows each of its 7 cofounders is worth $13B+"
    ],
    "entities": [
     "Anthropic"
    ],
    "summary": "Anthropic 正式提交招股说明书开启 IPO 倒计时，文件中用近 7 万字详述投资风险，并警告部分 AI 风险可能无法投保。",
    "meaning": "AI 相关风险难以承保将不仅困扰通用 AI 领头羊，还将成为所有拥抱 AI 的企业面临的合规与法务新挑战。"
+  },
+  {
+   "title": "What to Know About the Anthropic IPO",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSW9pVkxrdnowelRJM2xkeUJMcC1DTXloVUVyUHlfU2ZQS09nX2ZWdTU1WlBvcHdhRFh3QnlOdjk4aThqQWlpSFFFNW9oeVBIS0JCRlluQjlJZG93R25mQzFfQ2FSNlFONUgwWnliZUdRcTFnQWJrQWZlRjhDRjl0NjdLYzdUVFFybkFWSGRGZ0trVEZyTjdhZTJwbDZqWkJIVTZ4QnlZek1RdFdlUUVWNDlUSUM?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Business Insider",
+    "Forbes",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "What Smart People Are Saying About Anthropic's IPO Paperwork",
+    "Anthropic's IPO: What Its S-1 Reveals About The AI Boom",
+    "What to Know About the Anthropic IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "业内人士正对Anthropic提交的IPO相关文件展开深入探讨与评价。",
+   "meaning": "其披露的财务与业务细节将为通用AI行业的真实营收水平、亏损情况和增长质量提供关键参考。"
   },
   {
    "title": "The hawkish pause, Lula's market meltdown, and the Anthropic IPO bombshell: The financial week in five charts",
@@ -2166,6 +2265,48 @@
    ],
    "summary": "Anthropic列出的风险因素包括人类灭绝、与五角大楼的争端及CEO声誉，文件还显示公司去年花费275万美元保护CEO Dario Amodei，超其薪资4倍。",
    "meaning": "披露出头部通用AI企业在防务合作、合规安全与超高管安全成本方面的严峻挑战，体现了AI安全治理的现实复杂性。"
+  },
+  {
+   "title": "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTmRhT3BCTmVkRHA3TlQzSXpCNFlISlpqbms5MVozSVhwd2NMR0RoTUV2MDJfbklENXFZOWpHNm50NHZzNkhzTFhDdHUydHRiVXExVW5MUFBDWkN4a0dFRG5DRzlFa0JsN0g4UGpYZ0dXRGktMWNGSlE0RE5XX01OYWYyUmo?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Financial Times",
+    "WSJ"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
+    "Anthropic Unveils Paperwork for Blockbuster IPO"
+   ],
+   "summary": "在备受瞩目的重磅IPO前夕，Anthropic的七位创始人正在进一步收紧对公司的控制权。",
+   "meaning": "随着通用大模型商业化进程加速，Anthropic核心团队在资本化前强化控制权，以平衡外部投资者诉求与AI安全治理。"
+  },
+  {
+   "title": "Anthropic is going public—1 number from its filing is an encouraging sign for investors, says IPO expert",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Vc2N5SUR3WmY1a1l1cWJRbFM1RXVLakdBUGc1YWZ0dWRjLVhfN2ZZX2lHUG9pcU1HVno0cnMyY096UWp5b1lmYmlSRTN6SnI5ZFhGTGE2NGtUWkM0cUhCazlDM0l1LTh6ZkNYWFlwbGZuQ3pDdUZjLUc2bU9JZ9IBgwFBVV95cUxPbnp1REdiQWJ3c1Vic0N1cEtITFRkbDlraEY0VzJhTVhLdmd5RHYweHVCWllTNlJsajJ3d3gxa2RhV0ZWRjZJNkRZYjFjQm0zZWJkTTRPSlBrRjZnQmk1RFlsUXpjc3NiakxuVlZfckNxcC1lbHUwMTZNQnJOR2FNbzMyRQ?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "CNBC",
+    "The Verge"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic is going public—1 number from its filing is an encouraging sign for investors, says IPO expert",
+    "Five weird details from Anthropic’s IPO filing"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic正准备上市，IPO专家指出其招股申报文件中的一个关键数据为投资者释放了令人鼓舞的信号。",
+   "meaning": "Anthropic的IPO进展是今年通用AI资本市场的风向标，其申报财务与运营指标将成为衡量大模型独角兽真实商业价值的标杆。"
   },
   {
    "title": "Anthropic’s 7 cofounders are each worth $14 billion already—and that could double in IPO",
@@ -2269,6 +2410,46 @@
    ],
    "summary": "OpenAI宣布在数学、计算机科学和物理学领域取得三大科学发现，并推出了一种与学术界合作的新模式。",
    "meaning": "通用AI大事件；标志着前沿基础模型正深度切入硬核科学研究（AI for Science），科研协作范式正在发生重要变革。"
+  },
+  {
+   "title": "Anthropic’s IPO Sets Up Defining Moment for Wall Street and AI Boom",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQS3FLY3BuUDlrcDFuUnJvU2dEZG16ejUwV0dwQzlWT2JWTndReVcxU2VPMnhhQXQySFROWVNCUG1udmY1aGVaMnl5UVAzcFlteE9TUWtiX1BlMTdGd1NvWlowck1IQ1BMa0w1Rm9Vc2Z5UjVpZGdoVkRTTXQxYmhNcTR5aXI4X1N0dkdXNTFZdWpnQ2ZadzRWWTZiVjJQUENaZlY4dElkdl8xNlI4SFhBWHk5ZFFOQ0Fja2c?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "CNBC",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "From Wall Street to Silicon Valley, Anthropic IPO poised to have massive 'trickle-down effect'",
+    "Anthropic’s IPO Sets Up Defining Moment for Wall Street and AI Boom"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "市场普遍认为，从华尔街到硅谷，Anthropic 的 IPO 预计将产生巨大的“滴漏效应”。",
+   "meaning": "作为通用 AI 赛道的标志性上市案，其带来的资本和流动性影响将深远波及整个科技投资链与上下游创业生态。"
+  },
+  {
+   "title": "Why you shouldn’t bother reading the Anthropic IPO filing",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdXNxcmV4QUdNRzRjcUJPS2xSR3hjSDJfLUtGTTNBOUdaSEFoSlQ3dmE5ZUNlWjlSX0NUUkZDMlUtd3dpNU13eWlrTTVtTnNrVkZ1eWwta1dxNmJQME9hTGotQ2RtOGRmTWtreHVRNzZFLW40d29LSnM2aTBaZzVfeVNGWUc?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Financial Times",
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Why you shouldn’t bother reading the Anthropic IPO filing",
+    "Anthropic unveils public IPO filing: Here's what you need to know"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
   },
   {
    "title": "Anthropic's 7 cofounders are about to make generational fortunes. One owns more shares than the CEO.",
@@ -2462,25 +2643,6 @@
    "meaning": "这关系到全球通用 AI 资本市场的信心走向，其招股表现或将决定后续一系列 AI 初创企业上市与融资的估值天花板。"
   },
   {
-   "title": "From Wall Street to Silicon Valley, Anthropic IPO poised to have massive 'trickle-down effect'",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYllMbFRuTjU1YW5QWWRQd3JFZ0VkRk52dTl6RG04VEFZZC1HalMxaE9Iem01ZlN4MW5udlBWdUtvVU93U1BETlFVamk5SlNCam1XVVRzWExBemxDSC1yM0pDSHlkR1ZHNlpSNG02OTZCcVlEMGZiUXVBUkRWaWRQYVhkLUNrUmwwZEZ0YXZ6a29pemJHZGNaU2hpVUbSAaIBQVVfeXFMTmt4Q1hTcjFXT0kwZGNHeVE2bU9GaFUxeTVKTmx5bjhmMGFOOTI2R1N1ellVLWQtYzFSZWJBVzU3WDVILWRMR05LSEFnVFNTd1lLNGJyc3k5VjBLWUI1T3lfMmtXcFBENEJQZ3ZVTktfTjJpRFRYS0ktb0tOZkxCSzlPWmM4TXlPTC1zemFtZmpzUUNQQ1RuaEg1MGtKUEgzaU93?oc=5",
-   "source": "CNBC",
-   "domain": "cnbc.com",
-   "published": "2026-10-26",
-   "outlets": [
-    "CNBC"
-   ],
-   "themes": [],
-   "headlines": [
-    "From Wall Street to Silicon Valley, Anthropic IPO poised to have massive 'trickle-down effect'"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "市场普遍认为，从华尔街到硅谷，Anthropic 的 IPO 预计将产生巨大的“滴漏效应”。",
-   "meaning": "作为通用 AI 赛道的标志性上市案，其带来的资本和流动性影响将深远波及整个科技投资链与上下游创业生态。"
-  },
-  {
    "title": "Anthropic discloses month-long training pause, AI security breaches in IPO filing",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWUlrWDlwMnBvb2RvQ1ZTVHpNdEFETnkycHVyVnlJNDVqdnNJRVo3MTZEZGxfbHFjczk2YmJVc2lqb25kZnZtcDhObmFYZ3BoMmtZUi02ZkNBTFZLMEE1VHE4clRXbWJSQTE3MWNMRFNSNDQ3c0tZeWRTdUZDODEyQWFnRlgwLVdkVnctalBhTEE1SjNQRk04REtWQ2VNOGk0c0ZnS2JvZkNjX3VfSWFaZjNBbExVOEYxS0dSRzc5azFFR3ltb2hqOHNn?oc=5",
    "source": "Reuters",
@@ -2672,20 +2834,20 @@
    ]
   },
   {
-   "title": "Why you shouldn’t bother reading the Anthropic IPO filing",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdXNxcmV4QUdNRzRjcUJPS2xSR3hjSDJfLUtGTTNBOUdaSEFoSlQ3dmE5ZUNlWjlSX0NUUkZDMlUtd3dpNU13eWlrTTVtTnNrVkZ1eWwta1dxNmJQME9hTGotQ2RtOGRmTWtreHVRNzZFLW40d29LSnM2aTBaZzVfeVNGWUc?oc=5",
-   "source": "Financial Times",
-   "domain": "ft.com",
+   "title": "SpaceX closes $40 billion debt deal for AI chips, Elon Musk says",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVTJ4MWVBeEtEdjR1T3U3TDJvZnFSd1UtTVJ5RFljSG90MUs3OW0xRUFTZ2p3T3FjRGZINFUzY1Qwa2MyZWZ3cmlYbkQwd09xTzF1cEdZSFkzTHdpNGhaNno5bW13RXdmaldaSlpBYTN4djJnTUF0YXRsX0ZaX0FQYXlfQnBWSzU4bWJweC1CcjNPNGVKNV9MMHhqTdIBoAFBVV95cUxNOExaVU8tRkNSSVpLS19wVmxBMzl3a2tvYVJfQy1PTzBoTUlGc21yQ2pHNWpnSWxxN1IzN0RiSHZROFBqNFlTR2dfeS11T1BWMUxKMktpMHVlbFRmTjVGdmxqbFBBeUJHelM0eU8tSWQyRDhEVGc3cmdnbGxlSDVDbE1hc3BqNUlNUktNUUR5SGNNT3poc1k4QUxOczJNNm5j?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
    "published": "2026-10-26",
    "outlets": [
-    "Financial Times"
+    "CNBC"
    ],
    "themes": [],
    "headlines": [
-    "Why you shouldn’t bother reading the Anthropic IPO filing"
+    "SpaceX closes $40 billion debt deal for AI chips, Elon Musk says"
    ],
    "entities": [
-    "Anthropic"
+    "Elon Musk"
    ]
   },
   {
@@ -4197,7 +4359,8 @@
    "published": "2026-10-16",
    "outlets": [
     "The Washington Post",
-    "Reuters"
+    "Reuters",
+    "AP News"
    ],
    "themes": [],
    "entities": [

@@ -1048,8 +1048,9 @@
         bindWatchedButton(button);
       };
 
-      // ☆ 收藏: favorites sort to the top of their tab. Shared across devices in watched_items as "fav:<watch key>"
-      // rows (no new table needed); this browser keeps a copy for when Supabase is unreachable.
+      // ☆ 加入精选: moves a 演讲 & Podcast card into 精选视频 (by date, like the other 精选 cards); taking it out puts it
+      // back in its place, so 演讲 & Podcast keeps its newest-first order. Shared across devices in watched_items as
+      // "fav:<watch key>" rows (no new table needed); this browser keeps a copy for when Supabase is unreachable.
       const FAVORITE_PREFIX = 'fav:';
       const favoritesStorageKey = 'ai-video-feed-favorites-v1';
       const favorites = (() => {
@@ -1061,32 +1062,39 @@
       const cardKey = card => card?.querySelector('.watch-toggle')?.dataset.watchKey || '';
       const isFavorite = card => favorites.has(cardKey(card));
       const syncFavoriteButton = (button, on) => {
-        button.textContent = on ? '★ 已收藏' : '☆ 收藏';
+        button.textContent = on ? '★ 已加入精选' : '☆ 加入精选';
         button.setAttribute('aria-pressed', String(on));
       };
-      // Moves favorites above the other cards, keeping their order. Only in a tab that is hidden or on its first
-      // card, so the card being watched never jumps; `fresh` is for cards just rendered, before anyone watches them.
-      const floatFavorites = (fresh = false) => {
+      // 演讲 & Podcast cards carry data-seq (their newest-first position) so they can go back where they were.
+      const placeFavorites = () => {
         let moved = false;
-        [document.getElementById('feed-curated'), appearanceCards].forEach(container => {
-          const panel = container.closest('.feed-panel') || container;
-          const cards = [...container.children].filter(element => element.classList.contains('card'));
-          const visible = cards.filter(card => !card.hidden && !card.classList.contains('is-watched'));
-          if (!(fresh && container === appearanceCards) && !panel.hidden && activeCard && container.contains(activeCard) && activeCard !== visible[0]) return;
-          const firstPlain = cards.find(card => !isFavorite(card));
-          if (!firstPlain) return;
-          cards.filter(card => isFavorite(card) && (firstPlain.compareDocumentPosition(card) & Node.DOCUMENT_POSITION_FOLLOWING))
-            .forEach(card => { firstPlain.before(card); moved = true; });
+        appearanceCards.querySelectorAll(':scope > .card').forEach(card => {
+          if (!isFavorite(card)) return;
+          card.hidden = false;
+          // Registered (CSV) cards show their date only in the badge.
+          if (!card.dataset.published) {
+            const date = card.querySelector('.pub-date')?.textContent.match(/\d{4}-\d{2}-\d{2}/)?.[0];
+            if (date) card.dataset.published = date;
+          }
+          insertCuratedCard(card);
+          moved = true;
+        });
+        document.querySelectorAll('#feed-curated > .card[data-seq]').forEach(card => {
+          if (isFavorite(card)) return;
+          const next = [...appearanceCards.querySelectorAll(':scope > .card[data-seq]')].find(other => Number(other.dataset.seq) > Number(card.dataset.seq));
+          if (next) next.before(card);
+          else appearanceCards.appendChild(card);
+          moved = true;
         });
         if (moved) {
           refreshCuratedCounters();
           appearanceSearch.dispatchEvent(new Event('input'));
         }
       };
-      const applyFavorites = () => {
+      const saveFavorites = () => {
         try { localStorage.setItem(favoritesStorageKey, JSON.stringify([...favorites])); } catch { /* Session only. */ }
         document.querySelectorAll('.fav-toggle').forEach(button => syncFavoriteButton(button, isFavorite(button.closest('.card'))));
-        floatFavorites();
+        placeFavorites();
       };
       const applySharedFavorites = keys => {
         const next = new Set(keys);
@@ -1095,13 +1103,12 @@
           if (on) next.add(key.slice(FAVORITE_PREFIX.length));
           else next.delete(key.slice(FAVORITE_PREFIX.length));
         });
-        const changed = next.size !== favorites.size || [...next].some(key => !favorites.has(key));
+        if (next.size === favorites.size && [...next].every(key => favorites.has(key))) return;
         favorites.clear();
         next.forEach(key => favorites.add(key));
-        if (changed) applyFavorites();
-        else floatFavorites(); // Cards that arrived since the last check.
+        saveFavorites();
       };
-      // Turns the card's ☆ 收藏 placeholder into the working button (or adds one).
+      // On 演讲 & Podcast cards: turns the ☆ 收藏 placeholder into the working button (or adds one).
       function addFavoriteButton(card) {
         const actions = card.querySelector('.actions');
         if (!actions || !cardKey(card) || actions.querySelector('.fav-toggle')) return;
@@ -1119,11 +1126,14 @@
           if (on) favorites.add(key);
           else favorites.delete(key);
           sendSharedWatchChange(FAVORITE_PREFIX + key, on);
-          document.querySelectorAll('.fav-toggle').forEach(item => syncFavoriteButton(item, isFavorite(item.closest('.card'))));
-          try { localStorage.setItem(favoritesStorageKey, JSON.stringify([...favorites])); } catch { /* Session only. */ }
-          showToast([on ? '★ 已收藏：下次打开时排在这一栏最前面。' : '已取消收藏。'], 3000);
+          saveFavorites();
+          showToast([on ? '★ 已加入精选视频。' : '已移出精选，回到「演讲 & Podcast」。'], 3000);
         });
       }
+      // 精选 cards of their own have no use for the placeholder.
+      const removeSavePlaceholder = card => {
+        [...card.querySelectorAll('.actions button')].find(item => item.textContent.trim() === '☆ 收藏' && !item.classList.contains('fav-toggle'))?.remove();
+      };
 
       const canonicalMediaKey = rawUrl => {
         if (!rawUrl) return '';
@@ -1443,9 +1453,10 @@
         details.appendChild(actions);
         card.appendChild(details);
         makeText(card, 'div', 'hint', '上滑看下一条 ↓');
-        addFavoriteButton(card);
         addNoteButton(card);
         place(card);
+        if (card.parentElement === appearanceCards) addFavoriteButton(card);
+        else removeSavePlaceholder(card);
         syncWatchedButton(card.querySelector('.watch-toggle'), watchedItems.has(watchKey));
         cardObserver.observe(card);
         return card;
@@ -1497,7 +1508,8 @@
           appearanceSummary = `共 ${entries.length} 条，其中 ${autoCount} 条是每天自动从关注频道发现的新视频${autoFeedUpdated()}；已自动排除精选 TAB 中重复的 ${excludedDuplicates} 条。${inAppCount} 条支持卡内官方播放器（其中 ${audioCount} 条是音频），其余保留发布方原页。`;
           appearanceNote.textContent = appearanceSummary;
           entries.sort(newestFirst(item => item.published_date)).forEach((item, index) => renderAppearance(item, index, entries.length));
-          floatFavorites(true);
+          appearanceCards.querySelectorAll(':scope > .card').forEach((card, index) => { card.dataset.seq = String(index); });
+          placeFavorites();
           appearanceSearch.dispatchEvent(new Event('input'));
         } catch (error) {
           appearanceCount.textContent = '来源未加载';
@@ -2244,7 +2256,7 @@
         button.addEventListener('click', () => openNote(card));
         actions.appendChild(button);
       }
-      document.querySelectorAll('.card').forEach(card => { addFavoriteButton(card); addNoteButton(card); });
+      document.querySelectorAll('.card').forEach(card => { removeSavePlaceholder(card); addNoteButton(card); });
 
       const openNote = card => {
         const frame = card.querySelector('.player iframe[data-video-id]');
@@ -2447,6 +2459,8 @@
         window.setInterval(loadAddedVideos, 15000);
         document.addEventListener('visibilitychange', () => { if (!document.hidden) loadAddedVideos(); });
       });
+      // 演讲 & Podcast cards are built in the background too, so the ones added to 精选 show up there right away.
+      addedVideosReady.then(() => loadAppearances());
 
       appearanceSearch.addEventListener('input', event => {
         const previousActiveCard = activeCard;

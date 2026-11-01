@@ -38,6 +38,9 @@ jobs:
 
       - name: Update feed
         run: node tools/update-feed.mjs feed/auto-feed.json
+        env:
+          # Optional repository secret (YouTube Data API v3): enables the length check and dates for hand-added videos.
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
       - name: Commit and push
         working-directory: feed

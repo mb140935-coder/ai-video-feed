@@ -30,7 +30,12 @@
     .tab.active { background: var(--text); color: var(--surface); border-color: var(--text); font-weight: 700; }
     .feed-panel[hidden] { display: none; }
     .feed-note { padding: 14px 18px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 11px; line-height: 1.5; }
-    .appearance-search { width: 100%; margin-top: 10px; border: 1px solid var(--line-strong); border-radius: 10px; padding: 9px 11px; background: var(--raised); color: var(--text); font: inherit; font-size: 12px; outline: none; }
+    .appearance-search { flex: 1; min-width: 0; border: 1px solid var(--line-strong); border-radius: 10px; padding: 9px 11px; background: var(--raised); color: var(--text); font: inherit; font-size: 16px; outline: none; }
+    .appearance-search:focus { border-color: var(--accent); }
+    .search-bar { flex: 1; display: flex; gap: 8px; }
+    .search-bar[hidden] { display: none; }
+    .search-bar button { flex: none; border: 1px solid var(--line-strong); border-radius: 10px; padding: 0 14px; background: var(--raised); color: var(--text); font: inherit; font-size: 13px; cursor: pointer; }
+    .tabbar.searching > .tab, .tabbar.searching > .menu-wrap { display: none; }
     .card { position: relative; height: min(846px, calc(100vh - 102px)); min-height: 620px; scroll-snap-align: start; overflow: hidden; border-bottom: 1px solid var(--line); background: linear-gradient(180deg, var(--surface), var(--surface-2)); }
     .top { position: absolute; z-index: 2; inset: 18px 18px auto; display: flex; justify-content: space-between; align-items: flex-start; pointer-events: none; }
     .brand-block { display: flex; flex-direction: column; gap: 5px; }
@@ -202,8 +207,14 @@
           <button class="menu-button" id="menu-button" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="menu-dropdown" aria-label="菜单：已看历史、添加视频">☰</button>
           <div class="menu-dropdown" id="menu-dropdown" role="menu" hidden>
             <button type="button" role="menuitem" id="watch-history-button" aria-haspopup="dialog" aria-controls="watch-history"><span>✓ 已看历史</span><span class="menu-count" id="watch-history-count">0</span></button>
+            <button type="button" role="menuitem" id="search-button" aria-controls="search-bar"><span>🔍 搜索演讲 &amp; Podcast</span></button>
             <button type="button" role="menuitem" id="add-video-button" aria-haspopup="dialog" aria-controls="add-video"><span>＋ 添加视频 / 频道</span><span class="menu-count" id="added-count"></span></button>
           </div>
+        </div>
+        <!-- Opened from the menu; takes the place of the tabs so it stays at the top while scrolling. -->
+        <div class="search-bar" id="search-bar" hidden>
+          <input class="appearance-search" id="appearance-search" type="search" placeholder="搜索人名、节目或标题" aria-label="搜索演讲和 Podcast">
+          <button type="button" id="search-close">取消</button>
         </div>
       </nav>
       <div class="watch-undo" id="watch-undo" role="status" hidden><span id="watch-undo-text"></span><button type="button" id="watch-undo-button">撤销</button></div>
@@ -544,7 +555,6 @@
       <div class="feed-panel" id="feed-appearances" role="tabpanel" aria-labelledby="tab-appearances" hidden>
         <div class="feed-note">
           <div id="appearance-note">追踪 watchlist 中人物的公开演讲、播客和访谈。这里展示已登记的可核验来源；新发现可持续加入，不受精选 TAB 的每日条数限制。</div>
-          <input class="appearance-search" id="appearance-search" type="search" placeholder="搜索人名、节目或标题" aria-label="搜索演讲和 Podcast">
         </div>
         <div id="appearance-cards"></div>
       </div>
@@ -1822,7 +1832,29 @@
         historySheet.hidden = true;
         addSheet.hidden = true;
         setMenuOpen(false);
+        if (!searchBar.hidden) closeSearch();
       });
+
+      // Search lives in the tab bar (sticky), hidden until opened from the menu; it filters 演讲 & Podcast.
+      const searchBar = document.getElementById('search-bar');
+      const tabbar = document.querySelector('.tabbar');
+      const openSearch = async () => {
+        if (document.getElementById('feed-appearances').hidden) document.getElementById('tab-appearances').click();
+        tabbar.classList.add('searching');
+        searchBar.hidden = false;
+        appearanceSearch.focus();
+      };
+      const closeSearch = () => {
+        tabbar.classList.remove('searching');
+        searchBar.hidden = true;
+        if (appearanceSearch.value) {
+          appearanceSearch.value = '';
+          appearanceSearch.dispatchEvent(new Event('input'));
+        }
+      };
+      document.getElementById('search-button').addEventListener('click', openSearch);
+      document.getElementById('search-close').addEventListener('click', closeSearch);
+      appearanceSearch.addEventListener('keydown', event => { if (event.key === 'Enter') appearanceSearch.blur(); });
 
       // Olympic AI found by the daily job joins 精选视频; then hand-added videos, which use its publish dates.
       const addedVideosReady = autoFeedPromise.then(async feed => {

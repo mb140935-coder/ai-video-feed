@@ -1,0 +1,591 @@
+{
+ "updated": "2026-11-01T15:33:54.104Z",
+ "items": [
+  {
+   "key": "youtube:KM3VQZKjpiY",
+   "url": "https://www.youtube.com/watch?v=KM3VQZKjpiY",
+   "title": "Using Agents for Long-Horizon Financial Work — Aman Singh, Arca",
+   "channel": "Latent Space",
+   "published": "2026-10-31",
+   "summary": "Arca head of AI Aman Singh joins Latent Space head of editorial Richard MacManus at AI Engineer New York, to discuss how Arca is building an AI-native wealth management firm. Singh explains Arca's architecture, which inc…",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:v-d1WTqIULs",
+   "url": "https://www.youtube.com/watch?v=v-d1WTqIULs",
+   "title": "Building ChatGPT for Finance — Joseph Kim, OpenAI's Head of Financial Services",
+   "channel": "Latent Space",
+   "published": "2026-10-31",
+   "summary": "What does it take to build AI for finance on top of a general-purpose model? Joseph Kim, who leads work on ChatGPT for Financial Services at OpenAI, joins swyx and Richard at AI Engineer New York to discuss the decisions…",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:vFOnDsy58NU",
+   "url": "https://www.youtube.com/watch?v=vFOnDsy58NU",
+   "title": "Harvard AI Professor: The People Most at Risk From AI Aren’t Who You Think",
+   "channel": "Silicon Valley Girl",
+   "published": "2026-10-30",
+   "summary": "Using AI every day doesn’t automatically make you better at your job. So how do you use it to build real expertise? In this episode, I talked to Karim R. Lakhani, a Harvard Business School professor whose research with B…",
+   "about": "Marina Mogilko（Silicon Valley Girl）采访 AI 从业者和研究者，话题偏职业与日常使用。",
+   "tab": "appearances",
+   "tags": [
+    "关注频道"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:o4D1J1YWjhg",
+   "url": "https://www.youtube.com/watch?v=o4D1J1YWjhg",
+   "title": "There are many futures. Which do you want to build?",
+   "channel": "OpenAI",
+   "published": "2026-10-30",
+   "summary": "",
+   "about": "OpenAI 官方频道：模型发布、产品演示和研究分享。",
+   "tab": "appearances",
+   "tags": [
+    "前沿实验室"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:Oi9DHk57KeQ",
+   "url": "https://www.youtube.com/watch?v=Oi9DHk57KeQ",
+   "title": "How Gen uses ChatGPT Work to turn data Into decisions | OpenAI",
+   "channel": "OpenAI",
+   "published": "2026-10-30",
+   "summary": "“Before ChatGPT Work, we were walking. Now with ChatGPT Work, we are running.” For Gen's Howie Xu, that means understanding how a new product’s onboarding experience is working within two or three hours of release. Findi…",
+   "about": "OpenAI 官方频道：模型发布、产品演示和研究分享。",
+   "tab": "appearances",
+   "tags": [
+    "前沿实验室"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:PFIWtV78_oU",
+   "url": "https://www.youtube.com/watch?v=PFIWtV78_oU",
+   "title": "Agentic Talks EP5: Introducing AgentCore: Build and Govern Agents for Real Work",
+   "channel": "Alibaba Cloud",
+   "published": "2026-10-30",
+   "summary": "In this session, we explore what really stands between a working prototype and an agent you can run in production — with AgentCore. Join us as we unpack the gap enterprises hit when agents move from experimentation into …",
+   "about": "阿里云官方频道：通义千问（Qwen）和云上 AI；也是奥运会的 AI 合作方。",
+   "tab": "appearances",
+   "tags": [
+    "中国 AI"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:L6pzlo1QvoM",
+   "url": "https://www.youtube.com/watch?v=L6pzlo1QvoM",
+   "title": "ChatGPT Enterprise at Zendesk: Putting Company Data to Work",
+   "channel": "OpenAI",
+   "published": "2026-10-29",
+   "summary": "“We have about 600 applications that have been built by different people in the company.” At Zendesk, teams across sales, marketing, and operations are building applications for their own work. ChatGPT Enterprise is avai…",
+   "about": "OpenAI 官方频道：模型发布、产品演示和研究分享。",
+   "tab": "appearances",
+   "tags": [
+    "前沿实验室"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:EZcWEsMuLb4",
+   "url": "https://www.youtube.com/watch?v=EZcWEsMuLb4",
+   "title": "Taking on ServiceNow: Coding Agents for the Rest of Us with Serval Co-Founder and CEO Jake Stauch",
+   "channel": "No Priors",
+   "published": "2026-10-29",
+   "summary": "What happens when you put code-generation agents in the hands of enterprise IT teams? With Serval, you get a system where it's easy for everyone to be a builder. Sarah Guo and Elad Gil sit down with Serval co-founder and…",
+   "about": "No Priors：投资人 Sarah Guo 与 Elad Gil 访谈 AI 创业者和研究者。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:ujmyzWSj8IU",
+   "url": "https://www.youtube.com/watch?v=ujmyzWSj8IU",
+   "title": "API credits, now in ChatGPT Pro and Business plans",
+   "channel": "OpenAI",
+   "published": "2026-10-28",
+   "summary": "Credit amounts depend on the plan. Pro plans get $100, $200 or $500 per month by tier. Business plans get $20 per paid Standard seat or $100 per paid Premium seat, pooled up to $500 per workspace.",
+   "about": "OpenAI 官方频道：模型发布、产品演示和研究分享。",
+   "tab": "appearances",
+   "tags": [
+    "前沿实验室"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:6ep8Vvm4Bdw",
+   "url": "https://www.youtube.com/watch?v=6ep8Vvm4Bdw",
+   "title": "Why Merge CEO Shensi Ding stays hands-on with Codex",
+   "channel": "OpenAI",
+   "published": "2026-10-28",
+   "summary": "“If you're an executive, you are the ceiling for AI fluency for your organization.” Merge co-founder and CEO Shensi Ding manages the non-R&D side of the business. She also codes. With Codex, she asked for help redesignin…",
+   "about": "OpenAI 官方频道：模型发布、产品演示和研究分享。",
+   "tab": "appearances",
+   "tags": [
+    "前沿实验室"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:QqeKRvAkIc8",
+   "url": "https://www.youtube.com/watch?v=QqeKRvAkIc8",
+   "title": "How AI Is Advancing Human Health",
+   "channel": "NVIDIA",
+   "published": "2026-10-28",
+   "summary": "In her special address at NVIDIA GTC Berlin, Kimberly Powell, Vice President of Healthcare and Life Sciences at NVIDIA, explored how digital health agents are reaching national scale, how AI factories are speeding up dru…",
+   "about": "NVIDIA 官方频道：AI 算力、主题演讲和物理 AI。",
+   "tab": "appearances",
+   "tags": [
+    "算力"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:zHG6sAss_kE",
+   "url": "https://www.youtube.com/watch?v=zHG6sAss_kE",
+   "title": "Why Agents Love Supabase — with Paul Copplestone and Ant Wilson",
+   "channel": "Latent Space",
+   "published": "2026-10-28",
+   "summary": "Why do AI agents keep choosing Supabase—and what changes when the agent becomes the user? Supabase co-founders Paul Copplestone (CEO) and Ant Wilson (CTO) join swyx for their first podcast together after a $0 to $10B spe…",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:sFfPkUJd_Jk",
+   "url": "https://www.youtube.com/watch?v=sFfPkUJd_Jk",
+   "title": "Genie 4: A new generation of world simulation",
+   "channel": "Google DeepMind",
+   "published": "2026-10-27",
+   "summary": "Meet Genie 4, Google DeepMind’s most realistic and interactive world model yet. Built on our Gemini models, Genie 4 lets you step inside dynamic worlds in real time, steer scenes on the fly with natural language, and wat…",
+   "about": "Google DeepMind 官方频道：Gemini、科学 AI 和研究进展。",
+   "tab": "appearances",
+   "tags": [
+    "前沿实验室"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:XWYMvOFMacA",
+   "url": "https://www.youtube.com/watch?v=XWYMvOFMacA",
+   "title": "AI in the UK: Drug Discovery, Robotics and AI Factories | NVIDIA",
+   "channel": "NVIDIA",
+   "published": "2026-10-27",
+   "summary": "From drug discovery to robotics, voice, and video, the UK’s developers, researchers, and companies are advancing AI with NVIDIA accelerated computing. We celebrate their work—and the new AI factories being built to power…",
+   "about": "NVIDIA 官方频道：AI 算力、主题演讲和物理 AI。",
+   "tab": "appearances",
+   "tags": [
+    "算力"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:rFp864_Xb2A",
+   "url": "https://www.youtube.com/watch?v=rFp864_Xb2A",
+   "title": "Automate Asset Vulnerability Audits with QwenWork: Spot Risks & Generate Briefs in Minutes!",
+   "channel": "Alibaba Cloud",
+   "published": "2026-10-27",
+   "summary": "Most teams keep their asset inventory in a spreadsheet, while vulnerability data sits scattered across CVE records, vendor advisories, and GitHub advisories. Manual cross-checking never sticks — audits get skipped until …",
+   "about": "阿里云官方频道：通义千问（Qwen）和云上 AI；也是奥运会的 AI 合作方。",
+   "tab": "appearances",
+   "tags": [
+    "中国 AI"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:WFxISJI8Im0",
+   "url": "https://www.youtube.com/watch?v=WFxISJI8Im0",
+   "title": "Qwen-Image-2.1 Pro and Turbo APIs went live on Alibaba Cloud Model Studio.",
+   "channel": "Alibaba Cloud",
+   "published": "2026-10-27",
+   "summary": "Qwen-Image-2.1 Pro and Turbo APIs went live on Alibaba Cloud Model Studio. 1. One 7B model generates and edits. 2. Native transparency: real RGBA output, no separate cutout step. 3. Up to 10 reference images in one pass,…",
+   "about": "阿里云官方频道：通义千问（Qwen）和云上 AI；也是奥运会的 AI 合作方。",
+   "tab": "appearances",
+   "tags": [
+    "中国 AI"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:MRQTlwcW-aQ",
+   "url": "https://www.youtube.com/watch?v=MRQTlwcW-aQ",
+   "title": "How Anthropic ships the #1 LLM in the World — with Katelyn Lesse and Angela Jiang",
+   "channel": "Latent Space",
+   "published": "2026-10-27",
+   "summary": "An agent’s sandbox can die without taking the whole agent with it. That’s the idea behind “the brain and the hands,” Anthropic’s architecture for Claude Managed Agents. Now that the dust has settled on Opus 5.5, it is un…",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:dmbT2IHpOKU",
+   "url": "https://www.youtube.com/watch?v=dmbT2IHpOKU",
+   "title": "AI in France: From NVIDIA’s First Chip to AI Factories | NVIDIA",
+   "channel": "NVIDIA",
+   "published": "2026-10-26",
+   "summary": "France helped bring NVIDIA’s first chip to life. More than 30 years later, its developers, researchers, and companies are using NVIDIA accelerated computing to advance industrial design, healthcare, and open AI models—an…",
+   "about": "NVIDIA 官方频道：AI 算力、主题演讲和物理 AI。",
+   "tab": "appearances",
+   "tags": [
+    "算力"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:ouNWfNvqlDg",
+   "url": "https://www.youtube.com/watch?v=ouNWfNvqlDg",
+   "title": "How Audi is Reimagining Production With Digital Twins and Physical AI",
+   "channel": "NVIDIA",
+   "published": "2026-10-26",
+   "summary": "Audi teams are reimaginging production with digital twins and physical AI. See how production teams will build digital twins in DELMIA using LEO, a Dassault Systemes’ virtual companion and foundational knowledge from the…",
+   "about": "NVIDIA 官方频道：AI 算力、主题演讲和物理 AI。",
+   "tab": "appearances",
+   "tags": [
+    "算力"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:GSyETbGUp_M",
+   "url": "https://www.youtube.com/watch?v=GSyETbGUp_M",
+   "title": "Cut Your LLM Bill: Context Caching Explained",
+   "channel": "Alibaba Cloud",
+   "published": "2026-10-26",
+   "summary": "Most teams don't have an LLM cost problem — they have a repeated-token problem. If you're paying full price for the same system prompts, reference docs, and instructions on every single API call, this session is for you.…",
+   "about": "阿里云官方频道：通义千问（Qwen）和云上 AI；也是奥运会的 AI 合作方。",
+   "tab": "appearances",
+   "tags": [
+    "中国 AI"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:ZAzWPE9CItg",
+   "url": "https://www.youtube.com/watch?v=ZAzWPE9CItg",
+   "title": "AI Crisis in Math: Navier-Stokes, Riemann Hypothesis & Complexity Theory | Lex Fridman Podcast #503",
+   "channel": "Lex Fridman",
+   "published": "2026-10-26",
+   "summary": "Ankur Moitra, Steven Brunton and Alex Kontorovich are three mathematicians who can speak to this incredible moment in the history of mathematics, when AI solved some of its hardest problems: Navier-Stokes, the quasi-Riem…",
+   "about": "Lex Fridman 的长访谈播客，嘉宾覆盖 AI、科技与科学。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:vhPCo-8K78U",
+   "url": "https://www.youtube.com/watch?v=vhPCo-8K78U",
+   "title": "What 90,000 Rollouts Reveal About AI Agents Doing Science - Ian Quigley, Leash Bio",
+   "channel": "Latent Space",
+   "published": "2026-10-26",
+   "summary": "Leash Biosciences built a platform to physically measure thousands of proteins against millions of molecules. In this followup to our Leash Bio podcast with cofounder Ian Quigley, he returns to discuss the release of Min…",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:iJfF_VC10tI",
+   "url": "https://www.youtube.com/watch?v=iJfF_VC10tI",
+   "title": "Top UCSF Doctor: AI is Coming for Every Medical Specialty",
+   "channel": "Silicon Valley Girl",
+   "published": "2026-10-23",
+   "summary": "He has practiced medicine for 40 years, and he still takes shifts in the hospital. I asked him what I actually want to know as a patient and a mom. I put 6 years of my labs and my 23andMe data into one AI setup. Is that …",
+   "about": "Marina Mogilko（Silicon Valley Girl）采访 AI 从业者和研究者，话题偏职业与日常使用。",
+   "tab": "appearances",
+   "tags": [
+    "关注频道"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:6VprwfSc4Xk",
+   "url": "https://www.youtube.com/watch?v=6VprwfSc4Xk",
+   "title": "Democratizing Security for the Agentic Web with Cloudflare CTO Dane Knecht",
+   "channel": "No Priors",
+   "published": "2026-10-23",
+   "summary": "In the transition to the agentic web, security has become an afterthought. Now, organizations are racing to figure out what AI security means, and how to keep their data safe. Live from Cloudflare Connect, Sarah Guo sits…",
+   "about": "No Priors：投资人 Sarah Guo 与 Elad Gil 访谈 AI 创业者和研究者。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:PST8yesYOSo",
+   "url": "https://www.youtube.com/watch?v=PST8yesYOSo",
+   "title": "The New Apex Predator: CrowdStrike CEO George Kurtz on Adversaries Armed With AI Agents",
+   "channel": "No Priors",
+   "published": "2026-10-22",
+   "summary": "Adversaries are already running AI agents, and the fastest attacks now play out in seconds. Sarah Guo and Elad Gil sit down with CrowdStrike president and CEO George Kurtz on what AI-equipped attackers mean for enterpris…",
+   "about": "No Priors：投资人 Sarah Guo 与 Elad Gil 访谈 AI 创业者和研究者。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:vhKLKoKhI0s",
+   "url": "https://www.youtube.com/watch?v=vhKLKoKhI0s",
+   "title": "155. 和科沃斯钱程聊，父与子、企二代接班的样本与肌理、机器人，和我内心的追寻",
+   "channel": "张小珺 Podcast",
+   "published": "2026-10-21",
+   "summary": "今天我们的嘉宾是科沃斯CEO钱程（David）。 他出生于1990年，曾是中国最年轻A股上市公司CEO，也是一名企二代、创二代。我很好奇的是，当一代中国企业开始从创业进入传承，真正在经历这个过程的当事人，他所面临的现实与所思所想？ 钱程有一种不符合自己年龄的云淡风轻，非常在意经营。他最喜爱的食物是燕麦碗；朋友圈头像是自己家的狗， 特意把狗眼睛颜色换成会发光的红色，是为了提醒自己要更具有狼性。 从我们的谈话中，你能看到创二代和创一代不同的…",
+   "about": "张小珺长期深度访谈中国与硅谷的 AI、机器人和科技创业者。",
+   "tab": "appearances",
+   "tags": [
+    "关注频道"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:D-SVFneJ_Nk",
+   "url": "https://www.youtube.com/watch?v=D-SVFneJ_Nk",
+   "title": "Claude Engineering Lead: \"Stop Using Claude Like It’s 2024\"",
+   "channel": "Silicon Valley Girl",
+   "published": "2026-10-20",
+   "summary": "Felix Rieseberg has led engineering for Claude.ai, Cowork, and Claude Code Desktop at Anthropic. He thinks many of us are still giving AI tasks it has already outgrown. If you’re only asking Claude to summarize emails, w…",
+   "about": "Marina Mogilko（Silicon Valley Girl）采访 AI 从业者和研究者，话题偏职业与日常使用。",
+   "tab": "appearances",
+   "tags": [
+    "关注频道"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:81j1sV32Wng",
+   "url": "https://www.youtube.com/watch?v=81j1sV32Wng",
+   "title": "SaaS Moats in the AI Era: Sell the Outcome, Not the Tool",
+   "channel": "MicroConf",
+   "published": "2026-10-19",
+   "summary": "If anyone can copy your features in hours, where does defensibility come from? Einar's answer in the SaaS moats in the AI era is to move into labor budgets and build a product that learns. Most SaaS is a tool a business …",
+   "about": "MicroConf：面向自筹资金 SaaS 创业者的大会与频道。",
+   "tab": "appearances",
+   "tags": [
+    "SaaS"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:V0IB8iMzrLQ",
+   "url": "https://www.youtube.com/watch?v=V0IB8iMzrLQ",
+   "title": "154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明",
+   "channel": "张小珺 Podcast",
+   "published": "2026-10-15",
+   "summary": "今天我们的嘉宾是一位美国连续创业者，Dyna Robotics创始人兼CEO Lindon Gao。此前，他做过两段生意，一次完整的创业。Dyna可以说是他的第四次创业了。 在硅谷，Dyna和之前来过我们节目的Pi（Physical Intelligence）的纯大脑研究路线非常不一样。相比从通用智能出发、探索机器人大脑的研究路径，Dyna选择了一条“Product-research”的道路：以具体的工作流为最小单元，从真实任务出发，反…",
+   "about": "张小珺长期深度访谈中国与硅谷的 AI、机器人和科技创业者。",
+   "tab": "appearances",
+   "tags": [
+    "关注频道"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:AwuTTOJGEi0",
+   "url": "https://www.youtube.com/watch?v=AwuTTOJGEi0",
+   "title": "The Changing Physics of Cybersecurity and Drug Development with OpenAI President Greg Brockman",
+   "channel": "No Priors",
+   "published": "2026-10-15",
+   "summary": "Technology has always been the fundamental driver of improvement for human quality of life. And with the recent rollout of advanced frontier models, like OpenAI’s GPT-6, humanity can now massively accelerate scientific d…",
+   "about": "No Priors：投资人 Sarah Guo 与 Elad Gil 访谈 AI 创业者和研究者。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:7zF2mN9EPxU",
+   "url": "https://www.youtube.com/watch?v=7zF2mN9EPxU",
+   "title": "AL Interview: Leon Johnson, Omnilex - AI-Native, New Model Law Firm",
+   "channel": "Artificial Lawyer",
+   "published": "2026-10-14",
+   "summary": "AL Interview: Leon Johnson, Omnilex - AI-Native, New Model Law Firm We explore why the 'new model' for law firms in the AI era has attracted him and what Omnilex will do in terms of work. via Artificial Lawyer",
+   "about": "Artificial Lawyer：法律科技媒体，访谈法律 AI 公司和律所。",
+   "tab": "appearances",
+   "tags": [
+    "法律 AI"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:Jijc0XokSpQ",
+   "url": "https://www.youtube.com/watch?v=Jijc0XokSpQ",
+   "title": "Top Google Exec: AI Moves Fast, Jobs Move Slow. Use the Gap",
+   "channel": "Silicon Valley Girl",
+   "published": "2026-10-13",
+   "summary": "James Manyika runs research and labs at Google, and his team recently studied millions of real Gemini conversations to see how people use AI at work. In a typical job, it's only about a fifth of the tasks. I asked him wh…",
+   "about": "Marina Mogilko（Silicon Valley Girl）采访 AI 从业者和研究者，话题偏职业与日常使用。",
+   "tab": "appearances",
+   "tags": [
+    "关注频道"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:LVEfFyijQ2c",
+   "url": "https://www.youtube.com/watch?v=LVEfFyijQ2c",
+   "title": "Applying Gemini 4 for large-scale codebase maintenance in Chromium",
+   "channel": "Google DeepMind",
+   "published": "2026-10-13",
+   "summary": "The Chromium codebase is millions of lines long and decades old. In the past, working with it has meant navigating decades of tangled features, where touching one component can unexpectedly affect another. Erik Chen, an …",
+   "about": "Google DeepMind 官方频道：Gemini、科学 AI 和研究进展。",
+   "tab": "appearances",
+   "tags": [
+    "前沿实验室"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:ftkic7Tdpcg",
+   "url": "https://www.youtube.com/watch?v=ftkic7Tdpcg",
+   "title": "Using Gemini 4 Argon to protect against Cyber attackers",
+   "channel": "Google DeepMind",
+   "published": "2026-10-13",
+   "summary": "In shadow A/B testing on real-world systems, Wiz security researchers put Gemini 4 Argon to the test against complex cyber threats. Using its advanced reasoning and long-horizon capabilities, Gemini 4 Argon found over tw…",
+   "about": "Google DeepMind 官方频道：Gemini、科学 AI 和研究进展。",
+   "tab": "appearances",
+   "tags": [
+    "前沿实验室"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:9PICEmtfpWU",
+   "url": "https://www.youtube.com/watch?v=9PICEmtfpWU",
+   "title": "Teaching a humanoid robot to play cornhole with Gemini 4 Argon",
+   "channel": "Google DeepMind",
+   "published": "2026-10-13",
+   "summary": "In an internal test, Google DeepMind robotics researchers instructed Gemini 4 Argon to watch a video of a human playing cornhole. Using its video understanding and advanced reasoning capabilities, Gemini 4 built a virtua…",
+   "about": "Google DeepMind 官方频道：Gemini、科学 AI 和研究进展。",
+   "tab": "appearances",
+   "tags": [
+    "前沿实验室"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:9jQA7IgPhBE",
+   "url": "https://www.youtube.com/watch?v=9jQA7IgPhBE",
+   "title": "Untangling 500-page chemistry patents with Gemini 4",
+   "channel": "Google DeepMind",
+   "published": "2026-10-13",
+   "summary": "Auditing chemistry literature usually means weeks of manual, error-prone reading, where a molecule’s structure can sit 50 pages away from its experimental readout. At Isomorphic Labs, researchers Brian Bender and Santosh…",
+   "about": "Google DeepMind 官方频道：Gemini、科学 AI 和研究进展。",
+   "tab": "appearances",
+   "tags": [
+    "前沿实验室"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:PDH_2bny9mU",
+   "url": "https://www.youtube.com/watch?v=PDH_2bny9mU",
+   "title": "AL TV Product Walk Through: Steno - Litigation Genius",
+   "channel": "Artificial Lawyer",
+   "published": "2026-10-13",
+   "summary": "AL TV Product Walk Through: Steno - Litigation Genius Steno, the AI-enabled court reporting and litigation support company, has launched the open beta of Litigation Genius – see AL TV Product Walk Through below. It can d…",
+   "about": "Artificial Lawyer：法律科技媒体，访谈法律 AI 公司和律所。",
+   "tab": "appearances",
+   "tags": [
+    "法律 AI"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:T4g7imgw5PI",
+   "url": "https://www.youtube.com/watch?v=T4g7imgw5PI",
+   "title": "AL TV Interview: Legatics + Harvey Connectors - with Anthony Seale, CEO",
+   "channel": "Artificial Lawyer",
+   "published": "2026-10-13",
+   "summary": "AL TV Interview: Legatics + Harvey Connectors - with Anthony Seale, CEO",
+   "about": "Artificial Lawyer：法律科技媒体，访谈法律 AI 公司和律所。",
+   "tab": "appearances",
+   "tags": [
+    "法律 AI"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  },
+  {
+   "key": "youtube:fJtpYWidccc",
+   "url": "https://www.youtube.com/watch?v=fJtpYWidccc",
+   "title": "AL TV: AI Decision Systems, eDiscovery + Litigaze",
+   "channel": "Artificial Lawyer",
+   "published": "2026-10-13",
+   "summary": "AL TV Interview + Product Demo: AI Decision Systems + eDiscovery, with Len Hickey, Litigaze. Decision systems, such as Jev, as well as the recently launched OpenAI Decisions API, herald a new, but also curiously déjà vu,…",
+   "about": "Artificial Lawyer：法律科技媒体，访谈法律 AI 公司和律所。",
+   "tab": "appearances",
+   "tags": [
+    "法律 AI"
+   ],
+   "found": "2026-11-01",
+   "minutes": null
+  }
+ ],
+ "videos": {}
+}

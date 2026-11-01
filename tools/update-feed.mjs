@@ -21,9 +21,10 @@ const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY || '';
 const xiaojunAbout = '张小珺长期深度访谈中国与硅谷的 AI、机器人和科技创业者。';
 // match: the title must match (null keeps every long video). talksOnly: the title must also read like a talk.
 // onlyCjk: skips the channel's separate English uploads of the same episodes.
+// followKey: polled only while that channel is in the followed list on the page (menu → 添加视频 / 频道), so it can be unfollowed there.
 const SOURCES = [
-  { channel: 'UC3Sv1JuKpbOx3csUO8FAo5g', name: '张小珺 Podcast', match: null, onlyCjk: true, tags: ['关注频道'], about: xiaojunAbout },
-  { channel: 'UCiq1FIgtEK7LRAOB1JXTPig', name: 'Silicon Valley Girl', match: AI, tags: ['关注频道'], about: 'Marina Mogilko（Silicon Valley Girl）采访 AI 从业者和研究者，话题偏职业与日常使用。' },
+  { channel: 'UC3Sv1JuKpbOx3csUO8FAo5g', name: '张小珺 Podcast', match: null, onlyCjk: true, followKey: 'channel:@xiaojunpodcast', tags: ['关注频道'], about: xiaojunAbout },
+  { channel: 'UCiq1FIgtEK7LRAOB1JXTPig', name: 'Silicon Valley Girl', match: AI, followKey: 'channel:@siliconvalleygirl', tags: ['关注频道'], about: 'Marina Mogilko（Silicon Valley Girl）采访 AI 从业者和研究者，话题偏职业与日常使用。' },
   { channel: 'UCXZCJLdBC09xxGZ6gcdrc6A', name: 'OpenAI', match: null, talksOnly: true, tags: ['前沿实验室'], about: 'OpenAI 官方频道：模型发布、产品演示和研究分享。' },
   { channel: 'UCrDwWp7EBBv4NwvScIpBDOA', name: 'Anthropic', match: null, talksOnly: true, tags: ['前沿实验室'], about: 'Anthropic 官方频道：Claude 模型、研究和安全相关内容。' },
   { channel: 'UCP7jMXSY2xbc3KCAE0MHQ-A', name: 'Google DeepMind', match: null, talksOnly: true, tags: ['前沿实验室'], about: 'Google DeepMind 官方频道：Gemini、科学 AI 和研究进展。' },
@@ -183,7 +184,8 @@ const followedRows = addedRows ? addedRows.filter(row => row.key.startsWith('cha
 const userSources = [];
 for (const row of followedRows) {
   const known = previous.channels?.[row.key];
-  let info = known?.id ? known : null;
+  const builtIn = SOURCES.find(source => source.followKey === row.key);
+  let info = builtIn ? { id: builtIn.channel } : known?.id ? known : null;
   if (!info) {
     try { info = await resolveChannel(row); } catch (error) { report.push(`channel ${row.key}: not resolved yet (${error.message})`); }
   }
@@ -192,7 +194,8 @@ for (const row of followedRows) {
     userSources.push({ channel: channels[row.key].id, name: known?.name || '', match: null, tags: ['你关注的频道'], about: known?.name ? `你手动关注的频道：${known.name}。` : '', key: row.key });
   }
 }
-const allSources = [...SOURCES, ...userSources];
+const followedKeys = new Set(followedRows.map(row => row.key));
+const allSources = [...SOURCES.filter(source => !source.followKey || followedKeys.has(source.followKey)), ...userSources];
 
 const sourceFor = item => allSources.find(source => source.channel === item.channelId || (!source.key && source.name === item.channel));
 // Earlier items stay only while they still pass the current rules (and their channel is still followed).
@@ -204,7 +207,8 @@ for (const source of allSources) {
   try {
     const found = (await pollSource(source)).filter(item => !items.has(item.key)).slice(0, MAX_PER_SOURCE);
     found.forEach(item => items.set(item.key, item));
-    if (source.key) channels[source.key].name = source.name;
+    const followKey = source.key || source.followKey;
+    if (followKey) channels[followKey].name = source.name;
     report.push(`${source.name}: ${found.length} new`);
   } catch (error) {
     report.push(`${source.name || source.channel}: FAILED ${error.message}`);

@@ -2066,6 +2066,8 @@
       const toast = document.getElementById('toast');
       let noteDraft = null;
       let toastTimer = 0;
+      // Tapping the toast (outside its link) closes it; error messages stay until then, so they can be read in full.
+      toast.addEventListener('click', event => { if (!event.target.closest('a')) toast.hidden = true; });
 
       const readNoteKey = () => { try { return localStorage.getItem(NOTE_KEY_STORAGE) || ''; } catch { return ''; } };
       const writeNoteKey = value => { try { value ? localStorage.setItem(NOTE_KEY_STORAGE, value) : localStorage.removeItem(NOTE_KEY_STORAGE); } catch { /* Private mode: asked again next time. */ } };
@@ -2159,7 +2161,7 @@
             ...(result.notionUrl ? [{ text: '打开', url: result.notionUrl }] : [])
           ], 9000);
         } catch (error) {
-          showToast([`没存成功：${error.message}`], 9000);
+          showToast([`没存成功：${error.message}（点一下关闭）`], 0);
         }
       });
       document.getElementById('note-close').addEventListener('click', closeNote);

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T15:33:54.104Z",
+ "updated": "2026-11-01T15:36:53.525Z",
  "items": [
   {
    "key": "youtube:KM3VQZKjpiY",
@@ -47,36 +47,6 @@
    "minutes": null
   },
   {
-   "key": "youtube:o4D1J1YWjhg",
-   "url": "https://www.youtube.com/watch?v=o4D1J1YWjhg",
-   "title": "There are many futures. Which do you want to build?",
-   "channel": "OpenAI",
-   "published": "2026-10-30",
-   "summary": "",
-   "about": "OpenAI 官方频道：模型发布、产品演示和研究分享。",
-   "tab": "appearances",
-   "tags": [
-    "前沿实验室"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
-   "key": "youtube:Oi9DHk57KeQ",
-   "url": "https://www.youtube.com/watch?v=Oi9DHk57KeQ",
-   "title": "How Gen uses ChatGPT Work to turn data Into decisions | OpenAI",
-   "channel": "OpenAI",
-   "published": "2026-10-30",
-   "summary": "“Before ChatGPT Work, we were walking. Now with ChatGPT Work, we are running.” For Gen's Howie Xu, that means understanding how a new product’s onboarding experience is working within two or three hours of release. Findi…",
-   "about": "OpenAI 官方频道：模型发布、产品演示和研究分享。",
-   "tab": "appearances",
-   "tags": [
-    "前沿实验室"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
    "key": "youtube:PFIWtV78_oU",
    "url": "https://www.youtube.com/watch?v=PFIWtV78_oU",
    "title": "Agentic Talks EP5: Introducing AgentCore: Build and Govern Agents for Real Work",
@@ -87,21 +57,6 @@
    "tab": "appearances",
    "tags": [
     "中国 AI"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
-   "key": "youtube:L6pzlo1QvoM",
-   "url": "https://www.youtube.com/watch?v=L6pzlo1QvoM",
-   "title": "ChatGPT Enterprise at Zendesk: Putting Company Data to Work",
-   "channel": "OpenAI",
-   "published": "2026-10-29",
-   "summary": "“We have about 600 applications that have been built by different people in the company.” At Zendesk, teams across sales, marketing, and operations are building applications for their own work. ChatGPT Enterprise is avai…",
-   "about": "OpenAI 官方频道：模型发布、产品演示和研究分享。",
-   "tab": "appearances",
-   "tags": [
-    "前沿实验室"
    ],
    "found": "2026-11-01",
    "minutes": null
@@ -122,21 +77,6 @@
    "minutes": null
   },
   {
-   "key": "youtube:ujmyzWSj8IU",
-   "url": "https://www.youtube.com/watch?v=ujmyzWSj8IU",
-   "title": "API credits, now in ChatGPT Pro and Business plans",
-   "channel": "OpenAI",
-   "published": "2026-10-28",
-   "summary": "Credit amounts depend on the plan. Pro plans get $100, $200 or $500 per month by tier. Business plans get $20 per paid Standard seat or $100 per paid Premium seat, pooled up to $500 per workspace.",
-   "about": "OpenAI 官方频道：模型发布、产品演示和研究分享。",
-   "tab": "appearances",
-   "tags": [
-    "前沿实验室"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
    "key": "youtube:6ep8Vvm4Bdw",
    "url": "https://www.youtube.com/watch?v=6ep8Vvm4Bdw",
    "title": "Why Merge CEO Shensi Ding stays hands-on with Codex",
@@ -147,21 +87,6 @@
    "tab": "appearances",
    "tags": [
     "前沿实验室"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
-   "key": "youtube:QqeKRvAkIc8",
-   "url": "https://www.youtube.com/watch?v=QqeKRvAkIc8",
-   "title": "How AI Is Advancing Human Health",
-   "channel": "NVIDIA",
-   "published": "2026-10-28",
-   "summary": "In her special address at NVIDIA GTC Berlin, Kimberly Powell, Vice President of Healthcare and Life Sciences at NVIDIA, explored how digital health agents are reaching national scale, how AI factories are speeding up dru…",
-   "about": "NVIDIA 官方频道：AI 算力、主题演讲和物理 AI。",
-   "tab": "appearances",
-   "tags": [
-    "算力"
    ],
    "found": "2026-11-01",
    "minutes": null
@@ -182,64 +107,20 @@
    "minutes": null
   },
   {
-   "key": "youtube:sFfPkUJd_Jk",
-   "url": "https://www.youtube.com/watch?v=sFfPkUJd_Jk",
-   "title": "Genie 4: A new generation of world simulation",
-   "channel": "Google DeepMind",
-   "published": "2026-10-27",
-   "summary": "Meet Genie 4, Google DeepMind’s most realistic and interactive world model yet. Built on our Gemini models, Genie 4 lets you step inside dynamic worlds in real time, steer scenes on the fly with natural language, and wat…",
-   "about": "Google DeepMind 官方频道：Gemini、科学 AI 和研究进展。",
+   "key": "youtube:UOfmD1fY-i8",
+   "url": "https://www.youtube.com/watch?v=UOfmD1fY-i8",
+   "title": "Building the future of legal work with AI | Legora CEO Max Junestrand",
+   "channel": "OpenAI",
+   "channelId": "UCXZCJLdBC09xxGZ6gcdrc6A",
+   "published": "2026-10-28",
+   "summary": "Legora co-founder and CEO Max Junestrand wants to make legal expertise available wherever it’s needed. He shares how OpenAI helped turn that ambition into a platform, why staying AI-native matters as the company grows, a…",
+   "about": "OpenAI 官方频道：模型发布、产品演示和研究分享。",
    "tab": "appearances",
    "tags": [
     "前沿实验室"
    ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
-   "key": "youtube:XWYMvOFMacA",
-   "url": "https://www.youtube.com/watch?v=XWYMvOFMacA",
-   "title": "AI in the UK: Drug Discovery, Robotics and AI Factories | NVIDIA",
-   "channel": "NVIDIA",
-   "published": "2026-10-27",
-   "summary": "From drug discovery to robotics, voice, and video, the UK’s developers, researchers, and companies are advancing AI with NVIDIA accelerated computing. We celebrate their work—and the new AI factories being built to power…",
-   "about": "NVIDIA 官方频道：AI 算力、主题演讲和物理 AI。",
-   "tab": "appearances",
-   "tags": [
-    "算力"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
-   "key": "youtube:rFp864_Xb2A",
-   "url": "https://www.youtube.com/watch?v=rFp864_Xb2A",
-   "title": "Automate Asset Vulnerability Audits with QwenWork: Spot Risks & Generate Briefs in Minutes!",
-   "channel": "Alibaba Cloud",
-   "published": "2026-10-27",
-   "summary": "Most teams keep their asset inventory in a spreadsheet, while vulnerability data sits scattered across CVE records, vendor advisories, and GitHub advisories. Manual cross-checking never sticks — audits get skipped until …",
-   "about": "阿里云官方频道：通义千问（Qwen）和云上 AI；也是奥运会的 AI 合作方。",
-   "tab": "appearances",
-   "tags": [
-    "中国 AI"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
-   "key": "youtube:WFxISJI8Im0",
-   "url": "https://www.youtube.com/watch?v=WFxISJI8Im0",
-   "title": "Qwen-Image-2.1 Pro and Turbo APIs went live on Alibaba Cloud Model Studio.",
-   "channel": "Alibaba Cloud",
-   "published": "2026-10-27",
-   "summary": "Qwen-Image-2.1 Pro and Turbo APIs went live on Alibaba Cloud Model Studio. 1. One 7B model generates and edits. 2. Native transparency: real RGBA output, no separate cutout step. 3. Up to 10 reference images in one pass,…",
-   "about": "阿里云官方频道：通义千问（Qwen）和云上 AI；也是奥运会的 AI 合作方。",
-   "tab": "appearances",
-   "tags": [
-    "中国 AI"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
+   "minutes": null,
+   "found": "2026-11-01"
   },
   {
    "key": "youtube:MRQTlwcW-aQ",
@@ -252,51 +133,6 @@
    "tab": "appearances",
    "tags": [
     "Podcast"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
-   "key": "youtube:dmbT2IHpOKU",
-   "url": "https://www.youtube.com/watch?v=dmbT2IHpOKU",
-   "title": "AI in France: From NVIDIA’s First Chip to AI Factories | NVIDIA",
-   "channel": "NVIDIA",
-   "published": "2026-10-26",
-   "summary": "France helped bring NVIDIA’s first chip to life. More than 30 years later, its developers, researchers, and companies are using NVIDIA accelerated computing to advance industrial design, healthcare, and open AI models—an…",
-   "about": "NVIDIA 官方频道：AI 算力、主题演讲和物理 AI。",
-   "tab": "appearances",
-   "tags": [
-    "算力"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
-   "key": "youtube:ouNWfNvqlDg",
-   "url": "https://www.youtube.com/watch?v=ouNWfNvqlDg",
-   "title": "How Audi is Reimagining Production With Digital Twins and Physical AI",
-   "channel": "NVIDIA",
-   "published": "2026-10-26",
-   "summary": "Audi teams are reimaginging production with digital twins and physical AI. See how production teams will build digital twins in DELMIA using LEO, a Dassault Systemes’ virtual companion and foundational knowledge from the…",
-   "about": "NVIDIA 官方频道：AI 算力、主题演讲和物理 AI。",
-   "tab": "appearances",
-   "tags": [
-    "算力"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
-   "key": "youtube:GSyETbGUp_M",
-   "url": "https://www.youtube.com/watch?v=GSyETbGUp_M",
-   "title": "Cut Your LLM Bill: Context Caching Explained",
-   "channel": "Alibaba Cloud",
-   "published": "2026-10-26",
-   "summary": "Most teams don't have an LLM cost problem — they have a repeated-token problem. If you're paying full price for the same system prompts, reference docs, and instructions on every single API call, this session is for you.…",
-   "about": "阿里云官方频道：通义千问（Qwen）和云上 AI；也是奥运会的 AI 合作方。",
-   "tab": "appearances",
-   "tags": [
-    "中国 AI"
    ],
    "found": "2026-11-01",
    "minutes": null
@@ -377,6 +213,38 @@
    "minutes": null
   },
   {
+   "key": "youtube:IiZ9yd2Do8I",
+   "url": "https://www.youtube.com/watch?v=IiZ9yd2Do8I",
+   "title": "Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal",
+   "channel": "Latent Space",
+   "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+   "published": "2026-10-22",
+   "summary": "AI workloads don’t run in neat, three-year rectangles. But much of the GPU market still sells capacity that way. Modal CEO Erik Bernhardsson joins Latent Space to explain how Modal pools compute, scales AI workloads and …",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "minutes": null,
+   "found": "2026-11-01"
+  },
+  {
+   "key": "youtube:DWHyPWnzGAI",
+   "url": "https://www.youtube.com/watch?v=DWHyPWnzGAI",
+   "title": "The Recommendation Engine for Commodity Traders — Anekha Sokhal, Moshi",
+   "channel": "Latent Space",
+   "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+   "published": "2026-10-22",
+   "summary": "What would you get if Bloomberg, Claude, and Netflix had a baby? Moshi founder and CEO Anekha Sokhal joins swyx at AI Engineer NYC to discuss building AI tools for traders: connecting market data, handling conflicting so…",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "minutes": null,
+   "found": "2026-11-01"
+  },
+  {
    "key": "youtube:vhKLKoKhI0s",
    "url": "https://www.youtube.com/watch?v=vhKLKoKhI0s",
    "title": "155. 和科沃斯钱程聊，父与子、企二代接班的样本与肌理、机器人，和我内心的追寻",
@@ -390,6 +258,22 @@
    ],
    "found": "2026-11-01",
    "minutes": null
+  },
+  {
+   "key": "youtube:Vki6cklFqxo",
+   "url": "https://www.youtube.com/watch?v=Vki6cklFqxo",
+   "title": "AI in NYC: How Tenex Builds an AI-Native Engineering Team — Alex Lieberman & CJ Hess",
+   "channel": "Latent Space",
+   "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+   "published": "2026-10-21",
+   "summary": "How do you organize an engineering team when AI agents can do more of the implementation? Alex Lieberman and CJ Hess of Tenex join swyx at AI Engineer New York to discuss paying for outcomes, the MetaHarness process, ent…",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "minutes": null,
+   "found": "2026-11-01"
   },
   {
    "key": "youtube:D-SVFneJ_Nk",
@@ -407,6 +291,22 @@
    "minutes": null
   },
   {
+   "key": "youtube:EAtLq9_vrE0",
+   "url": "https://www.youtube.com/watch?v=EAtLq9_vrE0",
+   "title": "The Programmable Data Center — Evan Conrad, SF Compute",
+   "channel": "Latent Space",
+   "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+   "published": "2026-10-20",
+   "summary": "GPU compute is bought and sold like a commodity, but delivering it is a lot messier than trading a contract. Evan Conrad of SF Compute joins swyx at AI Engineer New York to explain the market they’re building—and why he …",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "minutes": null,
+   "found": "2026-11-01"
+  },
+  {
    "key": "youtube:81j1sV32Wng",
    "url": "https://www.youtube.com/watch?v=81j1sV32Wng",
    "title": "SaaS Moats in the AI Era: Sell the Outcome, Not the Tool",
@@ -420,6 +320,22 @@
    ],
    "found": "2026-11-01",
    "minutes": null
+  },
+  {
+   "key": "youtube:ZOH8Q401vt0",
+   "url": "https://www.youtube.com/watch?v=ZOH8Q401vt0",
+   "title": "High Taste Testers: OpenAI Shipped Everything. What Actually Works?",
+   "channel": "Latent Space",
+   "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+   "published": "2026-10-16",
+   "summary": "Six AI power users compare what actually works—and what falls apart once you start using it. Ben Davis, Ben Hylak, Dex Horthy, Allison Durham, Alex Volkov, and swyx discuss OpenAI DevDay, coding agents, personal assistan…",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "minutes": null,
+   "found": "2026-11-01"
   },
   {
    "key": "youtube:V0IB8iMzrLQ",
@@ -477,66 +393,6 @@
    "tab": "appearances",
    "tags": [
     "关注频道"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
-   "key": "youtube:LVEfFyijQ2c",
-   "url": "https://www.youtube.com/watch?v=LVEfFyijQ2c",
-   "title": "Applying Gemini 4 for large-scale codebase maintenance in Chromium",
-   "channel": "Google DeepMind",
-   "published": "2026-10-13",
-   "summary": "The Chromium codebase is millions of lines long and decades old. In the past, working with it has meant navigating decades of tangled features, where touching one component can unexpectedly affect another. Erik Chen, an …",
-   "about": "Google DeepMind 官方频道：Gemini、科学 AI 和研究进展。",
-   "tab": "appearances",
-   "tags": [
-    "前沿实验室"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
-   "key": "youtube:ftkic7Tdpcg",
-   "url": "https://www.youtube.com/watch?v=ftkic7Tdpcg",
-   "title": "Using Gemini 4 Argon to protect against Cyber attackers",
-   "channel": "Google DeepMind",
-   "published": "2026-10-13",
-   "summary": "In shadow A/B testing on real-world systems, Wiz security researchers put Gemini 4 Argon to the test against complex cyber threats. Using its advanced reasoning and long-horizon capabilities, Gemini 4 Argon found over tw…",
-   "about": "Google DeepMind 官方频道：Gemini、科学 AI 和研究进展。",
-   "tab": "appearances",
-   "tags": [
-    "前沿实验室"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
-   "key": "youtube:9PICEmtfpWU",
-   "url": "https://www.youtube.com/watch?v=9PICEmtfpWU",
-   "title": "Teaching a humanoid robot to play cornhole with Gemini 4 Argon",
-   "channel": "Google DeepMind",
-   "published": "2026-10-13",
-   "summary": "In an internal test, Google DeepMind robotics researchers instructed Gemini 4 Argon to watch a video of a human playing cornhole. Using its video understanding and advanced reasoning capabilities, Gemini 4 built a virtua…",
-   "about": "Google DeepMind 官方频道：Gemini、科学 AI 和研究进展。",
-   "tab": "appearances",
-   "tags": [
-    "前沿实验室"
-   ],
-   "found": "2026-11-01",
-   "minutes": null
-  },
-  {
-   "key": "youtube:9jQA7IgPhBE",
-   "url": "https://www.youtube.com/watch?v=9jQA7IgPhBE",
-   "title": "Untangling 500-page chemistry patents with Gemini 4",
-   "channel": "Google DeepMind",
-   "published": "2026-10-13",
-   "summary": "Auditing chemistry literature usually means weeks of manual, error-prone reading, where a molecule’s structure can sit 50 pages away from its experimental readout. At Isomorphic Labs, researchers Brian Bender and Santosh…",
-   "about": "Google DeepMind 官方频道：Gemini、科学 AI 和研究进展。",
-   "tab": "appearances",
-   "tags": [
-    "前沿实验室"
    ],
    "found": "2026-11-01",
    "minutes": null

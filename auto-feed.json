@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T16:18:38.959Z",
+ "updated": "2026-11-01T16:50:15.883Z",
  "items": [
   {
    "key": "youtube:KM3VQZKjpiY",
@@ -588,5 +588,3388 @@
    "name": "张小珺 Podcast",
    "count": 2
   }
- }
+ },
+ "news": [
+  {
+   "title": "DeepSeek unveils AI ‘super agent’ in coding race with OpenAI, Anthropic",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbFU5NlZJMVBaQ0txUnotazkwaWdmQzJwb3JvWUY4dTFHd2VERGZtdVJiMmxaTG9vR0pjZjFLOXZoZVRfRlFFZzM3dV81VVM3RDZLckQxZ01nc2ZFWGVvQlVoalk3X21iWDdBa29WcWNvblY1YVpGc3hPbDJCVVA3a2d2YVJDbFlZRUdkZ0NXTHplVTlEUGJ6RVBXTXZ1bWQ5eVRNNtIBpAFBVV95cUxQY3o3SXYteGFPRF9kQ3psaFZaTDJHMzhibnhoVE5LdjhGVUxkN2VBNnVuNHd2XzhodEpYLTRyMzhRcXNpWjY4SjBhMmdzek1oN0ZGRnh6RU5aWm12QUxYdDVvaktJUUU2UE1QVVdXUzhvdHFPZ0FrOHpOODJNQUlHYm5DSlI3aW8wS0dpMHFDWTNfNGpQeS0wYnU1TkIxbmtxVGRfSw?oc=5",
+   "source": "South China Morning Post",
+   "domain": "scmp.com",
+   "published": "2026-11-01",
+   "outlets": [
+    "South China Morning Post"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI",
+    "Anthropic",
+    "DeepSeek"
+   ]
+  },
+  {
+   "title": "Anthropic’s $2T IPO could create millionaires—but it’s asking candidates what they’d do if stock hit zero",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPSlBiVFRIMmt2WEVQTjRoQ21LTElPODlaUVNwWTJyUWxrNUw0amktMS12NDhEUGNYT2Q0bEE4S1lCd3ZNbFAzWEY1dDMyNjhObmJzRG51bndoNEt6ck80U1h5b0JHSF84MTAtMmJpR0dCSzRORWpLZU1EbUEyVzdiM2haTVFkelhTYXlKNU9ndEpmWXhkQS1kMXBRLUp6RDJ4LVpjVTJZYUdVY1NZd3NIYkFWN2M1RXZ5M09TY3JaRXlObURIY0VXV1lmNGJCWmFpeHdmOW52Y1d5c0ZIQ2VDY0l5Sng?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-11-01",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic's internal AI use is now worth more than employee pay, at the prices it charges customers",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPckZlQklSTUE5MnZLZDM2U1RWbGFtQzRmVU1mTTk5YUVLNEVta3FmZnM5OWIxUW9DN253ZlctTGk4RFEybHFGQU9hXzNSdkE5SGZRbjNKLUd6RE9OaEN6NWkzd2dpcnRDRjdGR01DN0JyQWVjcFhkaEs5UmlmNS1oZV9VSVhjbHk3d0M3aHVwa0lfODdOZFF4NnVHSTBRUy1EZlE?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-01",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "OpenAI Raises Less Than Half of $30 Billion Target in Latest Round",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTW9TMmVsZkc2b05TYkloVW41X050RjdtZ1F5U01TRnJOSEthYTJpcDdPWVhJb0FvRGEteHgtbVhSS0lOVEZ3T2N5MTNpSUNWNXpETThZR0RvcFQwY2Q5R3ctRUFvM1ZtdFdMaXhGSnpPM2FiLUhORXNrem84cUpfVGpuQ0VmaGNsZUlxUVQ0dk4zQUE2cWFzUk8yM1R3cjc3dEczVw?oc=5",
+   "source": "WSJ",
+   "domain": "wsj.com",
+   "published": "2026-11-01",
+   "outlets": [
+    "WSJ"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "Judge rejects xAI’s bid to dismiss NAACP lawsuit over its gas turbines",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSS1pOGFFTE5KRnZ6dzNlbDVqUUlrMVJ2TnZXckE1Y0RicldtNURRLTE4UHhWQlpONmEyUG5raDdxX0hwZlREU3hBWnRXR0VjLXpUdmNIOGFlY01nZmJwZzM1X2J3R202eVh3ODg0S201U3hndmJrbng0bVVuSVdqcFBmZHI4RDIxVVpr?oc=5",
+   "source": "The Next Web",
+   "domain": "thenextweb.com",
+   "published": "2026-11-01",
+   "outlets": [
+    "The Next Web"
+   ],
+   "themes": [],
+   "entities": [
+    "xAI"
+   ]
+  },
+  {
+   "title": "OpenAI slashes funding target by $10 billion amid tech rout, FT reports",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTWw3N0l5dm5KUi1FQmllTEpEeUdkY1k5TVlFNTlnWWFlbTgtdUJfZE9RMjZiQlJEVXU2VFo2blVaWk1MZzNYMm9OYmdrSngtSk02YnhKNDdVMVZkS3hIMHpWZ2dnRjJZWjBzQ0lFRU4ySFFUQzdTdnUzN3JETGtCYlo3Y3kxeGJseG5veVJMSVVCRDVPYzB3TXQyaFE?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-31",
+   "outlets": [
+    "Reuters",
+    "Financial Times"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "Google Joins OpenAI And Anthropic In Promising New Scraping Controls",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSDZQYjdOaVRyUmdwSW1OVHQ1UjFpN1Z6NmxQZHNRUElQODJpbHB1eVlRWWJkQndBMVAwczBJbGtqUU1YOWJrNnppWHFYLWJkcjBfODR6SFpiNFR1SWVIOFNMVGsxbzVjbTFYdFF3SjN6ZzkyT0tRNk5BcUkta1lFdkxSci0?oc=5",
+   "source": "Engadget",
+   "domain": "engadget.com",
+   "published": "2026-10-31",
+   "outlets": [
+    "Engadget"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI",
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization",
+   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQV0JjNVJDNmxJSXdsWk4ySjhKVDRmdkhPTlNBWlliM28tbG1JM055YkdpYUhQUHZHazFIYjJyWXd0LU54NU9FUEpPNGU4REFDLUJpQmx4QlRwWjdDaU1MeTZhUDQwdmdHQ1RvTVdJYnRlMko4WlUxNXJpR2tNZVQwWDFwdXBUMGQyaWF1dkNyUzQzNDctMWdQci1aWjkxb2JjdlFLenNBdHpmMDc3eEEzUWFYY05WZ1dPblhHXzJwcVlua19ic1RqVzFMUXN4UnRwYUgyaEppM3h2TVQ2MEFsMFRyZTZxWWpYZlRGbGJ0ZkhoV1lHd2JyN3hsMko?oc=5",
+   "source": "Tom's Hardware",
+   "domain": "tomshardware.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman",
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "Sam Altman says he has ‘empathy’ for mathematicians who are upset about AI",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQUJXUmlIdHhSSElOdjlZWVM3MEk3ZF9FQmc5dWhFYjBycGNqak14emNBelU4STJWdXlNb2FPZEVRSmJKa19TTDE0S0Z2YjRKOTdlN2hkRkFrcm9XcWxWV1p4azZSdkZvOWdCYXBxRHh4ZUptMW5nbW9OTHlHUHIyaWtLSmxPN3ZJ?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman"
+   ]
+  },
+  {
+   "title": "Hon Hai Chairman Says AI Demand Is Real After Meeting Sam Altman",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWE5jdWc5ZVRoeTA3TlJmN0FZTjNhZG9FU3d1S0hLRlVKcG1iaWNEYmdpcWRwUFFIVTk3NkpuZENzOUpRajUzaVdsM0RqM0RUb2k4a29qVWRGb1ctcTJSQzVSV3dOb1BsT0JiQmppbDdSYUN3VVhrN01nRHJMcHBFZHFqNWcyMnVZdDZUbGwzWm1MSXk0cFE1b21TXzd3clg5ZTVmVWVtZlAxSGxTZXJOenRRcnNYb0J6Wng4?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman"
+   ]
+  },
+  {
+   "title": "'He's let the AI loose.' - Ari Emanuel on Sam Altman",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQZkdOd1RqM0czZGhHWWNLeWwzX2hPemlyRFlWMGlOS3o0REFUd0toaFYxZmpFcGJIaEczYWNzNVlNOTNndGlDb3RPcUEtdlJuSHBxT0lNXzRIRWgzTWxLSG9rV3pWWGl2LS1ocGFGdjNsTEloWUdKaUhxbDVMQTEtbEt0cHVLdGlsM0NzR2J5TWRhRG9tMDZxVVlWZ0pZWm5uRnRweU9NOEtIZnVFalpoTGk5VWgtSHJNX0UtbFpnaEhWaUg4N28zQl9weDBUbEV1VFRtV3BRYnEwcTJvamlvQ3BvUGFjMXhmNU5XTUhnZkt6ZzRwSlE?oc=5",
+   "source": "The Washington Post",
+   "domain": "washingtonpost.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "The Washington Post"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman"
+   ]
+  },
+  {
+   "title": "李开复为何选择临平？“AI六小虎”零一万物落子杭州背后",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1rckg5dHVKNGQxWmZRT0ZrNjZCTXZ3alhqREM5OGR4THBHOTh6dDJpa1FSUWNOcWpBV0t3blN3MmxqQzk5clExUkdIandYTEF2Qm9WZC1Mck1RalhnX2dfYw?oc=5",
+   "source": "ThePaper.cn",
+   "domain": "thepaper.cn",
+   "published": "2026-10-30",
+   "outlets": [
+    "ThePaper.cn"
+   ],
+   "themes": [],
+   "entities": [
+    "Kai-Fu Lee"
+   ]
+  },
+  {
+   "title": "The big questions remaining after Anthropic’s blockbuster IPO prospectus",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9VYXRVZG52ZU8wZ183VXZkS192WXFoWm5uRm0wNE1PZFZBblEyTklTWnZodHhNVUIyZlNaZGI1Y2xRaGJqZ3FTSVplcjNaM2tZVzF6UlNpRTd4S0dlQzVrak5jOHFQN2tfdkpMalkzWXlvVjl5T0hpb9IBfkFVX3lxTFBsbUVyNW9GLVlJZ3dpSHl2MXVZa0pxdDRiN2FnakZCa3lwVDJFOXdiSW9iYTh3UnhOZ0xhYklQSnJXVmoxaGpwckIyNzkzWm9hTVhVOFBrZTFHbnV5LWVBcFdiRGFqMXUyRXZXNjM5Z1ZNVXdiR1E3eFlzLU04Zw?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Nvidia in talks to give credit support for Nscale's deal with Anthropic, The Information reports",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOeFZKQnF5QVdNQlBQRzNMTE5PbjhUSXF0Y0NzYXpyaVJFeGplang3clhEYUtGUF9Fd2tPRjE0VllQVjV0cncwdU9za2RGZkFjQ2ZSTGdpQ3hXSkRBSjVtY2tvTzhEVTYtUkxYQjdfc1A3blJMd0c2ajJTUFp0eGMtOEtMbEk2NGl2Y2hrRFVlSHVaT1VQWi1qaGhLTkoyZVhXWFVFaXpDVEpZQV90MFNSZzN2dTl0WXJWZEhBRzJmUFVpNzI2Smc?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone tells investors",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcjg3X1I0NkVyZEpOZEh0cmZLdFpJYVFOOTJwdm9nNTBJSGJwcEF6T25KRFBBeDBpLWZtOWNKMjdKeHhxZF9zOUVyUmVjT2pSQm01YmgwS0dnZWFXa3ZVc2tfSW5aUE5sSFJtc2lUVUlQUjROZjRxU0M3MFBKVWg1alAyZUU?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "Financial Times"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic expected to receive high 'junk' rating from credit agencies following IPO, FT report says",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOVXpfTXdqVDgtSDYzSkp0TmVFdW5yZ0lyRXdfNk9tdHY3d05BQzdvZ1ZLRXEyQ2FuWkdCRF9SRnBhNTFMRG5fN0VKT0tVUVNXZm92clZwOEh0Z2NPYlhRQWhxT1FZTWhkTmM1a2dOdFpvaU00UmY4S1lNWEEycnpZNjlzdWtubWpLWmEwQS1rRHNFWTBXRzdtWVNjQWlqaU1CazVYM01VcktOdDdJcFJkazdjSUVkVV9fUDJhaFIzVEFNV292QlJz?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Behind DeepSeek’s $16 Billion Funding: Chinese Tech Titans and State Players",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaVRfR3gweXFFQmFnT3VtZW9tOXZuaWpKeUFnUHNDSEtDTVEzS1MzTjU4UkZlWGxESE4wYUxVLTBjV3FpTEVJcWw5blBSZ3VEdEhrT1hLZTh1dGNNaWczenc3cVp6VnhhYnZoUWdoZXRRWDhUUTBqM016aWVUQ0t0bHpLV3lVTUdoNlRDZThFZGViR3ZNcW5ZLUFYSHpNb1hlR0tIck42LXN5bXdxOWc?oc=5",
+   "source": "The Information",
+   "domain": "theinformation.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "The Information"
+   ],
+   "themes": [],
+   "entities": [
+    "DeepSeek"
+   ]
+  },
+  {
+   "title": "Agent identity startup Mintive lands Cowboy Ventures, Coatue, angels Jeff Dean, Andrej Karpathy",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTC0yTGJBSm55dEk2MWlqLUhxQUJEMW83OUpVNl9rZ0l3cnpvNXh6Z2VQR0FIcjVoNmVyM2tpTVBzT3ZKTDR5RllKc1lET2lSQlc2TjdRbFJ4cGJuQ0ZXVUxIY0kyVFpzVzBXd2lrM0Y3YTVESDVwU0V3ZG8yOUh0VF9lSE4tbmx5OWg0RkdSbDBNR1FISUxoRnMybk9UT3Q1ZFhHZl9hT0pJQ0hyV2ctX3NxaUhQbzdlamhzejAwbGlWRnN6REE?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "Jeff Dean",
+    "Andrej Karpathy"
+   ]
+  },
+  {
+   "title": "Canada Gets Into the AI Business With Billion-Dollar Cohere Stake",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWGpmZTlMc2FpU3FlSG9tUHYxcWtmcDFuVHRQMW9DT1NKWnRiQXVNNXdLak95bGN4NkpYQmJYX1gtOU1ES09MekhvQjU5cDEtM1Q3S0NZS1lFQ2xTc0xnUWpsN1JfZEFqc2d0TXB2ZFVmQmRwNkg1SmFybk1sc3ZvWnJDNS1FMUR4QWNWbW1yanNpRWZXbDI5QUh0dFRXeVZtUkRjV3NoSUJBbDVMQTNNYXNZeE0wVTN1VmRJdDZZcHE5UWQ2SG5PZWlweWhNdw?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Bloomberg.com",
+    "WSJ"
+   ],
+   "themes": [],
+   "entities": [
+    "Cohere"
+   ]
+  },
+  {
+   "title": "Canada, Nvidia Back Cohere at Over $20 Billion Valuation",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVk0xNE9EYzVuMEQ0OUJvYXNDMTFEN2tfVkVYWV9xSXpQWnlQUkNVTTIyWG5XOThJMHY3WWs5RktqWXpVMjN1ZmtXcVFUeVJMYjJNaEhFTTg1b0RNblJUTHZ3LW1wZ0JmRUZEUURwTy0yaC1nXzlHM3ZKeWFIUVJBdUZ5VlU0RXZxcTNKdGZ0ZHVoVWFILTRRWmVyVlN3V2V1X1VONWdTNjFYYVcwYUlj?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Bloomberg.com",
+    "Quartz"
+   ],
+   "themes": [],
+   "entities": [
+    "Cohere"
+   ]
+  },
+  {
+   "title": "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5lZ0VoNmFPdkFiaUFnTUpOcFV2WUp4WW5xbmZqd2haYjdPdm55Nm9kVHFQYlZoNUVMODZaSFZjS0RxXzNyWTFLLWpTejROeWJyazFXeE16YUNobGctejdhWDdQaC0zSy1pRWpmM2lIU3hES0hfNTllUdIBfkFVX3lxTE10LU9GSklFV3R1TTVyTlFRMnh4VmNMbXVjUkVCY1ZTanc1U1c5eEs5UlZNSTdWZzdnUl8yUmNpVVNDUXM0aGhMVGZVT2NrR1pSaXBhYnNxTnhnTy1nUm1DdllhQkFNd2Z0aVhWbC1LcDBpTk5uTXhabUhjRTlhdw?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Elon Musk"
+   ]
+  },
+  {
+   "title": "OpenAI-backed Thrive Holdings acquires ADT",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaFNnYk5yRjFKX2NkdnAyLTBwb3ZselRtdHZycDk4NFhEOTJBZ0RaSmdfbmZEeDFaX1MwX216bjMtRkxMdlhMZnVTWjUydC1XWlJBY3FURmE1SjR1QTZuQUhvMWZGZFVQeW1Tam1GUk9OMmR1OFZSdkM3d0ZLRHA2bHVyYw?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "SpaceX’s Largest Revenue Source Is a Finite Deal With Anthropic",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ044eGtubmthLU5BVE1IbUVZbGQ1MklPR1R2MzhTQ0xRdE95ZUEwSEx5b0ttZkRrWDNLWG4zQ3d6S3IwZjBQbUphajhfY2VCa0NIbkx2TEc0TWpENmRvS2ZpTHB1TVNKMEJvNjdlNHFNYVRzZUwtb2N6SnZoeG5ISmtwOUFsajdYMnd4dlJBcm1uQ1czNzVlRTlDUE81QVo3QW1kTGFoSXBmT1gxZ0RRa2ZPNm4?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Opinion | Anthropic’s IPO Will Be a National-Security Win for Taiwan",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOd1VWYTBUOF9hZnNhY2pSTnU2SUFmYVRVVHhiVHM2Wm5sMzVCcGpRTDBzanFhWjN3Zk1zUElEVnoxQXVJcjU5YzlYS1NzT19ib2szY2RNU2xFeVdKbHVRVTlXcmNNWHNhMWEwWndxeFNMZDVfVDlPRGJnaG1JNDlZWk9CY205eWJlSUtyd1hJcXJtVzFMYjgxOTZn?oc=5",
+   "source": "WSJ",
+   "domain": "wsj.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "WSJ"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Two fears will decide the fate of Anthropic’s giant IPO",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOWJKOFFnajkwNmlvWHlmMjh5WjZOdlRzZWFKaHpYSVN4aHpTbDVZY3FHYXBRUlgwVG4tQk50NTNBUjU3VmtocnNsMmJfbTBBT21OQm03WXRPbzRUZ1ZTUGwyLW9MY0MxVTJ0eW52YWdyTmEzMV81VzlPSXlSSUNPYWl4RE0?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Financial Times"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic Launched A Consulting Arm. 5 Ways The Industry Has To Change",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTGRzaFc1Qi1PLUNMVXNod05hdlZtSlQ2Mk10UWZCamdST1RhWEhpcHdjU0syd0NWZ0VRNTlCM2ZnZkY0TnVObFdCWWRmMmkzWHN1em8wTGZBc0lyRS04eDdQT0t5TkdpZUowT055MEk4MFBCcXNyazN0Qm0tTk9FY0VQbHYyR21pM0p6ck5zVlNKWDdCYm1iUTVjR0huUWF3M3JzR01FeHd5OUx3OEtWMUU4ZzlwVVVrNGoyNnBLLVpibEJN?oc=5",
+   "source": "Forbes",
+   "domain": "forbes.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Forbes"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Mistral AI publicly releases Large 4, targets cybersecurity users",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORGVVeXl0bmw1cnBiUkdkU2VRT2VPcWtxSHdNTmQxQ2xlOUxiSW1aY0J5eVd2T2RPYXJQdlEwdWpSSzBuRlZmcHlHU1F3LTVCVmo3ZzZqbXRDZ1pmaDdEMkd0OFIycWhkWXhydlQ4Z0UzZ3FHbUdaaXJOMGVSRFhwSkZRYmFGcWoxeUlQUWtBUVBlZXM3NkgtRGN0dE81LWxkMTRGVnFSSnJWUU83SXRONUJPQm84a0pl?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Mistral AI"
+   ]
+  },
+  {
+   "title": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMjNidjZYcnoxeE9Gc3NzX05BMlFMeDVwRjF2eWNNQ0FZTWR2amRmYm9YVzFKbmJteUR1TEZpallEUXBoeFVKeDBQemNhd3ExckNJUzYxMmFIXy1NNEhqNUdHeW1OVWdyVVRMa2ItV2pxOWhEdzlXRU80NVhOd1FPRFdGSDh0VHRTLWFXamJJUlNabTQyMlVNNjBqc3FMQkg1enB3TlBQcW1ESmhJa1lrcVRpeHJWRFNjdjhB?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "Mistral AI"
+   ]
+  },
+  {
+   "title": "Orange unit signs deal to Mistral's latest AI cybersecurity model",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQd2RyVFhCQ2RMUVJrcFEyTFlwSHpiakNocEt0ZThqbHJncWxWUWZ3dXRBaGRXb2hQS0RCN3FRZHRpVWpaUVFFdHBPSFVhSm1pYmY5aFVsakd3bXdla0N5X1VzQ05SY1BlMk9iVVFjMldfXy1HdEZQX3NMM0x0ZjN2S3lxbEVuWkE4NWN2YUhURTBubFBnUjMyWU5qTHM2QjVVckxvUmFqN05SN2xXZGt2TjhTOTM?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Mistral AI"
+   ]
+  },
+  {
+   "title": "Dept of Justice reportedly probes Nvidia over $13 billion Hugging Face AI platform acquisition — concerns raised over competition in AI and pressure on customers",
+   "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxQU3BmSkJtd25WTTA4N18xSVd1U0JrQlo2eGhtaFZzaEJ4U3d0dzRSM1NDRUpaSFRHc0w4LTFySUhZazRpcmd4bTQ2Tk9lNmczR3NSV2RILVpmbml0ZkZINWU4b1JVQVo0SGhXRlN3LWhiMHVNd0gwLXBKZHI2ZENoaG8tZVh0WXZRSld1YlNNR0FFaVdfS2xzdW4tMDQxdUhQUHNhSzJwcEhyXzRoZ1p0MmVIRjFpZVkxY2Q1WVhuampCWXlrekVNSGFvYVFKWXdNMlVFQXhUbmZDdk1VemJCVnpIY3VxcmN1dV9MdEg2TUdPd0JNV1FHbVo0R0c0THRZSDRzdnVMY1M3ZXE4X3dFNmlKZlZMSmdwWHpBaWlNRFBvM1dPeE0wV0w3RUxrZk5XQWtnUGZKNnBkVkhIeC01djRtaWZnNFNNbU45eA?oc=5",
+   "source": "Tom's Hardware",
+   "domain": "tomshardware.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "entities": [
+    "Hugging Face"
+   ]
+  },
+  {
+   "title": "Ottawa takes stake in Cohere as AI company opens $4.5 billion funding round",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWGNfQVUyVmlObW9LNWZfU09nUFBaUGFoS2pmNWJfM2lpdWdlRm4zRmJxeWtPXzk1Zmk5ZzlELWdvbGttdTNfMC03bFJ4ZGpfY3pGTzU5TXMzOWZ2V05UN2t6bGswdFE5dThJMDctaWRiLU5IU245Q04zN2RWb2d5UTd5RHlGVlJ5ampjaE1fUXlpenQ0ZksxMW03MGpocEZmQThtbG5falE4RmxOaEs4RUlB?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Cohere"
+   ]
+  },
+  {
+   "title": "AI law firm Crosby bids on disintegrating, famed firm Weil Gotshal",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNaGsxeG9LYzZfSEhqTnQxdUVYUkdBbzZTYTlnNHlhaC1RRzZuanc2dnVOTXI1WEYtcGVjSENuX3NQbml3MFpnbW9xaTJRX2NpWC1hZy1yNXFmSkVjVC1ROFZKeFBjREdYYUE3M2tPYUh5X0EtVjdWWW43dGRwVDRsWEFqVzBHeWNqenI1RDU3bmhPNXVtM2d2QVdmeV9MRFlnekE?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "TechCrunch",
+    "The Information"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "AI Is Upending Law Firm Pricing; IBM and Mastercard Want a Share of the Savings",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObktRd0duc09SUzJWdkMyeXJjbmM1NEloTjhiRHhNc01xMjR6M1ZEcm5FS1g2cjJyRklCZDVCSklSaGlQUlZtUFotRm1kRHhZMUhhSnMybVVVVVVkeGJjQjZCRFRCaWNmMVJhYmlTN2huWkZLS2tOMmNUYUNtd3BXNE4zcXVwREF5Qy1vMEJYaFJjdG9YQW04a3phMmlJa2hxQmxWdXJZcjVUMjFUUnA5M0lSTFJPMkgxRlVmM2lVOA?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Reading the Bench: How Appellate Lawyers Are Using AI in Oral Argument Prep",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOanRSUUhmSlVOWkI2akhoMGZjRjBMVmZBRDZjSnozaXQxNWx6d19XQW9qSzlPZ1phZWt3Vl83OU9LMlFCLXpnMEw2RlBBRFZlUE1NeEpCbFZZYnh3c1JmeTlzWUFXTGVocFUtZzhoSzRxNFc2NDM2N1VNT202YUxJWGVDcUhaYzRwVDR1bkQ3M1Flb1h1REpGRTZmSVFaVGJNRnlSaHFaRC1UaEItSWRXRkdmenBMRXg3RVJnU01ndw?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "AI Is Changing What In-House Lawyers Need to Learn",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWkM1TlAxRFJDNHJnR3l2cXhuSEdJRE9La0pUbEM2TDZsRnBScVlPRW1VTjRSc1Y5Wk1sRzI2WHBOLW5BcHlEbTNMV0VnMWVFd3dIbmZELWhuNXVqOVkxWjVQWkllUl9VTS1KVFI2bzZtRFcyLUlOejU4bWVoZllpRVk4bzJlbkprQXBRV2dHdnVNYWVMakpFS0RB?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "DOJ Inquires About Nvidia’s Hugging Face Deal, Reuters Says",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNa3hzZk9tLVg4clhwcUE5N2pFeG9tUUlEOFpFVVlfd0VkXzFsWTZHVGdJMVdBWTN0VlJPc3N2NF9oQndxbG40end5b2xvbnU3TlEyVVNENDZSZUM5Q1VJa0FzSW1rci1hTnFhdWxxWGVaUzRud3ZFU1c1WUp6OFNwY01VSXoyV3ZMNTVlQTNrYzJUSFpvMmdlS3k0QlZVS0YtT3hQOWFwNHlmbV9kQmc?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "CNBC",
+    "Bloomberg.com",
+    "The Verge"
+   ],
+   "themes": [],
+   "entities": [
+    "Hugging Face"
+   ]
+  },
+  {
+   "title": "OpenAI CEO Sam Altman comments on cyber risk: What you need to know",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQS0JoelZlbzZ1cUdhbVZyVGFIS0p6VUdoSW9Va3YxSm9NaU5zQUVKU2VoTVl6YUhxVDNVSzRRQzhJMmRyTWNyekpMdmxDYmRYQ3RtT2d0R295eFljUVVYTlQ2b3FzNzB5c3pGelNaYUctVDZWZGpWUmYyQ2ptX0lTMlpiQXBweGtLb0lEYmdtaGR6djVtYTgxVFhVLVg4NXlaano1aVlRVmlJX1RGTmc?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman",
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPY0hza3dNdjUwV2kxTjduRGwzRjluVTU0TXJiRWY2WElramdvXzR1MGJtazJ5RXNvcXFrQ3JEVklNdnpCb2E1bUQ5cmRhNmxmM0tpS2hfZHZrZWRQaGtqSWNmZElVMXBvVWU2MUZ4b3hxdEI5U2JwNzFEVGFWMWcyV0xKNnlMSUpVTU5HM2dINHhUeTRFd2hXS2JtRGh0UWpNaWRZRzNDV2RxUlgxS0dJSEIydnk4eFE?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic",
+    "Amazon AGI / AWS AI Labs"
+   ]
+  },
+  {
+   "title": "Sam Altman shares his ‘chronic disappointment’ in MBA students—they’re stuck on what ‘was cool five years ago",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPY2FCbnNXYU9qSVhEX2ptSVBXcXNpVGhJRGNiNFVuUzl2UVRPd0tfYTN6X05nMHlWS0RRb0J3TXYwMjg2c3plYnpKUEVYa2YzQmhiaFByQkthS000OGVVcm13dmlaTE8wR045aXV2R2lZdVpwX2pKU3NNYVpaYWwyY3FhSjBpWXZkQUhGYWZhOHlSTGFZZGNBaG43enJndUR4RHQ4VkVmTzRvTXFCTEloUmVJUWg4OWpNbG4zYlhLVlg4YWVOdF9XR1gtVUU?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman"
+   ]
+  },
+  {
+   "title": "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTmRhT3BCTmVkRHA3TlQzSXpCNFlISlpqbms5MVozSVhwd2NMR0RoTUV2MDJfbklENXFZOWpHNm50NHZzNkhzTFhDdHUydHRiVXExVW5MUFBDWkN4a0dFRG5DRzlFa0JsN0g4UGpYZ0dXRGktMWNGSlE0RE5XX01OYWYyUmo?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "Financial Times"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Microsoft cuts capex forecast on AI capacity delays",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPX2phY0FXUWZPRmhjNm40cUNhckZMbHAzaEVlTmROQUotSERoSUIzYUpHcVdoT2hZdkxCSEtLU0VfUWlQY0tkazhxZzE4bTZWLVlXYzlJVVBYT2owbnhkQ1hDWnlPa2hiYjh4ZURwNkJyWTFvbFZRUzdNQjN0bnhmYnZJa0o3MF9OaVhWa1ZZMmlIaEp6c3ZBT0JlaHNoSXRWZ2I2RDJBbHk?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "Microsoft AI"
+   ]
+  },
+  {
+   "title": "Microsoft CEO Reveals Microsoft’s Low-Cost AI Model Mix Strategy: Computing Power Price War Is Inevitable, Proprietary Evaluation Benchmarks Will Become Core Enterprise Assets in 5 Years",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9xRERpQ0d2dm84T0R1d2QzYzgxcmZ3NVpoRjgzcjBmaF9zQmhNRFB3a0VmRE1qSnA4OXhQZjl0aXhEV3lyWDZyU2ZuZ1ZBZ3hhc3Vj?oc=5",
+   "source": "eu.36kr.com",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "eu.36kr.com"
+   ],
+   "themes": [],
+   "entities": [
+    "Microsoft AI"
+   ]
+  },
+  {
+   "title": "AI Reshuffles Global Wealth Rankings: Zhang Yiming's 670 Billion Yuan Fortune and Liang Wenfeng's 280 Billion Yuan Net Worth Redefine Tech Billionaire Lists",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1TNWc0cmE4SjVIY0t2MHFxYThBcTVaWUNLU2Zzb3pqZGlTdVBwcnJOSGRFT2tHSHFrUDRFRFQtOWJwY2ltTmFIRl9XdENSa2pLX01B?oc=5",
+   "source": "eu.36kr.com",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "eu.36kr.com"
+   ],
+   "themes": [],
+   "entities": [
+    "Liang Wenfeng"
+   ]
+  },
+  {
+   "title": "Anthropic just launched tools to show companies what their AI spending is buying",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORDlBbXhmcEdpSXhaQ1YyY0llV1JaU29fZzFvZ2xBdDZzdlEyVWhuR3k4QWpSQ196MXI1SUVVVlBzMER5ZUZHOUF6bVJYZVg5cXh1TTlOdWJWc2I4N0laSmpRNGg1Um1qQ05obkVPRDJiUm9lQks1WFdQdUp1SldtVV9PMnVicVRJcTlUMWQzZDFjbXZqS2lVU3hNeVBCb2FKdXV5YWNjZGdpUmY2TWs0ckxXdHgzZw?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "xAI is buying out homeowners who promise not to sue over data center noise",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQemh4dTA1V2gtcHdTTERDWVluU1hDNXZoSlRDcTlLZnMxWjhXcENLOGNXbzZBRkx1bTdBT3Z2cGNlbF9mdDZPczNlc2FOaHVmMzhtVWNndHMzNG5ibmZtaHk4dGtBYWhUZ3JkTE02QlRUMXhBWVptZHhrc2ZVLXZoNWtHOHdpX0c5Wjdud1pkeFNFNDhsbUt1cjZkRUNLdGZJaWJVZU9wbnJNbFNC?oc=5",
+   "source": "The Verge",
+   "domain": "theverge.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "The Verge"
+   ],
+   "themes": [],
+   "entities": [
+    "xAI"
+   ]
+  },
+  {
+   "title": "‘Elonville’: US residents say Musk’s xAI offered to buy homes if they don’t sue over datacenter noise",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUlRSUXF5ZTFxZy1oN2lWRVFiclVxM3ppQjRfRHpmRWRzMHNzU0xMQmtidmF4dFB5WXF0UVpRMjlsSGc0cW9jc3NJOVBobUNYTThPSTcyTUUzYkk0T3NsSzhzT1pOdFkzSk9XU3c5WnMzUVBSVUgtUEgzZHVaZWxpN2ZXUXE0V2xiUDBzdjhsMFRkMjVsX1JrLXNn?oc=5",
+   "source": "The Guardian",
+   "domain": "theguardian.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "The Guardian"
+   ],
+   "themes": [],
+   "entities": [
+    "xAI"
+   ]
+  },
+  {
+   "title": "Biden’s Antitrust Enforcers Are Starting an A.I. Legal Company",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTm40WU5NR0pqTGU0bFpQb2oxWVoyRDZZRDVqTEhIZXlJamJsMzJteVR0UkhyVXpVS1JMMFBWSTYzUmJpckhGTmxTektPeS1MaU5TOGhlS19OSkhaNTZNekp6cUFOeUJkR2VqYU9VVW9zc1EtQTRhSkowb3E1c2xGS1FFYmlaZnA3Tk94WHZoRFNfaWM?oc=5",
+   "source": "The New York Times",
+   "domain": "nytimes.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "The New York Times"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Researchers warn of surging law firm cyber attacks fueled by AI",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQ0NpSE52aDNEemJLcUMyWmxhQUxGY01IZjd6Wlg3c3k5azJZNzdJcHR4UXl4QktGX1hFQ0IzUnlNa243S0FYRy05dnJyWm1MRHF4TDhwTV9NVzhIdkw2dWZycjhLOGI0UHJyTlo4UlZHZVhMa1c4N3lZZWRuWk9zUE5LYVkyTTZVVEZJT1NYZlA3Smo1RDk0VkZnWFRsOEJWSDMwMDFMWDhLUDRWaElMWkN6dw?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Meet the legal AI startup helping David take on Goliath",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWkFrQWU1TjdUaS0yLU91SmgwRjEtaUhhR2NQdEZTSmNPMGhidWFZRmZ2LUU3VzhtcVgtM3ZfaEVyTUVrbE5IN2RQVG4zdnNHVldEZnRKWmZBMkxrcEdyRE9OaWxjbk5QcDdyX2VKU2FQdFJXRGN4RXlDMUQ3OHFRTWRpSjk4c25xZ0E?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Watch the full discussion between OpenAI CEO Sam Altman and Oracle co-CEO Clay Magouyrk",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQNlhjakJvTTlraGdBTVRVcUZLTWt3bllxZF9xQWN1azRXMWllUTJqV3oyWDRFZGN1ZlEtaTQxVUgwdW14X3l6ZkhrQmRJblBTWXAzUXplaTJ5NzRmdFN2RUhwSS1aUkJNSnY5MWVYRVEtUXlQb0IwdlpJd1JFa2lEU080TEZlSmZqYjdFOWJoUlV0V0pJWkVOQXhTNER1YURMaEJDV29lcFRCU210bmZTYkFIN0ExQ3VuXzFUdE50ejdmUWVGTkp4RUN3?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman",
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQzhhVHhOcWFHTWVOU0ZPYUswRERZWXg4SFJFRV82RGdNbWY1YlZocVlwN2tNVGFkY2ZjOGd3dHpPV3Ywa0RRRklvM1pSSmQzS3FJUkc2UzdCVTF0YnJCQjEwQkROR2FYSWNNbVRWb0RsVjctdW90blVnY1ZzUWpweXZHR1ZMMElpeTVDYUdERUNhV0lRUWhaeGdndlFnMXFiRS1kNGxxd19YNmZKVXIyNDVwc1hjamt2ckFSWDVR?oc=5",
+   "source": "Ars Technica",
+   "domain": "arstechnica.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Ars Technica",
+    "Quartz"
+   ],
+   "themes": [],
+   "entities": [
+    "Google DeepMind"
+   ]
+  },
+  {
+   "title": "Who’s really in charge at Anthropic after the IPO?",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUHUybzFhb0VWOHB1SF8yelpUS2FnX1RQWV9Pa1g1dnF5bzNuaGN2N0tDellkVlIyN2RST3hfam93N3Jyd1NBY0w2T3hSNnN5VTd6OElfOXYweTFwd1RXanBLSVVxQ0c1b2NjMnZKcENweGZUM3R3N1JtSFJ2NFB0VVlkMFVsemV6dlpF?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "为什么黄仁勋帮不了欧洲人工智能",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1UQzdtai1OYjhueW1oZkZOdWJielpLYVhtRVhzWjFZV0o1MmNnWGtwa3E0eFBER3JwVnZFcXZlS2ktSkNvOWNRYlBiZUVZQ3BwY0Zr?oc=5",
+   "source": "第一财经",
+   "domain": "yicai.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "第一财经"
+   ],
+   "themes": [],
+   "entities": [
+    "Jensen Huang"
+   ]
+  },
+  {
+   "title": "Zhang Yiming takes the top spot, Liang Wenfeng leads AI hard-core technology to the forefront of the wealth stage",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5yMThhRHB2Qm1FWUFMTV9UWUIzamx5U0NDOTlURGUtYjlaVlhaQnpSUWtNdzNiVS1CN3Exd3dzQTJ3NVN2aE96cllDSHRPaUdRbXdB?oc=5",
+   "source": "36Kr",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [],
+   "entities": [
+    "Liang Wenfeng"
+   ]
+  },
+  {
+   "title": "AI洗牌财富榜：张一鸣6700亿、梁文锋2800亿",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBOel9hRWFhUXlNMms2eWdvemxKVWJqSkY4SEI3ck5VVTRMOUZWSlNnUk5SUkVORUJVWG1UcHd3bEwtc0NsT3lHREQ5MEcwQQ?oc=5",
+   "source": "36Kr",
+   "domain": "m.36kr.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [],
+   "entities": [
+    "Liang Wenfeng"
+   ]
+  },
+  {
+   "title": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQ3JtRzlfcnp1ZXJ4ZFFyZ2dSSUROTkNzY3FnY3l0SEJpRngzcDJNQzc3LUZpblVFc0dPWXF6eVNEbENSVU1ycjI0ZjJrbWEtcjhaR1B4XzlEWnVBRFQyaGZhc2ZocU9wTHJLcVgwOUc1djNNb2VWRVBUdjNVTGo2YXVpRlJTOEFnMmtPUkwxNUlEbVd6M3JyWUMwVlhyM1dLZmRYMXYtTmVoR0s0VmN0QXM0RnJUQQ?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "AI Enters the Courtroom as Dubai Rethinks How Lawyers Train and Judges Work",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZnNsOUpnZl9vdTBta2ktMkdBTmxOdTRnSTVUX1ItR3B1Qjl0ZlVkMU5KZC03bnBMRjFPbXJNWXNFLWxGY2YtQVVMbkNkZEVCWFYtSG5PTUx5MTM5eVdlRktxUjE5OVYyT002QjZKM0FPTmwxdVFZRFJzd3o2QkROY09VQm1lT0h1eXMwdmVOcWsyeW55OXkteldSY21nUmwyZk9RYlhtZWtDeGZTRkoxZlA0YUwyUzdQejFhYXhUZ3d1SDUybWpVblFB?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "ClioCon 2026 Day 2: Judicial AI Adoption, Law Firm Differentiation in the AI Age",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOQTFCdWpvWHdWZXVPU2tHOFQ1UkVaM3JkOGNIVXBKZ0VTMGpvSUd5VUZsNm9MV0k5QW5oeXVKWTRVQWxDTWo2ak5DUWdjX0FWbHpuLVNBSkt4VkZCLXZLNE5qYUlCSEFrQ1pjaGZTWGY2RHJpQ1M2VjU5RGZyLXI4cnRBVE1kejgxaWRCSEVwdWlfbzByNkZEeFZ6cTNwUEt2SnN0UDR6MGpnZTQ3OThQM1NqbVVhalhaQTMteFI5TGxzdw?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "The humanist at the top of real estate’s automation machine: ‘I happen to despise the term headcount in the world of AI’",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVjUtb3F5UVpMZmlWa25UdGd0dFBqaEM4LU5COHEtbTFoTmhSbENlVTNpTVA3YlB4N3dIOHZ6SnB0d1hSOElpdmxGOEY0REhpcHBNT2c1ZldTSW51YzJuRWJmN3hyT3k4RkJ4SkVjdDdHNnFoUlhNdkxYR3YwdG9tdjZDUXdPUHBhQWVUZ0RycWNVRzBIaWoyZHJWbWN5REF3?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "The hawkish pause, Lula's market meltdown, and the Anthropic IPO bombshell: The financial week in five charts",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxORzZSdUpvaFdlYlFMUDJUcVRQMktBM2IxSFo5dVlTWXBGZHc3bW9ncElFZHgwYzRGREJ4NlZUM21KSFRxN0pxYUllRkhLVS1tdmZCclF3RGNwVTFTMk42ZUlTUGdiS3Y5b1ZtRDFUNnp0aWlkai1Pd3RyQ29PS1lrRjl0OFpPNnVXSThCUERmNDBoOVhXUHJLVGlvblpUNWMySzE2TUVpenM3Q0k4dHJZZWMzbWtlaHM5ZFpJNUlfQUFyTk53dVVzSndsOXpsRUVnVWs0VG1qN2JVRXVGT3BBa3ln?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "The Verge",
+    "Fortune",
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic’s risk factors include the end of humanity, a feud with the Pentagon, and CEO Dario Amodei’s reputation",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNWdjMWdoM3RJUUpMMTgtZDFaRVFSYkpYY1o4NmR3WU1QLTZXMzI1eG5jNklsWGRHdi1UMjFpTFFpS0pPdjl1V0NNQUJnb0FCNjJrQjZrM3NoSm5Oa0lDbWlhMTN6cWVSd2U3MmNpQ1JyMmhDbnVnNS12bFF4N1VEMXEwbGJPTnZRVWxwZi1yMklWYkF0WFFxNjVmekY?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Dario Amodei",
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic’s 7 cofounders are each worth $14 billion already—and that could double in IPO",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZ1ItYUVsTzQ1emRWNFVvaThLcEdjbUYtaTVZcWoxQzVDa0tjdnYtVWthVkJXZzJ4RHVhNUxZZU9BdWVqNVBkaFBkXzQ3S1VUeFVpTlZCSVlFcVc1aWtlOU1hZzFzM3N3SWc2V0xrLUxOWmNEUndURDlneUNTd2trRmhuYUxZczhsZkcySEN5WHJnTExvR3pfRnk1NUVTWVU?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Fortune",
+    "Quartz"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic's 7 cofounders are about to make generational fortunes. One owns more shares than the CEO.",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOU2JGdlYtN1RmcWlheEQxSU5DOWFBNlpwQk9wMzNzTTA0Zkk5T3VrLTNqaG1jUUZJZUJTTjNRSThnbl9uak0tZU8yN1VFd3paNlNydkJ0VzlZeFpYTG1FM2lpbjlKVHcxSjBWRXB3a1I5MnFBXzMtZkVfekpEVkRrZA?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic's IPO puts power in the hands of founders, giving everyday shareholders little voice",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE01TVh2V0R5RWJTV1FEREQ2d0NkbnB6M0hJX2oxbUx5ajRrWVlRVXVCZXNFNXR4Y1pCU0VCeS1FLVB4d0Vjb2JxeDN3cUpQQnRJZDM5WjZBazZzVENWbG1aSEZZLWxTZjJ3ZUw5ZDVwZ25OTlhFQTdxR3ZKV18zZ9IBgwFBVV95cUxPRlpaNDNJMktia2RJeWYyQnBQVFhoSVZLWURlb01DLTJfS2ZydWNmVTA5WjhNMjN2WTVIbjRrcUJzYVR4bTdxeU1nWnBJdk4xWFc4R1VDNW9ZaUtRLTNicjdaUHZPRVNlY21JbjB5WXRzQ2NoVlRiMlJOSTVmX25MMVBQMA?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Intel's Lip-Bu Tan has spoken with Lisa Su about potential collaboration with AMD — CEO's overall strategy targets custom chips, advanced packaging, and stronger foundry business",
+   "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxPeTdtRUo2M3AzMDVQeUd2RFBxaHQ0eVNhUkRhNW1sUWtsRVprMG1oN29KbVRZRnBFV19naDRORGRBMXUtMlQyN1h5U0V4MFA0dUxOMldCX2FfWlhJa2hkMk91MGRPekxiaWtsSW4zck1LUzZ4alpiUGVCb2puZzlXMVVPc2FsMHVXWEZVSW04U0JTdXgzaDdvekU5NW9QNWdFMWRpMHVsbzdFM0UzWHNKdzVjLUFYQ2pGYV92N0VpakxDeFVub0NXeXN6NkxOLWVrR2M5NEw0RFZNS0pGeTNQVG9abHlKLURDSm9vSE56aXRQTnBNVkpnZlozQk8xWWc5ai0wWUt0WlZjbE1DLVQ2cXJ0aVNZUjJfYXdkWUZBYnRsTXJoQ0x4UFktMEoyRzlib0tBUVhGa2RRQmRPUEdmRGxDRUl4OE10OXVoOA?oc=5",
+   "source": "Tom's Hardware",
+   "domain": "tomshardware.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "entities": [
+    "Lisa Su"
+   ]
+  },
+  {
+   "title": "Satya Nadella says he was wrong to think AI alignment would just happen",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdDFhazFqem5YSWVQQVpoNFNLUlpDQ29JQTY2dkphVTFVbUF3dGRiR1QyMU4ycjBfSWxKejVhUVNuU2pGZXl6QklVRThvZkZYMlE5ODZ1ZF9kTVJLQW51NE1ONEdNMHpWQ2k5T3YzQWtNbVpkZzlHeEwzd0tjOThTOUFlT3lUcU5DQnNUdDFyZVYtZlRqdDJLMnNHZkVqMmJSYXAtaDUyZw?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "Satya Nadella"
+   ]
+  },
+  {
+   "title": "Elon Musk’s AI ‘The Odyssey’ Is Absolute Garbage And It Stinks",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSXVpUjR3RDFXRHJKUkU0NS04Z3VueFFXTFlSU0xmWWg4alVDbXhDU1h3cmpVQy1ZaTViX3Qzcm5ZekdDQVFjVUNWazlTcXJTSjlfaVRWYzZkNm81TlBDT01Ib0Z6TlpXVmRQOUttNVhLZzZPQUNUdU9La2FnMTdYWDVONW16MWJ2c2ZHLQ?oc=5",
+   "source": "Forbes",
+   "domain": "forbes.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Forbes"
+   ],
+   "themes": [],
+   "entities": [
+    "Elon Musk"
+   ]
+  },
+  {
+   "title": "Elon Musk warns more than 200 AI cloud companies face 'guppy-level death' as the AI boom runs into a debt crisis",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ubWZuUzdhcGFObkxHcThuVE1fN19hUDhlZlZNZzZjcjBwdnVFcTUwcDJNRldjenZmaEJJTS0zOUdyWUhRR1ZyVE4zcFFlUjhkb2JtaVQtN21WeXFzLV9jc2pIdzU3alRmdHFHd0dKWjh0Zw?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Elon Musk"
+   ]
+  },
+  {
+   "title": "张一鸣登顶 梁文锋领衔AI硬科技强势登上财富前台",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5sNzIwcnNhY21CZ0tsaTh5WHgxa3N2LXNkU0MyRkExaUxfX0luMWp6dnEzWmctVWk0RC10SjlxeVNsMUxtVzNidXJUajIybzJaUm5N?oc=5",
+   "source": "36Kr",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [],
+   "entities": [
+    "Liang Wenfeng"
+   ]
+  },
+  {
+   "title": "Anthropic's soaring sales, steep losses put AI frenzy to IPO test",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLVVZWVV6TXQtR3ZqaWZKZERKZ3J3VVpIZlNtUjVfRjdTS0tuVTlRQ0F0UzRhcW9Hd2hxR1BtNzF4UVBVYXBpTkc0Rmozb3pRekc2RVNnOVBYd19KUGZ5VE1UN29haXQ2M0w0Qk1QTm5INk5KRlhxLUR6Q3REWHR3OG9EYkpFMGJUUm5HMGFiX3pBLXhZMHV5Qkgwdlc0RTczMnhOc3Q4NFpORFE5SlRfRkVDOWdmZw?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic files for potentially the biggest IPO ever as CEO warns of risk to humanity from AI",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNlh5REtLQ3ZiYnhaV0ZnZXRhMVkwV282YXN2ODFlQjA4NWx4UHdUWlNwV1lXZnFHcDZ2S2NkMGF3VnVkczNGb1NVQnJNSk5XdEIyTHZRTUlGYlFVSXpadjNTT0VsVjhMUUxqRExWOEdENGM3bl9HUmJ5eEwzT0Jhc2xRNzdfX1RpV3VVcjNxYjM?oc=5",
+   "source": "AP News",
+   "domain": "apnews.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "AP News"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Amazon CEO Andy Jassy has two Gen Z kids—and has an AI warning for the entire generation",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOX3pmcFQxZUp2U1FpWUVNYUR1X3R2YXgzcG1oMDhVcFdRRVY2QTFubHpGeWRNWTZEeXV3NUE5VHRQSmJMa0pabzF2LVJMckQyMnN3Z2ZraFFnYnBfcmxIbHFXY2lWU2otQ3Bqdm5PaGY3OEZQRzc5dS00dUFRT21CaUx2UVBLUWxqWW93c1laSHRsSkdld1BZek05akNYZm16Ym8yb2REdDBwVnV1RWh2cA?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Amazon AGI / AWS AI Labs"
+   ]
+  },
+  {
+   "title": "Under Client Pressure to Save Time with AI, Law Firms Face Verification Challenge",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPLUFaWkhva1ByeEhwS3lCS2lGclcyUjBLcy1seHFlVHFUNGVfZmdXNzItbGhlUkYtVzRFRmNHVFFJZ0ZGQm9PLTlpaDMxWnZuQi1zc2NOTEJxYlRXa0JXcnh5SVA5NFljaU4zbFA0VXBsVmVFdURNRHZvWWJqcTkzakdXQVJhWkFjLXl3WDhCbkV0X2htQm9KM3Y0WTFBWVVpYnNyLUVRVnZoYWxHSGRHYmxDUjhkY253UjlMek11aVVNcXBoNWFn?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Legora CEO Max Junestrand: AI legal tools could boost demand, not just cut costs",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMUFjQk1Xam9uelA1UHZNOFpSRGVWOXRQMWE3ajg0Z3pWaUhRdUJfS1RuZkszb1pzSXJTVlpmaFhzVUpVTTc3a3lwQ1pybC1VRm9EVE0zZTk2ekdxRlJKWHdKZXJtbXVXZE15QXN2Y2pFNF83YjFJaFlWYjVXMXpud2lsNHJSNWcyZ1paRUNRbUl5aVBJdV9FZWhUOWtCVkMzQjBSQ3A4ZTdsNUNYeW9IOEJEdVpuV0lmQXM2MWxn?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "The Once-Obscure Corner of Commercial Real Estate Now Riding the AI Boom",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT01JcnVxaWtJSkFvcUpJV3U1RFlhbWZ2MmNORldJbmpCTy11Wk92Z0ZUeUduQUdNNXlzRFdLQkotWHdjNnR5dTBUa3RvNnV6ZlFBUTNpUzRIRWlPczNGbS0zMHN6MXhZMUgyNERISXNKMW13bTZhYkdLRzg4aHdDLUMxcUJxZDNPNW5RZXF6QlU0SmJaZFlVa0Y0N2VXbTg0UDdZM1lhaUFkamJfUmdoSlRaTV9pcFhHQXV2eUJNT3duZw?oc=5",
+   "source": "WSJ",
+   "domain": "wsj.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "WSJ"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Within Brokerages, Power Users Begin To Adopt Agentic AI: Survey",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ScUlFVFNSbTVkNm10X29IZjl0TWFXblQwWW5GMU9nNFh0WEpBX2NrQVJHUkFOMm1jMDB1LUp5dUFtcGRsMUt3ME0zdFo5NFl5aGFMOWsxdmhzOGp0RDFoTzc3NHFKVTI4c3c?oc=5",
+   "source": "Inman Real Estate News",
+   "domain": "inman.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Inman Real Estate News"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "AMD CEO Lisa Su proposed bringing back the Ryzen 7 5800X3D, set plan in motion before DDR5 shortages — AM4 CPU considered a ‘final gift’ to loyal fans of the decade-old socket",
+   "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxPQ1ptSkdMQldkOFVPak0wbWJHY0l4TEd6cFBKZEpDYVViWWRidVFpN1hQR25LWGUtTFZibHlnYTRKUG0wUlZ5RkdESlIwbWxnNUpMU1lab0o1UGcwYWw3VDlGVHR3MDJtYVNRa0R4OUwzeTRKbjFnakkwVEdpT0dKS1ZFMUFXZ0RKOHFwTXBUQU9kdnZjX0VmQUtzRFRMbVo5ZnQtWl9XR1c0bnY5RVlFZlZHSWszLWpZbWIzMnMzNkNPRjR2R1M4aXI5X1Zab3ZfeFJUZW8tRGpMWHh2aEpXckZqbmdfdE1PR1dXM3FUVFhoZWRfeWpPcGllVkRDUUF2T0tLNDg0aEEza3NseXU0S3VGZjhRUUVFZTlYamdhdGI4bU5SRnlmN1E3Y21idkxJbG5GRnFVVDRudkZ2UUhv?oc=5",
+   "source": "Tom's Hardware",
+   "domain": "tomshardware.com",
+   "published": "2026-10-25",
+   "outlets": [
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "entities": [
+    "Lisa Su"
+   ]
+  },
+  {
+   "title": "半年融资1500亿元， “技术理想主义者”梁文锋，被资本追着跑",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0zUW0teEtJMDhrd0UxTVp0Zm9YdV9pQ1hoS094NkFNTzBuOTBXUmVyNl9VOXVTVFhIN292SW9CVVJDZlFZR0pEeDFsM0M3Zw?oc=5",
+   "source": "36Kr",
+   "domain": "m.36kr.com",
+   "published": "2026-10-25",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [],
+   "entities": [
+    "Liang Wenfeng"
+   ]
+  },
+  {
+   "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRTJaSVEwZnRJVGsxeTg2ZmFoNVdobHp6eVdoTFpBYjRjVDFkaGtzT29DdXZKXzJYNk9tWDJvQUROdDVTdUZBV0FBRG5LYlFWVjBvQzlSSlAxRXI1R1FGZ0JUYm16a3BjcTBfaDV5SUFzUnI5MkhXQUtuY3JKY19ack10bWtFQy1XT0Fia2RqYktTclR2a0hWbFNDWWRieEh1LXc?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-25",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "xAI"
+   ]
+  },
+  {
+   "title": "AI-assisted judging could make its Olympic debut at LA28",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOY2hkRVAzR3Jxc19VWG8xT0VVRTdBYmdkdXAxMHFNQUFKMXFOXzhoOXh4anZTX2Z2UmZuNks2SWw1VjZDMmQ3b0VOVWJwU0tXUmRIT1llTVQ3VVIwX1dnM1dtbUVoNmFEYnJqR3lzNW1KSDlpYjVvUkJPcUJfMkhYTjFNWDNQbHJwSWlfRjdMTi0wTGVKWFhxVjQwNDc?oc=5",
+   "source": "Inside The Games",
+   "domain": "insidethegames.biz",
+   "published": "2026-10-25",
+   "outlets": [
+    "Inside The Games"
+   ],
+   "themes": [
+    "奥运 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Prompting ain’t easy! 5 AI prompts real estate agents need right now",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1hcEtDdXdJLVhIUTRzWTdnbmp4TWRXQ3JLSkFxOFM3QWdRUUtOMU9BMld6bC0zZTE3VlVQSUoyTTNGeExYYUNKMlhhRXREVExpU1owMTZjeHdaaGRqbjZtd0VFRjd1c3k2b0VBY2tuWDFtMnNn?oc=5",
+   "source": "Inman Real Estate News",
+   "domain": "inman.com",
+   "published": "2026-10-25",
+   "outlets": [
+    "Inman Real Estate News"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Moonshot resets subscriber quotas after Kimi K3.1 Pro launch issues",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVFRQNTJoWXRmV21ybjhESTU4bHJVMUx1Y3dhYVVDVlBRa2tYSGpTU2Jma1poXzQ2WVQwcTVnNVF2d0M1WDZmZi16ZEhvRGtpSTZFeE1sOV9hLVo1U1V2ODlabE9zS3FIdU1Hc2dtRFNOa1pZY3dOcTZ0amJqTERkRFBJS0phWXVoZ2FFb2gydDZhbnozYWhXY3lEZmhrb3Vhb2YycnI3UjVodFkwRDFZdTlkVGdMenZRdkZiUEZR?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-23",
+   "outlets": [
+    "South China Morning Post",
+    "The Information",
+    "Caixin Global",
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Moonshot AI / Kimi"
+   ]
+  },
+  {
+   "title": "Meta faces massive AI bills and legal troubles. Mark Zuckerberg keeps finding ways to come out on top.",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPbDdMSGtoMTJqUWlUUWhrMGVyRENVdUtsZ016M2NFZE5neExuc3RGbjRjeWs2T2V6dXZSandUU1dSenNPS2pxWU9xdHdWUm9nR3dJbDBULXpCd1lXLS1yMlh0T0xVNDRNU2MzazZUNFN1dkJxQ1p6M041TGdYN09BajhBaWdNeUVyYmRTUVpMX0xpRE5pYjl0Y1Byb29JQy1W?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-23",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "Mark Zuckerberg",
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "Sundar Pichai says Google is far from the ‘end state’ of self-improving AI",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSnVVbTZOTGdydS1hR0g0Qm5ocGhzckdRRmtHczB3aXg5eFctekFMZk8zSUtkSnhIZy0yWWVlRVNXZ3VxQ2J2ZnAwaHVLLXdPbkZrOTJlRzdicUVkS0ZVOHc1U0wxbFRsS2VEd1VGN201VVRUZkM0OVNsVG5hWC1oREtsVGNpcDZlTlg4NFVUYUJaR0dsLXFhdTNB?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-23",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "Sundar Pichai"
+   ]
+  },
+  {
+   "title": "Jensen Huang pushes AI in energy-rich Kazakhstan, shrugs off bubble fears",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcXlnRldRYk51Vjg5TURPem1wb01wN2RWUWk2UDg0NVdTSHVJWU1IR1ItX1hLVGQwSVNfWWNnbWxWRVVTRFhMdzdsWDFJRVdmREZmQWFiWkU5TXN3blBKT1lJRkpPelBJRm9FbXhQTm9aTnBwZHRZTU9uZjB0clZFLXVVeGZ6Qm52VTNWLWp1LVRVdmdubEcxb3VPREMxcjhIQUlSck5zVEtnVjNkeXRoTndkWU80TXlfLTZ4SS1zTnFXRE84RmfSAcYBQVVfeXFMT0RzMF9kRkNtWG93OUNXY0JxaFF5RS1ZeWNfU1d3ZlZYdnZnQWd2RGJRU2dzc3JxZU96dzBwTTJ0a1lpMW91em1iR0V2QmVtM0syQUw1eGRZTEJ2YzdUbll0LURNY05NVnVXZWlJdjg4akZmQjNiandMRE81SkJXd3Z1dmdlcXJOWHJSVWU0N044UnFWZ2pxWGZoei1WVHZabVNXYkRMY0k0VmoxUXYyZDVZMHhfMWt0Sl9PYVluMGk3aEhUR0x3?oc=5",
+   "source": "South China Morning Post",
+   "domain": "scmp.com",
+   "published": "2026-10-23",
+   "outlets": [
+    "South China Morning Post"
+   ],
+   "themes": [],
+   "entities": [
+    "Jensen Huang"
+   ]
+  },
+  {
+   "title": "AI-assisted gymnastics judging in talks for use at 2028 L.A. Olympics, official says - The Athletic",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNYmZwV1YzZ25UUGZKTWtSVkhlM0JObi1aMDY5Vk5GMTFoVjhjX2UxaHFubjIyMWR6VEZxQUtLY0NuTGljSUJTZmxDc25ZVS1RYU5wT1ZKbXZvdms4d2J2dlpNSDRPai1HSTBRVGJwNzhOeldCSlFmaFJFblFqbE9CSXBvTDZYRWlnbEpxTmxOZnFOWWha?oc=5",
+   "source": "The New York Times",
+   "domain": "nytimes.com",
+   "published": "2026-10-23",
+   "outlets": [
+    "The New York Times"
+   ],
+   "themes": [
+    "奥运 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Law Firms’ AI Risks Are Growing Faster Than Insurers Can Price Them",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQUJJZGdzLXQwblZ6ZWJZeVNmcTkzSTY5YUJVQjJhcTNrVXpmTUFNd1VDbldKLVRBUVUwTndLbEgya3l3NzFEaVV5dHc4a1kzQXMwb0hvWkdQdjFMbWdJWGlfX1BWa2R3LVN2SXFjZ2pzNFFFQWlqUFdZak9pT2luaE5MVHZRc0VjN3NxOUE5Sk9Wb1h4TXVtWWJhQ1B3N3RMd3hsTUQtN1BOZUgwNVRQbno1aWdnTVh0cXhWRQ?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-23",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Beyond the LLM: Why I’m Betting on Smaller, Sovereign AI for Law Firms",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNG5BNnJZa25sTHZhY2RCV1pibGlmS1Z4ZGZybEhld1NnVVp2blNOMm9ZSDgtekdJQUwyZjk0NS1oRVJNQWhPX2tZY2JzcmF6MlROYWVhbUp6NTFiVFM3cjVOQUhXR2ZreFBNbXI1cC1PdTRQd2d4blFDYTJfRGMtRUhsOU5MY1I1bHZXOUwxVjk5OUIyNlZISUhuSGNkdjhLZ1NDdThOaEZ1T1pxSWZWQw?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-23",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Meta strikes deal to keep Zuckerberg in California after wealth tax concerns",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcjRzbWZvU2s3cXVzUkR0Y2o1Q2picDNXb1dvRVZJSTQ0Z3hoMmYtUjlRa3RUU3hlY1AzN1BTYjdqVUFkRFJhaW9HSGpSLU1BdDA0cHk3RXZBUHhLaFRULWJCMTJZcTlKaE82ZGlxbko0blQwVjJycU9kNHN6dDllQ0ZYTl9ZdWQycHZSVHZKcHNaUFZSby1pN3RGdHR5bXNOeEI3R1JzUHlDa0hhbU5Vdndpb0FyZw?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "Reuters",
+    "CNBC",
+    "The Guardian",
+    "Forbes",
+    "Bloomberg.com",
+    "Financial Times",
+    "Bloomberg"
+   ],
+   "themes": [],
+   "entities": [
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "Trump wanted a ‘Trump Ocean’ on Google Maps. He says CEO Sundar Pichai shut it down",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQm1mV2VGOFNidHp6V01fd3dJM09acFRiYWtBY0RsSVRmVU9vNnJaWGZPUm1vd3M0UHJ0anRtSWlMN08yWlBPNU1DLXVVTER0ODNaSzhGazExVkZHQTR2eTBWcTd1UnFIU0s2MFRyZFAzNkdNTWhHWFBrMk96Z1ktYnhLWmREb0lYU2k5T0Jub0FzU2ZlMXQ4?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "Fortune",
+    "The Washington Post",
+    "The Guardian"
+   ],
+   "themes": [],
+   "entities": [
+    "Sundar Pichai"
+   ]
+  },
+  {
+   "title": "Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical superintelligence’",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQRVdXNUh5Ylc4REo4QVJUQk42eV9PS3B3UDlEdVhsREdRaG1HazZBOHVyZnFJYmhGc3hpcVM5VjRnYW02RlF6d1h3TDhDb1NqcWVyUHdDd0pQVk9GQUdnR1duUi1abGY0Y1EwTWNOaU9JbVZTMGJMVHFGSFV2Wkx6TWdZNDdmS3dnZzNWUEdZaV9KaWxNaDVoZ202ZTloaXE5bi1sam1VOXZuNkRoRHBWNFF0RVVLZTdETW5ZZXpoZGJhYXNWNkRBWEFpYlFyc2dJZmFKakp3Zkp5d29nOERSWQ?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "Mustafa Suleyman",
+    "Microsoft AI"
+   ]
+  },
+  {
+   "title": "SpaceX says potential Tesla merger would need Elon Musk's approval",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPekJwbzJpb0hnTHRJeE8yRWNyNzM3QjF2MkQxbzVSak1vNUJmQ3ctRWd2Q2stNTlzcnppeTc4MXRra3pXZHlfVUYtZEptbFN0RWxCa0Jrcl9SRHNaWWJkUkxaUXU3aVRvcGFTRUNwbWdiS2l6RmdpLTdERGdrdzJCMlA4c1hxNHV3a1NYMzRfdUxVRldYc2hkMmxsRXJCY2JCaURRNlZBZTh0UQ?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "Reuters",
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Elon Musk"
+   ]
+  },
+  {
+   "title": "OpenAI nears up to $30 billion funding round at $1.25 trillion valuation led by UAE investors",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4yWm1VRnpOb00tR0ZfUDVmaVh2S1dyNVhia0J4OWJ5anpxRUUtbjhHX19IbHZDUEdlVEc4OEE3aHQxNGw0ajhwR0ZDTFdPcC01YzZ6My1HVW84bzFzRHpnNGdkNnRCSnVrYTZMcnBGMjZVd0tIVUI5cWkxQdIBgAFBVV95cUxPeVdKRHhVdHUwa3ZfVkMxQm1od1YycVNSZURFaU1yeS1jUGhUNVF6MTh1aDdObmNuUks4d2k3empTZFNGUnFmZjYzNWR2VTJNbnlhNzI0dmpZZ0ctR3NwT05yTGdqRU5yaGFzX0FWVFpNY1BnbmVMaldMU3NZXzh1OA?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "CNBC",
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "Sam Altman Reportedly Laid Out Three Endgames For AI, And One Ends With Rivals’ GPUs ‘Melted’",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRnlaVjFUeW9abm9fM3Rfc0x5SDREVFFBUlZsbzdTMzl4dDBPdDVWVFdyU0RVNjlrRU1ZMGtjUGFjRlR0R21odzA2a1dSeWdVczBlMFB4QTA0RGYxUlBKdGZfNEh3R1BhWWpzXzQtWEFzSk11X3gwWVVzVXlZSkc3OXFQTzBQVTJHUEtzVzFLM0VOcDc4c0NJTzdKSDFjQ3JOMldOSl9ybHF1X044VFUxSmRpT1JROWdRMC1NeUdITHBhRkx3dWpvRjJHY1JZNkY1Q0hNbHVVZmdCTjQ?oc=5",
+   "source": "Forbes",
+   "domain": "forbes.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "Forbes"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman"
+   ]
+  },
+  {
+   "title": "Zuckerberg makes deal with Meta to help him pay billionaire tax if it passes",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRWVrSU05RXd3Q0RmUmhPdUJGT1ZlOWpFcWY4QWM1QjYtdXVBOFJPd194U3V2Qlp3Vk5VLXN5S1VyMW9qdjR6aGNRbDFCYVBrVk9TYlRoelNJUEZBaDJQZDRpREotVEk2M01IMzNZekVoeWEzV1lxMTViTjJ1WlZFMTdhbWNSdEFUSFVHd21yTmVHc3o2RVdNME9fQVJIU3p1M3A3LXVjM2pYU05waVBWNEtOcXJlUQ?oc=5",
+   "source": "AP News",
+   "domain": "apnews.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "AP News"
+   ],
+   "themes": [],
+   "entities": [
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "Nvidia CEO Jensen Huang says neocloud demand is 'off the charts' but capital is scarce",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOeFpCR0VMTzFlRUJkdkNibEY3eFhBT1lxSkVFckRzUkFsRE1lcFRHNjVqWnB6TnYzcFROUDNLUnRCOWFLM01WbEdDRV9sN1B6cDZuSXFqT3FiSEpVLWhWMzlrYTNPTFhHU054bC1oM1FKRmY3QUtEOEFmNGZCTWxlVVR1S0g2NGfSAYwBQVVfeXFMTmlvdTlxcGJUOS1aTDdYbzRvSU8wTHZZTERSTXRaZFA3VDVfSkoxN3JBRFA5aVkwSFFkS1dLZW1pdlJWRzRldy1FN1IyT0xxVW9jRTh5ZVhyaFRSYWZYNzZ5d1hicGhKVC1wWHFwdFItOHlpeGZGLTVJcXZoWHFoRUJOWjNTZXI0dGVwNWk?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Jensen Huang"
+   ]
+  },
+  {
+   "title": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOamtUNVg3S1hZVlF1RGZ4akg3NThwTERFbWpQaUcyMmQ1LVdXM21CYU1mbUhEd28tS2ZicXp1TTBwUlB5Q0xtZllvdkl3WW5sdFZrUXdYRHV4Sk10X3pMWXpBYWhsT1ljQ3BRLUZ3ZXpXeElFX2VqWXRjcm9NYV9vU3hTb1NZM0tCNTJLNnBNaW5XVTJTd2ZyNkxpYlQ4aFpUZDc3MXBmUzZySkdRa0drQnZVdDBqcmc0aUl4QnpaUkRGYUE0UnQzMHdZMVpGRmRuWmc?oc=5",
+   "source": "The Verge",
+   "domain": "theverge.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "The Verge"
+   ],
+   "themes": [],
+   "entities": [
+    "Microsoft AI"
+   ]
+  },
+  {
+   "title": "Tesla 与 SpaceX：为甚么马斯克想要合并这两家公司？",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBvVHQtSF90MU1iSHB1cG5ubWhJQ1YyalJhNDR5Qkt5MFlId0dGeGhiS3JLYjJnVXl0QmFzWC1BVjVjV3Q1Wlk4dTNDUmtUZy13a0dva1ZGdlk4R004QTdXeDFpZWVoeWPSAWxBVV95cUxPQmRMaTBOTW5qck04clBvbDc4bUJrUjFZdGRjVkNBQTFwd2RhZ3ZYTWE0dWdqc0ZkeXBUUE5vQk9RWUJ2cmhGWlg2QTJwMW5MRUVpVk9jY3hScm5EaDRubnRveGV0T0RyM1Vmdkw?oc=5",
+   "source": "BBC",
+   "domain": "bbc.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "BBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Elon Musk"
+   ]
+  },
+  {
+   "title": "DeepSeek Nears China's Largest IPO Financing in History",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wR0JnS25oNFJVRmRsNTNvaC1veVpBLWRnVHJhMVhwZ3l2Sl84SXVsSzlIQ0xGZjFyQzZiVC1yQTNOMUxNVXV0Y2FqczFhbWRQOHEw?oc=5",
+   "source": "36Kr",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [],
+   "entities": [
+    "DeepSeek"
+   ]
+  },
+  {
+   "title": "DeepSeek reportedly raises $15B days after US restrictions",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUTBUemhFOTYwdFI0QVo1MUYzYjFPUjV5Nk1zMHRtN0toUGdSMEwtWVJsUERqcWs4djkzeDF2U1NPa01YMmVIQ2FKNTRTVnJsRS1jNDFodXMyV18wejFsQUtFMVJUbHFtMmJCQ3lvdlY3UHcxa2VrZTk3Qm9XNG5MdnhER0FFUlc3U2YxVS1jM3VqbnpkUXM4?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "DeepSeek"
+   ]
+  },
+  {
+   "title": "MiniMax Shares Fall Below IPO Price Amid AI Sector Sell-Off",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRjljRHppcGVFcS12YURKWHgtaWRMaFJ6OG5hREpGRVJyeXdKeERSUkd0Wkp5YzZGejlxUjVKU2pERnV1ZVFza3R0LXFtU0Fub2JfTjU3WW9ka2J1T3hGYTYxLXBRTDh1dDE1MzNFRGh2OTdsaEdrRVpabTdVWFdreFk2Q3h6THlYbjFjMXZCZFVyVmFQS0xqM2prYi1TaEE4dEVGdEdtRGxubUduSnR2ZF8xaS0?oc=5",
+   "source": "Caixin Global",
+   "domain": "caixinglobal.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "Caixin Global"
+   ],
+   "themes": [],
+   "entities": [
+    "MiniMax"
+   ]
+  },
+  {
+   "title": "Billable Hours and Lawyer Stress Have Long Been Intertwined. Can AI Provide a Solution?",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQdWxzeFhSTkttajlXRXVOUTlXU2FFZ09YVDBvdlJxaW9ENkk2QzdsLUhkMG04TVJkZXQzZnVPMjk5cUF5S0ktWWtLNUpXclBlU1hNdF9xOW5XT1kxcnhEN0x1a2dHMW42UTRKSFRqMFpRbk1MTXl1WThCNC1ORmUtMVhRYWpCU1l2cUhwUVNwY3ZqT3JtT2ZaNFFOaEtraXNyVXFFODFfWE11LTdJNGctaFRwaExmcHBmbG40T25yZkhhUFhGY0VROHlYdUE?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "We just raised another $550 million to bring AI to the legal industry. I still believe there will be more work than lawyers",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNTA1NXJPQ1NFcFo5UHpSZVVab2JFUF9BTk1FWnZCZjdCN0NPZU5tTTExVUtrTGMyUEdzZkQ5QzVSSFlvWUgwdnZYWTNjQmltMTlrR200eDNRQlRnbnJlMU9fS25NWkdrNzhOZGhiQmZ3dHJvOXU2d1kxNno3OWcwXzRkNzNKaHBIcmFkMm53dGFyT1RZb0VPQ1ZqVQ?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Legal Tech Providers Embrace Integrations in the Agentic AI Era",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRVRVeTdRMXZLTC1YZDFEUHlIYXc1Qkh2dkxQN2dGOEd6ZDhqOVhvNlhhWEd2ekx0UDBmcGNSamVnSkdPRjl5MThVNi1RakFndTVIQ0pDUnA3cW4wUzZnU1ItOUlZYkNtV0ViRTdHTDhIaEtsbkJjcEUtOHVmWUl4a2tmRGY0a3dwRGlQSk9udHNRYUpvM29DeWhubw?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Anthropic launches Claude Duet, its answer to Meta and OpenAI's personal agents",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQkZFNGVZc2Q2Q3VJYWVFNjFlOUh1NE1aNWFrZHlzOFlEMVpQU0xFQkFDSW4ydXljV1gtRnBBVzZjWi11Z3dMQ0sxdl9EdXdJOWl0TWlYMnl1M1o5S3d4LXRuOW9lLUd3bS1lYkloUnFGVnhqbFNJSGtVRUt4ZnlWSVg1Q01YOHlrWF9tZ0RsQXptUjljR0MxVFVaWW0xTXMweUE?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI",
+    "Anthropic",
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "OpenAI president urges AI safeguards as group he funds opposes regulation",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYmVlY3NlaE8xWXA4OUdBTUlKOEhtdWh4UEwwVVlfUDczNjczeXV1aUtLek42UjQ4b3I5NHZaRU5xYjFlVVhNWXV3Sm1rRkgxRkR0b1VWazFaT195cG5GUlF4S0FEcERoTzJJVXktUVdYOTN1ZldXREx5ZmllMVgyRG1sT0pRMF9hNF9JLVhTcnA2M3o3Qy1FS0FLS3QyMTFQVXloYU9ibmw2VWVMRzJuT3Z4dkQ1V2VyUTAxclhQdHY?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "Reuters",
+    "The Next Web"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "17-Year-Old Chen Guangyu Joins Jeff Dean's New Company Right After Departing Kimi",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1DSXJyTy1JVUlYaER2d3ZyU1Jsdl9UX3U1Nm94LVNSbVJXbGFjeG5UX3haTkV0aElDcHN2NThzdnNNbTktZnBVQnRkMVc1S2ZndGQ4?oc=5",
+   "source": "36Kr",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [],
+   "entities": [
+    "Jeff Dean",
+    "Moonshot AI / Kimi"
+   ]
+  },
+  {
+   "title": "China’s DeepSeek Raises $15 Billion to Challenge Top US AI Labs",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbV8yRlI5QUgtclQ1Y25PbklMNW5ITlNyUm9udEYwQkFaRmoxZ3R4bVdKOEItVVpLX3lXejBfSzllSVZUTFZuRDVSckkzcHJrUnZwRVhCamxrMzh6cjVPYk04N0thbjRlenFlLXZpT0E3TUtsSzFlS1VBY2NHRTh2Rk5NNDhXRVVoYnJHMWFPbFVPbzZoQm5VMzBpREs5b183eE9PQTZ1SGgySkVxTFE?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "WSJ",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "entities": [
+    "DeepSeek"
+   ]
+  },
+  {
+   "title": "A major security flaw found using an OpenAI model is causing internet chaos",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQXdUZ3AtaG5WVWxWU1dnOWFCZ0haX0t3YVJ2ZTlPOG5QT1l0SHFVMjUzY2llWHVmZjRXcnpNWDdOa0xGQ3FjOEFoYjJIUzJST0Q2OWJ6c2xMZUttLXFPMFkwNzhaeTY4TGcyQVlENjNjWVk3M0FHWElxbU5DXzlGS3lEc0w3dzBPMVV1ZHVaTUhnWDNXU1NYWUM0UlhRcndlejVqa1gzSlZ1czRyQ0NranNKd0loOTNmenBVLUpwV0U?oc=5",
+   "source": "Business Insider Africa",
+   "domain": "africa.businessinsider.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "Business Insider Africa"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "Sundar Pichai explains how a team of AI agents helps him run the company",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVmRTbHFwVktUMzNmUHZxbXJEbXpRTzdkNUZYODV3SHJzTjFkeGpHWmEwcVowV1ZJWUVaZUNocXpRQkJ5STAycjUyM0VMZS1leVp1aVZjS1VLY2M3UFZOdDltUlF0amtrV0Q1aW9mZkgtRUZFSXc2ZXZHcUlXLUJkZWl3ZjdUSzA5SVZJcS1ZZGFTUGlja0xSOHpOak4?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "Sundar Pichai"
+   ]
+  },
+  {
+   "title": "MiniMax Erases Post-IPO Gain as AI Model Rivalry Intensifies",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdjJSc1V3UE9OZktaTFE0UExBTEl3VDE5RXMxQ2dBbnpXQW02c2RkanJhdE9TZzVyMTNEOHc4YkRFQVVESU9fVFZianpkWXRULWlTSXNhS28wRW1oSzdCZ2tscElPZURGekR5cVFUa1o4MVdpWEo0czFRQWxGcDY0T1llZW5LdWxvNVBmQm5RRGNNRjJlVVZZLUdOZ3p2UTM5LVAzUDYyaFhDQkJFWHFVTQ?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "Bloomberg"
+   ],
+   "themes": [],
+   "entities": [
+    "MiniMax"
+   ]
+  },
+  {
+   "title": "Legal AI startup Legora raises $550M Series E at $8.8B valuation",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPNHhsQ2xQM0tkRHJFMUxkX2RTR2xIYndMaGlheWxwOXBkMkJuaHJqQ3haRmI3RGFlSndEbFhLTUI1NzVlREFrMjNScm9IWUdsZHU3X2thRlI0Wk8yZ09PSFpzQndRZ29yTFIzdTRxRk5tekwyT2F5Q0lzZHBpZFo4dnpLSHlYdV9wY2JEV01NMDZnbk82TzFlTHctN0d3Zw?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "LexisNexis Legal & Professional GC: If Law Firms Can Use AI to Do the Work, ‘So Can We’",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMk9QTW5CaEFEMklTeG9seGRYSXZlMF9SVVBaNHdialpGNGphZmJhcnJOTDV0d0NuemgzREVFNjlSdGdjN29WMk1tMXNwV2Q0SEYyLWdQdW53dXVNRmdLNl9EZFNtTGgzMmhhdEQtNlppc1FZR251V1R2NUpVUjdBbkhuSXdRN2h6UEVTcWxRTExfZ0FMcGRKYmprbHIyQkhfQWNtTG1adUtYWHVmbFFHWmw1TnhsazVvR1QxUkZzS3gxQU1l?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Harvey adds Australian startup Mary’s case-fact tools to its legal AI",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1OemlVY1Vna2ZBMVVFWVh0ZzFUVkxiUGdnY2ZPR0ZudThTaWFaWWRpLTNfSkVHUzRGaEhUVkpETVd6cE1xMFd3ZWVLTmNGU2hockhxdGd1amE0SGpQbXdZUUNqX0FEblVoNEhVQjBncmZENGM5WlZBV1NB?oc=5",
+   "source": "The Next Web",
+   "domain": "thenextweb.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "The Next Web"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "AI prompts for real estate agents: 5 you can copy and paste today",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE85QVJGQnhtRTlRMGZrNWw4VzlLUXFpUXptZ2hpMUJMeW1MUEZuRGtYeEdvTUxSNGxsdVNRQmRmUU1kTDRjRTNXdGpOcUVld0cxeUk5R09ZaXF6OE1NdkRrY201SHpWWVVSNVU5VjhQTjlfUUd5bktibw?oc=5",
+   "source": "Inman Real Estate News",
+   "domain": "inman.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "Inman Real Estate News"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "US judge dismisses Sam Altman's sister's sexual abuse lawsuit",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNQVJnQzNVSG9xLUh4YjJRTXRpLU5xMnlLTkhXWjJtc2YtYVdMcE1IYVV6cmx5Snp3WGZraHlCSXhteWQzNjlKSW5XRUZCVTMza3N6NE43el9kODgxTG1fc19NM2xxVmNTRVl4ZjN4T0tHT1FvNVdUd0ZwR3JabGNCNkFxbWM4ZURfdmpFeDZwVng5ZWU1RmxmeWR5ZWVCZlVXY0hr?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "Reuters",
+    "Forbes",
+    "Engadget",
+    "The Guardian",
+    "The Verge"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman"
+   ]
+  },
+  {
+   "title": "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcEtaa0V6cXgwMUtObVhKU1JyZEVTSDVyZkthb1pQaHFVN3BjM19rMl9HM25DckVCT1JwcVl0R1RoSG9nNU9PamRvaHlKNHlzMnRlc04zYjU0Z21sMXp2dzBTdm1fdnVEcUtYWHVjamROTF9ZV1c4ZW1wRkx4ZkFRdUpfZDVkbl9ERWRORkFuUktXdlBKblQ5cHF6UEs4WmNmZml4OTVzVUx3RXQ2Nmc?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "Business Insider",
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI",
+    "Hugging Face"
+   ]
+  },
+  {
+   "title": "Trump administration loses bid to block NAACP lawsuit against Musk's xAI over data center",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNY1kxeC1DeDNreGdqNWs2NVZraThJQUhKZ0VHMXRudXFVcmNrYVRaYXlCeHo1ZjlyNHV2WS0zZTREak5ZQnhlTUw3bUQyY2oyTHRBTHlPdzdnQl8zLXpBdmdTdy10dFlfRV94elZCTmRjLUZzRnV3bDg0VzFYa0FWUnJRTzNXMmYtb29UYVc4bGthTGJQMEhmMnlmWGdVTzNhWGNiYUF5ejVwVnRaQkNMWWxRY0RjczA2OEVfQ3loUk9ZOUdLQWpiTzI5cng?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "Reuters",
+    "TechCrunch",
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "xAI"
+   ]
+  },
+  {
+   "title": "Eric Schmidt reportedly owns about half as much of Anthropic as CEO Dario Amodei",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOejdoZGdqRDhIcFpYUlJrR1pEZ3RhUEFuRUhJTWw4eXp2bUVzbHMwWk9TOWkwUlkxODBrT0dTd241ZmxtV0FWZ2o5Yk1UNEs4M0d0OHlRRTFWbEItU2loOFR6c3NJcFRWNkdmRG81TDh0cnlyblZOOXl6TUxRdjJsMTQ2akFISUV5akpobndSUUpNc3dPVXhWYWtCQ3dUejVnM3FBWE1HbnhDb0tZeW9zWUZ2eWZmdw?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "Dario Amodei",
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "EXCLUSIVE: OpenAI seeks to accelerate fundraising ahead of Anthropic IPO, sources say",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZHQyOU05TVZ4RVNpTGdJX18zeHlMZ1pGOGdNeGFmRnFMNERObThVUTl2Ny1CVGU1Vm5IMF9aSS1qaWpOTWlFdDBLeHZIa1lkYnltX1pnU1BLbGdGM3duM1FJZDhocndUWGlUZ0pSaEV6U2RUdzgwX1FaY2s2YllieUo3cTBSWVUtRzJEczR3YXliUzB0d0dRQkRsWjlaQ0FCeXBKM1A2MjlaYzdZa0E?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI",
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "DeepSeek & MiniMax Unveil New AI Models in 72 Hours: Flash Series Challenges Flagship-Tier Generative AI",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAtVHJJakE1QnRySlpCRWJfU0U2aXk5bVFGX052OHpVZk5pRVBualN3Ti11c3lLRkN3S0I3TW83SmNuQWY0WUhmUmFyN0c0a1lLLXpv?oc=5",
+   "source": "eu.36kr.com",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "eu.36kr.com"
+   ],
+   "themes": [],
+   "entities": [
+    "DeepSeek",
+    "MiniMax"
+   ]
+  },
+  {
+   "title": "Zuckerberg spent years building on Apple’s terms. His $100-billion-plus AI bet is about owning everything",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRE9ySmJRM3l3NUhKaTc5aHJJUTBXX3FhZEZheHFIYXFQd0VGYllmaXhXa3lYRGVqajJiN19pX2lRYlNRb2ZabGxfQ2ZYT3NkVm1yODNaaUdfaUx4ZzdGV3k5TnBXMjB4R2FzM25FUWh0RGFFazRLYWlVOHRxQ3pnTGd5MzVIUQ?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Apple ML Research"
+   ]
+  },
+  {
+   "title": "DeepSeek Unveils Open-Source Tool to Help Cut AI Operating Costs",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaTNwMlNFRlZ6SkZCMWtZaEJfUWdXbGxlQVBnSEZOZ0dVM1dLc240NTVQdnZTbjJqd2pRWVNpUUZVYldWZDlzdF8waFlUVlRRaW1uYllNRjdVNFZZSW9aeFhGQmRzS1p1VmhFUG9HbTMzaE5hTm1mOGFwSHp5VzlEbTEtc2ZsQTJ3amdCVjhkZUU5bkY3UDM2ajNRcGY4aDJBWjhFbGljNjlZaXI1X3gyX1gyYTV4QQ?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "entities": [
+    "DeepSeek"
+   ]
+  },
+  {
+   "title": "Viral Mysterious Space Rabbit Unveiled: Originated From MiniMax's New Model",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE83U3NITDBnUWpRVTg3SWlQTGxKYzdxaDRwMjkyck5BRlBpOEZXMHZDT2FOX3hUdE5NaFpXcUkxc0QtZWlJZHN2QkttenM3UHJJQ0FF?oc=5",
+   "source": "36Kr",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [],
+   "entities": [
+    "MiniMax"
+   ]
+  },
+  {
+   "title": "Is China's Domestic AI Cost-Performance King About to Be Replaced? MiniMax Emerges as a Real Game-Changer",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5DZmYwYnRhNW1COUpVdldiLURkMjgwdDUyZTZwSE9VSzlEMXNKVVJ0ckZjRnRqM2JMeFFBYjBGNGtzTWVaSXMxTk1wYVZ6YkY2VUNZ?oc=5",
+   "source": "36Kr",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [],
+   "entities": [
+    "MiniMax"
+   ]
+  },
+  {
+   "title": "Law Firm Workloads Are Under Threat as Legal Departments Do More With AI",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMDQxN2VlQzhvR3N4SVYtMUZJT0I5NnJiNDlISEVjYlVuWHYxRHpRNmF1VTg4Z1F3M2Q4WHY3LWFCVlZ2dHh4bUdWRWItVHFFeDY2OXVkU3JVS2dMVUFxLUtaVHRGUVNBNTk0SW9uRDFVYlI3b2twU0hxcUF4ekFQdkRZVjNPM1hMMHliLThHQTBtVTQ2aTRxektKY3NnWVd4OUY3dDBKLUMzSWtYOEJJZ2owbGR5SnFVRXJR?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "AI Misuse Is a Serious Problem for Lawyers",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZmFjLVdkbC0yX05kcXVpRk1VSzBtX0tOa3VSLTEzWEh0cEpPUlRaUU5wOG5PaVZNbF9UVFRvdGdscnIyWHEwYW5Pc2lIYlJyS0Q5d0lhMTdTN0N2Nmh2VFQyclFnNlNNVW9LWV9rVmpTSnNnczJWbUx4bU5XVmVhdTZ5N1ZOVmxIejE3Mk1ZdmRtc2Vfdl9ZQzZ0a3I?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "AI data center projects boost US warehouse demand and rents, real estate company JLL says",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNWU5WMjhadm4wRHVRWV9HcTFWbWFhVHJkalVBeF8tTDJCRWliVWxfZGl2OG1FbDFCeE1sZ0NSNEFPSjJPc0hzNE11SWVlMmwxOUw0WUhCQ2l1TEVKTU5SRFNDdG9KUUE2THVjUXUxU3lHTjhyd21vUlowSXpxb0VpUHQzYllZUlRqM2pKOGlON090YS1ESEpfYmJfdTd1anJNbzZud1c1QlhQbVBYeHA3M0JjX3o1aW1IWGVPbjNUU1ZYaHpIaERnZXh2c0xGVzZvdWl1TVRmbw?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "An Arizona agent's crusade against AI-fueled real estate fraud",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUDRWN3NMNnVJR2ZXblBFNDY3Sm5BYmhSVnFBNjFwcncweGY3a0R3eGl4RjFjNFV2SHN0UWlrNlJRSlBGcnZZb0ZZdFpPeTNTSW0wWTRqOWdxVUc0YTRtbk03V1pXREVHZ2tWWmFRWV83OVdXLXdfM01tM1JSdHZTNGo0TExDQ2JiTFd3?oc=5",
+   "source": "Inman Real Estate News",
+   "domain": "inman.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "Inman Real Estate News"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "AI Rights Enter Anthropic’s Terms Of Service As Microsoft Pushes Back",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxON3VjaDhZR19FNzNSZ19HWHd1dU5hYm8xTG5zTzlRcXFxQ2RpU2xXNVZJRFJPUEZDVmNBTUZWMjhhaXlRck1sTHQyb2J1TGlSaDgwREFYUFRZdmZZV3FWNDhSYXJlWDUxUXFfZUVZcHZwemRMQUg2LXJWTnFKRkVTVXFJRFE0elVXZlRWZzdET09Mb0gyYkE3WTk5bm1ubmdBTVVtLXpQVlJTcmlXQUdRS1AyaTVkazFxcWFtT1Jn?oc=5",
+   "source": "Forbes",
+   "domain": "forbes.com",
+   "published": "2026-10-19",
+   "outlets": [
+    "Forbes"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic",
+    "Microsoft AI"
+   ]
+  },
+  {
+   "title": "MiniMax M3.1 Flash Officially Launched: 200+ Output TPS, 50% Price Cut, Competes Head-to-Head With DeepSeek",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE45VUV4SkZJNVZGT1BPYVUzbS1GbEc0WTExczU3eUZ5NG1HQUdjSTFkMkppT0ZSMzN0OW9Lc0xMRWhwUXBsQlBEVmNQMmUyNnk2RTJF?oc=5",
+   "source": "36Kr",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-19",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [],
+   "entities": [
+    "DeepSeek",
+    "MiniMax"
+   ]
+  },
+  {
+   "title": "How DeepSeek Is Shaping Huawei’s AI Chips in a Growing Challenge to Nvidia",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQU2RQSmZ0elVhQmxYNy1qajBvNDl5NlVmRlFfWlg1WHBtUGVicUNEZEFEbmR5eTVyOGY4cnpRc0tMVGxFTFIyV2pQTEtSLXpTT09KeUFndkV5bktmSERxQmcxX1FUNnhRMlZHdHQ4MnRMRzhuQ1JfajZ3Q1RncXRlVFcwNVBQdV93a0xvUVFEb2VfQlNvbG41dmVNSktQRk0?oc=5",
+   "source": "The Information",
+   "domain": "theinformation.com",
+   "published": "2026-10-19",
+   "outlets": [
+    "The Information"
+   ],
+   "themes": [],
+   "entities": [
+    "DeepSeek"
+   ]
+  },
+  {
+   "title": "Liang Wenfeng Makes New Investment in Former Tencent Robotics Division Veteran",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBCdjRZUmc5OTU1d0JrNzRxVUNJekJsRm9YSVRmQVFiZUZjTHJLT1BNeldMWU84WWlxbnVUb1RkTFpqc29neldsdjY3U2FEMWliU3lV?oc=5",
+   "source": "eu.36kr.com",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-19",
+   "outlets": [
+    "eu.36kr.com"
+   ],
+   "themes": [],
+   "entities": [
+    "Liang Wenfeng"
+   ]
+  },
+  {
+   "title": "China's MiniMax launches updated AI model M3.1 Flash, claims major improvements",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQU21KdExTcjNUellVV1E5dWlpbXZMR0dxb0NUdXNrN2pma29TRm5PcFBOMEZhS0hSOUVMNmdMZlNsUE9uTGxOYjFnTjIzVzZESmcxbnBYMHVMZjdNS1RvVkU3eHhZYUdlMmNORXdlR2l4ejVwQVVvdjVjTzZGQThwUmhZZ1JHSGNyUGlITjVabGdsTE9heHlnbjdvODlXSHk0Rk0yOEpxbW01dEg1THR3eFY2Sl8xRkUyVEFReC00SWFvVmx4NE5sejRSRQ?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-19",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "MiniMax"
+   ]
+  },
+  {
+   "title": "Introducing Legal AI Insider",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPelo5empMeHFTdVRXRmVMc0pLVGdidHZRVDlsVk9JWVVBSTNsM0NCQjJYMVhzOHJTUGUyQ1E5a2k1aWcyN1Z4REhJYi12SkRxajhpQmxPM1dlYzlLY2k5LUxqRkpEZnZJaEJTYjhFX2cycXhqQzAyQnd3NTdzYkxLbW5wNm4wdlF4MnhMeUZLWmw1QmtGSnVrMXl0TjRrWHRGa3Nqdy1KQWE3dl8wS2c?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-19",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "The AI Tools Real Estate Agents Say They Would Actually Use: Survey",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5MdTFPb2ltbnlLZ3dfOXpib3hOeF9pNnhGOWEtLTc2Yld4cFZ3bVcybWd0LUVvUFlienNGM2ZRWWp1N1doRHVNVHlMcHYzaEJJWTNaZXkzSllBYXRxb0NHcEl1ajNNUQ?oc=5",
+   "source": "Inman Real Estate News",
+   "domain": "inman.com",
+   "published": "2026-10-19",
+   "outlets": [
+    "Inman Real Estate News"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "A 44-minute call and a memo: How Alexandr Wang won Mark Zuckerberg’s trust—and a $100 billion-plus AI bet",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQ05wYnlxTldoZHNxc1RUMng3TzBIQVpiLU45U2YyRU11VjBaTXFRQTBHenkzeFhCQktRRXFWbDBuZzZTV1JsUXdYR0hlbXlXNFRrclZrSzdZcVFYZ1M1TGlHUDNxSXI5Mll0Xzc5aGliZmFLWW9GbTBReG1wTk95YVF0S3FMUTl1eXh6eXpka3BodW5KcmcxUHpIUTlCSktNZmRZczVCTTRzYS1t?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-17",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Mark Zuckerberg",
+    "Alexandr Wang"
+   ]
+  },
+  {
+   "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUFoxYWFYWWFqQTRraXdReXZYYmo5S0ZabG04MmlMbnp5R1VoMUsyLWpIMVg0bUhnOUNqMmxZV05BWm1DRVg4QlhONW9qbUo5UktELXhFMmc4VXhKMzhPbGxuZ2l0cjhGdE1MaEtPU0hBNzdqbTZPaEFHRENkVU9hcG9ieFhDalBPSUNZSEJGRQ?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-17",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI",
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Daniela Amodei warns against AI girlfriends, Business Insider reports",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeU9pT0hLanJfUzlmWWxjU1BRcEJQM3h4andmc29pbHFHWTduMEJvaDd6VkhvQ2JRSGtySDJKaWRhSlFEVFA2Y1BRclhzdkVrdW5fZzNOY3E3UmFCaFc2VGlRc0drQ0ZXbEFKeGRpQ3FKR3hFbU1yczRIVnBaNzhfa1dZN190QWNt?oc=5",
+   "source": "The Next Web",
+   "domain": "thenextweb.com",
+   "published": "2026-10-17",
+   "outlets": [
+    "The Next Web"
+   ],
+   "themes": [],
+   "entities": [
+    "Daniela Amodei"
+   ]
+  },
+  {
+   "title": "Alexandr Wang, Meta’s AI wunderkind",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd1BRTlBUNDNKa2J0ZUJxdDFrNmdiZVN4Mm42UVg2c3FOeEdLMFE5VldjcUxhdVRUSUxQc3dNbFdyekVoMHh3QlV5VmdTcGIzZjNSaHlIbHhfYUEyQkxyLVlLdld1eGRHMmxSMTk1RFY0ZGU2aEVXbVZ3WWl2LUE2TnhuR2k?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-10-16",
+   "outlets": [
+    "Financial Times",
+    "The Economist"
+   ],
+   "themes": [],
+   "entities": [
+    "Alexandr Wang",
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "OpenAI–Hugging Face breach is a great example of how 'potent' these AI models are, says Cohere CEO",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOd0x1RGVkZFl3dDgteFlzSGt1cS1xei1XMndzX0lxNHBiSzdvclVtdTNwSkFzdkgwQnVFRFZDT191WTBLMDNvSURDdmRWU2dyOXgtYlo5SUREenhSSVVvUGRVWGtxQ2M1bGk2OHIxRjBIYm9nTTJGQTZmSS1DWE9sbzhOckdDdXFMeHdGQmNjVTRaN2FveWZQU2dyT2R1T2psZG5QRFIyY2ZzaDBfd2lFamk3MFFzX213MmZyaWFsYmtwUFJtenlkVjR3N3AtTXRPelNZbg?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-16",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI",
+    "Hugging Face",
+    "Cohere"
+   ]
+  },
+  {
+   "title": "Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-16",
+   "outlets": [
+    "The Washington Post",
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Watch CNBC's full interview with Cohere CEO Aidan Gomez",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQWU9ITTJfSVRiVU10cTZOYWVrOHlBWTd4UW1TLUJIalotTWJMaTlSdjBLQkxqZnlmOG0zM1BYQVducjVyV3Bqc0RHNm1ScVBrT2h6bGtqbXVlRWFncW42OWl5Yi1teHhSTDFub2U5c1h5Nzg3UWZwOFRTdDNldGZoN2hxMTM2Wm1ZZjZOTmg2VXpBbUtvd05zUVFlblhrUQ?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-16",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Aidan Gomez",
+    "Cohere"
+   ]
+  },
+  {
+   "title": "Hong Kong Olympian wonders if AI is the answer to recapturing our humanity",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOREZYX2NaWjZhNnA4VUk0dG1QNFhrTWZPeDdSZDc1OWRxaU11ODM3VTB2VkdDWTJDSGx0dlNURzFQaG5yZzNISnJEUmJvM250aXVIMW0yQmVFUHpONzVHOFFwLTdfcUdodk1zbHdESjJIcXJ5OEJZU1JvX3luOU9GNWNkX05qN0pnV1h2UGpqNGNfSmhpMkVMeHI5Qkx0TnlKNWRUSW85RHBURnE1eHg5alBtVnI4a09M0gG4AUFVX3lxTFBsQ0FyV2lVOW5uUWZPRU13ekpNeW9XcktrUmhrRHc5ZzFrZV9JRklPM0hvcUtHd0pKVXZNQWRoVkNiNUo3VEZRUGdqSHFuUEFZcExJcUlUTllmRzAwSU9xUGxpLUhmdkdRclFzYVlUcE11R0dRQ1N6NGlsZnR1ZnVlcExWbl9MUGVuaVlhR2J4UVR5UFJFVGNFd1JnRHN3SXY5N3RLcEVaMG0yWk9pYkV3QW5MbElwWXQ?oc=5",
+   "source": "South China Morning Post",
+   "domain": "scmp.com",
+   "published": "2026-10-16",
+   "outlets": [
+    "South China Morning Post"
+   ],
+   "themes": [
+    "奥运 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Are You Being Hired Or Fired? This AI-Native Law Firm Can Help",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPM0pTaGVKang2Z1lfSzl3VlVnUlY2U2xocG9tTjFzLUJJY3pJS1V3VHFhb0xTdjZ6aFlFQTNFS3l0ejMwTkpZUUNxeThCTUJWNTNjOGRmaHdBMkVuSF9LV0p5bWlmRVZFMEpHcnBPLTVVeFR0UWhQZHRTOUxoeHhCRUw2LVpFZE93Y2ZjQmcwNWZneWowUWJROG9fRE5zNUg0YzE1bDhacjgtWnYxZDJ0TzlJVm8?oc=5",
+   "source": "Forbes",
+   "domain": "forbes.com",
+   "published": "2026-10-16",
+   "outlets": [
+    "Forbes"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Anthropic's Daniela Amodei says AI girlfriends and boyfriends are a 'terrible use of AI'",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcmdJLVpxYzJXcFZyZ3VyMGF1cFg0Uk9XSmZIVlZhUW1jM29WUmVFYU5PeW40OURYVmRsZEI2R3N5YmZfZUhRQnlDMUhsM1FiY0N4Q3RDbGlDYkg4RkxHZVBIcmtFOTJYWHBBcVV6TlktMHQySmk4b0NqYzV0b1hzaURaQkRiekE0Q0ZGQXpTR0NfQXM1ZnlEbWNxUUlWVHJlNGc?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-15",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "Daniela Amodei",
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Microsoft AI chief says the company beat OpenAI at its own game, using a quarter of the computing power",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUm9QUUxrcmFLc2hGRGljQUd3N1JKbXNVYVZPb0xfbno1eWhaVDZ4UnJXSzBkU0VBcTlCbC1Hdkc4eXZ6QzB3eEh5cEdKM3ZmWnEyNWxkWUxEeWl1anY3ald1b1JISkh4R1BmY2wxaDQ0YXJCMndhTmw3UlJGT3RFSUd3Q3hLVFFybHdlYmROV0pQZUE2X0J6RlhXQlhYc0E?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-15",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI",
+    "Microsoft AI"
+   ]
+  },
+  {
+   "title": "Nvidia CEO Jensen Huang urges U.S.-China dialogue on 'potentially dangerous' AI",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBEYjc4dkowbWxWTnNOYUdjTVk1Sml3aXVyZGpmak1uZ0p6RkpaNTRPWThSWldLa2pGc0kwVS15WHFzVnJUU1dia3cwbTBPVktDUmVhak5Lak8yUi10V0syRFl1c0NvbXBMejR2amJzX0ZSdzDSAXhBVV95cUxQZUVwekQ3WExVS3ZTeXIxWEZ5OW9iTnpwbzUxMWVhSWMydTJoNTBoT2V4ZVk1bm50Rl93dklWRnU4NnR6aDZBS01LZ2NJUzVYWHkzejFJUVR0cnFPamxXRHJxSUNDVHFtaWdwYVFqQ21HMXg4ZVVId1k?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-15",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Jensen Huang"
+   ]
+  },
+  {
+   "title": "Microsoft’s CEO is still haunted by staying silent in a meeting with Bill Gates",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSEY2OU0zelRnS2w5VWxhcU0zMnFZeHdNekxyaDQ2MWtjYllCMU5keHVzRHJfYnV2cjVBc3pHLV9BLXIxLTg3Vzh6VVJyYU9YLWZIRE5SelhrY0JnOVBJRkVJUEgtY1U5a2p2YXRZSzA2d2xpTGRDZGxPdmwteGlUck1heGNCTEU4X29uWHVwQlJZWDRqbkpMSGQwZ2ZpTGlxWlRHRlZuOXBhWW12STZ4UXZTcXdKVkwzQW1Vano3N282VDNWa1lVa2xaS3hNMFU4WkZOZFZpWEZBY1dEOVdtSg?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-15",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Microsoft AI"
+   ]
+  },
+  {
+   "title": "Elon Musk agrees to settle lawsuits over 2024 election lottery",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRWNocUdlZHdZdEpFWmotSFNZbTd5cWVveGxXYnh6WFNBaUNlUDhKdnE0c1VVZWdpYkVDazJxeUdRSXBKSW9SUm5qc2gyRDhpdS1jTkxidGNXSmFfajdGeV9ERUQxMnUtYl9ZNzZ5M0J4cXdLNWxfTzR4d1BNblNlNlN1bEM3VUd2MDhZVzcwNTlybllZYWhkejBmUDNaUXJqaUROcDdrb2wxV3RSaEhnV1ln?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-15",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Elon Musk"
+   ]
+  },
+  {
+   "title": "At Anthropic pre-IPO meet: ‘Thinking’ caps, surging revenue, no human extinction",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRHl4NDlfRl9CaVdHZzdFMUYzM3Rka2RvbXlYcXR4ZGEwWGt5LS1rSlZmUkx0SFhxMnlCb1AtSElVcWJoT29UX19jcnRlMFpQOW0zOXQ1cXd0eHNpeFZKdkdxM2JCMjZrOXRXTmhWRExOZHY5OGpxcmY1MHJ5QlVRc2hDejdubVcydi1oYmJRc2RKaWRBOWFLbFREY2VEblZ4SVRpdQ?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-15",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Cohere moves to buy AI cybersecurity startup Aisle",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUE9DbHl3UklEenZpVjFtNVpCb1RXY0ljendQMVZudHZGSFRiYk4tT2hsNk5KMjJIVDhjbDVyVXNxSkVXS0JmaTFUSml1XzNsdDdpQjBJNDd1MFlEdmdPNFE5VDMwbEc3dWhUTWdGT2ZzbVdScGJtTkFjNkdMT19KYVRXUTI4b1d0eE9KVHhPWUhFbTFPQlRsVWVTdC1EbEMyODlkc2FR?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-15",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Cohere"
+   ]
+  },
+  {
+   "title": "Z.ai’s GLM-5.3 model raises researcher fears it can fake AI safety test",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUEdtNDRJT3FrZV9KVjBFazNPS3Y2MkQyQjhaTjdsc3dVQkZCOFBpb2szbWk1VHdKSkZrSjE2NEVNdUZwUG0zMElsWlNURDkzM3VDdW1PMjFlNXl6RWIwQ3B6U2xRS05GTDRZQjRoUllibGxPVFJ1WFBoekdxZmFZUWRwMlNlMEVZUjlYLXdvMW5fV0VEY3NYLW82UENPejVZY0tIeE5MRXQwSmY1Q2FqbXdhdmd5MTFPc2M3WXk2Z1dXRDg?oc=5",
+   "source": "South China Morning Post",
+   "domain": "scmp.com",
+   "published": "2026-10-15",
+   "outlets": [
+    "South China Morning Post"
+   ],
+   "themes": [],
+   "entities": [
+    "Z.ai / Zhipu AI"
+   ]
+  },
+  {
+   "title": "Meta releases Muse Spark Open, a new ‘open-weight’ AI model",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPT0RHc3czZERxSklFc0VnWGlpTDV4VUpjVDJONmd2Mm9XYlRKUE5TUWUyNG1BVFJ0c044WGtINDBuR3VnUEdXV1puNkhveWx6QXdWT2tyc2RpUm9qS2M5eFI4ZVlnM3VaRE9mdVgtZDVOS1NwdGJMVTVJWkNVWHFiaHVfVnZQLVRQaU5JcF9nVi1aT0loWUltUnRKaThnVmdqaVV5UjdVMkxoR1E?oc=5",
+   "source": "The Guardian",
+   "domain": "theguardian.com",
+   "published": "2026-10-15",
+   "outlets": [
+    "The Guardian"
+   ],
+   "themes": [],
+   "entities": [
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "Law firm Crowell faces disqualification bid in AI lawsuit",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTUJvWVVOOXRHdzNZY2Y2SHFsQUZBNXpxWTV6OWI3cUM5Q2RoNGhvMkFSUUJrdGNCM3RCajF2SHloVDV2ak1VbE9jcGo0cHV0TVJFUmI3SlJHd3RKZUR5N1VwQ3FIZTRaMWtYUDZiaktBRVhVYVV0WHY3X0tUZG9laE0yUjZJZGllTVNjNk1lMlMzX1gwNWRTY2xkcUZaM0RhRmRpLWdnd1h0X3NvRnV3?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-15",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "From Being Found to Being Recognized: How AI Is Changing Law Firm Visibility",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNFNFWXlDUHJyUlpZVlUwY2FjRUlSTVIzSTZwREM5SXZvRHNKVTBWWFVpV3pkMXc5NkVqbWFneTIwVlYyVVlPOC1na3lNOTZINmVyb1Q4V2NLbE91NkVvcnhkSUQ1Z3FZQXJWZllqazZwYVlYQW5vSEpLMmNkYkw3ZENUUVlNZ3FiT0k4VWpaNHY5WVBhMERRNXBxRGVvT0Rid1o1bENrOS15Yjkxdm93dmJ1MzdCb2gtOHVsb1R6bmE0TGM?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-15",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "AI is ready to act. Real estate brokerages decide where it stops",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNU0RhOVh6VzJ4X1RSU2JYamVoV1F5M2dpWHZsbk9FWklMN1Ria0tBajUtMzlfcVlrbGlZNjUxQ3RCckFpZnVud3JXUzZkWkhCRmNxcVlnTV9rcXotX1NYelc4dXkwSFJiR0ZMcHlvV1F0NWZudUlNelNFdm0ybnRnTlVhc1F0YmR1VlAzT2x5RUl3UWxHRjZWX2hR?oc=5",
+   "source": "Inman Real Estate News",
+   "domain": "inman.com",
+   "published": "2026-10-15",
+   "outlets": [
+    "Inman Real Estate News"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "AI in your oven? Anthropic warns models ‘months away’ from self-replication on smart devices",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRUxXc0hJVk5xRzdVTE5hQ2h2LWdnS21nUEZRVVFwX0dVZHJ5QUU1NUxmZUgydXVrRS1jSVNDRmtSVU1YYTh2RURQT0NQcEozdXdIb0FFM1RLakVTRXJFYTl4RU9kQXRPTUM5Vm1uVktaQ1NXaXp2Z3UySW5ZVktRTU5ZNGVocUszOTZV?oc=5",
+   "source": "The Guardian",
+   "domain": "theguardian.com",
+   "published": "2026-10-14",
+   "outlets": [
+    "The Guardian"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Nvidia’s Jensen Huang responds to Pope Leo’s AI safety criticism: ‘We all care about the same thing’",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPcE1vZ2xQLVlBMVh6RkFoMjF0bWMxZW9qMzNWYkdRU3gxUjhIRXMwcVVPRTBVM2Jpc0xWNVNLNVJQVnVHbHUybkV1akFVUWdtMEQ5SDFtaXRZVXZ6V19wbjZ3ejZ0RGxqVngzY0dOa09DaTJaVmdERFc5Nks0amNFZWUxU1pBM0tZdGx4dk1kMGE1YTVfTFJiSUVGSk1IaDN4c2N0RDNMeHByYi1iSzZEdlNERlBHYUJ1ZVAtRktPcjk0ZXAzaVE?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-14",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Jensen Huang"
+   ]
+  },
+  {
+   "title": "Watch Kai-Fu Lee: AI Transformation Must Begin From the Top",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVWxiR3ZpYkZDT3JncExRbWVSZEh2M2tOdlVialhzUVNscFVaUmdlOWFwaVRTYkNldTJid0ZvQzRQMmNLcThDY1Yta0kyQURWWGZJdWh1aXQzUXliOXQwUUhlVklXUU5DRmM4akdhVnBpYUpUSHcyYXRVb3VRSXg5R3Jnc3p2Mk9STGh1MkhpakY5NVJaanRJSkd2VG1aV2hmeHF2U3NJQVN2MXM?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-14",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "entities": [
+    "Kai-Fu Lee"
+   ]
+  },
+  {
+   "title": "Anthropic's third-quarter revenue is said to hit $16.8 billion ahead of IPO",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb0pwUi1KVnA2SDhrZ2tkTlhnMkpEWU9HTTRacWpHUDl1aVhzWlNHLUpIWUx4MjQ2dFNfd2VJZTdDbUVtV3hCVjRDVDhncnZZWDBEZVdjZEQtcVNaTFRvbWdENmVQZkdRYXkybW9ucllJVy0wLUtERjN3c1A2M2pDaktKc0tJSEIzMTFDM0pQYWR5a1ZCeTNoYzFRSdIBoAFBVV95cUxOa09ZVHMzLVc3Rk9sRFhSRGQ0NkFSYmZuLUpLQjMyY0hYRTI5bU9rNGk5VEI1a2t3MFNHNThMTlZyVFhTMFgzMDlqdVI3WkNCUDRFdFphTXBFbHl5ZDV6d3hrcURESmNJQWFiYVJzaTItVWJiV1NSbTN5Y2ZoaEZfWTd3RWlXMWlYX0dQMHQzYlI4Ym5mRzkzdy1KSU9yQXNk?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-14",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPREFXR25nQUF4WXJFTFcwN01WaS1OUWphZkFKWmRLVFlza2c3Q194d1JVdWdpRU9LWlNyZlE4REZEUEdhZzA4Ykc4UEpxZmdaaUp5ckZIcG5zNXdOYUdIYm9WQ3JxOXktR2I0d1Jab0g1T0lRcERma2FrUmx6ekZoRGJPazE?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-10-14",
+   "outlets": [
+    "Financial Times"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "A law firm's secret AI weapon? Mountains of case files and decades of institutional knowledge.",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeHdRWnFWZm1LTTJ2ZzJqTEFyUl9DX1lwTmlnSS1XQTJNRkhqYVNjQTJNZTROOGpWVG9aenRUczBMdFpIUndILWtNbzZNdFRQMElSeko0MzA0dElUX0N0a0o0dWIyd1pvUC13eG51cjJ6Y05lb3hNTm8zYjZWRTZ0My1yT2dsQWp6RmpYNzJRaFJGMGVvZlpPSXRWMA?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-14",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Paul Weiss, Columbia Law School Launch Collaborative Gen AI Initiative",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPa2dmYTZZMnJ5b0U4b1h6V0dXV3d2enBLNDhQNFZBWXFLNHJMN2Y5VG5pM2k3YUtvdklnVTByRTJTeWRLVzZrazdGTTYzT1hkTWlpSlp5S2phVWVBME5lZzd5T1A1SVVkR1ZJV3NmSTF3YmZURkVaYzFYRWVsd29IRnZUR0Y0T1pfX3FDZFdYblZ0bW9QLTZpQTQzNTBIQnliVUFxRnprYjk0X0h1YU5UUXR5OGNRemk2NnNCdg?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-14",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Goodwin Partner Launches US AI-Native Law Firm Arm",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaVBUc3hSbFRoTVo2ZXdQOW0xWFhGZXg5cGdPSUNzYzAwUHBiOXpjX0d6blFKNUpTeVRtUnB5VHFySFRGVGtjSFlhUG1ueTdESmhCQ1ZKekItMmNlZ2I2b1RTT2s3eDNDaHBzYnU1Q09qWmFFN0hiRXZoajlhSC1jVENQcW1kUl9kV0FCdDh6Tl9naXFLSFBnSndUNA?oc=5",
+   "source": "Artificial Lawyer",
+   "domain": "artificiallawyer.com",
+   "published": "2026-10-14",
+   "outlets": [
+    "Artificial Lawyer"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "AI Could Kill the Junior Lawyer Pipeline; Is Banning it the Answer?",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdjR2QUtBR0djTWpwT3VseG01UjNGODR0MmlqVG05UHM0NTFjc0xTd2NabUQ5bDZfWU9UV2NDdEJjdkFpTjVQS0JCckNZcHlZbG9CdHJvamxTaWhzZXp5b19rRDIzMjgycFRoYzZvU0RVQ2NzTDZzekFJYVVJLWZQdF9ROEwyQ3Vpdkl1eC1vMGxHTGRKaDJid21JbVJuZlNkTUNsRjlCU2xkdzZidGY4cEUwSDdYeTR1Z0hJ?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-14",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "AI marketing for real estate agents: Don’t skip the last 20%",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcEVtTHktbjN1Y1p5dU9Na2RYYXBjek55YkdkaDNBb2FUTkRyRmNzR0ZTTllaaUNyakt3alJIRnU4My1kRURYRTVnelNoVmp1S1RmY2lPSy16a1FGZnpTbDRhbG45UkQyQnNxZkdrY2hNeXM0RmFnTTVtMm4tbnNEWmlzS3hBdjlCS19OYzZvdw?oc=5",
+   "source": "Inman Real Estate News",
+   "domain": "inman.com",
+   "published": "2026-10-14",
+   "outlets": [
+    "Inman Real Estate News"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Zuckerberg Admits Meta Lacked AI Certainty on $200 Billion Bet",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQLWxqM1VOeGN4Mk81VWhqbUxXWHhzcjB1SkVxTWNEUktyWUNEWF9OZ0pKSWh5Z0JINklrZjNWSDdaSUJZQWFWQkFCcEZTUHVkWndic0hrYm45cmdMbU1GLUVBYUdiczhINXVoVW1ER1c0WHVkWUFlbXp0V0RWeFhsSUpodW9zZEZsdTlTenFCNU45Um5ubzBUWUJyUUZCd21ZaDRwcGhzeDVHb2FhaVh2dUpn?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-10-13",
+   "outlets": [
+    "Bloomberg",
+    "Quartz"
+   ],
+   "themes": [],
+   "entities": [
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "The Ceiling of Large Language Models & Liang Wenfeng's Next Industry-Shifting Bet",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9KSHpWMEpQLW5hYk5ZV3JtQTNtbGNwSEZPSzFlZzVkMHNsamQyQXozNm16RloyZVdPWkdGQzBPTFhFczdXQ1duS1h1R2ZGN09NRm1j?oc=5",
+   "source": "eu.36kr.com",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-13",
+   "outlets": [
+    "eu.36kr.com"
+   ],
+   "themes": [],
+   "entities": [
+    "Liang Wenfeng"
+   ]
+  },
+  {
+   "title": "BofA No Longer in Talks to Arrange IPO of China’s Moonshot AI",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbVRYVkNmdzR1N3U0QXNEMWgzcWk4V3NaaXBtb1MxeWRZOWpIS3FLelJJYmFaUGNGV2JtajdMaXpsNmlKZGlmM0NxWmh3Q1cxMTFvNmc3YjR2aUE4OHFwN25WUDEzNjVKMGJrbUc1dFlkSjVHYlN2d1Q5ZHhMMEhNRlMyUFdhRHhYUkNnbEY5a0J6T0l3RzViRXZ3dHRDazFsRmVhUVNuRVJOREs2Sko2Zl9B?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-13",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "entities": [
+    "Moonshot AI / Kimi"
+   ]
+  },
+  {
+   "title": "AI Utilization Is 'Skyrocketing,' but Law Firms Aren’t Sweating Consumption Pricing",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPb0xRcFZKTXlxblo0b1B6V1ZPUnZMcTQyVzVzMkpwNnN1RmtIQkZLN0ZXTTM2VFg1b2Q0S2pCRFhsWWk3VGxJb1A2QmNURmJ1YmZTZzgxV0h2UHo5SkdzLXllRE9XR1E3ckVYNWlISjFYbmdQSDYxMVZvSlRKSzkyaEtCREtEOGFsanFWNjB1SjVmNUktOG9ZWTJuT1ZRaXMwdVA5bHVGYjFOV0xPSkhYWTh6clVnT1lMOWlQeE9Eb1J3WFlGcWc?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-13",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Wilson Sonsini Spinoff SixFifty Launches Employment Law AI Agent",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNThWazRHdlR1TVdmX3NfWVJfM194X0lLMUxPSnlqbjdUb3p4Uy1Lam9VRzNqQmlreXQwZHNpbmwyU2JyQjRsTXNpbjNzTlgtQi1NbVA5X2hVMlNYeDVpZWtLVXA5UkxVR3FLbm1BTk5MNTl4UHpMSXR2V1NrTWlCRldNWEVJMlBDMXhESjFTN0NMTU42YWJYSW1yWUp5YWI0em1ycFBkZHg5Y09Fa0Jn?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-13",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Meta debuts Muse Wonder AI model in latest test of users' willingness to pay",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE11QldFTGNiMGg4N0FwZHE0OGl5ZTBoZkZGdnBjZ1ZyOURmb1lxUHZScVViOXQzMzNmZnJBdlNPbE1xdkVTWEpLSXVPR1R1ajRmTElvSi1JNG5YbHk0SnlnUUhVZzR5SG16YXZyMWFQQWQ2YzRUUmpZ0gF8QVVfeXFMUFVKWjBUSUhEcDFKSk1lQ2M0dVNWMHYtZVVlbkRfS0ZTVnZIQ0E2elc1UEdSbkFKcXRncjhOVjAteDJ0Y0R2YzVhRGlOY0tOWnpuUjN0dmxHSy0zUVk3bW5RWFBlUTJ5LWd0WWMxaEpqVkoxY05pdzY4a3JzSA?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-12",
+   "outlets": [
+    "CNBC",
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "Meta was prepared to write an up to $200 billion AI check before knowing whether its model would work",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOa2MtRm5LSXduTHNJVmtkTWE1emxfNEd5eTUybmpYdFZaaDdZWXFTRF9abzFLeG5Dc0FwNERuU1Nvbzl6Rk1KRTZlUENxX21xSWUyYkExdDlBTk5GRWludFNSNEh1aGgwM1JDa09oR2FlYXJYbzVraEYwSWJQOXNzb1Z6NmJDT09Kc0RuTQ?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-12",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "Against Agent AI & RSI: Yann LeCun’s Groundbreaking New Model Challenges All Current Mainstream AI Narratives",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5BWWRtSUtMSW1IbmJOUzF3SVN5R3l1YlBMd0J0WHZoekZ0TEtPNlF4d0hrWnU5V3BULS1fdlVZX0VVbGVjVWliWkVCV0ZQT0xvVU80?oc=5",
+   "source": "36Kr",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-12",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [],
+   "entities": [
+    "Yann LeCun"
+   ]
+  },
+  {
+   "title": "Meta Says New Muse Model Hits AI Frontier After Aggressive Push",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbEE0WWhsM19sbHp4eXRuUHJNeURDWkpQS2tSdE9scThXNUVrWGN0R19KdHZLdXJnZjJQNFJXRnRsNXNWS1RmeGhlSlR6bVFER0JsWjRraFVIeXpZZkZIblc5TmVaeExWYjRqamRnUUl4enVHb0hnN3B5NUdaV1UwVmlmMVE4QlpYWmhQeWlzVUs5X0dTZkVtSHZDdXJZTHNaLWtFQ3luM0puZk91QlQyeWdPTVg0Zw?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-12",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "entities": [
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "语言模型的天花板，和梁文锋的下一场投注",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9PeUVPdjZzM3otcEZ1clI3Vmdrb0NvU3J2YnFZR2wtM1lxOFFSQ1NRZUhvaTlwRFZvX2REU3ZIVDlDRXZvSmVBYVRQQTk4dw?oc=5",
+   "source": "36Kr",
+   "domain": "m.36kr.com",
+   "published": "2026-10-12",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [],
+   "entities": [
+    "Liang Wenfeng"
+   ]
+  },
+  {
+   "title": "梁文锋投400亿，乌兰察布被AI巨头挤爆了",
+   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5xXzFwWThFTHBYV1ctVnhmcUx2Vk4xYUJhbXZDSU50WHdIcjhHM2hHYVRGVm1mNkhmR0UtWDhaaGEybnBDS2tDcTU1ZGlWdw?oc=5",
+   "source": "36氪",
+   "domain": "m.36kr.com",
+   "published": "2026-10-12",
+   "outlets": [
+    "36氪"
+   ],
+   "themes": [],
+   "entities": [
+    "Liang Wenfeng"
+   ]
+  },
+  {
+   "title": "Andrej Karpathy Says This AI Gap Is Widening",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPazRtdjU1bGh6enIwalNnOWFxVXBOSWRVTHU0czVqNzNhT1NQdDJYeFpvVHN6ZEp2ZW0zSnFMZHNMaURxRDVaSTNRYjhpWE4xcTFHbXlUM0ZiMHBCVmFTSldWUm5pRG1XRnl3WVFnclJMTE43SXdHbUNZaGlseThFa2NNWQ?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-12",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "Andrej Karpathy"
+   ]
+  },
+  {
+   "title": "Moonshot AI Plans Record $50 Billion Hong Kong IPO as Founders Fight Equity Lawsuit",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZHdiQm9JMHQ5MDd3UUVGaHZiZWtTY1hZZi1rVWcxTm1mbmdHcElTN19CQW1OR2daZ04yeEpjSllUb0hMTFY3YUpOdGQ2LTNPbWNJcExvRmszdU9Db0JINjNDZWdKeGdsQkVPZklYMGVxMUVZMmZmNGUzWFpiNnVXbXA4SjdPZzZudnlydVA4MVVDc2s1Q2Exdm8wTFlZOTdLUVFmbjlqaElzNHJFOHVRbU9QYmhYX1JaOVRTdWhoTkxvVjdvWkJZN0J1Qmo3VzhQTTlWdzd3?oc=5",
+   "source": "Forbes",
+   "domain": "forbes.com",
+   "published": "2026-10-12",
+   "outlets": [
+    "Forbes"
+   ],
+   "themes": [],
+   "entities": [
+    "Moonshot AI / Kimi"
+   ]
+  },
+  {
+   "title": "AI Adoption Framework: Simmons & Simmons launches the Legal AI Maturity Mountain",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVFTNWFsRUN0UGdBVURPSlpnZDdJbXJSTE5FZ255QUxZejFYSWdCSTBQYkM2S1FjVEhkZ0ZqZ2ZMV003T05iYUtIdVdibGdDU3d0YV9felRHNUNlY0N3Y1lfaUVfRE05WVhBLVpCS0xDTzRPcUdaSDQwNzRoLTFucFlWMGx3MHo5dXlrazgxWmhVYk1uRzlWN2psalB1RmFrTTlPVG4za2wzbHhtWjRB?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-12",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "A New Strategic Framework in the AI Era: Mapping Future Business Models of Law",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVk51elQzbGg4V3FyaU1pNlRNYzNWWHNRc3hSMlhMT0dMMnAtdXJnX05iN3ZLT0pNOXRSR3dfZFdMbU5ReUhkRUFUNkpvd1d3bUQtQ0ZINWM5WHUyTlBBR0ZBMFFFdUNabVFZY3VuSkFtcDN6TGNfMHBySWxlMHZSV0JTOFd3Q0VMMWg4SmVlcXdGODJhTHlZV3lTTHotSEU4bG8xNWE5RFBoYi1PMjQtdjZmQ091ZDBiNG1uWmpKVXQ?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-12",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "The AI Agent Privacy Problem: Who’s Liable When Your Legal AI Shares Client Data?",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbkVxME1ZSkZDV25kOU82OWREcGxnVEVMSTBkRkZ6M2JSMEozTEN3cm4tYUluYm9uVldZSmMzUXBjTnllcjJXQTh6QnB6cXVuMVlPaC1HVnVpVTdiTUVnN1FaZHpidVY5eGlwUzJHdHlIR0s4VUJTejViLVRhODZ6NGpfYzRrUFRmcXhxMXk3S0t0MlktZHFRcUpCamFDYWVSM3NsZVBWaHFhVEFPV3VGWG01cG42TjJpYm9ha19TZ0Mtdw?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-12",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "何恺明团队发布多模态Harness框架",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE85TVBHVm9XckpiNjdQYUFic1VqazFfUXZSeVFXU2hjWF9icmJfX3hYWmttc1BuTkhReXdnTDlRN2pKMUNuX3dPdmdfcFcwY0NheHVCSw?oc=5",
+   "source": "量子位",
+   "domain": "qbitai.com",
+   "published": "2026-10-11",
+   "outlets": [
+    "量子位"
+   ],
+   "themes": [],
+   "entities": [
+    "Kaiming He"
+   ]
+  },
+  {
+   "title": "Microsoft CEO Nadella Calls for ‘Emergency Brake’ on Advanced AI",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY2tYeVZwTkEwVmNuQnBYVnhKMHNnamZKeEtqeXlyT3AtRVlXbWtMS2wxRktaYWRyUUJfcDV5MktLeFZJRkFBYm9WN2xvT25VY2VsZFNnSzZhNXBoYzZSRzNCaGgwUFBiOFloZ3BwdzhnZzEyZzJKbFk2Q1ZDbW9udEZ5YklCSzNNd256aEN5elc4RlJfZVNrQ1FoVWlBOFBLWDNodUJBWVNVNVJEc2paY1pNQQ?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-10",
+   "outlets": [
+    "CNBC",
+    "TechCrunch",
+    "Bloomberg.com",
+    "Quartz"
+   ],
+   "themes": [],
+   "entities": [
+    "Microsoft AI"
+   ]
+  },
+  {
+   "title": "Satya Nadella says a company's relationship with AI should have trust issues",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSXhaeGUwR2NOdTU2bk9lUHRSWlliSjFOaWhEV0FIc0c5RnFhaE1iUUZueW0wa2ZPMS1ieHdRdlVfRm41MHAtWktyUDBDYlRVYUEzUFZRdnI3R0pQUHZCcVFfN0d1SmxSeUxIUDRjQmw0X0RITFVvRHBoRVU2cmJyOGFER1lDUHVtamNnTkVRbGotYW5kczlFLVY2ZTM5REFUQ2ZldHdCd1BaVUxGSHVoYnhCM08wdTA?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-10",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "Satya Nadella"
+   ]
+  },
+  {
+   "title": "Satya Nadella says we should assume all AI models are ‘compromised’",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNb0xoOE5UOXhHNHFtQmRaTUVrOFdCQl9iV2k5SmcxblNucGJadERtY19lQ21iS21Fa3hhd0hCOTFhaFhLc2tHRHJ4WTVzYUx5THdyZllxcEF6d0E5RkhVMVFyNi0zX2d2T09DNk9uYmU5dFV2QUxBYXhwY0dpNmF5VlZJSDBvX0t3LXFaTGN1cTFxeXZabWIzbGZmMUg5eFo5OVNkSE1QcWhyNUZZVUxlOU1lTU9HcThyTU9ZdURYQ2dVcjg?oc=5",
+   "source": "The Verge",
+   "domain": "theverge.com",
+   "published": "2026-10-10",
+   "outlets": [
+    "The Verge"
+   ],
+   "themes": [],
+   "entities": [
+    "Satya Nadella"
+   ]
+  },
+  {
+   "title": "AI is changing how lawyers work — and putting the billable hour under pressure",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZ2hidGI0TGJ6T2V2a0tHemdJa0hDLVdPM2pwUzlBQ0dURmZVaXhhRHRlZXA4ZTFCdUxSa0ZqVUlMYzlDVGwzTVFqaWIwS245bERiLTdTRnEwTUx2NGdfQ0RDbDdBdENMUTZrOVUySXVvZS12WmFFcVg2ZEJxd25YNtIBhgFBVV95cUxOMUx6eWE0TzFibnprdkhJZ2FxSUM3MjEtVkhsOExPZVBRVjJDWnhYMllmdDk4OE96aXhCa2d5TGxReXBkV0NCb3p5UlJneTV4MF9xVEhudWNNQ0NlV1FiM21nQzlSbHhJb0IzQ1RwWHZwcVQxbzMwN3phZ01VTXhDMVlhWmR0Zw?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-10",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Mark Zuckerberg says Meta has reached AI ‘frontier’",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMmEtcTdxem5KMG95LXRKM2VIcGF2X3FjLTdCVmNYQzhMODdzQ2plTW5EQ1F4SHZ6RThpUDllZWVpWVVpdmxCODZyMVEybm1oZ3pNX2pOb0VrTzllbXhDTkp0Q1ZmLUhJQklNR0hOUy1mRWlrdGV4cUxkUWthZUVUQkVUZzc?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-10-09",
+   "outlets": [
+    "WSJ",
+    "Financial Times",
+    "Business Insider",
+    "The New York Times"
+   ],
+   "themes": [],
+   "entities": [
+    "Mark Zuckerberg",
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "Satya Nadella went from H-1B worker to Microsoft CEO. The Trump administration just shut that path for his employees",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMnN3a2xweWZqYXdhOTFJWUZ6RFNRNjBDNmtEZlQ1UlVwUHpjNG5wdlJYR2pmUXJHdW0tWEpnbU1hTzZmN2R4SjE1Y1Y4aEg1SHhfUVBTQWRLbXNKSi1PQkY1QlJlZFFJcF9pM0NOZXl0Z1BzQWwtRGJmU2MyNzRVdDBValhidzFINWxQa3ZkLVNHSWc?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-09",
+   "outlets": [
+    "GeekWire",
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Satya Nadella",
+    "Microsoft AI"
+   ]
+  },
+  {
+   "title": "Inside Mark Zuckerberg’s Decision to Pull the Trigger on Meta’s A.I. Agent",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQUtkVjlwSXlOeEVudTI3NWxvd0RVeDBVOGwySmNxOGZ3ZDRmODQ0UTZsZGpLRzNhZXQxWFRISmloVm5xTVdlMFFnNzI4Tm4zdmpiWnlURXYtc2lPeWszZTh2T0RMSnpKbHhjdk5rRmMxUk1sYXFUNkxqbGlSWkNBdkRVTmlJdFIyR005NkE2c1g1aHlkYWFyLTRvbjQwdXFpdzBsUVFkSWI1MkhvaUxoNHQtbzR4RS14M0VCRlNB?oc=5",
+   "source": "The New York Times",
+   "domain": "nytimes.com",
+   "published": "2026-10-09",
+   "outlets": [
+    "The New York Times"
+   ],
+   "themes": [],
+   "entities": [
+    "Mark Zuckerberg",
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "‘Mark Zuckerberg will love The Social Reckoning’: Sony trolls the Meta CEO with an Instagram ad",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSTVLYVh0VnFyc2Z6b3lHUEZsZ3NuSFdKRWZ1V3N6V3JBNUJJZ21sc2o1OFZIMVJvYjNTc1ZwSFRkamsxODN6cDZXVURyajJsb0hIN2Z6dmFBNkJyQ1NRRFhvamNZbFpJcGNPZmt4UnZuVXlOWVVzTU5YSFRoaXpXcW80b2ZtZW9NckVVYVUxTXA1cWJtWFdJR3o5aTZlQnM?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-09",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Mark Zuckerberg",
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "“芯片女王”苏姿丰与“AI教母”李飞飞同台领衔｜两个站在AI产业之巅的华人女性，所有逆袭都是熬出来的",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1OSVFKTWc5d0xjZG9hTHh0Wi1fSk1KZFFfRlduMHBpNnhsblRuWTlXRjZweVFoeUxHT0FNRWhPTm1nQUJmbTZtZTFxMHlrZ2hKSUNZVURCeGgtV2dsdFV4RQ?oc=5",
+   "source": "ThePaper.cn",
+   "domain": "thepaper.cn",
+   "published": "2026-10-09",
+   "outlets": [
+    "ThePaper.cn"
+   ],
+   "themes": [],
+   "entities": [
+    "Lisa Su",
+    "Fei-Fei Li"
+   ]
+  },
+  {
+   "title": "MiniMax Valuation Plunges 80%, DeepSeek Seeks 100B Yuan Financing: Who Will Back Deals Amid the Large Language Model IPO Boom?",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBUQ1RuNWRuMktQbFYwNUN5c2xrTFBYdXctTXpFNXJ1V2RqZTRUUkRfc01pN2dlR1FxbTVUZVBQZldDaTQ5U0pYaHpGTkhkcllfR0hn?oc=5",
+   "source": "eu.36kr.com",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-09",
+   "outlets": [
+    "eu.36kr.com"
+   ],
+   "themes": [],
+   "entities": [
+    "DeepSeek",
+    "MiniMax"
+   ]
+  },
+  {
+   "title": "Anthropic bans users from being 'cruel' to its AI systems",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBWNlVxalRiTEpFSEJ1dFEyMGVqUUszODJKSjN4cVVmT0lwN1FVZ2JLTGFER1ZQRTMzLWNNdV9vb1Z2TVE2VHpadTR5Ml8zbDE1TnR4NXhjYktQSklKcnc?oc=5",
+   "source": "BBC",
+   "domain": "bbc.co.uk",
+   "published": "2026-10-09",
+   "outlets": [
+    "BBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "'Real boss of India?': Elon Musk takes aim at Indian billionaire Ambani as Starlink launch stalls",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE54blh6X19zQlJzVUs3aTItdjNGRHNFVGQ4OUhEWk8xZWhJbXBJNlVHMFN5ZzRJSnhSQTF6Q0xEUFpTNXRQTWdZMnZZU2t0NGRadDdjQ0VZV2s4RmFWS2ZTQ2VqVkFNVU5sdS1KRnMxSVJnby1J0gF6QVVfeXFMTVZVRXBwVVdoakNsdXFYcnhCNjdUOXNBUkh3d3lvNEY4V3pqZkhNSjJzdDU5anpNMW5PUkZGcHRKdHBsYUx3LVZwSFFjakZUcmNyWVd5REhLTVB3TXpITVVsZTF4OFNKZTh0azE3N1hsZjJkQjRMeEpGdXc?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-09",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Elon Musk"
+   ]
+  },
+  {
+   "title": "Legal AI Maturity Isn’t About Adoption — It’s About Business Impact",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQLWZ0M2xIcS1rZXp3Q0FXNU02WTZxajNpeGRyNkRfVXYyYlFLWE95dVVHNWp0QzlLLWJIR0dzbEZSUFZnaVd3VXV0dGxmX0syeUdIWW1wTDNORC1hU2tqRlc4OW16X2RSUDJ3a0pkX28xSlVtU2NaRzhXQ0FfSGMzekk0NWVhY1Y2alcxdmxKSzVJUFliMmxwUWdkWko?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-09",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Make Money From AI Tools? How Some Law Firms Can Make It Happen",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNaE9wa2U1RFlIQnlSYnFVYW9DQ0lwSUhLZzBzQW5xVWt0VVY5eHJuNjJCU2p5TTFxSjFMdG1MaGlkVnFzWXpaeDYwTmJGVXJoTjlINGR1MUd2U1A5bDcwNVFIYVJtZXc5R210QUhZY0x1Wm03RE16M3Qtd1NxdE1rRFgycldzbW9SRDVZMUZGMjhrVHRuYVg1OUJjRUUxTWt4S2oyNjJ4eU1uUV95V0E?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-09",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Sam Altman says AI will make ‘bad things’ happen. Exhibit A: needless death | Moustafa Bayoumi",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWkFtUUd3RVZFZnpDekFma0NOclhmaEtBSXY5N1FlRHVINmVBS05QckozN0RuOW16VldfbURhU3dCODlHT0VhczhzME8xWUg5WEM3QUF3d1lwYzdUaDlXeFdCd2RLSjllbWVma09qaTNXOXVPN2RIRjYzdDdRTGpWSTZabw?oc=5",
+   "source": "The Guardian",
+   "domain": "theguardian.com",
+   "published": "2026-10-08",
+   "outlets": [
+    "The Guardian"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman"
+   ]
+  },
+  {
+   "title": "Nvidia CEO Jensen Huang says if you want to be successful, be prepared to suffer",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbHJPRFVJMzN2Y190RFF5S1AyTmk5aHAtSVdiQ2k4N0czekpDN25MMzhaa3l3TnBFTFU2TnhFTVI5SEl2TEplS3d5VDJyanc0bTRxaXA5cEFNeW5IVnNGZ1JFVkx3MlB0Zy12aWtQTExfTHZpRXNIcS13M0hGaUN4cnRMNXpMT1hWZWdXeG4wV09NOEhsdXduRk02YVJ6SHhmdTZpVjRBYnllVTdYRjFLRmxvODh2Znc5V013OGlOVmFsQQ?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-08",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Jensen Huang"
+   ]
+  },
+  {
+   "title": "Microsoft revamps Windows for agentic AI",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5Scl8wWHNtNmtyV0pHSlFsRE5TUkpaZmN0UU1RRVVWTUdTbDhSQ2xWUk9jb2hqSHZQQ0pGRHJRbDUyNlpkY3h5TWhWZjBBU0dQdFJYa05idE1TNzNoaUd0RF9lSElQM0d2Q3o5ZTJMS3d1eHF2SVN3?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-08",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Microsoft AI"
+   ]
+  },
+  {
+   "title": "AT&T + OpenAI Partner for Legal AI Workflows",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOa25lNXF2aU1aV3c1dU9vcEdISG9GU2lQbUt4ckNXbkV0MklvVFBZSTN1d2xvUUFyRi12WUhkSEExQkw5aTdDR1lXNHhqTWlNZ2I3a1plVS00Mkg0STZCNkllLXppdnVlTUtmVjNWTTRwQWlmTEtZN1l0amNzdGs3Z1hZZXY4QlJLTGxoUl9qVQ?oc=5",
+   "source": "Artificial Lawyer",
+   "domain": "artificiallawyer.com",
+   "published": "2026-10-08",
+   "outlets": [
+    "Artificial Lawyer"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": [
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "AI-powered law firms draw lawyers from big firms",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMXRSZjIwMHhfT29JbER6S2JUaWhJRV9IVkJPVmxoQ2wzSW9zSkotT2cteTBZS3NkUDJRRFFUandGWE53RVdhQmRnVGZ5NEhJVkZtb21JRkNJclNXWkg1TWliSHZoaHVybmV6RUZVbTI5b29CcDdCcWpvV1R0VG9rbm1DcTZSZHI1WWZUcnJmZjNIN29rVTZSR0ZHUTNZb1Fs?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-08",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "COMMENTARY: How AT&T is using AI to reduce its reliance on law firms",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbHRKcklmNGswT3UzcGpwRFFScnpSSlFlRFY0OW1mb2RtekZtcmx4dmJPc05JcGZ1SC1xZUxLTkotd0E4a2lQYzRPY1o4RHNZR043ZDhFcGZ2UUtRVW1OZHgwVUpJUUtyZlktb0VTcUJfMk1lWk9uNk9UOUdZdE1mVXFrOXRXN1RpRE1MS3g3dk80bnZ2amFyQWo1cGtCbWZDZlZqcHg0Uk4?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-08",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "AI's legal accountability: Neo CEO Ali Partovi on AI legal liability proposals",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVXc4cHNIenFHZmU2VVNWRFVBdXNpTEJtUnctQ1JzcmZMaVY2RHM0R0xVWVp1YWRXTFRwamtfbWVTbnZvX3UxZTR0Q3VKVjdralZRUC1ZYThRbDh4SmlRbHl3SklMalRIVXlKd2tQSUlxQi1uaGEyWllVTm91ajRNTzJ3a0puTFZKQmFGWFZjeVJJanAtVEdSQW5rVm5CV2NUclBkdFdReTc2STdIQ1JJcHJkUHZIejZDdW9R?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-08",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Debevoise to Shift AI Platform Costs as Big Law Pursues Pricing Model Beyond Billable Hour",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPN3BMYkI2anhCMk1JZnBmZnZvYWpzYjVpLTJveHFiaXRlMzNEMkJCQUtLTW45SjA0OUxVNGR6eVNhS3pWYi1GZnN1R0hzY1lGUDkzR1pVUTMyTkk3LWpzMlFZRXQ0TUZMVDBXNGYtNHowX29jZ212NVhvTWxQQml2c1pCM3NtdWlnRF9XVmluQUdTdVBTY1JXNEJZUFBSYnZoNE1POElCWlZUVXZDRzZzdW1rWHY5SWZaNUZKbFc4alhRa1F3QjRWa0t4XzhJa0FJcUY4SDdoYU4tRTll?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-08",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "OpenAI's Altman says AI benefits warrant accepting some risks",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOGhDUmJ2UzEwZ0hlenFISFFXdkZyVHd1TGNIZEhLTERLaDRWaXh4dlpVM1RfU0p4Vlh2cjVybWZtOWZkVVp0ZEVndGQ3T2pZd0tyelVvV3JnQ09FQlNOYWtVeUhCMjZud2NpYUVEZllhbHhIeVFvOXpEY0lLTklTNnNpNnhDTUdVS1dYSzl6S3VwbzgydXlKZVFRTkE4Y0dsYlJtQldVWkY?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-07",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "Ex-ByteDance Intern’s $200 Million AI Lab Takes On Fei-Fei Li",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOYmxNSDJKd291YV9NdF92WklnaEZlcExmeVQzdWtlczVIcGRZXzRkZU9XUDdDZkNpb0JnUkYtNGxHdmtWbDdoODRmeTRuVF9YT1Y1MFRZNzhnSUlhbjVtbFU2dzhXcW5aemNHb0ladkhvY3ZMRlRnTi0wMmhsVEZlZFRRS1VKS2MzMmo1ODVmM2pMMk5PQXlZNHRtTUg5dDlfS3FzUUFudi1weTdLM21aZQ?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-07",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "entities": [
+    "Fei-Fei Li"
+   ]
+  },
+  {
+   "title": "Anthropic will be 'most ridiculous IPO' of year, analyst says",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPd2dKUllnNVk3MmI2SFFNYUV4cm1jd3Z4VVJCcEJGclVRTDlSOE5NSkV2NjRBVm1PTEthM2tlVEUtNmZLV0UtMm5RY09IY1R2TFFpRkJhbDcwZ2F0allhc0lWNFNXS2V3UmVmdS1BdEtLY2g2WEk4aXlSSkR1Yjh3eFloUHVEVFhKR0k0eEdxY1dUcWRzeVA0UW9HVdIBoAFBVV95cUxOSnd6UVJsLTE4Rjc1dHE0bE9uMUZ1MnR1VnpvN2Y2M19mMkp1MVd2c1pBZUpQejhONC12REdXOHRuaGNuX0VaMkQwRW5jWTRvZGFUOEZNTlp1YnFXZmhSUEFtclRNZTNhVVg2TmtlNC0zWnBQOFF5dGZZM0QxdnlfclVsZGJCVnFPdU1xWUhuUGFZcUI4VXF1dEtSZ1A5ZEN3?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-07",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Watch DeepSeek Nears $12B Funding Round Ahead of Potential IPO",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRUZlS19pWkZvc3FaRmtmdWVQQ1ZDQkZHWjk1TXBqV3hMU0FsOVgyWHlhNi1SQkNoSWpaZE9GVkJQOGtOUDRRcF9DamotS3ZoYWZHQ0hVM0Z1XzNkb3RjQVdha2RhLWdWRXB1OXBQTE1IRkZSYnFDUzVCc3RXZi00dXAzdmpzUQ?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-07",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "entities": [
+    "DeepSeek"
+   ]
+  },
+  {
+   "title": "AI upends Singapore’s ‘quant Olympics’",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMTlVd0g4MmR5cGlCNDNkZXBQcE5iTzVBczIwSnJZOF9LQ2ctTVJrQ19DcU10di04bkdqYV9kWFY1c3FhQTEtekh0aWdfQml6UTRyZk13Tmk5WHYzcVl6eGJMSUoxdkxfejQ3Q2d6WFBjdy1PSE51UE53SGVjdlBmbndOVFI?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-10-07",
+   "outlets": [
+    "Financial Times"
+   ],
+   "themes": [
+    "奥运 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Five AI Execs on Where Law Firms Are Wasting and May Start Making Money on AI",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVGVTREFPM0l5NTIzZnliNWttVU9SYXd3TlJYSV8zemVabW90eFhUbmlmOU5JUEtONkNNLU5yQmZ3WGlXTzRrOFNuLTBUWktCbzZDUjVGSjJOcy0xTnNGTzd0RDhnakkybnhuQV9sbkFRaU5vWERuazN5ZnBBSW5kSmFfRnVDVmVWMkNhMWdGd1pnUWM4eFVrM3ZaM05PbmQwVDJLZkIwZW11TWM1N19aTUkyNXJvR0ZlbkRhMndTNjZtTHRiQlFieDN4QQ?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-07",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Voice of experience: in-house legal teams face pros and cons of AI",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5oMUk3eVl0ZU01YURtcHcyYXVoQXpLc2h6YWV2aWMtYk81dVV3X2U2VG9TTVZYZWRUaHhjVTROMDBOU3NPenVXMjNBRU9xR1lpQXJ5WjZ5ZDlHZEh0S3YwMkVQS2NZQVBfREM1eW1nWFM?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-10-07",
+   "outlets": [
+    "Financial Times"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "entities": []
+  },
+  {
+   "title": "Anthropic’s Dario Amodei is steering a possible $2 trillion IPO—but he says up to 40% of his time goes to making sure company culture is good",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVndFZDV2OEU0dmx1U1N1Ri1MTnRjeFBpOHlGU040ekJHZ1VHZkhkcWhvYV9qVFdKNXdjdFpZZ0JWbW1wN1BWcGNHakgwY29GYjZRanRXLXl1QTlPaVhiNGg0WDhOZXhYQnNzUEhtRkREVl9nOGRDMXRieDhMUTNPLXNuWF9LSlByZGpqSXFxZEpWWmd5OC0wZDBzclNVUnh0dk1PeHRzR2o?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "Fortune",
+    "Quartz"
+   ],
+   "themes": [],
+   "entities": [
+    "Dario Amodei",
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "EXCLUSIVE: Anthropic's Amodei made $18 million last year, middle of the tech CEO pack",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPN1o2SFlUSFBHTDc2ejFoZElwNUVaSDdVMGlMckFhSUhTYlJKNkRteGxBMGhndHBjVU8yaE5qaVkxYURVLW1ZdmlGTkZ1TXhRVEhwM0ZkVzVJaDN4ZUdwdm9JLTNXNC11NGFpSi0ycTJhRnNGSVhINUJwNU1YcTVCUGFGQ2E2dGtIT2pYTUJzejZQc3JRZjRuTlFsYmJoWEZqcFE2R3FBd1Jfek84dWVNMg?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "CNBC",
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "AMD CEO Lisa Su predicts 'very high' chip demand continuing for next few years",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcVFmakZjbG92RVhUbWQzS3BfaVljM0NfLTBnN0FzY3dHNk9IRkxYZFp3ZmZBTi1VNFVaY2hpTzFJMmR4UGwtcTJJZXQ5SXFoZ3paclktTXZUOFZEQUZ6N0xRWV9SdC1ydHlDNDh5RjVyTzF5Q3ZUVjFDclNoajB2OWVzTGQ1NWJrRnlPVnBSdkFNUksyRUVVeE1ON2VRRW55VkwtcG1VV1JTTFg1UUFtV2l5azVMcDJCS09B?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "CNBC",
+    "Quartz"
+   ],
+   "themes": [],
+   "entities": [
+    "Lisa Su"
+   ]
+  },
+  {
+   "title": "Watch OpenAI, DeepSeek & Moonshot Chase Billions in New AI Funding",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1OWEZPMWdULWFmYlhoXzAwNG00QVJjMDVWdVdPWFFMRFQyaDVuRFAzNmwwWm55LTRJdlp3ZFNpcFhpaXVyX0stMldKRkZYYW8taGFVdU81eFRMQm5GbEZWMzY2WjlzSW9uQnNFb0pueEEtWmlPVVpPY2ItQmRWUQ?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "Bloomberg"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI",
+    "DeepSeek"
+   ]
+  },
+  {
+   "title": "Watch Moonshot AI Eyes 2027 IPO After Reaching $50B Valuation",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdHVuM3BqeDI1NEkwakttU2lncURObTlLekFzLTlQa2thd2V2SzVrcmMwWk1KeEtYbFh4TWhYNUNlYkx0SHczTGxqQ1BmS1hnazk5TjBISVNmQUNTWWwwTmNLNG1hYlFDRDBmZXBTTEtJb3RwWndwenc5ZjhBcF85a3RqN21qZw?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "Quartz",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "entities": [
+    "Moonshot AI / Kimi"
+   ]
+  },
+  {
+   "title": "AMD天价收购World Labs，AI教母李飞飞“起飞”还是“招安”",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5WSS10NW5nTXd3Z3VnWnNsNWoxSUN0ZG5EN3AzVm5qSUpSMzJtUXRleU1OaXRESm8wSzlualdYRnE3S2pURWJ5VWlNMDRRRllNMGJxMURoYzVJNG41T0RMUTJn?oc=5",
+   "source": "财新",
+   "domain": "opinion.caixin.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "财新"
+   ],
+   "themes": [],
+   "entities": [
+    "Fei-Fei Li"
+   ]
+  },
+  {
+   "title": "DeepSeek considers doubling latest funding round to up to $15 billion, sources say",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBqbWtWXzg4MkNQb19odHRWcDFHSUZOZ0pENEtxMXk0SURvUTNxZVhBbGJBM0FrVjBoMDNNbWxWWVNkR2lEejNGTGZSRHpzb0ViZ3d3T2xxb1dCXzJXYTVXVml6RlQ0eWJiUXRN0gFwQVVfeXFMTjBYLUE5cVJCc2IzMVlha29OZUhsRVRNc0RSNElJc0x1YWVmRi1SX1otM2FrN0kyVmpNeUhCeHFvSmRycWlQNnljWGN2OGk2dThGeUlkR1F1bjVaVVJOUEZtc2lnLVVPelhkRHBoMTFnaA?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "DeepSeek"
+   ]
+  },
+  {
+   "title": "DeepSeek to Raise at Least $12 Billion in Tencent-Backed Funding",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQXVsa1AtZXBYRFRpZG9IQ1JKcW5qVjZiLVNsUDhRc2hJRWJVYlZ1cXR3TGdKS2NOb3hkZ3dFM1lCdjFEWW05YjJPMl85cGwxWFZhbWdWSnNMVGJTem1RY2c5azlLbS1kRnhqdE5tY1NBWVZwM1BDUHV4RWxvcmVzdkdNVEY3VXlqQVF4N0diNU9WUjVJT3VGOU9lNVFEY0VhZlIyMG1yaE96Ui1xOFlwYlJLS28?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "entities": [
+    "DeepSeek"
+   ]
+  },
+  {
+   "title": "DeepSeek raising $12 billion ahead of 2027 IPO",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9jdzd0dU5helZiY3k5dFB4dHJWRFZINkdUN2UtNklWaVQ5NmU4UnJJOEcxMUhqemhlZHpuTkVVR1NJN2s0dkd4dFNzSksyOERVaHhsdVZiajhyYThuQTBRREJyVmtSbzNDQjgtT2J3?oc=5",
+   "source": "Quartz",
+   "domain": "qz.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "Quartz"
+   ],
+   "themes": [],
+   "entities": [
+    "DeepSeek"
+   ]
+  },
+  {
+   "title": "Mistral to Release New AI Model to Better Compete With U.S. Rivals",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUmJKLWJQUjNPSE5jRU1zWFZzNmFFdmZBdzNmeXBkb3JELWVKbTNKVHp6Q0dBWWxoUEZ5alZJQVJ0a0RyYnhhWkQxWlY2bmFDRnZ0a1RVYlhnU3hRTF9ldEpfSlNMcE1mMkJjNkRKanFLdmVKRXh2T3U0allxVEw0YmFkeVJfX1NCZGlUZHI5czhFNWU3TzlOZkRyVGpQQXRkYzZvYQ?oc=5",
+   "source": "WSJ",
+   "domain": "wsj.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "WSJ"
+   ],
+   "themes": [],
+   "entities": [
+    "Mistral AI"
+   ]
+  },
+  {
+   "title": "France's Mistral launches AI model it says outperforms some Chinese rivals",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcjVFRUV6ZzZmeXFiN3NIWmZwUTBGWTR3ZUx1UUhjLWRLMC0wZThtLW00a1FYNjloa3BiSTFveFdZZFkxWnd5d283Qi04MnU1UC1IUl9KdlBkX2o2X3JpQ0pUZVRZQzJ3Uk1fRzR5VnJIdGhwVGI3Q0JWc2RWOGtBZTZzek4tcWQxRTAxZnB3eWJyV2gzY2FlNjdYVk95b2lQX2UtLVNWandvMDA?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Mistral AI"
+   ]
+  },
+  {
+   "title": "OpenAI PR tells journalist to ‘move on’ while asking Sam Altman about a ChatGPT user’s suicide",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbUQ4QmxRcjVLeGVYdV84X0pBQndRMUl2MEp1UlJ6TzJ2Vk9GdHFHeENZSDVsSEtaRS1YMTM5dV9CbFpfc1otNDZmS0pNc2h3VXpyenRDMVdjTTFORjNhVDlpbU44NUhMbUdybGRkRDdvRTJORW5hZzktSVJPeTJtV2haeUpmeGxuZUJ2MTBNUU82eWllVGIycUZzLU52UGR2SlZlVg?oc=5",
+   "source": "The Verge",
+   "domain": "theverge.com",
+   "published": "2026-10-05",
+   "outlets": [
+    "The Verge"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman",
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "Satya Nadella reinvented Microsoft once. Can he do it again in the AI era?",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVGFya2NzRW50cWNkTkN2NkJTaVF1Rm9RY2VFUDlhV0Q3UWtLWTRkXzJrRG9uNDI5SXVvX0pTUS0zSVJuazduWVV3S0ZPelZ2X1VDME9lcWUwaEZOYmRqVFBRcVlmUTFwc3Z4Qkppa0l2bVJPWEl3R0otRDhhVkRBdTE5S1dGNFByOERKbGpPZjhRdzlqTHh3dHNxSktOeGFtcVo4aGVn0gGrAUFVX3lxTE1YY2ZVLTRYVUpjbFVBelVrRXdUZ2diU2dhbGpuaXpmSEpPa0xJM0tadFJpQnk5eGFqc3JQR3QtZEtneUg0UXNqWTNLSUhGQkZrdHpzbUFlN2J5QnEtb0lMQ2V3dWRiZGpJaW1INlhieHpXaF9mTElldUE4M2ZPT1BESlJKdFA2eVZPTndBVDlPd05INXBLT3JyQ21Da092a3dfZWZLLUJRZ190NA?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-05",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Satya Nadella",
+    "Microsoft AI"
+   ]
+  },
+  {
+   "title": "Mistral unveils new AI model it says rivals best open systems from China",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FTlJ6SWZzT0xiYi1RR3MtSFpJVk0yS2cwNGJUelJmcEVHVHkwUVFGZDZULWtXSHBXNndQbWJ0S1lPVjZoZDJQR3A0QlJvT1ppU2lMTlJiRWx3bjI4c2NrX28xM0VwMW1iSV9XZnMtQdIBdEFVX3lxTE1tMDVOZG9acWpaNEhUcnhLM01pNkJ0eFVkZFJGWWRoSVpvN2FDTVNKMkl5akJ4dnhSMko2bi1aendmaFVnSmJxU3ZqNE5LcXlWSWVfMVdSR2FmQ1VvdXY4X0ZLa2FzSXdfQldUc21WaWRzYXVK?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-05",
+   "outlets": [
+    "Fortune",
+    "CNBC"
+   ],
+   "themes": [],
+   "entities": [
+    "Mistral AI"
+   ]
+  },
+  {
+   "title": "My Take | Dario Amodei’s American AI imperialism",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ1liSms4Qy11QWpSRW5XdENIYVlVUFF4VE00MUVRTFZNanpCaGg4eTFaOHl5UjFkUVo1WjBJUEYxRVNpZEdrZGIwOWtRNE9xY09UYWtOSmFnYTFGdE5MRl9yS01MeW1kbGlZY1NGRmJlN0NxS0hXUUhoWTdiQ1FLOTZWRVJDWkZpcVpoLWlJekhxNkNHdjNiaDZSaUbSAZwBQVVfeXFMTU5GZlVIVUoyQXdZYVdfS20wUG1aWTE4VTdkQkhrQURQOExwXzhFOE91SmFGYml4MktOWWVIQzFnamttWkgxcjNuTU5GZGE4ZGJMRjNpMjg5aDlQYTh3ZHQwdnNhb3h5S1loc2dGMXFnbFNpMC02VERFc0k1ZjNOcUNHRkpDbnNYa1lKMmxFYWp0RjI1SHItWjZBblVG?oc=5",
+   "source": "South China Morning Post",
+   "domain": "scmp.com",
+   "published": "2026-10-05",
+   "outlets": [
+    "South China Morning Post"
+   ],
+   "themes": [],
+   "entities": [
+    "Dario Amodei"
+   ]
+  },
+  {
+   "title": "GOP senator warns Anthropic of \"alarmist\" approach to AI",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2dacmRIYW4xWGNpRkNvNE9VWGJvU1o3RFV2c0taOUl5UmNOTmxkczJNV0tiLTF3QlpWd01JZ2piczhRRUc4ZVNkMDZmQVZkRVVma0wzZk9NNV9kTFAxLWpPVEJSUzdYY0tvTGEtUWR6bTBybVJkREZqNUdwVTB6Si1MbnFvV0N4SHo0LTBlS09NOVFNVzJDSzZscE1YNE10bkZfRw?oc=5",
+   "source": "Axios",
+   "domain": "axios.com",
+   "published": "2026-10-05",
+   "outlets": [
+    "Axios"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Sam Altman says ‘some bad things’ will happen, but AI is totally worth it",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNT0FuZ3hRVkRqSU5UOXhXNUlDUXI5a0w2UWp4dlJpdDNFdjRzelV3NjhTMFNFWXZQTDlTQXF0YXhsNm9qYXJaWG5LNl8tejdxNFFBdXp1WUItdVY0TlBDZENyOXhuU3l2WWQ5SUVJMU5iRzJ0T0t0UjB2cDZvY1M5XzRBcXdualROcnRtM3pEMVBsaHpqRExNZW9XWV8?oc=5",
+   "source": "The Verge",
+   "domain": "theverge.com",
+   "published": "2026-10-04",
+   "outlets": [
+    "Forbes",
+    "Fortune",
+    "The Guardian",
+    "The Verge"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman"
+   ]
+  },
+  {
+   "title": "Nvidia CEO Jensen Huang has emerged as the biggest foil to AI doomerism about the existential risk to humanity",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VX2xQSnFmUmlVT193Tk12UThLN0VzWGNyRFNHLUVBT0pMQzJiNm9FZW1LQlBwN3o1am81NlFCZGxoZFA0dlpTMGlmaGI2eGUxdnh2QVY3Z0QzQUN5WUIzcG1XT2d1U1NmekhFNHRuUk9qSF9xSkpjbG1CdzIxWjQ?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-04",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Jensen Huang"
+   ]
+  },
+  {
+   "title": "Sam Altman: Don't Treat AI Like a 'Religious Force'",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQeDNqM2d2WnBUNWcxb1Fwd0RQUnJ2SDZIdFFaUE12YlFiNkNIWUl6U2taNjc0SEcxY2x4amVJN3pHUVMyUDFuR3R6RjJmcms1WVc0N3RGSS1WZWN2dnNfWGZFUzdNekNuVms2OW1KOHFCbE9yQ0dkX2o0NEIzblFTUDBMQWVyLXY3Nkc4MUNBOGY?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-03",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman"
+   ]
+  },
+  {
+   "title": "OpenAI's Altman: Ascribing religion to models a \"safety issue\"",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORG96X2d2YlZHeXRKVFZMamFsVklneUVYNzBnV3RJdWFndV9ONkdheE9IZktfQXU0dnF1b1BLY0VDb3c3TDk1RmUwaS1DcFJtYWNhVWZ2MTNHS21JbkE0SHVoV2lxMm1RWjNwSmJYZ0tOX054UE1mUTVCWFAxRGhJbDBfcHVWZ1ZHNXpRLW1pbw?oc=5",
+   "source": "Axios",
+   "domain": "axios.com",
+   "published": "2026-10-03",
+   "outlets": [
+    "Axios"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "The Mulleted, Meme-Loving Billionaire Behind Meta’s Hit AI App",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5YX3laMUtZSWRNdXl6TlhHZVVsZjdDWEJrd3ZJUU92UnJYV1VhekVKeTJ5VjN2Vk4teU9OZWVSSDVsYVBnR1BMaW1laFI3NE1hSDBpdm1pZWZwOXozVlZhamlWR2FXc2t2eW5mMg?oc=5",
+   "source": "WSJ",
+   "domain": "wsj.com",
+   "published": "2026-10-03",
+   "outlets": [
+    "WSJ"
+   ],
+   "themes": [],
+   "entities": [
+    "Meta GenAI / FAIR"
+   ]
+  },
+  {
+   "title": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQR0JlUHlOLTF6R21EV2trSHd6Si1Tckd6SXdDeXZIY1ZKRkxLZzJmRFNwamo2WXhYRTNTYWhJMWpDZTJyb01vd2NpQXZTaE9BRWxnaEFsdDYzeThJdDA0Y0RQcUhjTWlPYkx1c1NxXzRkcWgyRk54N0Y2SDJVY3ZYMUdQaEhEbzZEVkowX1VBODRsNHRMMTBPX3BUMHdwai12MUZtMVhwRVM?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-03",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI"
+   ]
+  }
+ ]
 }

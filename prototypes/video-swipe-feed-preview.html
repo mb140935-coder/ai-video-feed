@@ -71,6 +71,10 @@
     .history-item-title { font-size: 13px; line-height: 1.4; }
     .history-item-meta { color: #9a9aa4; font-size: 11px; }
     .history-empty { padding: 24px 18px; color: #a6a6af; font-size: 12px; line-height: 1.6; }
+    .pub-date { align-self: flex-start; display: inline-flex; align-items: center; border: 1px solid #ffffff30; border-radius: 999px; padding: 5px 9px; background: #ffffff10; color: #ececf0; font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .pub-date.fresh { border-color: #ff4d6d; background: #3a0d18; color: #ffc2cc; }
+    .pub-date.stale { border-color: #c9a86b66; background: #261d0e; color: #d9bd85; }
+    .pub-date.unknown { color: #9a9aa4; font-weight: 400; }
     h1 { font-size: 21px; line-height: 1.34; margin: 0; }
     .source { color: #a6a6af; font-size: 12px; }
     .person-context-label { color: #c7b8ff; font-size: 11px; font-weight: 700; margin-top: 2px; }
@@ -114,13 +118,13 @@
         <div id="brief-list"></div>
       </div>
       <div class="feed-panel" id="feed-curated" role="tabpanel" aria-labelledby="tab-curated">
-      <section class="card">
+      <section class="card" data-published="2026-01-23">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 4</span></div>
         <div class="player"><iframe id="player-ioc" data-video-id="QiaTTwnnblg" data-start="8" data-caption-lang="en" title="Inside the Olympic AI Agenda — IOC Media" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><a class="player-fallback" href="https://www.youtube.com/watch?v=QiaTTwnnblg&amp;t=8s" target="_self">无法内嵌？在 YouTube 观看</a><span class="tap-note">奥运 AI 重点视频 · 00:08 起</span></div>
         <div class="details">
           <div class="tags"><span class="tag">奥运 AI · 最高优先级</span><span class="tag">IOC</span><span class="tag">专家会谈</span><button type="button" class="tag watch-toggle" data-watch-key="youtube:QiaTTwnnblg" aria-pressed="false" aria-label="标记为已看">○ 未看</button></div>
           <h1>Inside the Olympic AI Agenda</h1>
-          <div class="source">IOC Media · Alejandro Merino-Madrid · 2026-01-23</div>
+          <div class="source">IOC Media · Alejandro Merino-Madrid</div>
           <div class="person-context-label">人物 · AI 关联</div>
           <p class="person-context">Alejandro Merino-Madrid 负责国际奥委会的 AI 计划，推动 AI 在奥林匹克运动中的应用。关注他的价值，是了解 AI 如何进入赛事组织、运动员支持和观众体验。</p>
           <div class="highlight-label">内容重点</div>
@@ -131,7 +135,7 @@
         <div class="hint">上滑看下一条 ↓</div>
       </section>
 
-      <section class="card">
+      <section class="card" data-published="2026-10-23">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">2 / 4</span></div>
         <div class="player"><iframe id="player-kimi" data-video-id="DIyHTpfWctU" data-start="0" data-caption-lang="en" title="Kimi K3.1 Pro 官方发布视频" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><a class="player-fallback" href="https://www.youtube.com/watch?v=DIyHTpfWctU" target="_self">无法内嵌？在 YouTube 观看</a><span class="tap-note">原声 · 英文字幕优先</span></div>
         <div class="details">
@@ -148,13 +152,13 @@
         <div class="hint">上滑看下一条 ↓</div>
       </section>
 
-      <section class="card">
+      <section class="card" data-published="2026-10-21">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">3 / 4</span></div>
         <div class="player"><iframe id="player-nvidia" data-video-id="v-NGxyPjcrE" data-start="0" data-caption-lang="en" title="Jensen Huang at NVIDIA GTC Berlin 2026" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><a class="player-fallback" href="https://www.youtube.com/watch?v=v-NGxyPjcrE" target="_self">无法内嵌？在 YouTube 观看</a><span class="tap-note">原声 · 英文字幕优先</span></div>
         <div class="details">
           <div class="tags"><span class="tag">通用 AI 必看</span><span class="tag">黄仁勋</span><span class="tag">GTC Berlin</span><button type="button" class="tag watch-toggle" data-watch-key="youtube:v-NGxyPjcrE" aria-pressed="false" aria-label="标记为已看">○ 未看</button></div>
           <h1>黄仁勋 GTC Berlin 2026：AI 下一步往哪里走？</h1>
-          <div class="source">NVIDIA 官方主题演讲 · 2026-10-21</div>
+          <div class="source">NVIDIA 官方主题演讲 · GTC Berlin</div>
           <div class="person-context-label">人物 · AI 关联</div>
           <p class="person-context">黄仁勋是 NVIDIA 联合创始人兼 CEO，领导 GPU、加速计算和 AI 基础设施的发展。NVIDIA 的芯片与软件生态是训练和部署大模型的重要底座，因此他的判断会影响整个行业的算力路线。</p>
           <div class="highlight-label">内容重点</div>
@@ -165,13 +169,13 @@
         <div class="hint">上滑看下一条 ↓</div>
       </section>
 
-      <section class="card">
+      <section class="card" data-published="2026-07-16">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">4 / 4</span></div>
         <div class="player"><iframe id="player-racing" data-video-id="KNPjRpNtQ7s" data-start="600" data-end="660" data-caption-lang="en" title="OpenAI Podcast Ep. 22: AI in racing" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><a class="player-fallback" href="https://www.youtube.com/watch?v=KNPjRpNtQ7s&amp;t=600s" target="_self">无法内嵌？在 YouTube 观看</a><span class="tap-note">章节片段 · 10:00 起 · 原声</span></div>
         <div class="details">
           <div class="tags"><span class="tag">体育 AI</span><span class="tag">赛车数据</span><span class="tag">实战</span><button type="button" class="tag watch-toggle" data-watch-key="youtube:KNPjRpNtQ7s" aria-pressed="false" aria-label="标记为已看">○ 未看</button></div>
           <h1>AI 怎么帮赛车团队从海量数据里找优势？</h1>
-          <div class="source">OpenAI Podcast · Joyce Ruffell 与 Chase Holden · 2026-07-16</div>
+          <div class="source">OpenAI Podcast · Joyce Ruffell 与 Chase Holden</div>
           <div class="person-context-label">人物 · AI 关联</div>
           <p class="person-context">Joyce Ruffell 是 OpenAI 研究人员，参与把 AI 用到 Chip Ganassi Racing 的比赛数据分析；Chase Holden 来自赛车技术公司 Racetek Systems。两人的合作展示了 AI 如何帮助车队从传感器、赛车和 pit crew 数据中寻找优势。</p>
           <div class="highlight-label">内容重点</div>
@@ -386,6 +390,28 @@
         parent.appendChild(element);
         return element;
       };
+
+      // Every pushed item shows its publish date and age: AI moves fast, so recency decides relevance.
+      const publishedBadge = (published, fallback = '发布日期待核实') => {
+        const badge = document.createElement('span');
+        badge.className = 'pub-date';
+        const match = /^(\d{4})-(\d{2})(?:-(\d{2}))?$/.exec(published || '');
+        if (!match) {
+          badge.classList.add('unknown');
+          badge.textContent = fallback;
+          return badge;
+        }
+        // A month-only date counts from mid-month and is shown as approximate.
+        const date = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3] || 15));
+        const days = Math.max(0, Math.floor((Date.now() - date) / 86400000));
+        const age = days === 0 ? '今天' : days < 7 ? `${days} 天前` : days < 31 ? `${Math.floor(days / 7)} 周前`
+          : days < 365 ? `${Math.floor(days / 30.44)} 个月前` : `${Math.floor(days / 365.25)} 年前`;
+        badge.classList.add(days <= 30 ? 'fresh' : days > 180 ? 'stale' : 'recent');
+        badge.textContent = `发布 ${published} · ${match[3] ? age : `约 ${age}`}`;
+        return badge;
+      };
+
+      document.querySelectorAll('#feed-curated .card').forEach(card => card.querySelector('.tags')?.prepend(publishedBadge(card.dataset.published)));
 
       const watchedStorageKey = 'ai-video-feed-watched-v1';
       const watchedItems = (() => {
@@ -803,6 +829,7 @@
         details.className = 'details';
         const tags = document.createElement('div');
         tags.className = 'tags';
+        tags.appendChild(publishedBadge(item.published_date));
         makeText(tags, 'span', 'tag', item.format || 'Appearance');
         makeText(tags, 'span', 'tag', item.publisher || 'Publisher');
         const watchKey = canonicalMediaKey(item.official_media_url) || `${canonicalMediaKey(item.official_publisher_url)}:${item.appearance_title}`;
@@ -897,9 +924,10 @@
       const briefCount = document.getElementById('brief-count');
       let briefsLoaded = false;
 
-      const renderBrief = ({ meta, title, tags, summary, why, links }) => {
+      const renderBrief = ({ published, dateFallback, meta, title, tags, summary, why, links }) => {
         const article = document.createElement('article');
         article.className = 'brief';
+        article.appendChild(publishedBadge(published, dateFallback));
         makeText(article, 'div', 'brief-meta', meta);
         makeText(article, 'h2', '', title);
         if (tags.length) {
@@ -944,7 +972,8 @@
           const textRows = appearanceRows.filter(item => item.content_type === 'text' || item.content_type === 'index');
           briefList.replaceChildren();
           briefs.forEach(brief => renderBrief({
-            meta: `${brief.published} · 优先级 ${brief.priority}`,
+            published: brief.published,
+            meta: `资讯简报 · 优先级 ${brief.priority}`,
             title: brief.title,
             tags: brief.tags || [],
             summary: brief.summary,
@@ -952,6 +981,8 @@
             links: brief.links || []
           }));
           textRows.forEach(item => renderBrief({
+            published: item.published_date,
+            dateFallback: item.content_type === 'index' ? '索引页 · 持续更新，无单一发布日期' : undefined,
             meta: `${item.content_type === 'index' ? '资源索引' : '文字稿'} · ${item.name} · ${item.publisher}`,
             title: item.appearance_title,
             tags: [item.format].filter(Boolean),

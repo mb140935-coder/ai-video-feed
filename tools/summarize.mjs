@@ -1,5 +1,5 @@
 // Chinese two-line summary and "这意味着" for each news story, written by Gemini from the outlets' headlines.
-// Needs GEMINI_API_KEY (Google AI Studio, free tier). Stories that already have a summary are left alone, so
+// Needs GEMINI_API_KEY (Google AI Studio, free tier; a repository secret, passed in by daily-feed.yml). Stories that already have a summary are left alone, so
 // after the first run only the day's new stories are sent.
 
 const API = 'https://generativelanguage.googleapis.com/v1beta';

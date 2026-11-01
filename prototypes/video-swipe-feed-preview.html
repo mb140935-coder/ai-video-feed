@@ -43,6 +43,8 @@
     .watch-undo { position: sticky; top: 53px; z-index: 9; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 9px 14px; border-bottom: 1px solid #ffffff18; background: #202126f2; color: #dddde4; font-size: 11px; }
     .watch-undo[hidden] { display: none; }
     .watch-undo button { border: 1px solid #ffffff35; border-radius: 999px; padding: 6px 11px; background: #ffffff12; color: #f5f5f7; font: inherit; cursor: pointer; }
+    .sync-status { padding: 4px 12px; border-bottom: 1px solid #ffffff12; color: #888994; text-align: right; font-size: 9px; }
+    .sync-status.connected { color: #8ed9b8; }
     h1 { font-size: 21px; line-height: 1.34; margin: 0; }
     .source { color: #a6a6af; font-size: 12px; }
     .person-context-label { color: #c7b8ff; font-size: 11px; font-weight: 700; margin-top: 2px; }
@@ -72,6 +74,7 @@
         <button class="tab" id="tab-appearances" data-feed-target="feed-appearances" type="button" role="tab" aria-selected="false" aria-controls="feed-appearances">演讲 &amp; Podcast · <span id="appearance-count">人物媒体库</span></button>
       </nav>
       <div class="watch-undo" id="watch-undo" role="status" hidden><span id="watch-undo-text"></span><button type="button" id="watch-undo-button">撤销</button></div>
+      <div class="sync-status" id="watch-sync-status" role="status">正在连接电脑共享记录…</div>
       <div class="feed-panel" id="feed-curated" role="tabpanel" aria-labelledby="tab-curated">
       <section class="card">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 4</span></div>
@@ -274,7 +277,10 @@
 
       document.addEventListener('visibilitychange', () => {
         if (document.hidden) pauseAllExcept(null);
-        else if (activeCard && !activeCard.closest('.feed-panel')?.hidden) activateCard(activeCard);
+        else {
+          if (activeCard && !activeCard.closest('.feed-panel')?.hidden) activateCard(activeCard);
+          pollSharedWatchedState();
+        }
       });
 
       const tabs = [...document.querySelectorAll('[role="tab"][data-feed-target]')];
@@ -299,7 +305,8 @@
       document.getElementById('watch-undo-button').addEventListener('click', () => {
         if (!lastWatchedKey) return;
         watchedItems.delete(lastWatchedKey);
-        try { localStorage.setItem(watchedStorageKey, JSON.stringify([...watchedItems])); } catch { /* Keep the current session state if storage is unavailable. */ }
+        persistWatchedItems();
+        sendSharedWatchChange(lastWatchedKey, false);
         document.querySelectorAll('.watch-toggle').forEach(button => {
           if (button.dataset.watchKey === lastWatchedKey) syncWatchedButton(button, false);
         });
@@ -354,6 +361,99 @@
         button.closest('.card')?.classList.toggle('is-watched', watched);
       };
 
+      // Shared watched state lives on the LAN preview server (tools/serve_mobile_preview.py);
+      // localStorage remains the fallback when the server is unreachable.
+      const watchedMigrationKey = 'ai-video-feed-shared-migrated-v1';
+      const pendingSharedChanges = new Map();
+      const sharedSyncStatus = document.getElementById('watch-sync-status');
+      let sharedSyncAvailable = false;
+      let lastSharedRevision = -1;
+      let sharedWriteQueue = Promise.resolve();
+
+      const persistWatchedItems = () => {
+        try { localStorage.setItem(watchedStorageKey, JSON.stringify([...watchedItems])); } catch { /* Keep the current session state if storage is unavailable. */ }
+      };
+
+      const showSharedSyncStatus = (message, connected) => {
+        sharedSyncStatus.textContent = message;
+        sharedSyncStatus.classList.toggle('connected', connected);
+      };
+
+      const applySharedWatchedState = state => {
+        if (!state || !Number.isInteger(state.revision) || !Array.isArray(state.items) || state.revision < lastSharedRevision) return;
+        lastSharedRevision = state.revision;
+        const nextItems = new Set(state.items.filter(key => typeof key === 'string'));
+        pendingSharedChanges.forEach((watched, key) => watched ? nextItems.add(key) : nextItems.delete(key));
+        if (nextItems.size === watchedItems.size && [...nextItems].every(key => watchedItems.has(key))) return;
+        watchedItems.clear();
+        nextItems.forEach(key => watchedItems.add(key));
+        persistWatchedItems();
+        document.querySelectorAll('.watch-toggle').forEach(button => syncWatchedButton(button, watchedItems.has(button.dataset.watchKey)));
+        appearanceSearch.dispatchEvent(new Event('input'));
+        refreshCuratedCounters();
+        if (activeCard?.classList.contains('is-watched')) {
+          activeCard = null;
+          pauseAllExcept(null);
+        }
+      };
+
+      const postSharedWatched = async body => {
+        const response = await fetch('/api/watched', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body)
+        });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      };
+
+      const sendSharedWatchChange = (key, watched) => {
+        pendingSharedChanges.set(key, watched);
+        if (!sharedSyncAvailable) return;
+        sharedWriteQueue = sharedWriteQueue.catch(() => {}).then(async () => {
+          if (!sharedSyncAvailable || !pendingSharedChanges.has(key)) return;
+          const latestValue = pendingSharedChanges.get(key);
+          const state = await postSharedWatched({ key, watched: latestValue });
+          if (pendingSharedChanges.get(key) === latestValue) pendingSharedChanges.delete(key);
+          applySharedWatchedState(state);
+        }).catch(() => {
+          sharedSyncAvailable = false;
+          showSharedSyncStatus('共享服务暂时断开；已看状态先保存在本机', false);
+        });
+      };
+
+      const pollSharedWatchedState = async () => {
+        try {
+          const response = await fetch('/api/watched', { cache: 'no-store' });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const state = await response.json();
+          sharedSyncAvailable = true;
+          showSharedSyncStatus('已连接：同一 Wi‑Fi 下设备共享已看状态', true);
+          applySharedWatchedState(state);
+          pendingSharedChanges.forEach((watched, key) => sendSharedWatchChange(key, watched));
+        } catch {
+          sharedSyncAvailable = false;
+          showSharedSyncStatus('尚未连接电脑预览服务；已看状态只保存在本机', false);
+        }
+      };
+
+      const connectSharedWatchedState = async () => {
+        const legacyLocalItems = [...watchedItems];
+        await pollSharedWatchedState();
+        if (sharedSyncAvailable) {
+          let migrated = false;
+          try { migrated = localStorage.getItem(watchedMigrationKey) === 'true'; } catch { /* Treat as not migrated. */ }
+          // Each device uploads its pre-sync local records once; the server only adds them.
+          if (!migrated && legacyLocalItems.length) {
+            try { applySharedWatchedState(await postSharedWatched({ items: legacyLocalItems })); } catch { migrated = null; }
+          }
+          if (migrated !== null) {
+            try { localStorage.setItem(watchedMigrationKey, 'true'); } catch { /* Migration is still safe to retry. */ }
+          }
+        }
+        window.setInterval(pollSharedWatchedState, 3000);
+      };
+
       const bindWatchedButton = button => {
         const watchKey = button.dataset.watchKey;
         if (!watchKey) return;
@@ -366,7 +466,8 @@
           const watched = !watchedItems.has(watchKey);
           if (watched) watchedItems.add(watchKey);
           else watchedItems.delete(watchKey);
-          try { localStorage.setItem(watchedStorageKey, JSON.stringify([...watchedItems])); } catch { /* Keep the current session state if storage is unavailable. */ }
+          persistWatchedItems();
+          sendSharedWatchChange(watchKey, watched);
           document.querySelectorAll('.watch-toggle').forEach(item => {
             if (item.dataset.watchKey === watchKey) syncWatchedButton(item, watchedItems.has(watchKey));
           });
@@ -793,6 +894,8 @@
           frame.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
       });
+
+      connectSharedWatchedState();
 
       const apiScript = document.createElement('script');
       apiScript.src = 'https://www.youtube.com/iframe_api';

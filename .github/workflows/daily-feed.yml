@@ -13,6 +13,7 @@ on:
       - '.github/workflows/daily-feed.yml'
       - 'tools/update-feed.mjs'
       - 'tools/news.mjs'
+      - 'tools/summarize.mjs'
       - 'docs/watchlist-v1.json'
 
 permissions:
@@ -44,6 +45,8 @@ jobs:
         env:
           # Optional repository secret (YouTube Data API v3): enables the length check and dates for hand-added videos.
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          # Optional repository secret (Google AI Studio): Chinese summaries for the news in 简报.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Commit and push
         working-directory: feed

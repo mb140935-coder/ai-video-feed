@@ -1435,8 +1435,9 @@
             meta: `新闻 · ${story.source}${story.outlets.length > 1 ? ` 等 ${story.outlets.length} 家媒体报道` : ''}`,
             title: story.title,
             tags: [...story.themes, ...story.entities],
-            summary: '',
-            why: '',
+            // Chinese summary and meaning from Gemini (tools/summarize.mjs), when the job has a key.
+            summary: story.summary || '',
+            why: story.meaning ? `这意味着：${story.meaning}` : '',
             links: [{ label: `打开原文 · ${story.source}`, url: story.url }]
           }))].sort(newestFirst(entry => entry.published)).forEach(renderBrief);
           const total = briefs.length + textRows.length + news.length;

@@ -42,7 +42,9 @@ const search = async (query, zh, days) => {
     const sourceUrl = item.match(/<source url="([^"]+)"/)?.[1] || '';
     // Google appends " - Outlet" to every headline.
     const title = tag(item, 'title').replace(new RegExp(`\\s+-\\s+${source.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`), '');
-    return { title, url: tag(item, 'link'), source, domain: sourceUrl.replace(/^https?:\/\/(www\.)?/, '').replace(/\/.*$/, ''), published: new Date(tag(item, 'pubDate')).toISOString().slice(0, 10) };
+    // The description lists other outlets' headlines for the same story: material for the summary.
+    const related = [...tag(item, 'description').matchAll(/<a [^>]*>([^<]+)<\/a>/g)].map(([, text]) => decode(text));
+    return { title, related, url: tag(item, 'link'), source, domain: sourceUrl.replace(/^https?:\/\/(www\.)?/, '').replace(/\/.*$/, ''), published: new Date(tag(item, 'pubDate')).toISOString().slice(0, 10) };
   }).filter(item => item.title && item.published);
 };
 
@@ -84,10 +86,12 @@ export const collectNews = async (watchlist, previous = [], report = []) => {
     ...THEMES.map(theme => [theme.title, theme.query, false, title => theme.must.test(title) && AI.test(title)])
   ];
 
+  // Stories saved before headlines were kept get one more month-long pass to collect them.
+  const days = previous.length && previous.every(story => story.headlines) ? 7 : MAX_AGE_DAYS;
   const found = [];
   for (const [label, query, zh, keep] of queries) {
     try {
-      const results = (await search(query, zh, previous.length ? 7 : MAX_AGE_DAYS)).filter(item => outletRank(item.domain) < Infinity && keep(item.title));
+      const results = (await search(query, zh, days)).filter(item => outletRank(item.domain) < Infinity && keep(item.title));
       results.forEach(item => found.push({ ...item, theme: THEMES.find(theme => theme.title === label)?.title }));
       report.push(`news ${label}${zh ? ' (中文)' : ''}: ${results.length}`);
     } catch (error) {
@@ -97,15 +101,24 @@ export const collectNews = async (watchlist, previous = [], report = []) => {
   }
 
   // Merge into stories: earlier stories first (so their ids stay), then today's headlines.
-  const stories = previous.filter(story => story.published >= cutoff).map(story => ({ ...story, outlets: [...story.outlets] }));
+  const stories = previous.filter(story => story.published >= cutoff)
+    .map(story => ({ ...story, outlets: [...story.outlets], headlines: [...(story.headlines || [story.title])] }));
+  const addHeadlines = (story, item) => {
+    for (const headline of [item.title, ...item.related]) {
+      if (story.headlines.length < 8 && !story.headlines.includes(headline)) story.headlines.push(headline);
+    }
+  };
   for (const item of found) {
     if (item.published < cutoff) continue;
     const story = stories.find(other => other.url === item.url || sameStory(other.title, item.title));
     if (!story) {
-      stories.push({ title: item.title, url: item.url, source: item.source, domain: item.domain, published: item.published, outlets: [item.source], themes: item.theme ? [item.theme] : [] });
+      const created = { title: item.title, url: item.url, source: item.source, domain: item.domain, published: item.published, outlets: [item.source], themes: item.theme ? [item.theme] : [], headlines: [] };
+      addHeadlines(created, item);
+      stories.push(created);
       continue;
     }
     if (!story.outlets.includes(item.source)) story.outlets.push(item.source);
+    addHeadlines(story, item);
     if (item.theme && !story.themes.includes(item.theme)) story.themes.push(item.theme);
     // The headline shown comes from the highest-ranked outlet.
     if (outletRank(item.domain) < outletRank(story.domain || '')) {

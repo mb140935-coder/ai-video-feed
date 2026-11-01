@@ -462,7 +462,19 @@
         return badge;
       };
 
-      document.querySelectorAll('#feed-curated .card').forEach(card => card.querySelector('.tags')?.prepend(publishedBadge(card.dataset.published)));
+      // Every tab lists the most recently published items first; undated items go last.
+      const newestFirst = getDate => (a, b) => {
+        const key = item => { const date = getDate(item) || ''; return /^\d{4}-\d{2}$/.test(date) ? `${date}-15` : date; };
+        return key(b).localeCompare(key(a));
+      };
+
+      const curatedCards = [...document.querySelectorAll('#feed-curated .card')].sort(newestFirst(card => card.dataset.published));
+      curatedCards.forEach((card, index) => {
+        card.querySelector('.tags')?.prepend(publishedBadge(card.dataset.published));
+        card.querySelector('.hint').textContent = index === curatedCards.length - 1 ? '首期视频候选结束' : '上滑看下一条 ↓';
+        document.getElementById('curated-empty').before(card);
+      });
+      activeCard = curatedCards[0];
 
       const watchedStorageKey = 'ai-video-feed-watched-v1';
       const watchedItems = (() => {
@@ -962,7 +974,7 @@
           const audioCount = entries.filter(item => ['spotify', 'simplecast', 'megaphone'].includes(mediaLink(item)?.provider)).length;
           appearanceSummary = `首批 ${entries.length} 条可核验记录；已自动排除精选 TAB 中重复的 ${excludedDuplicates} 条。当前 ${inAppCount} 条支持卡内官方播放器（其中 ${audioCount} 条是音频），其余保留发布方原页。播放器滑到当前卡片才加载，离开后停止。自动日搜尚未接入；新目录记录在下次载入时显示。`;
           appearanceNote.textContent = appearanceSummary;
-          entries.forEach((item, index) => renderAppearance(item, index, entries.length));
+          entries.sort(newestFirst(item => item.published_date)).forEach((item, index) => renderAppearance(item, index, entries.length));
           appearanceSearch.dispatchEvent(new Event('input'));
         } catch (error) {
           appearanceCount.textContent = '来源未加载';
@@ -1022,7 +1034,7 @@
           const briefs = allBriefs.filter(brief => !(brief.video_keys || []).some(key => videoKeys.has(key)));
           const textRows = appearanceRows.filter(item => item.content_type === 'text' || item.content_type === 'index');
           briefList.replaceChildren();
-          briefs.forEach(brief => renderBrief({
+          [...briefs.map(brief => ({
             published: brief.published,
             meta: `资讯简报 · 优先级 ${brief.priority}`,
             title: brief.title,
@@ -1030,8 +1042,7 @@
             summary: brief.summary,
             why: brief.why ? `为什么推：${brief.why}` : '',
             links: brief.links || []
-          }));
-          textRows.forEach(item => renderBrief({
+          })), ...textRows.map(item => ({
             published: item.published_date,
             dateFallback: item.content_type === 'index' ? '索引页 · 持续更新，无单一发布日期' : undefined,
             meta: `${item.content_type === 'index' ? '资源索引' : '文字稿'} · ${item.name} · ${item.publisher}`,
@@ -1040,7 +1051,7 @@
             summary: getAppearanceHighlight(item),
             why: personAIContext[item.person_id] ? `人物：${personAIContext[item.person_id]}` : '',
             links: [{ label: item.content_type === 'index' ? '打开索引页' : '打开原文', url: item.official_publisher_url }]
-          }));
+          }))].sort(newestFirst(entry => entry.published)).forEach(renderBrief);
           const total = briefs.length + textRows.length;
           const covered = allBriefs.length - briefs.length;
           briefCount.textContent = `${total} 条`;

@@ -74,7 +74,7 @@
         <button class="tab" id="tab-appearances" data-feed-target="feed-appearances" type="button" role="tab" aria-selected="false" aria-controls="feed-appearances">演讲 &amp; Podcast · <span id="appearance-count">人物媒体库</span></button>
       </nav>
       <div class="watch-undo" id="watch-undo" role="status" hidden><span id="watch-undo-text"></span><button type="button" id="watch-undo-button">撤销</button></div>
-      <div class="sync-status" id="watch-sync-status" role="status">正在连接电脑共享记录…</div>
+      <div class="sync-status" id="watch-sync-status" role="status">正在连接在线已看记录…</div>
       <div class="feed-panel" id="feed-curated" role="tabpanel" aria-labelledby="tab-curated">
       <section class="card">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 4</span></div>
@@ -361,13 +361,18 @@
         button.closest('.card')?.classList.toggle('is-watched', watched);
       };
 
-      // Shared watched state lives on the LAN preview server (tools/serve_mobile_preview.py);
-      // localStorage remains the fallback when the server is unreachable.
-      const watchedMigrationKey = 'ai-video-feed-shared-migrated-v1';
+      // Shared watched state lives in Supabase (table watched_items, see tools/supabase-setup.sql);
+      // localStorage remains the fallback when it is unreachable or not configured.
+      const SUPABASE_URL = '';
+      const SUPABASE_ANON_KEY = '';
+      const watchedTable = `${SUPABASE_URL}/rest/v1/watched_items`;
+      const supabaseHeaders = { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` };
+      const watchedMigrationKey = 'ai-video-feed-supabase-migrated-v1';
       const pendingSharedChanges = new Map();
       const sharedSyncStatus = document.getElementById('watch-sync-status');
       let sharedSyncAvailable = false;
-      let lastSharedRevision = -1;
+      // Bumped after every write so a poll that started before it cannot restore stale state.
+      let sharedWriteCount = 0;
       let sharedWriteQueue = Promise.resolve();
 
       const persistWatchedItems = () => {
@@ -379,10 +384,8 @@
         sharedSyncStatus.classList.toggle('connected', connected);
       };
 
-      const applySharedWatchedState = state => {
-        if (!state || !Number.isInteger(state.revision) || !Array.isArray(state.items) || state.revision < lastSharedRevision) return;
-        lastSharedRevision = state.revision;
-        const nextItems = new Set(state.items.filter(key => typeof key === 'string'));
+      const applySharedWatchedItems = items => {
+        const nextItems = new Set(items);
         pendingSharedChanges.forEach((watched, key) => watched ? nextItems.add(key) : nextItems.delete(key));
         if (nextItems.size === watchedItems.size && [...nextItems].every(key => watchedItems.has(key))) return;
         watchedItems.clear();
@@ -397,14 +400,16 @@
         }
       };
 
-      const postSharedWatched = async body => {
-        const response = await fetch('/api/watched', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(body)
-        });
+      const writeSharedWatched = async (keys, watched) => {
+        const response = watched
+          ? await fetch(`${watchedTable}?on_conflict=key`, {
+            method: 'POST',
+            headers: { ...supabaseHeaders, 'Content-Type': 'application/json', Prefer: 'resolution=ignore-duplicates,return=minimal' },
+            body: JSON.stringify(keys.map(key => ({ key })))
+          })
+          : await fetch(`${watchedTable}?key=eq.${encodeURIComponent(keys[0])}`, { method: 'DELETE', headers: supabaseHeaders });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        return response.json();
+        sharedWriteCount++;
       };
 
       const sendSharedWatchChange = (key, watched) => {
@@ -413,44 +418,46 @@
         sharedWriteQueue = sharedWriteQueue.catch(() => {}).then(async () => {
           if (!sharedSyncAvailable || !pendingSharedChanges.has(key)) return;
           const latestValue = pendingSharedChanges.get(key);
-          const state = await postSharedWatched({ key, watched: latestValue });
+          await writeSharedWatched([key], latestValue);
           if (pendingSharedChanges.get(key) === latestValue) pendingSharedChanges.delete(key);
-          applySharedWatchedState(state);
         }).catch(() => {
           sharedSyncAvailable = false;
-          showSharedSyncStatus('共享服务暂时断开；已看状态先保存在本机', false);
+          showSharedSyncStatus('暂时连不上在线记录；已看状态先保存在本机', false);
         });
       };
 
       const pollSharedWatchedState = async () => {
+        if (!SUPABASE_URL) return;
+        const writesBefore = sharedWriteCount;
         try {
-          const response = await fetch('/api/watched', { cache: 'no-store' });
+          const response = await fetch(`${watchedTable}?select=key`, { headers: supabaseHeaders, cache: 'no-store' });
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
-          const state = await response.json();
+          const rows = await response.json();
           sharedSyncAvailable = true;
-          showSharedSyncStatus('已连接：同一 Wi‑Fi 下设备共享已看状态', true);
-          applySharedWatchedState(state);
+          showSharedSyncStatus('已连接：手机、iPad、电脑共享已看状态', true);
+          if (sharedWriteCount === writesBefore) applySharedWatchedItems(rows.map(row => row.key).filter(key => typeof key === 'string'));
           pendingSharedChanges.forEach((watched, key) => sendSharedWatchChange(key, watched));
         } catch {
           sharedSyncAvailable = false;
-          showSharedSyncStatus('尚未连接电脑预览服务；已看状态只保存在本机', false);
+          showSharedSyncStatus('暂时连不上在线记录；已看状态先保存在本机', false);
         }
       };
 
       const connectSharedWatchedState = async () => {
-        const legacyLocalItems = [...watchedItems];
-        await pollSharedWatchedState();
-        if (sharedSyncAvailable) {
-          let migrated = false;
-          try { migrated = localStorage.getItem(watchedMigrationKey) === 'true'; } catch { /* Treat as not migrated. */ }
-          // Each device uploads its pre-sync local records once; the server only adds them.
-          if (!migrated && legacyLocalItems.length) {
-            try { applySharedWatchedState(await postSharedWatched({ items: legacyLocalItems })); } catch { migrated = null; }
-          }
-          if (migrated !== null) {
-            try { localStorage.setItem(watchedMigrationKey, 'true'); } catch { /* Migration is still safe to retry. */ }
-          }
+        if (!SUPABASE_URL) {
+          showSharedSyncStatus('未配置在线同步；已看状态只保存在本机', false);
+          return;
         }
+        // Each device uploads its pre-sync local records once; existing rows are left alone.
+        let migrated = false;
+        try { migrated = localStorage.getItem(watchedMigrationKey) === 'true'; } catch { /* Treat as not migrated. */ }
+        if (!migrated) {
+          try {
+            if (watchedItems.size) await writeSharedWatched([...watchedItems], true);
+            localStorage.setItem(watchedMigrationKey, 'true');
+          } catch { /* Retried on the next page load. */ }
+        }
+        await pollSharedWatchedState();
         window.setInterval(pollSharedWatchedState, 3000);
       };
 

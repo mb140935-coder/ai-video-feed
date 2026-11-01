@@ -100,6 +100,13 @@
     .watch-row:hover, .watch-row:focus-visible { background: var(--hover); }
     .watch-row .menu-count { flex: none; }
     .watch-row-arrow { flex: none; color: var(--faint); }
+    .counter { cursor: pointer; pointer-events: auto; }
+    .counter::after { content: ' ▾'; color: var(--faint); }
+    .toc-row .toc-index { flex: none; min-width: 26px; color: var(--faint); font-size: 12px; font-variant-numeric: tabular-nums; }
+    .history-item.toc-row { justify-content: flex-start; }
+    .toc-row .history-item-text { flex: 1; }
+    .toc-row.is-current { background: var(--accent-soft); }
+    .toc-row.is-current .history-item-title { color: var(--accent-text); font-weight: 700; }
     #watchlist-title { flex: 1; min-width: 0; margin: 0 10px; }
     #watchlist-back[hidden] { display: none; }
     .phone.no-snap { scroll-snap-type: none; }
@@ -271,6 +278,12 @@
         <div class="history-panel">
           <div class="history-head"><button type="button" id="watchlist-back" hidden>← 名单</button><span id="watchlist-title">追踪名单</span><button type="button" id="watchlist-close">关闭</button></div>
           <div class="history-list" id="watchlist-list"></div>
+        </div>
+      </div>
+      <div class="history-sheet" id="toc-sheet" role="dialog" aria-modal="true" aria-labelledby="toc-title" hidden>
+        <div class="history-panel">
+          <div class="history-head"><span id="toc-title">目录</span><button type="button" id="toc-close">关闭</button></div>
+          <div class="history-list" id="toc-list"></div>
         </div>
       </div>
       <div class="history-sheet" id="watch-history" role="dialog" aria-modal="true" aria-labelledby="watch-history-title" hidden>
@@ -2006,6 +2019,44 @@
         document.querySelector(`[data-feed-target="${panel.id}"]`).click();
         setTimeout(() => entry.element.scrollIntoView({ block: 'start' }), 60);
       };
+
+      // 目录: tapping a card's "3 / 72" lists that tab's cards (the same ones the counter numbers) to jump to.
+      const tocSheet = document.getElementById('toc-sheet');
+      const tocList = document.getElementById('toc-list');
+      const openToc = card => {
+        const panel = card.closest('.feed-panel');
+        const cards = [...panel.querySelectorAll('.card:not(.is-watched):not([hidden])')];
+        document.getElementById('toc-title').textContent = `目录 · ${cards.length} 条 · 点标题跳转`;
+        tocList.replaceChildren();
+        let current = null;
+        cards.forEach((item, index) => {
+          const row = document.createElement('button');
+          row.type = 'button';
+          row.className = 'history-item watch-row toc-row';
+          makeText(row, 'span', 'toc-index', String(index + 1));
+          const text = document.createElement('div');
+          text.className = 'history-item-text';
+          makeText(text, 'div', 'history-item-title', item.querySelector('h1')?.textContent.trim() || '（无标题）');
+          const date = item.dataset.published || item.querySelector('.pub-date')?.textContent.match(/\d{4}-\d{2}-\d{2}/)?.[0] || '';
+          makeText(text, 'div', 'history-item-meta', [...new Set([date, ...(item.querySelector('.source')?.textContent.split('·') || [])].map(part => part.trim()).filter(Boolean))].join(' · '));
+          row.appendChild(text);
+          if (item === card) { row.classList.add('is-current'); current = row; }
+          row.addEventListener('click', () => {
+            tocSheet.hidden = true;
+            item.scrollIntoView({ block: 'start' });
+          });
+          tocList.appendChild(row);
+        });
+        tocSheet.hidden = false;
+        tocList.scrollTop = 0;
+        current?.scrollIntoView({ block: 'center' });
+      };
+      document.addEventListener('click', event => {
+        const counter = event.target.closest('.card .counter');
+        if (counter) openToc(counter.closest('.card'));
+      });
+      document.getElementById('toc-close').addEventListener('click', () => { tocSheet.hidden = true; });
+      tocSheet.addEventListener('click', event => { if (event.target === tocSheet) tocSheet.hidden = true; });
 
       const renderEntity = entity => {
         watchlistBack.hidden = false;

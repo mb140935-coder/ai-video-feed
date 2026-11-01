@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 视频刷流 · 首期预览</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, "Segoe UI", "Microsoft YaHei", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #090a0d; color: #f6f6f7; }
+    .shell { min-height: 100vh; display: grid; place-items: center; padding: 24px; }
+    .phone { position: relative; width: min(100%, 430px); height: min(900px, calc(100vh - 48px)); min-height: 620px; overflow-y: auto; scroll-snap-type: y mandatory; border: 1px solid #292a30; border-radius: 28px; background: #101115; box-shadow: 0 24px 80px #0009; scrollbar-width: none; }
+    .phone::-webkit-scrollbar { display: none; }
+    .tabbar { position: sticky; top: 0; z-index: 10; display: flex; gap: 8px; padding: 8px 12px; background: #101115ed; border-bottom: 1px solid #ffffff18; backdrop-filter: blur(14px); }
+    .tab { flex: 1; min-height: 38px; border: 1px solid #ffffff20; border-radius: 12px; background: #ffffff08; color: #aaaab5; font: inherit; font-size: 12px; cursor: pointer; }
+    .tab.active { background: #f4f4f6; color: #111217; border-color: #f4f4f6; font-weight: 700; }
+    .feed-panel[hidden] { display: none; }
+    .feed-note { padding: 14px 18px; border-bottom: 1px solid #ffffff15; color: #b7b7c1; font-size: 11px; line-height: 1.5; }
+    .appearance-search { width: 100%; margin-top: 10px; border: 1px solid #ffffff25; border-radius: 10px; padding: 9px 11px; background: #090a0d; color: #f6f6f7; font: inherit; font-size: 12px; outline: none; }
+    .card { position: relative; height: min(846px, calc(100vh - 102px)); min-height: 620px; scroll-snap-align: start; overflow: hidden; border-bottom: 1px solid #34353c; background: radial-gradient(ellipse at 50% 30%, #252630, #101115 65%); }
+    .top { position: absolute; z-index: 2; inset: 18px 18px auto; display: flex; justify-content: space-between; align-items: flex-start; pointer-events: none; }
+    .brand-block { display: flex; flex-direction: column; gap: 5px; }
+    .brand { font-weight: 700; font-size: 13px; letter-spacing: .04em; }
+    .focus-line { color: #b8b8c2; font-size: 9px; line-height: 1.3; }
+    .counter, .tag { border: 1px solid #ffffff30; background: #090a0dbb; backdrop-filter: blur(12px); border-radius: 999px; padding: 7px 11px; font-size: 11px; }
+    .player { position: absolute; inset: 74px 0 auto; height: 42%; display: grid; place-items: center; background: #000; }
+    iframe { width: 100%; height: 100%; border: 0; }
+    .player.audio-player { background: radial-gradient(ellipse at 60% 40%, #26352d, #101115 70%); }
+    .player.audio-player iframe { width: calc(100% - 28px); height: 152px; border-radius: 12px; }
+    .player-fallback { position: absolute; z-index: 3; left: 14px; bottom: 14px; display: inline-flex; align-items: center; min-height: 44px; border-radius: 999px; padding: 0 17px; background: #fff; color: #101115; text-decoration: none; font-size: 13px; font-weight: 700; box-shadow: 0 3px 14px #0008; }
+    .appearance-preview { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 12px; padding: 28px; background: radial-gradient(ellipse at 68% 38%, #302042, #111217 68%); }
+    .appearance-format { color: #c7b8ff; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+    .appearance-preview h2 { margin: 0; max-width: 310px; font-size: 20px; line-height: 1.35; }
+    .appearance-preview p { margin: 0; color: #c1c1ca; font-size: 12px; line-height: 1.5; }
+    .appearance-open { display: inline-flex; align-items: center; min-height: 44px; margin-top: 4px; border-radius: 999px; padding: 0 16px; background: #f4f4f6; color: #111217; font-size: 12px; font-weight: 700; text-decoration: none; }
+    .tap-note { position: absolute; z-index: 1; bottom: 8px; right: 12px; border-radius: 8px; background: #0009; padding: 5px 8px; color: #ddd; font-size: 10px; pointer-events: none; }
+    .details { position: absolute; inset: calc(42% + 86px) 20px 20px; display: flex; flex-direction: column; gap: 8px; }
+    .tags { display: flex; gap: 7px; flex-wrap: wrap; }
+    .tag { padding: 5px 9px; color: #d9d9e0; }
+    .watch-toggle { cursor: pointer; font: inherit; line-height: 1.2; background: #101115; color: #c9d7d1; border-color: #55c99f80; }
+    .watch-toggle[aria-pressed="true"] { background: #123b30; color: #baf3d8; border-color: #55c99f; font-weight: 700; }
+    .card.is-watched { display: none; }
+    .watch-undo { position: sticky; top: 53px; z-index: 9; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 9px 14px; border-bottom: 1px solid #ffffff18; background: #202126f2; color: #dddde4; font-size: 11px; }
+    .watch-undo[hidden] { display: none; }
+    .watch-undo button { border: 1px solid #ffffff35; border-radius: 999px; padding: 6px 11px; background: #ffffff12; color: #f5f5f7; font: inherit; cursor: pointer; }
+    h1 { font-size: 21px; line-height: 1.34; margin: 0; }
+    .source { color: #a6a6af; font-size: 12px; }
+    .person-context-label { color: #c7b8ff; font-size: 11px; font-weight: 700; margin-top: 2px; }
+    .person-context { font-size: 12px; line-height: 1.5; color: #dedee3; margin: -5px 0 0; }
+    .highlight-label { color: #78dfbd; font-size: 11px; font-weight: 700; margin-top: 1px; }
+    .highlight { font-size: 12px; line-height: 1.48; color: #f0f0f3; margin: -5px 0 0; border-left: 2px solid #55c99f; padding-left: 8px; }
+    .why { font-size: 13px; line-height: 1.55; color: #dedee3; margin: 0; }
+    .details a { color: #c8b8ff; font-size: 11px; line-height: 1.4; }
+    .state { color: #b9a8ff; font-size: 11px; }
+    .actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 9px; }
+    .actions a, .actions button { border: 1px solid #ffffff30; border-radius: 12px; padding: 11px 13px; color: #f5f5f7; text-decoration: none; font-size: 12px; background: #ffffff12; }
+    .actions a.primary { background: #f4f4f6; border-color: #f4f4f6; color: #111217; font-weight: 700; }
+    .hint { position: absolute; bottom: 4px; left: 50%; transform: translateX(-50%); color: #777983; font-size: 10px; }
+    .notice { position: fixed; z-index: 10; top: 12px; left: 50%; transform: translateX(-50%); max-width: min(92vw, 700px); border: 1px solid #f0b55070; border-radius: 12px; padding: 10px 14px; background: #33240c; color: #ffe1a6; font-size: 12px; line-height: 1.45; box-shadow: 0 8px 30px #0008; }
+    .notice[hidden] { display: none; }
+    @media (max-width: 520px) { .shell { padding: 0; } .phone { width: 100%; height: 100dvh; min-height: 580px; border: 0; border-radius: 0; } .card { height: calc(100dvh - 54px); min-height: 526px; } .player { inset: 64px 0 auto; height: 34%; } .details { inset: calc(34% + 76px) 16px 16px; gap: 6px; } }
+    @media (max-width: 520px) and (max-height: 700px) { .player { height: 30%; } .details { inset: calc(30% + 76px) 14px 14px; gap: 5px; } .person-context, .highlight { font-size: 11px; line-height: 1.4; } }
+    @media (max-height: 700px) { .phone { height: 100vh; min-height: 0; } .card { height: calc(100vh - 54px); min-height: 0; } .player { inset: 64px 0 auto; height: 30%; } .details { inset: calc(30% + 76px) 14px 12px; gap: 5px; } .person-context, .highlight { font-size: 11px; line-height: 1.4; } .person-context-label, .highlight-label, .state { font-size: 10px; } .actions a, .actions button { padding: 9px 11px; font-size: 11px; } }
+  </style>
+</head>
+<body>
+  <div class="notice" id="origin-notice" hidden></div>
+  <main class="shell">
+    <div class="phone" aria-label="可上下滑动的视频信息流">
+      <nav class="tabbar" role="tablist" aria-label="信息流分类">
+        <button class="tab active" id="tab-curated" data-feed-target="feed-curated" type="button" role="tab" aria-selected="true" aria-controls="feed-curated">精选 · 重点领域</button>
+        <button class="tab" id="tab-appearances" data-feed-target="feed-appearances" type="button" role="tab" aria-selected="false" aria-controls="feed-appearances">演讲 &amp; Podcast · <span id="appearance-count">人物媒体库</span></button>
+      </nav>
+      <div class="watch-undo" id="watch-undo" role="status" hidden><span id="watch-undo-text"></span><button type="button" id="watch-undo-button">撤销</button></div>
+      <div class="feed-panel" id="feed-curated" role="tabpanel" aria-labelledby="tab-curated">
+      <section class="card">
+        <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 4</span></div>
+        <div class="player"><iframe id="player-ioc" data-video-id="QiaTTwnnblg" data-start="8" data-caption-lang="en" title="Inside the Olympic AI Agenda — IOC Media" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><a class="player-fallback" href="https://www.youtube.com/watch?v=QiaTTwnnblg&amp;t=8s" target="_self">无法内嵌？在 YouTube 观看</a><span class="tap-note">奥运 AI 重点视频 · 00:08 起</span></div>
+        <div class="details">
+          <div class="tags"><span class="tag">奥运 AI · 最高优先级</span><span class="tag">IOC</span><span class="tag">专家会谈</span><button type="button" class="tag watch-toggle" data-watch-key="youtube:QiaTTwnnblg" aria-pressed="false" aria-label="标记为已看">○ 未看</button></div>
+          <h1>Inside the Olympic AI Agenda</h1>
+          <div class="source">IOC Media · Alejandro Merino-Madrid · 2026-01-23</div>
+          <div class="person-context-label">人物 · AI 关联</div>
+          <p class="person-context">Alejandro Merino-Madrid 负责国际奥委会的 AI 计划，推动 AI 在奥林匹克运动中的应用。关注他的价值，是了解 AI 如何进入赛事组织、运动员支持和观众体验。</p>
+          <div class="highlight-label">内容重点</div>
+          <p class="highlight">围绕 IOC 的奥林匹克 AI 议程，梳理 AI 在奥运体系中的应用方向。重点留意技术如何服务运动员、赛事组织与观众，同时守住公平和信任。</p>
+          <div class="state">用户重点视频 · 嵌入不可用时切换到 YouTube · 片段时间点待核验</div>
+          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=QiaTTwnnblg&amp;t=8s" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-ioc">播放器重播</button><button type="button">☆ 收藏</button></div>
+        </div>
+        <div class="hint">上滑看下一条 ↓</div>
+      </section>
+
+      <section class="card">
+        <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">2 / 4</span></div>
+        <div class="player"><iframe id="player-kimi" data-video-id="DIyHTpfWctU" data-start="0" data-caption-lang="en" title="Kimi K3.1 Pro 官方发布视频" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><a class="player-fallback" href="https://www.youtube.com/watch?v=DIyHTpfWctU" target="_self">无法内嵌？在 YouTube 观看</a><span class="tap-note">原声 · 英文字幕优先</span></div>
+        <div class="details">
+          <div class="tags"><span class="tag">中国 AI</span><span class="tag">CAD / 3D</span><span class="tag">必看候选</span><button type="button" class="tag watch-toggle" data-watch-key="youtube:DIyHTpfWctU" aria-pressed="false" aria-label="标记为已看">○ 未看</button></div>
+          <h1>Kimi K3.1 Pro：AI 开始接管 3D 建模工作流了吗？</h1>
+          <div class="source">Moonshot AI 官方 · 3D 创作演示</div>
+          <div class="person-context-label">人物 · AI 关联</div>
+          <p class="person-context">这段是 Moonshot AI 官方演示，来源页没有明确署名讲解者。这里关注团队展示的模型和产品能力，不把公司演示归到某个个人名下。</p>
+          <div class="highlight-label">内容重点</div>
+          <p class="highlight">官方演示展示 Kimi 用于 3D/CAD 类创作流程，包括机械部件、建筑和游戏场景。关键看点是 AI 能否把自然语言需求转成可编辑、可复用的 3D 资产；演示效果仍需独立验证。</p>
+          <div class="state">原声播放 · 英文字幕优先；短片时间点待核验</div>
+          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=DIyHTpfWctU" target="_blank" rel="noopener noreferrer">在 YouTube 观看</a><button type="button" data-action="restart" data-player="player-kimi">播放器重播</button><button type="button">☆ 收藏</button></div>
+        </div>
+        <div class="hint">上滑看下一条 ↓</div>
+      </section>
+
+      <section class="card">
+        <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">3 / 4</span></div>
+        <div class="player"><iframe id="player-nvidia" data-video-id="v-NGxyPjcrE" data-start="0" data-caption-lang="en" title="Jensen Huang at NVIDIA GTC Berlin 2026" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><a class="player-fallback" href="https://www.youtube.com/watch?v=v-NGxyPjcrE" target="_self">无法内嵌？在 YouTube 观看</a><span class="tap-note">原声 · 英文字幕优先</span></div>
+        <div class="details">
+          <div class="tags"><span class="tag">通用 AI 必看</span><span class="tag">黄仁勋</span><span class="tag">GTC Berlin</span><button type="button" class="tag watch-toggle" data-watch-key="youtube:v-NGxyPjcrE" aria-pressed="false" aria-label="标记为已看">○ 未看</button></div>
+          <h1>黄仁勋 GTC Berlin 2026：AI 下一步往哪里走？</h1>
+          <div class="source">NVIDIA 官方主题演讲 · 2026-10-21</div>
+          <div class="person-context-label">人物 · AI 关联</div>
+          <p class="person-context">黄仁勋是 NVIDIA 联合创始人兼 CEO，领导 GPU、加速计算和 AI 基础设施的发展。NVIDIA 的芯片与软件生态是训练和部署大模型的重要底座，因此他的判断会影响整个行业的算力路线。</p>
+          <div class="highlight-label">内容重点</div>
+          <p class="highlight">黄仁勋把 AI 工厂和智能体描述为下一阶段计算平台的核心，并展示开放模型、智能体安全架构与新一代算力基础设施。重点看 AI 如何从“回答问题”走向调用工具、执行任务，并进入机器人、工业和企业场景。</p>
+          <div class="state">官方回放可看 · 原声与英文字幕优先；重点片段待核验</div>
+          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=v-NGxyPjcrE" target="_blank" rel="noopener noreferrer">在 YouTube 观看</a><button type="button" data-action="restart" data-player="player-nvidia">播放器重播</button><button type="button">☆ 收藏</button></div>
+        </div>
+        <div class="hint">上滑看下一条 ↓</div>
+      </section>
+
+      <section class="card">
+        <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">4 / 4</span></div>
+        <div class="player"><iframe id="player-racing" data-video-id="KNPjRpNtQ7s" data-start="600" data-end="660" data-caption-lang="en" title="OpenAI Podcast Ep. 22: AI in racing" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><a class="player-fallback" href="https://www.youtube.com/watch?v=KNPjRpNtQ7s&amp;t=600s" target="_self">无法内嵌？在 YouTube 观看</a><span class="tap-note">章节片段 · 10:00 起 · 原声</span></div>
+        <div class="details">
+          <div class="tags"><span class="tag">体育 AI</span><span class="tag">赛车数据</span><span class="tag">实战</span><button type="button" class="tag watch-toggle" data-watch-key="youtube:KNPjRpNtQ7s" aria-pressed="false" aria-label="标记为已看">○ 未看</button></div>
+          <h1>AI 怎么帮赛车团队从海量数据里找优势？</h1>
+          <div class="source">OpenAI Podcast · Joyce Ruffell 与 Chase Holden · 2026-07-16</div>
+          <div class="person-context-label">人物 · AI 关联</div>
+          <p class="person-context">Joyce Ruffell 是 OpenAI 研究人员，参与把 AI 用到 Chip Ganassi Racing 的比赛数据分析；Chase Holden 来自赛车技术公司 Racetek Systems。两人的合作展示了 AI 如何帮助车队从传感器、赛车和 pit crew 数据中寻找优势。</p>
+          <div class="highlight-label">内容重点</div>
+          <p class="highlight">讨论车队如何结合赛车、车库和 pit crew 数据，用 AI 更快发现表现差异、辅助比赛决策。重点是让数据支持工程师和车队人员，而不是取代他们的专业判断。</p>
+          <div class="state">章节起点已核实：10:00 · 片段入口约 1 分钟</div>
+          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=KNPjRpNtQ7s&amp;t=600s" target="_blank" rel="noopener noreferrer">在 YouTube 观看</a><button type="button" data-action="continue" data-player="player-racing">在播放器继续</button><button type="button">☆ 收藏</button></div>
+        </div>
+        <div class="hint">首期视频候选结束</div>
+      </section>
+      <div class="feed-note" id="curated-empty" hidden>这批精选视频都已看过；新增内容后会继续出现在这里。</div>
+      </div>
+      <div class="feed-panel" id="feed-appearances" role="tabpanel" aria-labelledby="tab-appearances" hidden>
+        <div class="feed-note">
+          <div id="appearance-note">追踪 watchlist 中人物的公开演讲、播客和访谈。这里展示已登记的可核验来源；新发现可持续加入，不受精选 TAB 的每日条数限制。</div>
+          <input class="appearance-search" id="appearance-search" type="search" placeholder="搜索人名、节目或标题" aria-label="搜索演讲和 Podcast">
+        </div>
+        <div id="appearance-cards"></div>
+      </div>
+    </div>
+  </main>
+  <script>
+    (() => {
+      const notice = document.getElementById('origin-notice');
+      if (location.protocol === 'file:') {
+        notice.hidden = false;
+        notice.textContent = '这个文件现在是 file:// 打开的，浏览器不会发送 YouTube 要求的网页来源信息，所以会报 153。请在 APP 的网页地址下查看；本地预览地址为 http://127.0.0.1:8765/prototypes/video-swipe-feed-preview.html。';
+        return;
+      }
+
+      const origin = location.origin;
+      const feed = document.querySelector('.phone');
+      const players = new Map();
+      let activeCard = document.querySelector('.card');
+      let apiReady = false;
+      let appearancesLoaded = false;
+      const watchUndo = document.getElementById('watch-undo');
+      const watchUndoText = document.getElementById('watch-undo-text');
+      let lastWatchedKey = '';
+
+      const playerUrl = (frame, start, end, autoplay = false) => {
+        const params = new URLSearchParams({
+          playsinline: '1',
+          enablejsapi: '1',
+          origin,
+          hl: 'en',
+          cc_lang_pref: frame.dataset.captionLang || 'en',
+          cc_load_policy: '1',
+          autoplay: autoplay ? '1' : '0',
+          rel: '0',
+          start: String(start || 0)
+        });
+        if (end) params.set('end', String(end));
+        return `https://www.youtube.com/embed/${frame.dataset.videoId}?${params}`;
+      };
+
+      const initializePlayer = frame => {
+        if (!frame.hasAttribute('src')) frame.src = playerUrl(frame, Number(frame.dataset.start), Number(frame.dataset.end));
+        if (!apiReady || players.has(frame.id)) return;
+        const player = new YT.Player(frame.id, {
+          events: {
+            onReady: event => {
+              if (frame.closest('.card') !== activeCard) event.target.pauseVideo();
+            },
+            onStateChange: event => {
+              const stateNames = {
+                [-1]: 'unstarted',
+                [YT.PlayerState.ENDED]: 'ended',
+                [YT.PlayerState.PLAYING]: 'playing',
+                [YT.PlayerState.PAUSED]: 'paused',
+                [YT.PlayerState.BUFFERING]: 'buffering',
+                [YT.PlayerState.CUED]: 'cued'
+              };
+              frame.dataset.playState = stateNames[event.data] || 'unknown';
+            }
+          }
+        });
+        players.set(frame.id, player);
+      };
+
+      const initializeFrames = (root = document) => {
+        root.querySelectorAll('iframe[data-video-id]').forEach(frame => {
+          if (frame.dataset.appearanceMedia === 'true' && frame.closest('.card') !== activeCard) return;
+          initializePlayer(frame);
+        });
+      };
+
+      initializeFrames();
+
+      const activateCard = card => {
+        if (!card) return;
+        card.querySelectorAll('iframe[data-appearance-media="true"]').forEach(frame => {
+          if (frame.dataset.videoId) {
+            initializePlayer(frame);
+          } else if (frame.dataset.embedUrl && frame.dataset.loaded !== 'true') {
+            frame.src = frame.dataset.embedUrl;
+            frame.dataset.loaded = 'true';
+          }
+        });
+        initializeFrames(card);
+      };
+
+      const stopCardMedia = card => {
+        if (!card) return;
+        card.querySelectorAll('iframe[data-appearance-media="true"][data-provider]').forEach(frame => {
+          if (frame.dataset.loaded === 'true') {
+            frame.src = 'about:blank';
+            frame.dataset.loaded = 'false';
+          }
+        });
+      };
+
+      const pauseAllExcept = card => {
+        players.forEach((player, playerId) => {
+          const frame = document.getElementById(playerId);
+          if (!frame || frame.closest('.card') !== card) player.pauseVideo();
+        });
+        document.querySelectorAll('.appearance-card').forEach(item => {
+          if (item !== card) stopCardMedia(item);
+        });
+      };
+
+      const cardObserver = new IntersectionObserver(entries => {
+        for (const entry of entries) {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.55) {
+            activeCard = entry.target;
+            activeCard.classList.add('active-card');
+            activateCard(activeCard);
+            pauseAllExcept(activeCard);
+          } else if (entry.target === activeCard && entry.intersectionRatio < 0.55) {
+            activeCard = null;
+            pauseAllExcept(null);
+          }
+        }
+      }, { root: feed, threshold: [0, 0.55, 0.8] });
+
+      document.querySelectorAll('.card').forEach(card => cardObserver.observe(card));
+      window.onYouTubeIframeAPIReady = () => {
+        apiReady = true;
+        initializeFrames();
+      };
+
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) pauseAllExcept(null);
+        else if (activeCard && !activeCard.closest('.feed-panel')?.hidden) activateCard(activeCard);
+      });
+
+      const tabs = [...document.querySelectorAll('[role="tab"][data-feed-target]')];
+      const panels = [...document.querySelectorAll('.feed-panel')];
+      const appearanceCount = document.getElementById('appearance-count');
+      const appearanceCards = document.getElementById('appearance-cards');
+      const appearanceNote = document.getElementById('appearance-note');
+      const appearanceSearch = document.getElementById('appearance-search');
+      const curatedEmpty = document.getElementById('curated-empty');
+      let appearanceSummary = '';
+      let appearanceTotal = 0;
+
+      const refreshCuratedCounters = () => {
+        const cards = [...document.querySelectorAll('#feed-curated .card:not(.is-watched)')];
+        cards.forEach((card, index) => {
+          const counter = card.querySelector('.counter');
+          if (counter) counter.textContent = `${index + 1} / ${cards.length}`;
+        });
+        curatedEmpty.hidden = cards.length > 0;
+      };
+
+      document.getElementById('watch-undo-button').addEventListener('click', () => {
+        if (!lastWatchedKey) return;
+        watchedItems.delete(lastWatchedKey);
+        try { localStorage.setItem(watchedStorageKey, JSON.stringify([...watchedItems])); } catch { /* Keep the current session state if storage is unavailable. */ }
+        document.querySelectorAll('.watch-toggle').forEach(button => {
+          if (button.dataset.watchKey === lastWatchedKey) syncWatchedButton(button, false);
+        });
+        lastWatchedKey = '';
+        watchUndo.hidden = true;
+        appearanceSearch.dispatchEvent(new Event('input'));
+        refreshCuratedCounters();
+      });
+
+      refreshCuratedCounters();
+
+      const parseCsv = text => {
+        const rows = [];
+        let row = [];
+        let field = '';
+        let quoted = false;
+        for (let i = 0; i < text.length; i++) {
+          const char = text[i];
+          if (quoted) {
+            if (char === '"' && text[i + 1] === '"') { field += '"'; i++; }
+            else if (char === '"') quoted = false;
+            else field += char;
+          } else if (char === '"') quoted = true;
+          else if (char === ',') { row.push(field); field = ''; }
+          else if (char === '\n') { row.push(field.replace(/\r$/, '')); rows.push(row); row = []; field = ''; }
+          else field += char;
+        }
+        if (field.length || row.length) { row.push(field.replace(/\r$/, '')); rows.push(row); }
+        return rows;
+      };
+
+      const makeText = (parent, tag, className, value) => {
+        const element = document.createElement(tag);
+        if (className) element.className = className;
+        element.textContent = value;
+        parent.appendChild(element);
+        return element;
+      };
+
+      const watchedStorageKey = 'ai-video-feed-watched-v1';
+      const watchedItems = (() => {
+        try {
+          const stored = JSON.parse(localStorage.getItem(watchedStorageKey) || '[]');
+          return new Set(Array.isArray(stored) ? stored : []);
+        } catch { return new Set(); }
+      })();
+
+      const syncWatchedButton = (button, watched) => {
+        button.textContent = watched ? '✓ 已看' : '○ 未看';
+        button.setAttribute('aria-pressed', String(watched));
+        button.setAttribute('aria-label', watched ? '取消已看标记' : '标记为已看');
+        button.closest('.card')?.classList.toggle('is-watched', watched);
+      };
+
+      const bindWatchedButton = button => {
+        const watchKey = button.dataset.watchKey;
+        if (!watchKey) return;
+        syncWatchedButton(button, watchedItems.has(watchKey));
+        if (button.dataset.bound === 'true') return;
+        button.dataset.bound = 'true';
+        button.addEventListener('click', event => {
+          event.preventDefault();
+          event.stopPropagation();
+          const watched = !watchedItems.has(watchKey);
+          if (watched) watchedItems.add(watchKey);
+          else watchedItems.delete(watchKey);
+          try { localStorage.setItem(watchedStorageKey, JSON.stringify([...watchedItems])); } catch { /* Keep the current session state if storage is unavailable. */ }
+          document.querySelectorAll('.watch-toggle').forEach(item => {
+            if (item.dataset.watchKey === watchKey) syncWatchedButton(item, watchedItems.has(watchKey));
+          });
+          if (watched) {
+            lastWatchedKey = watchKey;
+            const title = button.closest('.card')?.querySelector('h1')?.textContent || '视频';
+            watchUndoText.textContent = `“${title}”已从信息流隐藏。`;
+            watchUndo.hidden = false;
+            if (activeCard?.querySelector('.watch-toggle')?.dataset.watchKey === watchKey) {
+              pauseAllExcept(null);
+              if (document.getElementById('feed-appearances').hidden) activeCard = null;
+            }
+          }
+          appearanceSearch.dispatchEvent(new Event('input'));
+          refreshCuratedCounters();
+        });
+      };
+
+      const addWatchedButton = (tags, watchKey) => {
+        if (!tags || !watchKey) return;
+        const existing = tags.querySelector('.watch-toggle');
+        if (existing) {
+          existing.dataset.watchKey = watchKey;
+          bindWatchedButton(existing);
+          return;
+        }
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'tag watch-toggle';
+        button.dataset.watchKey = watchKey;
+        syncWatchedButton(button, watchedItems.has(watchKey));
+        tags.appendChild(button);
+        bindWatchedButton(button);
+      };
+
+      const canonicalMediaKey = rawUrl => {
+        if (!rawUrl) return '';
+        try {
+          const url = new URL(rawUrl);
+          const host = url.hostname.replace(/^www\./, '');
+          const youtubeHosts = ['youtube.com', 'youtube-nocookie.com', 'youtu.be'];
+          if (youtubeHosts.includes(host)) {
+            const videoId = host === 'youtu.be' ? url.pathname.split('/').filter(Boolean)[0]
+              : url.searchParams.get('v') || url.pathname.match(/^\/(?:embed|shorts|live)\/([^/]+)/)?.[1];
+            if (videoId) return `youtube:${videoId}`;
+          }
+          if (host === 'open.spotify.com' && /^\/episode\//.test(url.pathname)) return `spotify:${url.pathname.split('/')[2]}`;
+          if (host === 'player.simplecast.com' || host === 'playlist.megaphone.fm') {
+            url.search = '';
+            return `url:${host}${url.pathname.replace(/\/$/, '')}`;
+          }
+          url.search = '';
+          url.hash = '';
+          return `url:${host}${url.pathname.replace(/\/$/, '')}`;
+        } catch { return `url:${rawUrl}`; }
+      };
+
+      document.querySelectorAll('.watch-toggle').forEach(bindWatchedButton);
+      refreshCuratedCounters();
+
+      window.addEventListener('storage', event => {
+        if (event.key !== watchedStorageKey) return;
+        watchedItems.clear();
+        try {
+          const stored = JSON.parse(event.newValue || '[]');
+          if (Array.isArray(stored)) stored.forEach(key => watchedItems.add(key));
+        } catch { /* Ignore malformed state from another tab. */ }
+        document.querySelectorAll('.watch-toggle').forEach(button => syncWatchedButton(button, watchedItems.has(button.dataset.watchKey)));
+        appearanceSearch.dispatchEvent(new Event('input'));
+        refreshCuratedCounters();
+        if (activeCard?.classList.contains('is-watched')) {
+          activeCard = null;
+          pauseAllExcept(null);
+        }
+      });
+
+      const mediaLink = item => {
+        const sourceUrl = item.official_publisher_url || item.official_media_url || '';
+        const raw = item.official_media_url || sourceUrl;
+        try {
+          const url = new URL(raw);
+          if (url.protocol !== 'https:') return null;
+          const isYouTube = ['youtube.com', 'www.youtube.com', 'youtube-nocookie.com', 'www.youtube-nocookie.com', 'youtu.be'].includes(url.hostname);
+          const pathVideoId = url.pathname.match(/^\/(?:embed|shorts|live)\/([^/]+)/)?.[1];
+          const videoId = isYouTube
+            ? (url.hostname === 'youtu.be' ? url.pathname.slice(1).split('/')[0] : url.searchParams.get('v') || pathVideoId)
+            : null;
+          if (videoId) {
+            const time = url.searchParams.get('t') || url.searchParams.get('start') || '0';
+            const seconds = Number.parseInt(time, 10) || 0;
+            return { url: `https://www.youtube.com/watch?v=${encodeURIComponent(videoId)}${seconds ? `&t=${seconds}s` : ''}`, sourceUrl, videoId, start: seconds, provider: 'youtube' };
+          }
+          if (url.hostname === 'open.spotify.com' && /^\/episode\/[A-Za-z0-9]+/.test(url.pathname)) {
+            const episodeId = url.pathname.split('/')[2];
+            return { url: url.href, sourceUrl, embedUrl: `https://open.spotify.com/embed/episode/${episodeId}`, provider: 'spotify' };
+          }
+          if (url.hostname === 'www.ted.com' && url.pathname.startsWith('/talks/')) {
+            const slug = url.pathname.split('/')[2]?.replace(/\.html$/, '');
+            if (slug) return { url: url.href, sourceUrl, embedUrl: `https://embed.ted.com/talks/lang/en/${encodeURIComponent(slug)}`, provider: 'ted' };
+          }
+          if (url.hostname === 'vimeo.com' || url.hostname === 'www.vimeo.com') {
+            const videoId = url.pathname.split('/').filter(Boolean)[0];
+            if (/^\d+$/.test(videoId || '')) return { url: url.href, sourceUrl, embedUrl: `https://player.vimeo.com/video/${videoId}`, provider: 'vimeo' };
+          }
+          if (url.hostname === 'player.simplecast.com' && /^\/[a-f0-9-]+$/i.test(url.pathname)) {
+            return { url: sourceUrl, sourceUrl, embedUrl: url.href, provider: 'simplecast' };
+          }
+          if (url.hostname === 'playlist.megaphone.fm' && url.searchParams.has('e')) {
+            return { url: sourceUrl, sourceUrl, embedUrl: url.href, provider: 'megaphone' };
+          }
+          return { url: sourceUrl || url.href, sourceUrl, provider: 'external' };
+        } catch { return null; }
+      };
+
+      const personAIContext = {
+        sam_altman: 'Sam Altman 是 OpenAI 联合创始人兼 CEO，负责推动前沿模型从研究走向产品和社会部署。他的决策会影响大模型研发投入、产品路线以及 AI 治理讨论。',
+        greg_brockman: 'Greg Brockman 是 OpenAI 联合创始人，长期参与公司的工程建设、模型训练和组织发展。他连接技术研发与产品落地，是理解 OpenAI 如何把研究转成大规模 AI 服务的重要人物。',
+        mira_murati: 'Mira Murati 曾任 OpenAI CTO，参与推动 ChatGPT 等 AI 产品走向公众；她现在联合创立并领导 Thinking Machines Lab。她关注如何让前沿模型更可定制、可理解并能与人协作。',
+        dario_amodei: 'Dario Amodei 是 Anthropic 联合创始人兼 CEO，领导 Claude 模型及其研究方向。他把模型能力、安全评估和负责任部署放在同一条研发路线里，是前沿 AI 安全讨论中的重要声音。',
+        daniela_amodei: 'Daniela Amodei 是 Anthropic 联合创始人兼总裁，负责把公司的使命、团队和业务运营组织起来。她的重要性在于推动 AI 安全理念进入公司的日常决策和发展方式。',
+        demis_hassabis: 'Demis Hassabis 是 Google DeepMind 联合创始人兼 CEO，参与领导 AlphaGo、AlphaFold 和 Gemini 等研究与产品方向。他展示了 AI 不只用于聊天，也能推动科学发现和复杂问题求解。',
+        jeff_dean: 'Jeff Dean 是 Google 的资深计算机科学家，长期参与大规模计算系统、机器学习基础设施和 AI 研究。像 MapReduce、TensorFlow 这类系统帮助整个行业训练和部署更大规模的 AI。',
+        sundar_pichai: 'Sundar Pichai 是 Google 和 Alphabet 的 CEO，负责公司面向全球用户的 AI 战略与产品部署。Google 的搜索、云服务和 Gemini 产品如何结合 AI，很大程度上受他的方向影响。',
+        mark_zuckerberg: 'Mark Zuckerberg 是 Meta 创始人兼 CEO，推动公司建设 Meta AI、Llama 和 Muse 等模型与产品。Meta 选择开放模型还是封闭服务，会显著影响开发者生态和 AI 的普及方式。',
+        yann_lecun: 'Yann LeCun 是深度学习先驱之一，以卷积神经网络等工作推动了计算机视觉和现代深度学习的发展。他长期主张让 AI 学习世界模型与常识，这为当前主流大语言模型路线提供了重要对照。',
+        alexandr_wang: 'Alexandr Wang 创办了 Scale AI，推动高质量训练数据、评测和模型基础设施的发展，之后加入 Meta 参与 AI 工作。他的重要性在于数据与评测常常决定前沿模型能否真正变强、变可靠。',
+        jensen_huang: '黄仁勋是 NVIDIA 联合创始人兼 CEO，领导 GPU、加速计算和 AI 基础设施的发展。NVIDIA 的芯片与软件生态是训练和部署大模型的重要底座，因此他的判断会影响整个行业的算力路线。',
+        lisa_su: 'Lisa Su 是 AMD 董事长兼 CEO，领导公司发展高性能计算芯片和 AI 加速器。AMD 与 NVIDIA 等厂商的竞争会影响 AI 算力的性能、价格和供应。',
+        satya_nadella: 'Satya Nadella 是 Microsoft 董事长兼 CEO，推动 Azure AI、Copilot 和 Microsoft 的 AI 产品战略。他能把云基础设施、模型合作和办公软件连接起来，影响 AI 如何进入企业工作流。',
+        mustafa_suleyman: 'Mustafa Suleyman 是 DeepMind 联合创始人之一，后来创办 Inflection，并领导 Microsoft AI。他的工作横跨前沿研究、消费级助手和产品团队建设，关注如何把 AI 助手带给普通用户。',
+        elon_musk: 'Elon Musk 创办 xAI，并推动 Grok 模型及大规模训练算力建设；他也把 AI 与 Tesla 的自动驾驶和机器人布局相连。他的重要性主要在于投入规模、产品竞争和对 AI 发展方向的公开影响。',
+        noam_shazeer: 'Noam Shazeer 是 Transformer 论文的共同作者之一；Transformer 后来成为 GPT 等现代大语言模型的基础架构。他也长期参与大规模语言模型研发，因此能从模型架构和训练角度解释 AI 能力如何进步。',
+        arthur_mensch: 'Arthur Mensch 是 Mistral AI 联合创始人兼 CEO，带领团队开发欧洲的前沿模型和 AI 产品。Mistral 的开放模型路线让开发者和企业有了大型美国平台以外的选择。',
+        liang_wenfeng: '梁文锋创办 DeepSeek，并领导团队研发其大语言模型和推理模型。DeepSeek 的技术进展让行业重新关注：较低训练成本、强化学习和开放权重能否推动前沿 AI 竞争。',
+        kai_fu_lee: '李开复是创新工场董事长，曾领导 Google 中国和微软亚洲研究院，也长期投资并研究中国 AI 产业。他连接学术、科技公司和创业投资，能提供理解中国 AI 生态的产业视角。',
+        zhou_zhihua: '周志华是南京大学机器学习与数据挖掘领域的教授和研究团队负责人，研究机器学习理论、算法与应用。他编写的机器学习教材和培养的研究人员，也影响了中文 AI 教育与人才发展。',
+        kaiming_he: '何恺明是 MIT 计算机科学与人工智能研究者，研究计算机视觉和深度学习；他是 ResNet 等重要视觉方法的主要作者之一。ResNet 让极深神经网络更容易训练，推动了后续视觉 AI 的发展。',
+        fei_fei_li: '李飞飞是 Stanford 教授、Stanford HAI 创始负责人之一，也是 ImageNet 的创建者。ImageNet 和相关竞赛推动了计算机视觉与深度学习的快速发展；她现在也在探索空间智能和以人为中心的 AI。',
+        andrej_karpathy: 'Andrej Karpathy 是 AI 研究者和教育者，曾参与创建 OpenAI，并在 Tesla 领导自动驾驶视觉团队。他用课程、代码和公开演讲把深度学习与大语言模型讲得很清楚，影响了大量开发者。',
+        jim_fan: 'Jim Fan 是 NVIDIA 的高级 AI 研究科学家，研究通用智能体、机器人和游戏 AI。他推动把大模型从屏幕里的文字任务扩展到能理解环境、操作工具并在物理世界行动的系统。',
+        francois_chollet: 'François Chollet 创建了 Keras 深度学习库和 ARC-AGI 基准测试。他的重要贡献是推动大家衡量 AI 能否在陌生任务中灵活学习，而不只是记住训练数据里的模式。',
+        noam_brown: 'Noam Brown 是 OpenAI 研究员，研究战略推理、多智能体协作和语言模型推理。他参与的扑克与 Diplomacy AI 展示了机器如何在不完全信息下做长期决策，这些研究也连接到新一代推理模型。',
+        jerry_tworek: 'Jerry Tworek 曾在 OpenAI 领导推理模型研究，并负责 o1 项目的整体研究工作。他的重要贡献是推动用强化学习训练语言模型处理数学、编程等需要多步思考的问题。',
+        aidan_gomez: 'Aidan Gomez 是 Cohere 联合创始人兼 CEO，也是 Transformer 论文的共同作者之一。他把基础模型研究带向企业产品，关注企业如何在保护数据的前提下部署生成式 AI。',
+        clement_delangue: 'Clement Delangue 是 Hugging Face 联合创始人兼 CEO，推动开放模型、数据集和工具的共享平台发展。这套社区基础设施降低了研究者和开发者试用、比较与发布 AI 模型的门槛。',
+        alejandro_merino_madrid: 'Alejandro Merino-Madrid 负责国际奥委会的 AI 计划，推动 AI 在奥林匹克运动中的应用。关注他的价值，是了解 AI 如何进入赛事组织、运动员支持和观众体验。'
+      };
+
+      const appearanceHighlights = {
+        sam_altman: '围绕 GPT-5、AGI 进展和接下来的研发与产品方向，讨论模型能力会怎样改变人们使用 AI 的方式。',
+        greg_brockman: '探讨 OpenAI 所说的“进入 AGI 时代”意味着什么，以及前沿模型如何从研究能力走向产品与现实应用。',
+        mira_murati: '这条记录来自 Dartmouth 活动回顾，介绍 Mira Murati 关于“以人为本的未来”的对谈；当前登记的是活动报道，不是完整视频回放。',
+        dario_amodei: '围绕 Claude、通用人工智能的时间尺度与人类未来展开长谈，也涉及强大模型带来的安全和社会影响。',
+        daniela_amodei: '解释 Anthropic “有帮助、诚实、无害”的 AI 理念，重点是如何把安全原则落实到模型训练与产品行为。',
+        demis_hassabis: '回顾 DeepMind 的研究路线，并谈 AI 如何从语言模型延伸到科学发现与复杂问题求解。',
+        jeff_dean: 'Jeff Dean 与 Noam Shazeer 回顾 Google 从 PageRank 到大规模 AI 的演进，涉及搜索、模型架构、计算基础设施与 AGI 前景。',
+        sundar_pichai: '这场 TED 演讲讨论 Google 对印度的愿景与数字技术机会；它不是专门的 AI 演讲，可观察大型科技平台如何服务本地用户。',
+        mark_zuckerberg: '一场涉及 Facebook、Instagram、Meta 与元宇宙的广泛访谈；AI 是其中一部分，适合了解 Meta 的产品与公司战略背景。',
+        yann_lecun: '介绍深度学习和神经网络的发展，并讨论 AI 的下一步；可留意他对当前模型能力和未来学习方式的看法。',
+        alexandr_wang: '聚焦 Meta 的 Muse 模型及其 AI 投入，讨论新模型如何融入 Meta 的产品与整体竞争策略。',
+        jensen_huang: 'Lex Fridman 与黄仁勋讨论 NVIDIA 的发展和 AI 革命，重点包括 GPU、加速计算以及支撑大模型的基础设施。',
+        lisa_su: '讨论 AMD 如何尝试把 AI 用进工作与业务，以及 AI 对芯片行业和未来计算的影响。',
+        satya_nadella: 'Microsoft Build 对谈聚焦 AI 与编程创新，关注 Copilot 类工具如何改变开发者写代码、调试和交付软件的流程。',
+        mustafa_suleyman: '从“AI 到底是什么”出发，解释人工智能能力如何形成、会怎样影响社会，以及人类如何塑造它的发展方向。',
+        elon_musk: '一场覆盖战争、政治、科学和 AI 的长访谈；AI 是广泛未来议题之一，不是单一技术发布会。',
+        noam_shazeer: 'Jeff Dean 与 Noam Shazeer 回顾 Google 从 PageRank 到大规模 AI 的演进，涉及 Transformer、大模型训练和 AGI 前景。',
+        arthur_mensch: 'Mistral AI 联合创始人谈公司的模型、产品与发展方向，可了解欧洲前沿 AI 公司如何参与模型竞争。',
+        liang_wenfeng: '从 DeepSeek 的创业与技术理想谈起，讨论中国 AI 团队如何在资源约束下追求模型能力和研发效率。',
+        kai_fu_lee: '围绕中美 AI 竞争、产业生态和技术影响展开，比较中国与硅谷在人才、企业和应用上的不同路径。',
+        zhou_zhihua: '这是一门机器学习课程，系统讲授机器学习的基本概念、算法与方法；属于学习材料，不是单场访谈。',
+        kaiming_he: '这是何恺明个人学术主页上的报告索引，链接主题随报告而异；适合查找计算机视觉与深度学习研究分享，不对应单一视频。',
+        fei_fei_li: '讨论世界模型与空间智能，关注 AI 如何建立对三维环境的理解，并把这种理解用于推理和行动。',
+        andrej_karpathy: '这是演讲与播客索引，包含面向开发者的 LLM 入门讲解；重点是大语言模型的结构、训练和推理基础，具体内容依所选链接而定。',
+        jim_fan: '讨论机器人如何结合感知、推理和行动，以及训练数据、仿真和具身智能在机器人能力提升中的作用。',
+        francois_chollet: '这是演讲与播客资源索引，主题包括 ARC Prize 与 AI 泛化能力；核心问题是模型能否灵活解决未见过的新任务。',
+        noam_brown: '讨论智能体群体、AI 对齐与递归自我改进等前沿议题，关注多智能体协作会怎样改变 AI 系统的能力与风险。',
+        jerry_tworek: '围绕前沿 AI 实验室的竞争和技术进展展开讨论，适合了解研究团队如何判断模型突破、投入与长期优势。',
+        aidan_gomez: 'Cohere CEO 谈 Transformer 论文的来历、企业模型，以及各国和企业发展“主权 AI”的需求。',
+        clement_delangue: '讨论 Hugging Face 的开放模型生态，并审视大语言模型热潮中的价值、泡沫和开源机会。',
+        alejandro_merino_madrid: '围绕奥林匹克运动的 AI 议程，重点看 AI 如何服务运动员、赛事组织和观众，同时兼顾公平、数据保护与信任。'
+      };
+
+      const getAppearanceHighlight = item => {
+        if (item.person_id === 'jensen_huang' && /GTC Berlin/i.test(item.appearance_title)) {
+          return '黄仁勋把 AI 工厂和智能体描述为下一阶段计算平台的核心，并展示开放模型、智能体安全架构与新一代算力基础设施。重点看 AI 如何从“回答问题”走向调用工具、执行任务，并进入机器人、工业和企业场景。';
+        }
+        return appearanceHighlights[item.person_id] || '发布方尚未提供足够的节目简介；这里先不推测具体内容，打开原片可查看完整演讲或访谈。';
+      };
+
+      const renderAppearance = (item, index, total) => {
+        const card = document.createElement('section');
+        card.className = 'card appearance-card';
+        card.dataset.search = [item.name, item.appearance_title, item.format, item.publisher].join(' ').toLocaleLowerCase();
+        const top = document.createElement('div');
+        top.className = 'top';
+        const brandBlock = document.createElement('div');
+        brandBlock.className = 'brand-block';
+        makeText(brandBlock, 'span', 'brand', '人物演讲 · Podcast');
+        makeText(brandBlock, 'span', 'focus-line', '前沿实验室、创始人与研究人员');
+        top.appendChild(brandBlock);
+        makeText(top, 'span', 'counter', `${index + 1} / ${total}`);
+        card.appendChild(top);
+
+        const playerArea = document.createElement('div');
+        playerArea.className = 'player';
+        const media = mediaLink(item);
+        const safeId = `${item.person_id || 'speaker'}-${index}`.replace(/[^a-z0-9-]/gi, '-').toLowerCase();
+        if (media?.provider === 'youtube') {
+          const frame = document.createElement('iframe');
+          frame.id = `appearance-${safeId}`;
+          frame.dataset.videoId = media.videoId;
+          frame.dataset.start = String(media.start);
+          frame.dataset.captionLang = 'en';
+          frame.title = `${item.name} — ${item.appearance_title}`;
+          frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+          frame.referrerPolicy = 'strict-origin-when-cross-origin';
+          frame.allowFullscreen = true;
+          frame.loading = 'lazy';
+          frame.dataset.appearanceMedia = 'true';
+          playerArea.appendChild(frame);
+          const fallback = document.createElement('a');
+          fallback.className = 'player-fallback';
+          fallback.href = media.url;
+          fallback.target = '_self';
+          fallback.textContent = '无法内嵌？在 YouTube 观看';
+          playerArea.appendChild(fallback);
+        } else if (['spotify', 'simplecast', 'megaphone', 'ted', 'vimeo'].includes(media?.provider)) {
+          if (['spotify', 'simplecast', 'megaphone'].includes(media.provider)) playerArea.classList.add('audio-player');
+          const frame = document.createElement('iframe');
+          frame.title = `${item.name} — ${item.appearance_title}`;
+          frame.dataset.provider = media.provider;
+          frame.dataset.embedUrl = media.embedUrl;
+          frame.dataset.appearanceMedia = 'true';
+          frame.loading = 'lazy';
+          frame.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+          frame.allowFullscreen = true;
+          frame.referrerPolicy = 'strict-origin-when-cross-origin';
+          if (media.provider === 'ted') {
+            frame.scrolling = 'no';
+            frame.title = `TED: ${item.appearance_title}`;
+          }
+          if (media.provider === 'vimeo') frame.allow = 'autoplay; fullscreen; picture-in-picture';
+          playerArea.appendChild(frame);
+          const fallback = document.createElement('a');
+          fallback.className = 'player-fallback';
+          fallback.href = media.url;
+          fallback.target = '_self';
+          fallback.textContent = media.provider === 'spotify' ? '播放器不可用？打开 Spotify'
+            : media.provider === 'simplecast' ? '播放器不可用？打开发布方'
+            : media.provider === 'megaphone' ? '播放器不可用？打开发布方'
+            : `播放器不可用？打开 ${media.provider === 'ted' ? 'TED' : 'Vimeo'}`;
+          playerArea.appendChild(fallback);
+        } else {
+          const preview = document.createElement('div');
+          preview.className = 'appearance-preview';
+          makeText(preview, 'span', 'appearance-format', `${item.format} · ${item.publisher}`);
+          makeText(preview, 'h2', '', item.appearance_title);
+          makeText(preview, 'p', '', `${item.name} · 来自已登记的演讲 / Podcast 来源`);
+          if (media) {
+            const link = document.createElement('a');
+            link.className = 'appearance-open';
+            link.href = media.url;
+            link.target = '_self';
+            link.textContent = /podcast/i.test(item.format) ? '打开原 Podcast' : '打开原演讲 / 访谈';
+            preview.appendChild(link);
+          }
+          playerArea.appendChild(preview);
+        }
+        const playbackLabel = media?.provider === 'youtube' ? 'YouTube 官方播放器 · 卡内播放'
+          : media?.provider === 'ted' ? 'TED 官方播放器 · 卡内播放'
+          : media?.provider === 'vimeo' ? 'Vimeo 官方播放器 · 卡内播放'
+          : media?.provider === 'spotify' ? 'Spotify 官方播放器 · 音频'
+          : media?.provider === 'simplecast' ? 'Simplecast 官方播放器 · 音频'
+          : media?.provider === 'megaphone' ? 'Megaphone 官方播放器 · 音频'
+          : media ? '当前来源未提供可确认的卡内播放器' : '来源页面播放 / 收听';
+        makeText(playerArea, 'span', 'tap-note', playbackLabel);
+        card.appendChild(playerArea);
+
+        const details = document.createElement('div');
+        details.className = 'details';
+        const tags = document.createElement('div');
+        tags.className = 'tags';
+        makeText(tags, 'span', 'tag', item.format || 'Appearance');
+        makeText(tags, 'span', 'tag', item.publisher || 'Publisher');
+        const watchKey = canonicalMediaKey(item.official_media_url) || `${canonicalMediaKey(item.official_publisher_url)}:${item.appearance_title}`;
+        addWatchedButton(tags, watchKey);
+        details.appendChild(tags);
+        makeText(details, 'h1', '', item.appearance_title);
+        makeText(details, 'div', 'source', `${item.name} · ${item.publisher}`);
+        makeText(details, 'div', 'person-context-label', '人物 · AI 关联');
+        makeText(details, 'p', 'person-context', personAIContext[item.person_id] || '人物背景尚待核实；这条内容先保留发布方的讲者信息和原始播放入口。');
+        makeText(details, 'div', 'highlight-label', '内容重点');
+        makeText(details, 'p', 'highlight', getAppearanceHighlight(item));
+        const stateLabel = media?.provider === 'youtube' || media?.provider === 'ted' || media?.provider === 'vimeo'
+          ? '官方视频播放器 · 滑到本卡时加载；离开时停止'
+          : ['spotify', 'simplecast', 'megaphone'].includes(media?.provider) ? '官方音频播放器 · 滑到本卡时加载；离开时停止'
+          : item.status === 'verified' ? '已核验发布方页面 · 当前站点未确认可嵌入' : '来源待复核';
+        makeText(details, 'div', 'state', stateLabel);
+        const actions = document.createElement('div');
+        actions.className = 'actions';
+        if (media) {
+          const link = document.createElement('a');
+          link.className = 'primary';
+          link.href = media.url;
+          link.target = '_self';
+          link.textContent = media.provider === 'youtube' ? 'YouTube 原片'
+            : media.provider === 'spotify' ? 'Spotify 原集'
+            : media.provider === 'simplecast' ? '原 Podcast 页面'
+            : media.provider === 'megaphone' ? '原 Podcast 页面'
+            : media.provider === 'ted' ? 'TED 原片'
+            : media.provider === 'vimeo' ? 'Vimeo 原片'
+            : (/podcast/i.test(item.format) ? '播放 / 收听原集' : '打开发布方页面');
+          actions.appendChild(link);
+        }
+        const save = document.createElement('button');
+        save.type = 'button';
+        save.textContent = '☆ 收藏';
+        actions.appendChild(save);
+        details.appendChild(actions);
+        card.appendChild(details);
+        makeText(card, 'div', 'hint', '上滑看下一条 ↓');
+        appearanceCards.appendChild(card);
+        syncWatchedButton(card.querySelector('.watch-toggle'), watchedItems.has(watchKey));
+        cardObserver.observe(card);
+      };
+
+      const loadAppearances = async () => {
+        if (appearancesLoaded) return;
+        appearancesLoaded = true;
+        appearanceNote.textContent = '正在读取已登记的人物演讲与 Podcast 来源…';
+        try {
+          const response = await fetch('../docs/person-appearances-v1.csv', { cache: 'no-store' });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const rows = parseCsv((await response.text()).replace(/^\uFEFF/, ''));
+          const headers = rows.shift() || [];
+          const registeredEntries = rows.map(values => Object.fromEntries(headers.map((header, i) => [header, values[i] || ''])))
+            .filter(item => item.status === 'verified' && item.format !== 'Not found' && item.official_publisher_url);
+          const curatedMediaKeys = new Set([...document.querySelectorAll('#feed-curated .watch-toggle')]
+            .map(button => button.dataset.watchKey)
+            .filter(Boolean));
+          const entries = registeredEntries.filter(item => {
+            const media = mediaLink(item);
+            const mediaKey = media?.videoId ? `youtube:${media.videoId}`
+              : canonicalMediaKey(item.official_media_url || item.official_publisher_url);
+            return !curatedMediaKeys.has(mediaKey);
+          });
+          const excludedDuplicates = registeredEntries.length - entries.length;
+          appearanceTotal = entries.length;
+          appearanceCount.textContent = `${entries.length} 条`;
+          const inAppCount = entries.filter(item => ['youtube', 'spotify', 'simplecast', 'megaphone', 'ted', 'vimeo'].includes(mediaLink(item)?.provider)).length;
+          const audioCount = entries.filter(item => ['spotify', 'simplecast', 'megaphone'].includes(mediaLink(item)?.provider)).length;
+          appearanceSummary = `首批 ${entries.length} 条可核验记录；已自动排除精选 TAB 中重复的 ${excludedDuplicates} 条。当前 ${inAppCount} 条支持卡内官方播放器（其中 ${audioCount} 条是音频），其余保留发布方原页。播放器滑到当前卡片才加载，离开后停止。自动日搜尚未接入；新目录记录在下次载入时显示。`;
+          appearanceNote.textContent = appearanceSummary;
+          entries.forEach((item, index) => renderAppearance(item, index, entries.length));
+          appearanceSearch.dispatchEvent(new Event('input'));
+        } catch (error) {
+          appearanceCount.textContent = '来源未加载';
+          appearanceNote.textContent = '人物出现目录暂时无法加载。请通过本地 HTTP 预览地址打开页面，再重试这个 TAB。';
+        }
+      };
+
+      appearanceSearch.addEventListener('input', event => {
+        const previousActiveCard = activeCard;
+        const query = appearanceSearch.value.trim().toLocaleLowerCase();
+        let matches = 0;
+        appearanceCards.querySelectorAll('.appearance-card').forEach(card => {
+          const watchKey = card.querySelector('.watch-toggle')?.dataset.watchKey;
+          const visible = !watchedItems.has(watchKey) && (!query || card.dataset.search.includes(query));
+          card.hidden = !visible;
+          if (visible) matches++;
+        });
+        appearanceCount.textContent = query || matches < appearanceTotal ? `${matches}/${appearanceTotal} 条` : `${appearanceTotal} 条`;
+        appearanceNote.textContent = query ? (matches ? `找到 ${matches} 条未看记录。` : '没有未看且匹配的演讲或 Podcast。')
+          : appearanceTotal > 0 && matches === 0 ? '这批演讲和 Podcast 都已看过；后续新增的未看内容会显示在这里。' : appearanceSummary;
+        const visibleCards = [...appearanceCards.querySelectorAll('.appearance-card:not([hidden]):not(.is-watched)')];
+        visibleCards.forEach((card, index) => {
+          const counter = card.querySelector('.counter');
+          if (counter) counter.textContent = `${index + 1} / ${visibleCards.length}`;
+        });
+        if (!document.getElementById('feed-appearances').hidden) {
+          const nextAfterPrevious = previousActiveCard && visibleCards.find(card =>
+            previousActiveCard.compareDocumentPosition(card) & Node.DOCUMENT_POSITION_FOLLOWING);
+          activeCard = event.isTrusted ? (visibleCards[0] || null)
+            : visibleCards.includes(previousActiveCard) ? previousActiveCard
+            : nextAfterPrevious || visibleCards[0] || null;
+          activateCard(activeCard);
+          pauseAllExcept(activeCard);
+        }
+      });
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', async () => {
+          const targetId = tab.dataset.feedTarget;
+          tabs.forEach(item => {
+            const selected = item === tab;
+            item.classList.toggle('active', selected);
+            item.setAttribute('aria-selected', String(selected));
+          });
+          panels.forEach(panel => { panel.hidden = panel.id !== targetId; });
+          feed.scrollTop = 0;
+          activeCard = document.querySelector(`#${targetId} .card:not(.is-watched):not([hidden])`);
+          pauseAllExcept(activeCard);
+          if (targetId === 'feed-appearances') {
+            await loadAppearances();
+            activeCard = document.querySelector('#feed-appearances .card:not(.is-watched):not([hidden])');
+            activateCard(activeCard);
+            pauseAllExcept(activeCard);
+          }
+        });
+      });
+
+      document.querySelectorAll('[data-action]').forEach(button => {
+        button.addEventListener('click', () => {
+          const frame = document.getElementById(button.dataset.player);
+          const player = players.get(frame?.id);
+          if (!frame || !player) return;
+          const isContinue = button.dataset.action === 'continue';
+          if (isContinue) {
+            player.loadVideoById({ videoId: frame.dataset.videoId, startSeconds: Number(frame.dataset.end) });
+          } else {
+            player.seekTo(Number(frame.dataset.start) || 0, true);
+            player.playVideo();
+          }
+          frame.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+      });
+
+      const apiScript = document.createElement('script');
+      apiScript.src = 'https://www.youtube.com/iframe_api';
+      document.head.appendChild(apiScript);
+    })();
+  </script>
+</body>
+</html>

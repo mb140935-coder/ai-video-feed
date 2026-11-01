@@ -101,6 +101,8 @@
     .watch-row .menu-count { flex: none; }
     .watch-row-arrow { flex: none; color: var(--faint); }
     .counter { cursor: pointer; pointer-events: auto; }
+    .actions button.fav-toggle { cursor: pointer; }
+    .actions button.fav-toggle[aria-pressed="true"] { border-color: #b8860b88; background: #f7ecd2; color: #8a5a00; font-weight: 700; }
     .counter::after { content: ' ▾'; color: var(--faint); }
     .toc-row .toc-index { flex: none; min-width: 26px; color: var(--faint); font-size: 12px; font-variant-numeric: tabular-nums; }
     .history-item.toc-row { justify-content: flex-start; }
@@ -911,7 +913,11 @@
 
       const applySharedWatchedItems = items => {
         const nextItems = new Set(items);
-        pendingSharedChanges.forEach((watched, key) => watched ? nextItems.add(key) : nextItems.delete(key));
+        pendingSharedChanges.forEach((watched, key) => {
+          if (key.startsWith(FAVORITE_PREFIX)) return;
+          if (watched) nextItems.add(key);
+          else nextItems.delete(key);
+        });
         if (nextItems.size === watchedItems.size && [...nextItems].every(key => watchedItems.has(key))) return;
         watchedItems.clear();
         nextItems.forEach(key => watchedItems.add(key));
@@ -961,7 +967,11 @@
           rows.forEach(row => { if (typeof row.key === 'string' && row.created_at) watchedTimes.set(row.key, row.created_at); });
           sharedSyncAvailable = true;
           showSharedSyncStatus('已连接：手机、iPad、电脑共享已看状态', true);
-          if (sharedWriteCount === writesBefore) applySharedWatchedItems(rows.map(row => row.key).filter(key => typeof key === 'string'));
+          if (sharedWriteCount === writesBefore) {
+            const keys = rows.map(row => row.key).filter(key => typeof key === 'string');
+            applySharedWatchedItems(keys.filter(key => !key.startsWith(FAVORITE_PREFIX)));
+            applySharedFavorites(keys.filter(key => key.startsWith(FAVORITE_PREFIX)).map(key => key.slice(FAVORITE_PREFIX.length)));
+          }
           pendingSharedChanges.forEach((watched, key) => sendSharedWatchChange(key, watched));
         } catch {
           sharedSyncAvailable = false;
@@ -1036,6 +1046,83 @@
         tags.appendChild(button);
         bindWatchedButton(button);
       };
+
+      // ☆ 收藏: favorites sort to the top of their tab. Shared across devices in watched_items as "fav:<watch key>"
+      // rows (no new table needed); this browser keeps a copy for when Supabase is unreachable.
+      const FAVORITE_PREFIX = 'fav:';
+      const favoritesStorageKey = 'ai-video-feed-favorites-v1';
+      const favorites = (() => {
+        try {
+          const stored = JSON.parse(localStorage.getItem(favoritesStorageKey) || '[]');
+          return new Set(Array.isArray(stored) ? stored : []);
+        } catch { return new Set(); }
+      })();
+      const cardKey = card => card?.querySelector('.watch-toggle')?.dataset.watchKey || '';
+      const isFavorite = card => favorites.has(cardKey(card));
+      const syncFavoriteButton = (button, on) => {
+        button.textContent = on ? '★ 已收藏' : '☆ 收藏';
+        button.setAttribute('aria-pressed', String(on));
+      };
+      // Moves favorites above the other cards, keeping their order. Only in a tab that is hidden or on its first
+      // card, so the card being watched never jumps; `fresh` is for cards just rendered, before anyone watches them.
+      const floatFavorites = (fresh = false) => {
+        let moved = false;
+        [document.getElementById('feed-curated'), appearanceCards].forEach(container => {
+          const panel = container.closest('.feed-panel') || container;
+          const cards = [...container.children].filter(element => element.classList.contains('card'));
+          const visible = cards.filter(card => !card.hidden && !card.classList.contains('is-watched'));
+          if (!(fresh && container === appearanceCards) && !panel.hidden && activeCard && container.contains(activeCard) && activeCard !== visible[0]) return;
+          const firstPlain = cards.find(card => !isFavorite(card));
+          if (!firstPlain) return;
+          cards.filter(card => isFavorite(card) && (firstPlain.compareDocumentPosition(card) & Node.DOCUMENT_POSITION_FOLLOWING))
+            .forEach(card => { firstPlain.before(card); moved = true; });
+        });
+        if (moved) {
+          refreshCuratedCounters();
+          appearanceSearch.dispatchEvent(new Event('input'));
+        }
+      };
+      const applyFavorites = () => {
+        try { localStorage.setItem(favoritesStorageKey, JSON.stringify([...favorites])); } catch { /* Session only. */ }
+        document.querySelectorAll('.fav-toggle').forEach(button => syncFavoriteButton(button, isFavorite(button.closest('.card'))));
+        floatFavorites();
+      };
+      const applySharedFavorites = keys => {
+        const next = new Set(keys);
+        pendingSharedChanges.forEach((on, key) => {
+          if (!key.startsWith(FAVORITE_PREFIX)) return;
+          if (on) next.add(key.slice(FAVORITE_PREFIX.length));
+          else next.delete(key.slice(FAVORITE_PREFIX.length));
+        });
+        const changed = next.size !== favorites.size || [...next].some(key => !favorites.has(key));
+        favorites.clear();
+        next.forEach(key => favorites.add(key));
+        if (changed) applyFavorites();
+        else floatFavorites(); // Cards that arrived since the last check.
+      };
+      // Turns the card's ☆ 收藏 placeholder into the working button (or adds one).
+      function addFavoriteButton(card) {
+        const actions = card.querySelector('.actions');
+        if (!actions || !cardKey(card) || actions.querySelector('.fav-toggle')) return;
+        let button = [...actions.querySelectorAll('button')].find(item => item.textContent.trim() === '☆ 收藏');
+        if (!button) {
+          button = document.createElement('button');
+          button.type = 'button';
+          actions.appendChild(button);
+        }
+        button.classList.add('fav-toggle');
+        syncFavoriteButton(button, isFavorite(card));
+        button.addEventListener('click', () => {
+          const key = cardKey(card);
+          const on = !favorites.has(key);
+          if (on) favorites.add(key);
+          else favorites.delete(key);
+          sendSharedWatchChange(FAVORITE_PREFIX + key, on);
+          document.querySelectorAll('.fav-toggle').forEach(item => syncFavoriteButton(item, isFavorite(item.closest('.card'))));
+          try { localStorage.setItem(favoritesStorageKey, JSON.stringify([...favorites])); } catch { /* Session only. */ }
+          showToast([on ? '★ 已收藏：下次打开时排在这一栏最前面。' : '已取消收藏。'], 3000);
+        });
+      }
 
       const canonicalMediaKey = rawUrl => {
         if (!rawUrl) return '';
@@ -1355,6 +1442,7 @@
         details.appendChild(actions);
         card.appendChild(details);
         makeText(card, 'div', 'hint', '上滑看下一条 ↓');
+        addFavoriteButton(card);
         addNoteButton(card);
         place(card);
         syncWatchedButton(card.querySelector('.watch-toggle'), watchedItems.has(watchKey));
@@ -1408,6 +1496,7 @@
           appearanceSummary = `共 ${entries.length} 条，其中 ${autoCount} 条是每天自动从关注频道发现的新视频${autoFeedUpdated()}；已自动排除精选 TAB 中重复的 ${excludedDuplicates} 条。${inAppCount} 条支持卡内官方播放器（其中 ${audioCount} 条是音频），其余保留发布方原页。`;
           appearanceNote.textContent = appearanceSummary;
           entries.sort(newestFirst(item => item.published_date)).forEach((item, index) => renderAppearance(item, index, entries.length));
+          floatFavorites(true);
           appearanceSearch.dispatchEvent(new Event('input'));
         } catch (error) {
           appearanceCount.textContent = '来源未加载';
@@ -2036,7 +2125,7 @@
           makeText(row, 'span', 'toc-index', String(index + 1));
           const text = document.createElement('div');
           text.className = 'history-item-text';
-          makeText(text, 'div', 'history-item-title', item.querySelector('h1')?.textContent.trim() || '（无标题）');
+          makeText(text, 'div', 'history-item-title', `${isFavorite(item) ? '★ ' : ''}${item.querySelector('h1')?.textContent.trim() || '（无标题）'}`);
           const date = item.dataset.published || item.querySelector('.pub-date')?.textContent.match(/\d{4}-\d{2}-\d{2}/)?.[0] || '';
           makeText(text, 'div', 'history-item-meta', [...new Set([date, ...(item.querySelector('.source')?.textContent.split('·') || [])].map(part => part.trim()).filter(Boolean))].join(' · '));
           row.appendChild(text);
@@ -2149,11 +2238,9 @@
         button.className = 'note-button';
         button.textContent = '📝 记一笔';
         button.addEventListener('click', () => openNote(card));
-        const save = [...actions.querySelectorAll('button')].find(item => item.textContent.trim() === '☆ 收藏');
-        if (save) save.replaceWith(button);
-        else actions.appendChild(button);
+        actions.appendChild(button);
       }
-      document.querySelectorAll('.card').forEach(addNoteButton);
+      document.querySelectorAll('.card').forEach(card => { addFavoriteButton(card); addNoteButton(card); });
 
       const openNote = card => {
         const frame = card.querySelector('.player iframe[data-video-id]');

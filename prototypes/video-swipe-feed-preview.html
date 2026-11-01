@@ -90,6 +90,11 @@
     .actions button.note-button { border-color: #b8344f66; background: var(--accent-soft); color: var(--accent-text); font-weight: 700; cursor: pointer; }
     .toast { position: fixed; z-index: 40; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); width: max-content; max-width: min(92vw, 560px); border-radius: 14px; padding: 12px 16px; background: var(--text); color: var(--surface); font-size: 13px; line-height: 1.55; box-shadow: 0 10px 30px #2e2a2555; }
     .toast[hidden] { display: none; }
+    .actions a.podcast-link { border-color: #6447b866; color: var(--purple); font-weight: 700; }
+    .sleep-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 16px 18px 4px; }
+    .sleep-options button { min-height: 46px; border: 1px solid var(--line-strong); border-radius: 12px; background: var(--surface); color: var(--text); font: inherit; font-size: 14px; cursor: pointer; }
+    .sleep-options button.is-set { border-color: var(--accent); background: var(--accent-soft); color: var(--accent-text); font-weight: 700; }
+    .sleep-options button[hidden] { display: none; }
     .toast a { color: #f3c9a8; }
     .watch-row { width: 100%; border: 0; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; align-items: center; }
     .watch-row:hover, .watch-row:focus-visible { background: var(--hover); }
@@ -224,6 +229,7 @@
             <button type="button" role="menuitem" id="watch-history-button" aria-haspopup="dialog" aria-controls="watch-history"><span>✓ 已看历史</span><span class="menu-count" id="watch-history-count">0</span></button>
             <button type="button" role="menuitem" id="search-button" aria-controls="search-bar"><span>🔍 搜索演讲 &amp; Podcast</span></button>
             <button type="button" role="menuitem" id="add-video-button" aria-haspopup="dialog" aria-controls="add-video"><span>＋ 添加视频 / 频道</span><span class="menu-count" id="added-count"></span></button>
+            <button type="button" role="menuitem" id="sleep-button" aria-haspopup="dialog" aria-controls="sleep-sheet"><span>⏾ 定时停止</span><span class="menu-count" id="sleep-count"></span></button>
           </div>
         </div>
         <!-- Opened from the menu; takes the place of the tabs so it stays at the top while scrolling. -->
@@ -247,6 +253,20 @@
         </div>
       </div>
       <div class="toast" id="toast" role="status" hidden></div>
+      <div class="history-sheet" id="sleep-sheet" role="dialog" aria-modal="true" aria-labelledby="sleep-title" hidden>
+        <div class="history-panel">
+          <div class="history-head"><span id="sleep-title">⏾ 定时停止</span><button type="button" id="sleep-close">关闭</button></div>
+          <div class="sleep-options">
+            <button type="button" data-minutes="15">15 分钟</button>
+            <button type="button" data-minutes="30">30 分钟</button>
+            <button type="button" data-minutes="45">45 分钟</button>
+            <button type="button" data-minutes="60">60 分钟</button>
+            <button type="button" data-minutes="90">90 分钟</button>
+            <button type="button" data-minutes="0" id="sleep-cancel" hidden>取消定时</button>
+          </div>
+          <div class="history-empty" id="sleep-status">到时间后暂停正在播放的视频或音频。屏幕要保持亮着：锁屏后网页里的播放器本来就会停。想锁屏听，用卡片上的「🎧 用播客听」，Apple Podcasts 自带睡眠定时。</div>
+        </div>
+      </div>
       <div class="history-sheet" id="watchlist" role="dialog" aria-modal="true" aria-labelledby="watchlist-title" hidden>
         <div class="history-panel">
           <div class="history-head"><button type="button" id="watchlist-back" hidden>← 名单</button><span id="watchlist-title">追踪名单</span><button type="button" id="watchlist-close">关闭</button></div>
@@ -675,6 +695,7 @@
           }
         });
         initializeFrames(card);
+        setTimeout(() => findPodcast(card)); // Defined further down, with the 🎧 button.
       };
 
       const stopCardMedia = card => {
@@ -2149,6 +2170,122 @@
         if (event.target.closest('input, textarea') || !noteSheet.hidden) return;
         const button = activeCard?.querySelector('.note-button');
         if (button) { event.preventDefault(); openNote(activeCard); }
+      });
+
+      // 🎧 用播客听: the same episode on Apple Podcasts, which keeps playing with the screen locked and has its own
+      // sleep timer (a YouTube embed stops when the screen locks). Looked up with the iTunes Search API when a YouTube
+      // card comes on screen; answers are kept in this browser, and misses for recent videos are retried after 3 days.
+      const PODCAST_CACHE_KEY = 'aiTiktokPodcasts';
+      let podcastCache = {};
+      try { podcastCache = JSON.parse(localStorage.getItem(PODCAST_CACHE_KEY)) || {}; } catch {}
+      const podcastLookups = new Set();
+      const titleWords = text => {
+        const words = new Set();
+        for (const word of (text || '').toLowerCase().match(/[\p{L}\p{N}]+/gu) || []) {
+          if (/[一-鿿]/.test(word)) for (let i = 0; i < word.length - 1; i++) words.add(word.slice(i, i + 2));
+          else if (word.length > 2) words.add(word);
+        }
+        return words;
+      };
+      // Share of the shorter text's words that the other text also has.
+      const wordOverlap = (a, b) => {
+        const left = titleWords(a), right = titleWords(b);
+        const size = Math.min(left.size, right.size);
+        if (!size) return { share: 0, size };
+        let shared = 0;
+        left.forEach(word => { if (right.has(word)) shared++; });
+        return { share: shared / size, size };
+      };
+      // Same episode: nearly the same title, or the same show within 3 days with a related title.
+      const matchEpisode = (results, title, show, published) => results.find(episode => {
+        const sameTitle = wordOverlap(title, episode.trackName);
+        if (sameTitle.size >= 4 && sameTitle.share >= 0.7) return true;
+        const days = published && episode.releaseDate ? Math.abs(Date.parse(episode.releaseDate) - Date.parse(published)) / 86400000 : Infinity;
+        return days <= 3 && wordOverlap(show, episode.collectionName).share >= 0.5 && sameTitle.share >= 0.2;
+      });
+      const searchEpisodes = async term => {
+        const response = await fetch(`https://itunes.apple.com/search?media=podcast&entity=podcastEpisode&limit=10&term=${encodeURIComponent(term.slice(0, 120))}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return (await response.json()).results || [];
+      };
+      const addPodcastLink = (card, url) => {
+        const actions = card.querySelector('.actions');
+        if (!url || !actions || actions.querySelector('.podcast-link')) return;
+        const link = document.createElement('a');
+        link.className = 'podcast-link';
+        link.href = url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = '🎧 用播客听';
+        link.title = 'Apple Podcasts：锁屏也能继续播，App 里有睡眠定时';
+        link.addEventListener('click', () => pauseAllExcept(null));
+        (actions.querySelector('a.primary') || actions.firstChild)?.after(link);
+      };
+      const findPodcast = async card => {
+        const videoId = card.querySelector('.player iframe[data-video-id]')?.dataset.videoId;
+        if (!videoId || podcastLookups.has(videoId)) return;
+        podcastLookups.add(videoId);
+        const published = card.dataset.published || '';
+        const cached = podcastCache[videoId];
+        const recent = !published || Date.parse(published) > Date.now() - 14 * 86400000;
+        if (cached && (cached.url || !recent || cached.checked > Date.now() - 3 * 86400000)) {
+          addPodcastLink(card, cached.url);
+          return;
+        }
+        const title = card.querySelector('h1')?.textContent.trim() || '';
+        const show = (card.querySelector('.source')?.textContent || '').split('·')[0].trim();
+        if (!title) return;
+        try {
+          let episode = matchEpisode(await searchEpisodes(title), title, show, published);
+          if (!episode && show && published) {
+            episode = matchEpisode(await searchEpisodes(`${show} ${[...titleWords(title)].slice(0, 4).join(' ')}`), title, show, published);
+          }
+          podcastCache[videoId] = { url: episode?.trackViewUrl || '', checked: Date.now() };
+          try { localStorage.setItem(PODCAST_CACHE_KEY, JSON.stringify(podcastCache)); } catch {}
+          addPodcastLink(card, episode?.trackViewUrl);
+        } catch {
+          podcastLookups.delete(videoId); // Network trouble or rate limit: try again next time the card shows.
+        }
+      };
+
+      // ⏾ 定时停止: pauses whatever is playing after the chosen minutes (while the page stays open).
+      const sleepSheet = document.getElementById('sleep-sheet');
+      const sleepCount = document.getElementById('sleep-count');
+      const sleepCancel = document.getElementById('sleep-cancel');
+      const sleepStatus = document.getElementById('sleep-status');
+      const sleepHelp = sleepStatus.textContent;
+      let sleepAt = 0;
+      let sleepTick = 0;
+      const sleepLeft = () => Math.max(0, Math.ceil((sleepAt - Date.now()) / 60000));
+      const renderSleep = () => {
+        sleepCount.textContent = sleepAt ? `${sleepLeft()} 分` : '';
+        sleepCancel.hidden = !sleepAt;
+        sleepStatus.textContent = sleepAt ? `还剩 ${sleepLeft()} 分钟，到 ${new Date(sleepAt).toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' })} 停止。${sleepHelp}` : sleepHelp;
+        sleepSheet.querySelectorAll('[data-minutes]').forEach(button => button.classList.toggle('is-set', !!sleepAt && button.dataset.minutes === sleepSheet.dataset.chosen));
+      };
+      const setSleep = minutes => {
+        clearInterval(sleepTick);
+        sleepAt = minutes ? Date.now() + minutes * 60000 : 0;
+        sleepSheet.dataset.chosen = String(minutes);
+        // Checked every few seconds rather than one long timeout, so a phone that slept the tab still stops on waking.
+        if (sleepAt) sleepTick = setInterval(() => {
+          if (Date.now() < sleepAt) { renderSleep(); return; }
+          setSleep(0);
+          pauseAllExcept(null);
+          showToast(['⏾ 定时到了，已暂停播放。'], 30000);
+        }, 5000);
+        renderSleep();
+      };
+      document.getElementById('sleep-button').addEventListener('click', () => { renderSleep(); sleepSheet.hidden = false; });
+      document.getElementById('sleep-close').addEventListener('click', () => { sleepSheet.hidden = true; });
+      sleepSheet.addEventListener('click', event => {
+        if (event.target === sleepSheet) { sleepSheet.hidden = true; return; }
+        const choice = event.target.closest('[data-minutes]');
+        if (!choice) return;
+        const minutes = Number(choice.dataset.minutes);
+        setSleep(minutes);
+        sleepSheet.hidden = true;
+        showToast([minutes ? `⏾ ${minutes} 分钟后停止播放` : '已取消定时'], 3000);
       });
       document.getElementById('watchlist-close').addEventListener('click', () => { watchlistSheet.hidden = true; });
       watchlistSheet.addEventListener('click', event => { if (event.target === watchlistSheet) watchlistSheet.hidden = true; });

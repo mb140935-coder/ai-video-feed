@@ -1,42 +1,6 @@
 {
- "updated": "2026-11-01T18:51:36.680Z",
+ "updated": "2026-11-01T18:59:27.890Z",
  "items": [
-  {
-   "key": "youtube:n_ymtvDbsg8",
-   "url": "https://www.youtube.com/watch?v=n_ymtvDbsg8",
-   "title": "Sam Altman Reaches a Whole New Level of Stupid",
-   "channel": "Goju Tech Talk",
-   "channelId": "UCDN47rjzNMRTkGY3182ApaQ",
-   "published": "2026-11-01",
-   "summary": "I hopped on for a Halloween rant about Sam Altman's suggestion that regular people shouldn't have much DRAM in their ...",
-   "about": "Sam Altman：OpenAI CEO。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Sam Altman"
-   ],
-   "minutes": 49,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:ZiFyFfDZ74A",
-   "url": "https://www.youtube.com/watch?v=ZiFyFfDZ74A",
-   "title": "Jeff Dean     11--1-26",
-   "channel": "Pastor Habib Ditta",
-   "channelId": "UCDLRBp9aY_JCrmNIxKAPv7w",
-   "published": "2026-11-01",
-   "summary": "Jeff Dean 11--1-26 🎙️ New to streaming or looking to level up? Check out StreamYard and get $10 discount!",
-   "about": "Jeff Dean：Google 首席科学家。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Jeff Dean"
-   ],
-   "minutes": 47,
-   "found": "2026-11-01",
-   "via": "person"
-  },
   {
    "key": "youtube:6ck6Sp_yQro",
    "url": "https://www.youtube.com/watch?v=6ck6Sp_yQro",
@@ -86,24 +50,6 @@
    "found": "2026-11-01",
    "minutes": 28,
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ"
-  },
-  {
-   "key": "youtube:1tRFhr9ppd0",
-   "url": "https://www.youtube.com/watch?v=1tRFhr9ppd0",
-   "title": "Elon Musk’s 46-Lb, 480-HP Tesla Motor — Zero Rare Earths, 108 Fewer Parts & No Repair Bills?",
-   "channel": "Tesla Insider News",
-   "channelId": "UCfqW_UyPUE-ojtOfGKKbY8g",
-   "published": "2026-10-31",
-   "summary": "With the American Automobile Association reporting average vehicle ownership costs of $1015 every month, a single $4000 ...",
-   "about": "Elon Musk：xAI / Tesla。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Elon Musk"
-   ],
-   "minutes": 24,
-   "found": "2026-11-01",
-   "via": "person"
   },
   {
    "key": "youtube:g5Witsq_KLY",
@@ -174,60 +120,6 @@
    "channelId": "UCipPA-ZHX6UYGH_Iyti1-Jw"
   },
   {
-   "key": "youtube:ezUpkoBOh2o",
-   "url": "https://www.youtube.com/watch?v=ezUpkoBOh2o",
-   "title": "Sam Altman Is A Complete Scumbag",
-   "channel": "Optimus",
-   "channelId": "UCuVgoagmU3hmfMwtxG9s4Sw",
-   "published": "2026-10-30",
-   "summary": "Sam Altman thinks you should own no hardware while he controls everything, and that's just the tip of the iceberg.",
-   "about": "Sam Altman：OpenAI CEO。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Sam Altman"
-   ],
-   "minutes": 21,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:PBifqc-WWIc",
-   "url": "https://www.youtube.com/watch?v=PBifqc-WWIc",
-   "title": "ImageNet: How Fei-Fei Li Made the Visual World Familiar to Machines",
-   "channel": "Fifteen Hours",
-   "channelId": "UCLxEe9c6xBLURAANmGWf8jg",
-   "published": "2026-10-30",
-   "summary": "In this episode, I tell the story of ImageNet. ImageNet, created by Fei-Fei Li, was a part of the trifecta of innovations that unleashed ...",
-   "about": "Fei-Fei Li：李飞飞 · 斯坦福、World Labs。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Fei-Fei Li"
-   ],
-   "minutes": 60,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:JzpsdHfA4cE",
-   "url": "https://www.youtube.com/watch?v=JzpsdHfA4cE",
-   "title": "谷歌 Genie 4 发布：世界模型之争，巨头们到底在争什么？｜字节 ｜ 阿里 ｜ 李飞飞 Marble ｜黄仁勋 Mosmo",
-   "channel": "灵姐说AI  |  Ling Talk AI",
-   "channelId": "UCMenHpvUet8myDntrTh7Ckw",
-   "published": "2026-10-30",
-   "summary": "这期从Genie 4 的声音、人物动作和Gemini 参与推理讲起，再把Google、字节、阿里、李飞飞和黄仁勋的布局放在一起看：谁在搭 ...",
-   "about": "Fei-Fei Li：李飞飞 · 斯坦福、World Labs。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Fei-Fei Li"
-   ],
-   "minutes": 27,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
    "key": "youtube:EZcWEsMuLb4",
    "url": "https://www.youtube.com/watch?v=EZcWEsMuLb4",
    "title": "Taking on ServiceNow: Coding Agents for the Rest of Us with Serval Co-Founder and CEO Jake Stauch",
@@ -278,24 +170,6 @@
    "via": "person"
   },
   {
-   "key": "youtube:PS8eviUi4xc",
-   "url": "https://www.youtube.com/watch?v=PS8eviUi4xc",
-   "title": "AMD Was a $1.61 Stock. Then Lisa Su Took Over.",
-   "channel": "Breakthrough Ledger",
-   "channelId": "UC1bJdAEFlV4X67TLU7QkMBw",
-   "published": "2026-10-29",
-   "summary": "At one point, Intel's payments to Dell were worth 76% of Dell's operating income in a single quarter. Regulators in Japan, Korea, ...",
-   "about": "Lisa Su：苏姿丰 · AMD CEO。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Lisa Su"
-   ],
-   "minutes": 21,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
    "key": "youtube:aeIY7Q0iebw",
    "url": "https://www.youtube.com/watch?v=aeIY7Q0iebw",
    "title": "Mustafa Suleyman: The End of Human Jobs, the Rise of AI, and the Future of Humanity",
@@ -314,20 +188,20 @@
    "via": "person"
   },
   {
-   "key": "youtube:74sdl7qLpLc",
-   "url": "https://www.youtube.com/watch?v=74sdl7qLpLc",
-   "title": "Elon Musk",
-   "channel": "How to Take Over the World",
-   "channelId": "UCTRleCmHmVDQIUeoB52fWyg",
+   "key": "youtube:ncoMBc-oj_8",
+   "url": "https://www.youtube.com/watch?v=ncoMBc-oj_8",
+   "title": "NVIDIA CEO Jensen Huang: What Quality Will Help You Succeed in the Age of AI?",
+   "channel": "Astana Hub",
+   "channelId": "UCQXhGS1_8vpp67VDtD-fROg",
    "published": "2026-10-29",
-   "summary": "",
-   "about": "Elon Musk：xAI / Tesla。",
+   "summary": "Fireside Chat with Jensen Huang, Founder and CEO of NVIDIA, a global leader in accelerated computing and artificial ...",
+   "about": "Jensen Huang：黄仁勋 · NVIDIA CEO。",
    "tab": "appearances",
    "tags": [
     "人物新视频",
-    "Elon Musk"
+    "Jensen Huang"
    ],
-   "minutes": 157,
+   "minutes": 33,
    "found": "2026-11-01",
    "via": "person"
   },
@@ -346,168 +220,6 @@
    "found": "2026-11-01",
    "minutes": 77,
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ"
-  },
-  {
-   "key": "youtube:Y7eJOpEogOs",
-   "url": "https://www.youtube.com/watch?v=Y7eJOpEogOs",
-   "title": "3 Demis Hassabis – AI and Scientific Discovery",
-   "channel": "Casina Pio IV",
-   "channelId": "UCTxHo8OMjBh3qzVy0D63PUQ",
-   "published": "2026-10-28",
-   "summary": "The Future of Science in a Changing World 2026 Plenary Session of the Pontifical Academy of Sciences Casina Pio IV, Vatican ...",
-   "about": "Demis Hassabis：Google DeepMind CEO。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Demis Hassabis"
-   ],
-   "minutes": 21,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:Z9ser3KERos",
-   "url": "https://www.youtube.com/watch?v=Z9ser3KERos",
-   "title": "Alexandr Wang：「成為實作者的最好時機」，為什麼是現在？｜YC Startup School 2026 Scale AI 創辦人｜真實演講、單字解釋、雙語字幕",
-   "channel": "一句英文 One Sentence English",
-   "channelId": "UCUCVCGBXda-Y38W67YvQmTw",
-   "published": "2026-10-28",
-   "summary": "成為身為實作者的最好時機，」 【一句英文｜真實演講、單字解釋、雙語字幕】在2026 年YC Startup School 上，Scale AI 創辦人、 ...",
-   "about": "Alexandr Wang：Scale AI 创始人，现负责 Meta 超级智能实验室。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Alexandr Wang"
-   ],
-   "minutes": 33,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:Ch5HvZrSInM",
-   "url": "https://www.youtube.com/watch?v=Ch5HvZrSInM",
-   "title": "AIの知能が安くなったら、何が足りなくなるのか｜Alexandr Wang（Meta）｜講演・対談シリーズ",
-   "channel": "Jim AIノート",
-   "channelId": "UCVs5q-E3J_Axg44XcDLi3PA",
-   "published": "2026-10-28",
-   "summary": "こんにちは、Jimです。Jim AIノートへようこそ。今回から新しいシリーズ、講演・対談シリーズが始まります。第1回の主役 ...",
-   "about": "Alexandr Wang：Scale AI 创始人，现负责 Meta 超级智能实验室。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Alexandr Wang"
-   ],
-   "minutes": 26,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:cqLnBW1yjkg",
-   "url": "https://www.youtube.com/watch?v=cqLnBW1yjkg",
-   "title": "Why Everyone Who Worked for Jensen Huang Hated Him",
-   "channel": "Tech Meets East",
-   "channelId": "UCkTWGhKZxgmU9j5tuTsEkxw",
-   "published": "2026-10-28",
-   "summary": "Why Everyone Who Worked for Jensen Huang Hated Him In May 2026, the man who runs the most valuable company on Earth ...",
-   "about": "Jensen Huang：黄仁勋 · NVIDIA CEO。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Jensen Huang"
-   ],
-   "minutes": 27,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:J2N6CsHz5iU",
-   "url": "https://www.youtube.com/watch?v=J2N6CsHz5iU",
-   "title": "Jensen Huang : The Man Who Built the AI World",
-   "channel": "Rise Explained",
-   "channelId": "UCetWjfA5O1aNCN_rEtr6wvA",
-   "published": "2026-10-28",
-   "summary": "At nine years old, Jensen Huang arrived in America with almost no English. Decades later, he would build NVIDIA into one of the ...",
-   "about": "Jensen Huang：黄仁勋 · NVIDIA CEO。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Jensen Huang"
-   ],
-   "minutes": 26,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:OvJrwn6bqQo",
-   "url": "https://www.youtube.com/watch?v=OvJrwn6bqQo",
-   "title": "AI 2041: Ten Visions for Our Future by Kai-Fu Lee and Chen Qiufan—a",
-   "channel": "App to AI",
-   "channelId": "UCLBfe0ln80t3G5HDiFoQj0w",
-   "published": "2026-10-28",
-   "summary": "Welcome to **App to AI** – your go-to channel for all things tech! In this video, we explore: AI 2041: Ten Visions for Our Future ...",
-   "about": "Kai-Fu Lee：李开复 · 创新工场、零一万物。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Kai-Fu Lee"
-   ],
-   "minutes": 34,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:3or1wMLN3aU",
-   "url": "https://www.youtube.com/watch?v=3or1wMLN3aU",
-   "title": "Andrej Karpathy 的 1 小時史丹佛演講美妙地解釋了 AI 工程。",
-   "channel": "Andy Liu",
-   "channelId": "UCwG1U9IGuhTSk4WWPYBBTBw",
-   "published": "2026-10-28",
-   "summary": "Andrej Karpathy 的1 小時史丹佛演講美妙地解釋了AI 工程。 10% → LLM 30% → Prompt 50% → Agent 70% → Loop 100% ...",
-   "about": "Andrej Karpathy：OpenAI 联合创始人，前 Tesla AI 负责人。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Andrej Karpathy"
-   ],
-   "minutes": 69,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:tW2iOS5g388",
-   "url": "https://www.youtube.com/watch?v=tW2iOS5g388",
-   "title": "Andrej Karpathy：你是在跟一個壓縮檔說話｜他每天怎麼用 ChatGPT、Claude、思考模型、搜尋與 vibe coding｜重點整理｜中英字幕",
-   "channel": "Markluce AI",
-   "channelId": "UCzYxev5q9HTv3LvBUMEv87g",
-   "published": "2026-10-28",
-   "summary": "Andrej Karpathy 用自己的真實對話，示範他平常怎麼用LLM：ChatGPT、Claude、Gemini、Grok、Perplexity、Cursor……從「你 ...",
-   "about": "Andrej Karpathy：OpenAI 联合创始人，前 Tesla AI 负责人。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Andrej Karpathy"
-   ],
-   "minutes": 31,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:6CVJUb-mZ_A",
-   "url": "https://www.youtube.com/watch?v=6CVJUb-mZ_A",
-   "title": "OpenAI 研究員 Noam Brown：1 萬個 AI 代理解出千禧年大獎難題｜遞迴式自我改進、Hugging Face 事件、思維鏈監控｜Dwarkesh Podcast 中英字卡",
-   "channel": "矽聽AI",
-   "channelId": "UCJKuCz4fL_60XocbT-qAqXA",
-   "published": "2026-10-28",
-   "summary": "Noam Brown：「這次事件最大的教訓之一，是大家低估了AI。」 OpenAI 研究員Noam Brown 是o1 與推理模型的奠基者之一，現在 ...",
-   "about": "Noam Brown：OpenAI 推理模型研究员。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Noam Brown"
-   ],
-   "minutes": 80,
-   "found": "2026-11-01",
-   "via": "person"
   },
   {
    "key": "youtube:MRQTlwcW-aQ",
@@ -578,168 +290,6 @@
    "via": "person"
   },
   {
-   "key": "youtube:0byrDicL4E4",
-   "url": "https://www.youtube.com/watch?v=0byrDicL4E4",
-   "title": "Anthropic 總裁 Daniela Amodei：智能交給 AI，智慧留給人｜AI 焦慮、不放廣告、AI 與健康｜Arianna Huffington 專訪｜中英字幕",
-   "channel": "Markluce AI",
-   "channelId": "UCzYxev5q9HTv3LvBUMEv87g",
-   "published": "2026-10-27",
-   "summary": "Thrive Global 執行長Arianna Huffington 在Think Health 健康大會上，專訪Anthropic 總裁Daniela Amodei：我們的AI 對話裡，少了 ...",
-   "about": "Daniela Amodei：Anthropic 总裁。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Daniela Amodei"
-   ],
-   "minutes": 31,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:r9DGWxBFdPg",
-   "url": "https://www.youtube.com/watch?v=r9DGWxBFdPg",
-   "title": "Ed Catmull, Demis Hassabis and Pixar - THE ROOM THEY WERE GIVEN Book 5 - Part 01",
-   "channel": "Ministry of Spark",
-   "channelId": "UCwu2QSKtxUfj7K6vqSZPn5Q",
-   "published": "2026-10-27",
-   "summary": "Emeryville, California, and King's Cross, London, 1974 to 2024. Ed Catmull spends twenty years making a computer draw a ...",
-   "about": "Demis Hassabis：Google DeepMind CEO。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Demis Hassabis"
-   ],
-   "minutes": 203,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:AZqI3Z2Mp7E",
-   "url": "https://www.youtube.com/watch?v=AZqI3Z2Mp7E",
-   "title": "Ed Catmull, Demis Hassabis and Pixar - THE ROOM THEY WERE GIVEN Book 5 - Part 04",
-   "channel": "Ministry of Spark",
-   "channelId": "UCwu2QSKtxUfj7K6vqSZPn5Q",
-   "published": "2026-10-27",
-   "summary": "Emeryville, California, and King's Cross, London, 1974 to 2024. Ed Catmull spends twenty years making a computer draw a ...",
-   "about": "Demis Hassabis：Google DeepMind CEO。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Demis Hassabis"
-   ],
-   "minutes": 223,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:h3KzE0mhlBs",
-   "url": "https://www.youtube.com/watch?v=h3KzE0mhlBs",
-   "title": "Zuckerberg UNCUT Deposition: Mark Zuckerberg Faces Tough Questions Over Political Accounts",
-   "channel": "GBN LIVE",
-   "channelId": "UCvnWgJ8jGbICs26_P1v-eww",
-   "published": "2026-10-27",
-   "summary": "Meta CEO Mark Zuckerberg faces tough questions under oath over Facebook's secret political whitelists, special treatment for ...",
-   "about": "Mark Zuckerberg：Meta CEO。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Mark Zuckerberg"
-   ],
-   "minutes": 98,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:txEaESsY9ho",
-   "url": "https://www.youtube.com/watch?v=txEaESsY9ho",
-   "title": "Yann LeCun：AMI Labs联合创始人、NYU教授开讲AI大师课第5讲",
-   "channel": "Joy AI",
-   "channelId": "UCCkEKMwrsjQLwHGk4Sfj5lg",
-   "published": "2026-10-27",
-   "summary": "能生成逼真视频，不等于理解世界；LeCun押注的，是不必还原画面的AI。 寻找技术杠杆，洞察卓越机会，欢迎来到卓越AI（Joy ...",
-   "about": "Yann LeCun：AI 先驱，前 Meta 首席 AI 科学家。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Yann LeCun"
-   ],
-   "minutes": 47,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:zkDj99IMax8",
-   "url": "https://www.youtube.com/watch?v=zkDj99IMax8",
-   "title": "Meta 的 AI agent「Muse」能信任嗎？Alexandr Wang 談隱私、分寸與 AI 失控｜Cleo Abram 專訪重點｜中英字幕",
-   "channel": "Markluce AI",
-   "channelId": "UCzYxev5q9HTv3LvBUMEv87g",
-   "published": "2026-10-27",
-   "summary": "2026 年10 月，Meta 推出AI agent「Muse」。科普節目主持人Cleo Abram 專訪打造它的Alexandr Wang：Muse 能做什麼？",
-   "about": "Alexandr Wang：Scale AI 创始人，现负责 Meta 超级智能实验室。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Alexandr Wang"
-   ],
-   "minutes": 34,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:mddcTitoT3k",
-   "url": "https://www.youtube.com/watch?v=mddcTitoT3k",
-   "title": "DeepSeek Goes Open Source Again?Liang Wenfeng's Bigger AI Ambitions#DeepSeek#LiangWenfeng#AIIndustry",
-   "channel": "Ex Marquez",
-   "channelId": "UC0rc0Xn-LGZ473SRFfp8lsg",
-   "published": "2026-10-27",
-   "summary": "",
-   "about": "Liang Wenfeng：梁文锋 · DeepSeek 创始人。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Liang Wenfeng"
-   ],
-   "minutes": 32,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:8gHm-ksMk0I",
-   "url": "https://www.youtube.com/watch?v=8gHm-ksMk0I",
-   "title": "AI Superpowers by Kai-Fu Lee",
-   "channel": "App to AI",
-   "channelId": "UCLBfe0ln80t3G5HDiFoQj0w",
-   "published": "2026-10-27",
-   "summary": "Welcome to **App to AI** – your go-to channel for all things tech! In this video, we explore: AI Superpowers by Kai-Fu Lee ...",
-   "about": "Kai-Fu Lee：李开复 · 创新工场、零一万物。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Kai-Fu Lee"
-   ],
-   "minutes": 31,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:hrnxzn-3U_A",
-   "url": "https://www.youtube.com/watch?v=hrnxzn-3U_A",
-   "title": "Andrej Karpathy: You're Using AI All Wrong",
-   "channel": "philia",
-   "channelId": "UCP-vsZ_1UUtQa--qgRzxnxg",
-   "published": "2026-10-27",
-   "summary": "Are you getting the most out of Artificial Intelligence? In this video, we break down insights from Andrej Karpathy on why most ...",
-   "about": "Andrej Karpathy：OpenAI 联合创始人，前 Tesla AI 负责人。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Andrej Karpathy"
-   ],
-   "minutes": 125,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
    "key": "youtube:ZAzWPE9CItg",
    "url": "https://www.youtube.com/watch?v=ZAzWPE9CItg",
    "title": "AI Crisis in Math: Navier-Stokes, Riemann Hypothesis & Complexity Theory | Lex Fridman Podcast #503",
@@ -772,60 +322,6 @@
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ"
   },
   {
-   "key": "youtube:K1dVNSrzND4",
-   "url": "https://www.youtube.com/watch?v=K1dVNSrzND4",
-   "title": "Build and Brake: Sam Altman, Dario Amodei, and the Fight Over AI's Future",
-   "channel": "The AI Desk",
-   "channelId": "UCXmrntpXZKhfRCg9v7cPyZg",
-   "published": "2026-10-26",
-   "summary": "AI is accelerating faster than ever. But who's making sure the brakes still work? In Episode 53 of The AI Desk, Rowan and Naya ...",
-   "about": "Dario Amodei：Anthropic CEO。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Dario Amodei"
-   ],
-   "minutes": 26,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:tBIHIqHLCHU",
-   "url": "https://www.youtube.com/watch?v=tBIHIqHLCHU",
-   "title": "Mark Zuckerberg: The Price of Connecting the World",
-   "channel": "The History Ledger Stories",
-   "channelId": "UCRXuw25YtqqlqXB4jH4Wcmg",
-   "published": "2026-10-26",
-   "summary": "On 10 April 2018, Mark Zuckerberg sat before two Senate committees. How did a Harvard directory become one of the most ...",
-   "about": "Mark Zuckerberg：Meta CEO。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Mark Zuckerberg"
-   ],
-   "minutes": 21,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:FBAOslUPKCY",
-   "url": "https://www.youtube.com/watch?v=FBAOslUPKCY",
-   "title": "3 Lessons That Will Change Your Life | Mark Zuckerberg on Failure",
-   "channel": "Voices of Success",
-   "channelId": "UC2AGk_EngJhQV2ly-PPKRJw",
-   "published": "2026-10-26",
-   "summary": "Mark Zuckerberg Harvard Commencement 2017 speech on purpose. Watch the full address where Facebook's CEO tells ...",
-   "about": "Mark Zuckerberg：Meta CEO。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Mark Zuckerberg"
-   ],
-   "minutes": 30,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
    "key": "youtube:24XUcWhqY_4",
    "url": "https://www.youtube.com/watch?v=24XUcWhqY_4",
    "title": "Satya Nadella on Open vs Closed Models: Who Wins | Why Companies Need to Own Their Own Intelligence",
@@ -840,42 +336,6 @@
     "Satya Nadella"
    ],
    "minutes": 24,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:1hStAGNDmpw",
-   "url": "https://www.youtube.com/watch?v=1hStAGNDmpw",
-   "title": "The Coming Wave by Mustafa Suleyman and Michael Bhaskar | Can We Control What We Create?",
-   "channel": "The Lazy Intellectual",
-   "channelId": "UChv5vx1xQYjSJgWkw3Qewzw",
-   "published": "2026-10-26",
-   "summary": "What if the technologies that promise extraordinary progress also become increasingly difficult to control? In this episode of The ...",
-   "about": "Mustafa Suleyman：Microsoft AI CEO，DeepMind 联合创始人。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Mustafa Suleyman"
-   ],
-   "minutes": 21,
-   "found": "2026-11-01",
-   "via": "person"
-  },
-  {
-   "key": "youtube:V0PeopNAnRI",
-   "url": "https://www.youtube.com/watch?v=V0PeopNAnRI",
-   "title": "Elon Musk Disaster GROWS As Company Scheme Called Out",
-   "channel": "The Damage Report",
-   "channelId": "UCl9roQQwv4o4OuBj3FhQdDQ",
-   "published": "2026-10-26",
-   "summary": "Elon Musk is facing major trouble as his scheming through his companies and organizations get exposed and called out for ...",
-   "about": "Elon Musk：xAI / Tesla。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Elon Musk"
-   ],
-   "minutes": 45,
    "found": "2026-11-01",
    "via": "person"
   },
@@ -1658,23 +1118,6 @@
    "meaning": "全球电子代工巨头加码与通用 AI 龙头的战略协同，直接传递出对全球 AI 基础设施与端侧应用长期需求的坚定信心。"
   },
   {
-   "title": "The big questions remaining after Anthropic’s blockbuster IPO prospectus",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9VYXRVZG52ZU8wZ183VXZkS192WXFoWm5uRm0wNE1PZFZBblEyTklTWnZodHhNVUIyZlNaZGI1Y2xRaGJqZ3FTSVplcjNaM2tZVzF6UlNpRTd4S0dlQzVrak5jOHFQN2tfdkpMalkzWXlvVjl5T0hpb9IBfkFVX3lxTFBsbUVyNW9GLVlJZ3dpSHl2MXVZa0pxdDRiN2FnakZCa3lwVDJFOXdiSW9iYTh3UnhOZ0xhYklQSnJXVmoxaGpwckIyNzkzWm9hTVhVOFBrZTFHbnV5LWVBcFdiRGFqMXUyRXZXNjM5Z1ZNVXdiR1E3eFlzLU04Zw?oc=5",
-   "source": "CNBC",
-   "domain": "cnbc.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "CNBC"
-   ],
-   "themes": [],
-   "headlines": [
-    "The big questions remaining after Anthropic’s blockbuster IPO prospectus"
-   ],
-   "entities": [
-    "Anthropic"
-   ]
-  },
-  {
    "title": "Legaltech Rundown: Legora Introduces New Research Feature, Filevine Launches AI Voice Agents, and More",
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeW5CNmFVNHFuNG12MUpNUjdEQkt0MlZUc1FNTGpYNDZ1eS00cWw1UkpYSGtfVVBNQy1fY0t3UEphbm9OTXZ4aE92WE5BS2hDYTNPRzNUbTZWVmVaUk14N1JvSUt3cmJwLVdaMjFzbHRRY2tvU2ZhRncxUzRSNWpBVEFtTUgyY0dwb3lDRFlyS25RTnppZkw1MmxYeG9sSVlsMjRCaDdnSlRrUEZKelJ5Y2phemxzNWdoMm1laTVQTlpYN1dRUnF1dzFHLWFTaDlFNDVmeG5FbWtvOGpjWFQw?oc=5",
    "source": "Law.com",
@@ -1689,7 +1132,9 @@
    "headlines": [
     "Legaltech Rundown: Legora Introduces New Research Feature, Filevine Launches AI Voice Agents, and More"
    ],
-   "entities": []
+   "entities": [],
+   "summary": "在法律科技领域，Legora推出了新的研究检索功能，Filevine则上线了AI语音智能体（AI Voice Agents）。",
+   "meaning": "这体现了法律AI应用正从基础的文本辅助，向更垂直深入的专业检索与自动化语音交互服务演进。"
   },
   {
    "title": "Agent identity startup Mintive lands Cowboy Ventures, Coatue, angels Jeff Dean, Andrej Karpathy",
@@ -1749,7 +1194,9 @@
    "headlines": [
     "Canada, Nvidia Back Cohere at Over $20 Billion Valuation",
     "Nvidia and Canada are backing Cohere's record funding round of up to CAD $7 billion"
-   ]
+   ],
+   "summary": "加拿大与Nvidia（英伟达）支持AI创企Cohere的新一轮融资，融资金额最高达70亿加元，使其估值突破200亿美元。",
+   "meaning": "作为通用AI基础大模型领域的重要竞争者，Cohere获得主权资本与芯片巨头重注，凸显全球大模型赛道高估值竞争依旧激烈。"
   },
   {
    "title": "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative",
@@ -1766,7 +1213,9 @@
    ],
    "headlines": [
     "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative"
-   ]
+   ],
+   "summary": "俄罗斯总统普京称赞Elon Musk（埃隆·马斯克）是“天才”，同时俄罗斯正在研发Starlink（星链）的替代产品。",
+   "meaning": "这反映出大国围绕关键前沿科技与太空卫星通信网络的博弈与地缘战略竞争。"
   },
   {
    "title": "OpenAI-backed Thrive Holdings acquires ADT",
@@ -1783,7 +1232,9 @@
    ],
    "headlines": [
     "OpenAI-backed Thrive Holdings acquires ADT"
-   ]
+   ],
+   "summary": "获得OpenAI支持的Thrive Holdings收购了安防服务公司ADT。",
+   "meaning": "AI领军机构资本正加速布局安防与居住空间领域，推动AI生态与房产/家庭实体安全场景深度结合。"
   },
   {
    "title": "SpaceX’s Largest Revenue Source Is a Finite Deal With Anthropic",
@@ -1800,7 +1251,9 @@
    ],
    "headlines": [
     "SpaceX’s Largest Revenue Source Is a Finite Deal With Anthropic"
-   ]
+   ],
+   "summary": "报道显示，SpaceX当前最大的收入来源是与大模型公司Anthropic达成的一项有期限协议。",
+   "meaning": "这表明AI头部企业的庞大开销已成为支撑前沿航天与通信巨头营收的关键力量，展示出AI产业的资本外溢效应。"
   },
   {
    "title": "Opinion | Anthropic’s IPO Will Be a National-Security Win for Taiwan",
@@ -1817,7 +1270,9 @@
    ],
    "headlines": [
     "Opinion | Anthropic’s IPO Will Be a National-Security Win for Taiwan"
-   ]
+   ],
+   "summary": "有观点认为，AI公司Anthropic若推进IPO，将成为中国台湾国家安全层面的一大胜利。",
+   "meaning": "这一讨论将头部通用AI企业的资本运作与半导体供应链、地缘安全紧密挂钩，突显了顶尖AI公司日益增强的战略地缘属性。"
   },
   {
    "title": "Two fears will decide the fate of Anthropic’s giant IPO",
@@ -1834,7 +1289,9 @@
    ],
    "headlines": [
     "Two fears will decide the fate of Anthropic’s giant IPO"
-   ]
+   ],
+   "summary": "媒体指出，两种核心担忧将决定AI独角兽Anthropic巨额IPO的最终命运。",
+   "meaning": "资本市场对通用大模型企业高估值泡沫及商业化变现路径仍存疑虑，其资本化进程将成为整个AI行业的风向标。"
   },
   {
    "title": "Anthropic Launched A Consulting Arm. 5 Ways The Industry Has To Change",
@@ -1851,7 +1308,9 @@
    ],
    "headlines": [
     "Anthropic Launched A Consulting Arm. 5 Ways The Industry Has To Change"
-   ]
+   ],
+   "summary": "大模型企业Anthropic成立了咨询业务部门，促使业界思考该行业面临的转变。",
+   "meaning": "大模型原厂直接提供落地咨询服务，标志着通用AI厂商正从单纯提供技术接口转向深度切入企业级客户交付。"
   },
   {
    "title": "Mistral AI publicly releases Large 4, targets cybersecurity users",
@@ -1868,7 +1327,9 @@
    ],
    "headlines": [
     "Mistral AI publicly releases Large 4, targets cybersecurity users"
-   ]
+   ],
+   "summary": "Mistral AI公开发布Large 4模型，将网络安全用户作为目标群体。",
+   "meaning": "欧洲通用大模型领头羊将新一代大模型精准对准网络安全垂直场景，展示出专业化防御能力的商业化方向。"
   },
   {
    "title": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
@@ -1885,7 +1346,9 @@
    ],
    "headlines": [
     "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity"
-   ]
+   ],
+   "summary": "Mistral开源发布了其面向网络安全领域的万亿参数级别AI模型权重。",
+   "meaning": "万亿参数级别模型权重的公开释放，代表通用AI开源生态在极限规模与特定安全关键领域的重大技术突破。"
   },
   {
    "title": "Orange unit signs deal to Mistral's latest AI cybersecurity model",
@@ -1902,7 +1365,9 @@
    ],
    "headlines": [
     "Orange unit signs deal to Mistral's latest AI cybersecurity model"
-   ]
+   ],
+   "summary": "Orange 旗下部门达成协议，将采用 Mistral 最新的 AI 网络安全模型。",
+   "meaning": "这表明 Mistral 正将其 AI 能力延伸至垂直的网络安全与电信应用场景。"
   },
   {
    "title": "Ottawa takes stake in Cohere as AI company opens $4.5 billion funding round",
@@ -2054,7 +1519,9 @@
    "headlines": [
     "What Law Firms Can Learn From Putting Summer Associates at the Center of AI Innovation"
    ],
-   "entities": []
+   "entities": [],
+   "summary": "业界探讨律所将暑期实习生置于 AI 创新核心位置的做法及其带来的经验借鉴。",
+   "meaning": "属于法律 AI 落地实践，反映出年轻法律人才在律所推行和探索 AI 应用中的独特价值。"
   },
   {
    "title": "Harvey Inks Deal to Acquire AI Sales Platform Aida",
@@ -2071,7 +1538,9 @@
    "headlines": [
     "Harvey Inks Deal to Acquire AI Sales Platform Aida"
    ],
-   "entities": []
+   "entities": [],
+   "summary": "法律 AI 平台 Harvey 达成协议，将收购 AI 销售平台 Aida。",
+   "meaning": "法律 AI 赛道出现并购整合，展现出领头羊企业通过收购拓展工作流与业务边界的动向。"
   },
   {
    "title": "Everlaw Unveils New Agentic AI Feature, Review Management Offering",
@@ -2088,7 +1557,9 @@
    "headlines": [
     "Everlaw Unveils New Agentic AI Feature, Review Management Offering"
    ],
-   "entities": []
+   "entities": [],
+   "summary": "法律科技公司 Everlaw 推出全新的 Agentic AI（智能体 AI）功能及审查管理产品。",
+   "meaning": "法律 AI 正加速融入自主智能体技术，为案件审查与法律流程管理提供更深入的自动化支持。"
   },
   {
    "title": "DOJ Inquires About Nvidia’s Hugging Face Deal, Reuters Says",
@@ -2112,6 +1583,27 @@
    ],
    "summary": "路透社报道称，美国司法部（DOJ）正对Nvidia以约129亿美元收购Hugging Face的交易展开调查或质询。",
    "meaning": "算力巨头收购核心开源AI社区引发反垄断审查，可能对全球通用AI的开源生态和市场竞争产生深远影响。"
+  },
+  {
+   "title": "“AI之王”Anthropic，给马斯克、黄仁勋们打工",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9NNnpqaGZPZThFOHJ4RHlEaTd6MnFFUEs5Sm16YWY5TmJjUWVQTTUyVlAwd0Y1WG01b1hZZFFHTkRKZ1NUUU9xcnBVOEh5N1k2aGxBUWg5aUx2bFBvNHZoTQ?oc=5",
+   "source": "ThePaper.cn",
+   "domain": "thepaper.cn",
+   "published": "2026-10-28",
+   "outlets": [
+    "ThePaper.cn"
+   ],
+   "themes": [],
+   "headlines": [
+    "“AI之王”Anthropic，给马斯克、黄仁勋们打工"
+   ],
+   "entities": [
+    "Jensen Huang",
+    "Elon Musk",
+    "Anthropic"
+   ],
+   "summary": "有观点将 Anthropic 称为“AI之王”，并讨论其在算力与商业生态中与马斯克、黄仁勋等科技巨头的合作与从属关系。",
+   "meaning": "折射出顶级大模型初创企业在算力与生态层面受制于硬件和平台巨头的现实竞争格局。"
   },
   {
    "title": "The DOJ is reportedly looking into Nvidia’s Hugging Face acquisition.",
@@ -2150,7 +1642,9 @@
    ],
    "headlines": [
     "OpenAI CEO Sam Altman comments on cyber risk: What you need to know"
-   ]
+   ],
+   "summary": "OpenAI 首席执行官 Sam Altman 就 AI 网络风险发表了相关评论。",
+   "meaning": "通用 AI 领袖对网络安全的表态，凸显了 AI 风险治理正成为行业核心议题。"
   },
   {
    "title": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
@@ -2378,7 +1872,9 @@
    ],
    "entities": [
     "Anthropic"
-   ]
+   ],
+   "summary": "消息称 Anthropic 已选定摩根大通（JPMorgan）牵头其首次公开募股（IPO）的美国散户发行业务。",
+   "meaning": "通用大模型明星企业的 IPO 筹备迈出关键一步，其上市进展将成为衡量整个 AI 产业商业价值的风向标。"
   },
   {
    "title": "Anthropic Releases Claude for Legal Artifacts, a Set of New Interactive Tools for Legal Users",
@@ -2397,7 +1893,9 @@
    ],
    "entities": [
     "Anthropic"
-   ]
+   ],
+   "summary": "Anthropic 面向法律用户推出名为“Claude for Legal Artifacts”的一套全新交互工具。",
+   "meaning": "通用大模型龙头 Anthropic 针对“法律 AI”垂直领域推出定制化产品，将直接影响法律从业者的工作交互方式。"
   },
   {
    "title": "Biden’s Antitrust Enforcers Are Starting an A.I. Legal Company",
@@ -2471,7 +1969,9 @@
    "headlines": [
     "Legal Departments Want to Scale AI. First, They May Need to Rethink How They Work"
    ],
-   "entities": []
+   "entities": [],
+   "summary": "分析指出，企业法务部门若想规模化推广 AI，可能需要首先重新审视并调整原有的工作方式。",
+   "meaning": "直击法律 AI 规模化落地的痛点，表明除了引入技术工具外，重塑工作流也是应用的关键条件。"
   },
   {
    "title": "OpenAI plans to buy Google's AI chips, The Information reports",
@@ -2819,7 +2319,9 @@
    ],
    "entities": [
     "Anthropic"
-   ]
+   ],
+   "summary": "市场探讨了为何 Anthropic 的竞争对手们也在支持并期待其顺利推进 IPO。",
+   "meaning": "Anthropic 的上市定价与二级市场表现将为整个人工智能大模型行业树立估值基准与信心。"
   },
   {
    "title": "AI Enters the Courtroom as Dubai Rethinks How Lawyers Train and Judges Work",
@@ -2942,6 +2444,32 @@
    ],
    "summary": "Anthropic 正式提交招股说明书开启 IPO 倒计时，文件中用近 7 万字详述投资风险，并警告部分 AI 风险可能无法投保。",
    "meaning": "AI 相关风险难以承保将不仅困扰通用 AI 领头羊，还将成为所有拥抱 AI 的企业面临的合规与法务新挑战。"
+  },
+  {
+   "title": "Anthropic begins countdown to IPO with prospectus filing",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNN1ZwVC1NWWxLRjZWU2dLUDF4S3hCQk1rSHdQaHZDQkxBNlBGR3hGbk04TEpVeG1nUVlpWER2QlZJdmtoeFJfUnpMOGN2SWRMUDI2LWFZZUluY29lZjg2bnhHS0gxdU9nNHF6RV9XamFxdUdTZFJMTWFPWFpuMERqR0ZIbmM?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "CNBC",
+    "Axios",
+    "WSJ",
+    "Fortune",
+    "Financial Times"
+   ],
+   "themes": [],
+   "headlines": [
+    "The big questions remaining after Anthropic’s blockbuster IPO prospectus",
+    "Inside Anthropic's massive — and wild — IPO prospectus",
+    "The Biggest Takeaways From Anthropic’s IPO Prospectus",
+    "Anthropic’s IPO prospectus shows $16.3 billion in revenue, an $80.7 billion net loss, and goal of an 'age of miracles'",
+    "Anthropic begins countdown to IPO with prospectus filing",
+    "Anthropic’s IPO filing spends 69,800 words on AI’s risks to investors and says little about the risks to the rest of us"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
   },
   {
    "title": "Anthropic IPO filing warns some risks may be uninsurable. AI coverage will be issue for every company",
@@ -6946,23 +6474,6 @@
    ],
    "headlines": [
     "My Take | Dario Amodei’s American AI imperialism"
-   ]
-  },
-  {
-   "title": "GOP senator warns Anthropic of \"alarmist\" approach to AI",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2dacmRIYW4xWGNpRkNvNE9VWGJvU1o3RFV2c0taOUl5UmNOTmxkczJNV0tiLTF3QlpWd01JZ2piczhRRUc4ZVNkMDZmQVZkRVVma0wzZk9NNV9kTFAxLWpPVEJSUzdYY0tvTGEtUWR6bTBybVJkREZqNUdwVTB6Si1MbnFvV0N4SHo0LTBlS09NOVFNVzJDSzZscE1YNE10bkZfRw?oc=5",
-   "source": "Axios",
-   "domain": "axios.com",
-   "published": "2026-10-05",
-   "outlets": [
-    "Axios"
-   ],
-   "themes": [],
-   "entities": [
-    "Anthropic"
-   ],
-   "headlines": [
-    "GOP senator warns Anthropic of \"alarmist\" approach to AI"
    ]
   }
  ]

@@ -738,6 +738,16 @@
       curatedCards.forEach((card, index) => {
         card.querySelector('.tags')?.prepend(publishedBadge(card.dataset.published));
         card.querySelector('.hint').textContent = index === curatedCards.length - 1 ? '首期视频候选结束' : '上滑看下一条 ↓';
+        // The player's corner label sat where YouTube shows the ad Skip button: move its length or start time
+        // (“约 54 分钟”, “00:08 起”) into the state line under the title, unless that line already says it.
+        const note = card.querySelector('.tap-note');
+        const state = card.querySelector('.state');
+        if (note && state) {
+          const extra = note.textContent.split(' · ')
+            .filter(part => /分钟|小时|起$/.test(part) && !state.textContent.includes(part.replace(/^约 | 起$/g, '')));
+          if (extra.length) state.textContent = `${extra.join(' · ')} · ${state.textContent}`;
+          note.remove();
+        }
         document.getElementById('curated-empty').before(card);
       });
       activeCard = curatedCards[0];
@@ -1171,14 +1181,6 @@
           }
           playerArea.appendChild(preview);
         }
-        const playbackLabel = media?.provider === 'youtube' ? 'YouTube 官方播放器 · 卡内播放'
-          : media?.provider === 'ted' ? 'TED 官方播放器 · 卡内播放'
-          : media?.provider === 'vimeo' ? 'Vimeo 官方播放器 · 卡内播放'
-          : media?.provider === 'spotify' ? 'Spotify 官方播放器 · 音频'
-          : media?.provider === 'simplecast' ? 'Simplecast 官方播放器 · 音频'
-          : media?.provider === 'megaphone' ? 'Megaphone 官方播放器 · 音频'
-          : media ? '当前来源未提供可确认的卡内播放器' : '来源页面播放 / 收听';
-        makeText(playerArea, 'span', 'tap-note', playbackLabel);
         card.appendChild(playerArea);
 
         const details = document.createElement('div');

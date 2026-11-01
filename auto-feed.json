@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T15:59:02.961Z",
+ "updated": "2026-11-01T16:17:41.827Z",
  "items": [
   {
    "key": "youtube:KM3VQZKjpiY",
@@ -546,6 +546,24 @@
    "id": "UCrC3GjeSkxXgJ2hLQ2D-m4w",
    "name": "秋芝2046",
    "count": 2
+  },
+  "channel:@andrejkarpathy": {
+   "url": "https://www.youtube.com/@AndrejKarpathy",
+   "id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+   "name": "Andrej Karpathy",
+   "count": 0
+  },
+  "channel:@siliconvalleygirl": {
+   "url": "https://www.youtube.com/@SiliconValleyGirl",
+   "id": "UCiq1FIgtEK7LRAOB1JXTPig",
+   "name": "Silicon Valley Girl",
+   "count": 0
+  },
+  "channel:@xiaojunpodcast": {
+   "url": "https://www.youtube.com/@xiaojunpodcast",
+   "id": "UC3Sv1JuKpbOx3csUO8FAo5g",
+   "name": "张小珺 Podcast",
+   "count": 0
   }
  }
 }

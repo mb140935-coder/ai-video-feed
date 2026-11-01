@@ -1,6 +1,6 @@
 {
-  "name": "AI 视频刷流",
-  "short_name": "AI 刷流",
+  "name": "AI Tiktok",
+  "short_name": "AI Tiktok",
   "start_url": "prototypes/video-swipe-feed-preview.html",
   "background_color": "#090a0d",
   "theme_color": "#101115",

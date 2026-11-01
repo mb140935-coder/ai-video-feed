@@ -1,4 +1,4 @@
-// Chinese two-line summary and "这意味着" for each news story, written by Gemini from the outlets' headlines.
+// Chinese two-line summary, "这意味着" and a 1–10 importance (for 今日重点, digest.mjs) for each news story, written by Gemini from the outlets' headlines.
 // Needs GEMINI_API_KEY (Google AI Studio, free tier; a repository secret, passed in by daily-feed.yml). Stories that already have a summary are left alone, so
 // after the first run only the day's new stories are sent.
 
@@ -10,14 +10,15 @@ const INSTRUCTIONS = `你是一位中文 AI 新闻编辑，为一位读者写简
 每条新闻只给你几家媒体的标题（可能是英文或中文），没有正文。为每条写：
 - summary：最多两句中文，说清是谁、做了什么、关键数字。只能使用标题里出现的事实；标题之间有出入时用保守的说法；不要补充标题里没有的数字、日期、人名或细节。
 - meaning：一到两句中文，说明“这意味着什么”、为什么值得关注；尽量联系读者关心的方向。可以做判断，但不要编造新事实。
+- importance：1 到 10 的整数，这条对这位读者有多重要。10 = 行业大事或读者最关心方向的重要进展，错过会后悔；5 = 值得知道；1 = 可看可不看。按读者的优先级打分，大多数新闻应在 3–7 之间，不要都打高分。
 人名、公司名、产品名保留原文（可附常见中文名）。按输入顺序返回每条的 id。`;
 
 const SCHEMA = {
   type: 'ARRAY',
   items: {
     type: 'OBJECT',
-    properties: { id: { type: 'INTEGER' }, summary: { type: 'STRING' }, meaning: { type: 'STRING' } },
-    required: ['id', 'summary', 'meaning']
+    properties: { id: { type: 'INTEGER' }, summary: { type: 'STRING' }, meaning: { type: 'STRING' }, importance: { type: 'INTEGER' } },
+    required: ['id', 'summary', 'meaning', 'importance']
   }
 };
 
@@ -74,8 +75,10 @@ export const summarizeNews = async (stories, report = []) => {
   for (let start = 0; start < Math.min(pending.length, MAX_BATCHES * BATCH); start += BATCH) {
     const batch = pending.slice(start, start + BATCH);
     try {
-      for (const { id, summary, meaning } of await summarizeBatch(key, model, batch)) {
-        if (batch[id] && summary) Object.assign(batch[id], { summary: summary.trim(), meaning: (meaning || '').trim() });
+      for (const { id, summary, meaning, importance } of await summarizeBatch(key, model, batch)) {
+        if (!batch[id] || !summary) continue;
+        Object.assign(batch[id], { summary: summary.trim(), meaning: (meaning || '').trim() });
+        if (Number.isFinite(importance)) batch[id].importance = Math.min(10, Math.max(1, Math.round(importance)));
       }
       done += batch.filter(story => story.summary).length;
     } catch (error) {

@@ -119,6 +119,30 @@
     .brief .brief-why { color: var(--text-2); font-size: 12px; border-left: 2px solid var(--accent); padding-left: 8px; }
     .brief-links { display: flex; flex-wrap: wrap; gap: 8px; }
     .brief-links a { border: 1px solid var(--line-strong); border-radius: 10px; padding: 8px 11px; background: var(--raised); color: var(--text); font-size: 12px; text-decoration: none; }
+    .digest { border-bottom: 1px solid var(--line-strong); background: var(--raised); }
+    .digest[hidden], .digest-hidden { display: none; }
+    .digest-head { padding: 18px 18px 0; }
+    .digest-title { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+    .digest-title h2 { margin: 0; font-size: 20px; }
+    .digest-date { color: var(--muted); font-size: 12px; }
+    .digest-stats { margin: 8px 0 0; color: var(--text-2); font-size: 12px; line-height: 1.6; }
+    .digest-stats b { color: var(--accent-text); font-size: 14px; }
+    .digest-progress { display: flex; align-items: center; gap: 10px; margin-top: 10px; color: var(--muted); font-size: 11px; }
+    .digest-bar { flex: 1; height: 4px; border-radius: 4px; background: var(--line); overflow: hidden; }
+    .digest-bar span { display: block; height: 100%; background: var(--accent); transition: width .25s; }
+    .digest-day { padding: 14px 18px 0; color: var(--accent-text); font-size: 12px; font-weight: 700; }
+    .read-toggle { flex: none; cursor: pointer; font-family: inherit; white-space: nowrap; }
+    .read-toggle[aria-pressed="true"] { color: var(--faint); }
+    .digest-story.is-read { padding-top: 10px; padding-bottom: 10px; }
+    .digest-read-row { display: flex; align-items: center; gap: 10px; min-width: 0; }
+    .digest-read-title { min-width: 0; overflow: hidden; color: var(--faint); font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
+    .digest-done { margin: 16px 18px 0; border: 1px solid #b8344f55; border-radius: 16px; padding: 18px; background: var(--accent-soft); text-align: center; }
+    .digest-done strong { display: block; color: var(--accent-text); font-size: 17px; }
+    .digest-done p { margin: 6px 0 0; color: var(--text-2); font-size: 12px; line-height: 1.6; }
+    .digest-more { display: flex; flex-wrap: wrap; gap: 8px; padding: 16px 18px 18px; }
+    .digest-more button { min-height: 40px; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 14px; background: var(--surface); color: var(--text); font: inherit; font-size: 12px; cursor: pointer; }
+    .digest-more button[aria-expanded="true"] { border-color: var(--text); background: var(--text); color: var(--surface); }
+    .digest-weekly { border-top: 1px solid var(--line); }
     .history-sheet { position: fixed; z-index: 30; inset: 0; display: flex; align-items: flex-end; justify-content: center; background: #2e2a2566; }
     .history-sheet[hidden] { display: none; }
     .history-panel { width: min(100%, 430px); max-height: 82vh; display: flex; flex-direction: column; border: 1px solid var(--line-strong); border-radius: 20px 20px 0 0; background: var(--raised); }
@@ -306,6 +330,7 @@
         </div>
       </div>
       <div class="feed-panel" id="feed-briefs" role="tabpanel" aria-labelledby="tab-briefs" hidden>
+        <section class="digest" id="digest" aria-label="今日重点" hidden></section>
         <div class="feed-note" id="brief-note">文字简报：没有视频或音频的资讯、文字稿和资源索引。已有视频的内容不在这里重复。</div>
         <div id="brief-list"></div>
       </div>
@@ -650,6 +675,10 @@
       let lastWatchedKey = '';
       // Reassigned once the watched-history sheet is wired up; refreshCuratedCounters runs before that.
       let updateWatchHistoryCount = () => {};
+      // Reassigned once 简报 has loaded 今日重点; shared read marks can arrive before that.
+      let refreshDigest = () => {};
+      // 今日重点 read marks share the watched list (keys "news:<story id>") but are not videos: 已看历史 leaves them out.
+      const NEWS_PREFIX = 'news:';
 
       const playerUrl = (frame, start, end, autoplay = false) => {
         const params = new URLSearchParams({
@@ -926,6 +955,7 @@
         document.querySelectorAll('.watch-toggle').forEach(button => syncWatchedButton(button, watchedItems.has(button.dataset.watchKey)));
         appearanceSearch.dispatchEvent(new Event('input'));
         refreshCuratedCounters();
+        refreshDigest();
         if (activeCard?.classList.contains('is-watched')) {
           activeCard = null;
           pauseAllExcept(null);
@@ -1170,6 +1200,7 @@
         document.querySelectorAll('.watch-toggle').forEach(button => syncWatchedButton(button, watchedItems.has(button.dataset.watchKey)));
         appearanceSearch.dispatchEvent(new Event('input'));
         refreshCuratedCounters();
+        refreshDigest();
         if (activeCard?.classList.contains('is-watched')) {
           activeCard = null;
           pauseAllExcept(null);
@@ -1550,12 +1581,173 @@
         briefList.appendChild(article);
       };
 
+      // 今日重点 (tools/digest.mjs): the daily job's top stories, so 简报 has an end. Read marks go to the shared
+      // watched list as "news:<story id>"; the full list below folds away behind 查看全部 while a digest exists.
+      const digestBox = document.getElementById('digest');
+      let digestFeed = null;
+      let briefTotal = 0;
+      let showWeekly = false;
+      let showAllBriefs = false;
+      const beijingToday = () => new Date(Date.now() + 8 * 3600e3).toISOString().slice(0, 10);
+      const dayLabel = date => {
+        const days = Math.round((Date.parse(beijingToday()) - Date.parse(date)) / 864e5);
+        const [, month, day] = date.split('-').map(Number);
+        return `${days === 0 ? '今天 · ' : days === 1 ? '昨天 · ' : ''}${month}月${day}日`;
+      };
+      const isNewsRead = id => watchedItems.has(NEWS_PREFIX + id);
+      const setNewsRead = (id, read) => {
+        const key = NEWS_PREFIX + id;
+        if (watchedItems.has(key) === read) return;
+        if (read) {
+          watchedItems.add(key);
+          watchedTimes.set(key, new Date().toISOString());
+        } else watchedItems.delete(key);
+        persistWatchedItems();
+        sendSharedWatchChange(key, read);
+        refreshDigest();
+      };
+
+      // Unread: the full brief. Read: one line, so what is left stands out; tapping ✓ marks it unread again.
+      const renderDigestStory = (parent, story) => {
+        const read = isNewsRead(story.id);
+        const article = document.createElement('article');
+        article.className = `brief digest-story${read ? ' is-read' : ''}`;
+        const toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'tag read-toggle';
+        toggle.textContent = read ? '✓ 已读' : '○ 未读';
+        toggle.setAttribute('aria-pressed', String(read));
+        toggle.setAttribute('aria-label', read ? '标为未读' : '标为已读');
+        toggle.addEventListener('click', () => setNewsRead(story.id, !read));
+        if (read) {
+          const row = document.createElement('div');
+          row.className = 'digest-read-row';
+          row.appendChild(toggle);
+          makeText(row, 'span', 'digest-read-title', story.title);
+          article.appendChild(row);
+          parent.appendChild(article);
+          return;
+        }
+        article.appendChild(publishedBadge(story.published));
+        makeText(article, 'div', 'brief-meta', `${story.source}${story.outlets.length > 1 ? ` 等 ${story.outlets.length} 家媒体报道` : ''}`);
+        makeText(article, 'h2', '', story.title);
+        const tagRow = document.createElement('div');
+        tagRow.className = 'tags';
+        tagRow.appendChild(toggle);
+        [...story.themes, ...story.entities].forEach(tag => makeText(tagRow, 'span', 'tag', tag));
+        article.appendChild(tagRow);
+        if (story.summary) makeText(article, 'p', '', story.summary);
+        if (story.meaning) makeText(article, 'p', 'brief-why', `这意味着：${story.meaning}`);
+        const linkRow = document.createElement('div');
+        linkRow.className = 'brief-links';
+        const link = document.createElement('a');
+        link.href = story.url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = `打开原文 · ${story.source}`;
+        // Opening the article counts as reading it.
+        link.addEventListener('click', () => setNewsRead(story.id, true));
+        linkRow.appendChild(link);
+        article.appendChild(linkRow);
+        parent.appendChild(article);
+      };
+
+      refreshDigest = () => {
+        if (!digestFeed) return;
+        const byId = new Map(digestFeed.news.filter(story => story.id).map(story => [story.id, story]));
+        const days = digestFeed.digests
+          .map(digest => ({ ...digest, stories: digest.ids.map(id => byId.get(id)).filter(Boolean) }))
+          .filter(digest => digest.stories.length);
+        const hasDigest = days.length > 0;
+        digestBox.hidden = !hasDigest;
+        briefNote.classList.toggle('digest-hidden', hasDigest && !showAllBriefs);
+        briefList.classList.toggle('digest-hidden', hasDigest && !showAllBriefs);
+        if (!hasDigest) return;
+        // The newest day, plus up to two earlier days that still have something unread; older ones are what
+        // 本周大事 is for.
+        const [latest, ...earlier] = days;
+        const shown = [latest, ...earlier.slice(0, 2).filter(day => day.stories.some(story => !isNewsRead(story.id)))];
+        const stories = shown.flatMap(day => day.stories);
+        const readCount = stories.filter(story => isNewsRead(story.id)).length;
+        digestBox.replaceChildren();
+
+        const head = document.createElement('div');
+        head.className = 'digest-head';
+        const title = document.createElement('div');
+        title.className = 'digest-title';
+        makeText(title, 'h2', '', '今日重点');
+        makeText(title, 'span', 'digest-date', dayLabel(latest.date));
+        head.appendChild(title);
+        if (latest.scanned) {
+          const stats = document.createElement('p');
+          stats.className = 'digest-stats';
+          [['扫描 ', latest.scanned, ' 条标题 → 合并成 '], ['', latest.events, ' 个事件 → 精选 '], ['', latest.stories.length, ' 条']].forEach(([before, number, after]) => {
+            stats.append(before);
+            makeText(stats, 'b', '', String(number));
+            stats.append(after);
+          });
+          head.appendChild(stats);
+        }
+        const progress = document.createElement('div');
+        progress.className = 'digest-progress';
+        makeText(progress, 'span', '', `已读 ${readCount} / ${stories.length}`);
+        const bar = document.createElement('div');
+        bar.className = 'digest-bar';
+        const fill = document.createElement('span');
+        fill.style.width = `${Math.round(readCount / stories.length * 100)}%`;
+        bar.appendChild(fill);
+        progress.appendChild(bar);
+        head.appendChild(progress);
+        digestBox.appendChild(head);
+
+        shown.forEach(day => {
+          if (day !== latest) {
+            const left = day.stories.filter(story => !isNewsRead(story.id)).length;
+            makeText(digestBox, 'div', 'digest-day', `补看 · ${dayLabel(day.date)} · 还剩 ${left} 条`);
+          }
+          // Unread first, each group in the job's score order.
+          [...day.stories.filter(story => !isNewsRead(story.id)), ...day.stories.filter(story => isNewsRead(story.id))]
+            .forEach(story => renderDigestStory(digestBox, story));
+        });
+
+        if (readCount === stories.length) {
+          const done = document.createElement('div');
+          done.className = 'digest-done';
+          makeText(done, 'strong', '', '✓ 今天的重点看完了');
+          makeText(done, 'p', '', '你没有错过重要的事。还在发展的大事，明天会带着新进展再出现在这里。');
+          digestBox.appendChild(done);
+        }
+
+        const more = document.createElement('div');
+        more.className = 'digest-more';
+        const weeklyStories = digestFeed.weekly.map(id => byId.get(id)).filter(Boolean);
+        const toggles = [
+          weeklyStories.length && [`本周 ${weeklyStories.length} 件大事`, showWeekly, () => { showWeekly = !showWeekly; }],
+          [`查看全部 ${briefTotal} 条`, showAllBriefs, () => { showAllBriefs = !showAllBriefs; }]
+        ].filter(Boolean);
+        toggles.forEach(([label, open, flip]) => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.textContent = `${label} ${open ? '▴' : '▾'}`;
+          button.setAttribute('aria-expanded', String(open));
+          button.addEventListener('click', () => { flip(); refreshDigest(); });
+          more.appendChild(button);
+        });
+        digestBox.appendChild(more);
+        if (showWeekly) {
+          const weekly = document.createElement('div');
+          weekly.className = 'digest-weekly';
+          weeklyStories.forEach(story => renderDigestStory(weekly, story));
+          digestBox.appendChild(weekly);
+        }
+      };
+
       const loadBriefs = async () => {
         if (briefsLoaded) return;
         briefsLoaded = true;
         briefNote.textContent = '正在读取文字简报…';
         try {
-          const [briefData, appearanceRows, { news = [] }] = await Promise.all([
+          const [briefData, appearanceRows, { news = [], digests = [], weekly = [] }] = await Promise.all([
             fetch('../docs/text-briefs-v1.json', { cache: 'no-store' }).then(response => {
               if (!response.ok) throw new Error(`HTTP ${response.status}`);
               return response.json();
@@ -1569,6 +1761,8 @@
           const allBriefs = briefData.briefs || [];
           const briefs = allBriefs.filter(brief => !(brief.video_keys || []).some(key => videoKeys.has(key)));
           const textRows = appearanceRows.filter(item => item.content_type === 'text' || item.content_type === 'index');
+          // News already read in 今日重点 leaves the full list (from the next time it loads).
+          const unreadNews = news.filter(story => !story.id || !isNewsRead(story.id));
           briefList.replaceChildren();
           [...briefs.map(brief => ({
             published: brief.published,
@@ -1587,7 +1781,7 @@
             summary: getAppearanceHighlight(item),
             why: personAIContext[item.person_id] ? `人物：${personAIContext[item.person_id]}` : '',
             links: [{ label: item.content_type === 'index' ? '打开索引页' : '打开原文', url: item.official_publisher_url }]
-          })), ...news.map(story => ({
+          })), ...unreadNews.map(story => ({
             // Found by the daily job (tools/news.mjs): headlines from major outlets about watched people, labs and themes.
             published: story.published,
             meta: `新闻 · ${story.source}${story.outlets.length > 1 ? ` 等 ${story.outlets.length} 家媒体报道` : ''}`,
@@ -1598,10 +1792,13 @@
             why: story.meaning ? `这意味着：${story.meaning}` : '',
             links: [{ label: `打开原文 · ${story.source}`, url: story.url }]
           }))].sort(newestFirst(entry => entry.published)).forEach(renderBrief);
-          const total = briefs.length + textRows.length + news.length;
+          const total = briefs.length + textRows.length + unreadNews.length;
           const covered = allBriefs.length - briefs.length;
           briefCount.textContent = `${total} 条`;
-          briefNote.textContent = `共 ${total} 条：${news.length} 条每日自动新闻（追踪名单人物、实验室和重点主题，只收主流媒体），${briefs.length} 条资讯简报，${textRows.length} 条没有视频或音频的文字稿和资源索引。${covered ? `另有 ${covered} 条已有视频，在视频 TAB 里看，这里不重复。` : ''}`;
+          briefTotal = total;
+          digestFeed = { news, digests, weekly };
+          refreshDigest();
+          briefNote.textContent = `共 ${total} 条：${unreadNews.length} 条最近 7 天的自动新闻（追踪名单人物、实验室和重点主题，只收主流媒体；已读的不再列出），${briefs.length} 条资讯简报，${textRows.length} 条没有视频或音频的文字稿和资源索引。${covered ? `另有 ${covered} 条已有视频，在视频 TAB 里看，这里不重复。` : ''}`;
         } catch {
           briefsLoaded = false;
           briefCount.textContent = '未加载';
@@ -1620,7 +1817,7 @@
           const card = button.closest('.card');
           if (card && !cardsByKey.has(button.dataset.watchKey)) cardsByKey.set(button.dataset.watchKey, card);
         });
-        const keys = [...watchedItems].reverse().sort((a, b) => (watchedTimes.get(b) || '').localeCompare(watchedTimes.get(a) || ''));
+        const keys = [...watchedItems].filter(key => !key.startsWith(NEWS_PREFIX)).reverse().sort((a, b) => (watchedTimes.get(b) || '').localeCompare(watchedTimes.get(a) || ''));
         if (!keys.length) {
           makeText(historyList, 'div', 'history-empty', '还没有标记为已看的视频。看完一条后点卡片上的“○ 未看”，它就会出现在这里。');
           return;
@@ -1656,7 +1853,7 @@
       };
 
       updateWatchHistoryCount = () => {
-        historyCount.textContent = String(watchedItems.size);
+        historyCount.textContent = String([...watchedItems].filter(key => !key.startsWith(NEWS_PREFIX)).length);
         if (!historySheet.hidden) renderWatchHistory();
       };
 
@@ -1689,13 +1886,14 @@
 
       // New videos found by the daily GitHub Actions job (tools/update-feed.mjs), and the publish dates it looks up
       // for hand-added videos. It lives on the auto-feed branch so pushes of the site never conflict with it.
-      const AUTO_FEED_URL = 'https://raw.githubusercontent.com/mb140935-coder/ai-video-feed/auto-feed/auto-feed.json';
-      let autoFeed = { updated: '', items: [], videos: {}, channels: {}, news: [] };
+      // ?feed=<url> reads another copy instead, for checking a local run of the job before it is pushed.
+      const AUTO_FEED_URL = new URLSearchParams(location.search).get('feed') || 'https://raw.githubusercontent.com/mb140935-coder/ai-video-feed/auto-feed/auto-feed.json';
+      let autoFeed = { updated: '', items: [], videos: {}, channels: {}, news: [], digests: [], weekly: [] };
       const autoFeedPromise = fetch(AUTO_FEED_URL, { cache: 'no-store' })
         .then(response => response.ok ? response.json() : null)
         .catch(() => null)
         .then(data => {
-          autoFeed = { updated: data?.updated || '', items: Array.isArray(data?.items) ? data.items : [], videos: data?.videos || {}, channels: data?.channels || {}, news: Array.isArray(data?.news) ? data.news : [] };
+          autoFeed = { updated: data?.updated || '', items: Array.isArray(data?.items) ? data.items : [], videos: data?.videos || {}, channels: data?.channels || {}, news: Array.isArray(data?.news) ? data.news : [], digests: Array.isArray(data?.digests) ? data.digests : [], weekly: Array.isArray(data?.weekly) ? data.weekly : [] };
           return autoFeed;
         });
       const autoFeedUpdated = () => autoFeed.updated ? `（最近更新：${new Date(autoFeed.updated).toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}）` : '';

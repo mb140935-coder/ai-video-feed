@@ -2,7 +2,8 @@
 // Only headlines from major outlets (or the entity's own site) are kept; the same story from several outlets is
 // merged into one item, and the number of outlets is kept as a signal of how big it is. Shown in the 简报 tab.
 
-const MAX_AGE_DAYS = 30;
+// Stories leave after a week: 今日重点 only picks from the last 7 days, and the app should not pile up old news.
+const MAX_AGE_DAYS = 7;
 const MAX_NEWS = 300;
 
 // Outlets whose headlines are kept (matched against the source's domain).
@@ -29,7 +30,7 @@ const decode = text => text.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
   .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim();
 const tag = (xml, name) => decode(xml.match(new RegExp(`<${name}[^>]*>([\\s\\S]*?)</${name}>`))?.[1] || '');
 
-// The first run looks back a month; later daily runs only need the last week.
+// Every run looks back the whole retention window, so a story's later coverage still merges into it.
 const searchUrl = (query, zh, days) => `https://news.google.com/rss/search?q=${encodeURIComponent(`${query} when:${days}d`)}`
   + (zh ? '&hl=zh-CN&gl=CN&ceid=CN:zh-Hans' : '&hl=en-US&gl=US&ceid=US:en');
 
@@ -69,7 +70,16 @@ const entityPattern = aliases => new RegExp(aliases.map(alias => {
   return /[一-鿿]/.test(alias) ? escaped : `(?<![\\w])${escaped}(?![\\w])`;
 }).join('|'));
 
-export const collectNews = async (watchlist, previous = [], report = []) => {
+// Stable story id (the first headline's URL, hashed): the shown headline and URL can switch to a higher-ranked
+// outlet later, but the id that 今日重点 and its read marks use stays the same.
+const storyId = url => {
+  let hash = 2166136261;
+  for (const char of url) hash = Math.imul(hash ^ char.charCodeAt(0), 16777619);
+  return (hash >>> 0).toString(36);
+};
+
+// stats (optional) gets { scanned, events }: the headlines this run kept and how many stories they merged into.
+export const collectNews = async (watchlist, previous = [], report = [], stats = {}) => {
   const people = watchlist.groups.find(group => group.people)?.items || [];
   const labs = watchlist.groups.find(group => group.title.startsWith('前沿实验室'))?.items || [];
   const entities = [...people, ...labs].map(entity => ({ ...entity, pattern: entityPattern(entity.aliases) }));
@@ -86,8 +96,7 @@ export const collectNews = async (watchlist, previous = [], report = []) => {
     ...THEMES.map(theme => [theme.title, theme.query, false, title => theme.must.test(title) && AI.test(title)])
   ];
 
-  // Stories saved before headlines were kept get one more month-long pass to collect them.
-  const days = previous.length && previous.every(story => story.headlines) ? 7 : MAX_AGE_DAYS;
+  const days = MAX_AGE_DAYS;
   const found = [];
   for (const [label, query, zh, keep] of queries) {
     try {
@@ -102,7 +111,9 @@ export const collectNews = async (watchlist, previous = [], report = []) => {
 
   // Merge into stories: earlier stories first (so their ids stay), then today's headlines.
   const stories = previous.filter(story => story.published >= cutoff)
-    .map(story => ({ ...story, outlets: [...story.outlets], headlines: [...(story.headlines || [story.title])] }));
+    .map(story => ({ ...story, id: story.id || storyId(story.url), outlets: [...story.outlets], headlines: [...(story.headlines || [story.title])] }));
+  const today = new Date().toISOString().slice(0, 10);
+  const touched = new Set();
   const addHeadlines = (story, item) => {
     for (const headline of [item.title, ...item.related]) {
       if (story.headlines.length < 8 && !story.headlines.includes(headline)) story.headlines.push(headline);
@@ -112,12 +123,15 @@ export const collectNews = async (watchlist, previous = [], report = []) => {
     if (item.published < cutoff) continue;
     const story = stories.find(other => other.url === item.url || sameStory(other.title, item.title));
     if (!story) {
-      const created = { title: item.title, url: item.url, source: item.source, domain: item.domain, published: item.published, outlets: [item.source], themes: item.theme ? [item.theme] : [], headlines: [] };
+      const created = { id: storyId(item.url), lastSeen: today, title: item.title, url: item.url, source: item.source, domain: item.domain, published: item.published, outlets: [item.source], themes: item.theme ? [item.theme] : [], headlines: [] };
       addHeadlines(created, item);
       stories.push(created);
+      touched.add(created);
       continue;
     }
-    if (!story.outlets.includes(item.source)) story.outlets.push(item.source);
+    touched.add(story);
+    // lastSeen: the day a new outlet last picked the story up, so 今日重点 can tell a story that is still growing.
+    if (!story.outlets.includes(item.source)) Object.assign(story, { lastSeen: today }).outlets.push(item.source);
     addHeadlines(story, item);
     if (item.theme && !story.themes.includes(item.theme)) story.themes.push(item.theme);
     // The headline shown comes from the highest-ranked outlet.
@@ -126,6 +140,7 @@ export const collectNews = async (watchlist, previous = [], report = []) => {
     }
     if (item.published < story.published) story.published = item.published;
   }
+  Object.assign(stats, { scanned: found.filter(item => item.published >= cutoff).length, events: touched.size });
   stories.forEach(story => {
     story.entities = entities.filter(entity => entity.pattern.test(story.title)).map(entity => entity.name);
   });

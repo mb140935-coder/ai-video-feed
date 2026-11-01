@@ -3,13 +3,15 @@
 // 2. Polls the channels the user followed by link on the page, and fills in publish dates and descriptions
 //    for videos added by hand there (both from Supabase added_videos).
 // 3. News about the watchlist people and labs and the priority themes (news.mjs), for the 简报 tab, with a Chinese
-//    summary and "这意味着" from Gemini when GEMINI_API_KEY is set (summarize.mjs).
+//    summary and "这意味着" from Gemini when GEMINI_API_KEY is set (summarize.mjs), and 今日重点: the day's top
+//    stories by score, plus 本周大事 (digest.mjs).
 // With a YOUTUBE_API_KEY (YouTube Data API v3) it also drops videos under MIN_MINUTES and dates hand-added
 // YouTube videos; without one those two steps are skipped and the title rules below do the filtering.
 // Usage: node update-feed.mjs <path to auto-feed.json>   (read if present, then rewritten)
 import fs from 'fs';
 import { collectNews } from './news.mjs';
 import { summarizeNews, highlightVideos, VIDEO_HIGHLIGHTS_PER_RUN } from './summarize.mjs';
+import { buildDigest } from './digest.mjs';
 
 const AI = /\bAI\b|A\.I\.|artificial intelligence|machine learning|\bLLMs?\b|\bGPT|agent|chatbot|ChatGPT|Claude|Gemini|Qwen|Kimi|DeepSeek|robot|人工智能|大模型|模型|智能体|机器人|具身/i;
 const OLYMPIC = /olympi|paralympi|\bIOC\b|奥运|奥林匹克|冬奥/i;
@@ -336,12 +338,19 @@ const kept = [...items.values()]
 Object.values(channels).forEach(info => { if (info.id) info.count = kept.filter(item => item.channelId === info.id).length; });
 // Keep the old timestamp when nothing changed, so the job doesn't commit an identical file.
 let news = previous.news || [];
+const newsStats = {};
 try {
   if (!watchlist) throw new Error('watchlist not read');
-  news = await collectNews(watchlist, news, report);
+  news = await collectNews(watchlist, news, report, newsStats);
   await summarizeNews(news, report);
 } catch (error) {
   report.push(`news: FAILED ${error.message}`);
+}
+let digest = { digests: previous.digests || [], weekly: previous.weekly || [] };
+try {
+  digest = buildDigest(news, digest.digests, newsStats, report);
+} catch (error) {
+  report.push(`今日重点: FAILED ${error.message}`);
 }
 // 内容重点 for YouTube cards without one yet, from the full description (newest first; the rest on later runs).
 try {
@@ -360,7 +369,7 @@ try {
 // The full description only feeds the highlight; it is not kept in the feed.
 Object.values(videos).forEach(info => { delete info.description; });
 
-const content = { items: kept, videos, channels, news };
+const content = { items: kept, videos, channels, news, ...digest };
 const { updated: previousUpdated, ...previousContent } = previous;
 const unchanged = JSON.stringify(previousContent) === JSON.stringify(content);
 fs.writeFileSync(outPath, `${JSON.stringify({ updated: unchanged ? previousUpdated : new Date().toISOString(), ...content }, null, 1)}\n`);

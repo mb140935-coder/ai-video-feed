@@ -14,6 +14,7 @@ on:
       - 'tools/update-feed.mjs'
       - 'tools/news.mjs'
       - 'tools/summarize.mjs'
+      - 'tools/digest.mjs'
       - 'docs/watchlist-v1.json'
 
 permissions:

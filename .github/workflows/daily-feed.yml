@@ -1,0 +1,51 @@
+# Updates auto-feed.json on the auto-feed branch: new videos from followed channels, and publish dates
+# for videos added by hand. Kept off main so pushes of the site (git subtree) never conflict with it.
+name: Daily feed update
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/daily-feed.yml'
+      - 'tools/update-feed.mjs'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-feed
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check out the auto-feed branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin auto-feed; then
+            git fetch --depth 1 origin auto-feed:refs/remotes/origin/auto-feed
+            git worktree add -B auto-feed feed origin/auto-feed
+          else
+            git worktree add --orphan -b auto-feed feed
+          fi
+
+      - name: Update feed
+        run: node tools/update-feed.mjs feed/auto-feed.json
+
+      - name: Commit and push
+        working-directory: feed
+        run: |
+          git add auto-feed.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update auto feed"
+            git push origin auto-feed
+          fi

@@ -181,7 +181,7 @@
           <div class="history-head"><span id="add-video-title">添加视频或频道 · 粘贴链接</span><button type="button" id="add-video-close">关闭</button></div>
           <form class="add-form" id="add-video-form">
             <div class="add-row"><input id="add-video-url" type="text" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="粘贴视频链接或 YouTube 频道主页" aria-label="视频链接"><button type="submit" id="add-video-submit">加入</button></div>
-            <div class="add-status" id="add-video-status">视频进“精选视频”；频道的新视频每小时自动进“演讲 &amp; Podcast”。</div>
+            <div class="add-status" id="add-video-status">视频进“精选视频”；频道的新视频每天自动进“演讲 &amp; Podcast”。</div>
           </form>
           <div class="history-list" id="add-video-list"></div>
         </div>
@@ -1501,7 +1501,7 @@
       };
 
       // Videos and channels added by pasting a link (☰ → 添加视频 / 频道). Videos go to 精选视频; a channel's new
-      // videos are picked up by the hourly job and appear in 演讲 & Podcast. Both share the Supabase table
+      // videos are picked up by the daily job and appear in 演讲 & Podcast. Both share the Supabase table
       // added_videos (tools/supabase-added-videos.sql) — channel rows have keys starting with "channel:" — or stay
       // in this browser until that table exists.
       const addedTable = `${SUPABASE_URL}/rest/v1/added_videos`;
@@ -1532,7 +1532,7 @@
         addStatus.textContent = message;
         addStatus.className = kind ? `add-status ${kind}` : 'add-status';
       };
-      const defaultAddStatus = () => `视频加入后出现在“精选视频”最上面；关注频道后，它的新视频每小时自动进“演讲 & Podcast”。${addedShared ? '手机、iPad、电脑同步。' : '在线保存还没开通，先存在这台设备。'}`;
+      const defaultAddStatus = () => `视频加入后出现在“精选视频”最上面；关注频道后，它的新视频每天自动进“演讲 & Podcast”。${addedShared ? '手机、iPad、电脑同步。' : '在线保存还没开通，先存在这台设备。'}`;
       const shortDate = iso => iso ? new Date(iso).toLocaleDateString('zh-CN', { month: 'numeric', day: 'numeric' }) : '';
 
       const addedItem = video => {
@@ -1561,13 +1561,13 @@
         };
       };
 
-      // What the hourly job found out about a followed channel (auto-feed.json "channels").
+      // What the daily job found out about a followed channel (auto-feed.json "channels").
       const channelState = row => {
         const info = autoFeed.channels[row.key] || {};
         const name = info.name || row.title || row.url.replace(/^https:\/\/www\.youtube\.com\//, '');
         const status = info.error ? `没能识别这个频道：${info.error}`
           : info.id ? `已识别 · 近 30 天 ${info.count || 0} 条新视频在“演讲 & Podcast”`
-          : '等待下一次自动更新（每小时一次）';
+          : '等待下一次自动更新（每天一次）';
         return { name, status };
       };
 
@@ -1750,7 +1750,7 @@
             return;
           }
           await saveAddedRow({ ...channel, title: '', author: '', created_at: new Date().toISOString() });
-          showAddStatus(`已关注 ${channel.url.replace('https://www.youtube.com/', '')}${localOnly}。下一次自动更新（每小时一次）会识别频道，它近 30 天的新视频随后出现在“演讲 & Podcast”。`, 'ok');
+          showAddStatus(`已关注 ${channel.url.replace('https://www.youtube.com/', '')}${localOnly}。下一次自动更新（每天一次）会识别频道，它近 30 天的新视频随后出现在“演讲 & Podcast”。`, 'ok');
           return;
         }
         addSubmit.disabled = true;

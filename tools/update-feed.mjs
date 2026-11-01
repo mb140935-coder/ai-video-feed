@@ -243,7 +243,7 @@ const kept = [...items.values()]
   .sort((a, b) => b.published.localeCompare(a.published))
   .slice(0, MAX_ITEMS);
 Object.values(channels).forEach(info => { if (info.id) info.count = kept.filter(item => item.channelId === info.id).length; });
-// Runs every hour: keep the old timestamp when nothing changed, so the job doesn't commit an identical file.
+// Keep the old timestamp when nothing changed, so the job doesn't commit an identical file.
 const content = { items: kept, videos, channels };
 const { updated: previousUpdated, ...previousContent } = previous;
 const unchanged = JSON.stringify(previousContent) === JSON.stringify(content);

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T15:36:53.525Z",
+ "updated": "2026-11-01T15:59:02.961Z",
  "items": [
   {
    "key": "youtube:KM3VQZKjpiY",
@@ -276,6 +276,22 @@
    "found": "2026-11-01"
   },
   {
+   "key": "youtube:VYv3qrqh2FQ",
+   "url": "https://www.youtube.com/watch?v=VYv3qrqh2FQ",
+   "title": "AI时代，如何选电脑？【小白必看】",
+   "channel": "秋芝2046",
+   "channelId": "UCrC3GjeSkxXgJ2hLQ2D-m4w",
+   "published": "2026-10-21",
+   "summary": "AI时代选电脑看什么？本地大模型有没有必要？ 用一间厨房讲透，小白也能看懂！还附了配置速查表哦~ 感谢铁铁们的点赞+订阅～",
+   "about": "你手动关注的频道：秋芝2046。",
+   "tab": "appearances",
+   "tags": [
+    "你关注的频道"
+   ],
+   "minutes": null,
+   "found": "2026-11-01"
+  },
+  {
    "key": "youtube:D-SVFneJ_Nk",
    "url": "https://www.youtube.com/watch?v=D-SVFneJ_Nk",
    "title": "Claude Engineering Lead: \"Stop Using Claude Like It’s 2024\"",
@@ -383,6 +399,22 @@
    "minutes": null
   },
   {
+   "key": "youtube:hQSBJVreLms",
+   "url": "https://www.youtube.com/watch?v=hQSBJVreLms",
+   "title": "From Wet Lab to RL Env: 10,000 Drug-Discovery Campaigns in a Weekend — Ian Quigley, Leash Bio",
+   "channel": "Latent Space",
+   "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+   "published": "2026-10-14",
+   "summary": "From a four-billion-measurement Kaggle competition to models that recognize a molecule’s chemist, Leash Bio is testing what AI actually learns about chemistry. Co-founder and CEO Ian Quigley joins Brandon Anderson and RJ…",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "minutes": null,
+   "found": "2026-11-01"
+  },
+  {
    "key": "youtube:Jijc0XokSpQ",
    "url": "https://www.youtube.com/watch?v=Jijc0XokSpQ",
    "title": "Top Google Exec: AI Moves Fast, Jobs Move Slow. Use the Gap",
@@ -441,7 +473,79 @@
    ],
    "found": "2026-11-01",
    "minutes": null
+  },
+  {
+   "key": "youtube:BHiYomkfoGQ",
+   "url": "https://www.youtube.com/watch?v=BHiYomkfoGQ",
+   "title": "Robots That Predict the Future: Dyna-2 & Physical AI — Jason Ma, Dyna Robotics",
+   "channel": "Latent Space",
+   "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+   "published": "2026-10-13",
+   "summary": "From training a world-action model on over one million hours of human video to deploying robots that fold thousands of napkins daily at Din Tai Fung, Dyna Robotics is pushing physical AI beyond impressive demos and into …",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "minutes": null,
+   "found": "2026-11-01"
+  },
+  {
+   "key": "youtube:zlD-CkLVKtU",
+   "url": "https://www.youtube.com/watch?v=zlD-CkLVKtU",
+   "title": "How to kill your SaaS: what we learned replacing a $43K/yr tool with AI agents",
+   "channel": "Latent Space",
+   "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+   "published": "2026-10-13",
+   "summary": "A SaaS vendor quoted us $43,000 a year to run speakers for my @AIdotEngineer conferences. That would be fine if it delivered the qualitySo we asked builders to clone it with coding agents, open source, eval by the people…",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "minutes": null,
+   "found": "2026-11-01"
+  },
+  {
+   "key": "youtube:NufiHZfMwaw",
+   "url": "https://www.youtube.com/watch?v=NufiHZfMwaw",
+   "title": "Why AlphaFold Didn't Solve Protein Folding — Pushmeet Kohli, Google DeepMind & Sal Candido, Biohub",
+   "channel": "Latent Space",
+   "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+   "published": "2026-10-10",
+   "summary": "From the Bitter Lesson of AI scaling to the unsolved mysteries of protein folding, Google DeepMind’s Pushmeet Kohli and Biohub’s Sal Candido are rethinking what it takes to build AI that truly understands biology. In thi…",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "minutes": null,
+   "found": "2026-11-01"
+  },
+  {
+   "key": "youtube:CZDwvcW-YTA",
+   "url": "https://www.youtube.com/watch?v=CZDwvcW-YTA",
+   "title": "Agent 接管了我的新工作室！",
+   "channel": "秋芝2046",
+   "channelId": "UCrC3GjeSkxXgJ2hLQ2D-m4w",
+   "published": "2026-10-09",
+   "summary": "这期来个工作室room tour，现在开灯关灯都归Agent管啦！ 最后一个走也不用惦记关灯了哈哈～ 感谢朋友们的点赞+订阅~",
+   "about": "你手动关注的频道：秋芝2046。",
+   "tab": "appearances",
+   "tags": [
+    "你关注的频道"
+   ],
+   "minutes": null,
+   "found": "2026-11-01"
   }
  ],
- "videos": {}
+ "videos": {},
+ "channels": {
+  "channel:@qiuzhi2046": {
+   "url": "https://www.youtube.com/@qiuzhi2046",
+   "id": "UCrC3GjeSkxXgJ2hLQ2D-m4w",
+   "name": "秋芝2046",
+   "count": 2
+  }
+ }
 }

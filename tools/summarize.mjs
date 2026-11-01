@@ -87,3 +87,64 @@ export const summarizeNews = async (stories, report = []) => {
   }
   report.push(`news summaries (${model}): ${done} of ${pending.length} written`);
 };
+
+// 内容重点 for video cards: two or three Chinese sentences from the video's title and full YouTube description
+// (the card's own excerpt stops at 220 characters). Entries are { title, channel, description, target }; the
+// result goes to target.highlight. Same model and per-run cap as the news, so notes keep their quota.
+const VIDEO_INSTRUCTIONS = `你是一位中文编辑，为一位关注 AI 的读者整理视频卡片的“内容重点”。每条给你视频标题、频道名和发布方简介（原文，可能是英文）。为每条写：
+- highlight：两到三句中文，说清谁在讲（讲者和身份）、主要谈了哪些话题、观点或发布。只能使用标题和简介里出现的信息，不要编造；简介很少时只写能确定的，宁短勿编。不要写“本视频”“该视频”这类开头，直接说内容。
+人名、公司名、产品名保留原文（可附常见中文名）。按输入顺序返回每条的 id。`;
+
+const VIDEO_SCHEMA = {
+  type: 'ARRAY',
+  items: {
+    type: 'OBJECT',
+    properties: { id: { type: 'INTEGER' }, highlight: { type: 'STRING' } },
+    required: ['id', 'highlight']
+  }
+};
+
+const highlightBatch = async (key, model, entries) => {
+  const input = entries.map((entry, id) => ({ id, title: entry.title, channel: entry.channel, description: (entry.description || '').slice(0, 1500) }));
+  const response = await fetch(`${API}/models/${model}:generateContent`, {
+    method: 'POST',
+    headers: { 'x-goog-api-key': key, 'content-type': 'application/json' },
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: VIDEO_INSTRUCTIONS }] },
+      contents: [{ role: 'user', parts: [{ text: JSON.stringify(input) }] }],
+      generationConfig: { responseMimeType: 'application/json', responseSchema: VIDEO_SCHEMA, temperature: 0.3 }
+    })
+  });
+  if (!response.ok) throw new Error(`HTTP ${response.status} ${(await response.text()).slice(0, 200)}`);
+  const text = (await response.json()).candidates?.[0]?.content?.parts?.map(part => part.text).join('') || '[]';
+  return JSON.parse(text);
+};
+
+export const VIDEO_HIGHLIGHTS_PER_RUN = MAX_BATCHES * BATCH;
+
+export const highlightVideos = async (entries, report = []) => {
+  const key = process.env.GEMINI_API_KEY;
+  if (!key || !entries.length) return;
+  let model;
+  try {
+    model = await pickModel(key);
+  } catch (error) {
+    report.push(`video highlights: FAILED ${error.message}`);
+    return;
+  }
+  const pending = entries.slice(0, VIDEO_HIGHLIGHTS_PER_RUN);
+  let done = 0;
+  for (let start = 0; start < pending.length; start += BATCH) {
+    const batch = pending.slice(start, start + BATCH);
+    try {
+      for (const { id, highlight } of await highlightBatch(key, model, batch)) {
+        if (batch[id] && highlight?.trim()) { batch[id].target.highlight = highlight.trim(); done++; }
+      }
+    } catch (error) {
+      report.push(`video highlights batch ${start / BATCH + 1}: FAILED ${error.message}`);
+      if (/HTTP 429/.test(error.message)) break;
+    }
+    if (start + BATCH < pending.length) await new Promise(resolve => setTimeout(resolve, PAUSE_MS));
+  }
+  report.push(`video highlights (${model}): ${done} of ${entries.length} written`);
+};

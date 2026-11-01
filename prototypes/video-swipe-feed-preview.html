@@ -1703,7 +1703,7 @@
         brand: ['每日自动发现', `关注频道 · ${entry.channel}${entry.minutes ? ` · 约 ${entry.minutes} 分钟` : ''}`],
         cardText: {
           person: entry.about || `${entry.channel} 的官方频道。`,
-          highlight: entry.summary ? `发布方简介摘录（自动抓取，未人工整理）：${entry.summary}` : '发布方没有提供简介；这里不推测内容，打开原片查看。'
+          highlight: entry.highlight ? `${entry.highlight}（AI 根据发布方简介整理）` : entry.summary ? `发布方简介摘录（自动抓取，未人工整理）：${entry.summary}` : '发布方没有提供简介；这里不推测内容，打开原片查看。'
         },
         autoDiscovered: true
       });
@@ -1770,7 +1770,7 @@
           brand: ['你添加的视频', addedShared ? '手动加入 · 所有设备同步' : '手动加入 · 保存在这台设备'],
           cardText: {
             person: author ? `频道：${author}。这是你从别处找到、手动加入的视频。` : '这是你从别处找到、手动加入的视频。',
-            highlight: info.summary ? `发布方简介摘录（自动抓取，未人工整理）：${info.summary}` : '还没有整理内容重点；每天的自动更新会补上发布日期和发布方简介。'
+            highlight: info.highlight ? `${info.highlight}（AI 根据发布方简介整理）` : info.summary ? `发布方简介摘录（自动抓取，未人工整理）：${info.summary}` : '还没有整理内容重点；每天的自动更新会补上发布日期和发布方简介。'
           },
           removeKey: video.key
         };

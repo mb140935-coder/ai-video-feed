@@ -9,7 +9,7 @@
 // Usage: node update-feed.mjs <path to auto-feed.json>   (read if present, then rewritten)
 import fs from 'fs';
 import { collectNews } from './news.mjs';
-import { summarizeNews } from './summarize.mjs';
+import { summarizeNews, highlightVideos, VIDEO_HIGHLIGHTS_PER_RUN } from './summarize.mjs';
 
 const AI = /\bAI\b|A\.I\.|artificial intelligence|machine learning|\bLLMs?\b|\bGPT|agent|chatbot|ChatGPT|Claude|Gemini|Qwen|Kimi|DeepSeek|robot|人工智能|大模型|模型|智能体|机器人|具身/i;
 const OLYMPIC = /olympi|paralympi|\bIOC\b|奥运|奥林匹克|冬奥/i;
@@ -57,12 +57,12 @@ const decode = s => s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot
 const tag = (xml, name) => decode((xml.match(new RegExp(`<${name}>([^]*?)</${name}>`)) || [])[1] || '');
 
 // First plain sentences of a description, without links, hashtags, sponsor lines, chapters or emoji bullets.
+const plainDescription = text => text.split('\n').map(line => line.trim()).filter(line => line
+  && !/https?:\/\/|www\.|subscribe|follow (me|us)|sponsor|newsletter|patreon|discord|instagram|twitter|tiktok|linkedin|partner|use code|promo/i.test(line)
+  && !/^[#@]|^\(?\d{1,2}:\d{2}/.test(line)
+  && !/^[\p{Extended_Pictographic}\p{S}*]/u.test(line)).join(' ').replace(/\s+/g, ' ').trim();
 const summarize = text => {
-  const lines = text.split('\n').map(line => line.trim()).filter(line => line
-    && !/https?:\/\/|www\.|subscribe|follow (me|us)|sponsor|newsletter|patreon|discord|instagram|twitter|tiktok|linkedin|partner|use code|promo/i.test(line)
-    && !/^[#@]|^\(?\d{1,2}:\d{2}/.test(line)
-    && !/^[\p{Extended_Pictographic}\p{S}*]/u.test(line));
-  const joined = lines.join(' ').replace(/\s+/g, ' ').trim();
+  const joined = plainDescription(text);
   return joined.length > 220 ? `${joined.slice(0, 220)}…` : joined;
 };
 
@@ -134,7 +134,8 @@ const youtubeDetails = async ids => {
         title: video.snippet?.title || '',
         author: video.snippet?.channelTitle || '',
         minutes: isoMinutes(video.contentDetails?.duration),
-        summary: summarize(video.snippet?.description || '')
+        summary: summarize(video.snippet?.description || ''),
+        description: plainDescription(video.snippet?.description || '')
       };
     }
   }
@@ -342,6 +343,23 @@ try {
 } catch (error) {
   report.push(`news: FAILED ${error.message}`);
 }
+// 内容重点 for YouTube cards without one yet, from the full description (newest first; the rest on later runs).
+try {
+  const pending = [
+    ...kept.filter(item => item.key.startsWith('youtube:')).map(item => ({ key: item.key, title: item.title, channel: item.channel, published: item.published, target: item })),
+    ...Object.entries(videos).filter(([key]) => key.startsWith('youtube:')).map(([key, info]) => ({ key, title: info.title, channel: info.author, published: info.published, target: info }))
+  ].filter(entry => !entry.target.highlight)
+    .sort((a, b) => (b.published || '').localeCompare(a.published || ''))
+    .slice(0, VIDEO_HIGHLIGHTS_PER_RUN);
+  const details = await youtubeDetails(pending.map(entry => entry.key.slice('youtube:'.length)));
+  pending.forEach(entry => { entry.description = details[entry.key.slice('youtube:'.length)]?.description || ''; });
+  await highlightVideos(pending, report);
+} catch (error) {
+  report.push(`video highlights: FAILED ${error.message}`);
+}
+// The full description only feeds the highlight; it is not kept in the feed.
+Object.values(videos).forEach(info => { delete info.description; });
+
 const content = { items: kept, videos, channels, news };
 const { updated: previousUpdated, ...previousContent } = previous;
 const unchanged = JSON.stringify(previousContent) === JSON.stringify(content);

@@ -83,6 +83,12 @@
     .add-status.error { color: #b3401f; }
     .add-status.ok { color: var(--green); }
     .add-section { padding: 12px 18px 4px; font-weight: 700; }
+    .watch-row { width: 100%; border: 0; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; align-items: center; }
+    .watch-row:hover, .watch-row:focus-visible { background: var(--hover); }
+    .watch-row .menu-count { flex: none; }
+    .watch-row-arrow { flex: none; color: var(--faint); }
+    #watchlist-title { flex: 1; min-width: 0; margin: 0 10px; }
+    #watchlist-back[hidden] { display: none; }
     .phone.no-snap { scroll-snap-type: none; }
     .brief { display: flex; flex-direction: column; gap: 8px; padding: 18px; border-bottom: 1px solid var(--line); }
     .brief-meta { color: var(--muted); font-size: 11px; }
@@ -206,6 +212,7 @@
         <div class="menu-wrap">
           <button class="menu-button" id="menu-button" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="menu-dropdown" aria-label="菜单：已看历史、添加视频">☰</button>
           <div class="menu-dropdown" id="menu-dropdown" role="menu" hidden>
+            <button type="button" role="menuitem" id="watchlist-button" aria-haspopup="dialog" aria-controls="watchlist"><span>☆ 追踪名单</span><span class="menu-count" id="watchlist-count"></span></button>
             <button type="button" role="menuitem" id="watch-history-button" aria-haspopup="dialog" aria-controls="watch-history"><span>✓ 已看历史</span><span class="menu-count" id="watch-history-count">0</span></button>
             <button type="button" role="menuitem" id="search-button" aria-controls="search-bar"><span>🔍 搜索演讲 &amp; Podcast</span></button>
             <button type="button" role="menuitem" id="add-video-button" aria-haspopup="dialog" aria-controls="add-video"><span>＋ 添加视频 / 频道</span><span class="menu-count" id="added-count"></span></button>
@@ -219,6 +226,12 @@
       </nav>
       <div class="watch-undo" id="watch-undo" role="status" hidden><span id="watch-undo-text"></span><button type="button" id="watch-undo-button">撤销</button></div>
       <div class="sync-status" id="watch-sync-status" role="status">正在连接在线已看记录…</div>
+      <div class="history-sheet" id="watchlist" role="dialog" aria-modal="true" aria-labelledby="watchlist-title" hidden>
+        <div class="history-panel">
+          <div class="history-head"><button type="button" id="watchlist-back" hidden>← 名单</button><span id="watchlist-title">追踪名单</span><button type="button" id="watchlist-close">关闭</button></div>
+          <div class="history-list" id="watchlist-list"></div>
+        </div>
+      </div>
       <div class="history-sheet" id="watch-history" role="dialog" aria-modal="true" aria-labelledby="watch-history-title" hidden>
         <div class="history-panel">
           <div class="history-head"><span id="watch-history-title">已看历史 · 手动标记看完的视频</span><button type="button" id="watch-history-close">关闭</button></div>
@@ -1826,6 +1839,7 @@
         if (event.key !== 'Escape') return;
         historySheet.hidden = true;
         addSheet.hidden = true;
+        watchlistSheet.hidden = true;
         setMenuOpen(false);
         if (!searchBar.hidden) closeSearch();
       });
@@ -1850,6 +1864,142 @@
       document.getElementById('search-button').addEventListener('click', openSearch);
       document.getElementById('search-close').addEventListener('click', closeSearch);
       appearanceSearch.addEventListener('keydown', event => { if (event.key === 'Enter') appearanceSearch.blur(); });
+
+      // 追踪名单: docs/watchlist-v1.json (built from docs/watchlist-v1.md by tools/build-watchlist-json.mjs).
+      // Tapping a name lists every item in the three tabs that mentions it, newest first.
+      const watchlistSheet = document.getElementById('watchlist');
+      const watchlistList = document.getElementById('watchlist-list');
+      const watchlistTitle = document.getElementById('watchlist-title');
+      const watchlistBack = document.getElementById('watchlist-back');
+      let watchlistData = null;
+      let feedEntries = null;
+
+      const loadWatchlist = async () => {
+        if (!watchlistData) {
+          const response = await fetch('../docs/watchlist-v1.json', { cache: 'no-store' });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          watchlistData = await response.json();
+          document.getElementById('watchlist-count').textContent = String(watchlistData.groups.reduce((sum, group) => sum + group.items.length, 0));
+        }
+        return watchlistData;
+      };
+
+      // Every card and brief, read from the page (both video tabs and 简报 are loaded first).
+      const loadFeedEntries = async () => {
+        await Promise.all([loadAppearances(), loadBriefs()]);
+        const dateOf = element => element.querySelector('.pub-date')?.textContent.match(/\d{4}-\d{2}-\d{2}/)?.[0] || '';
+        const cards = [...document.querySelectorAll('#feed-curated .card, #feed-appearances .card')].map(element => ({
+          element,
+          tab: element.closest('#feed-curated') ? '精选视频' : '演讲 & Podcast',
+          title: element.querySelector('h1')?.textContent || '',
+          text: element.textContent,
+          date: dateOf(element),
+          url: element.querySelector('.actions a')?.href || ''
+        }));
+        const briefs = [...briefList.querySelectorAll('.brief')].map(element => ({
+          element, tab: '简报', title: element.querySelector('h2')?.textContent || '', text: element.textContent, date: dateOf(element), url: ''
+        }));
+        feedEntries = [...cards, ...briefs];
+        return feedEntries;
+      };
+
+      // Latin names match as whole words and case-sensitively ("Meta" not "metaverse"); Chinese names match anywhere.
+      const escapeRegExp = text => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const entityPattern = entity => new RegExp(entity.aliases.map(alias => /[一-鿿]/.test(alias)
+        ? escapeRegExp(alias) : `(?<![\\w])${escapeRegExp(alias)}(?![\\w])`).join('|'));
+      const entriesFor = entity => {
+        const pattern = entityPattern(entity);
+        return (feedEntries || []).filter(entry => pattern.test(entry.text)).sort(newestFirst(entry => entry.date));
+      };
+
+      const watchRow = (title, meta, right, onClick) => {
+        const row = document.createElement('button');
+        row.type = 'button';
+        row.className = 'history-item watch-row';
+        const text = document.createElement('div');
+        text.className = 'history-item-text';
+        makeText(text, 'div', 'history-item-title', title);
+        if (meta) makeText(text, 'div', 'history-item-meta', meta);
+        row.appendChild(text);
+        if (right) makeText(row, 'span', right.className, right.text);
+        row.addEventListener('click', onClick);
+        watchlistList.appendChild(row);
+        return row;
+      };
+
+      const renderWatchlist = () => {
+        watchlistBack.hidden = true;
+        watchlistTitle.textContent = '追踪名单 · 点名字看最新内容';
+        watchlistList.replaceChildren();
+        watchlistData.groups.forEach(group => {
+          makeText(watchlistList, 'div', 'add-section', `${group.title} · ${group.items.length}`);
+          group.items.forEach(entity => {
+            const count = feedEntries ? entriesFor(entity).length : null;
+            watchRow(entity.name, entity.note || '', { className: count ? 'menu-count' : 'watch-row-arrow', text: count ? `${count} 条` : '›' },
+              () => renderEntity(entity));
+          });
+        });
+      };
+
+      // Shows the card in its tab; a watched card is hidden in the feed, so it opens on YouTube or the source instead.
+      const showEntry = entry => {
+        const watched = entry.element.classList.contains('is-watched');
+        if (watched && entry.url) { window.open(entry.url, '_blank', 'noopener'); return; }
+        watchlistSheet.hidden = true;
+        if (!searchBar.hidden) closeSearch();
+        const panel = entry.element.closest('.feed-panel');
+        document.querySelector(`[data-feed-target="${panel.id}"]`).click();
+        setTimeout(() => entry.element.scrollIntoView({ block: 'start' }), 60);
+      };
+
+      const renderEntity = entity => {
+        watchlistBack.hidden = false;
+        watchlistTitle.textContent = entity.name;
+        watchlistList.replaceChildren();
+        watchlistList.scrollTop = 0;
+        if (entity.note) makeText(watchlistList, 'div', 'history-empty', entity.note);
+        if (entity.url) watchRow('官方页面', new URL(entity.url).hostname, { className: 'watch-row-arrow', text: '↗' },
+          () => window.open(entity.url, '_blank', 'noopener'));
+        if (!feedEntries) {
+          makeText(watchlistList, 'div', 'history-empty', '正在读取信息流…');
+          return;
+        }
+        const entries = entriesFor(entity);
+        makeText(watchlistList, 'div', 'add-section', `信息流里的内容 · ${entries.length}`);
+        if (!entries.length) {
+          makeText(watchlistList, 'div', 'history-empty', `现在信息流里还没有提到 ${entity.name} 的内容。每天的自动更新发现新视频后会出现在这里。`);
+          return;
+        }
+        entries.forEach(entry => {
+          const watched = entry.element.classList.contains('is-watched');
+          const meta = [entry.date ? `发布 ${entry.date}` : '', entry.tab, watched ? '已看' : ''].filter(Boolean).join(' · ');
+          watchRow(entry.title, meta, { className: 'watch-row-arrow', text: watched && entry.url ? '↗' : '›' }, () => showEntry(entry));
+        });
+      };
+
+      document.getElementById('watchlist-button').addEventListener('click', async () => {
+        watchlistSheet.hidden = false;
+        watchlistList.replaceChildren();
+        try {
+          await loadWatchlist();
+        } catch {
+          makeText(watchlistList, 'div', 'history-empty', '追踪名单暂时无法加载，请稍后再试。');
+          return;
+        }
+        renderWatchlist();
+        await loadFeedEntries();
+        // Refresh with counts, unless a name was opened meanwhile (then refresh that view).
+        if (watchlistSheet.hidden) return;
+        if (watchlistBack.hidden) renderWatchlist();
+        else {
+          const name = watchlistTitle.textContent;
+          const entity = watchlistData.groups.flatMap(group => group.items).find(item => item.name === name);
+          if (entity) renderEntity(entity);
+        }
+      });
+      watchlistBack.addEventListener('click', renderWatchlist);
+      document.getElementById('watchlist-close').addEventListener('click', () => { watchlistSheet.hidden = true; });
+      watchlistSheet.addEventListener('click', event => { if (event.target === watchlistSheet) watchlistSheet.hidden = true; });
 
       // Olympic AI found by the daily job joins 精选视频; then hand-added videos, which use its publish dates.
       const addedVideosReady = autoFeedPromise.then(async feed => {

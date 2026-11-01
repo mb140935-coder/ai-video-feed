@@ -1,0 +1,844 @@
+{
+ "reviewed": "2026-10-31",
+ "groups": [
+  {
+   "title": "重点人物",
+   "people": true,
+   "items": [
+    {
+     "name": "Sam Altman",
+     "url": "https://forum.openai.com/public/videos/event-replay-sam-altman-on-building-the-future-of-ai-2026-04-06",
+     "note": "OpenAI CEO",
+     "aliases": [
+      "Sam Altman"
+     ]
+    },
+    {
+     "name": "Greg Brockman",
+     "url": "https://openai.com/contributions/gpt-4/",
+     "note": "OpenAI 联合创始人、总裁",
+     "aliases": [
+      "Greg Brockman"
+     ]
+    },
+    {
+     "name": "Mira Murati",
+     "url": "https://thinkingmachines.ai/",
+     "note": "Thinking Machines Lab 创始人，前 OpenAI CTO",
+     "aliases": [
+      "Mira Murati"
+     ]
+    },
+    {
+     "name": "Dario Amodei",
+     "url": "https://www.anthropic.com/company/leadership",
+     "note": "Anthropic CEO",
+     "aliases": [
+      "Dario Amodei"
+     ]
+    },
+    {
+     "name": "Daniela Amodei",
+     "url": "https://www.anthropic.com/company/leadership",
+     "note": "Anthropic 总裁",
+     "aliases": [
+      "Daniela Amodei"
+     ]
+    },
+    {
+     "name": "Demis Hassabis",
+     "url": "https://deepmind.google/about/",
+     "note": "Google DeepMind CEO",
+     "aliases": [
+      "Demis Hassabis"
+     ]
+    },
+    {
+     "name": "Jeff Dean",
+     "url": "https://blog.google/authors/jeff-dean/",
+     "note": "Google 首席科学家",
+     "aliases": [
+      "Jeff Dean"
+     ]
+    },
+    {
+     "name": "Sundar Pichai",
+     "url": "https://blog.google/authors/sundar-pichai/",
+     "note": "Google / Alphabet CEO",
+     "aliases": [
+      "Sundar Pichai"
+     ]
+    },
+    {
+     "name": "Mark Zuckerberg",
+     "url": "https://investor.atmeta.com/leadership-and-governance/default.aspx?section=management",
+     "note": "Meta CEO",
+     "aliases": [
+      "Mark Zuckerberg"
+     ]
+    },
+    {
+     "name": "Yann LeCun",
+     "url": "https://yann.lecun.com/",
+     "note": "AI 先驱，前 Meta 首席 AI 科学家",
+     "aliases": [
+      "Yann LeCun"
+     ]
+    },
+    {
+     "name": "Alexandr Wang",
+     "url": "https://scale.com/blog/author/alexandr-wang",
+     "note": "Scale AI 创始人，现负责 Meta 超级智能实验室",
+     "aliases": [
+      "Alexandr Wang"
+     ]
+    },
+    {
+     "name": "Jensen Huang",
+     "url": "https://www.nvidia.com/en-us/about-nvidia/board-of-directors/jensen-huang/",
+     "note": "黄仁勋 · NVIDIA CEO",
+     "aliases": [
+      "Jensen Huang",
+      "黄仁勋"
+     ]
+    },
+    {
+     "name": "Lisa Su",
+     "url": "https://www.amd.com/en/corporate/leadership/lisa-su.html",
+     "note": "苏姿丰 · AMD CEO",
+     "aliases": [
+      "Lisa Su",
+      "苏姿丰"
+     ]
+    },
+    {
+     "name": "Satya Nadella",
+     "url": "https://news.microsoft.com/source/leadership/",
+     "note": "Microsoft CEO",
+     "aliases": [
+      "Satya Nadella"
+     ]
+    },
+    {
+     "name": "Mustafa Suleyman",
+     "url": "https://mustafa-suleyman.ai/",
+     "note": "Microsoft AI CEO，DeepMind 联合创始人",
+     "aliases": [
+      "Mustafa Suleyman"
+     ]
+    },
+    {
+     "name": "Elon Musk",
+     "url": "https://x.ai/company",
+     "note": "xAI / Tesla",
+     "aliases": [
+      "Elon Musk",
+      "马斯克"
+     ]
+    },
+    {
+     "name": "Noam Shazeer",
+     "url": "https://deepmind.google/research/",
+     "note": "Gemini 联合负责人，Transformer 作者之一",
+     "aliases": [
+      "Noam Shazeer"
+     ]
+    },
+    {
+     "name": "Arthur Mensch",
+     "url": "https://mistral.ai/about/",
+     "note": "Mistral AI CEO",
+     "aliases": [
+      "Arthur Mensch"
+     ]
+    },
+    {
+     "name": "Liang Wenfeng",
+     "url": "https://www.deepseek.com/en/news/",
+     "note": "梁文锋 · DeepSeek 创始人",
+     "aliases": [
+      "Liang Wenfeng",
+      "梁文锋"
+     ]
+    },
+    {
+     "name": "Wang Huiwen",
+     "url": "https://www.meituan.com/en-US/about",
+     "note": "王慧文 · 美团联合创始人",
+     "aliases": [
+      "Wang Huiwen",
+      "王慧文"
+     ]
+    },
+    {
+     "name": "Kai-Fu Lee",
+     "url": "https://www.sinovationventures.com/portfolio/items/kaifulee",
+     "note": "李开复 · 创新工场、零一万物",
+     "aliases": [
+      "Kai-Fu Lee",
+      "李开复"
+     ]
+    },
+    {
+     "name": "Zhou Zhihua",
+     "url": "https://higher.smartedu.cn/course/agc3/6a1503e1b4c297ec21f59986",
+     "note": "周志华 · 南京大学",
+     "aliases": [
+      "Zhou Zhihua",
+      "周志华"
+     ]
+    },
+    {
+     "name": "Kaiming He",
+     "url": "https://people.csail.mit.edu/kaiming/",
+     "note": "何恺明 · MIT",
+     "aliases": [
+      "Kaiming He",
+      "何恺明"
+     ]
+    },
+    {
+     "name": "Fei-Fei Li",
+     "url": "https://profiles.stanford.edu/fei-fei-li",
+     "note": "李飞飞 · 斯坦福、World Labs",
+     "aliases": [
+      "Fei-Fei Li",
+      "李飞飞"
+     ]
+    },
+    {
+     "name": "Andrej Karpathy",
+     "url": "https://karpathy.ai/",
+     "note": "OpenAI 联合创始人，前 Tesla AI 负责人",
+     "aliases": [
+      "Andrej Karpathy"
+     ]
+    },
+    {
+     "name": "Jim Fan",
+     "url": "https://research.nvidia.com/labs/lpr/author/jim-fan/",
+     "note": "NVIDIA 机器人与具身智能研究",
+     "aliases": [
+      "Jim Fan"
+     ]
+    },
+    {
+     "name": "François Chollet",
+     "url": "https://fchollet.com/",
+     "note": "Keras 作者，ARC Prize",
+     "aliases": [
+      "François Chollet"
+     ]
+    },
+    {
+     "name": "Noam Brown",
+     "url": "https://noambrown.com/",
+     "note": "OpenAI 推理模型研究员",
+     "aliases": [
+      "Noam Brown"
+     ]
+    },
+    {
+     "name": "Jerry Tworek",
+     "url": "https://cdn.openai.com/pdf/5a12a3bc-96b7-4e07-9386-db6ee5bb2ed9/using-a-gpt-5-driven-autonomous-lab-to-optimize-the-cost-and-titer-of-cell-free-protein-synthesis.pdf",
+     "note": "OpenAI 研究员",
+     "aliases": [
+      "Jerry Tworek"
+     ]
+    },
+    {
+     "name": "Aidan Gomez",
+     "url": "https://cohere.com/about",
+     "note": "Cohere CEO，Transformer 作者之一",
+     "aliases": [
+      "Aidan Gomez"
+     ]
+    },
+    {
+     "name": "Clement Delangue",
+     "url": "https://huggingface.co/cdelangue",
+     "note": "Hugging Face CEO",
+     "aliases": [
+      "Clement Delangue"
+     ]
+    },
+    {
+     "name": "Alejandro Merino-Madrid",
+     "url": "https://www.olympics.com/ioc/news/ioc-launches-trustworthy-ai-framework-to-support-responsible-innovation-across-the-olympic-movement",
+     "note": "国际奥委会（IOC）AI 负责人",
+     "aliases": [
+      "Alejandro Merino-Madrid"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "前沿实验室 · 大模型公司",
+   "items": [
+    {
+     "name": "OpenAI",
+     "url": "https://openai.com/news/",
+     "aliases": [
+      "OpenAI",
+      "ChatGPT"
+     ]
+    },
+    {
+     "name": "Anthropic",
+     "url": "https://www.anthropic.com/news",
+     "aliases": [
+      "Anthropic",
+      "Claude"
+     ]
+    },
+    {
+     "name": "Google DeepMind",
+     "url": "https://deepmind.google/research/",
+     "aliases": [
+      "Google DeepMind",
+      "DeepMind",
+      "Gemini"
+     ]
+    },
+    {
+     "name": "Meta GenAI / FAIR",
+     "url": "https://ai.meta.com/blog/",
+     "aliases": [
+      "Meta GenAI",
+      "FAIR",
+      "Meta AI",
+      "Meta"
+     ]
+    },
+    {
+     "name": "DeepSeek",
+     "url": "https://www.deepseek.com/en/news/",
+     "aliases": [
+      "DeepSeek",
+      "深度求索"
+     ]
+    },
+    {
+     "name": "Mistral AI",
+     "url": "https://mistral.ai/news/",
+     "aliases": [
+      "Mistral AI",
+      "Mistral"
+     ]
+    },
+    {
+     "name": "Alibaba Qwen",
+     "url": "https://qwen.ai/blog",
+     "aliases": [
+      "Alibaba Qwen",
+      "Qwen",
+      "通义",
+      "阿里"
+     ]
+    },
+    {
+     "name": "Google Research",
+     "url": "https://research.google/",
+     "aliases": [
+      "Google Research"
+     ]
+    },
+    {
+     "name": "NVIDIA Research",
+     "url": "https://research.nvidia.com/",
+     "aliases": [
+      "NVIDIA Research",
+      "NVIDIA",
+      "英伟达"
+     ]
+    },
+    {
+     "name": "Hugging Face",
+     "url": "https://huggingface.co/blog",
+     "aliases": [
+      "Hugging Face"
+     ]
+    },
+    {
+     "name": "AI2",
+     "url": "https://allenai.org/blog",
+     "aliases": [
+      "AI2"
+     ]
+    },
+    {
+     "name": "Cohere",
+     "url": "https://cohere.com/blog",
+     "aliases": [
+      "Cohere"
+     ]
+    },
+    {
+     "name": "xAI",
+     "url": "https://x.ai/news",
+     "aliases": [
+      "xAI",
+      "Grok"
+     ]
+    },
+    {
+     "name": "Microsoft AI",
+     "url": "https://blogs.microsoft.com/",
+     "aliases": [
+      "Microsoft AI",
+      "Microsoft"
+     ]
+    },
+    {
+     "name": "Amazon AGI / AWS AI Labs",
+     "url": "https://www.amazon.science/blog/",
+     "aliases": [
+      "Amazon AGI",
+      "AWS AI Labs",
+      "Amazon"
+     ]
+    },
+    {
+     "name": "Apple ML Research",
+     "url": "https://machinelearning.apple.com/research/",
+     "aliases": [
+      "Apple ML Research",
+      "Apple"
+     ]
+    },
+    {
+     "name": "Tencent Hunyuan",
+     "url": "https://github.com/Tencent-Hunyuan",
+     "aliases": [
+      "Tencent Hunyuan",
+      "Hunyuan",
+      "混元",
+      "腾讯"
+     ]
+    },
+    {
+     "name": "Baidu ERNIE",
+     "url": "https://ernie.baidu.com/blog/",
+     "aliases": [
+      "Baidu ERNIE",
+      "ERNIE",
+      "文心",
+      "百度"
+     ]
+    },
+    {
+     "name": "Z.ai / Zhipu AI",
+     "url": "https://www.zhipuai.cn/en/research",
+     "aliases": [
+      "Z.ai",
+      "Zhipu AI",
+      "智谱",
+      "GLM"
+     ]
+    },
+    {
+     "name": "Moonshot AI / Kimi",
+     "url": "https://www.kimi.com/en/blog/",
+     "aliases": [
+      "Moonshot AI",
+      "Kimi",
+      "月之暗面"
+     ]
+    },
+    {
+     "name": "MiniMax",
+     "url": "https://www.minimax.io/blog",
+     "aliases": [
+      "MiniMax",
+      "海螺"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "AI 产品与应用",
+   "items": [
+    {
+     "name": "Perplexity",
+     "url": "https://www.perplexity.ai/en-GB/changelog",
+     "aliases": [
+      "Perplexity"
+     ]
+    },
+    {
+     "name": "Cursor / Anysphere",
+     "url": "https://cursor.com/blog",
+     "aliases": [
+      "Cursor",
+      "Anysphere"
+     ]
+    },
+    {
+     "name": "Lovable",
+     "url": "https://lovable.dev/blog",
+     "aliases": [
+      "Lovable"
+     ]
+    },
+    {
+     "name": "Replit",
+     "url": "https://replit.com/blog",
+     "aliases": [
+      "Replit"
+     ]
+    },
+    {
+     "name": "GitHub / Microsoft",
+     "url": "https://github.blog/latest/",
+     "aliases": [
+      "GitHub"
+     ]
+    },
+    {
+     "name": "Salesforce",
+     "url": "https://www.salesforce.com/blog/category/agentforce/",
+     "aliases": [
+      "Salesforce"
+     ]
+    },
+    {
+     "name": "Adobe",
+     "url": "https://news.adobe.com/news/",
+     "aliases": [
+      "Adobe"
+     ]
+    },
+    {
+     "name": "Canva",
+     "url": "https://www.canva.com/newsroom/news/",
+     "aliases": [
+      "Canva"
+     ]
+    },
+    {
+     "name": "Notion",
+     "url": "https://www.notion.com/en-us/blog",
+     "aliases": [
+      "Notion"
+     ]
+    },
+    {
+     "name": "Glean",
+     "url": "https://www.glean.com/blog",
+     "aliases": [
+      "Glean"
+     ]
+    },
+    {
+     "name": "Harvey",
+     "url": "https://www.harvey.ai/blog",
+     "aliases": [
+      "Harvey"
+     ]
+    },
+    {
+     "name": "Sierra",
+     "url": "https://sierra.ai/uk/blog",
+     "aliases": [
+      "Sierra"
+     ]
+    },
+    {
+     "name": "Databricks",
+     "url": "https://www.databricks.com/blog",
+     "aliases": [
+      "Databricks"
+     ]
+    },
+    {
+     "name": "Snowflake",
+     "url": "https://www.snowflake.com/en/blog/",
+     "aliases": [
+      "Snowflake"
+     ]
+    },
+    {
+     "name": "Scale AI",
+     "url": "https://scale.com/blog",
+     "aliases": [
+      "Scale AI"
+     ]
+    },
+    {
+     "name": "Dataiku",
+     "url": "https://www.dataiku.com/blog",
+     "aliases": [
+      "Dataiku"
+     ]
+    },
+    {
+     "name": "Palantir",
+     "url": "https://www.palantir.com/newsroom/",
+     "aliases": [
+      "Palantir"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "算力 · 芯片 · 云",
+   "items": [
+    {
+     "name": "AMD",
+     "url": "https://ir.amd.com/news-events/press-releases",
+     "aliases": [
+      "AMD"
+     ]
+    },
+    {
+     "name": "Google Cloud / TPU",
+     "url": "https://docs.cloud.google.com/tpu/docs/release-notes",
+     "aliases": [
+      "Google Cloud"
+     ]
+    },
+    {
+     "name": "Microsoft Azure",
+     "url": "https://azure.microsoft.com/en-us/blog/",
+     "aliases": [
+      "Microsoft Azure"
+     ]
+    },
+    {
+     "name": "AWS",
+     "url": "https://aws.amazon.com/blogs/machine-learning/",
+     "aliases": [
+      "AWS"
+     ]
+    },
+    {
+     "name": "CoreWeave",
+     "url": "https://www.coreweave.com/newsroom",
+     "aliases": [
+      "CoreWeave"
+     ]
+    },
+    {
+     "name": "Cerebras",
+     "url": "https://www.cerebras.ai/blog",
+     "aliases": [
+      "Cerebras"
+     ]
+    },
+    {
+     "name": "Groq",
+     "url": "https://groq.com/blog",
+     "aliases": [
+      "Groq"
+     ]
+    },
+    {
+     "name": "Tenstorrent",
+     "url": "https://tenstorrent.com/newsroom/all",
+     "aliases": [
+      "Tenstorrent"
+     ]
+    },
+    {
+     "name": "Arista Networks",
+     "url": "https://blogs.arista.com/blog",
+     "aliases": [
+      "Arista Networks"
+     ]
+    },
+    {
+     "name": "Broadcom",
+     "url": "https://www.broadcom.com/company/news",
+     "aliases": [
+      "Broadcom"
+     ]
+    },
+    {
+     "name": "TSMC",
+     "url": "https://pr.tsmc.com/english/latest-news",
+     "aliases": [
+      "TSMC"
+     ]
+    },
+    {
+     "name": "SK hynix",
+     "url": "https://news.skhynix.com/en/",
+     "aliases": [
+      "SK hynix"
+     ]
+    },
+    {
+     "name": "Samsung Semiconductor",
+     "url": "https://semiconductor.samsung.com/news-events/news/",
+     "aliases": [
+      "Samsung Semiconductor"
+     ]
+    },
+    {
+     "name": "Equinix",
+     "url": "https://blog.equinix.com/",
+     "aliases": [
+      "Equinix"
+     ]
+    },
+    {
+     "name": "Lambda",
+     "url": "https://lambda.ai/blog",
+     "aliases": [
+      "Lambda"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "机器人 · 自动驾驶",
+   "items": [
+    {
+     "name": "Tesla",
+     "url": "https://www.tesla.com/AI",
+     "aliases": [
+      "Tesla"
+     ]
+    },
+    {
+     "name": "Waymo",
+     "url": "https://waymo.com/blog/",
+     "aliases": [
+      "Waymo"
+     ]
+    },
+    {
+     "name": "Figure AI",
+     "url": "https://www.figure.ai/news",
+     "aliases": [
+      "Figure AI"
+     ]
+    },
+    {
+     "name": "1X",
+     "url": "https://www.1x.tech/",
+     "aliases": [
+      "1X"
+     ]
+    },
+    {
+     "name": "Physical Intelligence",
+     "url": "https://www.pi.website/",
+     "aliases": [
+      "Physical Intelligence"
+     ]
+    },
+    {
+     "name": "Skild AI",
+     "url": "https://skild.ai/blogs",
+     "aliases": [
+      "Skild AI"
+     ]
+    },
+    {
+     "name": "Sanctuary AI",
+     "url": "https://sanctuary.ai/news/",
+     "aliases": [
+      "Sanctuary AI"
+     ]
+    },
+    {
+     "name": "Agility Robotics",
+     "url": "https://www.agilityrobotics.com/latest-press",
+     "aliases": [
+      "Agility Robotics"
+     ]
+    },
+    {
+     "name": "Boston Dynamics",
+     "url": "https://bostondynamics.com/news",
+     "aliases": [
+      "Boston Dynamics"
+     ]
+    },
+    {
+     "name": "Anduril",
+     "url": "https://www.anduril.com/mission",
+     "aliases": [
+      "Anduril"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "语音 · 视频 · 创作",
+   "items": [
+    {
+     "name": "ElevenLabs",
+     "url": "https://elevenlabs.io/blog",
+     "aliases": [
+      "ElevenLabs"
+     ]
+    },
+    {
+     "name": "Runway",
+     "url": "https://runway.com/blog",
+     "aliases": [
+      "Runway"
+     ]
+    },
+    {
+     "name": "Pika",
+     "url": "https://pika.art/blog",
+     "aliases": [
+      "Pika"
+     ]
+    },
+    {
+     "name": "Suno",
+     "url": "https://suno.com/blog",
+     "aliases": [
+      "Suno"
+     ]
+    },
+    {
+     "name": "Udio",
+     "url": "https://www.udio.com/blog",
+     "aliases": [
+      "Udio"
+     ]
+    },
+    {
+     "name": "Luma AI",
+     "url": "https://lumalabs.ai/news",
+     "aliases": [
+      "Luma AI"
+     ]
+    },
+    {
+     "name": "Synthesia",
+     "url": "https://www.synthesia.io/newsroom",
+     "aliases": [
+      "Synthesia"
+     ]
+    },
+    {
+     "name": "HeyGen",
+     "url": "https://www.heygen.com/en-us/blog",
+     "aliases": [
+      "HeyGen"
+     ]
+    },
+    {
+     "name": "Black Forest Labs",
+     "url": "https://bfl.ai/blog",
+     "aliases": [
+      "Black Forest Labs"
+     ]
+    },
+    {
+     "name": "Stability AI",
+     "url": "https://stability.ai/news-updates/",
+     "aliases": [
+      "Stability AI"
+     ]
+    }
+   ]
+  }
+ ]
+}

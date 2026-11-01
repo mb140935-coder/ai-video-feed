@@ -21,17 +21,20 @@ const SCHEMA = {
   }
 };
 
-// The newest generally available Flash model the key can use (GEMINI_MODEL overrides).
+// Free-tier quotas are per model, and the 📝 记一笔 notes (supabase/functions/video-note) use the newest Flash.
+// So news takes the newest Flash-Lite, falling back to Flash; and at most MAX_BATCHES per run, so a fallback
+// to Flash still leaves most of the day's quota to notes. GEMINI_MODEL overrides.
+const MAX_BATCHES = 5;
 const pickModel = async key => {
   if (process.env.GEMINI_MODEL) return process.env.GEMINI_MODEL;
   const response = await fetch(`${API}/models?pageSize=200`, { headers: { 'x-goog-api-key': key } });
   if (!response.ok) throw new Error(`model list HTTP ${response.status}`);
   const names = (await response.json()).models
     .filter(model => model.supportedGenerationMethods?.includes('generateContent'))
-    .map(model => model.name.replace(/^models\//, ''))
-    .filter(name => /^gemini-[\d.]+-flash$/.test(name));
+    .map(model => model.name.replace(/^models\//, ''));
   const version = name => Number(name.match(/^gemini-([\d.]+)/)[1]);
-  const best = names.sort((a, b) => version(b) - version(a))[0];
+  const newest = pattern => names.filter(name => pattern.test(name)).sort((a, b) => version(b) - version(a))[0];
+  const best = newest(/^gemini-[\d.]+-flash-lite$/) || newest(/^gemini-[\d.]+-flash$/);
   if (!best) throw new Error('no Gemini Flash model available');
   return best;
 };
@@ -68,7 +71,7 @@ export const summarizeNews = async (stories, report = []) => {
     return;
   }
   let done = 0;
-  for (let start = 0; start < pending.length; start += BATCH) {
+  for (let start = 0; start < Math.min(pending.length, MAX_BATCHES * BATCH); start += BATCH) {
     const batch = pending.slice(start, start + BATCH);
     try {
       for (const { id, summary, meaning } of await summarizeBatch(key, model, batch)) {
@@ -80,7 +83,7 @@ export const summarizeNews = async (stories, report = []) => {
       // Out of quota for today: the rest wait for tomorrow's run.
       if (/HTTP 429/.test(error.message)) break;
     }
-    if (start + BATCH < pending.length) await new Promise(resolve => setTimeout(resolve, PAUSE_MS));
+    if (start + BATCH < Math.min(pending.length, MAX_BATCHES * BATCH)) await new Promise(resolve => setTimeout(resolve, PAUSE_MS));
   }
   report.push(`news summaries (${model}): ${done} of ${pending.length} written`);
 };

@@ -141,19 +141,33 @@ const youtubeDetails = async ids => {
   return details;
 };
 
-// Long videos (over 20 minutes) from the last week that name the person in the title, or in the description
-// when the title reads like a talk. Commentary channels' clickbait titles are left out.
-const CLICKBAIT = /\b(just|shocking|stunning|insane|reacts?|reaction|explained|breakdown|leaked|exposed|warning|revealed?|reveals)\b|!/i;
+// Long videos (over 20 minutes) from the last week whose title reads like the person speaking: an interview,
+// a talk, "Name: ...", "Name on ...", "with Name". Commentary, biographies, book summaries and re-uploads with
+// added subtitles are left out, and so are channels under MIN_SUBSCRIBERS (mostly re-upload channels).
+const CLICKBAIT = /\b(just|shocking|stunning|insane|reacts?|reaction|explained|breakdown|leaked|exposed|warning|revealed?|reveals|stupid|scumbag|hated?|disaster|scheme|lessons?|life|book|audiobook|summary|story|history|documentary|deposition|uncut|biography|the man who|price of|wrong|fight)\b|!|#/i;
+const REPOST = /字幕|字卡|重點|重点|整理|解说|解說|翻译|翻譯|講演|対談|一句英文|[぀-ヿ]/;
+const MIN_SUBSCRIBERS = 20000;
+const escapeRegExp = text => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const speaking = (title, person) => {
+  const names = person.aliases.map(escapeRegExp).join('|');
+  const speaker = new RegExp(`(${names})\\s*(:|：|,|\\son\\s|\\sand\\s|\\s&\\s|\\s(speaks?|says|talks?|joins|sits down))|(with|&|and|ft\\.?|feat\\.?)\\s+(${names})`, 'i');
+  const chinese = person.aliases.some(alias => /[一-鿿]/.test(alias));
+  return new RegExp(names, 'i').test(title) && !new RegExp(`\\bby\\s+(${names})`, 'i').test(title) && !EXCLUDE.test(title) && !CLICKBAIT.test(title)
+    && (chinese || !REPOST.test(title) && !/[一-鿿]/.test(title))
+    && (speaker.test(title) || TALK.test(title));
+};
+const subscriberCounts = async channelIds => {
+  if (!channelIds.length) return {};
+  const data = JSON.parse(await fetchText(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelIds.join(',')}&key=${YOUTUBE_API_KEY}`));
+  return Object.fromEntries((data.items || []).map(channel => [channel.id, Number(channel.statistics?.subscriberCount || 0)]));
+};
 const searchPerson = async (person, since) => {
   const query = encodeURIComponent(`"${person.name}"`);
   const data = JSON.parse(await fetchText(`https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoDuration=long&order=relevance&maxResults=10&publishedAfter=${since}&q=${query}&key=${YOUTUBE_API_KEY}`));
-  const named = new RegExp(person.aliases.map(alias => alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'i');
-  return (data.items || []).map(result => ({ id: result.id?.videoId, ...result.snippet })).filter(video => {
-    const title = decode(video.title || '');
-    const text = `${title}\n${video.description || ''}`;
-    return video.id && !EXCLUDE.test(title) && !CLICKBAIT.test(title)
-      && (named.test(title) || (named.test(video.description || '') && TALK.test(text)));
-  }).map(video => {
+  const candidates = (data.items || []).map(result => ({ id: result.id?.videoId, ...result.snippet }))
+    .filter(video => video.id && speaking(decode(video.title || ''), person));
+  const subscribers = await subscriberCounts([...new Set(candidates.map(video => video.channelId))]);
+  return candidates.filter(video => subscribers[video.channelId] >= MIN_SUBSCRIBERS).map(video => {
     const title = decode(video.title);
     const text = `${title}\n${video.description || ''}`;
     const olympicAi = OLYMPIC.test(text) && AI.test(text);
@@ -238,12 +252,22 @@ for (const row of followedRows) {
 const followedKeys = new Set(followedRows.map(row => row.key));
 const allSources = [...SOURCES.filter(source => !source.followKey || followedKeys.has(source.followKey)), ...userSources];
 
+let watchlist = null;
+try {
+  watchlist = JSON.parse(fs.readFileSync(new URL('../docs/watchlist-v1.json', import.meta.url), 'utf8'));
+} catch (error) {
+  report.push(`watchlist: not read (${error.message})`);
+}
+const people = watchlist?.groups.find(group => group.people)?.items || [];
 const sourceFor = item => allSources.find(source => source.channel === item.channelId || (!source.key && source.name === item.channel));
 // Earlier items stay only while they still pass the current rules (and their channel is still followed).
 const items = new Map((previous.items || [])
   .filter(item => {
-    // Found by the person search: kept until it ages out, whatever channel it is on.
-    if (item.via === 'person') return Date.parse(item.published) >= Date.now() - MAX_AGE_DAYS * 86400000;
+    // Found by the person search: kept until it ages out, whatever channel it is on, while its title passes.
+    if (item.via === 'person') {
+      const person = people.find(entry => entry.name === item.tags?.[1]);
+      return person && speaking(item.title, person) && Date.parse(item.published) >= Date.now() - MAX_AGE_DAYS * 86400000;
+    }
     const source = sourceFor(item);
     return source && titleWanted(source, item.title);
   })
@@ -263,14 +287,7 @@ for (const source of allSources) {
 }
 
 // Watchlist people on any channel (their talks and podcast guest spots), via YouTube search; needs the API key.
-let watchlist = null;
-try {
-  watchlist = JSON.parse(fs.readFileSync(new URL('../docs/watchlist-v1.json', import.meta.url), 'utf8'));
-} catch (error) {
-  report.push(`watchlist: not read (${error.message})`);
-}
 if (YOUTUBE_API_KEY && watchlist) {
-  const people = watchlist.groups.find(group => group.people)?.items || [];
   const since = new Date(Date.now() - PERSON_SEARCH_DAYS * 86400000).toISOString();
   for (const person of people) {
     try {

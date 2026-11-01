@@ -2,7 +2,7 @@
   "id": "/ai-video-feed/",
   "name": "AI Tiktok",
   "short_name": "AI Tiktok",
-  "start_url": "prototypes/video-swipe-feed-preview.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#090a0d",

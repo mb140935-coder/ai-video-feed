@@ -535,7 +535,8 @@
       const pauseAllExcept = card => {
         players.forEach((player, playerId) => {
           const frame = document.getElementById(playerId);
-          if (!frame || frame.closest('.card') !== card) player.pauseVideo();
+          // Players still loading have no pauseVideo yet; calling it would abort tab switches.
+          if (!frame || frame.closest('.card') !== card) player.pauseVideo?.();
         });
         document.querySelectorAll('.appearance-card').forEach(item => {
           if (item !== card) stopCardMedia(item);
@@ -984,6 +985,23 @@
         alejandro_merino_madrid: '围绕奥林匹克运动的 AI 议程，重点看 AI 如何服务运动员、赛事组织和观众，同时兼顾公平、数据保护与信任。'
       };
 
+      // Per-episode notes for followed channels, keyed by media key; takes precedence over the per-person text above.
+      // english: the channel's separately uploaded English version of the same episode.
+      const xiaojunHost = '主持人张小珺长期深度访谈中国与硅谷的 AI、机器人和科技创业者。';
+      const svgHost = '主持人 Marina Mogilko（Silicon Valley Girl）在硅谷做创业与职业话题，近期专注采访 AI 从业者和研究者。';
+      const episodeNotes = {
+        'youtube:vhKLKoKhI0s': { english: '86wFCPat2GY', person: `钱程（David Qian）是科沃斯机器人 CEO，1990 年生，曾是 A 股最年轻上市公司 CEO。${xiaojunHost}`, highlight: '主线是企二代接班：科沃斯 6 个月拿下德国 30% 市场份额、当上 CEO 后的反思、父子传承。AI 只占一部分，集中在 01:14:45“今天 AI 还没到抢肉的状态”一节。' },
+        'youtube:V0IB8iMzrLQ': { english: 'iDaxRNIddME', person: `Lindon Gao 是 Dyna Robotics 创始人兼 CEO，美国连续创业者。${xiaojunHost}`, highlight: 'Dyna 走“product-research”路线：以具体工作流为最小单元、从真实任务反过来驱动模型预训练，和 Physical Intelligence 从通用机器人大脑出发的路线形成对照；也谈中国机器人产业和创业心态。' },
+        'youtube:69iJSe2n3ls': { english: 'E7qB_p1D0Xk', person: `曾鸣是战略学者，曾任阿里巴巴集团总参谋长，参与创建长江商学院和湖畔。${xiaojunHost}`, highlight: 'AI 产业化三阶段（基础设施 → 海量应用 → 原生应用）；模型公司像当年的 AOL、本质是未来的 AI 云公司；判断 OpenAI、Anthropic 大概率不是原生应用阶段的大赢家，未来三年可能出现 Agent 入口。' },
+        'youtube:axFwKz1X0is': { person: `孙宇涛是清华大学计算机系博士候选人，研究大模型架构与预训练。${xiaojunHost}`, highlight: '学习型节目：逐节领读 Kimi K3 技术报告（2.8T 总参数、全量开源的 MoE），讲线性注意力的演进、多教师蒸馏等，并串讲十多篇相关论文。技术密度高、语速快。' },
+        'youtube:UTDalAEU274': { person: `苏庭灏是 17 岁高二学生，独立做预训练研究，关于 Attention 机制的论文被 ICML 2026 主会接收。${xiaojunHost}`, highlight: '一个高中生怎么自学 AI、独立做预训练；他眼中的模型公司、机器人公司和 AGI，以及 AI 让同学们失去“意义感”的教育变化。' },
+        'youtube:Cj_kb9nlAlE': { english: 'zawGTDLtWFY', person: `刘洺堉是 NVIDIA 研究副总裁，领导世界基座模型 Cosmos，是 NVIDIA 第一位从研究员升任副总裁的管理者。${xiaojunHost}`, highlight: 'Cosmos 3、开源世界模型和面向物理世界的 AI；黄仁勋“造市场而不是存量竞争”的理念如何影响 NVIDIA 的研究方向。约 3.5 小时长谈。' },
+        'youtube:vFOnDsy58NU': { person: `Karim Lakhani 是哈佛商学院教授，与 BCG、宝洁、H&M 合作研究 AI 如何改变工作。${svgHost}`, highlight: '人与 AI 合作的三种方式（cyborg、centaur、self-automator），以及委派方式为什么决定你能学到什么；他为什么从不接受第一个答案、怎样让 AI 挑战你的假设。' },
+        'youtube:iJfF_VC10tI': { person: `Robert Wachter 是 UCSF 医学系主任，行医 40 年，新书讲 AI 如何改变医疗。${svgHost}`, highlight: '从病人角度提问：把多年化验和基因数据交给 AI 是否明智、怎么问医疗问题才不会让聊天机器人一味附和、什么时候该关掉 App 去找医生；他认为“AI 将治愈癌症”是最被夸大的承诺之一。' },
+        'youtube:D-SVFneJ_Nk': { person: `Felix Rieseberg 在 Anthropic 负责过 Claude.ai、Cowork 和 Claude Code 桌面版的工程。${svgHost}`, highlight: '很多人给 AI 的任务已经配不上它的能力：怎样交给 AI 更大的目标、为什么“你是专家”这类提示不够、答案听起来很可信时怎样发现错误。' },
+        'youtube:Jijc0XokSpQ': { person: `James Manyika 负责 Google 的研究和实验室。${svgHost}`, highlight: '他的团队分析了数百万条真实 Gemini 对话：一份典型工作里只有约五分之一的任务用到 AI。他为什么不认同“两年内一半白领工作消失”，以及会改变他判断的三个信号。' }
+      };
+
       const getAppearanceHighlight = item => {
         if (item.person_id === 'jensen_huang' && /GTC Berlin/i.test(item.appearance_title)) {
           return '黄仁勋把 AI 工厂和智能体描述为下一阶段计算平台的核心，并展示开放模型、智能体安全架构与新一代算力基础设施。重点看 AI 如何从“回答问题”走向调用工具、执行任务，并进入机器人、工业和企业场景。';
@@ -1090,12 +1108,13 @@
         const watchKey = canonicalMediaKey(item.official_media_url) || `${canonicalMediaKey(item.official_publisher_url)}:${item.appearance_title}`;
         addWatchedButton(tags, watchKey);
         details.appendChild(tags);
+        const episode = episodeNotes[watchKey];
         makeText(details, 'h1', '', item.appearance_title);
         makeText(details, 'div', 'source', `${item.name} · ${item.publisher}`);
         makeText(details, 'div', 'person-context-label', '人物 · AI 关联');
-        makeText(details, 'p', 'person-context', personAIContext[item.person_id] || '人物背景尚待核实；这条内容先保留发布方的讲者信息和原始播放入口。');
+        makeText(details, 'p', 'person-context', episode?.person || personAIContext[item.person_id] || '人物背景尚待核实；这条内容先保留发布方的讲者信息和原始播放入口。');
         makeText(details, 'div', 'highlight-label', '内容重点');
-        makeText(details, 'p', 'highlight', getAppearanceHighlight(item));
+        makeText(details, 'p', 'highlight', episode?.highlight || getAppearanceHighlight(item));
         const stateLabel = media?.provider === 'youtube' || media?.provider === 'ted' || media?.provider === 'vimeo'
           ? '官方视频播放器 · 滑到本卡时加载；离开时停止'
           : ['spotify', 'simplecast', 'megaphone'].includes(media?.provider) ? '官方音频播放器 · 滑到本卡时加载；离开时停止'
@@ -1116,6 +1135,13 @@
             : media.provider === 'vimeo' ? 'Vimeo 原片'
             : (/podcast/i.test(item.format) ? '播放 / 收听原集' : '打开发布方页面');
           actions.appendChild(link);
+        }
+        if (episode?.english) {
+          const english = document.createElement('a');
+          english.href = `https://www.youtube.com/watch?v=${episode.english}`;
+          english.target = '_self';
+          english.textContent = '英文版';
+          actions.appendChild(english);
         }
         const save = document.createElement('button');
         save.type = 'button';

@@ -2,16 +2,56 @@
   "_comment": "文字简报条目。video_keys 列出报道同一内容的视频（与视频卡 data-watch-key 同格式）；任一视频出现在信息流里时，这条简报自动隐藏。",
   "briefs": [
     {
+      "id": "amd-acquires-world-labs",
+      "published": "2026-09-28",
+      "title": "AMD 以约 82 亿美元收购李飞飞的 World Labs，李飞飞出任 AMD 首席科学家",
+      "priority": "通用 AI 必看",
+      "tags": [
+        "Lisa Su",
+        "Fei-Fei Li",
+        "AMD",
+        "World Labs",
+        "收购"
+      ],
+      "summary": "AMD 宣布以全股票方式收购空间智能 / 世界模型公司 World Labs，估值约 82 亿美元。交易完成后李飞飞任 AMD 执行副总裁兼首席科学家，直接向 Lisa Su 汇报；联合创始人 Justin Johnson、Ben Mildenhall 继续带研究团队。双方此前已有 GPU 训练与推理的深度合作，AMD Ventures 也是 World Labs 的投资方。交易预计 2026 年底前完成，尚需监管批准。",
+      "why": "两位追踪名单上的重点人物合到一家公司：芯片厂商直接买下世界模型 / 物理 AI 团队，是算力公司向模型层延伸的标志性交易。",
+      "links": [
+        {
+          "label": "AMD 官方公告",
+          "url": "https://newsroom.amd.com/news/amd-acquire-world-labs/"
+        },
+        {
+          "label": "World Labs 官方博客",
+          "url": "https://www.worldlabs.ai/blog/amd-announcement"
+        },
+        {
+          "label": "Fortune 报道",
+          "url": "https://fortune.com/2026/09/28/amd-acquires-world-labs-startup-fei-fei-li-8-2-billion/"
+        }
+      ],
+      "video_keys": []
+    },
+    {
       "id": "ioc-trustworthy-ai-framework",
       "published": "2026-09-28",
       "title": "IOC 发布 Olympic Movement Trustworthy AI Framework",
       "priority": "奥运 AI 首位补读",
-      "tags": ["奥运 AI", "治理", "运动员保护"],
+      "tags": [
+        "奥运 AI",
+        "治理",
+        "运动员保护"
+      ],
       "summary": "IOC 发布面向奥林匹克运动的可信 AI 框架和配套清单，列出安全、个人数据保护、可靠性、透明度、问责、公平和可持续性七项原则。IOC 表示框架经过奥林匹克运动中 200 多位领导者参与制定。",
       "why": "这是最高优先级主题中最新的 IOC 官方框架更新，覆盖运动员支持、赛事运行与体育组织如何负责地使用 AI。发布日期早于 14 天回溯窗口，属一次性补读。",
       "links": [
-        { "label": "IOC 官方发布说明", "url": "https://www.olympics.com/ioc/news/ioc-launches-trustworthy-ai-framework-to-support-responsible-innovation-across-the-olympic-movement" },
-        { "label": "IOC 官方框架文件入口", "url": "https://www.olympics.com/ioc/documents/international-olympic-committee/olympic-ai-agenda" }
+        {
+          "label": "IOC 官方发布说明",
+          "url": "https://www.olympics.com/ioc/news/ioc-launches-trustworthy-ai-framework-to-support-responsible-innovation-across-the-olympic-movement"
+        },
+        {
+          "label": "IOC 官方框架文件入口",
+          "url": "https://www.olympics.com/ioc/documents/international-olympic-committee/olympic-ai-agenda"
+        }
       ],
       "video_keys": []
     },
@@ -20,26 +60,48 @@
       "published": "2026-10-24",
       "title": "Kimi K3.1 Pro 把模型更新直接带到可用的 3D 建模工作流",
       "priority": "4.7/5",
-      "tags": ["中国 AI", "3D/CAD", "通用 AI 必看"],
+      "tags": [
+        "中国 AI",
+        "3D/CAD",
+        "通用 AI 必看"
+      ],
       "summary": "Moonshot 发布 Kimi K3.1 Pro，称其 3D 创作和空间推理能力提升：模型可以从文字、草图或参考图构建 3D 模型，也能编写并运行 Blender/CAD 脚本；同时上线可预览、编辑并导出 3D 打印文件的 3D Make 功能。",
       "why": "中国模型更新与工程设计工作流的交叉点。BenchCAD 成绩来自厂商自己的发布材料，尚需独立复测；Kimi 称完整权重将在 11 月 4 日前发布。",
       "links": [
-        { "label": "Kimi 官方中文发布", "url": "https://www.kimi.com/news/kimi-k3-1-pro" },
-        { "label": "技术与基准细节", "url": "https://www.kimi.com/en/blog/kimi-k3-1-pro" }
+        {
+          "label": "Kimi 官方中文发布",
+          "url": "https://www.kimi.com/news/kimi-k3-1-pro"
+        },
+        {
+          "label": "技术与基准细节",
+          "url": "https://www.kimi.com/en/blog/kimi-k3-1-pro"
+        }
       ],
-      "video_keys": ["youtube:DIyHTpfWctU"]
+      "video_keys": [
+        "youtube:DIyHTpfWctU"
+      ]
     },
     {
       "id": "nba-handle-score",
       "published": "2026-10-19",
       "title": "NBA 用 AI 给“运球好不好”建立可计算的新指标",
       "priority": "4.6/5",
-      "tags": ["体育 AI", "AI 分析", "球迷体验"],
+      "tags": [
+        "体育 AI",
+        "AI 分析",
+        "球迷体验"
+      ],
       "summary": "NBA 将 Handle Score 纳入新赛季的实时数据与观赛体验。它把球员追踪数据交给机器学习模型，评估运球动作的复杂度、摆脱防守的效果等；模型训练使用了篮球专家对上万组片段做出的 A/B 判断。",
       "why": "AI 把过去主要靠“眼力”判断的球技转成可量化指标，可能影响观赛、分析与球员评价。赛季公告和次日的指标解释合并为一条。",
       "links": [
-        { "label": "NBA 官方赛季数字体验公告", "url": "https://www.nba.com/news/nba-digital-experiences-2026-27" },
-        { "label": "Handle Score 技术解释", "url": "https://www.nba.com/news/intro-to-handle-score" }
+        {
+          "label": "NBA 官方赛季数字体验公告",
+          "url": "https://www.nba.com/news/nba-digital-experiences-2026-27"
+        },
+        {
+          "label": "Handle Score 技术解释",
+          "url": "https://www.nba.com/news/intro-to-handle-score"
+        }
       ],
       "video_keys": []
     },
@@ -48,11 +110,18 @@
       "published": "2026-10-17",
       "title": "DeepSeek 更新 V4.1 Flash，强调能力与成本的综合改善",
       "priority": "4.3/5",
-      "tags": ["中国 AI", "模型更新", "Agent/编程"],
+      "tags": [
+        "中国 AI",
+        "模型更新",
+        "Agent/编程"
+      ],
       "summary": "DeepSeek 官方更新日志称，V4.1 Flash-1017 在多项任务评测中优于此前版本，并减少任务运行时间和输出长度，定位为更好的能力/成本折中。日志也列出评测结果和测试框架。",
       "why": "对观察中国前沿模型的能力变化和服务成本有用。性能数字来自厂商列出的基准结果，不能单独视为独立验证。",
       "links": [
-        { "label": "DeepSeek 官方更新日志", "url": "https://api-docs.deepseek.com/updates/" }
+        {
+          "label": "DeepSeek 官方更新日志",
+          "url": "https://api-docs.deepseek.com/updates/"
+        }
       ],
       "video_keys": []
     }

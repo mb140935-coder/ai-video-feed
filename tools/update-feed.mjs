@@ -2,10 +2,12 @@
 // 1. Polls the RSS feeds of official YouTube channels and keeps recent, AI-relevant long-form videos (no Shorts).
 // 2. Polls the channels the user followed by link on the page, and fills in publish dates and descriptions
 //    for videos added by hand there (both from Supabase added_videos).
+// 3. News about the watchlist people and labs and the priority themes (news.mjs), for the 简报 tab.
 // With a YOUTUBE_API_KEY (YouTube Data API v3) it also drops videos under MIN_MINUTES and dates hand-added
 // YouTube videos; without one those two steps are skipped and the title rules below do the filtering.
 // Usage: node update-feed.mjs <path to auto-feed.json>   (read if present, then rewritten)
 import fs from 'fs';
+import { collectNews } from './news.mjs';
 
 const AI = /\bAI\b|A\.I\.|artificial intelligence|machine learning|\bLLMs?\b|\bGPT|agent|chatbot|ChatGPT|Claude|Gemini|Qwen|Kimi|DeepSeek|robot|人工智能|大模型|模型|智能体|机器人|具身/i;
 const OLYMPIC = /olympi|paralympi|\bIOC\b|奥运|奥林匹克|冬奥/i;
@@ -249,7 +251,14 @@ const kept = [...items.values()]
   .slice(0, MAX_ITEMS);
 Object.values(channels).forEach(info => { if (info.id) info.count = kept.filter(item => item.channelId === info.id).length; });
 // Keep the old timestamp when nothing changed, so the job doesn't commit an identical file.
-const content = { items: kept, videos, channels };
+let news = previous.news || [];
+try {
+  const watchlist = JSON.parse(fs.readFileSync(new URL('../docs/watchlist-v1.json', import.meta.url), 'utf8'));
+  news = await collectNews(watchlist, news, report);
+} catch (error) {
+  report.push(`news: FAILED ${error.message}`);
+}
+const content = { items: kept, videos, channels, news };
 const { updated: previousUpdated, ...previousContent } = previous;
 const unchanged = JSON.stringify(previousContent) === JSON.stringify(content);
 fs.writeFileSync(outPath, `${JSON.stringify({ updated: unchanged ? previousUpdated : new Date().toISOString(), ...content }, null, 1)}\n`);

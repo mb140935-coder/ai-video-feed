@@ -12,6 +12,8 @@ on:
     paths:
       - '.github/workflows/daily-feed.yml'
       - 'tools/update-feed.mjs'
+      - 'tools/news.mjs'
+      - 'docs/watchlist-v1.json'
 
 permissions:
   contents: write

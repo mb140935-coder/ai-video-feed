@@ -1376,7 +1376,7 @@
           tags.forEach(tag => makeText(tagRow, 'span', 'tag', tag));
           article.appendChild(tagRow);
         }
-        makeText(article, 'p', '', summary);
+        if (summary) makeText(article, 'p', '', summary);
         if (why) makeText(article, 'p', 'brief-why', why);
         const linkRow = document.createElement('div');
         linkRow.className = 'brief-links';
@@ -1397,12 +1397,13 @@
         briefsLoaded = true;
         briefNote.textContent = '正在读取文字简报…';
         try {
-          const [briefData, appearanceRows] = await Promise.all([
+          const [briefData, appearanceRows, { news = [] }] = await Promise.all([
             fetch('../docs/text-briefs-v1.json', { cache: 'no-store' }).then(response => {
               if (!response.ok) throw new Error(`HTTP ${response.status}`);
               return response.json();
             }),
-            loadAppearanceRows()
+            loadAppearanceRows(),
+            autoFeedPromise
           ]);
           // A brief is dropped when a video covering the same story is in either video tab.
           const videoKeys = new Set([...document.querySelectorAll('#feed-curated .watch-toggle')].map(button => button.dataset.watchKey));
@@ -1428,11 +1429,20 @@
             summary: getAppearanceHighlight(item),
             why: personAIContext[item.person_id] ? `人物：${personAIContext[item.person_id]}` : '',
             links: [{ label: item.content_type === 'index' ? '打开索引页' : '打开原文', url: item.official_publisher_url }]
+          })), ...news.map(story => ({
+            // Found by the daily job (tools/news.mjs): headlines from major outlets about watched people, labs and themes.
+            published: story.published,
+            meta: `新闻 · ${story.source}${story.outlets.length > 1 ? ` 等 ${story.outlets.length} 家媒体报道` : ''}`,
+            title: story.title,
+            tags: [...story.themes, ...story.entities],
+            summary: '',
+            why: '',
+            links: [{ label: `打开原文 · ${story.source}`, url: story.url }]
           }))].sort(newestFirst(entry => entry.published)).forEach(renderBrief);
-          const total = briefs.length + textRows.length;
+          const total = briefs.length + textRows.length + news.length;
           const covered = allBriefs.length - briefs.length;
           briefCount.textContent = `${total} 条`;
-          briefNote.textContent = `共 ${total} 条：${briefs.length} 条资讯简报，${textRows.length} 条没有视频或音频的文字稿和资源索引。${covered ? `另有 ${covered} 条已有视频，在视频 TAB 里看，这里不重复。` : ''}`;
+          briefNote.textContent = `共 ${total} 条：${news.length} 条每日自动新闻（追踪名单人物、实验室和重点主题，只收主流媒体），${briefs.length} 条资讯简报，${textRows.length} 条没有视频或音频的文字稿和资源索引。${covered ? `另有 ${covered} 条已有视频，在视频 TAB 里看，这里不重复。` : ''}`;
         } catch {
           briefsLoaded = false;
           briefCount.textContent = '未加载';
@@ -1521,12 +1531,12 @@
       // New videos found by the daily GitHub Actions job (tools/update-feed.mjs), and the publish dates it looks up
       // for hand-added videos. It lives on the auto-feed branch so pushes of the site never conflict with it.
       const AUTO_FEED_URL = 'https://raw.githubusercontent.com/mb140935-coder/ai-video-feed/auto-feed/auto-feed.json';
-      let autoFeed = { updated: '', items: [], videos: {}, channels: {} };
+      let autoFeed = { updated: '', items: [], videos: {}, channels: {}, news: [] };
       const autoFeedPromise = fetch(AUTO_FEED_URL, { cache: 'no-store' })
         .then(response => response.ok ? response.json() : null)
         .catch(() => null)
         .then(data => {
-          autoFeed = { updated: data?.updated || '', items: Array.isArray(data?.items) ? data.items : [], videos: data?.videos || {}, channels: data?.channels || {} };
+          autoFeed = { updated: data?.updated || '', items: Array.isArray(data?.items) ? data.items : [], videos: data?.videos || {}, channels: data?.channels || {}, news: Array.isArray(data?.news) ? data.news : [] };
           return autoFeed;
         });
       const autoFeedUpdated = () => autoFeed.updated ? `（最近更新：${new Date(autoFeed.updated).toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}）` : '';

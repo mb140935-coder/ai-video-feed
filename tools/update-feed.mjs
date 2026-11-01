@@ -20,6 +20,9 @@ const MAX_AGE_DAYS = 30;
 const MAX_PER_SOURCE = 5;
 const MAX_ITEMS = 150;
 const MIN_MINUTES = 5;
+// Person search (YouTube Data API, 100 quota units per person of the free 10,000 a day).
+const PERSON_SEARCH_DAYS = 7;
+const MAX_PER_PERSON = 3;
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY || '';
 
 const xiaojunAbout = '张小珺长期深度访谈中国与硅谷的 AI、机器人和科技创业者。';
@@ -138,6 +141,40 @@ const youtubeDetails = async ids => {
   return details;
 };
 
+// Long videos (over 20 minutes) from the last week that name the person in the title, or in the description
+// when the title reads like a talk. Commentary channels' clickbait titles are left out.
+const CLICKBAIT = /\b(just|shocking|stunning|insane|reacts?|reaction|explained|breakdown|leaked|exposed|warning|revealed?|reveals)\b|!/i;
+const searchPerson = async (person, since) => {
+  const query = encodeURIComponent(`"${person.name}"`);
+  const data = JSON.parse(await fetchText(`https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoDuration=long&order=relevance&maxResults=10&publishedAfter=${since}&q=${query}&key=${YOUTUBE_API_KEY}`));
+  const named = new RegExp(person.aliases.map(alias => alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'i');
+  return (data.items || []).map(result => ({ id: result.id?.videoId, ...result.snippet })).filter(video => {
+    const title = decode(video.title || '');
+    const text = `${title}\n${video.description || ''}`;
+    return video.id && !EXCLUDE.test(title) && !CLICKBAIT.test(title)
+      && (named.test(title) || (named.test(video.description || '') && TALK.test(text)));
+  }).map(video => {
+    const title = decode(video.title);
+    const text = `${title}\n${video.description || ''}`;
+    const olympicAi = OLYMPIC.test(text) && AI.test(text);
+    return {
+      key: `youtube:${video.id}`,
+      url: `https://www.youtube.com/watch?v=${video.id}`,
+      title,
+      channel: decode(video.channelTitle || ''),
+      channelId: video.channelId,
+      published: (video.publishedAt || '').slice(0, 10),
+      summary: summarize(decode(video.description || '')),
+      about: `${person.name}：${person.note}。`,
+      tab: olympicAi ? 'curated' : 'appearances',
+      tags: olympicAi ? ['奥运 AI · 最高优先级', person.name] : ['人物新视频', person.name],
+      minutes: null,
+      found: new Date().toISOString().slice(0, 10),
+      via: 'person'
+    };
+  });
+};
+
 const vimeoDetails = async url => {
   const data = JSON.parse(await fetchText(`https://vimeo.com/api/oembed.json?url=${encodeURIComponent(url)}`));
   if (!data.upload_date) throw new Error(`no upload date for ${url}`);
@@ -204,9 +241,14 @@ const allSources = [...SOURCES.filter(source => !source.followKey || followedKey
 const sourceFor = item => allSources.find(source => source.channel === item.channelId || (!source.key && source.name === item.channel));
 // Earlier items stay only while they still pass the current rules (and their channel is still followed).
 const items = new Map((previous.items || [])
-  .filter(item => { const source = sourceFor(item); return source && titleWanted(source, item.title); })
+  .filter(item => {
+    // Found by the person search: kept until it ages out, whatever channel it is on.
+    if (item.via === 'person') return Date.parse(item.published) >= Date.now() - MAX_AGE_DAYS * 86400000;
+    const source = sourceFor(item);
+    return source && titleWanted(source, item.title);
+  })
   // Items saved before channelId existed get it here, so followed-channel counts include them.
-  .map(item => [item.key, { ...item, channelId: item.channelId || sourceFor(item).channel }]));
+  .map(item => [item.key, { ...item, channelId: item.channelId || sourceFor(item)?.channel }]));
 
 for (const source of allSources) {
   try {
@@ -217,6 +259,28 @@ for (const source of allSources) {
     report.push(`${source.name}: ${found.length} new`);
   } catch (error) {
     report.push(`${source.name || source.channel}: FAILED ${error.message}`);
+  }
+}
+
+// Watchlist people on any channel (their talks and podcast guest spots), via YouTube search; needs the API key.
+let watchlist = null;
+try {
+  watchlist = JSON.parse(fs.readFileSync(new URL('../docs/watchlist-v1.json', import.meta.url), 'utf8'));
+} catch (error) {
+  report.push(`watchlist: not read (${error.message})`);
+}
+if (YOUTUBE_API_KEY && watchlist) {
+  const people = watchlist.groups.find(group => group.people)?.items || [];
+  const since = new Date(Date.now() - PERSON_SEARCH_DAYS * 86400000).toISOString();
+  for (const person of people) {
+    try {
+      const found = (await searchPerson(person, since)).filter(item => !items.has(item.key)).slice(0, MAX_PER_PERSON);
+      found.forEach(item => items.set(item.key, item));
+      if (found.length) report.push(`person ${person.name}: ${found.length} new`);
+    } catch (error) {
+      report.push(`person ${person.name}: FAILED ${error.message}`);
+      if (/HTTP 403/.test(error.message)) break; // Out of quota for today.
+    }
   }
 }
 
@@ -255,7 +319,7 @@ Object.values(channels).forEach(info => { if (info.id) info.count = kept.filter(
 // Keep the old timestamp when nothing changed, so the job doesn't commit an identical file.
 let news = previous.news || [];
 try {
-  const watchlist = JSON.parse(fs.readFileSync(new URL('../docs/watchlist-v1.json', import.meta.url), 'utf8'));
+  if (!watchlist) throw new Error('watchlist not read');
   news = await collectNews(watchlist, news, report);
   await summarizeNews(news, report);
 } catch (error) {

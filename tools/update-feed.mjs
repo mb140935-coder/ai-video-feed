@@ -1,6 +1,7 @@
 // Daily feed update, run by .github/workflows/daily-feed.yml (Node 20+, no dependencies).
 // 1. Polls the RSS feeds of official YouTube channels and keeps recent, AI-relevant long-form videos (no Shorts).
-// 2. Fills in publish dates and descriptions for videos added by hand on the page (Supabase added_videos).
+// 2. Polls the channels the user followed by link on the page, and fills in publish dates and descriptions
+//    for videos added by hand there (both from Supabase added_videos).
 // With a YOUTUBE_API_KEY (YouTube Data API v3) it also drops videos under MIN_MINUTES and dates hand-added
 // YouTube videos; without one those two steps are skipped and the title rules below do the filtering.
 // Usage: node update-feed.mjs <path to auto-feed.json>   (read if present, then rewritten)
@@ -71,6 +72,11 @@ const titleWanted = (source, title) => !EXCLUDE.test(title)
 
 const pollSource = async source => {
   const xml = await fetchText(`https://www.youtube.com/feeds/videos.xml?channel_id=${source.channel}`);
+  // A channel the user followed by link gets its name from the feed (the first <title> is the channel's).
+  if (!source.name) {
+    source.name = tag(xml, 'title');
+    source.about = `你手动关注的频道：${source.name}。`;
+  }
   const cutoff = Date.now() - MAX_AGE_DAYS * 86400000;
   return xml.split('<entry>').slice(1).map(entry => {
     const id = tag(entry, 'yt:videoId');
@@ -133,25 +139,75 @@ const vimeoDetails = async url => {
   return { published: data.upload_date.slice(0, 10), title: data.title, author: data.author_name, minutes: Math.round((data.duration || 0) / 60), summary: summarize(data.description || '') };
 };
 
+// Channel ID for a followed channel link (/@handle, /channel/UC…, /c/…, /user/…), from its page or the Data API.
+const resolveChannel = async row => {
+  const path = row.url.replace(/^https:\/\/www\.youtube\.com\//, '');
+  const direct = path.match(/^channel\/(UC[\w-]{22})$/)?.[1];
+  if (direct) return { id: direct };
+  const response = await fetch(`https://www.youtube.com/${path}`, { headers: { 'user-agent': 'Mozilla/5.0', 'accept-language': 'en' } });
+  if (response.status === 404) return { error: '这个频道地址不存在' };
+  const html = response.ok ? await response.text() : '';
+  const id = html.match(/<link rel="canonical" href="https:\/\/www\.youtube\.com\/channel\/(UC[\w-]{22})"/)?.[1]
+    || html.match(/"externalId":"(UC[\w-]{22})"/)?.[1];
+  if (id) return { id };
+  if (YOUTUBE_API_KEY && path.startsWith('@')) {
+    const data = JSON.parse(await fetchText(`https://www.googleapis.com/youtube/v3/channels?part=id&forHandle=${encodeURIComponent(path)}&key=${YOUTUBE_API_KEY}`));
+    if (data.items?.[0]?.id) return { id: data.items[0].id };
+    return { error: '这个频道地址不存在' };
+  }
+  throw new Error(`channel page gave no ID (HTTP ${response.status})`);
+};
+
 const outPath = process.argv[2];
 if (!outPath) throw new Error('usage: node update-feed.mjs <auto-feed.json>');
-let previous = { items: [], videos: {} };
+let previous = { items: [], videos: {}, channels: {} };
 try { previous = JSON.parse(fs.readFileSync(outPath, 'utf8')); } catch { /* First run. */ }
 
 const report = [YOUTUBE_API_KEY ? 'YouTube Data API: on' : 'YouTube Data API: off (no YOUTUBE_API_KEY); length check and hand-added YouTube dates skipped'];
-const sourceFor = item => SOURCES.find(source => source.channel === item.channelId || source.name === item.channel);
-// Earlier items stay only while they still pass the current rules.
+
+// Hand-added videos and followed channels (keys starting with "channel:") from the page.
+let addedRows = null;
+try {
+  const response = await fetch(`${SUPABASE_URL}/rest/v1/added_videos?select=key,url`, { headers: { apikey: SUPABASE_ANON_KEY } });
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  addedRows = await response.json();
+} catch (error) {
+  report.push(`added_videos: not read (${error.message})`);
+}
+
+// Followed channels become sources with no title filter: the user picked them. When the table can't be read,
+// keep the previous channel list so their videos don't vanish for one run.
+const channels = {};
+const followedRows = addedRows ? addedRows.filter(row => row.key.startsWith('channel:'))
+  : Object.entries(previous.channels || {}).map(([key, info]) => ({ key, url: info.url }));
+const userSources = [];
+for (const row of followedRows) {
+  const known = previous.channels?.[row.key];
+  let info = known?.id ? known : null;
+  if (!info) {
+    try { info = await resolveChannel(row); } catch (error) { report.push(`channel ${row.key}: not resolved yet (${error.message})`); }
+  }
+  channels[row.key] = { url: row.url, ...(info || {}) };
+  if (channels[row.key].id && !SOURCES.some(source => source.channel === channels[row.key].id)) {
+    userSources.push({ channel: channels[row.key].id, name: known?.name || '', match: null, tags: ['你关注的频道'], about: known?.name ? `你手动关注的频道：${known.name}。` : '', key: row.key });
+  }
+}
+const allSources = [...SOURCES, ...userSources];
+
+const sourceFor = item => allSources.find(source => source.channel === item.channelId || (!source.key && source.name === item.channel));
+// Earlier items stay only while they still pass the current rules (and their channel is still followed).
 const items = new Map((previous.items || [])
   .filter(item => { const source = sourceFor(item); return source && titleWanted(source, item.title); })
   .map(item => [item.key, item]));
 
-for (const source of SOURCES) {
+for (const source of allSources) {
   try {
     const found = (await pollSource(source)).filter(item => !items.has(item.key)).slice(0, MAX_PER_SOURCE);
     found.forEach(item => items.set(item.key, item));
+    if (source.key) channels[source.key].name = source.name;
     report.push(`${source.name}: ${found.length} new`);
   } catch (error) {
-    report.push(`${source.name}: FAILED ${error.message}`);
+    report.push(`${source.name || source.channel}: FAILED ${error.message}`);
   }
 }
 
@@ -168,24 +224,29 @@ try {
 }
 
 const videos = { ...(previous.videos || {}) };
-try {
-  const response = await fetch(`${SUPABASE_URL}/rest/v1/added_videos?select=key,url`, { headers: { apikey: SUPABASE_ANON_KEY } });
-  if (!response.ok) throw new Error(`HTTP ${response.status}`);
-  const rows = (await response.json()).filter(row => !videos[row.key]?.published);
-  const youtubeRows = rows.filter(row => row.key.startsWith('youtube:'));
-  const details = await youtubeDetails(youtubeRows.map(row => row.key.slice('youtube:'.length)));
-  youtubeRows.forEach(row => { if (details[row.key.slice('youtube:'.length)]) videos[row.key] = details[row.key.slice('youtube:'.length)]; });
-  for (const row of rows.filter(row => /vimeo\.com/.test(row.url))) {
-    try { videos[row.key] = await vimeoDetails(row.url); } catch (error) { report.push(`added video ${row.key}: ${error.message}`); }
+if (addedRows) {
+  try {
+    const rows = addedRows.filter(row => !row.key.startsWith('channel:') && !videos[row.key]?.published);
+    const youtubeRows = rows.filter(row => row.key.startsWith('youtube:'));
+    const details = await youtubeDetails(youtubeRows.map(row => row.key.slice('youtube:'.length)));
+    youtubeRows.forEach(row => { if (details[row.key.slice('youtube:'.length)]) videos[row.key] = details[row.key.slice('youtube:'.length)]; });
+    for (const row of rows.filter(row => /vimeo\.com/.test(row.url))) {
+      try { videos[row.key] = await vimeoDetails(row.url); } catch (error) { report.push(`added video ${row.key}: ${error.message}`); }
+    }
+    report.push(`added videos: ${rows.length} needed details, ${rows.filter(row => videos[row.key]?.published).length} filled`);
+  } catch (error) {
+    report.push(`added video details: FAILED ${error.message}`);
   }
-  report.push(`added videos: ${rows.length} needed details, ${rows.filter(row => videos[row.key]?.published).length} filled`);
-} catch (error) {
-  report.push(`added_videos: not read (${error.message})`);
 }
 
 const kept = [...items.values()]
   .sort((a, b) => b.published.localeCompare(a.published))
   .slice(0, MAX_ITEMS);
-fs.writeFileSync(outPath, `${JSON.stringify({ updated: new Date().toISOString(), items: kept, videos }, null, 1)}\n`);
+Object.values(channels).forEach(info => { if (info.id) info.count = kept.filter(item => item.channelId === info.id).length; });
+// Runs every hour: keep the old timestamp when nothing changed, so the job doesn't commit an identical file.
+const content = { items: kept, videos, channels };
+const { updated: previousUpdated, ...previousContent } = previous;
+const unchanged = JSON.stringify(previousContent) === JSON.stringify(content);
+fs.writeFileSync(outPath, `${JSON.stringify({ updated: unchanged ? previousUpdated : new Date().toISOString(), ...content }, null, 1)}\n`);
 console.log(report.join('\n'));
-console.log(`wrote ${kept.length} items, ${Object.keys(videos).length} video infos`);
+console.log(`${unchanged ? 'unchanged' : 'wrote'}: ${kept.length} items, ${Object.keys(videos).length} video infos, ${Object.keys(channels).length} followed channels`);

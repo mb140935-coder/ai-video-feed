@@ -1,10 +1,10 @@
-# Updates auto-feed.json on the auto-feed branch: new videos from followed channels, and publish dates
-# for videos added by hand. Kept off main so pushes of the site (git subtree) never conflict with it.
+# Hourly: updates auto-feed.json on the auto-feed branch with new videos from the source channels and the
+# channels followed on the page, and publish dates for videos added by hand. Commits only when something changed. Kept off main so pushes of the site (git subtree) never conflict with it.
 name: Daily feed update
 
 on:
   schedule:
-    - cron: '17 */6 * * *'
+    - cron: '17 * * * *'
   workflow_dispatch:
   push:
     branches: [main]

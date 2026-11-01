@@ -68,6 +68,7 @@
     .add-status { color: #b7b7c1; font-size: 11px; line-height: 1.5; }
     .add-status.error { color: #ffb4a6; }
     .add-status.ok { color: #8ed9b8; }
+    .add-section { padding: 12px 18px 4px; font-weight: 700; }
     .phone.no-snap { scroll-snap-type: none; }
     .brief { display: flex; flex-direction: column; gap: 8px; padding: 18px; border-bottom: 1px solid #ffffff15; }
     .brief-meta { color: #a6a6af; font-size: 11px; }
@@ -163,7 +164,7 @@
           <button class="menu-button" id="menu-button" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="menu-dropdown" aria-label="菜单：已看历史、添加视频">☰</button>
           <div class="menu-dropdown" id="menu-dropdown" role="menu" hidden>
             <button type="button" role="menuitem" id="watch-history-button" aria-haspopup="dialog" aria-controls="watch-history"><span>✓ 已看历史</span><span class="menu-count" id="watch-history-count">0</span></button>
-            <button type="button" role="menuitem" id="add-video-button" aria-haspopup="dialog" aria-controls="add-video"><span>＋ 添加视频</span><span class="menu-count" id="added-count"></span></button>
+            <button type="button" role="menuitem" id="add-video-button" aria-haspopup="dialog" aria-controls="add-video"><span>＋ 添加视频 / 频道</span><span class="menu-count" id="added-count"></span></button>
           </div>
         </div>
       </nav>
@@ -177,10 +178,10 @@
       </div>
       <div class="history-sheet" id="add-video" role="dialog" aria-modal="true" aria-labelledby="add-video-title" hidden>
         <div class="history-panel">
-          <div class="history-head"><span id="add-video-title">添加视频 · 粘贴链接</span><button type="button" id="add-video-close">关闭</button></div>
+          <div class="history-head"><span id="add-video-title">添加视频或频道 · 粘贴链接</span><button type="button" id="add-video-close">关闭</button></div>
           <form class="add-form" id="add-video-form">
-            <div class="add-row"><input id="add-video-url" type="text" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="粘贴 YouTube 或 Vimeo 链接" aria-label="视频链接"><button type="submit" id="add-video-submit">加入</button></div>
-            <div class="add-status" id="add-video-status">加入后出现在“精选视频”里，手机、iPad、电脑同步。</div>
+            <div class="add-row"><input id="add-video-url" type="text" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="粘贴视频链接或 YouTube 频道主页" aria-label="视频链接"><button type="submit" id="add-video-submit">加入</button></div>
+            <div class="add-status" id="add-video-status">视频进“精选视频”；频道的新视频每小时自动进“演讲 &amp; Podcast”。</div>
           </form>
           <div class="history-list" id="add-video-list"></div>
         </div>
@@ -1230,7 +1231,7 @@
           const remove = document.createElement('button');
           remove.type = 'button';
           remove.textContent = '移出信息流';
-          remove.addEventListener('click', () => removeAddedVideo(item.removeKey));
+          remove.addEventListener('click', () => removeAdded(item.removeKey));
           actions.appendChild(remove);
         } else {
           const save = document.createElement('button');
@@ -1443,7 +1444,7 @@
       historySheet.addEventListener('click', event => { if (event.target === historySheet) historySheet.hidden = true; });
       updateWatchHistoryCount();
 
-      // ☰ menu in the tab bar: 已看历史 and 添加视频.
+      // ☰ menu in the tab bar: 已看历史 and 添加视频 / 频道.
       const menuButton = document.getElementById('menu-button');
       const menuDropdown = document.getElementById('menu-dropdown');
       const setMenuOpen = open => {
@@ -1462,15 +1463,15 @@
       // New videos found by the daily GitHub Actions job (tools/update-feed.mjs), and the publish dates it looks up
       // for hand-added videos. It lives on the auto-feed branch so pushes of the site never conflict with it.
       const AUTO_FEED_URL = 'https://raw.githubusercontent.com/mb140935-coder/ai-video-feed/auto-feed/auto-feed.json';
-      let autoFeed = { updated: '', items: [], videos: {} };
+      let autoFeed = { updated: '', items: [], videos: {}, channels: {} };
       const autoFeedPromise = fetch(AUTO_FEED_URL, { cache: 'no-store' })
         .then(response => response.ok ? response.json() : null)
         .catch(() => null)
         .then(data => {
-          autoFeed = { updated: data?.updated || '', items: Array.isArray(data?.items) ? data.items : [], videos: data?.videos || {} };
+          autoFeed = { updated: data?.updated || '', items: Array.isArray(data?.items) ? data.items : [], videos: data?.videos || {}, channels: data?.channels || {} };
           return autoFeed;
         });
-      const autoFeedUpdated = () => autoFeed.updated ? `（最近一次检查：${new Date(autoFeed.updated).toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}）` : '';
+      const autoFeedUpdated = () => autoFeed.updated ? `（最近更新：${new Date(autoFeed.updated).toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}）` : '';
 
       const autoFeedItem = entry => ({
         person_id: 'auto',
@@ -1499,12 +1500,14 @@
         (next || curatedEmpty).before(card);
       };
 
-      // Videos added by pasting a link (☰ → 添加视频) go to 精选视频. They are shared through the Supabase table
-      // added_videos (tools/supabase-added-videos.sql), or kept in this browser until that table exists.
+      // Videos and channels added by pasting a link (☰ → 添加视频 / 频道). Videos go to 精选视频; a channel's new
+      // videos are picked up by the hourly job and appear in 演讲 & Podcast. Both share the Supabase table
+      // added_videos (tools/supabase-added-videos.sql) — channel rows have keys starting with "channel:" — or stay
+      // in this browser until that table exists.
       const addedTable = `${SUPABASE_URL}/rest/v1/added_videos`;
       const addedStorageKey = 'ai-video-feed-added-v1';
       const addedCards = new Map();
-      let addedVideos = [];
+      let addedRows = [];
       let addedShared = false;
       const addSheet = document.getElementById('add-video');
       const addForm = document.getElementById('add-video-form');
@@ -1512,6 +1515,9 @@
       const addSubmit = document.getElementById('add-video-submit');
       const addStatus = document.getElementById('add-video-status');
       const addList = document.getElementById('add-video-list');
+      const isChannelRow = row => row.key.startsWith('channel:');
+      const addedVideoRows = () => addedRows.filter(row => !isChannelRow(row));
+      const addedChannelRows = () => addedRows.filter(isChannelRow);
 
       const readLocalAdded = () => {
         try {
@@ -1526,8 +1532,7 @@
         addStatus.textContent = message;
         addStatus.className = kind ? `add-status ${kind}` : 'add-status';
       };
-      const defaultAddStatus = () => addedShared ? '加入后出现在“精选视频”最上面，手机、iPad、电脑同步。'
-        : '加入后出现在“精选视频”最上面。在线保存还没开通，先存在这台设备。';
+      const defaultAddStatus = () => `视频加入后出现在“精选视频”最上面；关注频道后，它的新视频每小时自动进“演讲 & Podcast”。${addedShared ? '手机、iPad、电脑同步。' : '在线保存还没开通，先存在这台设备。'}`;
       const shortDate = iso => iso ? new Date(iso).toLocaleDateString('zh-CN', { month: 'numeric', day: 'numeric' }) : '';
 
       const addedItem = video => {
@@ -1556,43 +1561,67 @@
         };
       };
 
+      // What the hourly job found out about a followed channel (auto-feed.json "channels").
+      const channelState = row => {
+        const info = autoFeed.channels[row.key] || {};
+        const name = info.name || row.title || row.url.replace(/^https:\/\/www\.youtube\.com\//, '');
+        const status = info.error ? `没能识别这个频道：${info.error}`
+          : info.id ? `已识别 · 近 30 天 ${info.count || 0} 条新视频在“演讲 & Podcast”`
+          : '等待下一次自动更新（每小时一次）';
+        return { name, status };
+      };
+
+      const addListRow = (title, meta, onRemove, removeLabel) => {
+        const row = document.createElement('div');
+        row.className = 'history-item';
+        const text = document.createElement('div');
+        text.className = 'history-item-text';
+        makeText(text, 'div', 'history-item-title', title);
+        makeText(text, 'div', 'history-item-meta', meta);
+        row.appendChild(text);
+        const remove = document.createElement('button');
+        remove.type = 'button';
+        remove.textContent = removeLabel;
+        remove.addEventListener('click', onRemove);
+        row.appendChild(remove);
+        addList.appendChild(row);
+      };
+
       const renderAddedList = () => {
         addList.replaceChildren();
-        if (!addedVideos.length) {
-          makeText(addList, 'div', 'history-empty', '还没有手动添加的视频。在 YouTube 或 Vimeo 里点“分享 → 复制链接”，粘贴到上面就行。');
+        if (!addedRows.length) {
+          makeText(addList, 'div', 'history-empty', '还没有手动添加的视频或频道。在 YouTube 或 Vimeo 里点“分享 → 复制链接”，或复制频道主页地址（如 youtube.com/@名字），粘贴到上面就行。');
           return;
         }
-        addedVideos.forEach(video => {
-          const row = document.createElement('div');
-          row.className = 'history-item';
-          const text = document.createElement('div');
-          text.className = 'history-item-text';
-          const item = addedItem(video);
-          makeText(text, 'div', 'history-item-title', item.appearance_title);
-          makeText(text, 'div', 'history-item-meta', [video.author, `加入于 ${shortDate(video.created_at)}`, watchedItems.has(video.key) ? '已看' : ''].filter(Boolean).join(' · '));
-          row.appendChild(text);
-          const remove = document.createElement('button');
-          remove.type = 'button';
-          remove.textContent = '移出';
-          remove.addEventListener('click', () => removeAddedVideo(video.key));
-          row.appendChild(remove);
-          addList.appendChild(row);
+        const channels = addedChannelRows();
+        if (channels.length) makeText(addList, 'div', 'history-item-meta add-section', `关注的频道 · ${channels.length}`);
+        channels.forEach(row => {
+          const { name, status } = channelState(row);
+          addListRow(name, `${status} · 关注于 ${shortDate(row.created_at)}`, () => removeAdded(row.key), '取消关注');
+        });
+        const videos = addedVideoRows();
+        if (videos.length) makeText(addList, 'div', 'history-item-meta add-section', `添加的视频 · ${videos.length}`);
+        videos.forEach(video => {
+          addListRow(addedItem(video).appearance_title,
+            [video.author, `加入于 ${shortDate(video.created_at)}`, watchedItems.has(video.key) ? '已看' : ''].filter(Boolean).join(' · '),
+            () => removeAdded(video.key), '移出');
         });
       };
 
       const renderAddedVideos = () => {
-        const keys = new Set(addedVideos.map(video => video.key));
+        const videos = addedVideoRows();
+        const keys = new Set(videos.map(video => video.key));
         addedCards.forEach((card, key) => {
           if (keys.has(key)) return;
           cardObserver.unobserve(card);
           card.remove();
           addedCards.delete(key);
         });
-        addedVideos.forEach(video => {
+        videos.forEach(video => {
           if (!addedCards.has(video.key)) addedCards.set(video.key, renderAppearance(addedItem(video), 0, 1, insertCuratedCard));
         });
         refreshCuratedCounters();
-        document.getElementById('added-count').textContent = addedVideos.length ? String(addedVideos.length) : '';
+        document.getElementById('added-count').textContent = addedRows.length ? String(addedRows.length) : '';
         if (!addSheet.hidden) renderAddedList();
       };
 
@@ -1618,25 +1647,45 @@
           }
           writeLocalAdded([]);
           addedShared = true;
-          addedVideos = rows;
+          addedRows = rows;
         } catch {
           addedShared = false;
-          addedVideos = readLocalAdded();
+          addedRows = readLocalAdded();
         }
         renderAddedVideos();
       };
 
-      // Accepts a bare link or shared text containing one; returns the media key and a canonical URL.
-      const parseVideoLink = raw => {
+      const linkUrl = raw => {
         const text = raw.match(/https?:\/\/\S+|(?:(?:www|m)\.)?(?:youtube\.com|youtu\.be|vimeo\.com)\/\S+/i)?.[0];
         if (!text) return null;
-        let url;
-        try { url = new URL(/^https?:\/\//i.test(text) ? text.replace(/^http:/i, 'https:') : `https://${text}`); } catch { return null; }
-        if (['m.youtube.com', 'music.youtube.com'].includes(url.hostname)) url.hostname = 'www.youtube.com';
+        try {
+          const url = new URL(/^https?:\/\//i.test(text) ? text.replace(/^http:/i, 'https:') : `https://${text}`);
+          if (['m.youtube.com', 'music.youtube.com', 'youtube.com'].includes(url.hostname)) url.hostname = 'www.youtube.com';
+          return url;
+        } catch { return null; }
+      };
+
+      // Accepts a bare link or shared text containing one; returns the media key and a canonical URL.
+      const parseVideoLink = raw => {
+        const url = linkUrl(raw);
+        if (!url) return null;
         const media = mediaLink({ official_media_url: url.href });
         if (media?.provider === 'youtube') return { key: `youtube:${media.videoId}`, url: `https://www.youtube.com/watch?v=${media.videoId}` };
         if (media?.provider === 'vimeo') return { key: canonicalMediaKey(url.href), url: `https://vimeo.com${url.pathname.replace(/\/$/, '')}` };
         return null;
+      };
+
+      // YouTube channel pages: /@handle, /channel/UC…, /c/name, /user/name (any tab such as /videos).
+      const parseChannelLink = raw => {
+        const url = linkUrl(raw);
+        if (url?.hostname !== 'www.youtube.com') return null;
+        const [first, second] = url.pathname.split('/').filter(Boolean).map(decodeURIComponent);
+        let path = '';
+        if (/^@[\w.\-·\u0080-￿]+$/.test(first || '')) path = first;
+        else if (first === 'channel' && /^UC[\w-]{22}$/.test(second || '')) path = `channel/${second}`;
+        else if (['c', 'user'].includes(first) && second) path = `${first}/${second}`;
+        if (!path) return null;
+        return { key: `channel:${path.startsWith('channel/') ? path : path.toLowerCase()}`, url: `https://www.youtube.com/${path}` };
       };
 
       // Title and channel from the platform's oEmbed endpoint; Vimeo also gives the upload date.
@@ -1662,9 +1711,9 @@
         return auto ? (auto.tab === 'curated' ? '精选视频' : '演讲 & Podcast') : '';
       };
 
-      const removeAddedVideo = async key => {
-        addedVideos = addedVideos.filter(video => video.key !== key);
-        writeLocalAdded(readLocalAdded().filter(video => video.key !== key));
+      const removeAdded = async key => {
+        addedRows = addedRows.filter(row => row.key !== key);
+        writeLocalAdded(readLocalAdded().filter(row => row.key !== key));
         renderAddedVideos();
         if (!addedShared) return;
         try {
@@ -1676,11 +1725,32 @@
         }
       };
 
+      const saveAddedRow = async row => {
+        if (addedShared) {
+          try { await saveAddedShared([row]); } catch { addedShared = false; }
+        }
+        if (!addedShared) writeLocalAdded([row, ...readLocalAdded()]);
+        addedRows = [row, ...addedRows];
+        renderAddedVideos();
+        addInput.value = '';
+      };
+
       addForm.addEventListener('submit', async event => {
         event.preventDefault();
         const video = parseVideoLink(addInput.value);
-        if (!video) {
-          showAddStatus('没认出视频链接。目前支持 YouTube（含 youtu.be、Shorts、直播）和 Vimeo。', 'error');
+        const channel = video ? null : parseChannelLink(addInput.value);
+        if (!video && !channel) {
+          showAddStatus('没认出链接。支持 YouTube 视频（含 youtu.be、Shorts、直播）、Vimeo 视频，以及 YouTube 频道主页（如 youtube.com/@名字）。', 'error');
+          return;
+        }
+        const localOnly = addedShared ? '' : '（在线保存还没开通，先存在这台设备）';
+        if (channel) {
+          if (addedRows.some(row => row.key === channel.key)) {
+            showAddStatus('这个频道已经在关注列表里了。', 'error');
+            return;
+          }
+          await saveAddedRow({ ...channel, title: '', author: '', created_at: new Date().toISOString() });
+          showAddStatus(`已关注 ${channel.url.replace('https://www.youtube.com/', '')}${localOnly}。下一次自动更新（每小时一次）会识别频道，它近 30 天的新视频随后出现在“演讲 & Podcast”。`, 'ok');
           return;
         }
         addSubmit.disabled = true;
@@ -1692,14 +1762,8 @@
             return;
           }
           const row = { ...video, ...(await fetchVideoMeta(video)), created_at: new Date().toISOString() };
-          if (addedShared) {
-            try { await saveAddedShared([row]); } catch { addedShared = false; }
-          }
-          if (!addedShared) writeLocalAdded([row, ...readLocalAdded()]);
-          addedVideos = [row, ...addedVideos];
-          renderAddedVideos();
-          addInput.value = '';
-          showAddStatus(`已加入“精选视频”：${row.title || video.url}${addedShared ? '' : '（在线保存还没开通，先存在这台设备）'}`, 'ok');
+          await saveAddedRow(row);
+          showAddStatus(`已加入“精选视频”：${row.title || video.url}${localOnly}`, 'ok');
         } finally {
           addSubmit.disabled = false;
         }

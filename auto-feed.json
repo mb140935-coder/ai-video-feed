@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T16:50:15.883Z",
+ "updated": "2026-11-01T17:03:24.219Z",
  "items": [
   {
    "key": "youtube:KM3VQZKjpiY",
@@ -591,22 +591,6 @@
  },
  "news": [
   {
-   "title": "DeepSeek unveils AI ‘super agent’ in coding race with OpenAI, Anthropic",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbFU5NlZJMVBaQ0txUnotazkwaWdmQzJwb3JvWUY4dTFHd2VERGZtdVJiMmxaTG9vR0pjZjFLOXZoZVRfRlFFZzM3dV81VVM3RDZLckQxZ01nc2ZFWGVvQlVoalk3X21iWDdBa29WcWNvblY1YVpGc3hPbDJCVVA3a2d2YVJDbFlZRUdkZ0NXTHplVTlEUGJ6RVBXTXZ1bWQ5eVRNNtIBpAFBVV95cUxQY3o3SXYteGFPRF9kQ3psaFZaTDJHMzhibnhoVE5LdjhGVUxkN2VBNnVuNHd2XzhodEpYLTRyMzhRcXNpWjY4SjBhMmdzek1oN0ZGRnh6RU5aWm12QUxYdDVvaktJUUU2UE1QVVdXUzhvdHFPZ0FrOHpOODJNQUlHYm5DSlI3aW8wS0dpMHFDWTNfNGpQeS0wYnU1TkIxbmtxVGRfSw?oc=5",
-   "source": "South China Morning Post",
-   "domain": "scmp.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "South China Morning Post"
-   ],
-   "themes": [],
-   "entities": [
-    "OpenAI",
-    "Anthropic",
-    "DeepSeek"
-   ]
-  },
-  {
    "title": "Anthropic’s $2T IPO could create millionaires—but it’s asking candidates what they’d do if stock hit zero",
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPSlBiVFRIMmt2WEVQTjRoQ21LTElPODlaUVNwWTJyUWxrNUw0amktMS12NDhEUGNYT2Q0bEE4S1lCd3ZNbFAzWEY1dDMyNjhObmJzRG51bndoNEt6ck80U1h5b0JHSF84MTAtMmJpR0dCSzRORWpLZU1EbUEyVzdiM2haTVFkelhTYXlKNU9ndEpmWXhkQS1kMXBRLUp6RDJ4LVpjVTJZYUdVY1NZd3NIYkFWN2M1RXZ5M09TY3JaRXlObURIY0VXV1lmNGJCWmFpeHdmOW52Y1d5c0ZIQ2VDY0l5Sng?oc=5",
    "source": "Fortune",
@@ -618,6 +602,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic’s $2T IPO could create millionaires—but it’s asking candidates what they’d do if stock hit zero"
    ]
   },
   {
@@ -632,20 +619,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
-   ]
-  },
-  {
-   "title": "OpenAI Raises Less Than Half of $30 Billion Target in Latest Round",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTW9TMmVsZkc2b05TYkloVW41X050RjdtZ1F5U01TRnJOSEthYTJpcDdPWVhJb0FvRGEteHgtbVhSS0lOVEZ3T2N5MTNpSUNWNXpETThZR0RvcFQwY2Q5R3ctRUFvM1ZtdFdMaXhGSnpPM2FiLUhORXNrem84cUpfVGpuQ0VmaGNsZUlxUVQ0dk4zQUE2cWFzUk8yM1R3cjc3dEczVw?oc=5",
-   "source": "WSJ",
-   "domain": "wsj.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "WSJ"
    ],
-   "themes": [],
-   "entities": [
-    "OpenAI"
+   "headlines": [
+    "Anthropic's internal AI use is now worth more than employee pay, at the prices it charges customers"
    ]
   },
   {
@@ -660,6 +636,28 @@
    "themes": [],
    "entities": [
     "xAI"
+   ],
+   "headlines": [
+    "Judge rejects xAI’s bid to dismiss NAACP lawsuit over its gas turbines"
+   ]
+  },
+  {
+   "title": "OpenAI Raises Less Than Half of $30 Billion Target in Latest Round",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTW9TMmVsZkc2b05TYkloVW41X050RjdtZ1F5U01TRnJOSEthYTJpcDdPWVhJb0FvRGEteHgtbVhSS0lOVEZ3T2N5MTNpSUNWNXpETThZR0RvcFQwY2Q5R3ctRUFvM1ZtdFdMaXhGSnpPM2FiLUhORXNrem84cUpfVGpuQ0VmaGNsZUlxUVQ0dk4zQUE2cWFzUk8yM1R3cjc3dEczVw?oc=5",
+   "source": "WSJ",
+   "domain": "wsj.com",
+   "published": "2026-10-31",
+   "outlets": [
+    "WSJ",
+    "TechCrunch"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI Raises Less Than Half of $30 Billion Target in Latest Round",
+    "OpenAI reportedly lowers funding target for new round"
    ]
   },
   {
@@ -675,6 +673,9 @@
    "themes": [],
    "entities": [
     "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI slashes funding target by $10 billion amid tech rout, FT reports"
    ]
   },
   {
@@ -690,6 +691,9 @@
    "entities": [
     "OpenAI",
     "Anthropic"
+   ],
+   "headlines": [
+    "Google Joins OpenAI And Anthropic In Promising New Scraping Controls"
    ]
   },
   {
@@ -705,6 +709,27 @@
    "entities": [
     "Sam Altman",
     "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization"
+   ]
+  },
+  {
+   "title": "美方称“英伟达CEO黄仁勋成情报接触目标”，外交部：有关报道捕风捉影，纯属对华污蔑抹黑",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BZmxFaGxUWDBxeWZGS3RuR28wQVU1MVAtSm94WUhWcmdFTl9MYkozaWFHa2RpbHhDRExlcENQMEFtZHpFNXBZaDZ5YnM3S3owTExXaTlKVnMyRXJqU1JENQ?oc=5",
+   "source": "ThePaper.cn",
+   "domain": "thepaper.cn",
+   "published": "2026-10-30",
+   "outlets": [
+    "ThePaper.cn"
+   ],
+   "themes": [],
+   "headlines": [
+    "美方称“英伟达CEO黄仁勋成情报接触目标”，外交部：有关报道捕风捉影，纯属对华污蔑抹黑"
+   ],
+   "entities": [
+    "Jensen Huang",
+    "NVIDIA Research"
    ]
   },
   {
@@ -719,6 +744,9 @@
    "themes": [],
    "entities": [
     "Sam Altman"
+   ],
+   "headlines": [
+    "Sam Altman says he has ‘empathy’ for mathematicians who are upset about AI"
    ]
   },
   {
@@ -733,6 +761,9 @@
    "themes": [],
    "entities": [
     "Sam Altman"
+   ],
+   "headlines": [
+    "Hon Hai Chairman Says AI Demand Is Real After Meeting Sam Altman"
    ]
   },
   {
@@ -747,6 +778,9 @@
    "themes": [],
    "entities": [
     "Sam Altman"
+   ],
+   "headlines": [
+    "'He's let the AI loose.' - Ari Emanuel on Sam Altman"
    ]
   },
   {
@@ -761,20 +795,9 @@
    "themes": [],
    "entities": [
     "Kai-Fu Lee"
-   ]
-  },
-  {
-   "title": "The big questions remaining after Anthropic’s blockbuster IPO prospectus",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9VYXRVZG52ZU8wZ183VXZkS192WXFoWm5uRm0wNE1PZFZBblEyTklTWnZodHhNVUIyZlNaZGI1Y2xRaGJqZ3FTSVplcjNaM2tZVzF6UlNpRTd4S0dlQzVrak5jOHFQN2tfdkpMalkzWXlvVjl5T0hpb9IBfkFVX3lxTFBsbUVyNW9GLVlJZ3dpSHl2MXVZa0pxdDRiN2FnakZCa3lwVDJFOXdiSW9iYTh3UnhOZ0xhYklQSnJXVmoxaGpwckIyNzkzWm9hTVhVOFBrZTFHbnV5LWVBcFdiRGFqMXUyRXZXNjM5Z1ZNVXdiR1E3eFlzLU04Zw?oc=5",
-   "source": "CNBC",
-   "domain": "cnbc.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "CNBC"
    ],
-   "themes": [],
-   "entities": [
-    "Anthropic"
+   "headlines": [
+    "李开复为何选择临平？“AI六小虎”零一万物落子杭州背后"
    ]
   },
   {
@@ -789,6 +812,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Nvidia in talks to give credit support for Nscale's deal with Anthropic, The Information reports"
    ]
   },
   {
@@ -803,6 +829,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic may not secure investment-grade rating after IPO, Blackstone tells investors"
    ]
   },
   {
@@ -817,6 +846,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic expected to receive high 'junk' rating from credit agencies following IPO, FT report says"
    ]
   },
   {
@@ -831,6 +863,9 @@
    "themes": [],
    "entities": [
     "DeepSeek"
+   ],
+   "headlines": [
+    "Behind DeepSeek’s $16 Billion Funding: Chinese Tech Titans and State Players"
    ]
   },
   {
@@ -846,6 +881,9 @@
    "entities": [
     "Jeff Dean",
     "Andrej Karpathy"
+   ],
+   "headlines": [
+    "Agent identity startup Mintive lands Cowboy Ventures, Coatue, angels Jeff Dean, Andrej Karpathy"
    ]
   },
   {
@@ -861,6 +899,10 @@
    "themes": [],
    "entities": [
     "Cohere"
+   ],
+   "headlines": [
+    "Canada Gets Into the AI Business With Billion-Dollar Cohere Stake",
+    "Canada to Take Equity Stake in AI Firm Cohere"
    ]
   },
   {
@@ -876,6 +918,10 @@
    "themes": [],
    "entities": [
     "Cohere"
+   ],
+   "headlines": [
+    "Canada, Nvidia Back Cohere at Over $20 Billion Valuation",
+    "Nvidia and Canada are backing Cohere's record funding round of up to CAD $7 billion"
    ]
   },
   {
@@ -890,6 +936,9 @@
    "themes": [],
    "entities": [
     "Elon Musk"
+   ],
+   "headlines": [
+    "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative"
    ]
   },
   {
@@ -904,6 +953,9 @@
    "themes": [],
    "entities": [
     "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI-backed Thrive Holdings acquires ADT"
    ]
   },
   {
@@ -918,6 +970,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "SpaceX’s Largest Revenue Source Is a Finite Deal With Anthropic"
    ]
   },
   {
@@ -932,6 +987,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Opinion | Anthropic’s IPO Will Be a National-Security Win for Taiwan"
    ]
   },
   {
@@ -946,6 +1004,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Two fears will decide the fate of Anthropic’s giant IPO"
    ]
   },
   {
@@ -960,6 +1021,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic Launched A Consulting Arm. 5 Ways The Industry Has To Change"
    ]
   },
   {
@@ -974,6 +1038,9 @@
    "themes": [],
    "entities": [
     "Mistral AI"
+   ],
+   "headlines": [
+    "Mistral AI publicly releases Large 4, targets cybersecurity users"
    ]
   },
   {
@@ -988,6 +1055,9 @@
    "themes": [],
    "entities": [
     "Mistral AI"
+   ],
+   "headlines": [
+    "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity"
    ]
   },
   {
@@ -1002,20 +1072,9 @@
    "themes": [],
    "entities": [
     "Mistral AI"
-   ]
-  },
-  {
-   "title": "Dept of Justice reportedly probes Nvidia over $13 billion Hugging Face AI platform acquisition — concerns raised over competition in AI and pressure on customers",
-   "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxQU3BmSkJtd25WTTA4N18xSVd1U0JrQlo2eGhtaFZzaEJ4U3d0dzRSM1NDRUpaSFRHc0w4LTFySUhZazRpcmd4bTQ2Tk9lNmczR3NSV2RILVpmbml0ZkZINWU4b1JVQVo0SGhXRlN3LWhiMHVNd0gwLXBKZHI2ZENoaG8tZVh0WXZRSld1YlNNR0FFaVdfS2xzdW4tMDQxdUhQUHNhSzJwcEhyXzRoZ1p0MmVIRjFpZVkxY2Q1WVhuampCWXlrekVNSGFvYVFKWXdNMlVFQXhUbmZDdk1VemJCVnpIY3VxcmN1dV9MdEg2TUdPd0JNV1FHbVo0R0c0THRZSDRzdnVMY1M3ZXE4X3dFNmlKZlZMSmdwWHpBaWlNRFBvM1dPeE0wV0w3RUxrZk5XQWtnUGZKNnBkVkhIeC01djRtaWZnNFNNbU45eA?oc=5",
-   "source": "Tom's Hardware",
-   "domain": "tomshardware.com",
-   "published": "2026-10-29",
-   "outlets": [
-    "Tom's Hardware"
    ],
-   "themes": [],
-   "entities": [
-    "Hugging Face"
+   "headlines": [
+    "Orange unit signs deal to Mistral's latest AI cybersecurity model"
    ]
   },
   {
@@ -1030,6 +1089,9 @@
    "themes": [],
    "entities": [
     "Cohere"
+   ],
+   "headlines": [
+    "Ottawa takes stake in Cohere as AI company opens $4.5 billion funding round"
    ]
   },
   {
@@ -1045,7 +1107,11 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI law firm Crosby bids on disintegrating, famed firm Weil Gotshal",
+    "Legal AI Startup Bids for Assets of Fallen Law Firm Weil Gotshal"
+   ]
   },
   {
    "title": "AI Is Upending Law Firm Pricing; IBM and Mastercard Want a Share of the Savings",
@@ -1059,7 +1125,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI Is Upending Law Firm Pricing; IBM and Mastercard Want a Share of the Savings"
+   ]
   },
   {
    "title": "Reading the Bench: How Appellate Lawyers Are Using AI in Oral Argument Prep",
@@ -1073,7 +1142,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Reading the Bench: How Appellate Lawyers Are Using AI in Oral Argument Prep"
+   ]
   },
   {
    "title": "AI Is Changing What In-House Lawyers Need to Learn",
@@ -1087,7 +1159,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI Is Changing What In-House Lawyers Need to Learn"
+   ]
   },
   {
    "title": "DOJ Inquires About Nvidia’s Hugging Face Deal, Reuters Says",
@@ -1103,6 +1178,29 @@
    "themes": [],
    "entities": [
     "Hugging Face"
+   ],
+   "headlines": [
+    "DOJ Inquires About Nvidia’s Hugging Face Deal, Reuters Says",
+    "Nvidia's $12.9 billion Hugging Face deal draws DOJ scrutiny"
+   ]
+  },
+  {
+   "title": "The DOJ is reportedly looking into Nvidia’s Hugging Face acquisition.",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQM0RYQWd3V3l0NV9tU19QVWdGWkxpVHV6dTJBaTJuZmJJblhBaUhIVG1QSnNJeVNpRnl6TmNwN1pDSGgwVW5YZnk4eU1oNDJmNGtLNmI1Y290NEFtOGtpRmcxVm85S0hwanBmODFrcmladXZaNHd3WWplSXU1VGJWOEo4NWMtMkRyc2l6T0tCVnNRMGhNSFc2bm8xYzJaRWo3Q0dFWGJPLUc?oc=5",
+   "source": "The Verge",
+   "domain": "theverge.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "Tom's Hardware",
+    "The Verge"
+   ],
+   "themes": [],
+   "entities": [
+    "Hugging Face"
+   ],
+   "headlines": [
+    "Dept of Justice reportedly probes Nvidia over $13 billion Hugging Face AI platform acquisition — concerns raised over competition in AI and pressure on customers",
+    "The DOJ is reportedly looking into Nvidia’s Hugging Face acquisition."
    ]
   },
   {
@@ -1118,6 +1216,9 @@
    "entities": [
     "Sam Altman",
     "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI CEO Sam Altman comments on cyber risk: What you need to know"
    ]
   },
   {
@@ -1133,6 +1234,9 @@
    "entities": [
     "Anthropic",
     "Amazon AGI / AWS AI Labs"
+   ],
+   "headlines": [
+    "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more"
    ]
   },
   {
@@ -1147,6 +1251,9 @@
    "themes": [],
    "entities": [
     "Sam Altman"
+   ],
+   "headlines": [
+    "Sam Altman shares his ‘chronic disappointment’ in MBA students—they’re stuck on what ‘was cool five years ago"
    ]
   },
   {
@@ -1161,6 +1268,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic’s seven founders tighten grip ahead of blockbuster IPO"
    ]
   },
   {
@@ -1175,6 +1285,9 @@
    "themes": [],
    "entities": [
     "Microsoft AI"
+   ],
+   "headlines": [
+    "Microsoft cuts capex forecast on AI capacity delays"
    ]
   },
   {
@@ -1189,6 +1302,9 @@
    "themes": [],
    "entities": [
     "Microsoft AI"
+   ],
+   "headlines": [
+    "Microsoft CEO Reveals Microsoft’s Low-Cost AI Model Mix Strategy: Computing Power Price War Is Inevitable, Proprietary Evaluation Benchmarks Will Become Core Enterprise Assets in 5 Years"
    ]
   },
   {
@@ -1203,6 +1319,9 @@
    "themes": [],
    "entities": [
     "Liang Wenfeng"
+   ],
+   "headlines": [
+    "AI Reshuffles Global Wealth Rankings: Zhang Yiming's 670 Billion Yuan Fortune and Liang Wenfeng's 280 Billion Yuan Net Worth Redefine Tech Billionaire Lists"
    ]
   },
   {
@@ -1217,6 +1336,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic just launched tools to show companies what their AI spending is buying"
    ]
   },
   {
@@ -1231,6 +1353,9 @@
    "themes": [],
    "entities": [
     "xAI"
+   ],
+   "headlines": [
+    "xAI is buying out homeowners who promise not to sue over data center noise"
    ]
   },
   {
@@ -1245,6 +1370,77 @@
    "themes": [],
    "entities": [
     "xAI"
+   ],
+   "headlines": [
+    "‘Elonville’: US residents say Musk’s xAI offered to buy homes if they don’t sue over datacenter noise"
+   ]
+  },
+  {
+   "title": "OpenAI plans to buy Google's AI chips, The Information reports",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNElvX2Y3Ym5FZFdxRGVFMHpwNTRIc3lQUXRzNFNST0xVY2FjR2xoMmFCaDNMWFhtQnZuSXlSSF9zamY1aUY1a2JIX3hBWUFhQ19hb2w4a0JIQmtKRmJoNjRadWJnWmprNE50V2ZQSFRQWTI5aUhXRzkwMlhRNktVOWJwbjJnUk9EVVpiVEo1UjhwMWpvek9EYWpFNkRMTzA?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI plans to buy Google's AI chips, The Information reports"
+   ],
+   "entities": [
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "Anthropic IPO filing warns some risks may be uninsurable. AI coverage will be issue for every company",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0WTJPMm53OUM5OE10RlZxeF9fQjktNUU5SjM5UFJlUnhsT2VKV250WkdpME1wUnFRVTZES1l0M3hEeUZ2d0pIVFZ2bmFvVHE4dWx4WVJGcEVKQ3NMamt4NDcwLWpZWEZvY3QzdjhQeS1ud1BQV0puaNIBfkFVX3lxTE13dU95SnVEdkdhSzN2QVNmV3lCZDlfZ1NYVlFmZG4zblcyVjA3ZU54WGFmSG5VSk1oV0JTMEl5WlpWZkpFTmdWRHNNZl9aUkNXODlmUjNNcEVyM3FjYm9vVDBEWTZFLTc5a2E1UVhGSVdLM0F5UWZ4RzR4bF9nQQ?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic IPO filing warns some risks may be uninsurable. AI coverage will be issue for every company"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic is going public—1 number from its filing is an encouraging sign for investors, says IPO expert",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Vc2N5SUR3WmY1a1l1cWJRbFM1RXVLakdBUGc1YWZ0dWRjLVhfN2ZZX2lHUG9pcU1HVno0cnMyY096UWp5b1lmYmlSRTN6SnI5ZFhGTGE2NGtUWkM0cUhCazlDM0l1LTh6ZkNYWFlwbGZuQ3pDdUZjLUc2bU9JZ9IBgwFBVV95cUxPbnp1REdiQWJ3c1Vic0N1cEtITFRkbDlraEY0VzJhTVhLdmd5RHYweHVCWllTNlJsajJ3d3gxa2RhV0ZWRjZJNkRZYjFjQm0zZWJkTTRPSlBrRjZnQmk1RFlsUXpjc3NiakxuVlZfckNxcC1lbHUwMTZNQnJOR2FNbzMyRQ?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic is going public—1 number from its filing is an encouraging sign for investors, says IPO expert"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic’s public benefit structure creates unusual risks for IPO investors",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNelBxRXdTMXd2cXlSM2haZGI3d0xUekJ4Y082TzBwekJrVHRIYUp4NGxpR3B2Q3RfZGlTZjM5bG8taWdKUGczdUxtU3B0cUZRQktvLTBDUXBSZzg3TGhHcHhQdjRlUTAydVQ5MXFGU2RPM1lURFlzY2piTkd5aTB6cm1iNGg0SnZsX29VdzVpNG1kdGJs0gGaAUFVX3lxTFAyakJWQllhd0lLR1NmVmh2UGlnUWxPOWNjRkRRWlhZZGJoY0RwS2FiVDJ3WjJGdEMya1UzNDNXcTFlaEtMbEZqM1lJWG9LNFVCSlVkaVYyZ2NPNGZlT3dBTnFtaXJoRWVwLWF6TnQzS0hVSG9lMld1VTFSM1VvdGtvWHdxYktqcmQxdVNIMUtVQ0FjX3Bla2RSQXc?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic’s public benefit structure creates unusual risks for IPO investors"
+   ],
+   "entities": [
+    "Anthropic"
    ]
   },
   {
@@ -1259,7 +1455,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Biden’s Antitrust Enforcers Are Starting an A.I. Legal Company"
+   ]
   },
   {
    "title": "Researchers warn of surging law firm cyber attacks fueled by AI",
@@ -1273,7 +1472,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Researchers warn of surging law firm cyber attacks fueled by AI"
+   ]
   },
   {
    "title": "Meet the legal AI startup helping David take on Goliath",
@@ -1287,7 +1489,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Meet the legal AI startup helping David take on Goliath"
+   ]
   },
   {
    "title": "Watch the full discussion between OpenAI CEO Sam Altman and Oracle co-CEO Clay Magouyrk",
@@ -1302,21 +1507,9 @@
    "entities": [
     "Sam Altman",
     "OpenAI"
-   ]
-  },
-  {
-   "title": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQzhhVHhOcWFHTWVOU0ZPYUswRERZWXg4SFJFRV82RGdNbWY1YlZocVlwN2tNVGFkY2ZjOGd3dHpPV3Ywa0RRRklvM1pSSmQzS3FJUkc2UzdCVTF0YnJCQjEwQkROR2FYSWNNbVRWb0RsVjctdW90blVnY1ZzUWpweXZHR1ZMMElpeTVDYUdERUNhV0lRUWhaeGdndlFnMXFiRS1kNGxxd19YNmZKVXIyNDVwc1hjamt2ckFSWDVR?oc=5",
-   "source": "Ars Technica",
-   "domain": "arstechnica.com",
-   "published": "2026-10-27",
-   "outlets": [
-    "Ars Technica",
-    "Quartz"
    ],
-   "themes": [],
-   "entities": [
-    "Google DeepMind"
+   "headlines": [
+    "Watch the full discussion between OpenAI CEO Sam Altman and Oracle co-CEO Clay Magouyrk"
    ]
   },
   {
@@ -1331,6 +1524,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Who’s really in charge at Anthropic after the IPO?"
    ]
   },
   {
@@ -1345,6 +1541,9 @@
    "themes": [],
    "entities": [
     "Jensen Huang"
+   ],
+   "headlines": [
+    "为什么黄仁勋帮不了欧洲人工智能"
    ]
   },
   {
@@ -1359,6 +1558,9 @@
    "themes": [],
    "entities": [
     "Liang Wenfeng"
+   ],
+   "headlines": [
+    "Zhang Yiming takes the top spot, Liang Wenfeng leads AI hard-core technology to the forefront of the wealth stage"
    ]
   },
   {
@@ -1373,6 +1575,9 @@
    "themes": [],
    "entities": [
     "Liang Wenfeng"
+   ],
+   "headlines": [
+    "AI洗牌财富榜：张一鸣6700亿、梁文锋2800亿"
    ]
   },
   {
@@ -1387,6 +1592,111 @@
    "themes": [],
    "entities": [
     "OpenAI"
+   ],
+   "headlines": [
+    "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication"
+   ]
+  },
+  {
+   "title": "What’s Next for Anthropic’s Mega-IPO: Five Things to Watch",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOUJ4OTl4VVR0UFpuQ2JqQy1DejFlb0xSbFJYN3NvRV9nV3VOM013dlF1V0xQTlB2TVRnQ0FYQVZsaXMtazU0cUdmWTVQVWxRZTdOWVg3YTVfOFlrcXF6ck00ajctcnRzSGRGa2ZMUHVYRzN1ZjZ2dWJuQlZiMWFJbFlYZVdlMnVtWVhMT2RjYlBCakMzVUU4TkVCQk5Bb1J6OHloaGtROWpqMnJf?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Bloomberg"
+   ],
+   "themes": [],
+   "headlines": [
+    "What’s Next for Anthropic’s Mega-IPO: Five Things to Watch"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "跟黄仁勋逗趣的机器鸭爆单！机器人进入“树莓派”时刻？",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUNWhUNVV5OHZKb21ndjV3dlJ2ZUROclgyNHE2clJIQW5DcmJRZFFTMGF5WWxZdFVrSU1tdHJCUWdKRFpSZFpfUnVsdkdvRThNSHpEUkVmUnZ1aXQ3U2xZZA?oc=5",
+   "source": "ThePaper.cn",
+   "domain": "thepaper.cn",
+   "published": "2026-10-27",
+   "outlets": [
+    "ThePaper.cn"
+   ],
+   "themes": [],
+   "headlines": [
+    "跟黄仁勋逗趣的机器鸭爆单！机器人进入“树莓派”时刻？"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ]
+  },
+  {
+   "title": "Anthropic's IPO is risky business",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5BQmF4N2tuZEkyNXluTHlDTnpXbzJwM0dvZzlMd3NZTkJRUk9VSFI2X1RfYUNrTTRhd2FmTzFNejVFWkd4U3lMT0JxN0E3S25makc2MDBJNGFGdTRlNUpBS0hoRmhmdkY5Mkx0a3hyajBMYW9Kdm9YQk1HSdIBgAFBVV95cUxQcHAtNDE0N1FrSjJ3cTB6RndId0tsX2ZPSW1LZUJ3V0FMTGdkMWZRbk5lVHhBQm9fUnhBOVVlMzJhS1VsaEp5MWxHMDBmYnFWWVJzV09DZk9LdGdZRVdoRjcyYXl4TDFPM25fMVM1ckIxOG5QTmNhZXFSZTBWVTdBQQ?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's IPO is risky business"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic's IPO: A close look at AI frontrunner's rapid growth, spiraling costs",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPX1UzRjJ6M0VaSXoydWlIZ2pzc2tGcUZtMjlzR1JhUE9UR0llUERrRWRJNUdTRWNNQU9IUUEycmZUVk40cEtCSjZ5TzRqZVRWT1JvMEtmQmlENklzd19LLWlDREZZakJ0MWdTOTZleEdBN1FVRFJGMGxHWnpkY2owdVFSQ0FWWHNFcWlPTUtpb1ZDRkZrY0tUMkZrdHRJMnFJZEZveXVQaG41OHFibWFyMWpfNG9jTlR0aTM1enNKT18?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's IPO: A close look at AI frontrunner's rapid growth, spiraling costs"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic's IPO could be 'speculative fiction' or a 'generational moment' — investors are split",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOVW9WUEZPUXNnaWZxQXJnWUluNWVMRnV1cDZyb0l6YmhJZWdCWGVEanNGUWMxQlRwc2R3VkU1VmJNVm1PZDNER09OdkFDb1o5cF9yQi0yNE4xR0xBREJoNC1JQlUwVFhOQlJWUjYtSUZmUGcwbkRTclVDSFp5eGhpdUZHS2lrZ9IBiwFBVV95cUxNS0lWNXZ3ZXMycTFRZy1YYnV2WVlMQU83MVptcWhkMUp1VjVoV19BVWJ5bUhEWmo1S2VhelZYNWR1RmI1ZmNPZGJ5ZlV5QklRWVB4M3NLYS1LRVNZbVZQb3NSZkNRSTRhLWdrRkZnNTFSZGE1TVA2VzhXSl9qVlRDZkJtSjg4OHh1SnFF?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's IPO could be 'speculative fiction' or a 'generational moment' — investors are split"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "What Smart People Are Saying About Anthropic's IPO Paperwork",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMV9KRlFKc285NkN5VDFQcTd5NWFWajJQM0NHaUFGTjU5V05NX1lrNDFwaTIzVnktYXZHM24xVXJUV000SmJXMGdJZHhUTmFFdHItZGF3OHZfLVRmOU4tMm5EcEV4Y25ZM0RIOHpDeDI4aERqVWx2SHFPWE85WGsyaU1JOE9aTzRmbGs3MVp3?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "What Smart People Are Saying About Anthropic's IPO Paperwork"
+   ],
+   "entities": [
+    "Anthropic"
    ]
   },
   {
@@ -1401,7 +1711,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI Enters the Courtroom as Dubai Rethinks How Lawyers Train and Judges Work"
+   ]
   },
   {
    "title": "ClioCon 2026 Day 2: Judicial AI Adoption, Law Firm Differentiation in the AI Age",
@@ -1415,7 +1728,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "ClioCon 2026 Day 2: Judicial AI Adoption, Law Firm Differentiation in the AI Age"
+   ]
   },
   {
    "title": "The humanist at the top of real estate’s automation machine: ‘I happen to despise the term headcount in the world of AI’",
@@ -1429,7 +1745,36 @@
    "themes": [
     "房产 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "The humanist at the top of real estate’s automation machine: ‘I happen to despise the term headcount in the world of AI’"
+   ]
+  },
+  {
+   "title": "The Biggest Takeaways From Anthropic’s IPO Prospectus",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1ocFhISXowTzhvOEN4cFBXWDdCdE9XUEkxNzNYd2xhYnhBN2xQaVlnVGtCT3YzSkhMT3dubmxRV041cFl3U1Z5UTJ5RERqRldhdERaM1Zfa1FCMUZMRkxRcGVBWDFLTlRwczFDQkN3MlFJMkZUdVJ1Tmpn?oc=5",
+   "source": "WSJ",
+   "domain": "wsj.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "CNBC",
+    "Axios",
+    "WSJ",
+    "WIRED",
+    "Fortune"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ],
+   "headlines": [
+    "The big questions remaining after Anthropic’s blockbuster IPO prospectus",
+    "Inside Anthropic's massive — and wild — IPO prospectus",
+    "The Biggest Takeaways From Anthropic’s IPO Prospectus",
+    "Why Anthropic’s IPO Prospectus Is Missing So Many Key Figures",
+    "Anthropic’s IPO prospectus shows $16.3 billion in revenue, an $80.7 billion net loss, and goal of an 'age of miracles'",
+    "Anthropic’s IPO Prospectus Reveals What’s Under the Hood"
+   ]
   },
   {
    "title": "The hawkish pause, Lula's market meltdown, and the Anthropic IPO bombshell: The financial week in five charts",
@@ -1445,21 +1790,31 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "The hawkish pause, Lula's market meltdown, and the Anthropic IPO bombshell: The financial week in five charts",
+    "Five weird details from Anthropic’s IPO filing"
    ]
   },
   {
-   "title": "Anthropic’s risk factors include the end of humanity, a feud with the Pentagon, and CEO Dario Amodei’s reputation",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNWdjMWdoM3RJUUpMMTgtZDFaRVFSYkpYY1o4NmR3WU1QLTZXMzI1eG5jNklsWGRHdi1UMjFpTFFpS0pPdjl1V0NNQUJnb0FCNjJrQjZrM3NoSm5Oa0lDbWlhMTN6cWVSd2U3MmNpQ1JyMmhDbnVnNS12bFF4N1VEMXEwbGJPTnZRVWxwZi1yMklWYkF0WFFxNjVmekY?oc=5",
-   "source": "Fortune",
-   "domain": "fortune.com",
+   "title": "Anthropic files for potentially the biggest IPO ever as CEO warns of risk to humanity from AI",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNlh5REtLQ3ZiYnhaV0ZnZXRhMVkwV282YXN2ODFlQjA4NWx4UHdUWlNwV1lXZnFHcDZ2S2NkMGF3VnVkczNGb1NVQnJNSk5XdEIyTHZRTUlGYlFVSXpadjNTT0VsVjhMUUxqRExWOEdENGM3bl9HUmJ5eEwzT0Jhc2xRNzdfX1RpV3VVcjNxYjM?oc=5",
+   "source": "AP News",
+   "domain": "apnews.com",
    "published": "2026-10-26",
    "outlets": [
-    "Fortune"
+    "AP News",
+    "Axios",
+    "Forbes"
    ],
    "themes": [],
    "entities": [
-    "Dario Amodei",
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic files for potentially the biggest IPO ever as CEO warns of risk to humanity from AI",
+    "Anthropic files for its IPO",
+    "Anthropic Files For IPO—Here’s What Company Revealed"
    ]
   },
   {
@@ -1475,6 +1830,46 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic’s 7 cofounders are each worth $14 billion already—and that could double in IPO",
+    "Anthropic's IPO filing shows each of its 7 cofounders is worth $13B+"
+   ]
+  },
+  {
+   "title": "Anthropic’s risk factors include the end of humanity, a feud with the Pentagon, and CEO Dario Amodei’s reputation",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNWdjMWdoM3RJUUpMMTgtZDFaRVFSYkpYY1o4NmR3WU1QLTZXMzI1eG5jNklsWGRHdi1UMjFpTFFpS0pPdjl1V0NNQUJnb0FCNjJrQjZrM3NoSm5Oa0lDbWlhMTN6cWVSd2U3MmNpQ1JyMmhDbnVnNS12bFF4N1VEMXEwbGJPTnZRVWxwZi1yMklWYkF0WFFxNjVmekY?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic’s risk factors include the end of humanity, a feud with the Pentagon, and CEO Dario Amodei’s reputation"
+   ],
+   "entities": [
+    "Dario Amodei",
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Claude says Anthropic's IPO is a buy. ChatGPT disagrees",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBOQkpIcTdUQTA1ZWJqVUh5Z3gxZ0NYVmMweHhFX3paZm1KWDJNblhKVEozTmIxZTdMX3YwLVNxUklhekF4ZENmY08xNk5zYmhDeTFxUWk1aVNWWWlnM0tMU0pscXhzeFpGZG9ZTERWZWs?oc=5",
+   "source": "Axios",
+   "domain": "axios.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Axios"
+   ],
+   "themes": [],
+   "headlines": [
+    "Claude says Anthropic's IPO is a buy. ChatGPT disagrees"
+   ],
+   "entities": [
+    "OpenAI",
+    "Anthropic"
    ]
   },
   {
@@ -1489,6 +1884,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic's 7 cofounders are about to make generational fortunes. One owns more shares than the CEO."
    ]
   },
   {
@@ -1503,6 +1901,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic's IPO puts power in the hands of founders, giving everyday shareholders little voice"
    ]
   },
   {
@@ -1517,6 +1918,9 @@
    "themes": [],
    "entities": [
     "Lisa Su"
+   ],
+   "headlines": [
+    "Intel's Lip-Bu Tan has spoken with Lisa Su about potential collaboration with AMD — CEO's overall strategy targets custom chips, advanced packaging, and stronger foundry business"
    ]
   },
   {
@@ -1531,6 +1935,9 @@
    "themes": [],
    "entities": [
     "Satya Nadella"
+   ],
+   "headlines": [
+    "Satya Nadella says he was wrong to think AI alignment would just happen"
    ]
   },
   {
@@ -1545,6 +1952,9 @@
    "themes": [],
    "entities": [
     "Elon Musk"
+   ],
+   "headlines": [
+    "Elon Musk’s AI ‘The Odyssey’ Is Absolute Garbage And It Stinks"
    ]
   },
   {
@@ -1559,6 +1969,9 @@
    "themes": [],
    "entities": [
     "Elon Musk"
+   ],
+   "headlines": [
+    "Elon Musk warns more than 200 AI cloud companies face 'guppy-level death' as the AI boom runs into a debt crisis"
    ]
   },
   {
@@ -1573,6 +1986,9 @@
    "themes": [],
    "entities": [
     "Liang Wenfeng"
+   ],
+   "headlines": [
+    "张一鸣登顶 梁文锋领衔AI硬科技强势登上财富前台"
    ]
   },
   {
@@ -1587,20 +2003,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
-   ]
-  },
-  {
-   "title": "Anthropic files for potentially the biggest IPO ever as CEO warns of risk to humanity from AI",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNlh5REtLQ3ZiYnhaV0ZnZXRhMVkwV282YXN2ODFlQjA4NWx4UHdUWlNwV1lXZnFHcDZ2S2NkMGF3VnVkczNGb1NVQnJNSk5XdEIyTHZRTUlGYlFVSXpadjNTT0VsVjhMUUxqRExWOEdENGM3bl9HUmJ5eEwzT0Jhc2xRNzdfX1RpV3VVcjNxYjM?oc=5",
-   "source": "AP News",
-   "domain": "apnews.com",
-   "published": "2026-10-26",
-   "outlets": [
-    "AP News"
    ],
-   "themes": [],
-   "entities": [
-    "Anthropic"
+   "headlines": [
+    "Anthropic's soaring sales, steep losses put AI frenzy to IPO test"
    ]
   },
   {
@@ -1615,6 +2020,128 @@
    "themes": [],
    "entities": [
     "Amazon AGI / AWS AI Labs"
+   ],
+   "headlines": [
+    "Amazon CEO Andy Jassy has two Gen Z kids—and has an AI warning for the entire generation"
+   ]
+  },
+  {
+   "title": "‘Bold but sane’: what we learnt from Anthropic’s 240,000-word IPO filing",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeW1ZMzVldzZxRkdyVnlJOVplWV91NGxYZG5ON2dVMlAtRmViTnlPSmlNb21xcmR2elpfWXdxSERUZ3pvYUV3YmxtN1duOEh1TXZhWXQ1ZlRaaGp0TnB1NHFwQ09EM2Y1X2RhYkdkVzVDMHczeWN0Ukw2d1lzaDdXUFppYnc?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Financial Times"
+   ],
+   "themes": [],
+   "headlines": [
+    "‘Bold but sane’: what we learnt from Anthropic’s 240,000-word IPO filing"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Instant View: Anthropic IPO filing to put AI investment boom to the test",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNlJETmo1Z21kOWpEaXF5T25sQTVFTHE3Y3FRMWtHMEVyNlpNMXU0OVllN3dnRTlhRS1kMUx2T3JLZ0psUVJPQ29UMmNDREpWWGFpVUFEcHgxWjFzSFoydHgwR3o2R01sTVJaQjh6NlZHSV9sbFZTQ0RTSXhsSnNIV3Uxc1NVQUJla1ZZb3I2aDdiQ0x3Mm1wOUxvamE5a1k5dFRxRW5rWEVRZEpoZmc?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "Instant View: Anthropic IPO filing to put AI investment boom to the test"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "From Wall Street to Silicon Valley, Anthropic IPO poised to have massive 'trickle-down effect'",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYllMbFRuTjU1YW5QWWRQd3JFZ0VkRk52dTl6RG04VEFZZC1HalMxaE9Iem01ZlN4MW5udlBWdUtvVU93U1BETlFVamk5SlNCam1XVVRzWExBemxDSC1yM0pDSHlkR1ZHNlpSNG02OTZCcVlEMGZiUXVBUkRWaWRQYVhkLUNrUmwwZEZ0YXZ6a29pemJHZGNaU2hpVUbSAaIBQVVfeXFMTmt4Q1hTcjFXT0kwZGNHeVE2bU9GaFUxeTVKTmx5bjhmMGFOOTI2R1N1ellVLWQtYzFSZWJBVzU3WDVILWRMR05LSEFnVFNTd1lLNGJyc3k5VjBLWUI1T3lfMmtXcFBENEJQZ3ZVTktfTjJpRFRYS0ktb0tOZkxCSzlPWmM4TXlPTC1zemFtZmpzUUNQQ1RuaEg1MGtKUEgzaU93?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "From Wall Street to Silicon Valley, Anthropic IPO poised to have massive 'trickle-down effect'"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic discloses month-long training pause, AI security breaches in IPO filing",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWUlrWDlwMnBvb2RvQ1ZTVHpNdEFETnkycHVyVnlJNDVqdnNJRVo3MTZEZGxfbHFjczk2YmJVc2lqb25kZnZtcDhObmFYZ3BoMmtZUi02ZkNBTFZLMEE1VHE4clRXbWJSQTE3MWNMRFNSNDQ3c0tZeWRTdUZDODEyQWFnRlgwLVdkVnctalBhTEE1SjNQRk04REtWQ2VNOGk0c0ZnS2JvZkNjX3VfSWFaZjNBbExVOEYxS0dSRzc5azFFR3ltb2hqOHNn?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic discloses month-long training pause, AI security breaches in IPO filing"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNY2pOYXpaOW03X0lrN3B2Yzgtby1PZkg2MEdhRlZrcHVLWFUyd0RDSXU4aTllRXZwek01S2pRdFZRVWtyQzZNRXhNOGdXbG82UDJxZ2JlWmZJdlBBYlczM00wLXBfQkt1MEFkdFM1R3VZU1lhaFYtMkFvZEhPSGdPWHZfUjZ5dy1ZTk5kcEdjNGs2MlVDSE1heTJnRTZSb3pvZllLbzlxRTJiaE05ZGF2TFEzaS1xVXdE?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Anthropic Raises Concerns",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZ0p1NTdJeG1Ed3l1RVFkQWdBUFFPNUJtVzhtRllJYVJWZFVUUnNrU2dWU09Lck1CbnFSbjFyWlpHVTM0eG82eEc2QjM3NXdiRUdOMGFXWUxKdHZXbXhTN3k1OHdIREY2aV93MlRXRVZwUHlwTnJHTkxUTUhoTTR0MmJKLWFsbUZhZWc?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Raises Concerns"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "title": "Moonshot AI Launches More Powerful Kimi Model",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYWgxWWpZQmVncVp4ekNpTlpBWjBTWVVtWkZBTXdNdnJydjh4dkFSRWxmdUNqTDRxay1heG5JUUk4eV9LNUgtNkFkeDFxVExYQ2s0RWdJSkFCVHhIRWlzZnJPem1pa3lEV1AwS0ZDZDNLZXZsZ0VQWVRaWTZHamlGWkl0clczdU9OZ2lRQzRfOXotZERKZEdDTnR6Y25xRHo1Wnc?oc=5",
+   "source": "Caixin Global",
+   "domain": "caixinglobal.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Caixin Global"
+   ],
+   "themes": [],
+   "headlines": [
+    "Moonshot AI Launches More Powerful Kimi Model"
+   ],
+   "entities": [
+    "Moonshot AI / Kimi"
    ]
   },
   {
@@ -1629,7 +2156,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Under Client Pressure to Save Time with AI, Law Firms Face Verification Challenge"
+   ]
   },
   {
    "title": "Legora CEO Max Junestrand: AI legal tools could boost demand, not just cut costs",
@@ -1643,7 +2173,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Legora CEO Max Junestrand: AI legal tools could boost demand, not just cut costs"
+   ]
   },
   {
    "title": "The Once-Obscure Corner of Commercial Real Estate Now Riding the AI Boom",
@@ -1657,7 +2190,10 @@
    "themes": [
     "房产 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "The Once-Obscure Corner of Commercial Real Estate Now Riding the AI Boom"
+   ]
   },
   {
    "title": "Within Brokerages, Power Users Begin To Adopt Agentic AI: Survey",
@@ -1671,7 +2207,10 @@
    "themes": [
     "房产 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Within Brokerages, Power Users Begin To Adopt Agentic AI: Survey"
+   ]
   },
   {
    "title": "AMD CEO Lisa Su proposed bringing back the Ryzen 7 5800X3D, set plan in motion before DDR5 shortages — AM4 CPU considered a ‘final gift’ to loyal fans of the decade-old socket",
@@ -1685,6 +2224,9 @@
    "themes": [],
    "entities": [
     "Lisa Su"
+   ],
+   "headlines": [
+    "AMD CEO Lisa Su proposed bringing back the Ryzen 7 5800X3D, set plan in motion before DDR5 shortages — AM4 CPU considered a ‘final gift’ to loyal fans of the decade-old socket"
    ]
   },
   {
@@ -1699,6 +2241,9 @@
    "themes": [],
    "entities": [
     "Liang Wenfeng"
+   ],
+   "headlines": [
+    "半年融资1500亿元， “技术理想主义者”梁文锋，被资本追着跑"
    ]
   },
   {
@@ -1713,6 +2258,9 @@
    "themes": [],
    "entities": [
     "xAI"
+   ],
+   "headlines": [
+    "Grok releases the first seven minutes of its AI-generated ‘Odyssey’"
    ]
   },
   {
@@ -1727,7 +2275,10 @@
    "themes": [
     "奥运 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI-assisted judging could make its Olympic debut at LA28"
+   ]
   },
   {
    "title": "Prompting ain’t easy! 5 AI prompts real estate agents need right now",
@@ -1741,7 +2292,27 @@
    "themes": [
     "房产 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Prompting ain’t easy! 5 AI prompts real estate agents need right now"
+   ]
+  },
+  {
+   "title": "Sam Altman Predicts 3 Ultimate AI Outcomes: The Worst-Case Scenario That Could Paralyze All Competitors' GPUs",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBUYVZHYWNPdzNGOWt1N0NKWExlcy1wOEVxNFJRaF85LV8tbV9ySXhvTkQ4dWV5eDBxd3NKczczOENIaC05SkFWb2xxWnRTZWQyN0t3?oc=5",
+   "source": "36Kr",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-24",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [],
+   "headlines": [
+    "Sam Altman Predicts 3 Ultimate AI Outcomes: The Worst-Case Scenario That Could Paralyze All Competitors' GPUs"
+   ],
+   "entities": [
+    "Sam Altman"
+   ]
   },
   {
    "title": "Moonshot resets subscriber quotas after Kimi K3.1 Pro launch issues",
@@ -1758,21 +2329,11 @@
    "themes": [],
    "entities": [
     "Moonshot AI / Kimi"
-   ]
-  },
-  {
-   "title": "Meta faces massive AI bills and legal troubles. Mark Zuckerberg keeps finding ways to come out on top.",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPbDdMSGtoMTJqUWlUUWhrMGVyRENVdUtsZ016M2NFZE5neExuc3RGbjRjeWs2T2V6dXZSandUU1dSenNPS2pxWU9xdHdWUm9nR3dJbDBULXpCd1lXLS1yMlh0T0xVNDRNU2MzazZUNFN1dkJxQ1p6M041TGdYN09BajhBaWdNeUVyYmRTUVpMX0xpRE5pYjl0Y1Byb29JQy1W?oc=5",
-   "source": "Business Insider",
-   "domain": "businessinsider.com",
-   "published": "2026-10-23",
-   "outlets": [
-    "Business Insider"
    ],
-   "themes": [],
-   "entities": [
-    "Mark Zuckerberg",
-    "Meta GenAI / FAIR"
+   "headlines": [
+    "Moonshot resets subscriber quotas after Kimi K3.1 Pro launch issues",
+    "Moonshot apologises after botched Kimi K3.1 Pro launch, restores user quotas",
+    "Moonshot AI Launches New Kimi K3.1 Pro Model"
    ]
   },
   {
@@ -1787,6 +2348,9 @@
    "themes": [],
    "entities": [
     "Sundar Pichai"
+   ],
+   "headlines": [
+    "Sundar Pichai says Google is far from the ‘end state’ of self-improving AI"
    ]
   },
   {
@@ -1801,6 +2365,26 @@
    "themes": [],
    "entities": [
     "Jensen Huang"
+   ],
+   "headlines": [
+    "Jensen Huang pushes AI in energy-rich Kazakhstan, shrugs off bubble fears"
+   ]
+  },
+  {
+   "title": "Anthropic IPO stands alone as AI market jitters sideline others",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNX2RHNFI2M0VmLTVfUGwyWjBzTFZwcHBoNlFwZEttM3NHOHBVQzJmZmp0YV81V1lyX2VCWFZGMENVZzRhV3lPbVYzQWE1cHIwejVtbzlGR1hmMWpPTUlhM2pObDMyM1ZBMmEtbm14QXVnMUkzRnZvY25sTHlXM0hmTnNwbGx4SjNGaVhseGNHUVVQb0VzaVFVWTdVTUVMWkRVMS1JaFZWbDkzNmF5UEtWWWs2TEZxdjA?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-23",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic IPO stands alone as AI market jitters sideline others"
+   ],
+   "entities": [
+    "Anthropic"
    ]
   },
   {
@@ -1815,7 +2399,10 @@
    "themes": [
     "奥运 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI-assisted gymnastics judging in talks for use at 2028 L.A. Olympics, official says - The Athletic"
+   ]
   },
   {
    "title": "Law Firms’ AI Risks Are Growing Faster Than Insurers Can Price Them",
@@ -1829,7 +2416,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Law Firms’ AI Risks Are Growing Faster Than Insurers Can Price Them"
+   ]
   },
   {
    "title": "Beyond the LLM: Why I’m Betting on Smaller, Sovereign AI for Law Firms",
@@ -1843,7 +2433,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Beyond the LLM: Why I’m Betting on Smaller, Sovereign AI for Law Firms"
+   ]
   },
   {
    "title": "Meta strikes deal to keep Zuckerberg in California after wealth tax concerns",
@@ -1863,6 +2456,14 @@
    "themes": [],
    "entities": [
     "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "Meta strikes deal to keep Zuckerberg in California after wealth tax concerns",
+    "Meta’s deal to keep Zuckerberg in California adds fuel to wealth tax debate ahead of election",
+    "Meta strikes deal with Mark Zuckerberg to help him foot billionaire tax bill",
+    "Meta Stock Split Deal Will Keep Mark Zuckerberg In California Amid Billionaire Tax Threat",
+    "Mark Zuckerberg Plots Deal to Pay Wealth Tax, Keep Meta Control",
+    "Meta agrees deal to keep Mark Zuckerberg in California despite wealth tax proposal"
    ]
   },
   {
@@ -1879,6 +2480,30 @@
    "themes": [],
    "entities": [
     "Sundar Pichai"
+   ],
+   "headlines": [
+    "Trump wanted a ‘Trump Ocean’ on Google Maps. He says CEO Sundar Pichai shut it down",
+    "Trump says he called Google’s CEO to discuss renaming Atlantic Ocean",
+    "Trump says he asked Google CEO to rename Atlantic Ocean on Maps"
+   ]
+  },
+  {
+   "title": "Anthropic unveils Claude Duet AI agent app",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRFhacjJyXzZ6ZzNUdkptUDkwRHFyV2pxSXhOc2JucmxQdDJFQ09WZ05DamcxS1NvNUx1b0cyR05DM1U3SzgwdXpvQlhaajl2dHNlVTVlYml2LVhLVENGaWtDbkdMWjFNVkdPMDRTWWFubXJsYkFZQ19peDBLMUI2cXF4cU1hN2lrU2FuZi1wSTRndFU?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "South China Morning Post",
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ],
+   "headlines": [
+    "DeepSeek unveils AI ‘super agent’ in coding race with OpenAI, Anthropic",
+    "Anthropic unveils Claude Duet AI agent app"
    ]
   },
   {
@@ -1894,6 +2519,9 @@
    "entities": [
     "Mustafa Suleyman",
     "Microsoft AI"
+   ],
+   "headlines": [
+    "Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical superintelligence’"
    ]
   },
   {
@@ -1909,6 +2537,10 @@
    "themes": [],
    "entities": [
     "Elon Musk"
+   ],
+   "headlines": [
+    "SpaceX says potential Tesla merger would need Elon Musk's approval",
+    "Elon Musk’s dream merger is a nightmare for SpaceX shareholders"
    ]
   },
   {
@@ -1924,6 +2556,27 @@
    "themes": [],
    "entities": [
     "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI nears up to $30 billion funding round at $1.25 trillion valuation led by UAE investors"
+   ]
+  },
+  {
+   "title": "OpenAI CEO Sam Altman says mathematicians have already gone from 'we're cooked' to accepting AI",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQzJiYzBMVmxxN21YUzR5SXJQLWF2SzVGTWdncU0zalRsR3dwcG9aLVZpSWdpTTdneW0zbU1Kalh0bHp0dDdwbWFYb0tIMnZ5N3pCblNnMTh6Z0FsWkFiWWc0d1Y2THMyTFJOYU1VdUl5a0dmNVhqSGlZSVp3VlVHbUFReHdUWXB5ajNJVHpld3V1ZXBSM3BQTGlCMGhqNGVybWU3Nw?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI CEO Sam Altman says mathematicians have already gone from 'we're cooked' to accepting AI"
+   ],
+   "entities": [
+    "Sam Altman",
+    "OpenAI"
    ]
   },
   {
@@ -1938,6 +2591,9 @@
    "themes": [],
    "entities": [
     "Sam Altman"
+   ],
+   "headlines": [
+    "Sam Altman Reportedly Laid Out Three Endgames For AI, And One Ends With Rivals’ GPUs ‘Melted’"
    ]
   },
   {
@@ -1952,6 +2608,9 @@
    "themes": [],
    "entities": [
     "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "Zuckerberg makes deal with Meta to help him pay billionaire tax if it passes"
    ]
   },
   {
@@ -1966,6 +2625,9 @@
    "themes": [],
    "entities": [
     "Jensen Huang"
+   ],
+   "headlines": [
+    "Nvidia CEO Jensen Huang says neocloud demand is 'off the charts' but capital is scarce"
    ]
   },
   {
@@ -1980,6 +2642,9 @@
    "themes": [],
    "entities": [
     "Microsoft AI"
+   ],
+   "headlines": [
+    "Microsoft says its AI tool is better than doctors at diagnosing conditions"
    ]
   },
   {
@@ -1994,6 +2659,9 @@
    "themes": [],
    "entities": [
     "Elon Musk"
+   ],
+   "headlines": [
+    "Tesla 与 SpaceX：为甚么马斯克想要合并这两家公司？"
    ]
   },
   {
@@ -2008,6 +2676,9 @@
    "themes": [],
    "entities": [
     "DeepSeek"
+   ],
+   "headlines": [
+    "DeepSeek Nears China's Largest IPO Financing in History"
    ]
   },
   {
@@ -2022,6 +2693,9 @@
    "themes": [],
    "entities": [
     "DeepSeek"
+   ],
+   "headlines": [
+    "DeepSeek reportedly raises $15B days after US restrictions"
    ]
   },
   {
@@ -2036,6 +2710,26 @@
    "themes": [],
    "entities": [
     "MiniMax"
+   ],
+   "headlines": [
+    "MiniMax Shares Fall Below IPO Price Amid AI Sector Sell-Off"
+   ]
+  },
+  {
+   "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON0lOUndGcjRBanppZmhpM1o2blEzanc5WEpHeU5PQi1HUFYzZ3pod2pvY3JIdm5BTnI2RDYzTlg1ZGd1QkhxSGR2OTB6UEFkNElQbkkwYk1sclEtdG1pMzFYRnl6Nlo3ZUlwb1hEaFM2WlRHRmNjcE1nblA1c202RzNwLUlhVnhLZVlFc2NSakpLdUcwRTJhVS1MYVdkSVU?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-22",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO"
+   ],
+   "entities": [
+    "OpenAI"
    ]
   },
   {
@@ -2050,7 +2744,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Billable Hours and Lawyer Stress Have Long Been Intertwined. Can AI Provide a Solution?"
+   ]
   },
   {
    "title": "We just raised another $550 million to bring AI to the legal industry. I still believe there will be more work than lawyers",
@@ -2064,7 +2761,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "We just raised another $550 million to bring AI to the legal industry. I still believe there will be more work than lawyers"
+   ]
   },
   {
    "title": "Legal Tech Providers Embrace Integrations in the Agentic AI Era",
@@ -2078,7 +2778,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Legal Tech Providers Embrace Integrations in the Agentic AI Era"
+   ]
   },
   {
    "title": "Anthropic launches Claude Duet, its answer to Meta and OpenAI's personal agents",
@@ -2094,6 +2797,9 @@
     "OpenAI",
     "Anthropic",
     "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "Anthropic launches Claude Duet, its answer to Meta and OpenAI's personal agents"
    ]
   },
   {
@@ -2109,6 +2815,10 @@
    "themes": [],
    "entities": [
     "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI president urges AI safeguards as group he funds opposes regulation",
+    "OpenAI’s Brockman urges AI safeguards as group he funds opposes rules"
    ]
   },
   {
@@ -2124,6 +2834,9 @@
    "entities": [
     "Jeff Dean",
     "Moonshot AI / Kimi"
+   ],
+   "headlines": [
+    "17-Year-Old Chen Guangyu Joins Jeff Dean's New Company Right After Departing Kimi"
    ]
   },
   {
@@ -2139,6 +2852,10 @@
    "themes": [],
    "entities": [
     "DeepSeek"
+   ],
+   "headlines": [
+    "China’s DeepSeek Raises $15 Billion to Challenge Top US AI Labs",
+    "Chinese AI Startup DeepSeek Raises $15 Billion Ahead of Potential IPO"
    ]
   },
   {
@@ -2153,6 +2870,9 @@
    "themes": [],
    "entities": [
     "OpenAI"
+   ],
+   "headlines": [
+    "A major security flaw found using an OpenAI model is causing internet chaos"
    ]
   },
   {
@@ -2167,6 +2887,9 @@
    "themes": [],
    "entities": [
     "Sundar Pichai"
+   ],
+   "headlines": [
+    "Sundar Pichai explains how a team of AI agents helps him run the company"
    ]
   },
   {
@@ -2181,6 +2904,77 @@
    "themes": [],
    "entities": [
     "MiniMax"
+   ],
+   "headlines": [
+    "MiniMax Erases Post-IPO Gain as AI Model Rivalry Intensifies"
+   ]
+  },
+  {
+   "title": "黄仁勋“教育”英德：发展AI别想太多 ，“你们光动口不动手”",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1uQ2w2aV8tMDg2NF8yRUdNUXJPcmFuWmpQNXBFdlBYNmVhbTVxdGExMkZXZWtkbHBYaDVWTTc4WHBpSnBxWjBFM2U5aldKcTFaS3FIQWhWUTl2bmpTR0pxdA?oc=5",
+   "source": "ThePaper.cn",
+   "domain": "thepaper.cn",
+   "published": "2026-10-21",
+   "outlets": [
+    "ThePaper.cn"
+   ],
+   "themes": [],
+   "headlines": [
+    "黄仁勋“教育”英德：发展AI别想太多 ，“你们光动口不动手”"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ]
+  },
+  {
+   "title": "黄仁勋柏林演讲：AI工厂部署最快缩至14天，智能体安全是技术问题",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE03UkFadEQ3UXNhV1hZZmtUNjU4UG9QX1VpZWgwcjlkRWE3UkdTakt0UjB4TXNHUDIxaC0zNEdvRkVEbDgxUTRLQVctWDY0YjJaanFSbHJ0aGdvSmhtV2lqeA?oc=5",
+   "source": "ThePaper.cn",
+   "domain": "thepaper.cn",
+   "published": "2026-10-21",
+   "outlets": [
+    "ThePaper.cn"
+   ],
+   "themes": [],
+   "headlines": [
+    "黄仁勋柏林演讲：AI工厂部署最快缩至14天，智能体安全是技术问题"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ]
+  },
+  {
+   "title": "黄仁勋定调下一代AI工厂",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2YkQtQTJad2owMVdZaG5BTTljMC1FTFRyMnpOYmY2UFhnOURlTUxXdWx0bWxrX2pOX1QzX1IyVVJCNWMxU19mOTM1QVB1SGJPN2g4TnFB?oc=5",
+   "source": "Jiemian.com",
+   "domain": "m.jiemian.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "Jiemian.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "黄仁勋定调下一代AI工厂"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ]
+  },
+  {
+   "title": "李飞飞Atlas内测上手 世界模型能上桌吗？_精彩视频为您呈现",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5aeWF5cDJVel9RVGRScE8xb2pCOEp2Wmg2VEJxMHpRcmlaTWNBQ0ZDWTVjRGszOHNuWjhGU2ZoWU42T0tfeVRzbzZHeXNXVjNXaWpN?oc=5",
+   "source": "36Kr",
+   "domain": "m.36kr.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [],
+   "headlines": [
+    "李飞飞Atlas内测上手 世界模型能上桌吗？_精彩视频为您呈现"
+   ],
+   "entities": [
+    "Fei-Fei Li"
    ]
   },
   {
@@ -2195,7 +2989,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Legal AI startup Legora raises $550M Series E at $8.8B valuation"
+   ]
   },
   {
    "title": "LexisNexis Legal & Professional GC: If Law Firms Can Use AI to Do the Work, ‘So Can We’",
@@ -2209,7 +3006,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "LexisNexis Legal & Professional GC: If Law Firms Can Use AI to Do the Work, ‘So Can We’"
+   ]
   },
   {
    "title": "Harvey adds Australian startup Mary’s case-fact tools to its legal AI",
@@ -2223,7 +3023,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Harvey adds Australian startup Mary’s case-fact tools to its legal AI"
+   ]
   },
   {
    "title": "AI prompts for real estate agents: 5 you can copy and paste today",
@@ -2236,6 +3039,26 @@
    ],
    "themes": [
     "房产 AI"
+   ],
+   "entities": [],
+   "headlines": [
+    "AI prompts for real estate agents: 5 you can copy and paste today"
+   ]
+  },
+  {
+   "title": "Crypto News: Pepeto Announces AI DeFi Tools While Investors Weigh Real Estate, Gold and the Bitcoin for 2026's Smartest Investment",
+   "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNUzlzQmU2b3pJR0o0aE1KV1gtMVZsZ3NvdHR2T3lqMV9IWHVFNmpGWnU4VTdSRWdMcDBWZFVfN2JCMkE1SDhoVndvaFo4eU5Ub3ZnNlhuQ2xHUzJhXzF4M1cwQkhvUGJ1dEpDQVBiclFrOElZUWRnT2VrdWRsWHZ2d2dfclc4VTNfZ3gwakV4RVkyZDJVWXJOQTFsZ3NTckJtV09taEZmdkNKYlczLWt3RnpPdmo5Tmp5SjNIMGxtMW5pQmNna1lJb1BoaFRSbC1DZlc5N2VTd24wZUtqSnM4MjBmTVQ5TkpXaG53WlpDaVFwaFRqQWtvLVVLVTdIcUdDenZ6cXdJOVNhQVlfQmZPQy1YUHhkdw?oc=5",
+   "source": "markets.businessinsider.com",
+   "domain": "markets.businessinsider.com",
+   "published": "2026-10-21",
+   "outlets": [
+    "markets.businessinsider.com"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "headlines": [
+    "Crypto News: Pepeto Announces AI DeFi Tools While Investors Weigh Real Estate, Gold and the Bitcoin for 2026's Smartest Investment"
    ],
    "entities": []
   },
@@ -2255,6 +3078,13 @@
    "themes": [],
    "entities": [
     "Sam Altman"
+   ],
+   "headlines": [
+    "US judge dismisses Sam Altman's sister's sexual abuse lawsuit",
+    "Judge Dismisses Sexual Abuse Lawsuit Against Sam Altman Brought By His Sister",
+    "Judge Tosses Sexual Abuse Lawsuit From Sam Altman's Sister",
+    "US judge dismisses sexual abuse lawsuit from Sam Altman’s sister",
+    "Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit"
    ]
   },
   {
@@ -2271,6 +3101,10 @@
    "entities": [
     "OpenAI",
     "Hugging Face"
+   ],
+   "headlines": [
+    "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
+    "Hugging Face CEO says the Netflix doc about its famous hack went 'full doomer mode'"
    ]
   },
   {
@@ -2287,21 +3121,11 @@
    "themes": [],
    "entities": [
     "xAI"
-   ]
-  },
-  {
-   "title": "Eric Schmidt reportedly owns about half as much of Anthropic as CEO Dario Amodei",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOejdoZGdqRDhIcFpYUlJrR1pEZ3RhUEFuRUhJTWw4eXp2bUVzbHMwWk9TOWkwUlkxODBrT0dTd241ZmxtV0FWZ2o5Yk1UNEs4M0d0OHlRRTFWbEItU2loOFR6c3NJcFRWNkdmRG81TDh0cnlyblZOOXl6TUxRdjJsMTQ2akFISUV5akpobndSUUpNc3dPVXhWYWtCQ3dUejVnM3FBWE1HbnhDb0tZeW9zWUZ2eWZmdw?oc=5",
-   "source": "TechCrunch",
-   "domain": "techcrunch.com",
-   "published": "2026-10-20",
-   "outlets": [
-    "TechCrunch"
    ],
-   "themes": [],
-   "entities": [
-    "Dario Amodei",
-    "Anthropic"
+   "headlines": [
+    "Trump administration loses bid to block NAACP lawsuit against Musk's xAI over data center",
+    "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+    "SpaceX loses bid to toss NAACP lawsuit over Memphis data center air pollution"
    ]
   },
   {
@@ -2317,6 +3141,9 @@
    "entities": [
     "OpenAI",
     "Anthropic"
+   ],
+   "headlines": [
+    "EXCLUSIVE: OpenAI seeks to accelerate fundraising ahead of Anthropic IPO, sources say"
    ]
   },
   {
@@ -2332,6 +3159,9 @@
    "entities": [
     "DeepSeek",
     "MiniMax"
+   ],
+   "headlines": [
+    "DeepSeek & MiniMax Unveil New AI Models in 72 Hours: Flash Series Challenges Flagship-Tier Generative AI"
    ]
   },
   {
@@ -2346,6 +3176,9 @@
    "themes": [],
    "entities": [
     "Apple ML Research"
+   ],
+   "headlines": [
+    "Zuckerberg spent years building on Apple’s terms. His $100-billion-plus AI bet is about owning everything"
    ]
   },
   {
@@ -2360,6 +3193,9 @@
    "themes": [],
    "entities": [
     "DeepSeek"
+   ],
+   "headlines": [
+    "DeepSeek Unveils Open-Source Tool to Help Cut AI Operating Costs"
    ]
   },
   {
@@ -2374,6 +3210,9 @@
    "themes": [],
    "entities": [
     "MiniMax"
+   ],
+   "headlines": [
+    "Viral Mysterious Space Rabbit Unveiled: Originated From MiniMax's New Model"
    ]
   },
   {
@@ -2388,6 +3227,43 @@
    "themes": [],
    "entities": [
     "MiniMax"
+   ],
+   "headlines": [
+    "Is China's Domestic AI Cost-Performance King About to Be Replaced? MiniMax Emerges as a Real Game-Changer"
+   ]
+  },
+  {
+   "title": "黄仁勋的终极赌局：下一波AI，去征服物理世界",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE94MFpaeGJxNFVUNjFCR3h1UXpUejdBaTctaUY2TWg1aE1PWjdwanhTblVhc0NuRHZVV244bjJuaHBCdkRueXFVNDg1R0lEMTJTMUtpQkZRXzY1N1pTVHUtVg?oc=5",
+   "source": "ThePaper.cn",
+   "domain": "thepaper.cn",
+   "published": "2026-10-20",
+   "outlets": [
+    "ThePaper.cn"
+   ],
+   "themes": [],
+   "headlines": [
+    "黄仁勋的终极赌局：下一波AI，去征服物理世界"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ]
+  },
+  {
+   "title": "Rehearsals Launches Human Behavior Bench With Google DeepMind and Kaggle to Measure How Well AI Models Understand Humanity",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYTNIaC1PeVF1T1ZCRmJadzc4X3gwUkNiYmN6Mk82M1daeEV4OG5WTDIwbVVwdnpaREw5dk1uUXNjSElBRC1QR09XT0ctUFVyVG10RjNQTkN1VkNNdlFIM3dVdG5pN0t2bUd0VTctbWNNc2J1bjZTNDVMVGdUbDVYcXo2U21kUm45bkgwTjRPOUw3Uk5nWkVNZkdXUlJ3czl4OGNhUm5B?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-10-20",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "headlines": [
+    "Rehearsals Launches Human Behavior Bench With Google DeepMind and Kaggle to Measure How Well AI Models Understand Humanity"
+   ],
+   "entities": [
+    "Google DeepMind"
    ]
   },
   {
@@ -2402,7 +3278,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Law Firm Workloads Are Under Threat as Legal Departments Do More With AI"
+   ]
   },
   {
    "title": "AI Misuse Is a Serious Problem for Lawyers",
@@ -2416,7 +3295,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI Misuse Is a Serious Problem for Lawyers"
+   ]
   },
   {
    "title": "AI data center projects boost US warehouse demand and rents, real estate company JLL says",
@@ -2430,7 +3312,10 @@
    "themes": [
     "房产 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI data center projects boost US warehouse demand and rents, real estate company JLL says"
+   ]
   },
   {
    "title": "An Arizona agent's crusade against AI-fueled real estate fraud",
@@ -2444,7 +3329,10 @@
    "themes": [
     "房产 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "An Arizona agent's crusade against AI-fueled real estate fraud"
+   ]
   },
   {
    "title": "AI Rights Enter Anthropic’s Terms Of Service As Microsoft Pushes Back",
@@ -2459,6 +3347,9 @@
    "entities": [
     "Anthropic",
     "Microsoft AI"
+   ],
+   "headlines": [
+    "AI Rights Enter Anthropic’s Terms Of Service As Microsoft Pushes Back"
    ]
   },
   {
@@ -2474,6 +3365,9 @@
    "entities": [
     "DeepSeek",
     "MiniMax"
+   ],
+   "headlines": [
+    "MiniMax M3.1 Flash Officially Launched: 200+ Output TPS, 50% Price Cut, Competes Head-to-Head With DeepSeek"
    ]
   },
   {
@@ -2488,6 +3382,9 @@
    "themes": [],
    "entities": [
     "DeepSeek"
+   ],
+   "headlines": [
+    "How DeepSeek Is Shaping Huawei’s AI Chips in a Growing Challenge to Nvidia"
    ]
   },
   {
@@ -2502,6 +3399,9 @@
    "themes": [],
    "entities": [
     "Liang Wenfeng"
+   ],
+   "headlines": [
+    "Liang Wenfeng Makes New Investment in Former Tencent Robotics Division Veteran"
    ]
   },
   {
@@ -2516,6 +3416,9 @@
    "themes": [],
    "entities": [
     "MiniMax"
+   ],
+   "headlines": [
+    "China's MiniMax launches updated AI model M3.1 Flash, claims major improvements"
    ]
   },
   {
@@ -2530,7 +3433,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Introducing Legal AI Insider"
+   ]
   },
   {
    "title": "The AI Tools Real Estate Agents Say They Would Actually Use: Survey",
@@ -2544,7 +3450,10 @@
    "themes": [
     "房产 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "The AI Tools Real Estate Agents Say They Would Actually Use: Survey"
+   ]
   },
   {
    "title": "A 44-minute call and a memo: How Alexandr Wang won Mark Zuckerberg’s trust—and a $100 billion-plus AI bet",
@@ -2559,6 +3468,9 @@
    "entities": [
     "Mark Zuckerberg",
     "Alexandr Wang"
+   ],
+   "headlines": [
+    "A 44-minute call and a memo: How Alexandr Wang won Mark Zuckerberg’s trust—and a $100 billion-plus AI bet"
    ]
   },
   {
@@ -2574,6 +3486,9 @@
    "entities": [
     "OpenAI",
     "Anthropic"
+   ],
+   "headlines": [
+    "Replit makes OpenAI its default over Anthropic, CEO says"
    ]
   },
   {
@@ -2588,6 +3503,9 @@
    "themes": [],
    "entities": [
     "Daniela Amodei"
+   ],
+   "headlines": [
+    "Daniela Amodei warns against AI girlfriends, Business Insider reports"
    ]
   },
   {
@@ -2604,6 +3522,10 @@
    "entities": [
     "Alexandr Wang",
     "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "Alexandr Wang, Meta’s AI wunderkind",
+    "Weekend profile: Alexandr Wang, Meta’s Gen Z billionaire AI whizz"
    ]
   },
   {
@@ -2620,6 +3542,9 @@
     "OpenAI",
     "Hugging Face",
     "Cohere"
+   ],
+   "headlines": [
+    "OpenAI–Hugging Face breach is a great example of how 'potent' these AI models are, says Cohere CEO"
    ]
   },
   {
@@ -2635,6 +3560,10 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say",
+    "The Anthropic IPO by the numbers, from a possible valuation in the trillions to surging revenue"
    ]
   },
   {
@@ -2650,6 +3579,9 @@
    "entities": [
     "Aidan Gomez",
     "Cohere"
+   ],
+   "headlines": [
+    "Watch CNBC's full interview with Cohere CEO Aidan Gomez"
    ]
   },
   {
@@ -2664,7 +3596,10 @@
    "themes": [
     "奥运 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Hong Kong Olympian wonders if AI is the answer to recapturing our humanity"
+   ]
   },
   {
    "title": "Are You Being Hired Or Fired? This AI-Native Law Firm Can Help",
@@ -2678,7 +3613,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Are You Being Hired Or Fired? This AI-Native Law Firm Can Help"
+   ]
   },
   {
    "title": "Anthropic's Daniela Amodei says AI girlfriends and boyfriends are a 'terrible use of AI'",
@@ -2693,6 +3631,9 @@
    "entities": [
     "Daniela Amodei",
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic's Daniela Amodei says AI girlfriends and boyfriends are a 'terrible use of AI'"
    ]
   },
   {
@@ -2708,6 +3649,9 @@
    "entities": [
     "OpenAI",
     "Microsoft AI"
+   ],
+   "headlines": [
+    "Microsoft AI chief says the company beat OpenAI at its own game, using a quarter of the computing power"
    ]
   },
   {
@@ -2722,6 +3666,9 @@
    "themes": [],
    "entities": [
     "Jensen Huang"
+   ],
+   "headlines": [
+    "Nvidia CEO Jensen Huang urges U.S.-China dialogue on 'potentially dangerous' AI"
    ]
   },
   {
@@ -2736,6 +3683,9 @@
    "themes": [],
    "entities": [
     "Microsoft AI"
+   ],
+   "headlines": [
+    "Microsoft’s CEO is still haunted by staying silent in a meeting with Bill Gates"
    ]
   },
   {
@@ -2750,6 +3700,9 @@
    "themes": [],
    "entities": [
     "Elon Musk"
+   ],
+   "headlines": [
+    "Elon Musk agrees to settle lawsuits over 2024 election lottery"
    ]
   },
   {
@@ -2764,6 +3717,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "At Anthropic pre-IPO meet: ‘Thinking’ caps, surging revenue, no human extinction"
    ]
   },
   {
@@ -2778,6 +3734,9 @@
    "themes": [],
    "entities": [
     "Cohere"
+   ],
+   "headlines": [
+    "Cohere moves to buy AI cybersecurity startup Aisle"
    ]
   },
   {
@@ -2792,6 +3751,9 @@
    "themes": [],
    "entities": [
     "Z.ai / Zhipu AI"
+   ],
+   "headlines": [
+    "Z.ai’s GLM-5.3 model raises researcher fears it can fake AI safety test"
    ]
   },
   {
@@ -2806,6 +3768,9 @@
    "themes": [],
    "entities": [
     "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "Meta releases Muse Spark Open, a new ‘open-weight’ AI model"
    ]
   },
   {
@@ -2820,7 +3785,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Law firm Crowell faces disqualification bid in AI lawsuit"
+   ]
   },
   {
    "title": "From Being Found to Being Recognized: How AI Is Changing Law Firm Visibility",
@@ -2834,7 +3802,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "From Being Found to Being Recognized: How AI Is Changing Law Firm Visibility"
+   ]
   },
   {
    "title": "AI is ready to act. Real estate brokerages decide where it stops",
@@ -2848,7 +3819,28 @@
    "themes": [
     "房产 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI is ready to act. Real estate brokerages decide where it stops"
+   ]
+  },
+  {
+   "title": "OpenAI employee who left for Apple took files about unreleased device, OpenAI alleges",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOcjgxdHhRZV9nbnF4cVNBbkg0ZGJGWXFTZ2hDa2dTMXVCT3R4OWF6aDNZSjVnaDJEYm5pbUJqSzdtaDhPei1VbXU1SGlsZHFIOFhBNEVsaUZ1WlFsYjJ6ZGNPc1NVNk9fVVVQTVlYMEtPbjdKZ2hNcG9xM0VBLUpTVFlHSi0yTVZtNGpTODA2SGpOb3JLUXQ1S1E3WHZ6RzRldnZkeF8tamJodUZjMUc1OXN2dWI2QmhfUUk3bkZzR0ZaXzZnd2lNMndLMUZGamRhMHo3LUVfdm8?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-14",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI employee who left for Apple took files about unreleased device, OpenAI alleges"
+   ],
+   "entities": [
+    "OpenAI",
+    "Apple ML Research"
+   ]
   },
   {
    "title": "AI in your oven? Anthropic warns models ‘months away’ from self-replication on smart devices",
@@ -2862,6 +3854,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "AI in your oven? Anthropic warns models ‘months away’ from self-replication on smart devices"
    ]
   },
   {
@@ -2876,6 +3871,9 @@
    "themes": [],
    "entities": [
     "Jensen Huang"
+   ],
+   "headlines": [
+    "Nvidia’s Jensen Huang responds to Pope Leo’s AI safety criticism: ‘We all care about the same thing’"
    ]
   },
   {
@@ -2890,6 +3888,9 @@
    "themes": [],
    "entities": [
     "Kai-Fu Lee"
+   ],
+   "headlines": [
+    "Watch Kai-Fu Lee: AI Transformation Must Begin From the Top"
    ]
   },
   {
@@ -2904,6 +3905,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic's third-quarter revenue is said to hit $16.8 billion ahead of IPO"
    ]
   },
   {
@@ -2918,6 +3922,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO"
    ]
   },
   {
@@ -2932,7 +3939,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "A law firm's secret AI weapon? Mountains of case files and decades of institutional knowledge."
+   ]
   },
   {
    "title": "Paul Weiss, Columbia Law School Launch Collaborative Gen AI Initiative",
@@ -2946,7 +3956,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Paul Weiss, Columbia Law School Launch Collaborative Gen AI Initiative"
+   ]
   },
   {
    "title": "Goodwin Partner Launches US AI-Native Law Firm Arm",
@@ -2960,7 +3973,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Goodwin Partner Launches US AI-Native Law Firm Arm"
+   ]
   },
   {
    "title": "AI Could Kill the Junior Lawyer Pipeline; Is Banning it the Answer?",
@@ -2974,7 +3990,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI Could Kill the Junior Lawyer Pipeline; Is Banning it the Answer?"
+   ]
   },
   {
    "title": "AI marketing for real estate agents: Don’t skip the last 20%",
@@ -2988,7 +4007,10 @@
    "themes": [
     "房产 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI marketing for real estate agents: Don’t skip the last 20%"
+   ]
   },
   {
    "title": "Zuckerberg Admits Meta Lacked AI Certainty on $200 Billion Bet",
@@ -3003,6 +4025,9 @@
    "themes": [],
    "entities": [
     "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "Zuckerberg Admits Meta Lacked AI Certainty on $200 Billion Bet"
    ]
   },
   {
@@ -3017,6 +4042,10 @@
    "themes": [],
    "entities": [
     "Liang Wenfeng"
+   ],
+   "headlines": [
+    "The Ceiling of Large Language Models & Liang Wenfeng's Next Industry-Shifting Bet",
+    "Liang Wenfeng’s Robot Focus: Will Large Models Replace Embodied AI Models?"
    ]
   },
   {
@@ -3031,6 +4060,26 @@
    "themes": [],
    "entities": [
     "Moonshot AI / Kimi"
+   ],
+   "headlines": [
+    "BofA No Longer in Talks to Arrange IPO of China’s Moonshot AI"
+   ]
+  },
+  {
+   "title": "Young Wartime CEO: How to Win Meta's AI Comeback Battle",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBOM1RwMWhLQTI1dzlHd1o5TTBZUGxNcmxjSk80blg4M2NKc2htTW1KX3diRXVPTUdTMEtmZDdfVVVLeHg4c0tiVHc1eDNxOTlvNk8w?oc=5",
+   "source": "eu.36kr.com",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-13",
+   "outlets": [
+    "eu.36kr.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Young Wartime CEO: How to Win Meta's AI Comeback Battle"
+   ],
+   "entities": [
+    "Meta GenAI / FAIR"
    ]
   },
   {
@@ -3045,7 +4094,11 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI Utilization Is 'Skyrocketing,' but Law Firms Aren’t Sweating Consumption Pricing",
+    "How Law Firms Are Strategizing for Consumption-Based AI Pricing"
+   ]
   },
   {
    "title": "Wilson Sonsini Spinoff SixFifty Launches Employment Law AI Agent",
@@ -3059,7 +4112,33 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Wilson Sonsini Spinoff SixFifty Launches Employment Law AI Agent"
+   ]
+  },
+  {
+   "title": "Watch Mark Zuckerberg Plots Deal to Pay Wealth Tax, Keep Meta Control",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPelpQLUlMT1lsanY3RXlrV2FURXZrT0dDZF9kSmZ2NFg5cGpzaEFSTFJCZWFHSTNHZGZTQ0lRcGZXVFZuZThtbDBlaFBNd3lqaEw5Q0lvWkFjWDEzVV9SZFc1cndaeFlWNHpxMXNLQm9pSERFWTlsSzBnMlJzVWZMODhRWTdqelZFcUQ5aDdLelAzU01pbjV3Z193?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-10-12",
+   "outlets": [
+    "Business Insider",
+    "Financial Times",
+    "Bloomberg"
+   ],
+   "themes": [],
+   "entities": [
+    "Mark Zuckerberg",
+    "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "Meta faces massive AI bills and legal troubles. Mark Zuckerberg keeps finding ways to come out on top.",
+    "Mark Zuckerberg says Meta has reached AI ‘frontier’",
+    "Meta CEO Mark Zuckerberg says 10 million people have set up a Muse AI agent",
+    "Watch Mark Zuckerberg Plots Deal to Pay Wealth Tax, Keep Meta Control"
+   ]
   },
   {
    "title": "Meta debuts Muse Wonder AI model in latest test of users' willingness to pay",
@@ -3074,6 +4153,29 @@
    "themes": [],
    "entities": [
     "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "Meta debuts Muse Wonder AI model in latest test of users' willingness to pay",
+    "What Muse Wonder and frontier AI mean for Meta"
+   ]
+  },
+  {
+   "title": "Moonshot AI Plans Record $50 Billion Hong Kong IPO as Founders Fight Equity Lawsuit",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZHdiQm9JMHQ5MDd3UUVGaHZiZWtTY1hZZi1rVWcxTm1mbmdHcElTN19CQW1OR2daZ04yeEpjSllUb0hMTFY3YUpOdGQ2LTNPbWNJcExvRmszdU9Db0JINjNDZWdKeGdsQkVPZklYMGVxMUVZMmZmNGUzWFpiNnVXbXA4SjdPZzZudnlydVA4MVVDc2s1Q2Exdm8wTFlZOTdLUVFmbjlqaElzNHJFOHVRbU9QYmhYX1JaOVRTdWhoTkxvVjdvWkJZN0J1Qmo3VzhQTTlWdzd3?oc=5",
+   "source": "Forbes",
+   "domain": "forbes.com",
+   "published": "2026-10-12",
+   "outlets": [
+    "Forbes",
+    "Quartz"
+   ],
+   "themes": [],
+   "entities": [
+    "Moonshot AI / Kimi"
+   ],
+   "headlines": [
+    "Moonshot AI Plans Record $50 Billion Hong Kong IPO as Founders Fight Equity Lawsuit",
+    "Bank of America was dropped from Moonshot AI's Hong Kong IPO"
    ]
   },
   {
@@ -3088,6 +4190,9 @@
    "themes": [],
    "entities": [
     "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "Meta was prepared to write an up to $200 billion AI check before knowing whether its model would work"
    ]
   },
   {
@@ -3102,6 +4207,9 @@
    "themes": [],
    "entities": [
     "Yann LeCun"
+   ],
+   "headlines": [
+    "Against Agent AI & RSI: Yann LeCun’s Groundbreaking New Model Challenges All Current Mainstream AI Narratives"
    ]
   },
   {
@@ -3116,6 +4224,9 @@
    "themes": [],
    "entities": [
     "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "Meta Says New Muse Model Hits AI Frontier After Aggressive Push"
    ]
   },
   {
@@ -3130,6 +4241,9 @@
    "themes": [],
    "entities": [
     "Liang Wenfeng"
+   ],
+   "headlines": [
+    "语言模型的天花板，和梁文锋的下一场投注"
    ]
   },
   {
@@ -3144,6 +4258,9 @@
    "themes": [],
    "entities": [
     "Liang Wenfeng"
+   ],
+   "headlines": [
+    "梁文锋投400亿，乌兰察布被AI巨头挤爆了"
    ]
   },
   {
@@ -3158,20 +4275,9 @@
    "themes": [],
    "entities": [
     "Andrej Karpathy"
-   ]
-  },
-  {
-   "title": "Moonshot AI Plans Record $50 Billion Hong Kong IPO as Founders Fight Equity Lawsuit",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZHdiQm9JMHQ5MDd3UUVGaHZiZWtTY1hZZi1rVWcxTm1mbmdHcElTN19CQW1OR2daZ04yeEpjSllUb0hMTFY3YUpOdGQ2LTNPbWNJcExvRmszdU9Db0JINjNDZWdKeGdsQkVPZklYMGVxMUVZMmZmNGUzWFpiNnVXbXA4SjdPZzZudnlydVA4MVVDc2s1Q2Exdm8wTFlZOTdLUVFmbjlqaElzNHJFOHVRbU9QYmhYX1JaOVRTdWhoTkxvVjdvWkJZN0J1Qmo3VzhQTTlWdzd3?oc=5",
-   "source": "Forbes",
-   "domain": "forbes.com",
-   "published": "2026-10-12",
-   "outlets": [
-    "Forbes"
    ],
-   "themes": [],
-   "entities": [
-    "Moonshot AI / Kimi"
+   "headlines": [
+    "Andrej Karpathy Says This AI Gap Is Widening"
    ]
   },
   {
@@ -3186,7 +4292,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI Adoption Framework: Simmons & Simmons launches the Legal AI Maturity Mountain"
+   ]
   },
   {
    "title": "A New Strategic Framework in the AI Era: Mapping Future Business Models of Law",
@@ -3200,7 +4309,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "A New Strategic Framework in the AI Era: Mapping Future Business Models of Law"
+   ]
   },
   {
    "title": "The AI Agent Privacy Problem: Who’s Liable When Your Legal AI Shares Client Data?",
@@ -3214,7 +4326,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "The AI Agent Privacy Problem: Who’s Liable When Your Legal AI Shares Client Data?"
+   ]
   },
   {
    "title": "何恺明团队发布多模态Harness框架",
@@ -3228,6 +4343,9 @@
    "themes": [],
    "entities": [
     "Kaiming He"
+   ],
+   "headlines": [
+    "何恺明团队发布多模态Harness框架"
    ]
   },
   {
@@ -3245,6 +4363,13 @@
    "themes": [],
    "entities": [
     "Microsoft AI"
+   ],
+   "headlines": [
+    "Microsoft CEO Nadella Calls for ‘Emergency Brake’ on Advanced AI",
+    "Microsoft's Nadella says AI needs an ‘emergency brake’ that humans control",
+    "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+    "Microsoft CEO Satya Nadella called for an 'emergency brake' on advanced AI models",
+    "Microsoft CEO Satya Nadella calls for new AI controls"
    ]
   },
   {
@@ -3259,6 +4384,9 @@
    "themes": [],
    "entities": [
     "Satya Nadella"
+   ],
+   "headlines": [
+    "Satya Nadella says a company's relationship with AI should have trust issues"
    ]
   },
   {
@@ -3273,6 +4401,9 @@
    "themes": [],
    "entities": [
     "Satya Nadella"
+   ],
+   "headlines": [
+    "Satya Nadella says we should assume all AI models are ‘compromised’"
    ]
   },
   {
@@ -3287,7 +4418,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI is changing how lawyers work — and putting the billable hour under pressure"
+   ]
   },
   {
    "title": "Mark Zuckerberg says Meta has reached AI ‘frontier’",
@@ -3299,12 +4433,19 @@
     "WSJ",
     "Financial Times",
     "Business Insider",
-    "The New York Times"
+    "The New York Times",
+    "Fortune"
    ],
    "themes": [],
    "entities": [
     "Mark Zuckerberg",
     "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "Mark Zuckerberg says Meta has reached AI ‘frontier’",
+    "Mark Zuckerberg Threatened to Leave California. Meta’s Board Cut Him a Deal.",
+    "Inside Mark Zuckerberg’s Decision to Pull the Trigger on Meta’s A.I. Agent",
+    "‘Mark Zuckerberg will love The Social Reckoning’: Sony trolls the Meta CEO with an Instagram ad"
    ]
   },
   {
@@ -3321,6 +4462,10 @@
    "entities": [
     "Satya Nadella",
     "Microsoft AI"
+   ],
+   "headlines": [
+    "Satya Nadella went from H-1B worker to Microsoft CEO. The Trump administration just shut that path for his employees",
+    "From H-1B to CEO: How Satya Nadella traveled the path the U.S. just cut off for Microsoft workers"
    ]
   },
   {
@@ -3336,6 +4481,9 @@
    "entities": [
     "Mark Zuckerberg",
     "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "Inside Mark Zuckerberg’s Decision to Pull the Trigger on Meta’s A.I. Agent"
    ]
   },
   {
@@ -3351,6 +4499,9 @@
    "entities": [
     "Mark Zuckerberg",
     "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "‘Mark Zuckerberg will love The Social Reckoning’: Sony trolls the Meta CEO with an Instagram ad"
    ]
   },
   {
@@ -3366,6 +4517,9 @@
    "entities": [
     "Lisa Su",
     "Fei-Fei Li"
+   ],
+   "headlines": [
+    "“芯片女王”苏姿丰与“AI教母”李飞飞同台领衔｜两个站在AI产业之巅的华人女性，所有逆袭都是熬出来的"
    ]
   },
   {
@@ -3381,6 +4535,9 @@
    "entities": [
     "DeepSeek",
     "MiniMax"
+   ],
+   "headlines": [
+    "MiniMax Valuation Plunges 80%, DeepSeek Seeks 100B Yuan Financing: Who Will Back Deals Amid the Large Language Model IPO Boom?"
    ]
   },
   {
@@ -3395,6 +4552,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic bans users from being 'cruel' to its AI systems"
    ]
   },
   {
@@ -3409,6 +4569,9 @@
    "themes": [],
    "entities": [
     "Elon Musk"
+   ],
+   "headlines": [
+    "'Real boss of India?': Elon Musk takes aim at Indian billionaire Ambani as Starlink launch stalls"
    ]
   },
   {
@@ -3423,7 +4586,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Legal AI Maturity Isn’t About Adoption — It’s About Business Impact"
+   ]
   },
   {
    "title": "Make Money From AI Tools? How Some Law Firms Can Make It Happen",
@@ -3437,20 +4603,9 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
-  },
-  {
-   "title": "Sam Altman says AI will make ‘bad things’ happen. Exhibit A: needless death | Moustafa Bayoumi",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWkFtUUd3RVZFZnpDekFma0NOclhmaEtBSXY5N1FlRHVINmVBS05QckozN0RuOW16VldfbURhU3dCODlHT0VhczhzME8xWUg5WEM3QUF3d1lwYzdUaDlXeFdCd2RLSjllbWVma09qaTNXOXVPN2RIRjYzdDdRTGpWSTZabw?oc=5",
-   "source": "The Guardian",
-   "domain": "theguardian.com",
-   "published": "2026-10-08",
-   "outlets": [
-    "The Guardian"
-   ],
-   "themes": [],
-   "entities": [
-    "Sam Altman"
+   "entities": [],
+   "headlines": [
+    "Make Money From AI Tools? How Some Law Firms Can Make It Happen"
    ]
   },
   {
@@ -3465,6 +4620,9 @@
    "themes": [],
    "entities": [
     "Jensen Huang"
+   ],
+   "headlines": [
+    "Nvidia CEO Jensen Huang says if you want to be successful, be prepared to suffer"
    ]
   },
   {
@@ -3479,6 +4637,9 @@
    "themes": [],
    "entities": [
     "Microsoft AI"
+   ],
+   "headlines": [
+    "Microsoft revamps Windows for agentic AI"
    ]
   },
   {
@@ -3495,6 +4656,26 @@
    ],
    "entities": [
     "OpenAI"
+   ],
+   "headlines": [
+    "AT&T + OpenAI Partner for Legal AI Workflows"
+   ]
+  },
+  {
+   "title": "Andrew Garfield says he didn't trust AI after playing Sam Altman in 'Artificial:' I got a bit scared'",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQajBiOThKRU9fR1VmaGZJSUxVUUUzNXRkN1hxU1BfTzMzUlpFWmRPcUUzMEdwS0NSUzZyVG4zRzllQWthdV9LU0RWVGpXVmtJU2piR1VsSnBzbFRXTzREQWluOHlWZkhkZDF0bl9pN0Jtc0IwOTVNN0QtQWV2RUNQYWlJdm5JWHFOajJhSjJhelpnRE9sMEprbi1yWlpOSVY1WEZBeHZNQQ?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-08",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "Andrew Garfield says he didn't trust AI after playing Sam Altman in 'Artificial:' I got a bit scared'"
+   ],
+   "entities": [
+    "Sam Altman"
    ]
   },
   {
@@ -3509,7 +4690,11 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI-powered law firms draw lawyers from big firms",
+    "Law firms give lawyers time off billing grind to test-drive AI"
+   ]
   },
   {
    "title": "COMMENTARY: How AT&T is using AI to reduce its reliance on law firms",
@@ -3523,7 +4708,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "COMMENTARY: How AT&T is using AI to reduce its reliance on law firms"
+   ]
   },
   {
    "title": "AI's legal accountability: Neo CEO Ali Partovi on AI legal liability proposals",
@@ -3537,7 +4725,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI's legal accountability: Neo CEO Ali Partovi on AI legal liability proposals"
+   ]
   },
   {
    "title": "Debevoise to Shift AI Platform Costs as Big Law Pursues Pricing Model Beyond Billable Hour",
@@ -3551,20 +4742,28 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Debevoise to Shift AI Platform Costs as Big Law Pursues Pricing Model Beyond Billable Hour"
+   ]
   },
   {
-   "title": "OpenAI's Altman says AI benefits warrant accepting some risks",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOGhDUmJ2UzEwZ0hlenFISFFXdkZyVHd1TGNIZEhLTERLaDRWaXh4dlpVM1RfU0p4Vlh2cjVybWZtOWZkVVp0ZEVndGQ3T2pZd0tyelVvV3JnQ09FQlNOYWtVeUhCMjZud2NpYUVEZllhbHhIeVFvOXpEY0lLTklTNnNpNnhDTUdVS1dYSzl6S3VwbzgydXlKZVFRTkE4Y0dsYlJtQldVWkY?oc=5",
-   "source": "Reuters",
-   "domain": "reuters.com",
+   "title": "Watch DeepSeek Nears $12B Funding Round Ahead of Potential IPO",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRUZlS19pWkZvc3FaRmtmdWVQQ1ZDQkZHWjk1TXBqV3hMU0FsOVgyWHlhNi1SQkNoSWpaZE9GVkJQOGtOUDRRcF9DamotS3ZoYWZHQ0hVM0Z1XzNkb3RjQVdha2RhLWdWRXB1OXBQTE1IRkZSYnFDUzVCc3RXZi00dXAzdmpzUQ?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
    "published": "2026-10-07",
    "outlets": [
-    "Reuters"
+    "Bloomberg.com",
+    "Forbes"
    ],
    "themes": [],
    "entities": [
-    "OpenAI"
+    "DeepSeek"
+   ],
+   "headlines": [
+    "Watch DeepSeek Nears $12B Funding Round Ahead of Potential IPO",
+    "3 Things To Know As A Potential Anthropic IPO Nears"
    ]
   },
   {
@@ -3579,6 +4778,9 @@
    "themes": [],
    "entities": [
     "Fei-Fei Li"
+   ],
+   "headlines": [
+    "Ex-ByteDance Intern’s $200 Million AI Lab Takes On Fei-Fei Li"
    ]
   },
   {
@@ -3593,20 +4795,10 @@
    "themes": [],
    "entities": [
     "Anthropic"
-   ]
-  },
-  {
-   "title": "Watch DeepSeek Nears $12B Funding Round Ahead of Potential IPO",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRUZlS19pWkZvc3FaRmtmdWVQQ1ZDQkZHWjk1TXBqV3hMU0FsOVgyWHlhNi1SQkNoSWpaZE9GVkJQOGtOUDRRcF9DamotS3ZoYWZHQ0hVM0Z1XzNkb3RjQVdha2RhLWdWRXB1OXBQTE1IRkZSYnFDUzVCc3RXZi00dXAzdmpzUQ?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-10-07",
-   "outlets": [
-    "Bloomberg.com"
    ],
-   "themes": [],
-   "entities": [
-    "DeepSeek"
+   "headlines": [
+    "Anthropic will be 'most ridiculous IPO' of year, analyst says",
+    "Prediction market traders say an Anthropic IPO is near-certain this year after company filed with SEC"
    ]
   },
   {
@@ -3621,7 +4813,10 @@
    "themes": [
     "奥运 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "AI upends Singapore’s ‘quant Olympics’"
+   ]
   },
   {
    "title": "Five AI Execs on Where Law Firms Are Wasting and May Start Making Money on AI",
@@ -3635,7 +4830,10 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Five AI Execs on Where Law Firms Are Wasting and May Start Making Money on AI"
+   ]
   },
   {
    "title": "Voice of experience: in-house legal teams face pros and cons of AI",
@@ -3649,7 +4847,51 @@
    "themes": [
     "法律 AI"
    ],
-   "entities": []
+   "entities": [],
+   "headlines": [
+    "Voice of experience: in-house legal teams face pros and cons of AI"
+   ]
+  },
+  {
+   "title": "EXCLUSIVE: Anthropic's Amodei made $18 million last year, middle of the tech CEO pack",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPN1o2SFlUSFBHTDc2ejFoZElwNUVaSDdVMGlMckFhSUhTYlJKNkRteGxBMGhndHBjVU8yaE5qaVkxYURVLW1ZdmlGTkZ1TXhRVEhwM0ZkVzVJaDN4ZUdwdm9JLTNXNC11NGFpSi0ycTJhRnNGSVhINUJwNU1YcTVCUGFGQ2E2dGtIT2pYTUJzejZQc3JRZjRuTlFsYmJoWEZqcFE2R3FBd1Jfek84dWVNMg?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "Fortune",
+    "CNBC",
+    "Reuters"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic’s risk factors include the end of humanity, a feud with the Pentagon, and CEO Dario Amodei’s reputation",
+    "Anthropic CEO Dario Amodei charts a new direction for tech philanthropy",
+    "EXCLUSIVE: Anthropic's Amodei made $18 million last year, middle of the tech CEO pack"
+   ]
+  },
+  {
+   "title": "Eric Schmidt reportedly owns about half as much of Anthropic as CEO Dario Amodei",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOejdoZGdqRDhIcFpYUlJrR1pEZ3RhUEFuRUhJTWw4eXp2bUVzbHMwWk9TOWkwUlkxODBrT0dTd241ZmxtV0FWZ2o5Yk1UNEs4M0d0OHlRRTFWbEItU2loOFR6c3NJcFRWNkdmRG81TDh0cnlyblZOOXl6TUxRdjJsMTQ2akFISUV5akpobndSUUpNc3dPVXhWYWtCQ3dUejVnM3FBWE1HbnhDb0tZeW9zWUZ2eWZmdw?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "TechCrunch",
+    "Quartz"
+   ],
+   "themes": [],
+   "entities": [
+    "Dario Amodei",
+    "Anthropic"
+   ],
+   "headlines": [
+    "Eric Schmidt reportedly owns about half as much of Anthropic as CEO Dario Amodei",
+    "Anthropic CEO Dario Amodei's pay revealed in IPO filing"
+   ]
   },
   {
    "title": "Anthropic’s Dario Amodei is steering a possible $2 trillion IPO—but he says up to 40% of his time goes to making sure company culture is good",
@@ -3665,6 +4907,9 @@
    "entities": [
     "Dario Amodei",
     "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic’s Dario Amodei is steering a possible $2 trillion IPO—but he says up to 40% of his time goes to making sure company culture is good"
    ]
   },
   {
@@ -3680,6 +4925,9 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "EXCLUSIVE: Anthropic's Amodei made $18 million last year, middle of the tech CEO pack"
    ]
   },
   {
@@ -3695,6 +4943,10 @@
    "themes": [],
    "entities": [
     "Lisa Su"
+   ],
+   "headlines": [
+    "AMD CEO Lisa Su predicts 'very high' chip demand continuing for next few years",
+    "AMD CEO Lisa Su pledges tens of billions for AI chip supply"
    ]
   },
   {
@@ -3710,6 +4962,9 @@
    "entities": [
     "OpenAI",
     "DeepSeek"
+   ],
+   "headlines": [
+    "Watch OpenAI, DeepSeek & Moonshot Chase Billions in New AI Funding"
    ]
   },
   {
@@ -3725,6 +4980,29 @@
    "themes": [],
    "entities": [
     "Moonshot AI / Kimi"
+   ],
+   "headlines": [
+    "Watch Moonshot AI Eyes 2027 IPO After Reaching $50B Valuation",
+    "Moonshot AI is targeting a Hong Kong IPO in early 2027 after hitting a $50B valuation"
+   ]
+  },
+  {
+   "title": "AMD并购李飞飞World Labs背后的市值管理新范式",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBGT0JxRWFLUEIzUzBpRjFvVTRxblZ4RnkxZzZpWXUwcmNIRFViaG1saFQyOGRIaHl0dndFQU5DdURrTTVzUXc2Sk12TnpPNjhCUkE4?oc=5",
+   "source": "eu.36kr.com",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "eu.36kr.com",
+    "36Kr"
+   ],
+   "themes": [],
+   "headlines": [
+    "AMD并购李飞飞World Labs背后的市值管理新范式",
+    "对话影生智能创始人闵伟：AMD 82亿美元收购李飞飞World Labs背后 4D世界模型产业拐点解析"
+   ],
+   "entities": [
+    "Fei-Fei Li"
    ]
   },
   {
@@ -3739,6 +5017,9 @@
    "themes": [],
    "entities": [
     "Fei-Fei Li"
+   ],
+   "headlines": [
+    "AMD天价收购World Labs，AI教母李飞飞“起飞”还是“招安”"
    ]
   },
   {
@@ -3753,6 +5034,9 @@
    "themes": [],
    "entities": [
     "DeepSeek"
+   ],
+   "headlines": [
+    "DeepSeek considers doubling latest funding round to up to $15 billion, sources say"
    ]
   },
   {
@@ -3767,6 +5051,9 @@
    "themes": [],
    "entities": [
     "DeepSeek"
+   ],
+   "headlines": [
+    "DeepSeek to Raise at Least $12 Billion in Tencent-Backed Funding"
    ]
   },
   {
@@ -3781,6 +5068,9 @@
    "themes": [],
    "entities": [
     "DeepSeek"
+   ],
+   "headlines": [
+    "DeepSeek raising $12 billion ahead of 2027 IPO"
    ]
   },
   {
@@ -3795,6 +5085,9 @@
    "themes": [],
    "entities": [
     "Mistral AI"
+   ],
+   "headlines": [
+    "Mistral to Release New AI Model to Better Compete With U.S. Rivals"
    ]
   },
   {
@@ -3809,6 +5102,43 @@
    "themes": [],
    "entities": [
     "Mistral AI"
+   ],
+   "headlines": [
+    "France's Mistral launches AI model it says outperforms some Chinese rivals"
+   ]
+  },
+  {
+   "title": "Stop worrying about my AI, says multibillionaire Sam Altman. So we bear the risks and he keeps the money",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQa0RwMGVweERiX0xMUHhtS0dGVkdCRGhQY1g5YWl5V090Q1FkZzNVTmxrdy1ZLU8wcXotbnplNkZtbGd1eG8zWXUxM1VONWhjdHV1aU9jOURfelBYdFZyRExJUVlEaHlhZElBUHI3VXl6dFVCMVljczVudzhLSXIwbUtBTEZ4LWVLSWo2S1BxdDlIYk5ucHJJ?oc=5",
+   "source": "The Guardian",
+   "domain": "theguardian.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "The Guardian"
+   ],
+   "themes": [],
+   "headlines": [
+    "Stop worrying about my AI, says multibillionaire Sam Altman. So we bear the risks and he keeps the money"
+   ],
+   "entities": [
+    "Sam Altman"
+   ]
+  },
+  {
+   "title": "A New Neurotech Startup Launches to Rival Sam Altman’s Merge Labs",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZHdGc3pUdVhTQWdlTFRnSXl5VmVTZFR1NlpnRmVuVHJ4dzhrbkZ3dWw5QXZaOXA5WUI1Q1dEN0ItNmN6c0huU2kyMW4zZWNXNktYUEg5QVo2aWlfZXNWU2FtZjgxb0ZtTkxiNDdsM3BkZ01Fa1hFLW5WMkhLanhaSzVrWW91eXp0?oc=5",
+   "source": "WIRED",
+   "domain": "wired.com",
+   "published": "2026-10-06",
+   "outlets": [
+    "WIRED"
+   ],
+   "themes": [],
+   "headlines": [
+    "A New Neurotech Startup Launches to Rival Sam Altman’s Merge Labs"
+   ],
+   "entities": [
+    "Sam Altman"
    ]
   },
   {
@@ -3824,6 +5154,9 @@
    "entities": [
     "Sam Altman",
     "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI PR tells journalist to ‘move on’ while asking Sam Altman about a ChatGPT user’s suicide"
    ]
   },
   {
@@ -3839,21 +5172,45 @@
    "entities": [
     "Satya Nadella",
     "Microsoft AI"
+   ],
+   "headlines": [
+    "Satya Nadella reinvented Microsoft once. Can he do it again in the AI era?"
    ]
   },
   {
-   "title": "Mistral unveils new AI model it says rivals best open systems from China",
-   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FTlJ6SWZzT0xiYi1RR3MtSFpJVk0yS2cwNGJUelJmcEVHVHkwUVFGZDZULWtXSHBXNndQbWJ0S1lPVjZoZDJQR3A0QlJvT1ppU2lMTlJiRWx3bjI4c2NrX28xM0VwMW1iSV9XZnMtQdIBdEFVX3lxTE1tMDVOZG9acWpaNEhUcnhLM01pNkJ0eFVkZFJGWWRoSVpvN2FDTVNKMkl5akJ4dnhSMko2bi1aendmaFVnSmJxU3ZqNE5LcXlWSWVfMVdSR2FmQ1VvdXY4X0ZLa2FzSXdfQldUc21WaWRzYXVK?oc=5",
-   "source": "CNBC",
-   "domain": "cnbc.com",
+   "title": "Can superintelligence ever be controlled? Sam Altman on AI safety, doomsday scenarios, and OpenAI's delayed IPO",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObUJ4T2E4RGF6M0dRY2tlbXFkaktjbXg0MDBFQ2tudmN5YUNjRHpzMUtkcUVHUHFzS2dVZ2pUS0NKMERTWjV3X1UwamJBcFFZRUhfV1ZPT3I2WF9sRmM1STNpeG51anpmRGVUUGtFYmdqNmUtS0x6ZjVlVnRCUGpzYTZNSHpZYVA1ZlZHTFRiZ3lFVGctMGlSZndqdXhQRkJ1cTgxZEx6T043NVpDVEYtRW4wVjlTZlRqTHBmZFBn?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
    "published": "2026-10-05",
    "outlets": [
-    "Fortune",
-    "CNBC"
+    "Fortune"
+   ],
+   "themes": [],
+   "headlines": [
+    "Can superintelligence ever be controlled? Sam Altman on AI safety, doomsday scenarios, and OpenAI's delayed IPO"
+   ],
+   "entities": [
+    "Sam Altman",
+    "OpenAI"
+   ]
+  },
+  {
+   "title": "Sam Altman says AI will make ‘bad things’ happen. Exhibit A: needless death | Moustafa Bayoumi",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWkFtUUd3RVZFZnpDekFma0NOclhmaEtBSXY5N1FlRHVINmVBS05QckozN0RuOW16VldfbURhU3dCODlHT0VhczhzME8xWUg5WEM3QUF3d1lwYzdUaDlXeFdCd2RLSjllbWVma09qaTNXOXVPN2RIRjYzdDdRTGpWSTZabw?oc=5",
+   "source": "The Guardian",
+   "domain": "theguardian.com",
+   "published": "2026-10-05",
+   "outlets": [
+    "The Guardian"
    ],
    "themes": [],
    "entities": [
-    "Mistral AI"
+    "Sam Altman"
+   ],
+   "headlines": [
+    "Sam Altman says AI will make ‘bad things’ happen. Exhibit A: needless death | Moustafa Bayoumi",
+    "Accept ‘bad things’ in return for benefits of AI, says Sam Altman"
    ]
   },
   {
@@ -3868,6 +5225,9 @@
    "themes": [],
    "entities": [
     "Dario Amodei"
+   ],
+   "headlines": [
+    "My Take | Dario Amodei’s American AI imperialism"
    ]
   },
   {
@@ -3882,6 +5242,26 @@
    "themes": [],
    "entities": [
     "Anthropic"
+   ],
+   "headlines": [
+    "GOP senator warns Anthropic of \"alarmist\" approach to AI"
+   ]
+  },
+  {
+   "title": "OpenAI launches visual ads that appear alongside image generation results",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRHIxVVpMc3hoNWJ3RHBzOUM0WGEyTy0yOXF1UnBDNTBSMnBwT2ljY1ZtZHhhX1JuT19QY2ZUd2hmMUVlSmpWdnR3cmNNR29vanpvdlJLMmZtNDBQUUtOY01URmdxajFIUnF3T1dXWm44aUxxcGxycmNkbzJ5WUdoT3N2Y2h4a2x6UnUwV2hTNWlFOFFDOVBfdWtxSlY5OG5Na1UzQjhCbnFiZXlh?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-10-05",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI launches visual ads that appear alongside image generation results"
+   ],
+   "entities": [
+    "OpenAI"
    ]
   },
   {
@@ -3894,11 +5274,36 @@
     "Forbes",
     "Fortune",
     "The Guardian",
-    "The Verge"
+    "The Verge",
+    "Quartz"
    ],
    "themes": [],
    "entities": [
     "Sam Altman"
+   ],
+   "headlines": [
+    "Sam Altman says ‘some bad things’ will happen, but AI is totally worth it",
+    "Sam Altman says the world should accept some ‘bad things’ happening with AI as the industry signs on to Trump’s voluntary safety pact",
+    "Sam Altman says 'the world should accept some bad things happening for the benefits' of AI"
+   ]
+  },
+  {
+   "title": "OpenAI's Altman says AI benefits warrant accepting some risks",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOGhDUmJ2UzEwZ0hlenFISFFXdkZyVHd1TGNIZEhLTERLaDRWaXh4dlpVM1RfU0p4Vlh2cjVybWZtOWZkVVp0ZEVndGQ3T2pZd0tyelVvV3JnQ09FQlNOYWtVeUhCMjZud2NpYUVEZllhbHhIeVFvOXpEY0lLTklTNnNpNnhDTUdVS1dYSzl6S3VwbzgydXlKZVFRTkE4Y0dsYlJtQldVWkY?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-04",
+   "outlets": [
+    "Reuters",
+    "Forbes"
+   ],
+   "themes": [],
+   "entities": [
+    "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI's Altman says AI benefits warrant accepting some risks",
+    "OpenAI’s Sam Altman Says AI Will Cause ‘Some Bad Things’—But Benefits Are Worth It"
    ]
   },
   {
@@ -3913,6 +5318,9 @@
    "themes": [],
    "entities": [
     "Jensen Huang"
+   ],
+   "headlines": [
+    "Nvidia CEO Jensen Huang has emerged as the biggest foil to AI doomerism about the existential risk to humanity"
    ]
   },
   {
@@ -3927,6 +5335,9 @@
    "themes": [],
    "entities": [
     "Sam Altman"
+   ],
+   "headlines": [
+    "Sam Altman: Don't Treat AI Like a 'Religious Force'"
    ]
   },
   {
@@ -3941,6 +5352,9 @@
    "themes": [],
    "entities": [
     "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI's Altman: Ascribing religion to models a \"safety issue\""
    ]
   },
   {
@@ -3955,6 +5369,9 @@
    "themes": [],
    "entities": [
     "Meta GenAI / FAIR"
+   ],
+   "headlines": [
+    "The Mulleted, Meme-Loving Billionaire Behind Meta’s Hit AI App"
    ]
   },
   {
@@ -3969,6 +5386,9 @@
    "themes": [],
    "entities": [
     "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’"
    ]
   }
  ]

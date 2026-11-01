@@ -201,7 +201,8 @@ const sourceFor = item => allSources.find(source => source.channel === item.chan
 // Earlier items stay only while they still pass the current rules (and their channel is still followed).
 const items = new Map((previous.items || [])
   .filter(item => { const source = sourceFor(item); return source && titleWanted(source, item.title); })
-  .map(item => [item.key, item]));
+  // Items saved before channelId existed get it here, so followed-channel counts include them.
+  .map(item => [item.key, { ...item, channelId: item.channelId || sourceFor(item).channel }]));
 
 for (const source of allSources) {
   try {

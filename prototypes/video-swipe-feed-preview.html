@@ -83,6 +83,14 @@
     .add-status.error { color: #b3401f; }
     .add-status.ok { color: var(--green); }
     .add-section { padding: 12px 18px 4px; font-weight: 700; }
+    .note-form textarea, .note-form input { width: 100%; border: 1px solid var(--line-strong); border-radius: 10px; padding: 11px; background: var(--surface); color: var(--text); font: inherit; font-size: 16px; line-height: 1.5; outline: none; resize: vertical; }
+    .note-form textarea:focus, .note-form input:focus { border-color: var(--accent); }
+    .note-form input[hidden] { display: none; }
+    .note-save { min-height: 46px; border: 0; border-radius: 12px; background: var(--text); color: var(--surface); font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; }
+    .actions button.note-button { border-color: #b8344f66; background: var(--accent-soft); color: var(--accent-text); font-weight: 700; cursor: pointer; }
+    .toast { position: fixed; z-index: 40; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); width: max-content; max-width: min(92vw, 560px); border-radius: 14px; padding: 12px 16px; background: var(--text); color: var(--surface); font-size: 13px; line-height: 1.55; box-shadow: 0 10px 30px #2e2a2555; }
+    .toast[hidden] { display: none; }
+    .toast a { color: #f3c9a8; }
     .watch-row { width: 100%; border: 0; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; align-items: center; }
     .watch-row:hover, .watch-row:focus-visible { background: var(--hover); }
     .watch-row .menu-count { flex: none; }
@@ -226,6 +234,19 @@
       </nav>
       <div class="watch-undo" id="watch-undo" role="status" hidden><span id="watch-undo-text"></span><button type="button" id="watch-undo-button">撤销</button></div>
       <div class="sync-status" id="watch-sync-status" role="status">正在连接在线已看记录…</div>
+      <div class="history-sheet" id="note-sheet" role="dialog" aria-modal="true" aria-labelledby="note-title" hidden>
+        <div class="history-panel">
+          <div class="history-head"><span id="note-title">📝 记一笔</span><button type="button" id="note-close">取消</button></div>
+          <form class="add-form note-form" id="note-form">
+            <div class="add-status" id="note-moment"></div>
+            <textarea id="note-thought" rows="3" placeholder="我的想法（可留空；手机键盘可以语音输入）"></textarea>
+            <input id="note-key" type="password" placeholder="第一次使用：输入记笔记口令" autocomplete="off" hidden>
+            <button class="note-save" type="submit">保存到 Notion</button>
+            <div class="add-status">Gemini 会听写按下前 40 秒到后 20 秒说的原话并翻译成中文，大约半分钟后出现在 Notion「AI 视频笔记」。保存后视频继续播放。</div>
+          </form>
+        </div>
+      </div>
+      <div class="toast" id="toast" role="status" hidden></div>
       <div class="history-sheet" id="watchlist" role="dialog" aria-modal="true" aria-labelledby="watchlist-title" hidden>
         <div class="history-panel">
           <div class="history-head"><button type="button" id="watchlist-back" hidden>← 名单</button><span id="watchlist-title">追踪名单</span><button type="button" id="watchlist-close">关闭</button></div>
@@ -1300,6 +1321,7 @@
         details.appendChild(actions);
         card.appendChild(details);
         makeText(card, 'div', 'hint', '上滑看下一条 ↓');
+        addNoteButton(card);
         place(card);
         syncWatchedButton(card.querySelector('.watch-toggle'), watchedItems.has(watchKey));
         cardObserver.observe(card);
@@ -1851,6 +1873,7 @@
         historySheet.hidden = true;
         addSheet.hidden = true;
         watchlistSheet.hidden = true;
+        if (!noteSheet.hidden) closeNote();
         setMenuOpen(false);
         if (!searchBar.hidden) closeSearch();
       });
@@ -2009,6 +2032,124 @@
         }
       });
       watchlistBack.addEventListener('click', renderWatchlist);
+
+      // 📝 记一笔: the moment (video + second) goes to the Supabase Edge Function "video-note"
+      // (supabase/functions/video-note), which has Gemini write out what was said and adds a row to Notion.
+      const NOTE_ENDPOINT = `${SUPABASE_URL}/functions/v1/video-note`;
+      const NOTE_KEY_STORAGE = 'aiTiktokNoteKey';
+      const noteSheet = document.getElementById('note-sheet');
+      const noteForm = document.getElementById('note-form');
+      const noteMoment = document.getElementById('note-moment');
+      const noteThought = document.getElementById('note-thought');
+      const noteKeyInput = document.getElementById('note-key');
+      const toast = document.getElementById('toast');
+      let noteDraft = null;
+      let toastTimer = 0;
+
+      const readNoteKey = () => { try { return localStorage.getItem(NOTE_KEY_STORAGE) || ''; } catch { return ''; } };
+      const writeNoteKey = value => { try { value ? localStorage.setItem(NOTE_KEY_STORAGE, value) : localStorage.removeItem(NOTE_KEY_STORAGE); } catch { /* Private mode: asked again next time. */ } };
+      const clockText = seconds => `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
+
+      const showToast = (parts, hold = 6000) => {
+        clearTimeout(toastTimer);
+        toast.replaceChildren(...parts.map(part => {
+          if (typeof part === 'string') return document.createTextNode(part);
+          const link = document.createElement('a');
+          link.href = part.url;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.textContent = part.text;
+          return link;
+        }));
+        toast.hidden = false;
+        if (hold) toastTimer = setTimeout(() => { toast.hidden = true; }, hold);
+      };
+
+      // Only YouTube cards can be written out by Gemini; their (dead) ☆ 收藏 button becomes 📝 记一笔.
+      function addNoteButton(card) {
+        const frame = card.querySelector('.player iframe[data-video-id]');
+        const actions = card.querySelector('.actions');
+        if (!frame || !actions || actions.querySelector('.note-button')) return;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'note-button';
+        button.textContent = '📝 记一笔';
+        button.addEventListener('click', () => openNote(card));
+        const save = [...actions.querySelectorAll('button')].find(item => item.textContent.trim() === '☆ 收藏');
+        if (save) save.replaceWith(button);
+        else actions.appendChild(button);
+      }
+      document.querySelectorAll('.card').forEach(addNoteButton);
+
+      const openNote = card => {
+        const frame = card.querySelector('.player iframe[data-video-id]');
+        const player = players.get(frame.id);
+        const now = player?.getCurrentTime?.();
+        const seconds = Math.floor(Number.isFinite(now) ? now : Number(frame.dataset.start) || 0);
+        player?.pauseVideo?.();
+        noteDraft = {
+          player,
+          videoId: frame.dataset.videoId,
+          seconds,
+          title: card.querySelector('h1')?.textContent.trim() || '',
+          source: card.querySelector('.source')?.textContent.trim() || '',
+          tags: [...card.querySelectorAll('.tags .tag:not(.watch-toggle)')].map(tag => tag.textContent.trim())
+        };
+        noteMoment.textContent = `${noteDraft.title} · ${clockText(seconds)}`;
+        noteThought.value = '';
+        noteKeyInput.value = '';
+        noteKeyInput.hidden = Boolean(readNoteKey());
+        noteSheet.hidden = false;
+        (noteKeyInput.hidden ? noteThought : noteKeyInput).focus();
+      };
+
+      const closeNote = () => {
+        noteSheet.hidden = true;
+        noteDraft?.player?.playVideo?.();
+        noteDraft = null;
+      };
+
+      noteForm.addEventListener('submit', async event => {
+        event.preventDefault();
+        if (!noteDraft) return;
+        if (!noteKeyInput.hidden) {
+          if (!noteKeyInput.value.trim()) { noteKeyInput.focus(); return; }
+          writeNoteKey(noteKeyInput.value.trim());
+        }
+        const { player, ...note } = noteDraft;
+        note.thought = noteThought.value.trim();
+        closeNote();
+        showToast([`正在听写 ${clockText(note.seconds)} 附近的原话…`], 0);
+        try {
+          const response = await fetch(NOTE_ENDPOINT, {
+            method: 'POST',
+            headers: { 'content-type': 'application/json', 'x-note-key': readNoteKey() },
+            body: JSON.stringify(note)
+          });
+          const result = await response.json().catch(() => ({}));
+          if (response.status === 401) {
+            writeNoteKey('');
+            showToast(['口令不对，没有保存。下次点“📝 记一笔”时重新输入口令。'], 8000);
+            return;
+          }
+          if (!response.ok) throw new Error(result.error || `HTTP ${response.status}`);
+          showToast([
+            result.quote ? `已存到 Notion：“${result.quote.slice(0, 120)}${result.quote.length > 120 ? '…' : ''}” ` : '已存到 Notion（这次没听写出原话，时间点和想法已保存）。 ',
+            ...(result.notionUrl ? [{ text: '打开', url: result.notionUrl }] : [])
+          ], 9000);
+        } catch (error) {
+          showToast([`没存成功：${error.message}`], 9000);
+        }
+      });
+      document.getElementById('note-close').addEventListener('click', closeNote);
+      noteSheet.addEventListener('click', event => { if (event.target === noteSheet) closeNote(); });
+      // Computer: N takes a note on the card being watched.
+      document.addEventListener('keydown', event => {
+        if (event.key.toLowerCase() !== 'n' || event.ctrlKey || event.metaKey || event.altKey) return;
+        if (event.target.closest('input, textarea') || !noteSheet.hidden) return;
+        const button = activeCard?.querySelector('.note-button');
+        if (button) { event.preventDefault(); openNote(activeCard); }
+      });
       document.getElementById('watchlist-close').addEventListener('click', () => { watchlistSheet.hidden = true; });
       watchlistSheet.addEventListener('click', event => { if (event.target === watchlistSheet) watchlistSheet.hidden = true; });
 

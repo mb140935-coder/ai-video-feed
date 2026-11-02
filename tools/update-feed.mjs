@@ -5,6 +5,8 @@
 // 3. News about the watchlist people and labs and the priority themes (news.mjs), for the 简报 tab, with a Chinese
 //    summary and "这意味着" from Gemini when GEMINI_API_KEY is set (summarize.mjs), and 今日重点: the day's top
 //    stories by score, plus 本周大事 (digest.mjs).
+// 4. Shelf life: 演讲 & Podcast videos go once they are older than their content type allows (SHELF_DAYS: product
+//    updates 3 months, industry judgment and untyped 1 year, method never). Sports and Olympic videos and 精选 stay.
 // With a YOUTUBE_API_KEY (YouTube Data API v3) it also drops videos under MIN_MINUTES and dates hand-added
 // YouTube videos; without one those two steps are skipped and the title rules below do the filtering.
 // Usage: node update-feed.mjs <path to auto-feed.json>   (read if present, then rewritten)
@@ -20,7 +22,12 @@ const TALK = /keynote|interview|podcast|conversation|panel|fireside|livestream|l
 const EXCLUDE = /highlight|recap|trailer|teaser|promo|#shorts|giveaway|award/i;
 const MAX_AGE_DAYS = 30;
 const MAX_PER_SOURCE = 5;
-const MAX_ITEMS = 150;
+const MAX_ITEMS = 300;
+// Days a 演讲 & Podcast video stays, by kind (summarize.mjs); untyped videos count as judgment.
+const SHELF_DAYS = { product: 90, judgment: 365 };
+const SPORTS_TAG = /奥运|体育/;
+const expired = item => item.tab !== 'curated' && !item.sports && !OLYMPIC.test(item.title) && !(item.tags || []).some(tag => SPORTS_TAG.test(tag))
+  && item.kind !== 'method' && Date.parse(item.published) < Date.now() - SHELF_DAYS[item.kind || 'judgment'] * 86400000;
 const MIN_MINUTES = 5;
 // Person search (YouTube Data API, 100 quota units per person of the free 10,000 a day).
 const PERSON_SEARCH_DAYS = 7;
@@ -266,10 +273,10 @@ const sourceFor = item => allSources.find(source => source.channel === item.chan
 // Earlier items stay only while they still pass the current rules (and their channel is still followed).
 const items = new Map((previous.items || [])
   .filter(item => {
-    // Found by the person search: kept until it ages out, whatever channel it is on, while its title passes.
+    // Found by the person search: kept (until its shelf life ends), whatever channel it is on, while its title passes.
     if (item.via === 'person') {
       const person = people.find(entry => entry.name === item.tags?.[1]);
-      return person && speaking(item.title, person) && Date.parse(item.published) >= Date.now() - MAX_AGE_DAYS * 86400000;
+      return person && speaking(item.title, person);
     }
     const source = sourceFor(item);
     return source && titleWanted(source, item.title);
@@ -332,10 +339,9 @@ if (addedRows) {
   }
 }
 
-const kept = [...items.values()]
+let kept = [...items.values()]
   .sort((a, b) => b.published.localeCompare(a.published))
   .slice(0, MAX_ITEMS);
-Object.values(channels).forEach(info => { if (info.id) info.count = kept.filter(item => item.channelId === info.id).length; });
 // Keep the old timestamp when nothing changed, so the job doesn't commit an identical file.
 let news = previous.news || [];
 const newsStats = {};
@@ -352,12 +358,13 @@ try {
 } catch (error) {
   report.push(`今日重点: FAILED ${error.message}`);
 }
-// 内容重点 for YouTube cards without one yet, from the full description (newest first; the rest on later runs).
+// 内容重点 and content type for YouTube cards without them yet, from the full description (newest first; the rest
+// on later runs).
 try {
   const pending = [
     ...kept.filter(item => item.key.startsWith('youtube:')).map(item => ({ key: item.key, title: item.title, channel: item.channel, published: item.published, target: item })),
     ...Object.entries(videos).filter(([key]) => key.startsWith('youtube:')).map(([key, info]) => ({ key, title: info.title, channel: info.author, published: info.published, target: info }))
-  ].filter(entry => !entry.target.highlight)
+  ].filter(entry => !entry.target.highlight || !entry.target.kind)
     .sort((a, b) => (b.published || '').localeCompare(a.published || ''))
     .slice(0, VIDEO_HIGHLIGHTS_PER_RUN);
   const details = await youtubeDetails(pending.map(entry => entry.key.slice('youtube:'.length)));
@@ -366,6 +373,10 @@ try {
 } catch (error) {
   report.push(`video highlights: FAILED ${error.message}`);
 }
+const expiredCount = kept.filter(expired).length;
+kept = kept.filter(item => !expired(item));
+report.push(`shelf life: ${expiredCount} expired, ${kept.filter(item => !item.kind).length} of ${kept.length} not typed yet`);
+Object.values(channels).forEach(info => { if (info.id) info.count = kept.filter(item => item.channelId === info.id).length; });
 // The full description only feeds the highlight; it is not kept in the feed.
 Object.values(videos).forEach(info => { delete info.description; });
 

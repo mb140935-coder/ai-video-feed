@@ -137,6 +137,7 @@
     .watch-row-arrow { flex: none; color: var(--faint); }
     .counter { cursor: pointer; pointer-events: auto; }
     .actions button.fav-toggle { cursor: pointer; }
+    .tag.kind-tag { border-color: var(--purple-line); color: var(--purple); font-weight: 700; }
     .actions button.watch-toggle { color: var(--green); border-color: var(--green-line); font-weight: 700; cursor: pointer; }
     .toast-action { margin-left: 10px; border: 0; padding: 0; background: transparent; color: var(--toast-link); font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
     .counter::after { content: ' ▾'; color: var(--faint); }
@@ -431,7 +432,7 @@
         <div id="brief-list"></div>
       </div>
       <div class="feed-panel" id="feed-curated" role="tabpanel" aria-labelledby="tab-curated">
-      <section class="card" data-published="2026-01-23">
+      <section class="card" data-published="2026-01-23" data-kind="judgment" data-sports="true">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 4</span></div>
         <div class="player"><iframe id="player-ioc" data-video-id="QiaTTwnnblg" data-start="8" data-caption-lang="en" title="Inside the Olympic AI Agenda — IOC Media" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">奥运 AI 重点视频 · 00:08 起</span></div>
         <div class="details">
@@ -448,7 +449,7 @@
         <div class="hint">上滑看下一条 ↓</div>
       </section>
 
-      <section class="card" data-published="2025-11-14">
+      <section class="card" data-published="2025-11-14" data-kind="judgment" data-sports="true">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">2 / 7</span></div>
         <div class="player"><iframe id="player-ioc-forum" data-video-id="54CadlLt1jI" data-start="0" data-caption-lang="en" title="Olympic Movement AI Engagement Forum — IOC Media" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">奥运 AI · 约 3 分钟</span></div>
         <div class="details">
@@ -465,7 +466,7 @@
         <div class="hint">上滑看下一条 ↓</div>
       </section>
 
-      <section class="card" data-published="2024-07-25">
+      <section class="card" data-published="2024-07-25" data-kind="product" data-sports="true">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">3 / 7</span></div>
         <div class="player"><iframe id="player-intel-paris" data-video-id="niuziDT6L5o" data-start="0" data-caption-lang="en" title="Practical Applications of AI at Olympic Games Paris 2024 — Intel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">奥运 AI · 约 5 分钟</span></div>
         <div class="details">
@@ -482,7 +483,7 @@
         <div class="hint">上滑看下一条 ↓</div>
       </section>
 
-      <section class="card" data-published="2024-04-19">
+      <section class="card" data-published="2024-04-19" data-kind="judgment" data-sports="true">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">4 / 7</span></div>
         <div class="player"><iframe id="player-ioc-agenda" data-video-id="VoF36w_yLWo" data-start="0" data-caption-lang="en" title="Olympic AI Agenda — IOC Media" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">完整发布会 · 约 2 小时</span></div>
         <div class="details">
@@ -499,7 +500,7 @@
         <div class="hint">上滑看下一条 ↓</div>
       </section>
 
-      <section class="card" data-published="2026-10-23">
+      <section class="card" data-published="2026-10-23" data-kind="product">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">2 / 4</span></div>
         <div class="player"><iframe id="player-kimi" data-video-id="DIyHTpfWctU" data-start="0" data-caption-lang="en" title="Kimi K3.1 Pro 官方发布视频" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">原声 · 英文字幕优先</span></div>
         <div class="details">
@@ -516,7 +517,7 @@
         <div class="hint">上滑看下一条 ↓</div>
       </section>
 
-      <section class="card" data-published="2026-10-21">
+      <section class="card" data-published="2026-10-21" data-kind="product">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">3 / 4</span></div>
         <div class="player"><iframe id="player-nvidia" data-video-id="v-NGxyPjcrE" data-start="0" data-caption-lang="en" title="Jensen Huang at NVIDIA GTC Berlin 2026" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">原声 · 英文字幕优先</span></div>
         <div class="details">
@@ -533,7 +534,7 @@
         <div class="hint">上滑看下一条 ↓</div>
       </section>
 
-      <section class="card" data-published="2026-07-16">
+      <section class="card" data-published="2026-07-16" data-kind="method" data-sports="true">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">4 / 4</span></div>
         <div class="player"><iframe id="player-racing" data-video-id="KNPjRpNtQ7s" data-start="600" data-end="660" data-caption-lang="en" title="OpenAI Podcast Ep. 22: AI in racing" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">章节片段 · 10:00 起 · 原声</span></div>
         <div class="details">
@@ -549,7 +550,7 @@
         </div>
         <div class="hint">首期视频候选结束</div>
       </section>
-      <section class="card" data-published="2026-02-04">
+      <section class="card" data-published="2026-02-04" data-kind="product" data-sports="true">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 1</span></div>
         <div class="player"><iframe id="player-ioc-qwen-llm" data-video-id="S2YEPhMejqo" data-start="0" data-caption-lang="en" title="首个奥运官方大模型：IOC 与阿里云在冬奥会上发布" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">奥运 AI · 约 2 分钟</span></div>
         <div class="details">
@@ -565,7 +566,7 @@
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
-      <section class="card" data-published="2026-02-26">
+      <section class="card" data-published="2026-02-26" data-kind="method" data-sports="true">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 1</span></div>
         <div class="player"><iframe id="player-ioc-cto-qwen" data-video-id="8bj-qenh0rY" data-start="0" data-caption-lang="en" title="IOC 技术负责人：奥运 AI 为什么建在阿里通义千问上" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">奥运 AI · 约 3 分钟</span></div>
         <div class="details">
@@ -581,7 +582,7 @@
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
-      <section class="card" data-published="2026-02-12">
+      <section class="card" data-published="2026-02-12" data-kind="product" data-sports="true">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 1</span></div>
         <div class="player"><iframe id="player-obs-milano-ai" data-video-id="SmXYN78nTkY" data-start="0" data-caption-lang="en" title="冬奥转播怎么用 AI：6500 小时内容背后的新技术" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">奥运 AI · 约 4 分钟</span></div>
         <div class="details">
@@ -597,7 +598,7 @@
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
-      <section class="card" data-published="2025-10-08">
+      <section class="card" data-published="2025-10-08" data-kind="judgment" data-sports="true">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 1</span></div>
         <div class="player"><iframe id="player-ioc-ai-strategy" data-video-id="dT5hNiuqX2U" data-start="0" data-caption-lang="en" title="IOC AI 负责人专访：AI 如何进入整个奥林匹克体系" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">奥运 AI · 约 12 分钟</span></div>
         <div class="details">
@@ -613,7 +614,7 @@
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
-      <section class="card" data-published="2026-07-16">
+      <section class="card" data-published="2026-07-16" data-kind="method" data-sports="true">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 1</span></div>
         <div class="player"><iframe id="player-cmu-sports-analytics" data-video-id="Qu3QEz8PBUc" data-start="0" data-caption-lang="en" title="CMU 体育分析入门：AI 和数据科学怎么改变比赛" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">体育 AI · 约 39 分钟</span></div>
         <div class="details">
@@ -629,7 +630,7 @@
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
-      <section class="card" data-published="2026-07-14">
+      <section class="card" data-published="2026-07-14" data-kind="judgment" data-sports="true">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 1</span></div>
         <div class="player"><iframe id="player-sumer-football-ai" data-video-id="WRB_RAvGVAE" data-start="0" data-caption-lang="en" title="AI 如何改变美式橄榄球：从球队分析到现场球迷" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">体育 AI · 约 17 分钟</span></div>
         <div class="details">
@@ -645,7 +646,7 @@
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
-      <section class="card" data-published="2025-12-11">
+      <section class="card" data-published="2025-12-11" data-kind="judgment">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 1</span></div>
         <div class="player"><iframe id="player-proptech-agentic" data-video-id="xr6MnTBFpEY" data-start="0" data-caption-lang="en" title="智能体时代：AI 怎样改变房地产和 PropTech" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">房产 AI · 约 58 分钟</span></div>
         <div class="details">
@@ -661,7 +662,7 @@
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
-      <section class="card" data-published="2026-04-13">
+      <section class="card" data-published="2026-04-13" data-kind="method">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 1</span></div>
         <div class="player"><iframe id="player-harvey-agents" data-video-id="yEH0XAK4Fi0" data-start="0" data-caption-lang="en" title="Harvey 联合创始人：法律智能体和“律所世界模型”" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">法律 AI · 约 21 分钟</span></div>
         <div class="details">
@@ -677,7 +678,7 @@
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
-      <section class="card" data-published="2026-05-04">
+      <section class="card" data-published="2026-05-04" data-kind="judgment">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 1</span></div>
         <div class="player"><iframe id="player-legaltech-state-of-ai" data-video-id="Axnmw60ecic" data-start="0" data-caption-lang="en" title="2026 法律 AI 现状：哪些是真的，哪些是炒作" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">法律 AI · 约 49 分钟</span></div>
         <div class="details">
@@ -693,7 +694,7 @@
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
-      <section class="card" data-published="2026-04-01">
+      <section class="card" data-published="2026-04-01" data-kind="judgment">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 1</span></div>
         <div class="player"><iframe id="player-legora-ai-law-firm" data-video-id="fJ0uj_jSCDM" data-start="0" data-caption-lang="en" title="AI 驱动的律所：Legora CEO 谈从助手到智能体" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">法律 AI · 约 50 分钟</span></div>
         <div class="details">
@@ -709,7 +710,7 @@
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
-      <section class="card" data-published="2026-07-18">
+      <section class="card" data-published="2026-07-18" data-kind="judgment">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 1</span></div>
         <div class="player"><iframe id="player-bloomberg-kimi-k3" data-video-id="cYuMMqbv-N8" data-start="0" data-caption-lang="en" title="Kimi K3 发布：中国开放模型给美国 AI 投资带来压力" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">中国 AI · 约 12 分钟</span></div>
         <div class="details">
@@ -725,7 +726,7 @@
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
-      <section class="card" data-published="2026-09-29">
+      <section class="card" data-published="2026-09-29" data-kind="product">
         <div class="top"><div class="brand-block"><span class="brand">AI 前沿 · 今日精选</span><span class="focus-line">奥运 AI 最高优先级 · 体育 · 中国 AI · 房产 AI · 法律 AI · 必看</span></div><span class="counter">1 / 1</span></div>
         <div class="player"><iframe id="player-openai-devday-2026" data-video-id="Fls_onRviPM" data-start="0" data-caption-lang="en" title="OpenAI DevDay 2026 主题演讲：20 多项新发布" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><span class="tap-note">通用 AI 必看 · 约 54 分钟</span></div>
         <div class="details">
@@ -976,9 +977,25 @@
         return key(b).localeCompare(key(a));
       };
 
+      // Content type (tools/summarize.mjs for the daily job's videos, by hand for the rest) sets how long a video stays
+      // in 演讲 & Podcast: product updates 3 months, judgment (and untyped) 1 year, method always. Sports and Olympic
+      // videos, and everything in 精选视频, stay.
+      const KIND_LABELS = { product: '产品更新', judgment: '行业判断', method: '方法思路' };
+      const SHELF_DAYS = { product: 90, judgment: 365 };
+      const SPORTS_TEXT = /olympi|paralympi|IOC|奥运|奥林匹克|冬奥|体育/i;
+      const shelfExpired = ({ kind, sports, date, text }) => kind !== 'method' && !sports && !SPORTS_TEXT.test(text)
+        && Boolean(date) && Date.parse(date) < Date.now() - SHELF_DAYS[kind || 'judgment'] * 864e5;
+      const kindTag = kind => {
+        const tag = document.createElement('span');
+        tag.className = 'tag kind-tag';
+        tag.textContent = KIND_LABELS[kind];
+        return tag;
+      };
+
       const curatedCards = [...document.querySelectorAll('#feed-curated .card')].sort(newestFirst(card => card.dataset.published));
       curatedCards.forEach((card, index) => {
         card.querySelector('.tags')?.prepend(publishedBadge(card.dataset.published));
+        if (KIND_LABELS[card.dataset.kind]) card.querySelector('.pub-date')?.after(kindTag(card.dataset.kind));
         card.querySelector('.hint').textContent = index === curatedCards.length - 1 ? '首期视频候选结束' : '上滑看下一条 ↓';
         // The player's corner label sat where YouTube shows the ad Skip button: move its length or start time
         // (“约 54 分钟”, “00:08 起”) into the state line under the title, unless that line already says it.
@@ -1202,6 +1219,7 @@
         if (next) next.before(card);
         else appearanceCards.appendChild(card);
       };
+      const cardExpired = card => shelfExpired({ kind: card.dataset.kind, sports: card.dataset.sports === 'true', date: cardDate(card), text: card.querySelector('.tags')?.textContent || '' });
       const placeFavorites = () => {
         let moved = false;
         appearanceCards.querySelectorAll(':scope > .card').forEach(card => {
@@ -1469,6 +1487,8 @@
         card.className = 'card appearance-card';
         card.dataset.search = [item.name, item.appearance_title, item.format, item.publisher].join(' ').toLocaleLowerCase();
         if (item.sortDate) card.dataset.published = item.sortDate;
+        if (item.kind) card.dataset.kind = item.kind;
+        if (item.sports === true || item.sports === 'true') card.dataset.sports = 'true';
         const top = document.createElement('div');
         top.className = 'top';
         const brandBlock = document.createElement('div');
@@ -1547,6 +1567,7 @@
         const tags = document.createElement('div');
         tags.className = 'tags';
         tags.appendChild(publishedBadge(item.published_date, item.dateFallback));
+        if (KIND_LABELS[item.kind]) tags.appendChild(kindTag(item.kind));
         (item.tags || []).forEach(label => makeText(tags, 'span', 'tag', label));
         makeText(tags, 'span', 'tag', item.format || 'Appearance');
         makeText(tags, 'span', 'tag', item.publisher || 'Publisher');
@@ -1651,14 +1672,17 @@
           const curatedMediaKeys = new Set([...document.querySelectorAll('.card[data-home] .watch-toggle')]
             .map(button => button.dataset.watchKey)
             .filter(Boolean));
-          const entries = registeredEntries.filter(item => !curatedMediaKeys.has(appearanceMediaKey(item)));
-          const excludedDuplicates = registeredEntries.length - entries.length;
+          const unique = registeredEntries.filter(item => !curatedMediaKeys.has(appearanceMediaKey(item)));
+          const excludedDuplicates = registeredEntries.length - unique.length;
+          const entries = unique.filter(item => favorites.has(canonicalMediaKey(item.official_media_url) || `${canonicalMediaKey(item.official_publisher_url)}:${item.appearance_title}`)
+            || !shelfExpired({ kind: item.kind, sports: item.sports === true || item.sports === 'true', date: item.published_date, text: `${(item.tags || []).join(' ')} ${item.appearance_title}` }));
+          const expiredCount = unique.length - entries.length;
           appearanceTotal = entries.length;
           appearanceCount.textContent = `${entries.length} 条`;
           const inAppCount = entries.filter(item => ['youtube', 'spotify', 'simplecast', 'megaphone', 'ted', 'vimeo'].includes(mediaLink(item)?.provider)).length;
           const audioCount = entries.filter(item => ['spotify', 'simplecast', 'megaphone'].includes(mediaLink(item)?.provider)).length;
           const autoCount = entries.filter(item => item.autoDiscovered).length;
-          appearanceSummary = `共 ${entries.length} 条，其中 ${autoCount} 条是每天自动从关注频道发现的新视频${autoFeedUpdated()}；已自动排除精选 TAB 中重复的 ${excludedDuplicates} 条。${inAppCount} 条支持卡内官方播放器（其中 ${audioCount} 条是音频），其余保留发布方原页。`;
+          appearanceSummary = `共 ${entries.length} 条，其中 ${autoCount} 条是每天自动从关注频道发现的新视频${autoFeedUpdated()}；已自动排除精选 TAB 中重复的 ${excludedDuplicates} 条${expiredCount ? `，按保质期移除过时的 ${expiredCount} 条` : ''}。${inAppCount} 条支持卡内官方播放器（其中 ${audioCount} 条是音频），其余保留发布方原页。`;
           appearanceNote.textContent = appearanceSummary;
           entries.sort(newestFirst(item => item.published_date)).forEach((item, index) => renderAppearance(item, index, entries.length));
           appearanceCards.querySelectorAll(':scope > .card:not([data-home])').forEach((card, index) => { card.dataset.seq = String(index); });
@@ -1996,6 +2020,8 @@
         status: 'verified',
         published_date: entry.published,
         sortDate: entry.published,
+        kind: entry.kind,
+        sports: entry.sports,
         tags: entry.tags || [],
         brand: ['每日自动发现', `关注频道 · ${entry.channel}${entry.minutes ? ` · 约 ${entry.minutes} 分钟` : ''}`],
         cardText: {
@@ -2064,6 +2090,8 @@
           dateFallback: `发布日期待核实 · ${shortDate(video.created_at)} 加入`,
           // Until the daily job finds the publish date, the add date keeps a new addition near the top.
           sortDate: published || (video.created_at || '').slice(0, 10),
+          kind: info.kind,
+          sports: info.sports,
           brand: ['你添加的视频', addedShared ? '手动加入 · 所有设备同步' : '手动加入 · 保存在这台设备'],
           cardText: {
             person: author ? `频道：${author}。这是你从别处找到、手动加入的视频。` : '这是你从别处找到、手动加入的视频。',
@@ -2929,10 +2957,10 @@
         const query = appearanceSearch.value.trim().toLocaleLowerCase();
         let matches = 0;
         // Counts 精选 cards moved in, not those moved out to 精选.
-        if (appearancesLoaded) appearanceTotal = appearanceCards.querySelectorAll(':scope > .card').length;
+        if (appearancesLoaded) appearanceTotal = [...appearanceCards.querySelectorAll(':scope > .card')].filter(card => !card.dataset.home || !cardExpired(card)).length;
         appearanceCards.querySelectorAll(':scope > .card').forEach(card => {
           const watchKey = card.querySelector('.watch-toggle')?.dataset.watchKey;
-          const visible = !watchedItems.has(watchKey) && (!query || card.dataset.search.includes(query));
+          const visible = !watchedItems.has(watchKey) && !(card.dataset.home && cardExpired(card)) && (!query || card.dataset.search.includes(query));
           card.hidden = !visible;
           if (visible) matches++;
         });

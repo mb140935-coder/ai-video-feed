@@ -92,23 +92,32 @@ export const summarizeNews = async (stories, report = []) => {
 };
 
 // 内容重点 for video cards: two or three Chinese sentences from the video's title and full YouTube description
-// (the card's own excerpt stops at 220 characters). Entries are { title, channel, description, target }; the
-// result goes to target.highlight. Same model and per-run cap as the news, so notes keep their quota.
+// (the card's own excerpt stops at 220 characters), plus the content type that sets its shelf life in
+// 演讲 & Podcast (product 3 months, judgment 1 year, method kept) and whether it is about sports or the Olympics
+// (always kept). Entries are { title, channel, description, target }; the results go to target.highlight (only
+// when it has none yet), target.kind and target.sports. Same model and per-run cap as the news, so notes keep
+// their quota.
 const VIDEO_INSTRUCTIONS = `你是一位中文编辑，为一位关注 AI 的读者整理视频卡片的“内容重点”。每条给你视频标题、频道名和发布方简介（原文，可能是英文）。为每条写：
-- highlight：两到三句中文，说清谁在讲（讲者和身份）、主要谈了哪些话题、观点或发布。只能使用标题和简介里出现的信息，不要编造；简介很少时只写能确定的，宁短勿编。不要写“本视频”“该视频”这类开头，直接说内容。
+- highlight：两到三句中文，说清谁在讲（讲者和身份）、主要谈了哪些话题、观点或发布。只能使用标题和简介里出现的信息，不要编造；简介很少时只写能确定的，宁短勿编。不要写“本视频”“该视频”这类开头，直接说内容。输入里已有 highlight 时原样返回。
+- kind：这条内容主要讲的是哪一类，决定它多久过时：
+  product = 产品更新：发布会、新模型 / 新功能演示、benchmark、价格、路线图、“我们下个版本会…”。几个月就过时。
+  judgment = 行业判断：预测、AGI 时间线、竞争格局、谁会赢、行业趋势和观点。一年内还有参考价值。
+  method = 方法思路：怎么做决策、组织和招人、为什么选这条技术路线、做事方法、踩过的坑、原理讲解。几年都有用。
+  三类都有时按主要篇幅归一类；拿不准时选 judgment。
+- sports：是否和体育或奥运相关（体育 AI、赛事、运动员、转播、奥运会等），true 或 false。
 人名、公司名、产品名保留原文（可附常见中文名）。按输入顺序返回每条的 id。`;
 
 const VIDEO_SCHEMA = {
   type: 'ARRAY',
   items: {
     type: 'OBJECT',
-    properties: { id: { type: 'INTEGER' }, highlight: { type: 'STRING' } },
-    required: ['id', 'highlight']
+    properties: { id: { type: 'INTEGER' }, highlight: { type: 'STRING' }, kind: { type: 'STRING', enum: ['product', 'judgment', 'method'] }, sports: { type: 'BOOLEAN' } },
+    required: ['id', 'highlight', 'kind', 'sports']
   }
 };
 
 const highlightBatch = async (key, model, entries) => {
-  const input = entries.map((entry, id) => ({ id, title: entry.title, channel: entry.channel, description: (entry.description || '').slice(0, 1500) }));
+  const input = entries.map((entry, id) => ({ id, title: entry.title, channel: entry.channel, description: (entry.description || '').slice(0, 1500), ...(entry.target.highlight ? { highlight: entry.target.highlight } : {}) }));
   const response = await fetch(`${API}/models/${model}:generateContent`, {
     method: 'POST',
     headers: { 'x-goog-api-key': key, 'content-type': 'application/json' },
@@ -140,8 +149,13 @@ export const highlightVideos = async (entries, report = []) => {
   for (let start = 0; start < pending.length; start += BATCH) {
     const batch = pending.slice(start, start + BATCH);
     try {
-      for (const { id, highlight } of await highlightBatch(key, model, batch)) {
-        if (batch[id] && highlight?.trim()) { batch[id].target.highlight = highlight.trim(); done++; }
+      for (const { id, highlight, kind, sports } of await highlightBatch(key, model, batch)) {
+        const target = batch[id]?.target;
+        if (!target) continue;
+        if (!target.highlight && highlight?.trim()) target.highlight = highlight.trim();
+        if (['product', 'judgment', 'method'].includes(kind)) target.kind = kind;
+        if (typeof sports === 'boolean') target.sports = sports;
+        if (target.highlight && target.kind) done++;
       }
     } catch (error) {
       report.push(`video highlights batch ${start / BATCH + 1}: FAILED ${error.message}`);

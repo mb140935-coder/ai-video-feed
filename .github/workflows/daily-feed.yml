@@ -16,6 +16,7 @@ on:
       - 'tools/summarize.mjs'
       - 'tools/digest.mjs'
       - 'tools/people.mjs'
+      - 'docs/people-picks.json'
       - 'docs/watchlist-v1.json'
 
 permissions:

@@ -179,7 +179,7 @@ export const searchPeople = async (people, items, previous, report, youtubeKey, 
 // digits and stock words (对话, 演讲, 人工智能…). Two videos of one person count as the same when their lengths are
 // the same (2 characters in a row in common, e.g. the host "鲁健"), within a minute (3, e.g. the other guest
 // "章泽天"), or within 3%
-// and 5 characters. Bilibili is kept over YouTube (no ads), then the longer upload.
+// and 5 characters. Hand-picked videos are kept first, then Bilibili over YouTube (no ads), then the longer upload.
 const STOCK = /对话|对谈|访谈|专访|采访|演讲|发言|致辞|分享|院士|最新|独家|完整版?|全集|全程|人工智能|世界|大会|论坛|峰会|中国|节目|播客|podcast|interview|主任|创始人|董事长|cctv|ep|\d+/g;
 const longestCommon = (a, b) => {
   let best = 0;
@@ -205,7 +205,7 @@ export const dedupePeople = (items, people, report) => {
     // The 2-character rule counts Chinese only ("ai" is in half the titles).
     const cjk = title => bare(title).replace(/[^一-鿿|]/g, '|');
     const kept = [];
-    list.sort((a, b) => Number(b.key.startsWith('bilibili:')) - Number(a.key.startsWith('bilibili:')) || (b.minutes || 0) - (a.minutes || 0));
+    list.sort((a, b) => Number(Boolean(b.picked)) - Number(Boolean(a.picked)) || Number(b.key.startsWith('bilibili:')) - Number(a.key.startsWith('bilibili:')) || (b.minutes || 0) - (a.minutes || 0));
     for (const item of list) {
       const same = kept.find(other => {
         const gap = Math.abs((other.minutes || 0) - (item.minutes || 0));
@@ -219,3 +219,41 @@ export const dedupePeople = (items, people, report) => {
 };
 
 export const PEOPLE_TITLE_OK =(person, title) => new RegExp(person.names.map(escapeRegExp).join('|'), 'i').test(title) && !SECONDHAND.test(title);
+
+// Hand-picked 人物访谈 (docs/people-picks.json: [{ person, url, note? }]), for interviews the search misses or its
+// title rules would skip. They are added once with the platform's own title, date and length, marked picked (kept
+// whatever the title says, never judged second-hand, and preferred when another upload of the same video exists).
+export const addPicks = async (picks, items, report, youtubeKey) => {
+  let added = 0;
+  for (const pick of picks) {
+    const bvid = pick.url.match(/bilibili\.com\/video\/(BV\w+)/)?.[1];
+    const youtubeId = pick.url.match(/(?:v=|youtu\.be\/)([\w-]{11})/)?.[1];
+    const key = bvid ? `bilibili:${bvid}` : youtubeId ? `youtube:${youtubeId}` : '';
+    if (!key) { report.push(`pick ${pick.url}: not a Bilibili or YouTube link`); continue; }
+    if (items.has(key)) { Object.assign(items.get(key), { picked: true, firsthand: true }); continue; }
+    try {
+      let video;
+      if (bvid) {
+        const data = await getJson(`https://api.bilibili.com/x/web-interface/view?bvid=${bvid}`, { headers: await bilibiliHeaders() });
+        if (data.code !== 0) throw new Error(`code ${data.code}`);
+        const info = data.data;
+        video = { url: `https://www.bilibili.com/video/${bvid}`, title: info.title, channel: info.owner?.name || '', published: day(info.pubdate * 1000), minutes: Math.round(info.duration / 60), text: info.desc || '' };
+      } else {
+        if (!youtubeKey) throw new Error('no YouTube key');
+        const info = (await getJson(`https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&id=${youtubeId}&key=${youtubeKey}`)).items?.[0];
+        if (!info) throw new Error('not found');
+        video = { url: `https://www.youtube.com/watch?v=${youtubeId}`, title: decode(info.snippet.title), channel: info.snippet.channelTitle, channelId: info.snippet.channelId, published: info.snippet.publishedAt.slice(0, 10), minutes: isoMinutes(info.contentDetails.duration), text: info.snippet.description || '' };
+      }
+      items.set(key, {
+        key, url: video.url, title: video.title, channel: video.channel, ...(video.channelId ? { channelId: video.channelId } : {}),
+        published: video.published, summary: summarize(video.text.split('\n')[0] || ''), tab: 'people', person: pick.person,
+        tags: ['人物访谈', pick.person], minutes: video.minutes, found: day(Date.now()), via: 'people', picked: true, firsthand: true,
+        ...(pick.note ? { note: pick.note } : {})
+      });
+      added++;
+    } catch (error) {
+      report.push(`pick ${key}: FAILED ${error.message}`);
+    }
+  }
+  report.push(`people picks: ${added} added`);
+};

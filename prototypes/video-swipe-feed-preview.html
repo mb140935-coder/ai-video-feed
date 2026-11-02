@@ -2198,7 +2198,7 @@
           tags: [entry.person],
           brand: ['人物访谈', `${entry.person} · ${site} · ${entry.channel}${entry.minutes ? ` · 约 ${entry.minutes} 分钟` : ''}`],
           cardText: {
-            person: `${entry.person}${keywords ? `（${keywords.split(/\s+/).join(' · ')}）` : ''}。上传者：${entry.channel}。`,
+            person: `${entry.person}${keywords ? `（${keywords.split(/\s+/).join(' · ')}）` : ''}。${entry.note ? `${entry.note}。` : ''}上传者：${entry.channel}。`,
             highlight: entry.highlight ? `${entry.highlight}（AI 根据发布方简介整理）` : entry.summary ? `发布方简介摘录（自动抓取，未人工整理）：${entry.summary}` : '发布方没有提供简介；这里不推测内容。'
           },
           autoDiscovered: true

@@ -16,7 +16,7 @@ import fs from 'fs';
 import { collectNews } from './news.mjs';
 import { summarizeNews, highlightVideos, VIDEO_HIGHLIGHTS_PER_RUN } from './summarize.mjs';
 import { buildDigest } from './digest.mjs';
-import { personFromRow, searchPeople, dedupePeople, PEOPLE_TITLE_OK } from './people.mjs';
+import { personFromRow, searchPeople, dedupePeople, addPicks, PEOPLE_TITLE_OK } from './people.mjs';
 
 const AI = /\bAI\b|A\.I\.|artificial intelligence|machine learning|\bLLMs?\b|\bGPT|agent|chatbot|ChatGPT|Claude|Gemini|Qwen|Kimi|DeepSeek|robot|人工智能|大模型|模型|智能体|机器人|具身/i;
 const OLYMPIC = /olympi|paralympi|\bIOC\b|奥运|奥林匹克|冬奥/i;
@@ -295,7 +295,7 @@ const items = new Map((previous.items || [])
     if (item.via === 'people') {
       if (!interviewPeople) return true;
       const person = interviewPeople.find(entry => entry.name === item.person);
-      return person && PEOPLE_TITLE_OK(person, item.title);
+      return person && (item.picked || PEOPLE_TITLE_OK(person, item.title));
     }
     if (item.via === 'person') {
       const person = people.find(entry => entry.name === item.tags?.[1]);
@@ -327,6 +327,12 @@ if (interviewPeople) {
   } catch (error) {
     report.push(`people: FAILED ${error.message}`);
   }
+}
+try {
+  const picks = JSON.parse(fs.readFileSync(new URL('../docs/people-picks.json', import.meta.url), 'utf8'));
+  await addPicks(picks.filter(pick => !interviewPeople || interviewPeople.some(person => person.name === pick.person)), items, report, YOUTUBE_API_KEY);
+} catch (error) {
+  report.push(`people picks: FAILED ${error.message}`);
 }
 dedupePeople(items, interviewPeople, report);
 
@@ -400,7 +406,7 @@ try {
 // go first, so they are judged in the run that finds them.
 try {
   const pending = [
-    ...kept.filter(item => /^(youtube|bilibili):/.test(item.key)).map(item => ({ key: item.key, title: item.title, channel: item.channel, published: item.published, person: item.via === 'people' ? item.person : undefined, target: item })),
+    ...kept.filter(item => /^(youtube|bilibili):/.test(item.key)).map(item => ({ key: item.key, title: item.title, channel: item.channel, published: item.published, person: item.via === 'people' && !item.picked ? item.person : undefined, target: item })),
     ...Object.entries(videos).filter(([key]) => key.startsWith('youtube:')).map(([key, info]) => ({ key, title: info.title, channel: info.author, published: info.published, target: info }))
   ].filter(entry => !entry.target.highlight || !entry.target.kind || entry.person && entry.target.firsthand === undefined)
     .sort((a, b) => Number(Boolean(b.person)) - Number(Boolean(a.person)) || (b.published || '').localeCompare(a.published || ''))

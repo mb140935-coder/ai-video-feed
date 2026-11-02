@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T21:38:02.277Z",
+ "updated": "2026-11-02T01:31:07.397Z",
  "items": [
   {
    "key": "youtube:6ck6Sp_yQro",
@@ -794,13 +794,11 @@
   "channel:@siliconvalleygirl": {
    "url": "https://www.youtube.com/@SiliconValleyGirl",
    "id": "UCiq1FIgtEK7LRAOB1JXTPig",
-   "name": "Silicon Valley Girl",
    "count": 4
   },
   "channel:@xiaojunpodcast": {
    "url": "https://www.youtube.com/@xiaojunpodcast",
    "id": "UC3Sv1JuKpbOx3csUO8FAo5g",
-   "name": "张小珺 Podcast",
    "count": 2
   },
   "channel:@cheekypint": {
@@ -914,6 +912,28 @@
    "summary": "Microsoft AI chief states that AI is not conscious and should remain that way.",
    "meaning": "This reflects the ongoing industry debate on AI sentience and safety guardrails, touching on core themes of general AI development.",
    "id": "1whg2gs"
+  },
+  {
+   "id": "1ojeiuz",
+   "lastSeen": "2026-11-02",
+   "title": "Parents of woman who died of seizure after ChatGPT misguidance sue OpenAI",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQ1BpVmV2di1BOHI2NHZrV3RFTWY3LUw1NG5VVklTNVd5WTdPUmp5djEyNHNqNTkyVHpqMHhiR3FsT1BwbjdzZ3hxMXM4VmpCTDNYY2x2cGhrcmlac2lyZXZ1WG1hYi13Y3R3NkpwV0l1RmNEQU1PcEtvZ0dXa3NzM0xHd3Q0cVdZNXpINg?oc=5",
+   "source": "The Guardian",
+   "domain": "theguardian.com",
+   "published": "2026-11-01",
+   "outlets": [
+    "The Guardian"
+   ],
+   "themes": [],
+   "headlines": [
+    "Parents of woman who died of seizure after ChatGPT misguidance sue OpenAI"
+   ],
+   "entities": [
+    "OpenAI"
+   ],
+   "summary": "由于ChatGPT误导导致一名女子癫痫发作死亡，其父母对OpenAI提起诉讼。这是关于AI生成内容引发严重后果的法律诉讼案例。",
+   "meaning": "这凸显了法律AI与AI责任领域面临的巨大合规及法律风险，当事人因AI误导产生严重后果追究责任，值得法律和通用AI领域高度关注。",
+   "importance": 8
   },
   {
    "title": "OpenAI Raises Less Than Half of $30 Billion Target in Latest Round",
@@ -1225,6 +1245,28 @@
    "id": "1wgu09u"
   },
   {
+   "id": "1b5ecmm",
+   "lastSeen": "2026-11-02",
+   "title": "The big questions remaining after Anthropic’s blockbuster IPO prospectus",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9VYXRVZG52ZU8wZ183VXZkS192WXFoWm5uRm0wNE1PZFZBblEyTklTWnZodHhNVUIyZlNaZGI1Y2xRaGJqZ3FTSVplcjNaM2tZVzF6UlNpRTd4S0dlQzVrak5jOHFQN2tfdkpMalkzWXlvVjl5T0hpb9IBfkFVX3lxTFBsbUVyNW9GLVlJZ3dpSHl2MXVZa0pxdDRiN2FnakZCa3lwVDJFOXdiSW9iYTh3UnhOZ0xhYklQSnJXVmoxaGpwckIyNzkzWm9hTVhVOFBrZTFHbnV5LWVBcFdiRGFqMXUyRXZXNjM5Z1ZNVXdiR1E3eFlzLU04Zw?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "The big questions remaining after Anthropic’s blockbuster IPO prospectus"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic发布了其重磅IPO招股书，引发了外界对其未来发展和市场表现的诸多重大疑问。这标志着又一家头部AI企业迈向公开资本市场。",
+   "meaning": "作为通用AI领域的重大事件，其上市进程不仅关乎AI行业的资金走向与估值逻辑，也将对整个AI生态产生深远影响。",
+   "importance": 9
+  },
+  {
    "title": "Legaltech Rundown: Legora Introduces New Research Feature, Filevine Launches AI Voice Agents, and More",
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeW5CNmFVNHFuNG12MUpNUjdEQkt0MlZUc1FNTGpYNDZ1eS00cWw1UkpYSGtfVVBNQy1fY0t3UEphbm9OTXZ4aE92WE5BS2hDYTNPRzNUbTZWVmVaUk14N1JvSUt3cmJwLVdaMjFzbHRRY2tvU2ZhRncxUzRSNWpBVEFtTUgyY0dwb3lDRFlyS25RTnppZkw1MmxYeG9sSVlsMjRCaDdnSlRrUEZKelJ5Y2phemxzNWdoMm1laTVQTlpYN1dRUnF1dzFHLWFTaDlFNDVmeG5FbWtvOGpjWFQw?oc=5",
    "source": "Law.com",
@@ -1269,6 +1311,30 @@
    "lastSeen": "2026-11-01"
   },
   {
+   "title": "Canada Gets Into the AI Business With Billion-Dollar Cohere Stake",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWGpmZTlMc2FpU3FlSG9tUHYxcWtmcDFuVHRQMW9DT1NKWnRiQXVNNXdLak95bGN4NkpYQmJYX1gtOU1ES09MekhvQjU5cDEtM1Q3S0NZS1lFQ2xTc0xnUWpsN1JfZEFqc2d0TXB2ZFVmQmRwNkg1SmFybk1sc3ZvWnJDNS1FMUR4QWNWbW1yanNpRWZXbDI5QUh0dFRXeVZtUkRjV3NoSUJBbDVMQTNNYXNZeE0wVTN1VmRJdDZZcHE5UWQ2SG5PZWlweWhNdw?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Bloomberg.com",
+    "WSJ",
+    "Bloomberg"
+   ],
+   "themes": [],
+   "entities": [
+    "Cohere"
+   ],
+   "headlines": [
+    "Canada Gets Into the AI Business With Billion-Dollar Cohere Stake",
+    "Canada to Take Equity Stake in AI Firm Cohere"
+   ],
+   "summary": "加拿大政府将入股本土人工智能企业 Cohere，开展涉资数十亿美元的持股合作。",
+   "meaning": "国家主权资本直接参股本土前沿大模型企业，凸显出通用 AI 已经上升为关乎主权技术独立与国家竞争力的战略产业。",
+   "id": "1srs2yw",
+   "lastSeen": "2026-11-02"
+  },
+  {
    "title": "Agent identity startup Mintive lands Cowboy Ventures, Coatue, angels Jeff Dean, Andrej Karpathy",
    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTC0yTGJBSm55dEk2MWlqLUhxQUJEMW83OUpVNl9rZ0l3cnpvNXh6Z2VQR0FIcjVoNmVyM2tpTVBzT3ZKTDR5RllKc1lET2lSQlc2TjdRbFJ4cGJuQ0ZXVUxIY0kyVFpzVzBXd2lrM0Y3YTVESDVwU0V3ZG8yOUh0VF9lSE4tbmx5OWg0RkdSbDBNR1FISUxoRnMybk9UT3Q1ZFhHZl9hT0pJQ0hyV2ctX3NxaUhQbzdlamhzejAwbGlWRnN6REE?oc=5",
    "source": "TechCrunch",
@@ -1288,28 +1354,6 @@
    "summary": "智能体身份初创公司 Mintive 获得了 Cowboy Ventures、Coatue 以及天使投资人 Jeff Dean、Andrej Karpathy 的投资。",
    "meaning": "顶级 AI 学者与顶级风投联合押注智能体（Agent）身份安全与认证领域，标志着通用 AI 迈向多智能体协作阶段的关键基础设施正成为新的投资热点。",
    "id": "v3op4b"
-  },
-  {
-   "title": "Canada Gets Into the AI Business With Billion-Dollar Cohere Stake",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWGpmZTlMc2FpU3FlSG9tUHYxcWtmcDFuVHRQMW9DT1NKWnRiQXVNNXdLak95bGN4NkpYQmJYX1gtOU1ES09MekhvQjU5cDEtM1Q3S0NZS1lFQ2xTc0xnUWpsN1JfZEFqc2d0TXB2ZFVmQmRwNkg1SmFybk1sc3ZvWnJDNS1FMUR4QWNWbW1yanNpRWZXbDI5QUh0dFRXeVZtUkRjV3NoSUJBbDVMQTNNYXNZeE0wVTN1VmRJdDZZcHE5UWQ2SG5PZWlweWhNdw?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-10-29",
-   "outlets": [
-    "Bloomberg.com",
-    "WSJ"
-   ],
-   "themes": [],
-   "entities": [
-    "Cohere"
-   ],
-   "headlines": [
-    "Canada Gets Into the AI Business With Billion-Dollar Cohere Stake",
-    "Canada to Take Equity Stake in AI Firm Cohere"
-   ],
-   "summary": "加拿大政府将入股本土人工智能企业 Cohere，开展涉资数十亿美元的持股合作。",
-   "meaning": "国家主权资本直接参股本土前沿大模型企业，凸显出通用 AI 已经上升为关乎主权技术独立与国家竞争力的战略产业。",
-   "id": "1srs2yw"
   },
   {
    "title": "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative",
@@ -1824,6 +1868,29 @@
    "id": "f2w325"
   },
   {
+   "title": "xAI is buying out homeowners who promise not to sue over data center noise",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQemh4dTA1V2gtcHdTTERDWVluU1hDNXZoSlRDcTlLZnMxWjhXcENLOGNXbzZBRkx1bTdBT3Z2cGNlbF9mdDZPczNlc2FOaHVmMzhtVWNndHMzNG5ibmZtaHk4dGtBYWhUZ3JkTE02QlRUMXhBWVptZHhrc2ZVLXZoNWtHOHdpX0c5Wjdud1pkeFNFNDhsbUt1cjZkRUNLdGZJaWJVZU9wbnJNbFNC?oc=5",
+   "source": "The Verge",
+   "domain": "theverge.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "The Verge",
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "entities": [
+    "xAI"
+   ],
+   "headlines": [
+    "xAI is buying out homeowners who promise not to sue over data center noise",
+    "Elon Musk's SpaceX buying out 418 homes near flagship AI data center, but only if they drop participation in lawsuit — report claims the company is targeting an entire neighborhood, but will only buy from people who don't pursue noise pollution complaints"
+   ],
+   "summary": "xAI正向周边房主提出收购房产，条件是房主承诺不因数据中心噪音问题发起诉讼。",
+   "meaning": "涉及房产与法律AI关注的物理冲突场景，凸显AI算力基础设施扩建与周边居民房产权益、环境诉讼之间的激烈博弈。",
+   "id": "89thmd",
+   "lastSeen": "2026-11-02"
+  },
+  {
    "title": "Sam Altman shares his ‘chronic disappointment’ in MBA students—they’re stuck on what ‘was cool five years ago",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPY2FCbnNXYU9qSVhEX2ptSVBXcXNpVGhJRGNiNFVuUzl2UVRPd0tfYTN6X05nMHlWS0RRb0J3TXYwMjg2c3plYnpKUEVYa2YzQmhiaFByQkthS000OGVVcm13dmlaTE8wR045aXV2R2lZdVpwX2pKU3NNYVpaYWwyY3FhSjBpWXZkQUhGYWZhOHlSTGFZZGNBaG43enJndUR4RHQ4VkVmTzRvTXFCTEloUmVJUWg4OWpNbG4zYlhLVlg4YWVOdF9XR1gtVUU?oc=5",
    "source": "Fortune",
@@ -1923,26 +1990,6 @@
    "summary": "Anthropic推出全新工具，向企业展示其在AI上的支出究竟换取了什么成果。",
    "meaning": "随着企业对通用AI商业回报（ROI）的考量日益严格，帮助企业量化AI开销与产出正在成为大模型厂商留存客户的关键功能。",
    "id": "kasuau"
-  },
-  {
-   "title": "xAI is buying out homeowners who promise not to sue over data center noise",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQemh4dTA1V2gtcHdTTERDWVluU1hDNXZoSlRDcTlLZnMxWjhXcENLOGNXbzZBRkx1bTdBT3Z2cGNlbF9mdDZPczNlc2FOaHVmMzhtVWNndHMzNG5ibmZtaHk4dGtBYWhUZ3JkTE02QlRUMXhBWVptZHhrc2ZVLXZoNWtHOHdpX0c5Wjdud1pkeFNFNDhsbUt1cjZkRUNLdGZJaWJVZU9wbnJNbFNC?oc=5",
-   "source": "The Verge",
-   "domain": "theverge.com",
-   "published": "2026-10-28",
-   "outlets": [
-    "The Verge"
-   ],
-   "themes": [],
-   "entities": [
-    "xAI"
-   ],
-   "headlines": [
-    "xAI is buying out homeowners who promise not to sue over data center noise"
-   ],
-   "summary": "xAI正向周边房主提出收购房产，条件是房主承诺不因数据中心噪音问题发起诉讼。",
-   "meaning": "涉及房产与法律AI关注的物理冲突场景，凸显AI算力基础设施扩建与周边居民房产权益、环境诉讼之间的激烈博弈。",
-   "id": "89thmd"
   },
   {
    "title": "‘Elonville’: US residents say Musk’s xAI offered to buy homes if they don’t sue over datacenter noise",
@@ -2535,28 +2582,6 @@
    "id": "1ropudv"
   },
   {
-   "id": "1sphamb",
-   "lastSeen": "2026-11-01",
-   "title": "The Anthropic IPO by the numbers, from a possible valuation in the trillions to surging revenue",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQ2E2N0Fsd19BMGU2YUNZcEFPbkhqOThoMEdFWHVZaVdTTjJuMzlUZ2NKTUY2WG9CcDgwSHhJcDBlQkR0SDhCWk5rZmU3R3JETWg2ZXhDekZ5T2hGYmFuQ3l1eVNSN1A3SUFVY013NFl2dlZSOERBbjB2SzcwQ3E0eEpZLW5HRm90dTluTFdPNThQc3RwY3FMRnFLdDV1OE1qbDBjanliZ2taeWdoVEV3cm1zeGtqSkNiV3VhUzJuV091NUJ1QU12Mg?oc=5",
-   "source": "The Washington Post",
-   "domain": "washingtonpost.com",
-   "published": "2026-10-27",
-   "outlets": [
-    "The Washington Post"
-   ],
-   "themes": [],
-   "headlines": [
-    "The Anthropic IPO by the numbers, from a possible valuation in the trillions to surging revenue"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "报道披露了 Anthropic 的 IPO 相关数据，包括可能达到数万亿美元的估值以及激增的营收。这反映了头部通用 AI 企业强劲的商业化表现和市场预期。",
-   "meaning": "作为通用 AI 领域的关键玩家，其资本动态和商业化进展是不可错过的行业大事件。",
-   "importance": 7
-  },
-  {
    "title": "AI Enters the Courtroom as Dubai Rethinks How Lawyers Train and Judges Work",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZnNsOUpnZl9vdTBta2ktMkdBTmxOdTRnSTVUX1ItR3B1Qjl0ZlVkMU5KZC03bnBMRjFPbXJNWXNFLWxGY2YtQVVMbkNkZEVCWFYtSG5PTUx5MTM5eVdlRktxUjE5OVYyT002QjZKM0FPTmwxdVFZRFJzd3o2QkROY09VQm1lT0h1eXMwdmVOcWsyeW55OXkteldSY21nUmwyZk9RYlhtZWtDeGZTRkoxZlA0YUwyUzdQejFhYXhUZ3d1SDUybWpVblFB?oc=5",
    "source": "Law.com",
@@ -2901,6 +2926,53 @@
    "id": "1xp2dnj"
   },
   {
+   "title": "Claude says Anthropic's IPO is a buy. ChatGPT disagrees",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBOQkpIcTdUQTA1ZWJqVUh5Z3gxZ0NYVmMweHhFX3paZm1KWDJNblhKVEozTmIxZTdMX3YwLVNxUklhekF4ZENmY08xNk5zYmhDeTFxUWk1aVNWWWlnM0tMU0pscXhzeFpGZG9ZTERWZWs?oc=5",
+   "source": "Axios",
+   "domain": "axios.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Axios",
+    "CNN"
+   ],
+   "themes": [],
+   "headlines": [
+    "Claude says Anthropic's IPO is a buy. ChatGPT disagrees",
+    "I asked Claude to explain Anthropic’s IPO"
+   ],
+   "entities": [
+    "OpenAI",
+    "Anthropic"
+   ],
+   "summary": "针对Anthropic的IPO是否值得买入，Anthropic旗下的Claude给出了买入建议，而OpenAI的ChatGPT则表示不同意。",
+   "meaning": "戏剧性地反映了不同通用大模型在涉及自身及竞对商业利益时的判断差异，引发外界对大模型分析客观性的讨论。",
+   "id": "odwitk",
+   "lastSeen": "2026-11-02"
+  },
+  {
+   "id": "1sphamb",
+   "lastSeen": "2026-11-02",
+   "title": "The Anthropic IPO by the numbers, from a possible valuation in the trillions to surging revenue",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcDRJRVVNZ1VRRENaRXhEa082OGJYREE1ZmxlWHhLZ3FxYmpqQVQwZ3ZyNG4wNngwMjVFb1R1WTVZOFliSWU3N01ObFduZ2lCUWs0VFZiczkwVFBrR09jaml4N29ESndYUF9FeHZtRHpqeGE0QjZ5ZldVT3FuemFCVGJqSzBYQjA0c2tXblVHQ3NTaWNS?oc=5",
+   "source": "AP News",
+   "domain": "apnews.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "The Washington Post",
+    "AP News"
+   ],
+   "themes": [],
+   "headlines": [
+    "The Anthropic IPO by the numbers, from a possible valuation in the trillions to surging revenue"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "报道披露了 Anthropic 的 IPO 相关数据，包括可能达到数万亿美元的估值以及激增的营收。这反映了头部通用 AI 企业强劲的商业化表现和市场预期。",
+   "meaning": "作为通用 AI 领域的关键玩家，其资本动态和商业化进展是不可错过的行业大事件。",
+   "importance": 7
+  },
+  {
    "title": "Prediction market bets set the tone for Anthropic's much-awaited IPO",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZ3hmM3czNEdSNnpYeVB5eGZpZVB5QzJSa3ZNdDVsVVd4WHVZTkhyMjFpM3J1czNvMFprVU1NZmN3cDJmT1FTN0ZCRXFkYzI4TFVpbkZ0alFuY2l1QmhXWmJ3V1duQVhaSThlSjY3djh6empxXzM3VGIxQmVsMUFXSGdEVjRZMW1EeXZnU2Q3cHRITE5XWElQbG4zOERNUW44WXd0RkdYVDdQc0xERGdPdWRn?oc=5",
    "source": "Reuters",
@@ -2987,27 +3059,6 @@
    "summary": "Anthropic的IPO文件显示，其7位联合创始人每人身价已超过130亿至140亿美元，且上市后身价可能翻倍。",
    "meaning": "展现了通用AI顶尖初创企业惊人的财富创造力，核心模型研发团队的资本估值正刷新科技产业历史纪录。",
    "id": "1r4p2da"
-  },
-  {
-   "title": "Claude says Anthropic's IPO is a buy. ChatGPT disagrees",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBOQkpIcTdUQTA1ZWJqVUh5Z3gxZ0NYVmMweHhFX3paZm1KWDJNblhKVEozTmIxZTdMX3YwLVNxUklhekF4ZENmY08xNk5zYmhDeTFxUWk1aVNWWWlnM0tMU0pscXhzeFpGZG9ZTERWZWs?oc=5",
-   "source": "Axios",
-   "domain": "axios.com",
-   "published": "2026-10-26",
-   "outlets": [
-    "Axios"
-   ],
-   "themes": [],
-   "headlines": [
-    "Claude says Anthropic's IPO is a buy. ChatGPT disagrees"
-   ],
-   "entities": [
-    "OpenAI",
-    "Anthropic"
-   ],
-   "summary": "针对Anthropic的IPO是否值得买入，Anthropic旗下的Claude给出了买入建议，而OpenAI的ChatGPT则表示不同意。",
-   "meaning": "戏剧性地反映了不同通用大模型在涉及自身及竞对商业利益时的判断差异，引发外界对大模型分析客观性的讨论。",
-   "id": "odwitk"
   },
   {
    "title": "Elon Musk’s AI Odyssey review – the dullest, most pointless riposte possible to Christopher Nolan’s brilliant epic",
@@ -3165,6 +3216,29 @@
    "importance": 5
   },
   {
+   "title": "张一鸣登顶 梁文锋领衔AI硬科技强势登上财富前台",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5sNzIwcnNhY21CZ0tsaTh5WHgxa3N2LXNkU0MyRkExaUxfX0luMWp6dnEzWmctVWk0RC10SjlxeVNsMUxtVzNidXJUajIybzJaUm5N?oc=5",
+   "source": "36Kr",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "36Kr",
+    "36氪"
+   ],
+   "themes": [],
+   "entities": [
+    "Liang Wenfeng"
+   ],
+   "headlines": [
+    "张一鸣登顶 梁文锋领衔AI硬科技强势登上财富前台",
+    "张一鸣登顶，梁文锋领衔AI硬科技登上财富前台"
+   ],
+   "summary": "最新财富变动中张一鸣登顶，梁文锋领衔的 AI 硬科技力量强势登上财富前台。",
+   "meaning": "这是中国 AI 领域的重要动态，反映出中国以 AI 硬科技为代表的科技创业者正迅速转化为顶尖财富力量与产业中坚。",
+   "id": "8vz2eq",
+   "lastSeen": "2026-11-02"
+  },
+  {
    "title": "Anthropic's 7 cofounders are about to make generational fortunes. One owns more shares than the CEO.",
    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOU2JGdlYtN1RmcWlheEQxSU5DOWFBNlpwQk9wMzNzTTA0Zkk5T3VrLTNqaG1jUUZJZUJTTjNRSThnbl9uak0tZU8yN1VFd3paNlNydkJ0VzlZeFpYTG1FM2lpbjlKVHcxSjBWRXB3a1I5MnFBXzMtZkVfekpEVkRrZA?oc=5",
    "source": "Business Insider",
@@ -3263,27 +3337,6 @@
    "summary": "Elon Musk 警告称，随着 AI 热潮遭遇债务危机，超过 200 家 AI 云计算公司面临“孔雀鱼级别（guppy-level）的死亡”。",
    "meaning": "这提示了通用 AI 基础设施层潜藏的资本与债务风险，高估值、高资本支出的中小 AI 云厂商可能迎来一轮残酷的洗牌。",
    "id": "3a8ukw"
-  },
-  {
-   "title": "张一鸣登顶 梁文锋领衔AI硬科技强势登上财富前台",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5sNzIwcnNhY21CZ0tsaTh5WHgxa3N2LXNkU0MyRkExaUxfX0luMWp6dnEzWmctVWk0RC10SjlxeVNsMUxtVzNidXJUajIybzJaUm5N?oc=5",
-   "source": "36Kr",
-   "domain": "eu.36kr.com",
-   "published": "2026-10-26",
-   "outlets": [
-    "36Kr"
-   ],
-   "themes": [],
-   "entities": [
-    "Liang Wenfeng"
-   ],
-   "headlines": [
-    "张一鸣登顶 梁文锋领衔AI硬科技强势登上财富前台",
-    "张一鸣登顶，梁文锋领衔AI硬科技登上财富前台"
-   ],
-   "summary": "最新财富变动中张一鸣登顶，梁文锋领衔的 AI 硬科技力量强势登上财富前台。",
-   "meaning": "这是中国 AI 领域的重要动态，反映出中国以 AI 硬科技为代表的科技创业者正迅速转化为顶尖财富力量与产业中坚。",
-   "id": "8vz2eq"
   },
   {
    "title": "Anthropic's soaring sales, steep losses put AI frenzy to IPO test",
@@ -3684,106 +3737,6 @@
    "summary": "BNY的法律团队通过应用AI，将合同审查时间缩短了75%。",
    "meaning": "这直接体现了法律AI在提升垂直行业效率方面的巨大价值，展示了AI落地应用的可观成效。",
    "id": "32ndaq"
-  },
-  {
-   "title": "AMD CEO Lisa Su proposed bringing back the Ryzen 7 5800X3D, set plan in motion before DDR5 shortages — AM4 CPU considered a ‘final gift’ to loyal fans of the decade-old socket",
-   "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxPQ1ptSkdMQldkOFVPak0wbWJHY0l4TEd6cFBKZEpDYVViWWRidVFpN1hQR25LWGUtTFZibHlnYTRKUG0wUlZ5RkdESlIwbWxnNUpMU1lab0o1UGcwYWw3VDlGVHR3MDJtYVNRa0R4OUwzeTRKbjFnakkwVEdpT0dKS1ZFMUFXZ0RKOHFwTXBUQU9kdnZjX0VmQUtzRFRMbVo5ZnQtWl9XR1c0bnY5RVlFZlZHSWszLWpZbWIzMnMzNkNPRjR2R1M4aXI5X1Zab3ZfeFJUZW8tRGpMWHh2aEpXckZqbmdfdE1PR1dXM3FUVFhoZWRfeWpPcGllVkRDUUF2T0tLNDg0aEEza3NseXU0S3VGZjhRUUVFZTlYamdhdGI4bU5SRnlmN1E3Y21idkxJbG5GRnFVVDRudkZ2UUhv?oc=5",
-   "source": "Tom's Hardware",
-   "domain": "tomshardware.com",
-   "published": "2026-10-25",
-   "outlets": [
-    "Tom's Hardware"
-   ],
-   "themes": [],
-   "entities": [
-    "Lisa Su"
-   ],
-   "headlines": [
-    "AMD CEO Lisa Su proposed bringing back the Ryzen 7 5800X3D, set plan in motion before DDR5 shortages — AM4 CPU considered a ‘final gift’ to loyal fans of the decade-old socket"
-   ],
-   "summary": "AMD 首席执行官 Lisa Su 提议重新推出 Ryzen 7 5800X3D，并在 DDR5 短缺前启动了该计划；这款 AM4 CPU 被视作献给十余年老插槽忠实用户的“最后礼物”。",
-   "meaning": "这反映出芯片硬件厂商在代际过渡期对成熟产品线的延续策略，为注重性价比的计算平台用户提供了硬件过渡选择。",
-   "id": "1g6f85j"
-  },
-  {
-   "title": "半年融资1500亿元， “技术理想主义者”梁文锋，被资本追着跑",
-   "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0zUW0teEtJMDhrd0UxTVp0Zm9YdV9pQ1hoS094NkFNTzBuOTBXUmVyNl9VOXVTVFhIN292SW9CVVJDZlFZR0pEeDFsM0M3Zw?oc=5",
-   "source": "36Kr",
-   "domain": "m.36kr.com",
-   "published": "2026-10-25",
-   "outlets": [
-    "36Kr"
-   ],
-   "themes": [],
-   "entities": [
-    "Liang Wenfeng"
-   ],
-   "headlines": [
-    "半年融资1500亿元， “技术理想主义者”梁文锋，被资本追着跑"
-   ],
-   "summary": "“技术理想主义者”梁文锋在半年内获得 1500 亿元融资，持续受到资本追逐。",
-   "meaning": "这体现了资本对中国本土 AI 顶尖创业者与技术路线的极高押注，也是中国 AI 创投领域极具风向标意义的事件。",
-   "id": "4gaf64"
-  },
-  {
-   "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRTJaSVEwZnRJVGsxeTg2ZmFoNVdobHp6eVdoTFpBYjRjVDFkaGtzT29DdXZKXzJYNk9tWDJvQUROdDVTdUZBV0FBRG5LYlFWVjBvQzlSSlAxRXI1R1FGZ0JUYm16a3BjcTBfaDV5SUFzUnI5MkhXQUtuY3JKY19ack10bWtFQy1XT0Fia2RqYktTclR2a0hWbFNDWWRieEh1LXc?oc=5",
-   "source": "TechCrunch",
-   "domain": "techcrunch.com",
-   "published": "2026-10-25",
-   "outlets": [
-    "TechCrunch"
-   ],
-   "themes": [],
-   "entities": [
-    "xAI"
-   ],
-   "headlines": [
-    "Grok releases the first seven minutes of its AI-generated ‘Odyssey’"
-   ],
-   "summary": "Grok 发布了由其 AI 生成的作品《Odyssey》的前七分钟内容。",
-   "meaning": "这展示了 Grok 在长内容生成式视频上的最新突破，反映出通用大模型在多模态与 AI 影视化创作领域的快速推进。",
-   "id": "w8n9dm"
-  },
-  {
-   "title": "AI-assisted judging could make its Olympic debut at LA28",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOY2hkRVAzR3Jxc19VWG8xT0VVRTdBYmdkdXAxMHFNQUFKMXFOXzhoOXh4anZTX2Z2UmZuNks2SWw1VjZDMmQ3b0VOVWJwU0tXUmRIT1llTVQ3VVIwX1dnM1dtbUVoNmFEYnJqR3lzNW1KSDlpYjVvUkJPcUJfMkhYTjFNWDNQbHJwSWlfRjdMTi0wTGVKWFhxVjQwNDc?oc=5",
-   "source": "Inside The Games",
-   "domain": "insidethegames.biz",
-   "published": "2026-10-25",
-   "outlets": [
-    "Inside The Games"
-   ],
-   "themes": [
-    "奥运 AI"
-   ],
-   "entities": [],
-   "headlines": [
-    "AI-assisted judging could make its Olympic debut at LA28"
-   ],
-   "summary": "AI 辅助裁判技术有望在 2028 年洛杉矶奥运会（LA28）上迎来奥运首秀。",
-   "meaning": "作为读者最高优先级的奥运 AI 迎来关键动向，若 AI 裁判正式进入奥运会，将成为体育 AI 在顶级国际赛事中规范化应用的重大里程碑。",
-   "id": "19j1qes"
-  },
-  {
-   "title": "Prompting ain’t easy! 5 AI prompts real estate agents need right now",
-   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1hcEtDdXdJLVhIUTRzWTdnbmp4TWRXQ3JLSkFxOFM3QWdRUUtOMU9BMld6bC0zZTE3VlVQSUoyTTNGeExYYUNKMlhhRXREVExpU1owMTZjeHdaaGRqbjZtd0VFRjd1c3k2b0VBY2tuWDFtMnNn?oc=5",
-   "source": "Inman Real Estate News",
-   "domain": "inman.com",
-   "published": "2026-10-25",
-   "outlets": [
-    "Inman Real Estate News"
-   ],
-   "themes": [
-    "房产 AI"
-   ],
-   "entities": [],
-   "headlines": [
-    "Prompting ain’t easy! 5 AI prompts real estate agents need right now"
-   ],
-   "summary": "有报道指出编写提示词并非易事，并整理了房产经纪人当下急需的 5 个 AI 提示词。",
-   "meaning": "这反映出房产 AI 的应用重点正在下沉至实操层面，精准的提示词正成为一线房产经纪人提升效率的实用工具。",
-   "id": "1ncfks4"
   }
  ],
  "digests": [

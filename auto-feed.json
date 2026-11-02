@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T14:07:24.557Z",
+ "updated": "2026-11-02T18:45:09.711Z",
  "items": [
   {
    "key": "youtube:-GKLZWEq-0c",
@@ -894,6 +894,674 @@
    "highlight": "秋芝2046 通过工作室 room tour 介绍了 Agent 在现实生活中的应用，展示了由 Agent 接管工作室的开灯和关灯等日常管理工作。",
    "kind": "product",
    "sports": false
+  },
+  {
+   "key": "bilibili:BV1HNJk6BEJm",
+   "url": "https://www.bilibili.com/video/BV1HNJk6BEJm",
+   "title": "对话：AI+数学的变与不变丨浙大数学高等研究院院长励建书×之江实验室主任王坚",
+   "channel": "AI早餐汇",
+   "published": "2026-10-14",
+   "summary": "在第六届智能计算创新论坛上，由浙江大学数学高等研究院院长、中国科学院院士励建书和之江实验室主任、中国工程院院士王坚展开了主题为“AI+数学：变与不变”的对话。",
+   "tab": "people",
+   "person": "王坚",
+   "tags": [
+    "人物访谈",
+    "王坚"
+   ],
+   "minutes": 42,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "在第六届智能计算创新论坛上，浙江大学数学高等研究院院长、中国科学院院士励建书与之江实验室主任、中国工程院院士王坚展开了“AI+数学：变与不变”的主题对话。两位院士围绕AI与数学的关系进行了深入探讨。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "youtube:HhWAy26MyzM",
+   "url": "https://www.youtube.com/watch?v=HhWAy26MyzM",
+   "title": "李翔对谈徐新、高继扬：创新、热潮、泡沫和周期",
+   "channel": "对谈思考",
+   "channelId": "UCo4LCSJYQpuuiG12yWknLFA",
+   "published": "2026-10-08",
+   "summary": "在这期节目中，李翔和估值200亿的具身智能新贵高",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 153,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "李翔对话星海图创始人、具身智能新贵高继扬与投资人徐新，共同探讨了科技创新、估值泡沫、泡沫破灭的可能以及当下火热的市场环境。嘉宾们从各自视角讨论了AI与具身智能赛道、新一代创业者画像及当前的周期变化。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV11DaL6KEsG",
+   "url": "https://www.bilibili.com/video/BV11DaL6KEsG",
+   "title": "中国工程院院士王坚：现在是中国AI最好的时代",
+   "channel": "甲15号研究所",
+   "published": "2026-09-28",
+   "summary": "中国AI模型加速走向世界，开源成为一个重要关键词。为什么AI时代的开源，不能只谈代码？中美AI竞争，真正比的到底是什么？AI泡沫会破裂吗？近日，中国工程院院士、之江实验室主任王坚与@起底工作室 展开深度对话。",
+   "tab": "people",
+   "person": "王坚",
+   "tags": [
+    "人物访谈",
+    "王坚"
+   ],
+   "minutes": 26,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "中国工程院院士、之江实验室主任王坚在与起底工作室的深度对话中指出现在是中国AI最好的时代。双方探讨了中国AI模型走向世界、开源的意义、中美AI竞争的比拼核心以及AI泡沫是否会破裂等话题。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1efYs61EwA",
+   "url": "https://www.bilibili.com/video/BV1efYs61EwA",
+   "title": "《名人故事会》鲁健对话何超琼：我有野心让澳门成为全球文旅标杆！",
+   "channel": "名人聊天室",
+   "published": "2026-09-09",
+   "summary": "名人故事会陪您睡眠！",
+   "tab": "people",
+   "person": "何超琼",
+   "tags": [
+    "人物访谈",
+    "何超琼"
+   ],
+   "minutes": 51,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "鲁健在节目中对话何超琼，探讨了她将澳门打造成全球文旅标杆的野心与相关规划。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1bSbG6bEks",
+   "url": "https://www.bilibili.com/video/BV1bSbG6bEks",
+   "title": "徐新：看懂公司的三种方法论",
+   "channel": "芒格书院",
+   "published": "2026-09-08",
+   "summary": "2025年12月13日，徐新在芒格书院主办的第四届价值投资征文大赛上作为评委发言。在分享中，她谈到了如何沿着巴菲特、芒格的道路，如何像段永平一样努力“做对的事情”，如何以价值投资精神领悟出三个方法论，来指导投资、看懂公司……本期节目，我们将首次完整回顾这次主题分享。#价值投资征文大赛",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 15,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "徐新在第四届价值投资征文大赛上作为评委发言，分享了如何沿着巴菲特、芒格和段永平的道路做对的事情，并领悟出看懂公司的三种方法论来指导投资。",
+   "kind": "method",
+   "sports": false
+  },
+  {
+   "key": "youtube:EgD8fT7tCdU",
+   "url": "https://www.youtube.com/watch?v=EgD8fT7tCdU",
+   "title": "CCTV 鲁健对话何超琼：我有野心，让澳门成全球文旅标杆（2024.12.27）",
+   "channel": "时代回音",
+   "channelId": "UCVP5IC7Yt8QtJsPIm0E6Nrw",
+   "published": "2026-09-06",
+   "summary": "何超琼——澳门信德集团董事长、全国政协常委、全国工商联副主席——既是澳门回归25年的\"参与者和见证者\"，也是推动澳门文旅转型的核心人物。她在节目中系统谈及：",
+   "tab": "people",
+   "person": "何超琼",
+   "tags": [
+    "人物访谈",
+    "何超琼"
+   ],
+   "minutes": 25,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "CCTV鲁健对话澳门信德集团董事长、全国政协常委何超琼。她系统谈及了保利美高梅博物馆及珍贵文物展出、将澳门打造为全球文旅标杆的野心、与张艺谋筹划融合AI与科技的驻场秀，以及大湾区身份等内容。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1uib76CE9Z",
+   "url": "https://www.bilibili.com/video/BV1uib76CE9Z",
+   "title": "何超琼采访全集",
+   "channel": "脑神经科学",
+   "published": "2026-09-06",
+   "summary": "-",
+   "tab": "people",
+   "person": "何超琼",
+   "tags": [
+    "人物访谈",
+    "何超琼"
+   ],
+   "minutes": 238,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "收录了何超琼的相关采访合集，探讨其在商业与文旅转型等方面的经历与观点。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "youtube:lxX3tGEHohM",
+   "url": "https://www.youtube.com/watch?v=lxX3tGEHohM",
+   "title": "章泽天对话何超琼：我的人生没得选啊，我17岁就跟着父亲应酬",
+   "channel": "Daily podcast",
+   "channelId": "UCjO5DMAqijYcev792OHNR_Q",
+   "published": "2026-09-03",
+   "summary": "",
+   "tab": "people",
+   "person": "何超琼",
+   "tags": [
+    "人物访谈",
+    "何超琼"
+   ],
+   "minutes": 108,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "章泽天对话何超琼，何超琼在访谈中谈及自己17岁便跟着父亲应酬的人生经历。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "youtube:alDZiCyjg3U",
+   "url": "https://www.youtube.com/watch?v=alDZiCyjg3U",
+   "title": "章泽天对话何超琼：人生没有写好的剧本",
+   "channel": "时代回音",
+   "channelId": "UCVP5IC7Yt8QtJsPIm0E6Nrw",
+   "published": "2026-09-02",
+   "summary": "“赌王之女”“豪门接班人”，外界最熟悉的标签，并不能真正解释她。",
+   "tab": "people",
+   "person": "何超琼",
+   "tags": [
+    "人物访谈",
+    "何超琼"
+   ],
+   "minutes": 108,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "章泽天对话何超琼，探讨标签之外的人生剧本。何超琼聊起了家庭、公关创业、家族企业经历、香港文化的黄金时代、竞争与人生压力等话题。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "youtube:epMZsHeO3m4",
+   "url": "https://www.youtube.com/watch?v=epMZsHeO3m4",
+   "title": "章泽天对话何超琼：标签之外，如何走出自己的人生剧本 | 章泽天个人播客 EP05",
+   "channel": "小天章 ON AIR",
+   "channelId": "UCc2LEidaJSTik3V66oWfIEw",
+   "published": "2026-09-02",
+   "summary": "",
+   "tab": "people",
+   "person": "何超琼",
+   "tags": [
+    "人物访谈",
+    "何超琼"
+   ],
+   "minutes": 108,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "章泽天个人播客节目中对话何超琼，探讨标签之外如何走出自己的人生剧本。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1LCtJ6XE99",
+   "url": "https://www.bilibili.com/video/BV1LCtJ6XE99",
+   "title": "章泽天对话何超琼：标签之外，如何走出自己的人生剧本",
+   "channel": "小天章",
+   "published": "2026-09-02",
+   "summary": "“赌王之女”“豪门接班人”，外界最熟悉的标签，并不能真正解释她。",
+   "tab": "people",
+   "person": "何超琼",
+   "tags": [
+    "人物访谈",
+    "何超琼"
+   ],
+   "minutes": 108,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "章泽天对话何超琼，探讨标签之外如何走出自己的人生剧本。外界熟悉的赌王之女与豪门接班人等标签，并不能真正解释她。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1DmbY6nETL",
+   "url": "https://www.bilibili.com/video/BV1DmbY6nETL",
+   "title": "2018徐新专访:强调专注和纪律性，表示不会投资过多的项目，而是选择有潜力的少数项目进行长期持有。通过“三大法宝”（找人、做KP与文化、品牌)来帮助企业成长！",
+   "channel": "复利的奇迹",
+   "published": "2026-08-17",
+   "summary": "2018徐新专访:强调专注和纪律性，表示不会投资过多的项目，而是选择有潜力的少数项目进行长期持有。通过“三大法宝”（找人、做KP与文化、品牌)来帮助企业成长！",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 45,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "徐新在专访中强调专注和纪律性，选择有潜力的少数项目长期持有。通过找人、做KP与文化、品牌三大法宝来帮助企业成长。",
+   "kind": "method",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1DwgL6pEft",
+   "url": "https://www.bilibili.com/video/BV1DwgL6pEft",
+   "title": "何超琼《面对面》采访",
+   "channel": "小城之民",
+   "published": "2026-08-12",
+   "summary": "YouTube",
+   "tab": "people",
+   "person": "何超琼",
+   "tags": [
+    "人物访谈",
+    "何超琼"
+   ],
+   "minutes": 21,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "何超琼接受《面对面》采访。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1VFuR6NE97",
+   "url": "https://www.bilibili.com/video/BV1VFuR6NE97",
+   "title": "2006.08徐新财富人生访谈:投资本质是投人，创始人是第一判断要素，看重企业家的野心、韧性、学习能力。认同好企业不要轻易卖出，要陪伴企业成长。",
+   "channel": "复利的奇迹",
+   "published": "2026-08-10",
+   "summary": "2006.08徐新财富人生访谈:投资本质是投人，创始人是第一判断要素，看重企业家的野心、韧性、学习能力。认同好企业不要轻易卖出，要陪伴企业成长。",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 49,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "徐新在财富人生访谈中指出，投资本质是投人，创始人是第一判断要素，看重野心、韧性和学习能力。好企业不要轻易卖出，要陪伴成长。",
+   "kind": "method",
+   "sports": false
+  },
+  {
+   "key": "youtube:7GHPntssy9Y",
+   "url": "https://www.youtube.com/watch?v=7GHPntssy9Y",
+   "title": "徐新深度访谈：中国顶级女投资人的投资哲学",
+   "channel": "中国生意人",
+   "channelId": "UCTJMO7r0K190xcxlmC0YKXA",
+   "published": "2026-08-07",
+   "summary": "今日资本创始人徐新深度访谈：投资京东、美团背后的判断逻辑。",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 49,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "今日资本创始人徐新接受深度访谈，分享投资京东和美团背后的判断逻辑。",
+   "kind": "method",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1eUu46oEmE",
+   "url": "https://www.bilibili.com/video/BV1eUu46oEmE",
+   "title": "徐新很经典的一场演讲:探讨了移动互联网时代用户变化、商业变革、创业与投资机会、品牌与渠道选择、团队与员工管理、融资与竞争策略。",
+   "channel": "复利的奇迹",
+   "published": "2026-08-07",
+   "summary": "徐新很经典的一场演讲:探讨了移动互联网时代用户变化、商业变革、创业与投资机会、品牌与渠道选择、团队与员工管理、融资与竞争策略。",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 52,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "徐新在一场演讲中探讨了移动互联网时代的用户变化、商业变革、创业投资机会、品牌渠道选择、团队管理以及融资竞争策略。",
+   "kind": "method",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1pJ3c6BEUM",
+   "url": "https://www.bilibili.com/video/BV1pJ3c6BEUM",
+   "title": "《详谈》正片上线｜李翔对谈徐新×高继扬",
+   "channel": "星海图具身智能",
+   "published": "2026-07-27",
+   "summary": "星海图CEO高继扬做客《详谈》，与李翔、徐新深度对话。",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 153,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "星海图CEO高继扬做客《详谈》，与李翔、徐新展开深度对话。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1NGgS6yER7",
+   "url": "https://www.bilibili.com/video/BV1NGgS6yER7",
+   "title": "2026世界人工智能大会-科学智能论坛-王坚院士演讲",
+   "channel": "南英-",
+   "published": "2026-07-23",
+   "summary": "",
+   "tab": "people",
+   "person": "王坚",
+   "tags": [
+    "人物访谈",
+    "王坚"
+   ],
+   "minutes": 22,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "2026世界人工智能大会科学智能论坛上，王坚院士发表演讲。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "youtube:ULmr5ovKV8w",
+   "url": "https://www.youtube.com/watch?v=ULmr5ovKV8w",
+   "title": "世界人工智能大会| 东方卫视独家专访王坚院士",
+   "channel": "东方卫视环球交叉点",
+   "channelId": "UCG4kGP4ETdKzseQshMCCBKg",
+   "published": "2026-07-20",
+   "summary": "2026世界人工智能大会期间，中国工程院院士、之江实验室主任、阿里云创始人王坚接受东方卫视记者独家专访，全景式探讨中美AI发展路径，剖析全球AI治理的长远布局。",
+   "tab": "people",
+   "person": "王坚",
+   "tags": [
+    "人物访谈",
+    "王坚"
+   ],
+   "minutes": 33,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "中国工程院院士、之江实验室主任、阿里云创始人王坚在2026世界人工智能大会期间接受东方卫视独家专访。全景式探讨中美AI发展路径，剖析全球AI治理长远布局。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1jwJw6EEAf",
+   "url": "https://www.bilibili.com/video/BV1jwJw6EEAf",
+   "title": "徐新很经典的一场演讲",
+   "channel": "扣子的书房",
+   "published": "2026-06-14",
+   "summary": "这是投资女王徐新 2014年12月2日在由清科集团主办的 “中国高成长企业CEO峰会” 上发表的演讲。很经典，有很强的洞察力，尤其对消费者和创业者的分析。",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 52,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "投资女王徐新在2014年中国高成长企业CEO峰会上发表经典演讲，展现出对消费者和创业者的深刻洞察。",
+   "kind": "method",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1zc5t6jE1S",
+   "url": "https://www.bilibili.com/video/BV1zc5t6jE1S",
+   "title": "王坚最新发言 | AI的未来与算力",
+   "channel": "中财经国数院",
+   "published": "2026-05-11",
+   "summary": "",
+   "tab": "people",
+   "person": "王坚",
+   "tags": [
+    "人物访谈",
+    "王坚"
+   ],
+   "minutes": 20,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "中国工程院院士王坚发表关于AI的未来与算力的最新发言。探讨了计算与人工智能、数据以及范式变革。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1kB5E6FEHs",
+   "url": "https://www.bilibili.com/video/BV1kB5E6FEHs",
+   "title": "26.05.10之江实验室主任、阿里云创始人王坚：计算与人工智能，数据以及范式变革",
+   "channel": "体验官同学",
+   "published": "2026-05-10",
+   "summary": "",
+   "tab": "people",
+   "person": "王坚",
+   "tags": [
+    "人物访谈",
+    "王坚"
+   ],
+   "minutes": 24,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "之江实验室主任、阿里云创始人王坚探讨计算与人工智能、数据以及范式变革。分享了计算与AI的相关观点。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1re9uBbEtb",
+   "url": "https://www.bilibili.com/video/BV1re9uBbEtb",
+   "title": "王坚院士最新演讲：谈deepseek、大模型幻觉、计算星座",
+   "channel": "课说说",
+   "published": "2026-04-03",
+   "summary": "",
+   "tab": "people",
+   "person": "王坚",
+   "tags": [
+    "人物访谈",
+    "王坚"
+   ],
+   "minutes": 125,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "中国工程院院士王坚在最新演讲中谈到了DeepSeek、大模型幻觉以及计算星座等话题。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1MwwEzQEk7",
+   "url": "https://www.bilibili.com/video/BV1MwwEzQEk7",
+   "title": "对谈王坚：一场关于未来、技术与人心的对话",
+   "channel": "央视网",
+   "published": "2026-03-16",
+   "summary": "当有人问“中国为什么没有马斯克”，我们在期待什么样的答案？技术模仿是创新的必经之路，还是需要被打破的思维惯性？人工智能究竟是人类的终极难题，还是本该像自然界一样存在的“基础设施”？《龙咚锵-两会同频》对话全国政协委员、中国工程院院士王坚，从年轻人的“远虑”聊到AI的“终极之问”，从模仿与创新的边界谈到把算力送上太空的狂想。",
+   "tab": "people",
+   "person": "王坚",
+   "tags": [
+    "人物访谈",
+    "王坚"
+   ],
+   "minutes": 90,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "央视网《龙咚锵-两会同频》对话全国政协委员、中国工程院院士王坚。双方从年轻人的远虑聊到AI的终极之问，探讨了模仿与创新的边界以及把算力送上太空的狂想。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1J1ZQBdEAz",
+   "url": "https://www.bilibili.com/video/BV1J1ZQBdEAz",
+   "title": "今日资本徐新：我的投资方法论",
+   "channel": "我才是萧帮主",
+   "published": "2026-02-18",
+   "summary": "",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 20,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "今日资本徐新分享了自己的投资方法论。",
+   "kind": "method",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1RhfoBeESS",
+   "url": "https://www.bilibili.com/video/BV1RhfoBeESS",
+   "title": "徐新：投资最成功的是京东和美团.mp3",
+   "channel": "我才是萧帮主",
+   "published": "2026-02-04",
+   "summary": "以下是5月15日徐新在“南大校友会”视频号直播对话中有关投资、学习和思考的精华内容整理分享",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 47,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "今日资本徐新在南大校友会直播对话中分享了有关投资、学习和思考的精华内容，提及最成功的投资是京东和美团。",
+   "kind": "method",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1XSF5zLEwj",
+   "url": "https://www.bilibili.com/video/BV1XSF5zLEwj",
+   "title": "徐新：错过字节跳动和拼多多后， 我总结了看公司的三段论",
+   "channel": "我才是萧帮主",
+   "published": "2026-02-03",
+   "summary": "在几天前南京大学120年校庆活动契机中，徐新又一次难得出来做了70多分钟的深度分享。",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 32,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "今日资本徐新在南京大学120年校庆活动中进行深度分享，总结了错过字节跳动和拼多多后的看公司三段论。",
+   "kind": "method",
+   "sports": false
+  },
+  {
+   "key": "youtube:wzFysdqhby8",
+   "url": "https://www.youtube.com/watch?v=wzFysdqhby8",
+   "title": "最新黄仁勋对话阿里云王坚院士，开源AI是中国 超车 关键！中英精译",
+   "channel": "新闻指南",
+   "channelId": "UCS5b9hqxDIFI938UCMN0ezQ",
+   "published": "2025-09-07",
+   "summary": "",
+   "tab": "people",
+   "person": "王坚",
+   "tags": [
+    "人物访谈",
+    "王坚"
+   ],
+   "minutes": 28,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "黄仁勋与阿里云王坚院士展开对话。讨论了开源AI是中国超车的关键等议题。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1NYbwz6Evv",
+   "url": "https://www.bilibili.com/video/BV1NYbwz6Evv",
+   "title": "投资女神徐新财富人生专访。",
+   "channel": "初心笔记1982",
+   "published": "2025-08-10",
+   "summary": "-",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 49,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "投资人徐新接受财富人生专访，分享投资相关经历与思考。",
+   "kind": "method",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1HsthzyE4R",
+   "url": "https://www.bilibili.com/video/BV1HsthzyE4R",
+   "title": "今日资本徐新专访：投资的底层逻辑",
+   "channel": "初心笔记1982",
+   "published": "2025-08-09",
+   "summary": "-",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 45,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "今日资本徐新接受专访，分享投资的底层逻辑。",
+   "kind": "method",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV11KA2eKE4i",
+   "url": "https://www.bilibili.com/video/BV11KA2eKE4i",
+   "title": "AI的前世今生 ｜ 阿里王坚院士《财经》演讲全",
+   "channel": "西格玛大队长",
+   "published": "2025-02-23",
+   "summary": "-",
+   "tab": "people",
+   "person": "王坚",
+   "tags": [
+    "人物访谈",
+    "王坚"
+   ],
+   "minutes": 42,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "阿里王坚院士在《财经》发表关于AI前世今生的演讲。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV17NCtYxERR",
+   "url": "https://www.bilibili.com/video/BV17NCtYxERR",
+   "title": "鲁健访谈：对话何超琼",
+   "channel": "1um_",
+   "published": "2024-12-28",
+   "summary": "cr央视频",
+   "tab": "people",
+   "person": "何超琼",
+   "tags": [
+    "人物访谈",
+    "何超琼"
+   ],
+   "minutes": 25,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "鲁健访谈对话何超琼。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "bilibili:BV1HizHYKEXw",
+   "url": "https://www.bilibili.com/video/BV1HizHYKEXw",
+   "title": "投资大佬徐新：每天冥想二十分钟是我成功的关键",
+   "channel": "账号已注销",
+   "published": "2024-11-30",
+   "summary": "-",
+   "tab": "people",
+   "person": "徐新",
+   "tags": [
+    "人物访谈",
+    "徐新"
+   ],
+   "minutes": 27,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "投资大佬徐新分享每天冥想二十分钟是其成功的关键。",
+   "kind": "method",
+   "sports": false
   }
  ],
  "videos": {
@@ -940,7 +1608,52 @@
    "count": 2
   }
  },
+ "people": {
+  "王坚": {
+   "keywords": "阿里云 城市大脑 院士 之江实验室 阿里巴巴 云栖",
+   "searched": "2026-11-02",
+   "youtube": "ok",
+   "bilibili": "ok"
+  },
+  "徐新": {
+   "keywords": "今日资本 投资 京东 美团 网易严选",
+   "searched": "2026-11-02",
+   "youtube": "ok",
+   "bilibili": "ok"
+  },
+  "何超琼": {
+   "keywords": "",
+   "searched": "2026-11-02",
+   "youtube": "ok",
+   "bilibili": "ok"
+  }
+ },
  "news": [
+  {
+   "id": "18p4lp6",
+   "lastSeen": "2026-11-02",
+   "title": "Anthropic plans to sell $3.5 billion of shares to Japan investors in IPO, filing shows",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOazUtcTBWVFNLd21jTk9YOFRDRHoyc2ZuV1haZ21JaUdIei1leFkxVVF5V0JpLXJGdV9raXhrV0k0bU1xM0g5TnR6cTA5dWNFZ3VVVUo1UHVyU3pUUWw0YjFreXNTZ3Q4TXdoazBwT1dxRU52bTkxMXlEbG95LVY1eUlLMGZHUk9hQUd4aVZxWkxMUzBMVmhELWNpaUhSaGR3V19UYy00R3UzMUVkWU80ZHl0aW9URGdlQ19RX2dmZHFreHNS?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg",
+    "Reuters",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Seeks Up to $3.5 Billion in Japan for Its Mega US IPO",
+    "Anthropic plans to sell $3.5 billion of shares to Japan investors in IPO, filing shows"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic在日本为其美国大型IPO寻求高达35亿美元的资金。",
+   "meaning": "显示出头部AI大厂在海外市场的融资动作与全球资本扩张步伐。",
+   "importance": 6
+  },
   {
    "id": "1wfiuz1",
    "lastSeen": "2026-11-02",
@@ -988,6 +1701,29 @@
    "importance": 7
   },
   {
+   "id": "uwoqnb",
+   "lastSeen": "2026-11-02",
+   "title": "Anthropic IPO: Silicon Valley’s AI Bets Are Built on Hype, Hope and Hubris",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNb1ZhMmFDZnhESjdhVURGOGFzaHdfcWFPSk1UQjhGZUNtUjhKTkNtbkhjdkhWZElKZkVLTFd0ZEZZNUJ6T3k5OGd1ZmtFMk4tUXVEZUUtblZOSHJfaHNEb1o2N3ZUY3FpSkt5UjZxZnM0YzAxQ1N1T3UtUDkyVWtIejg1ZzBUZXpxbVI3N2JQdmJTNmwyOGtXcUdyRk5tSEZDSjUzZEFtRE00S09SalFJY1BWaUZ0Szk2am5FTVZCYlZfWWxi?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic IPO: Silicon Valley’s AI Bets Are Built on Hype, Hope and Hubris"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "有观点认为，Anthropic的IPO表明硅谷的AI赌注建立在炒作、希望和傲慢之上。",
+   "meaning": "从资本市场视角审视当前AI热潮的泡沫与风险，对理解行业资本风向很有价值。",
+   "importance": 6
+  },
+  {
    "id": "8200cb",
    "lastSeen": "2026-11-02",
    "title": "Elon Musk Tests What Nearly Half a Billion Dollars Can Buy in the Midterms",
@@ -1008,28 +1744,6 @@
    "summary": "Elon Musk在期中选举中测试了近5亿美元资金能买到什么。",
    "meaning": "反映了科技巨头在政治与社会资源上的巨大投入，属于科技人物相关的通用大事件。",
    "importance": 4
-  },
-  {
-   "id": "uwoqnb",
-   "lastSeen": "2026-11-02",
-   "title": "Anthropic IPO: Silicon Valley’s AI Bets Are Built on Hype, Hope and Hubris",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNb1ZhMmFDZnhESjdhVURGOGFzaHdfcWFPSk1UQjhGZUNtUjhKTkNtbkhjdkhWZElKZkVLTFd0ZEZZNUJ6T3k5OGd1ZmtFMk4tUXVEZUUtblZOSHJfaHNEb1o2N3ZUY3FpSkt5UjZxZnM0YzAxQ1N1T3UtUDkyVWtIejg1ZzBUZXpxbVI3N2JQdmJTNmwyOGtXcUdyRk5tSEZDSjUzZEFtRE00S09SalFJY1BWaUZ0Szk2am5FTVZCYlZfWWxi?oc=5",
-   "source": "Bloomberg",
-   "domain": "bloomberg.com",
-   "published": "2026-11-02",
-   "outlets": [
-    "Bloomberg"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic IPO: Silicon Valley’s AI Bets Are Built on Hype, Hope and Hubris"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "有观点认为，Anthropic的IPO表明硅谷的AI赌注建立在炒作、希望和傲慢之上。",
-   "meaning": "从资本市场视角审视当前AI热潮的泡沫与风险，对理解行业资本风向很有价值。",
-   "importance": 6
   },
   {
    "id": "b601je",
@@ -1054,25 +1768,224 @@
    "importance": 3
   },
   {
-   "id": "18p4lp6",
+   "id": "7kpsif",
    "lastSeen": "2026-11-02",
-   "title": "Anthropic Seeks Up to $3.5 Billion in Japan for Its Mega US IPO",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeE1JSHY4MlhmcGJZTDJ2aXoxaEdWaEZabl9hSTJic2FYODdCdk03cUtpRjNyVHNWOFp0MmNBeU1pa1ZBMExNT3cyNWlBVTBFWnhySlFjSUdUSU9DVjJ4cE5TdDFXbEJmVTJLMlpLT3BYUjZ6LXpoS2xQTnU4NVhvQ1V1TVlFWGdtZmp0dUstalZraDZOQURZNFlUYjJuTXRDWmFOT3QtNkNqazRUbW1NR3FXNA?oc=5",
+   "title": "AI, Taxes and Real Estate Collide in San Francisco’s BART Crisis",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbFh1MlIwUTZxbDZfc25qelFVX2tMb25QUFJCR3RQQjVmelB2TDl5MmFpMjA3dlg3TnRVUXlIaHJLM0RPOGZza01pQ0RCNl9NYmN5VHowcWJUVlNpSjZDMmdOZnVPaUJDcEZXQ3M3UFdXR29VeXR6aTVvVHlCRUZQNlhQOV9hdHBCanNzZXpjakZBSGdJNmNNNWNJODRYWlZ4ZmFLRV91YWhzRnc2VGxTZVZlb2NOVmJQX2JzZjdDWGM?oc=5",
    "source": "Bloomberg",
    "domain": "bloomberg.com",
    "published": "2026-11-02",
    "outlets": [
-    "Bloomberg"
+    "Bloomberg",
+    "Bloomberg.com"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "headlines": [
+    "AI, Taxes and Real Estate Collide in San Francisco’s BART Crisis"
+   ],
+   "entities": [],
+   "summary": "在旧金山的BART危机中，AI、税收和房地产发生了碰撞。",
+   "meaning": "将AI与实体经济、城市治理及房产AI方向紧密结合，展示了技术在特定场景中的交叉影响。",
+   "importance": 8
+  },
+  {
+   "id": "jp5ozk",
+   "lastSeen": "2026-11-02",
+   "title": "Watch Elon Musk-Starlink Row: Ryanair CEO Rules Out Making Up",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeEE0eVY3emhOOGh1ZU1CU0tKNkhYRl9fd3hFaVdYM2lfTElaWHRzN0h0ZThXVWVvdk56Q1NLMG96SXpWSkVVZ040X01qTmlCQld6Z2pRY19GOVRfc0w0VUNRVmktdVphT3lkaERScXlqYWE0YTI1RWtpMjcwdndTQWRzM3RMcXM?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg.com"
    ],
    "themes": [],
    "headlines": [
-    "Anthropic Seeks Up to $3.5 Billion in Japan for Its Mega US IPO"
+    "Watch Elon Musk-Starlink Row: Ryanair CEO Rules Out Making Up"
+   ],
+   "entities": [
+    "Elon Musk"
+   ],
+   "summary": "Ryanair CEO ruled out making up in the row with Elon Musk and Starlink.",
+   "meaning": "This highlights ongoing public friction between high-profile executives and tech infrastructure providers.",
+   "importance": 3
+  },
+  {
+   "id": "1mm280k",
+   "lastSeen": "2026-11-02",
+   "title": "Applied Digital CEO Wes Cummins on Elon Musk’s 'guppy-level death' prediction for 200-plus neoclouds",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTmdkVlhQNGFHTlhZUjUtQ0JnLUFTYzZuOEdyTWhPbXRfc1Zad19mbE9tRHh0S194MzJsc1hESVkwM2w5eDFweXRPaDJVN2tQQTZxcW50MGpwcU10SVhhaERNY0c5ZjdEOWEtUk1hMkxwNERqRUhmdUtnUHdmT3JsQlJIQmF3TktPbGhPWHFaTFVWWE1DMnRGQU95LWQ2bDMtc21wX0hNU2hzczNtRlJDWjF4bHpvemYxOFQ2eXhrUnpnZ0swbHRHR3BJNA?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Applied Digital CEO Wes Cummins on Elon Musk’s 'guppy-level death' prediction for 200-plus neoclouds"
+   ],
+   "entities": [
+    "Elon Musk"
+   ],
+   "summary": "Applied Digital CEO Wes Cummins commented on Elon Musk’s prediction regarding over 200 neoclouds facing a guppy-level death.",
+   "meaning": "It reflects industry debates on the sustainability and future shakeout of emerging cloud and AI infrastructure players.",
+   "importance": 5
+  },
+  {
+   "id": "e916nv",
+   "lastSeen": "2026-11-02",
+   "title": "'If we can annoy him again, so much the better': Ryanair's CEO poured fuel on the fire of his beef with Elon Musk",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNX3A2TlF0eWN5eGxnREViRWVObWtxRDlIeDVnVm1XTHJmcXJIZHhOd3JOZzNULWJBVHRZaTdrWEtsRXRSWjNucVFLNU5vazFvbzlSTk4zTks3eWJaa1JTbWRid1J0eEZhWjZQQUxzempwRG9EZFZEb19vUmFUUUV1a050d0N1MldNSWxSNDFJdUQzV21jUXc?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "'If we can annoy him again, so much the better': Ryanair's CEO poured fuel on the fire of his beef with Elon Musk"
+   ],
+   "entities": [
+    "Elon Musk"
+   ],
+   "summary": "Ryanair's CEO continued his public feud with Elon Musk by stating that annoying him again is even better.",
+   "meaning": "This is a media-driven personal dispute with little direct impact on core AI or industry trends.",
+   "importance": 2
+  },
+  {
+   "id": "14ewlck",
+   "lastSeen": "2026-11-02",
+   "title": "AI build-out forecasts are increasingly reliant on Elon Musk telling the truth",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5WUGtUcWZBN000S0ltOVM5Vzd2ZGlpTmlnYnBGMVVCNExYX3h5S09ydUFnMHo2bnlyTzdaaFFUQXdDRUNkcnZRenZEc3I1Vzc0cHhwY1pta3Uwb1lWYzUtZkJtSU1rUUVrWkVhcXlaU08?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Financial Times"
+   ],
+   "themes": [],
+   "headlines": [
+    "AI build-out forecasts are increasingly reliant on Elon Musk telling the truth"
+   ],
+   "entities": [
+    "Elon Musk"
+   ],
+   "summary": "AI build-out forecasts are increasingly reliant on whether Elon Musk is telling the truth.",
+   "meaning": "As a key figure in compute and infrastructure, Musk's statements heavily influence market expectations for the entire AI sector.",
+   "importance": 7
+  },
+  {
+   "id": "gox5d8",
+   "lastSeen": "2026-11-02",
+   "title": "OpenAI launches Grid Protectors to ease AI’s strain on power grids",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNc1pKZUtGNEFuUUROMnh5OXlCVmRGYm1xS1hiTVZfVWh4WXR5TVFfclUzOGxVV1NZcWpUdngwaWszOGUxVEYzaERsNms2ZEJ5UXlsLTJETm1pS0w0VXJpVF82U29rR19VMU9IT0ItV2VZUlNuc3pZYnhoSVpBTTJuNzJua2RZNkFSR2c?oc=5",
+   "source": "The Next Web",
+   "domain": "thenextweb.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "The Next Web"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI launches Grid Protectors to ease AI’s strain on power grids"
+   ],
+   "entities": [
+    "OpenAI"
+   ],
+   "summary": "OpenAI launched Grid Protectors to help ease the strain that AI places on power grids.",
+   "meaning": "Addressing infrastructure and energy bottlenecks is crucial for the scaling of AI, making this a significant operational development.",
+   "importance": 8
+  },
+  {
+   "id": "17br6v7",
+   "lastSeen": "2026-11-02",
+   "title": "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaUtiN1hwUXNHOU5wQ1V5Qll2TjF0SXJIWjR1aG04TzBtMkh4Qkd1OVB6VlFmLXlEMkRndTFYMzlxOXhnX0M0bE12Sl8wMFBoVWNJV21ubTh2dlVMR1VPeHVRTHVTN05zallIZHJPZXN6SHIxYU9yM013dEJObVc2bGFFRWFrZ29ydlJfWWROQ0RfNkV2Yi00?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill"
    ],
    "entities": [
     "Anthropic"
    ],
-   "summary": "Anthropic在日本为其美国大型IPO寻求高达35亿美元的资金。",
-   "meaning": "显示出头部AI大厂在海外市场的融资动作与全球资本扩张步伐。",
+   "summary": "Anthropic's amended IPO paperwork revealed soaring Q3 revenue and a significant compute bill.",
+   "meaning": "Financial and compute metrics from leading foundational model providers offer vital visibility into the real costs and commercialization pace of generative AI.",
+   "importance": 8
+  },
+  {
+   "id": "ehw7b2",
+   "lastSeen": "2026-11-02",
+   "title": "NYC Comptroller Steps Up Criticism of Anthropic After IPO Filing",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUGh6VXo3cER6UGw2dGZ5LUlkYUZfeHVXamJfdFlibE1BMUVWRG5yRkFfUUpQR3c3U2M0MGllTjJzUDhaSVZsd1QtMG5KQ1N2VjI5cncyS3ZXcnhTYlBra3RxU3IxOGtxQmhocGJha184LXNxRGZKaVRLYnJ4OVVBa3FmTUQ0ajZLMFFNY0o4UWxodnRibjNXbUo0dG14dHV2RkFrdk1QMVdHTHpnUWpXWmp1NXliUQ?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "NYC Comptroller Steps Up Criticism of Anthropic After IPO Filing"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "The NYC Comptroller stepped up criticism of Anthropic following its IPO filing.",
+   "meaning": "Regulatory and public stakeholder scrutiny over major AI labs is intensifying as they approach public markets.",
+   "importance": 5
+  },
+  {
+   "id": "ii6ph0",
+   "lastSeen": "2026-11-02",
+   "title": "Anthropic Braces for Pre-IPO Election Impact as AI Debate Rages",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdHl6bTlzTEs0Zkt0UkQ5NGhDUXozSEtSbHFhek0xRDlPZUZ5X2JwUmpMcDl2dk5BQVF3QVhOTDhTTTZaU0FRcGJOSWNja1VrOEFzdHZzb2c5WlFodU9sRHJhWmhudDlYRXM3YmkwcG5tbU16b3RVMW1IM1k5cko1dG9YTElTSUZ3MmEwX1lqb21VVXhXX3BOTXNpcEl2S2xvajY5REtQT3YtYnp3VDJuTTloTlg?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Braces for Pre-IPO Election Impact as AI Debate Rages"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic is bracing for pre-IPO election impacts amidst ongoing AI debates.",
+   "meaning": "Macro and political factors are increasingly intersecting with major AI company milestones.",
+   "importance": 5
+  },
+  {
+   "id": "1v3vxw0",
+   "lastSeen": "2026-11-02",
+   "title": "Syndigo Signs Multi-Year Strategic Partnership Agreement with Microsoft to Develop and Co-Sell AI-Powered Commerce Solutions",
+   "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPVm9yNktxUHJfczEwVURMbVZEU25ESHo4Slp0V1EyZm9zLUZ3a0hmSlI2NnBTc3lwM19QRlhPN1ViN2VqSVpXUDRweElQQVFvUU5EcFFBRUdKWkpTNUxRVHFlbHRYSlJZZzZGUUF2UzNmRVI5NldDT0VGMkJnZ2ZYV2EtOWd0MmVIbGhGWFBzc0cta3FxYWhfak9LU2h1Yzd4c1pIcFNMT2hJd0hTWE1sSXdFN1NaTVRsZlluZFo0aFE2TmxVWTJzNW9NNGgwQ2x1WWx1TjVFZzI2SkQ2Y041amFpRFFNeFhFejlTT0JOWEJ4SnVVM3NDSjdLUHBGU0dVdV9kT2hvU21jVGlSXzBndQ?oc=5",
+   "source": "markets.businessinsider.com",
+   "domain": "markets.businessinsider.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "markets.businessinsider.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Syndigo Signs Multi-Year Strategic Partnership Agreement with Microsoft to Develop and Co-Sell AI-Powered Commerce Solutions"
+   ],
+   "entities": [
+    "Microsoft AI"
+   ],
+   "summary": "Syndigo signed a multi-year strategic partnership agreement with Microsoft to develop and co-sell AI-powered commerce solutions.",
+   "meaning": "Demonstrates the continued enterprise push by Microsoft to embed AI into vertical commerce and data solutions.",
    "importance": 6
   },
   {
@@ -1096,28 +2009,6 @@
    "summary": "文章探讨了AI是否会改变律所合伙人的身份。",
    "meaning": "直接切中法律AI方向，探讨技术对传统法律行业结构与从业人员角色的深远影响。",
    "importance": 9
-  },
-  {
-   "id": "7kpsif",
-   "lastSeen": "2026-11-02",
-   "title": "AI, Taxes and Real Estate Collide in San Francisco’s BART Crisis",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbFh1MlIwUTZxbDZfc25qelFVX2tMb25QUFJCR3RQQjVmelB2TDl5MmFpMjA3dlg3TnRVUXlIaHJLM0RPOGZza01pQ0RCNl9NYmN5VHowcWJUVlNpSjZDMmdOZnVPaUJDcEZXQ3M3UFdXR29VeXR6aTVvVHlCRUZQNlhQOV9hdHBCanNzZXpjakZBSGdJNmNNNWNJODRYWlZ4ZmFLRV91YWhzRnc2VGxTZVZlb2NOVmJQX2JzZjdDWGM?oc=5",
-   "source": "Bloomberg",
-   "domain": "bloomberg.com",
-   "published": "2026-11-02",
-   "outlets": [
-    "Bloomberg"
-   ],
-   "themes": [
-    "房产 AI"
-   ],
-   "headlines": [
-    "AI, Taxes and Real Estate Collide in San Francisco’s BART Crisis"
-   ],
-   "entities": [],
-   "summary": "在旧金山的BART危机中，AI、税收和房地产发生了碰撞。",
-   "meaning": "将AI与实体经济、城市治理及房产AI方向紧密结合，展示了技术在特定场景中的交叉影响。",
-   "importance": 8
   },
   {
    "id": "1w2yjjm",
@@ -1332,32 +2223,6 @@
    "summary": "Google与OpenAI、Anthropic一道，承诺推出新的网络数据抓取控制措施。",
    "meaning": "关乎法律AI与通用数据版权规范，标志着主流AI巨头正逐步在训练数据抓取合规与创作者权益保护上达成共识。",
    "id": "1w8z8fw"
-  },
-  {
-   "title": "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkZzbnhBaW1mZXJzZ0NBNDQxUk1CQW5WNTc0eDYxTGVvZGtIVTRjTGs5THBLLTRMZDFLM0o0ZWpSZU5qNDhxbjNUYXdvVk9wVVI4V01WRFdXQndvcHZndkl4aWE0NkpGVHJtZUlZUW9EX19xeF9HR0RXcUU5VlM1Rm15OTRIaENTeDVLTWhTdWhzWkItMk5JU2tEbXRyN2hrU1NhT3RXZE9FRkdE?oc=5",
-   "source": "Bloomberg",
-   "domain": "bloomberg.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Tom's Hardware",
-    "Bloomberg"
-   ],
-   "themes": [],
-   "entities": [
-    "Sam Altman",
-    "OpenAI"
-   ],
-   "headlines": [
-    "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization",
-    "Sam Altman meets with Samsung leadership to secure more RAM for data centers amid crushing shortages — OpenAI CEO travels to South Korea to meet Samsung leadership to discuss future AI data centers",
-    "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
-    "Elon Musk mocks OpenAI CEO Sam Altman's claim that PCs having RAM is terrible — 'The people deserve to have their RAM too!'"
-   ],
-   "summary": "OpenAI首席执行官Sam Altman称PC配备RAM使用效率低下并看好数据中心，同时赴韩与三星高管会面，以在严重短缺中为AI数据中心争取更多内存。",
-   "meaning": "突显了通用AI算力扩张对上游硬件供应链的极度依赖，以及行业向云端和AI数据中心集中的趋势。",
-   "id": "10p9l18",
-   "lastSeen": "2026-11-02"
   },
   {
    "title": "美方称“英伟达CEO黄仁勋成情报接触目标”，外交部：有关报道捕风捉影，纯属对华污蔑抹黑",
@@ -1584,6 +2449,28 @@
    "id": "1wgu09u"
   },
   {
+   "id": "1m4e1o8",
+   "lastSeen": "2026-11-02",
+   "title": "Want to invest in Anthropic before its IPO? These 5 funds offer exposure to the AI giant.",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOb0FEYWdoVzk1Ym1YZmZmMzMyQkU4MnFIM2NUcThKY2xPczJ1dk1udmVUTWdEbmVrNzVpYkxMRzMwMTZGQ29sUkhoN3dkY2M0Tnl5X3hqcGpKUXJqSktmUzhPRU9PbWdwV3lIZElmbC01Q3ppVlVqTGgwa0tmSEZjWWtHakVhMGRLa2dIVDgzQjlJVHR1VnJn?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "Want to invest in Anthropic before its IPO? These 5 funds offer exposure to the AI giant."
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Five funds offer exposure to Anthropic for investors looking to invest before its IPO.",
+   "meaning": "Highlights retail and institutional investment channels opening up around top-tier private AI giants.",
+   "importance": 6
+  },
+  {
    "title": "Legaltech Rundown: Legora Introduces New Research Feature, Filevine Launches AI Voice Agents, and More",
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeW5CNmFVNHFuNG12MUpNUjdEQkt0MlZUc1FNTGpYNDZ1eS00cWw1UkpYSGtfVVBNQy1fY0t3UEphbm9OTXZ4aE92WE5BS2hDYTNPRzNUbTZWVmVaUk14N1JvSUt3cmJwLVdaMjFzbHRRY2tvU2ZhRncxUzRSNWpBVEFtTUgyY0dwb3lDRFlyS25RTnppZkw1MmxYeG9sSVlsMjRCaDdnSlRrUEZKelJ5Y2phemxzNWdoMm1laTVQTlpYN1dRUnF1dzFHLWFTaDlFNDVmeG5FbWtvOGpjWFQw?oc=5",
    "source": "Law.com",
@@ -1691,9 +2578,9 @@
     "Jensen Huang",
     "NVIDIA Research"
    ],
-   "summary": "NVIDIA CEO Jensen Huang可能曾成为中国政府间谍的目标。",
-   "meaning": "涉及关键AI芯片领袖的安全与地缘政治动向，牵动整个AI硬件与中国AI生态的敏感神经。",
-   "importance": 8
+   "summary": "NVIDIA CEO Jensen Huang may have been the target of a Chinese government spy.",
+   "meaning": "这涉及到顶尖芯片巨头高管的安全与地缘政治风险，对关注中国AI与全球科技竞争的读者来说值得关注。",
+   "importance": 7
   },
   {
    "title": "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative",
@@ -2534,6 +3421,36 @@
    "id": "aap4qd"
   },
   {
+   "title": "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkZzbnhBaW1mZXJzZ0NBNDQxUk1CQW5WNTc0eDYxTGVvZGtIVTRjTGs5THBLLTRMZDFLM0o0ZWpSZU5qNDhxbjNUYXdvVk9wVVI4V01WRFdXQndvcHZndkl4aWE0NkpGVHJtZUlZUW9EX19xeF9HR0RXcUU5VlM1Rm15OTRIaENTeDVLTWhTdWhzWkItMk5JU2tEbXRyN2hrU1NhT3RXZE9FRkdE?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Tom's Hardware",
+    "Bloomberg",
+    "CNBC",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman",
+    "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization",
+    "Sam Altman meets with Samsung leadership to secure more RAM for data centers amid crushing shortages — OpenAI CEO travels to South Korea to meet Samsung leadership to discuss future AI data centers",
+    "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
+    "Elon Musk mocks OpenAI CEO Sam Altman's claim that PCs having RAM is terrible — 'The people deserve to have their RAM too!'",
+    "Watch the full discussion between OpenAI CEO Sam Altman and Oracle co-CEO Clay Magouyrk",
+    "OpenAI CEO Sam Altman comments on cyber risk: What you need to know"
+   ],
+   "summary": "OpenAI首席执行官Sam Altman称PC配备RAM使用效率低下并看好数据中心，同时赴韩与三星高管会面，以在严重短缺中为AI数据中心争取更多内存。",
+   "meaning": "突显了通用AI算力扩张对上游硬件供应链的极度依赖，以及行业向云端和AI数据中心集中的趋势。",
+   "id": "10p9l18",
+   "lastSeen": "2026-11-02"
+  },
+  {
    "title": "OpenAI plans to buy Google's AI chips, The Information reports",
    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNElvX2Y3Ym5FZFdxRGVFMHpwNTRIc3lQUXRzNFNST0xVY2FjR2xoMmFCaDNMWFhtQnZuSXlSSF9zamY1aUY1a2JIX3hBWUFhQ19hb2w4a0JIQmtKRmJoNjRadWJnWmprNE50V2ZQSFRQWTI5aUhXRzkwMlhRNktVOWJwbjJnUk9EVVpiVEo1UjhwMWpvek9EYWpFNkRMTzA?oc=5",
    "source": "Reuters",
@@ -2578,6 +3495,29 @@
    "summary": "OpenAI首席执行官Sam Altman与Oracle联席首席执行官Clay Magouyrk举行了完整对话。",
    "meaning": "头部AI模型厂商与企业级云基础设施巨头的互动，展现出算力基建合作进一步深化的趋势。",
    "id": "wem8yw"
+  },
+  {
+   "title": "What’s Next for Anthropic’s Mega-IPO: Five Things to Watch",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOUJ4OTl4VVR0UFpuQ2JqQy1DejFlb0xSbFJYN3NvRV9nV3VOM013dlF1V0xQTlB2TVRnQ0FYQVZsaXMtazU0cUdmWTVQVWxRZTdOWVg3YTVfOFlrcXF6ck00ajctcnRzSGRGa2ZMUHVYRzN1ZjZ2dWJuQlZiMWFJbFlYZVdlMnVtWVhMT2RjYlBCakMzVUU4TkVCQk5Bb1J6OHloaGtROWpqMnJf?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Bloomberg",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "What’s Next for Anthropic’s Mega-IPO: Five Things to Watch",
+    "Watch Anthropic Revenue Hits Nearly $17 Billion Before Mega-IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "媒体列出Anthropic推进大型IPO（首次公开募股）过程中值得关注的五大看点。",
+   "meaning": "作为通用AI头部企业，Anthropic的IPO进展是资本市场衡量大模型商业化前景的风向标。",
+   "id": "15iansd",
+   "lastSeen": "2026-11-02"
   },
   {
    "title": "Who’s really in charge at Anthropic after the IPO?",
@@ -2678,26 +3618,6 @@
    "summary": "有父母起诉OpenAI，指控其GPT-4o模型曾指导他们的女儿停用癫痫药物。",
    "meaning": "这是法律AI与AI安全责任领域的重大诉讼案件，可能对生成式AI在医疗健康建议领域的合规与法律边界产生深远影响。",
    "id": "16k7ahg"
-  },
-  {
-   "title": "What’s Next for Anthropic’s Mega-IPO: Five Things to Watch",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOUJ4OTl4VVR0UFpuQ2JqQy1DejFlb0xSbFJYN3NvRV9nV3VOM013dlF1V0xQTlB2TVRnQ0FYQVZsaXMtazU0cUdmWTVQVWxRZTdOWVg3YTVfOFlrcXF6ck00ajctcnRzSGRGa2ZMUHVYRzN1ZjZ2dWJuQlZiMWFJbFlYZVdlMnVtWVhMT2RjYlBCakMzVUU4TkVCQk5Bb1J6OHloaGtROWpqMnJf?oc=5",
-   "source": "Bloomberg",
-   "domain": "bloomberg.com",
-   "published": "2026-10-27",
-   "outlets": [
-    "Bloomberg"
-   ],
-   "themes": [],
-   "headlines": [
-    "What’s Next for Anthropic’s Mega-IPO: Five Things to Watch"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "媒体列出Anthropic推进大型IPO（首次公开募股）过程中值得关注的五大看点。",
-   "meaning": "作为通用AI头部企业，Anthropic的IPO进展是资本市场衡量大模型商业化前景的风向标。",
-   "id": "15iansd"
   },
   {
    "title": "跟黄仁勋逗趣的机器鸭爆单！机器人进入“树莓派”时刻？",
@@ -3095,7 +4015,8 @@
     "WSJ",
     "WIRED",
     "Fortune",
-    "South China Morning Post"
+    "South China Morning Post",
+    "AP News"
    ],
    "themes": [],
    "headlines": [
@@ -3104,7 +4025,9 @@
     "The Biggest Takeaways From Anthropic’s IPO Prospectus",
     "Anthropic’s IPO Prospectus Reveals What’s Under the Hood",
     "Anthropic’s IPO prospectus shows $16.3 billion in revenue, an $80.7 billion net loss, and goal of an 'age of miracles'",
-    "Why does Anthropic’s IPO prospectus have so many China ‘risk factor’ warnings?"
+    "Why does Anthropic’s IPO prospectus have so many China ‘risk factor’ warnings?",
+    "Anthropic files for potentially the biggest IPO ever as CEO warns of risk to humanity from AI",
+    "Why Anthropic’s IPO Prospectus Is Missing So Many Key Figures"
    ],
    "entities": [
     "Anthropic"
@@ -3174,6 +4097,36 @@
    "meaning": "其披露的财务与业务细节将为通用AI行业的真实营收水平、亏损情况和增长质量提供关键参考。",
    "id": "1cm2sya",
    "lastSeen": "2026-11-01"
+  },
+  {
+   "title": "Anthropic's loss shrinks, revenue jumps ahead of blockbuster IPO",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPalN1b2NwcllWRkRjRUNmOVBjSDMxWDNzdjZIclhDNTdMMFlaVUx2eWN1U19acllfTk0xX0JIbkJma21jVDFhZUR1czFjbVdLbThjMHVQZ0F4MkFvNmc0cURPN05FMkE3VFNyMTktbmNzWVIxN3c1YVFhSXpBTmZSQk1DZ013aDVRcXE5OEplekFkZWFJbmQxUEhDSVJ3RVVrZWJUd2ZRYWRfWUJhMVMycEZRRk8?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Financial Times",
+    "WSJ",
+    "Reuters",
+    "Forbes",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "entities": [
+    "Anthropic"
+   ],
+   "headlines": [
+    "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
+    "Anthropic Unveils Paperwork for Blockbuster IPO",
+    "Anthropic's loss shrinks, revenue jumps ahead of blockbuster IPO",
+    "Anthropic Hit $17 Billion In Third Quarter Revenue Ahead Of IPO—But AI Spending Commitments Hit $900 Billion",
+    "Anthropic Revenue Hits Nearly $17 Billion Before Blockbuster IPO",
+    "Watch AI Markets: Anthropic Revenue Nears $17 Billion Ahead of IPO"
+   ],
+   "summary": "在备受瞩目的重磅IPO前夕，Anthropic的七位创始人正在进一步收紧对公司的控制权。",
+   "meaning": "随着通用大模型商业化进程加速，Anthropic核心团队在资本化前强化控制权，以平衡外部投资者诉求与AI安全治理。",
+   "id": "27d0y5",
+   "lastSeen": "2026-11-02"
   },
   {
    "title": "Anthropic IPO filing warns some risks may be uninsurable. AI coverage will be issue for every company",
@@ -3365,28 +4318,6 @@
    "summary": "预测市场就Anthropic备受期待的IPO展开下注，为其市场预期定调。",
    "meaning": "通用AI顶尖独角兽的上市动向正成为资本市场焦点，反映出投资者对大模型商业化前景的高度关注。",
    "id": "qbvn6a"
-  },
-  {
-   "title": "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTmRhT3BCTmVkRHA3TlQzSXpCNFlISlpqbms5MVozSVhwd2NMR0RoTUV2MDJfbklENXFZOWpHNm50NHZzNkhzTFhDdHUydHRiVXExVW5MUFBDWkN4a0dFRG5DRzlFa0JsN0g4UGpYZ0dXRGktMWNGSlE0RE5XX01OYWYyUmo?oc=5",
-   "source": "Financial Times",
-   "domain": "ft.com",
-   "published": "2026-10-26",
-   "outlets": [
-    "Financial Times",
-    "WSJ"
-   ],
-   "themes": [],
-   "entities": [
-    "Anthropic"
-   ],
-   "headlines": [
-    "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
-    "Anthropic Unveils Paperwork for Blockbuster IPO"
-   ],
-   "summary": "在备受瞩目的重磅IPO前夕，Anthropic的七位创始人正在进一步收紧对公司的控制权。",
-   "meaning": "随着通用大模型商业化进程加速，Anthropic核心团队在资本化前强化控制权，以平衡外部投资者诉求与AI安全治理。",
-   "id": "27d0y5"
   },
   {
    "title": "Anthropic is going public—1 number from its filing is an encouraging sign for investors, says IPO expert",
@@ -4117,6 +5048,21 @@
  ],
  "digests": [
   {
+   "date": "2026-11-03",
+   "ids": [
+    "7kpsif",
+    "18p4lp6",
+    "1wfiuz1",
+    "1whwoh9",
+    "wyq435",
+    "uwoqnb",
+    "gox5d8",
+    "17br6v7"
+   ],
+   "scanned": 167,
+   "events": 119
+  },
+  {
    "date": "2026-11-02",
    "ids": [
     "1w2yjjm",
@@ -4133,10 +5079,10 @@
   }
  ],
  "weekly": [
+  "7kpsif",
   "1w2yjjm",
-  "wpqie7",
-  "1xf7smd",
-  "cy4nkz",
-  "jbfsw8"
+  "18p4lp6",
+  "1wfiuz1",
+  "1whwoh9"
  ]
 }

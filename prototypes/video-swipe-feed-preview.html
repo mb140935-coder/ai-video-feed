@@ -335,6 +335,7 @@
     .book-row { display: flex; align-items: center; border-bottom: 1px solid var(--line); }
     .book-delete { flex: none; margin-right: 14px; min-height: 34px; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 12px; background: var(--raised); color: var(--muted); font: inherit; font-size: 12px; cursor: pointer; }
     .book-delete:hover, .book-delete:focus-visible { border-color: var(--accent-line); color: var(--accent-text); }
+    .book-delete.armed { border-color: #c0392b; background: #c0392b; color: #fff; }
     .book { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px; border: 0; padding: 16px 18px; background: transparent; color: var(--text); font: inherit; text-align: left; cursor: pointer; }
     .book:hover, .book:focus-visible { background: var(--hover); }
     .book-title { font-size: 15px; font-weight: 700; line-height: 1.4; }
@@ -539,7 +540,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">围绕 IOC 的奥林匹克 AI 议程，梳理 AI 在奥运体系中的应用方向。重点留意技术如何服务运动员、赛事组织与观众，同时守住公平和信任。</p>
           <div class="state">用户重点视频 · 嵌入不可用时切换到 YouTube · 片段时间点待核验</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=QiaTTwnnblg&amp;t=8s" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-ioc">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-ioc">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -556,7 +557,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">IOC 于 2025 年 11 月 12–13 日在洛桑举办首届 Olympic Movement AI Engagement Forum，延续奥林匹克 AI 议程的推进。片长约 3 分钟，适合快速了解 IOC 如何把 AI 议程推向整个奥林匹克运动。</p>
           <div class="state">官方短片 · 可卡内播放 · 无官方字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=54CadlLt1jI" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-ioc-forum">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-ioc-forum">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -573,7 +574,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">Thomas Bach 介绍 Intel 与 IOC 用 AI 平台技术改造体育：简化赛事组织、让转播内容更个性化，以及为观众生成定制集锦和互动体验。注意这是 Intel 发布的合作宣传片。</p>
           <div class="state">官方短片 · 可卡内播放 · 英文自动字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=niuziDT6L5o" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-intel-paris">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-intel-paris">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -590,7 +591,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">IOC 发布奥林匹克 AI 议程：继 Olympic Agenda 2020 和 2020+5 之后的第三份战略文件，说明 AI 能为体育带来哪些影响，以及 IOC 打算如何在全球体育中带头推动 AI 落地。后面几条奥运 AI 内容都从这里出发。</p>
           <div class="state">完整回放约 2 小时 · 重点片段时间点待核验 · 无官方字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=VoF36w_yLWo" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-ioc-agenda">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-ioc-agenda">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -607,7 +608,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">官方演示展示 Kimi 用于 3D/CAD 类创作流程，包括机械部件、建筑和游戏场景。关键看点是 AI 能否把自然语言需求转成可编辑、可复用的 3D 资产；演示效果仍需独立验证。</p>
           <div class="state">原声播放 · 英文字幕优先；短片时间点待核验</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=DIyHTpfWctU" target="_blank" rel="noopener noreferrer">在 YouTube 观看</a><button type="button" data-action="restart" data-player="player-kimi">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-kimi">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -624,7 +625,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">黄仁勋把 AI 工厂和智能体描述为下一阶段计算平台的核心，并展示开放模型、智能体安全架构与新一代算力基础设施。重点看 AI 如何从“回答问题”走向调用工具、执行任务，并进入机器人、工业和企业场景。</p>
           <div class="state">官方回放可看 · 原声与英文字幕优先；重点片段待核验</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=v-NGxyPjcrE" target="_blank" rel="noopener noreferrer">在 YouTube 观看</a><button type="button" data-action="restart" data-player="player-nvidia">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-nvidia">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -641,7 +642,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">讨论车队如何结合赛车、车库和 pit crew 数据，用 AI 更快发现表现差异、辅助比赛决策。重点是让数据支持工程师和车队人员，而不是取代他们的专业判断。</p>
           <div class="state">章节起点已核实：10:00 · 片段入口约 1 分钟</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=KNPjRpNtQ7s&amp;t=600s" target="_blank" rel="noopener noreferrer">在 YouTube 观看</a><button type="button" data-action="continue" data-player="player-racing">在播放器继续</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="continue" data-player="player-racing">在播放器继续</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">首期视频候选结束</div>
       </section>
@@ -657,7 +658,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">Coventry 在米兰-科尔蒂纳冬奥会阿里云展馆开幕时宣布：基于阿里云通义千问（Qwen）的首个奥运官方大模型上线，并把本届定位为“史上最智能的奥运会”。这是合作方发布的官方短片。</p>
           <div class="state">原片 · 可卡内播放 · 英文自动字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=S2YEPhMejqo" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-ioc-qwen-llm">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-ioc-qwen-llm">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -673,7 +674,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">Corna 介绍 IOC 以 Qwen 模型为基础，为各国奥委会、奥组委和 IOC 团队打造“Olympic AI”生态，并在巴黎 2024 的 AI 基础上继续扩展。这是合作方发布的官方短片。</p>
           <div class="state">原片 · 可卡内播放 · 英文自动字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=8bj-qenh0rY" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-ioc-cto-qwen">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-ioc-cto-qwen">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -689,7 +690,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">Exarchos 介绍 AI、无人机和云系统如何帮助米兰-科尔蒂纳冬奥会制作约 6500 小时内容：AI 追踪热门运动员、生成慢动作回放；FPV 无人机提供运动员视角。这是新闻台的报道短片。</p>
           <div class="state">原片 · 可卡内播放 · 英文自动字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=SmXYN78nTkY" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-obs-milano-ai">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-obs-milano-ai">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -705,7 +706,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">谈 IOC 的 AI 战略：覆盖运动员、球迷、转播和赛事运营，也讨论 AI 在运动员保护和可持续性上的作用。</p>
           <div class="state">原片 · 可卡内播放 · 英文自动字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=dT5hNiuqX2U" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-ioc-ai-strategy">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-ioc-ai-strategy">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -721,7 +722,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">面向大众讲解 AI 与数据科学在体育中的用法：追踪球员、提升表现、获得竞争优势。</p>
           <div class="state">原片 · 可卡内播放 · 英文字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=Qu3QEz8PBUc" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-cmu-sports-analytics">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-cmu-sports-analytics">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -737,7 +738,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">在 NFL TAC 大会现场录制：Sumer Sports 从帮球队分析比赛录像、管理工资帽和辅助执教，扩展到球迷互动和转播。</p>
           <div class="state">原片 · 可卡内播放 · 英文自动字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=WRB_RAvGVAE" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-sumer-football-ai">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-sumer-football-ai">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -753,7 +754,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">讨论智能体 AI 如何改变房地产的决策方式和工作流程、眼下可落地的机会，以及机构该如何为 2026 年做准备。</p>
           <div class="state">原片 · 可卡内播放 · 英文自动字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=xr6MnTBFpEY" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-proptech-agentic">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-proptech-agentic">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -769,7 +770,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">讨论智能体如何在律所规模化运作，以及让智能体跨整个业务运作所需的“世界模型”数据基础，和这对法律行业商业模式的影响。</p>
           <div class="state">原片 · 可卡内播放 · 英文自动字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=yEH0XAK4Fi0" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-harvey-agents">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-harvey-agents">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -785,7 +786,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">一场关于法律行业 AI 现状的主题演讲：哪些已经落地、哪些是炒作，以及律所现在该做什么。</p>
           <div class="state">原片 · 可卡内播放 · 英文自动字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=Axnmw60ecic" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-legaltech-state-of-ai">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-legaltech-state-of-ai">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -801,7 +802,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">要点：法律工作流从 copilot 转向智能体；Legora 如何在基础模型之外做出差异；AI 是“新电力”，律所成败取决于团队怎么用它。</p>
           <div class="state">原片 · 可卡内播放 · 英文自动字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=fJ0uj_jSCDM" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-legora-ai-law-firm">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-legora-ai-law-firm">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -817,7 +818,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">月之暗面在 2026 世界人工智能大会上发布 Kimi K3；两人讨论更多开放模型如何迫使投资者重新评估美国 AI 基础设施的巨额投入。</p>
           <div class="state">原片 · 可卡内播放 · 英文字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=cYuMMqbv-N8" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-bloomberg-kimi-k3">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-bloomberg-kimi-k3">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -833,7 +834,7 @@
           <div class="highlight-label">内容重点</div>
           <p class="highlight">演示 20 多项新发布，包括 dots、ChatGPT Spaces、GPT-6.1 Sol 和 Astra Ultrafast。</p>
           <div class="state">原片 · 可卡内播放 · 英文自动字幕</div>
-          <div class="actions"><a class="primary" href="https://www.youtube.com/watch?v=Fls_onRviPM" target="_self">在 YouTube 看原片</a><button type="button" data-action="restart" data-player="player-openai-devday-2026">播放器重播</button><button type="button">☆ 收藏</button></div>
+          <div class="actions"><button type="button" data-action="restart" data-player="player-openai-devday-2026">播放器重播</button><button type="button">☆ 收藏</button></div>
         </div>
         <div class="hint">上滑看下一条 ↓</div>
       </section>
@@ -1689,7 +1690,8 @@
         makeText(details, 'div', 'state', stateLabel);
         const actions = document.createElement('div');
         actions.className = 'actions';
-        if (media) {
+        // Videos play in the card's own player, so only audio and plain pages get an outside link.
+        if (media && !['youtube', 'ted', 'vimeo'].includes(media.provider)) {
           const link = document.createElement('a');
           link.className = 'primary';
           link.href = media.url;
@@ -2993,7 +2995,15 @@
           remove.className = 'book-delete';
           remove.textContent = '删除';
           remove.setAttribute('aria-label', `删除《${bookTitle(entry.name)}》`);
-          remove.addEventListener('click', () => removeBook(entry));
+          // Tap twice: confirm() is silently blocked on some iPads (home-screen apps).
+          remove.addEventListener('click', () => {
+            if (remove.classList.contains('armed')) return removeBook(entry, remove);
+            remove.classList.add('armed');
+            remove.textContent = '确认删除？';
+            setTimeout(() => {
+              if (!remove.disabled) { remove.classList.remove('armed'); remove.textContent = '删除'; }
+            }, 4000);
+          });
           const row = document.createElement('div');
           row.className = 'book-row';
           row.append(button, remove);
@@ -3001,8 +3011,9 @@
         }));
       };
       // The PDF and all its highlights, notes, bookmarks and progress.
-      const removeBook = async entry => {
-        if (!confirm(`删除《${bookTitle(entry.name)}》？它的高亮、批注和书签也会一起删掉，不能恢复。`)) return;
+      const removeBook = async (entry, button) => {
+        button.disabled = true;
+        button.textContent = '删除中…';
         try {
           await readerCall('remove', { doc: entry.name });
           try { localStorage.removeItem(`aiReaderPage:${entry.name}`); } catch { /* Nothing kept. */ }

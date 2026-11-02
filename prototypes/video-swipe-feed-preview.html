@@ -2566,7 +2566,7 @@
         if (hold) toastTimer = setTimeout(() => { toast.hidden = true; }, hold);
       };
 
-      // Only YouTube cards can be written out by Gemini; their (dead) ☆ 收藏 button becomes 📝 记一笔.
+      // Only YouTube cards can be written out by Gemini; 📝 记一笔 leads their action row.
       function addNoteButton(card) {
         const frame = card.querySelector('.player iframe[data-video-id]');
         const actions = card.querySelector('.actions');
@@ -2576,7 +2576,7 @@
         button.className = 'note-button';
         button.textContent = '📝 记一笔';
         button.addEventListener('click', () => openNote(card));
-        actions.appendChild(button);
+        actions.prepend(button);
       }
       // 💡 问一问 on every card; on YouTube cards the question can include the last 40 seconds of the video.
       function addAskButton(card) {

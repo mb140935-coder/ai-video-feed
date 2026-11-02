@@ -132,6 +132,8 @@
     .person-chip { flex: none; white-space: nowrap; min-height: 30px; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 12px; background: var(--raised); color: var(--text); font: inherit; font-size: 12px; cursor: pointer; }
     .person-chip.active { border-color: var(--accent-line); color: var(--accent-text); font-weight: 700; }
     .person-chip.manage { color: var(--accent-text); }
+    .watch-added { display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+    .watch-added > .watch-row { flex: 1; min-width: 0; border-bottom: 0; }
     .history-item button.armed { border-color: #c0392b; background: #c0392b; color: #fff; }
     .note-form textarea, .note-form input { width: 100%; border: 1px solid var(--line-strong); border-radius: 10px; padding: 11px; background: var(--surface); color: var(--text); font: inherit; font-size: 16px; line-height: 1.5; outline: none; resize: vertical; }
     .note-form textarea:focus, .note-form input:focus { border-color: var(--accent); }
@@ -2231,7 +2233,10 @@
       // 人物访谈 list: "person:<name>" rows, title = names, url = identity keywords (tools/people.mjs).
       const isPersonRow = row => row.key.startsWith('person:');
       const personRows = () => addedRows.filter(isPersonRow);
-      const addedVideoRows = () => addedRows.filter(row => !isChannelRow(row) && !isPersonRow(row));
+      // AI 追踪名单 additions: "watch:<name>" rows, title = names, url = who they are (tools/update-feed.mjs).
+      const isWatchRow = row => row.key.startsWith('watch:');
+      const isListRow = row => isPersonRow(row) || isWatchRow(row);
+      const addedVideoRows = () => addedRows.filter(row => !isChannelRow(row) && !isListRow(row));
       const addedChannelRows = () => addedRows.filter(isChannelRow);
 
       const readLocalAdded = () => {
@@ -2306,7 +2311,7 @@
 
       const renderAddedList = () => {
         addList.replaceChildren();
-        if (!addedRows.some(row => !isPersonRow(row))) {
+        if (!addedRows.some(row => !isListRow(row))) {
           makeText(addList, 'div', 'history-empty', '还没有手动添加的视频或频道。在 YouTube 或 Vimeo 里点“分享 → 复制链接”，或复制频道主页地址（如 youtube.com/@名字），粘贴到上面就行。');
           return;
         }
@@ -2338,7 +2343,7 @@
           if (!addedCards.has(video.key)) addedCards.set(video.key, renderAppearance(addedItem(video), 0, 1, insertCuratedCard));
         });
         refreshCuratedCounters();
-        const ownCount = addedRows.filter(row => !isPersonRow(row)).length;
+        const ownCount = addedRows.filter(row => !isListRow(row)).length;
         document.getElementById('added-count').textContent = ownCount ? String(ownCount) : '';
         if (!addSheet.hidden) renderAddedList();
         const peopleNow = personRows().map(row => `${row.key}=${row.url}`).join('|');
@@ -2347,6 +2352,7 @@
           if (appearancesLoaded) appearanceSearch.dispatchEvent(new Event('input'));
         }
         if (!peopleSheet.hidden) renderPeopleList();
+        updateWatchCount();
       };
 
       const saveAddedShared = async rows => {
@@ -2547,9 +2553,22 @@
           const response = await fetch('../docs/watchlist-v1.json', { cache: 'no-store' });
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           watchlistData = await response.json();
-          document.getElementById('watchlist-count').textContent = String(watchlistData.groups.reduce((sum, group) => sum + group.items.length, 0));
         }
         return watchlistData;
+      };
+      // The built-in list plus the people added on the page (first in 重点人物, like in the daily job).
+      const watchGroups = () => {
+        const groups = watchlistData?.groups || [];
+        const builtIn = groups.find(group => group.people)?.items || [];
+        const known = new Set(builtIn.flatMap(item => item.aliases.map(alias => alias.toLowerCase())));
+        const added = addedRows.filter(isWatchRow).map(row => {
+          const names = String(row.title || row.key.slice('watch:'.length)).split(/\s*[/／,，、]\s*/).map(name => name.trim()).filter(Boolean);
+          return { name: names[0], note: String(row.url || '').trim(), aliases: names, key: row.key };
+        }).filter(item => !item.aliases.some(alias => known.has(alias.toLowerCase())));
+        return groups.map(group => group.people ? { ...group, items: [...added, ...group.items] } : group);
+      };
+      const updateWatchCount = () => {
+        if (watchlistData) document.getElementById('watchlist-count').textContent = String(watchGroups().reduce((sum, group) => sum + group.items.length, 0));
       };
 
       // Every card and brief, read from the page (both video tabs and 简报 are loaded first).
@@ -2599,14 +2618,92 @@
         watchlistBack.hidden = true;
         watchlistTitle.textContent = '追踪名单 · 点名字看最新内容';
         watchlistList.replaceChildren();
-        watchlistData.groups.forEach(group => {
+        updateWatchCount();
+        watchGroups().forEach(group => {
           makeText(watchlistList, 'div', 'add-section', `${group.title} · ${group.items.length}`);
+          if (group.people) watchlistList.appendChild(watchAddForm());
           group.items.forEach(entity => {
             const count = feedEntries ? entriesFor(entity).length : null;
-            watchRow(entity.name, entity.note || '', { className: count ? 'menu-count' : 'watch-row-arrow', text: count ? `${count} 条` : '›' },
+            const row = watchRow(entity.name, entity.note || (entity.key ? '你手动加入的人物' : ''), { className: count ? 'menu-count' : 'watch-row-arrow', text: count ? `${count} 条` : '›' },
               () => renderEntity(entity));
+            if (entity.key) watchlistList.appendChild(watchRemoveRow(row, entity));
           });
         });
+      };
+
+      // ＋ 加人物 for the AI list: the daily job searches their talks (演讲 & Podcast → AI 演讲) and news (简报).
+      let watchFormStatus = '';
+      const watchAddForm = () => {
+        const form = document.createElement('form');
+        form.className = 'add-form';
+        const nameRow = document.createElement('div');
+        nameRow.className = 'add-row';
+        const nameInput = document.createElement('input');
+        nameInput.type = 'text';
+        nameInput.autocomplete = 'off';
+        nameInput.placeholder = '加人物：名字，英文名用 / 隔开，如 杨植麟 / Yang Zhilin';
+        nameInput.setAttribute('aria-label', '名字');
+        nameRow.appendChild(nameInput);
+        const noteRow = document.createElement('div');
+        noteRow.className = 'add-row';
+        const noteInput = document.createElement('input');
+        noteInput.type = 'text';
+        noteInput.autocomplete = 'off';
+        noteInput.placeholder = '身份，如 月之暗面 Kimi 创始人';
+        noteInput.setAttribute('aria-label', '身份');
+        const submit = document.createElement('button');
+        submit.type = 'submit';
+        submit.textContent = '加入';
+        noteRow.append(noteInput, submit);
+        const status = document.createElement('div');
+        status.className = 'add-status';
+        status.textContent = watchFormStatus || '加入后每天自动搜这个人最近的演讲、播客（进“演讲 & Podcast · AI 演讲”）和新闻（进“简报”），手机、iPad、电脑同步。';
+        if (watchFormStatus) status.className = 'add-status ok';
+        watchFormStatus = '';
+        form.append(nameRow, noteRow, status);
+        form.addEventListener('submit', async event => {
+          event.preventDefault();
+          const names = nameInput.value.split(/\s*[/／,，、]\s*/).map(name => name.trim()).filter(Boolean);
+          if (!names.length) {
+            status.textContent = '先填名字。';
+            status.className = 'add-status error';
+            return;
+          }
+          const taken = watchGroups().find(group => group.people)?.items.find(item => item.aliases.some(alias => names.some(name => name.toLowerCase() === alias.toLowerCase())));
+          if (taken) {
+            status.textContent = `${taken.name} 已经在名单里了。`;
+            status.className = 'add-status error';
+            return;
+          }
+          submit.disabled = true;
+          await saveAddedRow({ key: `watch:${names[0]}`, url: noteInput.value.trim() || ' ', title: names.join(' / '), author: '', published: '', created_at: new Date().toISOString() });
+          watchFormStatus = `已加入 ${names[0]}${addedShared ? '' : '（在线保存暂时连不上，先存在这台设备；连上之后自动搜索才会生效）'}。下一次自动更新（每天早上）开始搜他/她的演讲和新闻。`;
+          renderWatchlist();
+        });
+        return form;
+      };
+      // An added person's row gets a 移除 button beside it (tap twice: confirm() is blocked on some iPads).
+      const watchRemoveRow = (row, entity) => {
+        const wrap = document.createElement('div');
+        wrap.className = 'watch-added';
+        row.replaceWith(wrap);
+        const remove = document.createElement('button');
+        remove.type = 'button';
+        remove.className = 'book-delete';
+        remove.textContent = '移除';
+        remove.addEventListener('click', () => {
+          if (!remove.classList.contains('armed')) {
+            remove.classList.add('armed');
+            remove.textContent = '确认移除？';
+            setTimeout(() => { remove.classList.remove('armed'); remove.textContent = '移除'; }, 4000);
+            return;
+          }
+          removeAdded(entity.key);
+          watchFormStatus = `已移除 ${entity.name}。`;
+          renderWatchlist();
+        });
+        wrap.append(row, remove);
+        return wrap;
       };
 
       // Shows the card in its tab; a watched card is hidden in the feed, so it opens on YouTube or the source instead.
@@ -2703,7 +2800,7 @@
         if (watchlistBack.hidden) renderWatchlist();
         else {
           const name = watchlistTitle.textContent;
-          const entity = watchlistData.groups.flatMap(group => group.items).find(item => item.name === name);
+          const entity = watchGroups().flatMap(group => group.items).find(item => item.name === name);
           if (entity) renderEntity(entity);
         }
       });

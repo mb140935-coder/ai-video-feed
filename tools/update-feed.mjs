@@ -271,7 +271,19 @@ try {
 } catch (error) {
   report.push(`watchlist: not read (${error.message})`);
 }
-const people = watchlist?.groups.find(group => group.people)?.items || [];
+// People added to the AI 追踪名单 on the page: "watch:<name>" rows in added_videos (title = names, "杨植麟 / Yang
+// Zhilin"; url = who they are). They go first in the 重点人物 group, so the YouTube search reaches them before the
+// day's quota runs out, and the news search covers them too. When the table can't be read, last run's list is used.
+const watchAdded = addedRows ? addedRows.filter(row => row.key.startsWith('watch:')).map(row => {
+  const { names } = personFromRow(row);
+  return { name: names[0], url: '', note: String(row.url || '').trim() || '你手动加入的人物', aliases: names, added: true };
+}) : previous.watchAdded || [];
+const peopleGroup = watchlist?.groups.find(group => group.people);
+if (peopleGroup) {
+  const known = new Set(peopleGroup.items.flatMap(item => item.aliases.map(alias => alias.toLowerCase())));
+  peopleGroup.items = [...watchAdded.filter(item => !item.aliases.some(alias => known.has(alias.toLowerCase()))), ...peopleGroup.items];
+}
+const people = peopleGroup?.items || [];
 // 人物访谈 list from the page; null when the table can't be read (their videos are then kept as they are).
 const interviewPeople = addedRows ? addedRows.filter(row => row.key.startsWith('person:')).map(personFromRow) : null;
 const sourceFor = item => allSources.find(source => source.channel === item.channelId || (!source.key && source.name === item.channel));
@@ -348,7 +360,7 @@ try {
 const videos = { ...(previous.videos || {}) };
 if (addedRows) {
   try {
-    const rows = addedRows.filter(row => !/^(channel|person):/.test(row.key) && !videos[row.key]?.published);
+    const rows = addedRows.filter(row => !/^(channel|person|watch):/.test(row.key) && !videos[row.key]?.published);
     const youtubeRows = rows.filter(row => row.key.startsWith('youtube:'));
     const details = await youtubeDetails(youtubeRows.map(row => row.key.slice('youtube:'.length)));
     youtubeRows.forEach(row => { if (details[row.key.slice('youtube:'.length)]) videos[row.key] = details[row.key.slice('youtube:'.length)]; });
@@ -411,7 +423,7 @@ Object.values(channels).forEach(info => { if (info.id) info.count = kept.filter(
 // The full description only feeds the highlight; it is not kept in the feed.
 Object.values(videos).forEach(info => { delete info.description; });
 
-const content = { items: kept, videos, channels, people: peopleState, peopleRejected, news, ...digest };
+const content = { items: kept, videos, channels, people: peopleState, peopleRejected, watchAdded, news, ...digest };
 const { updated: previousUpdated, ...previousContent } = previous;
 const unchanged = JSON.stringify(previousContent) === JSON.stringify(content);
 fs.writeFileSync(outPath, `${JSON.stringify({ updated: unchanged ? previousUpdated : new Date().toISOString(), ...content }, null, 1)}\n`);

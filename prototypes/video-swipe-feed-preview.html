@@ -223,7 +223,7 @@
     @media (min-width: 600px) and (orientation: portrait), (min-width: 600px) and (pointer: coarse) {
       .shell { padding: 0; }
       /* Snap cards below the sticky tab bar (63px here) so their top line is not hidden under it. */
-      .phone { width: 100%; height: 100dvh; min-height: 0; border: 0; border-radius: 0; box-shadow: none; scroll-padding-top: 63px; }
+      .phone { width: 100%; height: 100dvh; min-height: 0; border: 0; border-radius: 0; box-shadow: none; scroll-padding-top: calc(63px + var(--subbar, 0px)); }
       .tabbar { padding: 10px max(24px, calc(50% - 400px)); gap: 10px; }
       .tab { font-size: 14px; min-height: 42px; }
       .menu-button { width: 44px; height: 42px; }
@@ -263,7 +263,7 @@
     /* Computer (mouse, wide window): fill the window, video on the left, text on the right. */
     @media (min-width: 900px) and (orientation: landscape) and (pointer: fine) {
       .shell { padding: 0; }
-      .phone { width: 100%; height: 100vh; min-height: 0; border: 0; border-radius: 0; box-shadow: none; scroll-padding-top: 55px; scrollbar-width: thin; }
+      .phone { width: 100%; height: 100vh; min-height: 0; border: 0; border-radius: 0; box-shadow: none; scroll-padding-top: calc(55px + var(--subbar, 0px)); scrollbar-width: thin; }
       .tabbar { padding: 8px max(32px, calc(50% - 720px)); }
       .tab { font-size: 14px; }
       .card { height: calc(100vh - 55px - var(--subbar, 0px)); min-height: 0; }
@@ -3919,7 +3919,10 @@
         feed.classList.toggle('with-subbar', show);
         if (show) feed.style.setProperty('--tabbar-h', `${document.querySelector('.tabbar').offsetHeight}px`);
       };
-      window.addEventListener('resize', () => { if (!subbar.hidden) showSubbar(true); });
+      // The tab bar's height changes with the layout (phone, iPad, computer), so the sub-bar follows it.
+      const followTabbar = () => { if (!subbar.hidden) showSubbar(true); };
+      if (window.ResizeObserver) new ResizeObserver(followTabbar).observe(document.querySelector('.tabbar'));
+      window.addEventListener('resize', followTabbar);
       sectionButtons.forEach(button => button.addEventListener('click', () => {
         appearanceSection = button.dataset.section;
         sectionButtons.forEach(other => {

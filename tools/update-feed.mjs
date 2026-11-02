@@ -7,6 +7,8 @@
 //    stories by score, plus 本周大事 (digest.mjs).
 // 4. Shelf life: 演讲 & Podcast videos go once they are older than their content type allows (SHELF_DAYS: product
 //    updates 3 months, industry judgment and untyped 1 year, method never). Sports and Olympic videos and 精选 stay.
+// 5. 人物访谈: interviews and talks of the people listed on the page, from YouTube and Bilibili (people.mjs). They
+//    never expire; the page hides the ones marked 已看.
 // With a YOUTUBE_API_KEY (YouTube Data API v3) it also drops videos under MIN_MINUTES and dates hand-added
 // YouTube videos; without one those two steps are skipped and the title rules below do the filtering.
 // Usage: node update-feed.mjs <path to auto-feed.json>   (read if present, then rewritten)
@@ -14,6 +16,7 @@ import fs from 'fs';
 import { collectNews } from './news.mjs';
 import { summarizeNews, highlightVideos, VIDEO_HIGHLIGHTS_PER_RUN } from './summarize.mjs';
 import { buildDigest } from './digest.mjs';
+import { personFromRow, searchPeople, PEOPLE_TITLE_OK } from './people.mjs';
 
 const AI = /\bAI\b|A\.I\.|artificial intelligence|machine learning|\bLLMs?\b|\bGPT|agent|chatbot|ChatGPT|Claude|Gemini|Qwen|Kimi|DeepSeek|robot|人工智能|大模型|模型|智能体|机器人|具身/i;
 const OLYMPIC = /olympi|paralympi|\bIOC\b|奥运|奥林匹克|冬奥/i;
@@ -26,7 +29,7 @@ const MAX_ITEMS = 300;
 // Days a 演讲 & Podcast video stays, by kind (summarize.mjs); untyped videos count as judgment.
 const SHELF_DAYS = { product: 90, judgment: 365 };
 const SPORTS_TAG = /奥运|体育/;
-const expired = item => item.tab !== 'curated' && !item.sports && !OLYMPIC.test(item.title) && !(item.tags || []).some(tag => SPORTS_TAG.test(tag))
+const expired = item => item.tab !== 'curated' && item.tab !== 'people' && !item.sports && !OLYMPIC.test(item.title) && !(item.tags || []).some(tag => SPORTS_TAG.test(tag))
   && item.kind !== 'method' && Date.parse(item.published) < Date.now() - SHELF_DAYS[item.kind || 'judgment'] * 86400000;
 const MIN_MINUTES = 5;
 // Person search (YouTube Data API, 100 quota units per person of the free 10,000 a day).
@@ -269,11 +272,19 @@ try {
   report.push(`watchlist: not read (${error.message})`);
 }
 const people = watchlist?.groups.find(group => group.people)?.items || [];
+// 人物访谈 list from the page; null when the table can't be read (their videos are then kept as they are).
+const interviewPeople = addedRows ? addedRows.filter(row => row.key.startsWith('person:')).map(personFromRow) : null;
 const sourceFor = item => allSources.find(source => source.channel === item.channelId || (!source.key && source.name === item.channel));
 // Earlier items stay only while they still pass the current rules (and their channel is still followed).
 const items = new Map((previous.items || [])
   .filter(item => {
     // Found by the person search: kept (until its shelf life ends), whatever channel it is on, while its title passes.
+    // 人物访谈: kept while the person is still on the list and the title still passes.
+    if (item.via === 'people') {
+      if (!interviewPeople) return true;
+      const person = interviewPeople.find(entry => entry.name === item.person);
+      return person && PEOPLE_TITLE_OK(person, item.title);
+    }
     if (item.via === 'person') {
       const person = people.find(entry => entry.name === item.tags?.[1]);
       return person && speaking(item.title, person);
@@ -293,6 +304,16 @@ for (const source of allSources) {
     report.push(`${source.name}: ${found.length} new`);
   } catch (error) {
     report.push(`${source.name || source.channel}: FAILED ${error.message}`);
+  }
+}
+
+// 人物访谈 first: the watchlist search below can use up the day's YouTube quota.
+let peopleState = previous.people || {};
+if (interviewPeople) {
+  try {
+    peopleState = await searchPeople(interviewPeople, items, previous.people || {}, report, YOUTUBE_API_KEY);
+  } catch (error) {
+    report.push(`people: FAILED ${error.message}`);
   }
 }
 
@@ -326,7 +347,7 @@ try {
 const videos = { ...(previous.videos || {}) };
 if (addedRows) {
   try {
-    const rows = addedRows.filter(row => !row.key.startsWith('channel:') && !videos[row.key]?.published);
+    const rows = addedRows.filter(row => !/^(channel|person):/.test(row.key) && !videos[row.key]?.published);
     const youtubeRows = rows.filter(row => row.key.startsWith('youtube:'));
     const details = await youtubeDetails(youtubeRows.map(row => row.key.slice('youtube:'.length)));
     youtubeRows.forEach(row => { if (details[row.key.slice('youtube:'.length)]) videos[row.key] = details[row.key.slice('youtube:'.length)]; });
@@ -339,9 +360,12 @@ if (addedRows) {
   }
 }
 
-let kept = [...items.values()]
-  .sort((a, b) => b.published.localeCompare(a.published))
-  .slice(0, MAX_ITEMS);
+// 人物访谈 items don't count toward MAX_ITEMS: they stay until marked 已看 or the person is removed.
+const newestFirst = (a, b) => b.published.localeCompare(a.published);
+let kept = [
+  ...[...items.values()].filter(item => item.via !== 'people').sort(newestFirst).slice(0, MAX_ITEMS),
+  ...[...items.values()].filter(item => item.via === 'people').sort(newestFirst)
+];
 // Keep the old timestamp when nothing changed, so the job doesn't commit an identical file.
 let news = previous.news || [];
 const newsStats = {};
@@ -362,13 +386,14 @@ try {
 // on later runs).
 try {
   const pending = [
-    ...kept.filter(item => item.key.startsWith('youtube:')).map(item => ({ key: item.key, title: item.title, channel: item.channel, published: item.published, target: item })),
+    ...kept.filter(item => /^(youtube|bilibili):/.test(item.key)).map(item => ({ key: item.key, title: item.title, channel: item.channel, published: item.published, target: item })),
     ...Object.entries(videos).filter(([key]) => key.startsWith('youtube:')).map(([key, info]) => ({ key, title: info.title, channel: info.author, published: info.published, target: info }))
   ].filter(entry => !entry.target.highlight || !entry.target.kind)
     .sort((a, b) => (b.published || '').localeCompare(a.published || ''))
     .slice(0, VIDEO_HIGHLIGHTS_PER_RUN);
-  const details = await youtubeDetails(pending.map(entry => entry.key.slice('youtube:'.length)));
-  pending.forEach(entry => { entry.description = details[entry.key.slice('youtube:'.length)]?.description || ''; });
+  const details = await youtubeDetails(pending.filter(entry => entry.key.startsWith('youtube:')).map(entry => entry.key.slice('youtube:'.length)));
+  // Bilibili has no details call here; its search snippet is the description.
+  pending.forEach(entry => { entry.description = details[entry.key.slice('youtube:'.length)]?.description || entry.target.summary || ''; });
   await highlightVideos(pending, report);
 } catch (error) {
   report.push(`video highlights: FAILED ${error.message}`);
@@ -380,7 +405,7 @@ Object.values(channels).forEach(info => { if (info.id) info.count = kept.filter(
 // The full description only feeds the highlight; it is not kept in the feed.
 Object.values(videos).forEach(info => { delete info.description; });
 
-const content = { items: kept, videos, channels, news, ...digest };
+const content = { items: kept, videos, channels, people: peopleState, news, ...digest };
 const { updated: previousUpdated, ...previousContent } = previous;
 const unchanged = JSON.stringify(previousContent) === JSON.stringify(content);
 fs.writeFileSync(outPath, `${JSON.stringify({ updated: unchanged ? previousUpdated : new Date().toISOString(), ...content }, null, 1)}\n`);

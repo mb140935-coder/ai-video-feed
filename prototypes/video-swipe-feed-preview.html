@@ -118,6 +118,16 @@
     .add-status.error { color: var(--error); }
     .add-status.ok { color: var(--green); }
     .add-section { padding: 12px 18px 4px; font-weight: 700; }
+    /* 演讲 & Podcast: AI 演讲 / 人物访谈 switch and the person chips. */
+    .section-switch { display: flex; gap: 6px; padding: 12px 18px 0; }
+    .section-button { flex: 1; min-height: 38px; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 12px; background: var(--raised); color: var(--muted); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+    .section-button.active { border-color: var(--text); background: var(--text); color: var(--surface); }
+    .person-bar { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 18px 0; }
+    .person-bar[hidden] { display: none; }
+    .person-chip { min-height: 32px; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 12px; background: var(--raised); color: var(--text); font: inherit; font-size: 12px; cursor: pointer; }
+    .person-chip.active { border-color: var(--accent-line); color: var(--accent-text); font-weight: 700; }
+    .person-chip.manage { color: var(--accent-text); }
+    .history-item button.armed { border-color: #c0392b; background: #c0392b; color: #fff; }
     .note-form textarea, .note-form input { width: 100%; border: 1px solid var(--line-strong); border-radius: 10px; padding: 11px; background: var(--surface); color: var(--text); font: inherit; font-size: 16px; line-height: 1.5; outline: none; resize: vertical; }
     .note-form textarea:focus, .note-form input:focus { border-color: var(--accent); }
     .note-form input[hidden] { display: none; }
@@ -522,6 +532,17 @@
           <div class="history-list" id="add-video-list"></div>
         </div>
       </div>
+      <div class="history-sheet" id="people-sheet" role="dialog" aria-modal="true" aria-labelledby="people-title" hidden>
+        <div class="history-panel">
+          <div class="history-head"><span id="people-title">人物访谈 · 追踪名单</span><button type="button" id="people-close">关闭</button></div>
+          <form class="add-form" id="people-form">
+            <div class="add-row"><input id="people-name" type="text" autocomplete="off" placeholder="名字，如 王坚；英文名用 / 隔开" aria-label="名字"></div>
+            <div class="add-row"><input id="people-keywords" type="text" autocomplete="off" placeholder="身份关键词，如 阿里云 城市大脑 院士" aria-label="身份关键词"><button type="submit" id="people-submit">加入</button></div>
+            <div class="add-status" id="people-status">每天早上自动在 YouTube 和 B 站搜这个人的完整访谈、对话和演讲（含毕业演讲），不要剪辑片段。身份关键词用来排除同名的人：视频标题、简介或标签里至少要出现一个。名字不常见可以不填。</div>
+          </form>
+          <div class="history-list" id="people-list"></div>
+        </div>
+      </div>
       <div class="feed-panel" id="feed-briefs" role="tabpanel" aria-labelledby="tab-briefs" hidden>
         <section class="digest" id="digest" aria-label="今日重点" hidden></section>
         <div class="feed-note" id="brief-note">文字简报：没有视频或音频的资讯、文字稿和资源索引。已有视频的内容不在这里重复。</div>
@@ -841,6 +862,11 @@
       <div class="feed-note" id="curated-empty" hidden>这批精选视频都已看过；新增内容后会继续出现在这里。</div>
       </div>
       <div class="feed-panel" id="feed-appearances" role="tabpanel" aria-labelledby="tab-appearances" hidden>
+        <div class="section-switch" role="group" aria-label="板块">
+          <button type="button" class="section-button active" data-section="ai" aria-pressed="true">AI 演讲 &amp; Podcast</button>
+          <button type="button" class="section-button" data-section="people" aria-pressed="false">人物访谈</button>
+        </div>
+        <div class="person-bar" id="person-bar" hidden></div>
         <div class="feed-note">
           <div id="appearance-note">追踪 watchlist 中人物的公开演讲、播客和访谈。这里展示已登记的可核验来源；新发现可持续加入，不受精选 TAB 的每日条数限制。</div>
         </div>
@@ -1417,6 +1443,8 @@
             if (videoId) return `youtube:${videoId}`;
           }
           if (host === 'open.spotify.com' && /^\/episode\//.test(url.pathname)) return `spotify:${url.pathname.split('/')[2]}`;
+          const bvid = host.endsWith('bilibili.com') && url.pathname.match(/^\/video\/(BV\w+)/)?.[1];
+          if (bvid) return `bilibili:${bvid}`;
           if (host === 'player.simplecast.com' || host === 'playlist.megaphone.fm') {
             url.search = '';
             return `url:${host}${url.pathname.replace(/\/$/, '')}`;
@@ -1466,6 +1494,8 @@
             const episodeId = url.pathname.split('/')[2];
             return { url: url.href, sourceUrl, embedUrl: `https://open.spotify.com/embed/episode/${episodeId}`, provider: 'spotify' };
           }
+          const bvid = /(^|\.)bilibili\.com$/.test(url.hostname) && url.pathname.match(/^\/video\/(BV\w+)/)?.[1];
+          if (bvid) return { url: url.href, sourceUrl, embedUrl: `https://player.bilibili.com/player.html?bvid=${bvid}&autoplay=0&danmaku=0&high_quality=1`, provider: 'bilibili' };
           if (url.hostname === 'www.ted.com' && url.pathname.startsWith('/talks/')) {
             const slug = url.pathname.split('/')[2]?.replace(/\.html$/, '');
             if (slug) return { url: url.href, sourceUrl, embedUrl: `https://embed.ted.com/talks/lang/en/${encodeURIComponent(slug)}`, provider: 'ted' };
@@ -1590,6 +1620,8 @@
         card.dataset.search = [item.name, item.appearance_title, item.format, item.publisher].join(' ').toLocaleLowerCase();
         if (item.sortDate) card.dataset.published = item.sortDate;
         if (item.kind) card.dataset.kind = item.kind;
+        if (item.section) card.dataset.section = item.section;
+        if (item.person) card.dataset.person = item.person;
         if (item.sports === true || item.sports === 'true') card.dataset.sports = 'true';
         const top = document.createElement('div');
         top.className = 'top';
@@ -1620,7 +1652,7 @@
           frame.dataset.appearanceMedia = 'true';
           // No extra link: the YouTube logo in the player already opens the video on YouTube.
           playerArea.appendChild(frame);
-        } else if (['spotify', 'simplecast', 'megaphone', 'ted', 'vimeo'].includes(media?.provider)) {
+        } else if (['spotify', 'simplecast', 'megaphone', 'ted', 'vimeo', 'bilibili'].includes(media?.provider)) {
           if (['spotify', 'simplecast', 'megaphone'].includes(media.provider)) playerArea.classList.add('audio-player');
           const frame = document.createElement('iframe');
           frame.title = `${item.name} — ${item.appearance_title}`;
@@ -1637,15 +1669,18 @@
           }
           if (media.provider === 'vimeo') frame.allow = 'autoplay; fullscreen; picture-in-picture';
           playerArea.appendChild(frame);
-          const fallback = document.createElement('a');
-          fallback.className = 'player-fallback';
-          fallback.href = media.url;
-          fallback.target = '_self';
-          fallback.textContent = media.provider === 'spotify' ? '播放器不可用？打开 Spotify'
-            : media.provider === 'simplecast' ? '播放器不可用？打开发布方'
-            : media.provider === 'megaphone' ? '播放器不可用？打开发布方'
-            : `播放器不可用？打开 ${media.provider === 'ted' ? 'TED' : 'Vimeo'}`;
-          playerArea.appendChild(fallback);
+          // The Bilibili player links to the video itself.
+          if (media.provider !== 'bilibili') {
+            const fallback = document.createElement('a');
+            fallback.className = 'player-fallback';
+            fallback.href = media.url;
+            fallback.target = '_self';
+            fallback.textContent = media.provider === 'spotify' ? '播放器不可用？打开 Spotify'
+              : media.provider === 'simplecast' ? '播放器不可用？打开发布方'
+              : media.provider === 'megaphone' ? '播放器不可用？打开发布方'
+              : `播放器不可用？打开 ${media.provider === 'ted' ? 'TED' : 'Vimeo'}`;
+            playerArea.appendChild(fallback);
+          }
         } else {
           const preview = document.createElement('div');
           preview.className = 'appearance-preview';
@@ -1679,11 +1714,11 @@
         const episode = item.cardText || episodeNotes[watchKey] || episodeNotes[canonicalMediaKey(item.official_publisher_url)];
         makeText(details, 'h1', '', item.appearance_title);
         makeText(details, 'div', 'source', `${item.name} · ${item.publisher}`);
-        makeText(details, 'div', 'person-context-label', '人物 · AI 关联');
+        makeText(details, 'div', 'person-context-label', item.section === 'people' ? '人物' : '人物 · AI 关联');
         makeText(details, 'p', 'person-context', episode?.person || personAIContext[item.person_id] || '人物背景尚待核实；这条内容先保留发布方的讲者信息和原始播放入口。');
         makeText(details, 'div', 'highlight-label', '内容重点');
         makeText(details, 'p', 'highlight', episode?.highlight || getAppearanceHighlight(item));
-        const stateLabel = media?.provider === 'youtube' || media?.provider === 'ted' || media?.provider === 'vimeo'
+        const stateLabel = ['youtube', 'ted', 'vimeo', 'bilibili'].includes(media?.provider)
           ? '官方视频播放器 · 滑到本卡时加载；离开时停止'
           : ['spotify', 'simplecast', 'megaphone'].includes(media?.provider) ? '官方音频播放器 · 滑到本卡时加载；离开时停止'
           : item.status === 'verified' ? '已核验发布方页面 · 当前站点未确认可嵌入' : '来源待复核';
@@ -1691,7 +1726,7 @@
         const actions = document.createElement('div');
         actions.className = 'actions';
         // Videos play in the card's own player, so only audio and plain pages get an outside link.
-        if (media && !['youtube', 'ted', 'vimeo'].includes(media.provider)) {
+        if (media && !['youtube', 'ted', 'vimeo', 'bilibili'].includes(media.provider)) {
           const link = document.createElement('a');
           link.className = 'primary';
           link.href = media.url;
@@ -1777,15 +1812,15 @@
             .filter(Boolean));
           const unique = registeredEntries.filter(item => !curatedMediaKeys.has(appearanceMediaKey(item)));
           const excludedDuplicates = registeredEntries.length - unique.length;
-          const entries = unique.filter(item => favorites.has(canonicalMediaKey(item.official_media_url) || `${canonicalMediaKey(item.official_publisher_url)}:${item.appearance_title}`)
+          const entries = unique.filter(item => item.section === 'people' || favorites.has(canonicalMediaKey(item.official_media_url) || `${canonicalMediaKey(item.official_publisher_url)}:${item.appearance_title}`)
             || !shelfExpired({ kind: item.kind, sports: item.sports === true || item.sports === 'true', date: item.published_date, text: `${(item.tags || []).join(' ')} ${item.appearance_title}` }));
           const expiredCount = unique.length - entries.length;
           appearanceTotal = entries.length;
           appearanceCount.textContent = `${entries.length} 条`;
-          const inAppCount = entries.filter(item => ['youtube', 'spotify', 'simplecast', 'megaphone', 'ted', 'vimeo'].includes(mediaLink(item)?.provider)).length;
+          const inAppCount = entries.filter(item => ['youtube', 'spotify', 'simplecast', 'megaphone', 'ted', 'vimeo', 'bilibili'].includes(mediaLink(item)?.provider)).length;
           const audioCount = entries.filter(item => ['spotify', 'simplecast', 'megaphone'].includes(mediaLink(item)?.provider)).length;
-          const autoCount = entries.filter(item => item.autoDiscovered).length;
-          appearanceSummary = `共 ${entries.length} 条，其中 ${autoCount} 条是每天自动从关注频道发现的新视频${autoFeedUpdated()}；已自动排除精选 TAB 中重复的 ${excludedDuplicates} 条${expiredCount ? `，按保质期移除过时的 ${expiredCount} 条` : ''}。${inAppCount} 条支持卡内官方播放器（其中 ${audioCount} 条是音频），其余保留发布方原页。`;
+          const autoCount = entries.filter(item => item.autoDiscovered && item.section !== 'people').length;
+          appearanceSummary = `共 ${entries.filter(item => item.section !== 'people').length} 条，其中 ${autoCount} 条是每天自动从关注频道发现的新视频${autoFeedUpdated()}；已自动排除精选 TAB 中重复的 ${excludedDuplicates} 条${expiredCount ? `，按保质期移除过时的 ${expiredCount} 条` : ''}。${inAppCount} 条支持卡内官方播放器（其中 ${audioCount} 条是音频），其余保留发布方原页。`;
           appearanceNote.textContent = appearanceSummary;
           entries.sort(newestFirst(item => item.published_date)).forEach((item, index) => renderAppearance(item, index, entries.length));
           appearanceCards.querySelectorAll(':scope > .card:not([data-home])').forEach((card, index) => { card.dataset.seq = String(index); });
@@ -2102,17 +2137,17 @@
       // for hand-added videos. It lives on the auto-feed branch so pushes of the site never conflict with it.
       // ?feed=<url> reads another copy instead, for checking a local run of the job before it is pushed.
       const AUTO_FEED_URL = new URLSearchParams(location.search).get('feed') || 'https://raw.githubusercontent.com/mb140935-coder/ai-video-feed/auto-feed/auto-feed.json';
-      let autoFeed = { updated: '', items: [], videos: {}, channels: {}, news: [], digests: [], weekly: [] };
+      let autoFeed = { updated: '', items: [], videos: {}, channels: {}, people: {}, news: [], digests: [], weekly: [] };
       const autoFeedPromise = fetch(AUTO_FEED_URL, { cache: 'no-store' })
         .then(response => response.ok ? response.json() : null)
         .catch(() => null)
         .then(data => {
-          autoFeed = { updated: data?.updated || '', items: Array.isArray(data?.items) ? data.items : [], videos: data?.videos || {}, channels: data?.channels || {}, news: Array.isArray(data?.news) ? data.news : [], digests: Array.isArray(data?.digests) ? data.digests : [], weekly: Array.isArray(data?.weekly) ? data.weekly : [] };
+          autoFeed = { updated: data?.updated || '', items: Array.isArray(data?.items) ? data.items : [], videos: data?.videos || {}, channels: data?.channels || {}, people: data?.people || {}, news: Array.isArray(data?.news) ? data.news : [], digests: Array.isArray(data?.digests) ? data.digests : [], weekly: Array.isArray(data?.weekly) ? data.weekly : [] };
           return autoFeed;
         });
       const autoFeedUpdated = () => autoFeed.updated ? `（最近更新：${new Date(autoFeed.updated).toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}）` : '';
 
-      const autoFeedItem = entry => ({
+      const autoFeedItem = entry => entry.tab === 'people' ? peopleFeedItem(entry) : ({
         person_id: 'auto',
         name: entry.channel,
         appearance_title: entry.title,
@@ -2134,6 +2169,33 @@
         autoDiscovered: true
       });
 
+      // 人物访谈 (people.mjs in the daily job): no content type or shelf life; hidden once marked 已看.
+      const peopleFeedItem = entry => {
+        const site = entry.key.startsWith('bilibili:') ? 'B 站' : 'YouTube';
+        const keywords = (autoFeed.people[entry.person]?.keywords || '').trim();
+        return {
+          person_id: 'people',
+          name: entry.person,
+          appearance_title: entry.title,
+          format: '人物访谈',
+          publisher: site,
+          official_publisher_url: entry.url,
+          official_media_url: entry.url,
+          status: 'verified',
+          published_date: entry.published,
+          sortDate: entry.published,
+          section: 'people',
+          person: entry.person,
+          tags: [entry.person],
+          brand: ['人物访谈', `${entry.person} · ${site} · ${entry.channel}${entry.minutes ? ` · 约 ${entry.minutes} 分钟` : ''}`],
+          cardText: {
+            person: `${entry.person}${keywords ? `（${keywords.split(/\s+/).join(' · ')}）` : ''}。上传者：${entry.channel}。`,
+            highlight: entry.highlight ? `${entry.highlight}（AI 根据发布方简介整理）` : entry.summary ? `发布方简介摘录（自动抓取，未人工整理）：${entry.summary}` : '发布方没有提供简介；这里不推测内容。'
+          },
+          autoDiscovered: true
+        };
+      };
+
       // Keeps 精选视频 newest first for cards that arrive after the initial sort.
       const insertCuratedCard = card => {
         const date = card.dataset.published || '';
@@ -2151,13 +2213,18 @@
       let addedRows = [];
       let addedShared = false;
       const addSheet = document.getElementById('add-video');
+      const peopleSheet = document.getElementById('people-sheet');
+      const personName = row => String(row.title || row.key.slice('person:'.length)).split(/\s*[/／,，、]\s*/)[0].trim();
       const addForm = document.getElementById('add-video-form');
       const addInput = document.getElementById('add-video-url');
       const addSubmit = document.getElementById('add-video-submit');
       const addStatus = document.getElementById('add-video-status');
       const addList = document.getElementById('add-video-list');
       const isChannelRow = row => row.key.startsWith('channel:');
-      const addedVideoRows = () => addedRows.filter(row => !isChannelRow(row));
+      // 人物访谈 list: "person:<name>" rows, title = names, url = identity keywords (tools/people.mjs).
+      const isPersonRow = row => row.key.startsWith('person:');
+      const personRows = () => addedRows.filter(isPersonRow);
+      const addedVideoRows = () => addedRows.filter(row => !isChannelRow(row) && !isPersonRow(row));
       const addedChannelRows = () => addedRows.filter(isChannelRow);
 
       const readLocalAdded = () => {
@@ -2232,7 +2299,7 @@
 
       const renderAddedList = () => {
         addList.replaceChildren();
-        if (!addedRows.length) {
+        if (!addedRows.some(row => !isPersonRow(row))) {
           makeText(addList, 'div', 'history-empty', '还没有手动添加的视频或频道。在 YouTube 或 Vimeo 里点“分享 → 复制链接”，或复制频道主页地址（如 youtube.com/@名字），粘贴到上面就行。');
           return;
         }
@@ -2264,8 +2331,15 @@
           if (!addedCards.has(video.key)) addedCards.set(video.key, renderAppearance(addedItem(video), 0, 1, insertCuratedCard));
         });
         refreshCuratedCounters();
-        document.getElementById('added-count').textContent = addedRows.length ? String(addedRows.length) : '';
+        const ownCount = addedRows.filter(row => !isPersonRow(row)).length;
+        document.getElementById('added-count').textContent = ownCount ? String(ownCount) : '';
         if (!addSheet.hidden) renderAddedList();
+        const peopleNow = personRows().map(row => `${row.key}=${row.url}`).join('|');
+        if (peopleNow !== peopleSignature) {
+          peopleSignature = peopleNow;
+          if (appearancesLoaded) appearanceSearch.dispatchEvent(new Event('input'));
+        }
+        if (!peopleSheet.hidden) renderPeopleList();
       };
 
       const saveAddedShared = async rows => {
@@ -2424,6 +2498,7 @@
         if (event.key !== 'Escape') return;
         historySheet.hidden = true;
         addSheet.hidden = true;
+        peopleSheet.hidden = true;
         watchlistSheet.hidden = true;
         if (!noteSheet.hidden) closeNote();
         setMenuOpen(false);
@@ -3677,21 +3752,163 @@
       // 演讲 & Podcast cards are built in the background too, so the ones added to 精选 show up there right away.
       addedVideosReady.then(() => loadAppearances());
 
+      // 人物访谈: the section switch at the top of 演讲 & Podcast, the person chips, and the list sheet.
+      let appearanceSection = 'ai';
+      let personFilter = '';
+      let peopleSignature = '';
+      const personBar = document.getElementById('person-bar');
+      const sectionButtons = [...document.querySelectorAll('.section-button')];
+      const peopleForm = document.getElementById('people-form');
+      const peopleName = document.getElementById('people-name');
+      const peopleKeywords = document.getElementById('people-keywords');
+      const peopleStatus = document.getElementById('people-status');
+      const peopleList = document.getElementById('people-list');
+      const peopleDefaultStatus = peopleStatus.textContent;
+      const unwatchedFor = name => [...appearanceCards.querySelectorAll(':scope > .card[data-section="people"]')]
+        .filter(card => (!name || card.dataset.person === name) && !watchedItems.has(card.querySelector('.watch-toggle')?.dataset.watchKey)).length;
+      // What the daily job did for each person (auto-feed.json "people").
+      const peopleState = name => {
+        const state = autoFeed.people[name];
+        if (!state?.searched) return state?.bilibili && state.bilibili !== 'ok' ? `B 站没搜成（${state.bilibili}），下次更新重试` : '等下一次自动更新（每天早上一次）';
+        const failed = [state.bilibili !== 'ok' && 'B 站', state.youtube !== 'ok' && 'YouTube'].filter(Boolean);
+        return `${shortDate(state.searched)} 搜过${failed.length ? ` · ${failed.join('、')} 这次没搜成` : ''}`;
+      };
+      const peopleNote = matches => {
+        const names = personRows().map(personName);
+        if (!names.length) return '还没有追踪的人物。点“＋ 加人物”，填名字和身份关键词，每天早上自动在 YouTube 和 B 站搜他们的访谈和演讲。';
+        const blocked = names.some(name => autoFeed.people[name]?.bilibili && autoFeed.people[name].bilibili !== 'ok');
+        const waiting = names.filter(name => !autoFeed.people[name]?.searched);
+        return [
+          matches ? `${personFilter || '全部人物'} · ${matches} 条未看的访谈和演讲（YouTube + B 站，标了已看就不再出现）${autoFeedUpdated()}。` : personFilter ? `${personFilter} 暂时没有未看的访谈。` : '暂时没有未看的访谈。',
+          waiting.length ? `${waiting.join('、')} 刚加入，等下一次自动更新（每天早上一次）。` : '',
+          blocked ? 'B 站这次没搜成，暂时只有 YouTube 的结果。' : ''
+        ].filter(Boolean).join(' ');
+      };
+      const renderPersonBar = () => {
+        personBar.hidden = appearanceSection !== 'people';
+        if (personBar.hidden) return;
+        const names = personRows().map(personName);
+        if (personFilter && !names.includes(personFilter)) personFilter = '';
+        const chip = (label, active, onClick, extra = '') => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = `person-chip${active ? ' active' : ''}${extra}`;
+          button.textContent = label;
+          button.setAttribute('aria-pressed', String(active));
+          button.addEventListener('click', onClick);
+          return button;
+        };
+        const choose = name => () => {
+          personFilter = name;
+          feed.scrollTop = 0;
+          appearanceSearch.dispatchEvent(new Event('input'));
+        };
+        personBar.replaceChildren(
+          chip(`全部 ${unwatchedFor('')}`, !personFilter, choose('')),
+          ...names.map(name => chip(`${name} ${unwatchedFor(name)}`, personFilter === name, choose(name))),
+          chip('＋ 加人物', false, openPeopleSheet, ' manage')
+        );
+      };
+      sectionButtons.forEach(button => button.addEventListener('click', () => {
+        appearanceSection = button.dataset.section;
+        sectionButtons.forEach(other => {
+          other.classList.toggle('active', other === button);
+          other.setAttribute('aria-pressed', String(other === button));
+        });
+        feed.scrollTop = 0;
+        appearanceSearch.dispatchEvent(new Event('input'));
+      }));
+
+      const renderPeopleList = () => {
+        peopleList.replaceChildren();
+        const rows = personRows();
+        if (!rows.length) {
+          makeText(peopleList, 'div', 'history-empty', '名单是空的。');
+          return;
+        }
+        rows.forEach(row => {
+          const name = personName(row);
+          const item = document.createElement('div');
+          item.className = 'history-item';
+          const text = document.createElement('div');
+          text.className = 'history-item-text';
+          makeText(text, 'div', 'history-item-title', row.title || name);
+          makeText(text, 'div', 'history-item-meta', [row.url.trim() ? `关键词：${row.url.trim()}` : '没有身份关键词', `${unwatchedFor(name)} 条未看`, peopleState(name)].join(' · '));
+          item.appendChild(text);
+          // Tap twice to remove: confirm() is blocked on some iPads.
+          const remove = document.createElement('button');
+          remove.type = 'button';
+          remove.textContent = '移除';
+          remove.addEventListener('click', () => {
+            if (!remove.classList.contains('armed')) {
+              remove.classList.add('armed');
+              remove.textContent = '确认移除？';
+              setTimeout(() => { remove.classList.remove('armed'); remove.textContent = '移除'; }, 4000);
+              return;
+            }
+            removeAdded(row.key);
+            peopleStatus.textContent = `已移除 ${name}，相关访谈不再显示。`;
+            peopleStatus.className = 'add-status ok';
+          });
+          item.appendChild(remove);
+          peopleList.appendChild(item);
+        });
+      };
+      function openPeopleSheet() {
+        peopleSheet.hidden = false;
+        peopleStatus.textContent = addedShared ? peopleDefaultStatus : `${peopleDefaultStatus}（在线保存暂时连不上，先存在这台设备；连上之后自动搜索才会生效。）`;
+        peopleStatus.className = 'add-status';
+        renderPeopleList();
+        peopleName.focus();
+      }
+      peopleForm.addEventListener('submit', async event => {
+        event.preventDefault();
+        const names = peopleName.value.split(/\s*[/／,，、]\s*/).map(name => name.trim()).filter(Boolean);
+        const keywords = peopleKeywords.value.split(/[\s,，、/／]+/).map(word => word.trim()).filter(Boolean).join(' ');
+        if (!names.length) {
+          peopleStatus.textContent = '先填名字。';
+          peopleStatus.className = 'add-status error';
+          return;
+        }
+        const key = `person:${names[0]}`;
+        if (addedRows.some(row => row.key === key)) {
+          peopleStatus.textContent = `${names[0]} 已经在名单里了。要改关键词，先移除再加。`;
+          peopleStatus.className = 'add-status error';
+          return;
+        }
+        // url can't be empty in added_videos; a space means no keywords.
+        await saveAddedRow({ key, url: keywords || ' ', title: names.join(' / '), author: '', published: '', created_at: new Date().toISOString() });
+        peopleName.value = '';
+        peopleKeywords.value = '';
+        peopleStatus.textContent = `已加入 ${names[0]}。下一次自动更新（每天早上）会先搜过去两年的访谈，之后每天找新的。`;
+        peopleStatus.className = 'add-status ok';
+      });
+      document.getElementById('people-close').addEventListener('click', () => { peopleSheet.hidden = true; });
+      peopleSheet.addEventListener('click', event => { if (event.target === peopleSheet) peopleSheet.hidden = true; });
+
       appearanceSearch.addEventListener('input', event => {
         const previousActiveCard = activeCard;
         const query = appearanceSearch.value.trim().toLocaleLowerCase();
         let matches = 0;
         // Counts 精选 cards moved in, not those moved out to 精选.
-        if (appearancesLoaded) appearanceTotal = [...appearanceCards.querySelectorAll(':scope > .card')].filter(card => !card.dataset.home || !cardExpired(card)).length;
+        // A search looks in both sections; otherwise only the chosen section (and person) shows.
+        const listed = new Set(personRows().map(personName));
+        const inSection = card => query ? true : appearanceSection === 'people'
+          ? card.dataset.section === 'people' && (!personFilter || card.dataset.person === personFilter)
+          : card.dataset.section !== 'people';
+        const stillListed = card => card.dataset.section !== 'people' || !addedShared || listed.has(card.dataset.person);
+        if (appearancesLoaded) appearanceTotal = [...appearanceCards.querySelectorAll(':scope > .card')].filter(card => inSection(card) && stillListed(card) && (!card.dataset.home || !cardExpired(card))).length;
         appearanceCards.querySelectorAll(':scope > .card').forEach(card => {
           const watchKey = card.querySelector('.watch-toggle')?.dataset.watchKey;
-          const visible = !watchedItems.has(watchKey) && !(card.dataset.home && cardExpired(card)) && (!query || card.dataset.search.includes(query));
+          const visible = inSection(card) && stillListed(card) && !watchedItems.has(watchKey) && !(card.dataset.home && cardExpired(card)) && (!query || card.dataset.search.includes(query));
           card.hidden = !visible;
           if (visible) matches++;
         });
         appearanceCount.textContent = query || matches < appearanceTotal ? `${matches}/${appearanceTotal} 条` : `${appearanceTotal} 条`;
         appearanceNote.textContent = query ? (matches ? `找到 ${matches} 条未看记录。` : '没有未看且匹配的演讲或 Podcast。')
+          : appearanceSection === 'people' ? peopleNote(matches)
           : appearanceTotal > 0 && matches === 0 ? '这批演讲和 Podcast 都已看过；后续新增的未看内容会显示在这里。' : appearanceSummary;
+        renderPersonBar();
         const visibleCards = [...appearanceCards.querySelectorAll(':scope > .card:not([hidden]):not(.is-watched)')];
         visibleCards.forEach((card, index) => {
           const counter = card.querySelector('.counter');

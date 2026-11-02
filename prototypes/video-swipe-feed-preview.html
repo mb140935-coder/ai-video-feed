@@ -137,7 +137,8 @@
     .watch-row-arrow { flex: none; color: var(--faint); }
     .counter { cursor: pointer; pointer-events: auto; }
     .actions button.fav-toggle { cursor: pointer; }
-    .actions button.fav-toggle[aria-pressed="true"] { border-color: var(--fav-line); background: var(--fav-bg); color: var(--fav-text); font-weight: 700; }
+    .actions button.watch-toggle { color: var(--green); border-color: var(--green-line); font-weight: 700; cursor: pointer; }
+    .toast-action { margin-left: 10px; border: 0; padding: 0; background: transparent; color: var(--toast-link); font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
     .counter::after { content: ' ▾'; color: var(--faint); }
     .toc-row .toc-index { flex: none; min-width: 26px; color: var(--faint); font-size: 12px; font-variant-numeric: tabular-nums; }
     .history-item.toc-row { justify-content: flex-start; }
@@ -1037,7 +1038,7 @@
       const applySharedWatchedItems = items => {
         const nextItems = new Set(items);
         pendingSharedChanges.forEach((watched, key) => {
-          if (key.startsWith(FAVORITE_PREFIX)) return;
+          if (isPlacementKey(key)) return;
           if (watched) nextItems.add(key);
           else nextItems.delete(key);
         });
@@ -1092,8 +1093,8 @@
           showSharedSyncStatus('已连接：手机、iPad、电脑共享已看状态', true);
           if (sharedWriteCount === writesBefore) {
             const keys = rows.map(row => row.key).filter(key => typeof key === 'string');
-            applySharedWatchedItems(keys.filter(key => !key.startsWith(FAVORITE_PREFIX)));
-            applySharedFavorites(keys.filter(key => key.startsWith(FAVORITE_PREFIX)).map(key => key.slice(FAVORITE_PREFIX.length)));
+            applySharedWatchedItems(keys.filter(key => !isPlacementKey(key)));
+            applySharedPlacement(keys);
           }
           pendingSharedChanges.forEach((watched, key) => sendSharedWatchChange(key, watched));
         } catch {
@@ -1170,67 +1171,95 @@
         bindWatchedButton(button);
       };
 
-      // ☆ 加入精选: moves a 演讲 & Podcast card into 精选视频 (by date, like the other 精选 cards); taking it out puts it
-      // back in its place, so 演讲 & Podcast keeps its newest-first order. Shared across devices in watched_items as
-      // "fav:<watch key>" rows (no new table needed); this browser keeps a copy for when Supabase is unreachable.
+      // ☆ 加入精选 / ↓ 移出精选: cards move between 精选视频 and 演讲 & Podcast. A 演讲 & Podcast card joins 精选 by date
+      // as a favorite and goes back to its place (data-seq, its newest-first position) when taken out; a 精选 card of its
+      // own (data-home="curated") moves into 演讲 & Podcast by date when taken out. Shared across devices in
+      // watched_items as "fav:<watch key>" and "demote:<watch key>" rows (no new table needed); this browser keeps a
+      // copy for when Supabase is unreachable.
       const FAVORITE_PREFIX = 'fav:';
+      const DEMOTE_PREFIX = 'demote:';
+      const isPlacementKey = key => key.startsWith(FAVORITE_PREFIX) || key.startsWith(DEMOTE_PREFIX);
       const favoritesStorageKey = 'ai-video-feed-favorites-v1';
-      const favorites = (() => {
+      const demotedStorageKey = 'ai-video-feed-demoted-v1';
+      const loadKeySet = storageKey => {
         try {
-          const stored = JSON.parse(localStorage.getItem(favoritesStorageKey) || '[]');
+          const stored = JSON.parse(localStorage.getItem(storageKey) || '[]');
           return new Set(Array.isArray(stored) ? stored : []);
         } catch { return new Set(); }
-      })();
-      const cardKey = card => card?.querySelector('.watch-toggle')?.dataset.watchKey || '';
-      const isFavorite = card => favorites.has(cardKey(card));
-      const syncFavoriteButton = (button, on) => {
-        button.textContent = on ? '★ 已加入精选' : '☆ 加入精选';
-        button.setAttribute('aria-pressed', String(on));
       };
-      // 演讲 & Podcast cards carry data-seq (their newest-first position) so they can go back where they were.
+      const favorites = loadKeySet(favoritesStorageKey);
+      const demoted = loadKeySet(demotedStorageKey);
+      const cardKey = card => card?.querySelector('.watch-toggle')?.dataset.watchKey || '';
+      const belongsInCurated = card => card.dataset.home ? !demoted.has(cardKey(card)) : favorites.has(cardKey(card));
+      // Registered (CSV) cards show their date only in the badge.
+      const cardDate = card => card.dataset.published || card.querySelector('.pub-date')?.textContent.match(/\d{4}-\d{2}-\d{2}/)?.[0] || '';
+      const syncFavoriteButton = button => {
+        button.textContent = button.closest('#feed-curated') ? '↓ 移出精选' : '☆ 加入精选';
+      };
+      const insertAppearanceCard = card => {
+        const date = cardDate(card);
+        const next = [...appearanceCards.querySelectorAll(':scope > .card')].find(other => other !== card && cardDate(other) < date);
+        if (next) next.before(card);
+        else appearanceCards.appendChild(card);
+      };
       const placeFavorites = () => {
         let moved = false;
         appearanceCards.querySelectorAll(':scope > .card').forEach(card => {
-          if (!isFavorite(card)) return;
+          if (!belongsInCurated(card)) return;
           card.hidden = false;
-          // Registered (CSV) cards show their date only in the badge.
-          if (!card.dataset.published) {
-            const date = card.querySelector('.pub-date')?.textContent.match(/\d{4}-\d{2}-\d{2}/)?.[0];
-            if (date) card.dataset.published = date;
-          }
+          if (!card.dataset.published && cardDate(card)) card.dataset.published = cardDate(card);
           insertCuratedCard(card);
           moved = true;
         });
-        document.querySelectorAll('#feed-curated > .card[data-seq]').forEach(card => {
-          if (isFavorite(card)) return;
-          const next = [...appearanceCards.querySelectorAll(':scope > .card[data-seq]')].find(other => Number(other.dataset.seq) > Number(card.dataset.seq));
-          if (next) next.before(card);
-          else appearanceCards.appendChild(card);
+        document.querySelectorAll('#feed-curated > .card').forEach(card => {
+          if (!cardKey(card) || belongsInCurated(card)) return;
+          if (card.dataset.home) insertAppearanceCard(card);
+          else {
+            const next = [...appearanceCards.querySelectorAll(':scope > .card[data-seq]')].find(other => Number(other.dataset.seq) > Number(card.dataset.seq));
+            if (next) next.before(card);
+            else appearanceCards.appendChild(card);
+          }
           moved = true;
         });
         if (moved) {
+          document.querySelectorAll('.fav-toggle').forEach(syncFavoriteButton);
           refreshCuratedCounters();
           appearanceSearch.dispatchEvent(new Event('input'));
         }
       };
-      const saveFavorites = () => {
-        try { localStorage.setItem(favoritesStorageKey, JSON.stringify([...favorites])); } catch { /* Session only. */ }
-        document.querySelectorAll('.fav-toggle').forEach(button => syncFavoriteButton(button, isFavorite(button.closest('.card'))));
+      const savePlacement = () => {
+        try {
+          localStorage.setItem(favoritesStorageKey, JSON.stringify([...favorites]));
+          localStorage.setItem(demotedStorageKey, JSON.stringify([...demoted]));
+        } catch { /* Session only. */ }
         placeFavorites();
       };
-      const applySharedFavorites = keys => {
-        const next = new Set(keys);
-        pendingSharedChanges.forEach((on, key) => {
-          if (!key.startsWith(FAVORITE_PREFIX)) return;
-          if (on) next.add(key.slice(FAVORITE_PREFIX.length));
-          else next.delete(key.slice(FAVORITE_PREFIX.length));
-        });
-        if (next.size === favorites.size && [...next].every(key => favorites.has(key))) return;
-        favorites.clear();
-        next.forEach(key => favorites.add(key));
-        saveFavorites();
+      const applySharedPlacement = keys => {
+        const update = (prefix, set) => {
+          const next = new Set(keys.filter(key => key.startsWith(prefix)).map(key => key.slice(prefix.length)));
+          pendingSharedChanges.forEach((on, key) => {
+            if (!key.startsWith(prefix)) return;
+            if (on) next.add(key.slice(prefix.length));
+            else next.delete(key.slice(prefix.length));
+          });
+          if (next.size === set.size && [...next].every(key => set.has(key))) return false;
+          set.clear();
+          next.forEach(key => set.add(key));
+          return true;
+        };
+        const favoritesChanged = update(FAVORITE_PREFIX, favorites);
+        if (update(DEMOTE_PREFIX, demoted) || favoritesChanged) savePlacement();
       };
-      // On 演讲 & Podcast cards: turns the ☆ 收藏 placeholder into the working button (or adds one).
+      const toggleCurated = card => {
+        const key = cardKey(card);
+        const [set, prefix] = card.dataset.home ? [demoted, DEMOTE_PREFIX] : [favorites, FAVORITE_PREFIX];
+        const on = !set.has(key);
+        if (on) set.add(key);
+        else set.delete(key);
+        sendSharedWatchChange(prefix + key, on);
+        savePlacement();
+      };
+      // Turns the ☆ 收藏 placeholder into the working button (or adds one).
       function addFavoriteButton(card) {
         const actions = card.querySelector('.actions');
         if (!actions || !cardKey(card) || actions.querySelector('.fav-toggle')) return;
@@ -1241,20 +1270,19 @@
           actions.appendChild(button);
         }
         button.classList.add('fav-toggle');
-        syncFavoriteButton(button, isFavorite(card));
+        syncFavoriteButton(button);
         button.addEventListener('click', () => {
-          const key = cardKey(card);
-          const on = !favorites.has(key);
-          if (on) favorites.add(key);
-          else favorites.delete(key);
-          sendSharedWatchChange(FAVORITE_PREFIX + key, on);
-          saveFavorites();
-          showToast([on ? '★ 已加入精选视频。' : '已移出精选，回到「演讲 & Podcast」。'], 3000);
+          toggleCurated(card);
+          showToast([card.closest('#feed-curated') ? '★ 已加入精选视频。' : '已移到「演讲 & Podcast」。', { text: '撤销', action: () => toggleCurated(card) }], 5000);
         });
       }
-      // 精选 cards of their own have no use for the placeholder.
-      const removeSavePlaceholder = card => {
-        [...card.querySelectorAll('.actions button')].find(item => item.textContent.trim() === '☆ 收藏' && !item.classList.contains('fav-toggle'))?.remove();
+      // 已看 sits at the end of the action row, as large as the other buttons.
+      const moveWatchButtonDown = card => {
+        const button = card.querySelector('.tags .watch-toggle');
+        const actions = card.querySelector('.actions');
+        if (!button || !actions) return;
+        button.classList.remove('tag');
+        actions.appendChild(button);
       };
 
       const canonicalMediaKey = rawUrl => {
@@ -1578,8 +1606,10 @@
         addNoteButton(card);
         addAskButton(card);
         place(card);
-        if (card.parentElement === appearanceCards) addFavoriteButton(card);
-        else removeSavePlaceholder(card);
+        if (card.parentElement !== appearanceCards) card.dataset.home = 'curated';
+        addFavoriteButton(card);
+        moveWatchButtonDown(card);
+        if (card.dataset.home) placeFavorites();
         syncWatchedButton(card.querySelector('.watch-toggle'), watchedItems.has(watchKey));
         cardObserver.observe(card);
         return card;
@@ -1618,7 +1648,7 @@
             .map(autoFeedItem);
           const registeredEntries = [...csvEntries, ...autoEntries];
           await addedVideosReady;
-          const curatedMediaKeys = new Set([...document.querySelectorAll('#feed-curated .watch-toggle')]
+          const curatedMediaKeys = new Set([...document.querySelectorAll('.card[data-home] .watch-toggle')]
             .map(button => button.dataset.watchKey)
             .filter(Boolean));
           const entries = registeredEntries.filter(item => !curatedMediaKeys.has(appearanceMediaKey(item)));
@@ -1631,7 +1661,9 @@
           appearanceSummary = `共 ${entries.length} 条，其中 ${autoCount} 条是每天自动从关注频道发现的新视频${autoFeedUpdated()}；已自动排除精选 TAB 中重复的 ${excludedDuplicates} 条。${inAppCount} 条支持卡内官方播放器（其中 ${audioCount} 条是音频），其余保留发布方原页。`;
           appearanceNote.textContent = appearanceSummary;
           entries.sort(newestFirst(item => item.published_date)).forEach((item, index) => renderAppearance(item, index, entries.length));
-          appearanceCards.querySelectorAll(':scope > .card').forEach((card, index) => { card.dataset.seq = String(index); });
+          appearanceCards.querySelectorAll(':scope > .card:not([data-home])').forEach((card, index) => { card.dataset.seq = String(index); });
+          // 精选 cards moved out before these loaded go in among them by date.
+          appearanceCards.querySelectorAll(':scope > .card[data-home]').forEach(insertAppearanceCard);
           placeFavorites();
           appearanceSearch.dispatchEvent(new Event('input'));
         } catch (error) {
@@ -2487,6 +2519,14 @@
         clearTimeout(toastTimer);
         toast.replaceChildren(...parts.map(part => {
           if (typeof part === 'string') return document.createTextNode(part);
+          if (part.action) {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'toast-action';
+            button.textContent = part.text;
+            button.addEventListener('click', () => { toast.hidden = true; part.action(); });
+            return button;
+          }
           const link = document.createElement('a');
           link.href = part.url;
           link.target = '_blank';
@@ -2521,7 +2561,17 @@
         button.addEventListener('click', () => openAskForCard(card));
         actions.appendChild(button);
       }
-      document.querySelectorAll('.card').forEach(card => { removeSavePlaceholder(card); addNoteButton(card); addAskButton(card); });
+      document.querySelectorAll('.card').forEach(card => {
+        if (card.closest('#feed-curated')) {
+          card.dataset.home = 'curated';
+          card.dataset.search = [...card.querySelectorAll('h1, .source, .tags .tag')].map(item => item.textContent).join(' ').toLocaleLowerCase();
+        }
+        addNoteButton(card);
+        addAskButton(card);
+        addFavoriteButton(card);
+        moveWatchButtonDown(card);
+      });
+      placeFavorites();
 
       const openNote = card => {
         const frame = card.querySelector('.player iframe[data-video-id]');
@@ -2863,7 +2913,7 @@
         const rows = await loadAppearanceRows().catch(() => []);
         const knownKeys = new Set([
           ...rows.filter(item => !item.content_type).map(appearanceMediaKey),
-          ...[...document.querySelectorAll('#feed-curated .watch-toggle')].map(button => button.dataset.watchKey)
+          ...[...document.querySelectorAll('.card[data-home] .watch-toggle')].map(button => button.dataset.watchKey)
         ]);
         feed.items.filter(entry => entry.tab === 'curated' && !knownKeys.has(entry.key))
           .forEach(entry => renderAppearance(autoFeedItem(entry), 0, 1, insertCuratedCard));
@@ -2878,7 +2928,9 @@
         const previousActiveCard = activeCard;
         const query = appearanceSearch.value.trim().toLocaleLowerCase();
         let matches = 0;
-        appearanceCards.querySelectorAll('.appearance-card').forEach(card => {
+        // Counts 精选 cards moved in, not those moved out to 精选.
+        if (appearancesLoaded) appearanceTotal = appearanceCards.querySelectorAll(':scope > .card').length;
+        appearanceCards.querySelectorAll(':scope > .card').forEach(card => {
           const watchKey = card.querySelector('.watch-toggle')?.dataset.watchKey;
           const visible = !watchedItems.has(watchKey) && (!query || card.dataset.search.includes(query));
           card.hidden = !visible;
@@ -2887,7 +2939,7 @@
         appearanceCount.textContent = query || matches < appearanceTotal ? `${matches}/${appearanceTotal} 条` : `${appearanceTotal} 条`;
         appearanceNote.textContent = query ? (matches ? `找到 ${matches} 条未看记录。` : '没有未看且匹配的演讲或 Podcast。')
           : appearanceTotal > 0 && matches === 0 ? '这批演讲和 Podcast 都已看过；后续新增的未看内容会显示在这里。' : appearanceSummary;
-        const visibleCards = [...appearanceCards.querySelectorAll('.appearance-card:not([hidden]):not(.is-watched)')];
+        const visibleCards = [...appearanceCards.querySelectorAll(':scope > .card:not([hidden]):not(.is-watched)')];
         visibleCards.forEach((card, index) => {
           const counter = card.querySelector('.counter');
           if (counter) counter.textContent = `${index + 1} / ${visibleCards.length}`;

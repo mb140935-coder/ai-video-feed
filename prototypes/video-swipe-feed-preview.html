@@ -2687,8 +2687,7 @@
       // 💡 问一问: a question about a person, company or term goes to the Supabase Edge Function "ask"
       // (supabase/functions/ask), which answers in a few Chinese sentences, with the brief or video as context. It uses
       // the 记一笔 passphrase. Asked from a YouTube card it can include the 40 seconds before the moment of asking.
-      // Deployed from the dashboard, which named it "smooth-api".
-      const ASK_ENDPOINT = `${SUPABASE_URL}/functions/v1/smooth-api`;
+      const ASK_ENDPOINT = `${SUPABASE_URL}/functions/v1/ask`;
       const askSheet = document.getElementById('ask-sheet');
       const askBody = document.getElementById('ask-body');
       const askContext = document.getElementById('ask-context');

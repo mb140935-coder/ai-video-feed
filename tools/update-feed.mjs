@@ -311,7 +311,7 @@ for (const source of allSources) {
 let peopleState = previous.people || {};
 if (interviewPeople) {
   try {
-    peopleState = await searchPeople(interviewPeople, items, previous.people || {}, report, YOUTUBE_API_KEY);
+    peopleState = await searchPeople(interviewPeople, items, previous.people || {}, report, YOUTUBE_API_KEY, new Set(previous.peopleRejected || []));
   } catch (error) {
     report.push(`people: FAILED ${error.message}`);
   }
@@ -384,13 +384,14 @@ try {
   report.push(`今日重点: FAILED ${error.message}`);
 }
 // 内容重点 and content type for YouTube cards without them yet, from the full description (newest first; the rest
-// on later runs).
+// on later runs). 人物访谈 cards also get "firsthand" (the person on camera, not someone talking about them) and
+// go first, so they are judged in the run that finds them.
 try {
   const pending = [
-    ...kept.filter(item => /^(youtube|bilibili):/.test(item.key)).map(item => ({ key: item.key, title: item.title, channel: item.channel, published: item.published, target: item })),
+    ...kept.filter(item => /^(youtube|bilibili):/.test(item.key)).map(item => ({ key: item.key, title: item.title, channel: item.channel, published: item.published, person: item.via === 'people' ? item.person : undefined, target: item })),
     ...Object.entries(videos).filter(([key]) => key.startsWith('youtube:')).map(([key, info]) => ({ key, title: info.title, channel: info.author, published: info.published, target: info }))
-  ].filter(entry => !entry.target.highlight || !entry.target.kind)
-    .sort((a, b) => (b.published || '').localeCompare(a.published || ''))
+  ].filter(entry => !entry.target.highlight || !entry.target.kind || entry.person && entry.target.firsthand === undefined)
+    .sort((a, b) => Number(Boolean(b.person)) - Number(Boolean(a.person)) || (b.published || '').localeCompare(a.published || ''))
     .slice(0, VIDEO_HIGHLIGHTS_PER_RUN);
   const details = await youtubeDetails(pending.filter(entry => entry.key.startsWith('youtube:')).map(entry => entry.key.slice('youtube:'.length)));
   // Bilibili has no details call here; its search snippet is the description.
@@ -399,6 +400,10 @@ try {
 } catch (error) {
   report.push(`video highlights: FAILED ${error.message}`);
 }
+// 人物访谈 that Gemini judged not first-hand go, and are remembered so the search doesn't add them back.
+const peopleRejected = [...new Set([...kept.filter(item => item.via === 'people' && item.firsthand === false).map(item => item.key), ...(previous.peopleRejected || [])])].slice(0, 1000);
+report.push(`people: ${kept.filter(item => item.via === 'people' && item.firsthand === false).length} not first-hand dropped`);
+kept = kept.filter(item => !(item.via === 'people' && item.firsthand === false));
 const expiredCount = kept.filter(expired).length;
 kept = kept.filter(item => !expired(item));
 report.push(`shelf life: ${expiredCount} expired, ${kept.filter(item => !item.kind).length} of ${kept.length} not typed yet`);
@@ -406,7 +411,7 @@ Object.values(channels).forEach(info => { if (info.id) info.count = kept.filter(
 // The full description only feeds the highlight; it is not kept in the feed.
 Object.values(videos).forEach(info => { delete info.description; });
 
-const content = { items: kept, videos, channels, people: peopleState, news, ...digest };
+const content = { items: kept, videos, channels, people: peopleState, peopleRejected, news, ...digest };
 const { updated: previousUpdated, ...previousContent } = previous;
 const unchanged = JSON.stringify(previousContent) === JSON.stringify(content);
 fs.writeFileSync(outPath, `${JSON.stringify({ updated: unchanged ? previousUpdated : new Date().toISOString(), ...content }, null, 1)}\n`);

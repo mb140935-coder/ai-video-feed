@@ -94,9 +94,10 @@ export const summarizeNews = async (stories, report = []) => {
 // 内容重点 for video cards: two or three Chinese sentences from the video's title and full YouTube description
 // (the card's own excerpt stops at 220 characters), plus the content type that sets its shelf life in
 // 演讲 & Podcast (product 3 months, judgment 1 year, method kept) and whether it is about sports or the Olympics
-// (always kept). Entries are { title, channel, description, target }; the results go to target.highlight (only
-// when it has none yet), target.kind and target.sports. Same model and per-run cap as the news, so notes keep
-// their quota.
+// (always kept). Entries are { title, channel, description, person?, target }; the results go to target.highlight
+// (only when it has none yet), target.kind, target.sports and, for 人物访谈 (entries with a person), target.firsthand:
+// whether the person is on camera rather than being talked about. Same model and per-run cap as the news, so notes
+// keep their quota.
 const VIDEO_INSTRUCTIONS = `你是一位中文编辑，为一位关注 AI 的读者整理视频卡片的“内容重点”。每条给你视频标题、频道名和发布方简介（原文，可能是英文）。为每条写：
 - highlight：两到三句中文，说清谁在讲（讲者和身份）、主要谈了哪些话题、观点或发布。只能使用标题和简介里出现的信息，不要编造；简介很少时只写能确定的，宁短勿编。不要写“本视频”“该视频”这类开头，直接说内容。输入里已有 highlight 时原样返回。
 - kind：这条内容主要讲的是哪一类，决定它多久过时：
@@ -105,19 +106,20 @@ const VIDEO_INSTRUCTIONS = `你是一位中文编辑，为一位关注 AI 的读
   method = 方法思路：怎么做决策、组织和招人、为什么选这条技术路线、做事方法、踩过的坑、原理讲解。几年都有用。
   三类都有时按主要篇幅归一类；拿不准时选 judgment。
 - sports：是否和体育或奥运相关（体育 AI、赛事、运动员、转播、奥运会等），true 或 false。
+- firsthand：输入里有 person 时，判断这是不是 person 本人出镜、亲口讲话的访谈、对话、演讲或节目（true）；如果是别人在评论、解读、讲述、转述 person 或 person 的访谈，或是剪辑拼接、AI 配音、二次创作（false）。拿不准时看标题和简介是否像本人在说话。输入里没有 person 时填 true。
 人名、公司名、产品名保留原文（可附常见中文名）。按输入顺序返回每条的 id。`;
 
 const VIDEO_SCHEMA = {
   type: 'ARRAY',
   items: {
     type: 'OBJECT',
-    properties: { id: { type: 'INTEGER' }, highlight: { type: 'STRING' }, kind: { type: 'STRING', enum: ['product', 'judgment', 'method'] }, sports: { type: 'BOOLEAN' } },
-    required: ['id', 'highlight', 'kind', 'sports']
+    properties: { id: { type: 'INTEGER' }, highlight: { type: 'STRING' }, kind: { type: 'STRING', enum: ['product', 'judgment', 'method'] }, sports: { type: 'BOOLEAN' }, firsthand: { type: 'BOOLEAN' } },
+    required: ['id', 'highlight', 'kind', 'sports', 'firsthand']
   }
 };
 
 const highlightBatch = async (key, model, entries) => {
-  const input = entries.map((entry, id) => ({ id, title: entry.title, channel: entry.channel, description: (entry.description || '').slice(0, 1500), ...(entry.target.highlight ? { highlight: entry.target.highlight } : {}) }));
+  const input = entries.map((entry, id) => ({ id, title: entry.title, channel: entry.channel, description: (entry.description || '').slice(0, 1500), ...(entry.person ? { person: entry.person } : {}), ...(entry.target.highlight ? { highlight: entry.target.highlight } : {}) }));
   const response = await fetch(`${API}/models/${model}:generateContent`, {
     method: 'POST',
     headers: { 'x-goog-api-key': key, 'content-type': 'application/json' },
@@ -149,12 +151,13 @@ export const highlightVideos = async (entries, report = []) => {
   for (let start = 0; start < pending.length; start += BATCH) {
     const batch = pending.slice(start, start + BATCH);
     try {
-      for (const { id, highlight, kind, sports } of await highlightBatch(key, model, batch)) {
+      for (const { id, highlight, kind, sports, firsthand } of await highlightBatch(key, model, batch)) {
         const target = batch[id]?.target;
         if (!target) continue;
         if (!target.highlight && highlight?.trim()) target.highlight = highlight.trim();
         if (['product', 'judgment', 'method'].includes(kind)) target.kind = kind;
         if (typeof sports === 'boolean') target.sports = sports;
+        if (batch[id].person && typeof firsthand === 'boolean') target.firsthand = firsthand;
         if (target.highlight && target.kind) done++;
       }
     } catch (error) {

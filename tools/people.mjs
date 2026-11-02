@@ -17,8 +17,9 @@ const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 // The title has to say it is the person speaking: an interview, conversation, talk or speech.
 const INTERVIEW = /访谈|专访|对话|对谈|采访|演讲|致辞|典礼|讲座|论坛|圆桌|峰会|主旨|发言|做客|分享|开讲|十三邀|面对面|鲁豫|杨澜|一席|直播|播客|节目|interview|conversation|in conversation|speech|keynote|commencement|lecture|talk|fireside|panel|podcast|summit|forum|dialogue/i;
 const SPEECH = /毕业|致辞|演讲|典礼|开学|speech|commencement|keynote|address/i;
-// Second-hand material: clips, compilations, commentary, readings, AI voices, and gossip about the person.
-const SECONDHAND = /片段|切片|剪辑|合集|混剪|精华|精彩|解说|解读|解析|逐帧|面相|看相|命理|风水|盘点|金句|语录|句话|二创|reaction|反应|点评|揭秘|传奇|发家|身家|豪门|千金|赌王|八卦|绯闻|婚|嫁|分家|争产|遗产|恩怨|起底|曝光|吐槽|鬼畜|AI配音|配音|朗读|书评|有声|小说|励志|#|shorts|highlights?|clip|reacts?|explained|breakdown/i;
+// Second-hand material: clips, compilations, commentary ("XX访谈引热议"), readings, AI voices, and gossip about
+// the person. What the title doesn't give away, Gemini catches later (summarize.mjs "firsthand").
+const SECONDHAND = /片段|切片|剪辑|合集|混剪|精华|精彩|解说|解读|解析|逐帧|面相|看相|命理|风水|盘点|金句|语录|句话|二创|reaction|反应|点评|揭秘|传奇|发家|身家|豪门|千金|赌王|八卦|绯闻|婚|嫁|分家|争产|遗产|恩怨|起底|曝光|吐槽|鬼畜|AI配音|配音|朗读|书评|有声|小说|励志|热议|引发|如何理解|如何看待|怎么看待|启示|背后|评论|观后感|#|shorts|highlights?|clip|reacts?|explained|breakdown/i;
 
 const escapeRegExp = text => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const decode = s => s.replace(/<[^>]+>/g, '').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&');
@@ -123,7 +124,8 @@ const summarize = text => {
 
 // people: from personFromRow; items: the feed's Map of all items (new ones are added to it); previous: last
 // run's people state. Returns the new state: { [name]: { keywords, searched, youtube, bilibili, count } }.
-export const searchPeople = async (people, items, previous, report, youtubeKey) => {
+// rejected: keys Gemini judged not first-hand earlier; they are not added again.
+export const searchPeople = async (people, items, previous, report, youtubeKey, rejected = new Set()) => {
   const state = {};
   const seenTitles = new Set([...items.values()].filter(item => item.via === 'people').map(item => titleKey(item.title)));
   for (const person of people) {
@@ -139,7 +141,7 @@ export const searchPeople = async (people, items, previous, report, youtubeKey) 
     try { candidates.push(...await searchBilibili(person, sinceDays)); entry.bilibili = 'ok'; }
     catch (error) { entry.bilibili = error.message; report.push(`people ${person.name} Bilibili: FAILED ${error.message}`); }
 
-    const fresh = candidates.filter(video => !items.has(video.key) && wanted(person, video))
+    const fresh = candidates.filter(video => !items.has(video.key) && !rejected.has(video.key) && wanted(person, video))
       .sort((a, b) => b.published.localeCompare(a.published));
     let added = 0;
     for (const video of fresh) {

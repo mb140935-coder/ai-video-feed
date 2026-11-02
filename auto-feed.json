@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T19:04:05.770Z",
+ "updated": "2026-11-02T19:10:04.170Z",
  "items": [
   {
    "key": "youtube:-GKLZWEq-0c",
@@ -938,27 +938,6 @@
    "firsthand": true
   },
   {
-   "key": "bilibili:BV11DaL6KEsG",
-   "url": "https://www.bilibili.com/video/BV11DaL6KEsG",
-   "title": "中国工程院院士王坚：现在是中国AI最好的时代",
-   "channel": "甲15号研究所",
-   "published": "2026-09-28",
-   "summary": "中国AI模型加速走向世界，开源成为一个重要关键词。为什么AI时代的开源，不能只谈代码？中美AI竞争，真正比的到底是什么？AI泡沫会破裂吗？近日，中国工程院院士、之江实验室主任王坚与@起底工作室 展开深度对话。",
-   "tab": "people",
-   "person": "王坚",
-   "tags": [
-    "人物访谈",
-    "王坚"
-   ],
-   "minutes": 26,
-   "found": "2026-11-02",
-   "via": "people",
-   "highlight": "中国工程院院士、之江实验室主任王坚在与起底工作室的深度对话中指出现在是中国AI最好的时代。双方探讨了中国AI模型走向世界、开源的意义、中美AI竞争的比拼核心以及AI泡沫是否会破裂等话题。",
-   "kind": "judgment",
-   "sports": false,
-   "firsthand": true
-  },
-  {
    "key": "bilibili:BV1efYs61EwA",
    "url": "https://www.bilibili.com/video/BV1efYs61EwA",
    "title": "《名人故事会》鲁健对话何超琼：我有野心让澳门成为全球文旅标杆！",
@@ -1445,6 +1424,29 @@
    "firsthand": true
   },
   {
+   "key": "bilibili:BV1xc98YAEwk",
+   "url": "https://www.bilibili.com/video/BV1xc98YAEwk",
+   "title": "王坚院士：算力革命会带来哪些改变",
+   "channel": "央视新闻",
+   "published": "2025-03-02",
+   "summary": "",
+   "tab": "people",
+   "person": "王坚",
+   "tags": [
+    "人物访谈",
+    "王坚"
+   ],
+   "minutes": 21,
+   "found": "2026-11-02",
+   "via": "people",
+   "picked": true,
+   "firsthand": true,
+   "note": "央视新闻专访",
+   "highlight": "中国工程院院士王坚探讨了算力革命将带来的改变。阐述了其对相关领域的见解与观点。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
    "key": "bilibili:BV11KA2eKE4i",
    "url": "https://www.bilibili.com/video/BV11KA2eKE4i",
    "title": "AI的前世今生 ｜ 阿里王坚院士《财经》演讲全",
@@ -1527,6 +1529,29 @@
    "kind": "method",
    "sports": false,
    "firsthand": true
+  },
+  {
+   "key": "bilibili:BV1vv4y1v7VR",
+   "url": "https://www.bilibili.com/video/BV1vv4y1v7VR",
+   "title": "凤凰专访中国工程院院士王坚：100年后，可能去火星很容易，留在地球很难丨问答神州",
+   "channel": "凤凰网",
+   "published": "2023-01-10",
+   "summary": "王坚，中国工程院院士，也是我国“民企院士”第一人，曾首创“以数据为中心”的分布式云计算体系架构，主持研发以大规模分布式计算系统“飞天”为核心、拥有自主产权的阿里云计算平台，也因此被称为“阿里云之父”。",
+   "tab": "people",
+   "person": "王坚",
+   "tags": [
+    "人物访谈",
+    "王坚"
+   ],
+   "minutes": 26,
+   "found": "2026-11-02",
+   "via": "people",
+   "picked": true,
+   "firsthand": true,
+   "note": "凤凰卫视《问答神州》吴小莉专访",
+   "highlight": "中国工程院院士、阿里云之父王坚接受凤凰专访。讨论了关于未来百年技术与人类发展的宏观预测。",
+   "kind": "judgment",
+   "sports": false
   }
  ],
  "videos": {
@@ -1577,7 +1602,7 @@
   "王坚": {
    "keywords": "阿里云 城市大脑 院士 之江实验室 阿里巴巴 云栖",
    "searched": "2026-11-02",
-   "youtube": "HTTP 429",
+   "youtube": "ok",
    "bilibili": "ok"
   },
   "徐新": {
@@ -1589,7 +1614,7 @@
   "何超琼": {
    "keywords": "",
    "searched": "2026-11-02",
-   "youtube": "HTTP 429",
+   "youtube": "ok",
    "bilibili": "ok"
   },
   "施一公": {
@@ -1604,36 +1629,6 @@
  ],
  "watchAdded": [],
  "news": [
-  {
-   "id": "17br6v7",
-   "lastSeen": "2026-11-02",
-   "title": "Anthropic's loss shrinks, revenue jumps ahead of blockbuster IPO",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPalN1b2NwcllWRkRjRUNmOVBjSDMxWDNzdjZIclhDNTdMMFlaVUx2eWN1U19acllfTk0xX0JIbkJma21jVDFhZUR1czFjbVdLbThjMHVQZ0F4MkFvNmc0cURPN05FMkE3VFNyMTktbmNzWVIxN3c1YVFhSXpBTmZSQk1DZ013aDVRcXE5OEplekFkZWFJbmQxUEhDSVJ3RVVrZWJUd2ZRYWRfWUJhMVMycEZRRk8?oc=5",
-   "source": "Reuters",
-   "domain": "reuters.com",
-   "published": "2026-11-02",
-   "outlets": [
-    "Business Insider",
-    "WSJ",
-    "Bloomberg.com",
-    "Reuters",
-    "Forbes"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill",
-    "Anthropic Unveils Paperwork for Blockbuster IPO",
-    "Anthropic Revenue Hits Nearly $17 Billion Before Blockbuster IPO",
-    "Anthropic's loss shrinks, revenue jumps ahead of blockbuster IPO",
-    "Anthropic Hit $17 Billion In Third Quarter Revenue Ahead Of IPO—But AI Spending Commitments Hit $900 Billion"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic's amended IPO paperwork revealed soaring Q3 revenue and a significant compute bill.",
-   "meaning": "Financial and compute metrics from leading foundational model providers offer vital visibility into the real costs and commercialization pace of generative AI.",
-   "importance": 8
-  },
   {
    "id": "18p4lp6",
    "lastSeen": "2026-11-02",
@@ -2611,29 +2606,6 @@
    "id": "v3op4b"
   },
   {
-   "id": "3xt2jt",
-   "lastSeen": "2026-11-02",
-   "title": "NVIDIA CEO Jensen Huang May Have Been The Target Of A Chinese Government Spy",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMVc0U0Nud2JZVjlUNzBjRTkwQlBPRWpsNVB0bVhEWXRlWlhUNDgwdm52U0N5NHRaMnFDbDF2bHpsVFVObWNCNHFMWDNxRWRyOEUyWTE1OXo2RG5LbVZ1cGZ6WWdMUVpjRUh2dHRmMzhhZ2UzeU9LcEh6UXRHYlpab1FtZlh6bWpDVWloaGJuYUN1NWlraUlCcDB5bUsyYmVrXzMwa18tbmVRdFVoaVVJ?oc=5",
-   "source": "Engadget",
-   "domain": "engadget.com",
-   "published": "2026-10-29",
-   "outlets": [
-    "Engadget"
-   ],
-   "themes": [],
-   "headlines": [
-    "NVIDIA CEO Jensen Huang May Have Been The Target Of A Chinese Government Spy"
-   ],
-   "entities": [
-    "Jensen Huang",
-    "NVIDIA Research"
-   ],
-   "summary": "NVIDIA CEO Jensen Huang may have been the target of a Chinese government spy, according to recent headlines.",
-   "meaning": "这涉及到中国AI与地缘政治安全及头部芯片巨头的安全动向，对于关注中国AI发展的读者而言值得保持警惕。",
-   "importance": 6
-  },
-  {
    "title": "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative",
    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5lZ0VoNmFPdkFiaUFnTUpOcFV2WUp4WW5xbmZqd2haYjdPdm55Nm9kVHFQYlZoNUVMODZaSFZjS0RxXzNyWTFLLWpTejROeWJyazFXeE16YUNobGctejdhWDdQaC0zSy1pRWpmM2lIU3hES0hfNTllUdIBfkFVX3lxTE10LU9GSklFV3R1TTVyTlFRMnh4VmNMbXVjUkVCY1ZTanc1U1c5eEs5UlZNSTdWZzdnUl8yUmNpVVNDUXM0aGhMVGZVT2NrR1pSaXBhYnNxTnhnTy1nUm1DdllhQkFNd2Z0aVhWbC1LcDBpTk5uTXhabUhjRTlhdw?oc=5",
    "source": "CNBC",
@@ -3034,6 +3006,38 @@
    "summary": "法律科技公司 Everlaw 推出全新的 Agentic AI（智能体 AI）功能及审查管理产品。",
    "meaning": "法律 AI 正加速融入自主智能体技术，为案件审查与法律流程管理提供更深入的自动化支持。",
    "id": "18o9z6o"
+  },
+  {
+   "id": "17br6v7",
+   "lastSeen": "2026-11-02",
+   "title": "Anthropic's loss shrinks, revenue jumps ahead of blockbuster IPO",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPalN1b2NwcllWRkRjRUNmOVBjSDMxWDNzdjZIclhDNTdMMFlaVUx2eWN1U19acllfTk0xX0JIbkJma21jVDFhZUR1czFjbVdLbThjMHVQZ0F4MkFvNmc0cURPN05FMkE3VFNyMTktbmNzWVIxN3c1YVFhSXpBTmZSQk1DZ013aDVRcXE5OEplekFkZWFJbmQxUEhDSVJ3RVVrZWJUd2ZRYWRfWUJhMVMycEZRRk8?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "Business Insider",
+    "WSJ",
+    "Bloomberg.com",
+    "Reuters",
+    "Forbes",
+    "Financial Times"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill",
+    "Anthropic Unveils Paperwork for Blockbuster IPO",
+    "Anthropic Revenue Hits Nearly $17 Billion Before Blockbuster IPO",
+    "Anthropic's loss shrinks, revenue jumps ahead of blockbuster IPO",
+    "Anthropic Hit $17 Billion In Third Quarter Revenue Ahead Of IPO—But AI Spending Commitments Hit $900 Billion",
+    "Anthropic’s seven founders tighten grip ahead of blockbuster IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic's amended IPO paperwork revealed soaring Q3 revenue and a significant compute bill.",
+   "meaning": "Financial and compute metrics from leading foundational model providers offer vital visibility into the real costs and commercialization pace of generative AI.",
+   "importance": 8
   },
   {
    "title": "DOJ Inquires About Nvidia’s Hugging Face Deal, Reuters Says",
@@ -5079,6 +5083,28 @@
    "summary": "Anthropic's IPO filing reveals massive scale of data center and chips spending.",
    "meaning": "It underscores the immense capital expenditure and infrastructure demands required to scale frontier AI models, impacting hardware supply chains.",
    "importance": 6
+  },
+  {
+   "id": "1auzcgw",
+   "lastSeen": "2026-11-02",
+   "title": "Anthropic's S-1 paperwork reveals the stunning finances behind its meteoric rise ahead of its IPO",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOOThqUENCQk01SlhUVE1PZDc1aDBaWEhiaXJ2RFFPc21fZUhxRFlxR1EwZVBDZGhrWlMwbzJOVlhkSkw2QjYydVZMLTdENmYzam1lNG1QMlFHZ2VfWFJIY0VqQ1E1U2ZuUGlMRHgxaXpzMG9ERU1KNF9QOHRBQjFjd1B3Qm5Gd0RBUFdPV0xyWHE1UzVt?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's S-1 paperwork reveals the stunning finances behind its meteoric rise ahead of its IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic的S-1文件披露了其IPO前的惊人财务状况与快速增长。这是该公司在资本市场的重要进展。",
+   "meaning": "作为通用AI领域的重要企业，其财务与上市动态折射出整个大模型行业的商业化落地与资本动向，值得持续关注。",
+   "importance": 8
   },
   {
    "title": "Under Client Pressure to Save Time with AI, Law Firms Face Verification Challenge",

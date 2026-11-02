@@ -11,7 +11,7 @@
   <link rel="manifest" href="../site.webmanifest?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&display=swap">
   <script>
     // 夜间模式 before the first paint: the choice made in the ☰ menu, else the system setting.
     (() => {
@@ -35,9 +35,9 @@
       --audio-bg: #dcebe1; --preview-a: #e9e2f4; --preview-b: #f6f0e6; --menu-open: #f1c9d1; --error: #b3401f;
       --accent-line: #b8344f66; --green-line: #2c7a5e66; --gold-line: #87621c55; --purple-line: #6447b866;
       --fav-line: #b8860b88; --fav-bg: #f7ecd2; --fav-text: #8a5a00; --notice-text: #5e4512; --toast-link: #f3c9a8;
-      /* 简报 is set like a printed newspaper: newsprint and ink. */
-      --paper: #f2ebdb; --paper-grain: #3a2f2012; --ink: #1d1a16; --ink-2: #3d372f; --ink-faint: #8a8070;
-      --serif: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif; --display: "Playfair Display", "Noto Serif SC", serif;
+      /* 简报 is set like gray-white newsprint, easy on the eyes: no pure white or black, no bright color. */
+      --paper: #e9e8e3; --paper-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E"); --ink: #2a2a28; --ink-2: #45443f; --ink-faint: #7a7973;
+      --serif: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
     }
     /* 夜间模式 (☰ menu, or the system setting until one is picked): warm ink instead of paper. The head script
        sets data-theme before the first paint. */
@@ -53,7 +53,7 @@
       --audio-bg: #1d3329; --preview-a: #2a2340; --preview-b: #211d19; --menu-open: #4a2530; --error: #f08a6a;
       --accent-line: #e0647d66; --green-line: #6cc49f66; --gold-line: #d7b06a55; --purple-line: #a995ee66;
       --fav-line: #d7b06a88; --fav-bg: #33291a; --fav-text: #e6c27a; --notice-text: #e6c27a; --toast-link: #9b2741;
-      --paper: #191714; --paper-grain: #ffffff08; --ink: #e9e0d0; --ink-2: #c4b9a7; --ink-faint: #8a8070;
+      --paper: #1e1e1d; --paper-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E"); --ink: #c9c8c3; --ink-2: #aeada7; --ink-faint: #7a7973;
     }
     * { box-sizing: border-box; }
     body { margin: 0; background: var(--bg); color: var(--text); }
@@ -162,28 +162,18 @@
     .digest-date { color: var(--muted); font-size: 12px; }
     .digest-stats { margin: 8px 0 0; color: var(--text-2); font-size: 12px; line-height: 1.6; }
     .digest-stats b { color: var(--accent-text); font-size: 14px; }
-    .digest-progress { display: flex; align-items: center; gap: 10px; margin-top: 10px; color: var(--muted); font-size: 11px; }
-    .digest-bar { flex: 1; height: 4px; border-radius: 4px; background: var(--line); overflow: hidden; }
-    .digest-bar span { display: block; height: 100%; background: var(--accent); transition: width .25s; }
-    .digest-day { padding: 14px 18px 0; color: var(--accent-text); font-size: 12px; font-weight: 700; }
-    .read-toggle { flex: none; cursor: pointer; font-family: inherit; white-space: nowrap; }
-    .read-toggle[aria-pressed="true"] { color: var(--faint); }
-    .digest-story.is-read { padding-top: 10px; padding-bottom: 10px; }
-    .digest-read-row { display: flex; align-items: center; gap: 10px; min-width: 0; }
-    .digest-read-title { min-width: 0; overflow: hidden; color: var(--faint); font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
-    .digest-done { margin: 16px 18px 0; border: 1px solid var(--accent-line); border-radius: 16px; padding: 18px; background: var(--accent-soft); text-align: center; }
-    .digest-done strong { display: block; color: var(--accent-text); font-size: 17px; }
-    .digest-done p { margin: 6px 0 0; color: var(--text-2); font-size: 12px; line-height: 1.6; }
     .digest-more { display: flex; flex-wrap: wrap; gap: 8px; padding: 16px 18px 18px; }
     .digest-more button { min-height: 40px; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 14px; background: var(--surface); color: var(--text); font: inherit; font-size: 12px; cursor: pointer; }
     .digest-more button[aria-expanded="true"] { border-color: var(--text); background: var(--text); color: var(--surface); }
     .digest-weekly { border-top: 1px solid var(--line); }
     .history-sheet { position: fixed; z-index: 30; inset: 0; display: flex; align-items: flex-end; justify-content: center; background: var(--scrim); }
     .history-sheet[hidden] { display: none; }
-    .history-panel { width: min(100%, 430px); max-height: 82vh; display: flex; flex-direction: column; border: 1px solid var(--line-strong); border-radius: 20px 20px 0 0; background: var(--raised); }
+    /* Capped by the visible screen (dvh: Safari's toolbars excluded); the list scrolls inside, so a long list (追踪名单)
+       never pushes the head off the top. */
+    .history-panel { width: min(100%, 430px); max-height: 82vh; max-height: 82dvh; min-height: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--line-strong); border-radius: 20px 20px 0 0; background: var(--raised); }
     .history-head { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px; border-bottom: 1px solid var(--line); font-weight: 700; }
     .history-head button, .history-item button { flex: none; border: 1px solid var(--line-strong); border-radius: 999px; padding: 6px 11px; background: var(--surface); color: var(--text); font: inherit; font-size: 11px; cursor: pointer; }
-    .history-list { overflow-y: auto; overscroll-behavior: contain; padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)); }
+    .history-list { flex: 1 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)); }
     .history-item { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding: 12px 18px; border-bottom: 1px solid var(--line); }
     .history-item-text { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
     .history-item-title { font-size: 13px; line-height: 1.4; }
@@ -294,40 +284,30 @@
     .ask-clip[hidden] { display: none; }
     .note-form.ask-form .ask-clip input { flex: none; width: auto; padding: 0; }
     .actions button.ask-button { cursor: pointer; }
-    /* 简报 as a printed newspaper: newsprint with a faint grain, serif type, ink rules instead of cards and pills. */
-    #feed-briefs { --rule: color-mix(in srgb, var(--ink) 28%, transparent); background-color: var(--paper); background-image: radial-gradient(var(--paper-grain) 1px, transparent 1.3px); background-size: 4px 4px; color: var(--ink); font-family: var(--serif); }
+    /* 简报 as gray-white newsprint: faint paper fibers, serif type in gray ink, rules instead of cards and pills. */
+    #feed-briefs { --rule: color-mix(in srgb, var(--ink) 28%, transparent); background-color: var(--paper); background-image: var(--paper-texture); color: var(--ink); font-family: var(--serif); }
     #feed-briefs .digest { background: transparent; border-bottom: 3px double var(--ink); }
     #feed-briefs .digest-head { padding: 14px 18px 12px; text-align: center; }
-    .paper-dateline { display: flex; justify-content: space-between; gap: 8px; padding-bottom: 6px; border-bottom: 1px solid var(--ink); color: var(--ink-2); font-size: 10px; letter-spacing: .06em; }
-    .paper-masthead { margin: 10px 0 4px; font-family: var(--display); font-size: 40px; font-weight: 900; line-height: 1.05; letter-spacing: .06em; }
-    .paper-motto { padding-bottom: 8px; border-bottom: 3px double var(--ink); color: var(--ink-2); font-size: 10px; letter-spacing: .1em; }
-    #feed-briefs .digest-stats { margin-top: 8px; color: var(--ink-2); font-size: 11px; }
-    #feed-briefs .digest-stats b { color: var(--accent-text); font-family: var(--display); font-size: 15px; }
-    #feed-briefs .digest-progress { justify-content: center; margin-top: 6px; color: var(--ink-faint); }
-    #feed-briefs .digest-bar { flex: none; width: 120px; height: 2px; border-radius: 0; background: var(--rule); }
-    #feed-briefs .digest-bar span { background: var(--ink); }
+    .paper-dateline { display: flex; justify-content: space-between; gap: 8px; padding-bottom: 6px; border-bottom: 1px solid var(--ink); color: var(--ink-2); font-size: 9px; letter-spacing: .06em; }
+    .paper-masthead { margin: 8px 0 3px; font-size: 24px; font-weight: 900; line-height: 1.15; letter-spacing: .14em; }
+    .paper-motto { padding-bottom: 8px; border-bottom: 3px double var(--ink); color: var(--ink-2); font-size: 9px; letter-spacing: .1em; }
+    #feed-briefs .digest-stats { margin-top: 6px; color: var(--ink-2); font-size: 10px; }
+    #feed-briefs .digest-stats b { color: var(--ink); font-size: 10px; }
     .paper-section { display: flex; align-items: center; gap: 12px; padding: 14px 18px 0; font-size: 13px; font-weight: 900; letter-spacing: .3em; }
     .paper-section::before, .paper-section::after { content: ''; flex: 1; border-top: 1px solid var(--ink); }
-    #feed-briefs .digest-day { color: var(--accent-text); letter-spacing: .1em; text-align: center; }
     #feed-briefs .brief { gap: 7px; border-bottom: 1px solid var(--rule); }
     #feed-briefs .brief h2 { font-family: var(--serif); font-size: 19px; font-weight: 900; line-height: 1.35; }
-    #feed-briefs .brief p { color: var(--ink-2); font-size: 14px; line-height: 1.75; text-align: justify; }
+    #feed-briefs .brief p { color: var(--ink-2); font-size: 14px; line-height: 1.8; text-align: justify; }
     #feed-briefs .brief-meta { color: var(--ink-faint); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
     #feed-briefs .brief .brief-why { border-left: 0; border-top: 1px solid var(--rule); padding: 7px 0 0; color: var(--ink); font-size: 13px; font-style: italic; }
     #feed-briefs .tags { gap: 6px; }
     #feed-briefs .tag { border-radius: 0; border-color: var(--rule); background: transparent; backdrop-filter: none; color: var(--ink-2); font-family: var(--serif); font-size: 10px; letter-spacing: .05em; }
-    #feed-briefs .read-toggle { border-color: var(--ink); color: var(--ink); }
-    #feed-briefs .read-toggle[aria-pressed="true"] { border-color: var(--rule); color: var(--ink-faint); }
-    #feed-briefs .pub-date { border: 0; border-radius: 0; padding: 0; background: transparent; color: var(--accent-text); font-size: 10px; letter-spacing: .08em; }
+    #feed-briefs .pub-date { border: 0; border-radius: 0; padding: 0; background: transparent; color: var(--ink-2); font-size: 10px; letter-spacing: .08em; }
     #feed-briefs .pub-date.stale, #feed-briefs .pub-date.unknown { color: var(--ink-faint); }
     #feed-briefs .brief-links a { border-radius: 0; border-color: var(--ink); background: transparent; color: var(--ink); }
     #feed-briefs .digest-story.lead { padding-top: 16px; border-bottom: 1px solid var(--ink); }
     #feed-briefs .digest-story.lead h2 { font-size: 26px; line-height: 1.25; }
     #feed-briefs .digest-story.lead > p:first-of-type::first-letter { float: left; margin: 5px 7px 0 0; color: var(--ink); font-size: 48px; font-weight: 900; line-height: .9; }
-    #feed-briefs .digest-read-title { color: var(--ink-faint); text-decoration: line-through; text-decoration-color: var(--rule); }
-    #feed-briefs .digest-done { border: 0; border-top: 3px double var(--ink); border-bottom: 3px double var(--ink); border-radius: 0; background: transparent; }
-    #feed-briefs .digest-done strong { color: var(--ink); font-size: 18px; letter-spacing: .1em; }
-    #feed-briefs .digest-done p { color: var(--ink-2); }
     #feed-briefs .digest-more { justify-content: center; }
     #feed-briefs .digest-more button { border-radius: 0; border-color: var(--ink); background: transparent; color: var(--ink); font-family: inherit; }
     #feed-briefs .digest-more button[aria-expanded="true"] { background: var(--ink); color: var(--paper); }
@@ -336,8 +316,9 @@
     /* iPad and computer: a page about 880px wide, the stories after the lead in two ruled columns. */
     @media (min-width: 600px) {
       #feed-briefs .digest { padding: 0 max(0px, calc(50% - 460px)); }
-      .paper-masthead { font-size: 60px; }
-      .paper-dateline, .paper-motto { font-size: 12px; }
+      .paper-masthead { font-size: 34px; }
+      .paper-dateline, .paper-motto { font-size: 11px; }
+      #feed-briefs .digest-stats, #feed-briefs .digest-stats b { font-size: 11px; }
       .paper-columns { column-count: 2; column-gap: 0; column-rule: 1px solid var(--rule); }
       #feed-briefs .paper-columns .brief { break-inside: avoid; padding: 16px 20px; }
       #feed-briefs .digest .brief { padding-left: 20px; padding-right: 20px; }
@@ -789,9 +770,7 @@
       let lastWatchedKey = '';
       // Reassigned once the watched-history sheet is wired up; refreshCuratedCounters runs before that.
       let updateWatchHistoryCount = () => {};
-      // Reassigned once 简报 has loaded 今日重点; shared read marks can arrive before that.
-      let refreshDigest = () => {};
-      // 今日重点 read marks share the watched list (keys "news:<story id>") but are not videos: 已看历史 leaves them out.
+      // Keys "news:<story id>" are read marks from the earlier 今日重点 (no longer set): 已看历史 leaves them out.
       const NEWS_PREFIX = 'news:';
 
       const playerUrl = (frame, start, end, autoplay = false) => {
@@ -1069,7 +1048,6 @@
         document.querySelectorAll('.watch-toggle').forEach(button => syncWatchedButton(button, watchedItems.has(button.dataset.watchKey)));
         appearanceSearch.dispatchEvent(new Event('input'));
         refreshCuratedCounters();
-        refreshDigest();
         if (activeCard?.classList.contains('is-watched')) {
           activeCard = null;
           pauseAllExcept(null);
@@ -1314,7 +1292,6 @@
         document.querySelectorAll('.watch-toggle').forEach(button => syncWatchedButton(button, watchedItems.has(button.dataset.watchKey)));
         appearanceSearch.dispatchEvent(new Event('input'));
         refreshCuratedCounters();
-        refreshDigest();
         if (activeCard?.classList.contains('is-watched')) {
           activeCard = null;
           pauseAllExcept(null);
@@ -1696,8 +1673,8 @@
         briefList.appendChild(article);
       };
 
-      // 今日重点 (tools/digest.mjs): the daily job's top stories, so 简报 has an end. Read marks go to the shared
-      // watched list as "news:<story id>"; the full list below folds away behind 查看全部 while a digest exists.
+      // 今日重点 (tools/digest.mjs): the newest day's top stories as a front page. Nothing tracks what was read; the
+      // full list below folds away behind 查看全部 while a digest exists.
       const digestBox = document.getElementById('digest');
       let digestFeed = null;
       let briefTotal = 0;
@@ -1705,53 +1682,20 @@
       let showAllBriefs = false;
       const FIRST_ISSUE = '2026-11-02'; // The first 今日重点: 第 1 期.
       const beijingToday = () => new Date(Date.now() + 8 * 3600e3).toISOString().slice(0, 10);
-      const dayLabel = date => {
-        const days = Math.round((Date.parse(beijingToday()) - Date.parse(date)) / 864e5);
-        const [, month, day] = date.split('-').map(Number);
-        return `${days === 0 ? '今天 · ' : days === 1 ? '昨天 · ' : ''}${month}月${day}日`;
-      };
-      const isNewsRead = id => watchedItems.has(NEWS_PREFIX + id);
-      const setNewsRead = (id, read) => {
-        const key = NEWS_PREFIX + id;
-        if (watchedItems.has(key) === read) return;
-        if (read) {
-          watchedItems.add(key);
-          watchedTimes.set(key, new Date().toISOString());
-        } else watchedItems.delete(key);
-        persistWatchedItems();
-        sendSharedWatchChange(key, read);
-        refreshDigest();
-      };
 
-      // Unread: the full brief. Read: one line, so what is left stands out; tapping ✓ marks it unread again.
       const renderDigestStory = (parent, story, lead = false) => {
-        const read = isNewsRead(story.id);
         const article = document.createElement('article');
-        article.className = `brief digest-story${read ? ' is-read' : lead ? ' lead' : ''}`;
-        const toggle = document.createElement('button');
-        toggle.type = 'button';
-        toggle.className = 'tag read-toggle';
-        toggle.textContent = read ? '✓ 已读' : '○ 未读';
-        toggle.setAttribute('aria-pressed', String(read));
-        toggle.setAttribute('aria-label', read ? '标为未读' : '标为已读');
-        toggle.addEventListener('click', () => setNewsRead(story.id, !read));
-        if (read) {
-          const row = document.createElement('div');
-          row.className = 'digest-read-row';
-          row.appendChild(toggle);
-          makeText(row, 'span', 'digest-read-title', story.title);
-          article.appendChild(row);
-          parent.appendChild(article);
-          return;
-        }
+        article.className = `brief digest-story${lead ? ' lead' : ''}`;
         article.appendChild(publishedBadge(story.published));
         makeText(article, 'div', 'brief-meta', `${story.source}${story.outlets.length > 1 ? ` 等 ${story.outlets.length} 家媒体报道` : ''}`);
         makeText(article, 'h2', '', story.title);
-        const tagRow = document.createElement('div');
-        tagRow.className = 'tags';
-        tagRow.appendChild(toggle);
-        [...story.themes, ...story.entities].forEach(tag => makeText(tagRow, 'span', 'tag', tag));
-        article.appendChild(tagRow);
+        const tags = [...story.themes, ...story.entities];
+        if (tags.length) {
+          const tagRow = document.createElement('div');
+          tagRow.className = 'tags';
+          tags.forEach(tag => makeText(tagRow, 'span', 'tag', tag));
+          article.appendChild(tagRow);
+        }
         if (story.summary) makeText(article, 'p', '', story.summary);
         if (story.meaning) makeText(article, 'p', 'brief-why', `这意味着：${story.meaning}`);
         const linkRow = document.createElement('div');
@@ -1761,30 +1705,21 @@
         link.target = '_blank';
         link.rel = 'noopener noreferrer';
         link.textContent = `打开原文 · ${story.source}`;
-        // Opening the article counts as reading it.
-        link.addEventListener('click', () => setNewsRead(story.id, true));
         linkRow.appendChild(link);
         article.appendChild(linkRow);
         parent.appendChild(article);
       };
 
-      refreshDigest = () => {
+      const renderDigest = () => {
         if (!digestFeed) return;
         const byId = new Map(digestFeed.news.filter(story => story.id).map(story => [story.id, story]));
-        const days = digestFeed.digests
+        const latest = digestFeed.digests
           .map(digest => ({ ...digest, stories: digest.ids.map(id => byId.get(id)).filter(Boolean) }))
-          .filter(digest => digest.stories.length);
-        const hasDigest = days.length > 0;
-        digestBox.hidden = !hasDigest;
-        briefNote.classList.toggle('digest-hidden', hasDigest && !showAllBriefs);
-        briefList.classList.toggle('digest-hidden', hasDigest && !showAllBriefs);
-        if (!hasDigest) return;
-        // The newest day, plus up to two earlier days that still have something unread; older ones are what
-        // 本周大事 is for.
-        const [latest, ...earlier] = days;
-        const shown = [latest, ...earlier.slice(0, 2).filter(day => day.stories.some(story => !isNewsRead(story.id)))];
-        const stories = shown.flatMap(day => day.stories);
-        const readCount = stories.filter(story => isNewsRead(story.id)).length;
+          .find(digest => digest.stories.length);
+        digestBox.hidden = !latest;
+        briefNote.classList.toggle('digest-hidden', Boolean(latest) && !showAllBriefs);
+        briefList.classList.toggle('digest-hidden', Boolean(latest) && !showAllBriefs);
+        if (!latest) return;
         digestBox.replaceChildren();
 
         const head = document.createElement('div');
@@ -1809,42 +1744,17 @@
           });
           head.appendChild(stats);
         }
-        const progress = document.createElement('div');
-        progress.className = 'digest-progress';
-        makeText(progress, 'span', '', `已读 ${readCount} / ${stories.length}`);
-        const bar = document.createElement('div');
-        bar.className = 'digest-bar';
-        const fill = document.createElement('span');
-        fill.style.width = `${Math.round(readCount / stories.length * 100)}%`;
-        bar.appendChild(fill);
-        progress.appendChild(bar);
-        head.appendChild(progress);
         digestBox.appendChild(head);
         makeText(digestBox, 'div', 'paper-section', '今日重点');
 
-        shown.forEach(day => {
-          if (day !== latest) {
-            const left = day.stories.filter(story => !isNewsRead(story.id)).length;
-            makeText(digestBox, 'div', 'digest-day', `补看 · ${dayLabel(day.date)} · 还剩 ${left} 条`);
-          }
-          // Unread first, each group in the job's score order. The newest day's first unread story is the
-          // front-page lead across the page; the rest run in columns (two on wider screens).
-          const ordered = [...day.stories.filter(story => !isNewsRead(story.id)), ...day.stories.filter(story => isNewsRead(story.id))];
-          const lead = day === latest && !isNewsRead(ordered[0].id) ? ordered.shift() : null;
-          if (lead) renderDigestStory(digestBox, lead, true);
-          const columns = document.createElement('div');
-          columns.className = 'paper-columns';
-          ordered.forEach(story => renderDigestStory(columns, story));
-          digestBox.appendChild(columns);
-        });
-
-        if (readCount === stories.length) {
-          const done = document.createElement('div');
-          done.className = 'digest-done';
-          makeText(done, 'strong', '', '✓ 今天的重点看完了');
-          makeText(done, 'p', '', '你没有错过重要的事。还在发展的大事，明天会带着新进展再出现在这里。');
-          digestBox.appendChild(done);
-        }
+        // In the job's score order: the first is the front-page lead across the page, the rest run in columns
+        // (two on wider screens).
+        const [lead, ...rest] = latest.stories;
+        renderDigestStory(digestBox, lead, true);
+        const columns = document.createElement('div');
+        columns.className = 'paper-columns';
+        rest.forEach(story => renderDigestStory(columns, story));
+        digestBox.appendChild(columns);
 
         const more = document.createElement('div');
         more.className = 'digest-more';
@@ -1858,7 +1768,7 @@
           button.type = 'button';
           button.textContent = `${label} ${open ? '▴' : '▾'}`;
           button.setAttribute('aria-expanded', String(open));
-          button.addEventListener('click', () => { flip(); refreshDigest(); });
+          button.addEventListener('click', () => { flip(); renderDigest(); });
           more.appendChild(button);
         });
         digestBox.appendChild(more);
@@ -1889,8 +1799,6 @@
           const allBriefs = briefData.briefs || [];
           const briefs = allBriefs.filter(brief => !(brief.video_keys || []).some(key => videoKeys.has(key)));
           const textRows = appearanceRows.filter(item => item.content_type === 'text' || item.content_type === 'index');
-          // News already read in 今日重点 leaves the full list (from the next time it loads).
-          const unreadNews = news.filter(story => !story.id || !isNewsRead(story.id));
           briefList.replaceChildren();
           [...briefs.map(brief => ({
             published: brief.published,
@@ -1909,7 +1817,7 @@
             summary: getAppearanceHighlight(item),
             why: personAIContext[item.person_id] ? `人物：${personAIContext[item.person_id]}` : '',
             links: [{ label: item.content_type === 'index' ? '打开索引页' : '打开原文', url: item.official_publisher_url }]
-          })), ...unreadNews.map(story => ({
+          })), ...news.map(story => ({
             // Found by the daily job (tools/news.mjs): headlines from major outlets about watched people, labs and themes.
             published: story.published,
             meta: `新闻 · ${story.source}${story.outlets.length > 1 ? ` 等 ${story.outlets.length} 家媒体报道` : ''}`,
@@ -1920,13 +1828,13 @@
             why: story.meaning ? `这意味着：${story.meaning}` : '',
             links: [{ label: `打开原文 · ${story.source}`, url: story.url }]
           }))].sort(newestFirst(entry => entry.published)).forEach(renderBrief);
-          const total = briefs.length + textRows.length + unreadNews.length;
+          const total = briefs.length + textRows.length + news.length;
           const covered = allBriefs.length - briefs.length;
           briefCount.textContent = `${total} 条`;
           briefTotal = total;
           digestFeed = { news, digests, weekly };
-          refreshDigest();
-          briefNote.textContent = `共 ${total} 条：${unreadNews.length} 条最近 7 天的自动新闻（追踪名单人物、实验室和重点主题，只收主流媒体；已读的不再列出），${briefs.length} 条资讯简报，${textRows.length} 条没有视频或音频的文字稿和资源索引。${covered ? `另有 ${covered} 条已有视频，在视频 TAB 里看，这里不重复。` : ''}`;
+          renderDigest();
+          briefNote.textContent = `共 ${total} 条：${news.length} 条最近 7 天的自动新闻（追踪名单人物、实验室和重点主题，只收主流媒体），${briefs.length} 条资讯简报，${textRows.length} 条没有视频或音频的文字稿和资源索引。${covered ? `另有 ${covered} 条已有视频，在视频 TAB 里看，这里不重复。` : ''}`;
         } catch {
           briefsLoaded = false;
           briefCount.textContent = '未加载';
@@ -2543,6 +2451,7 @@
           return;
         }
         renderWatchlist();
+        watchlistList.scrollTop = 0;
         await loadFeedEntries();
         // Refresh with counts, unless a name was opened meanwhile (then refresh that view).
         if (watchlistSheet.hidden) return;

@@ -1,6 +1,46 @@
 {
- "updated": "2026-11-02T01:31:07.397Z",
+ "updated": "2026-11-02T14:07:24.557Z",
  "items": [
+  {
+   "key": "youtube:-GKLZWEq-0c",
+   "url": "https://www.youtube.com/watch?v=-GKLZWEq-0c",
+   "title": "SEO for AI Search: How Ajelix Grew to 350K Signups Without Ads",
+   "channel": "MicroConf",
+   "channelId": "UCroeMSea_O-xfgDvgbJGVQA",
+   "published": "2026-11-02",
+   "summary": "How a small team from Latvia got 350,000 signups through first-mover SEO, listicles, and AI search visibility, and achieved organic SaaS growth without ads. Agnese Jaunošāne and her co-founder started Ajelix with a pact:…",
+   "about": "MicroConf：面向自筹资金 SaaS 创业者的大会与频道。",
+   "tab": "appearances",
+   "tags": [
+    "SaaS"
+   ],
+   "minutes": 29,
+   "found": "2026-11-02",
+   "highlight": "Ajelix 的 COO 兼联合创始人 Agnese Jaunošāne 分享了他们如何在没有营销预算的情况下，通过“AI + Excel”的第一性原理 SEO 和产品迭代，在没有广告支持的情况下实现 35 万注册用户的有机 SaaS 增长。",
+   "kind": "method",
+   "sports": false
+  },
+  {
+   "key": "youtube:mW6cCpcIV_0",
+   "url": "https://www.youtube.com/watch?v=mW6cCpcIV_0",
+   "title": "Elon Musk-Starlink Row: Ryanair CEO Rules Out Making Up",
+   "channel": "Bloomberg Television",
+   "channelId": "UCIALMKvObZNtJ6AmdCLP7Lg",
+   "published": "2026-11-02",
+   "summary": "Bloomberg Daybreak Europe is your essential morning viewing to stay ahead. Live from London, we set the agenda for your day, ...",
+   "about": "Elon Musk：xAI / Tesla。",
+   "tab": "appearances",
+   "tags": [
+    "人物新视频",
+    "Elon Musk"
+   ],
+   "minutes": 46,
+   "found": "2026-11-02",
+   "via": "person",
+   "highlight": "Bloomberg Daybreak Europe 节目涵盖了全球市场新闻，今天的嘉宾包括 Leverage Shares 高级研究分析师 Violeta Todorova 和 Ryanair CEO Michael O’Leary。",
+   "kind": "judgment",
+   "sports": false
+  },
   {
    "key": "youtube:6ck6Sp_yQro",
    "url": "https://www.youtube.com/watch?v=6ck6Sp_yQro",
@@ -18,7 +58,9 @@
    "minutes": 78,
    "found": "2026-11-01",
    "via": "person",
-   "highlight": "Yann LeCun、Yoshua Bengio 和 Geoffrey Hinton 共同讲解了深度学习的基本原理，探讨了多层神经网络如何通过反向传播算法驱动的梯度下降从原始数据中学习表示。内容涵盖了卷积神经网络、分布式表示以及循环神经网络等主题。"
+   "highlight": "Yann LeCun、Yoshua Bengio 和 Geoffrey Hinton 共同讲解了深度学习的基本原理，探讨了多层神经网络如何通过反向传播算法驱动的梯度下降从原始数据中学习表示。内容涵盖了卷积神经网络、分布式表示以及循环神经网络等主题。",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:KM3VQZKjpiY",
@@ -35,7 +77,9 @@
    "found": "2026-11-01",
    "minutes": 26,
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
-   "highlight": "Arca 的 AI 负责人 Aman Singh 与 Latent Space 编审 Richard MacManus 一起探讨了 Arca 如何构建一个 AI 原生的财富管理公司。Singh 解释了 Arca 的架构（包括自定义 harness 和持久记忆），以及他们如何运行跨越数天的智能体工作流。"
+   "highlight": "Arca 的 AI 负责人 Aman Singh 与 Latent Space 编审 Richard MacManus 一起探讨了 Arca 如何构建一个 AI 原生的财富管理公司。Singh 解释了 Arca 的架构（包括自定义 harness 和持久记忆），以及他们如何运行跨越数天的智能体工作流。",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:v-d1WTqIULs",
@@ -52,7 +96,9 @@
    "found": "2026-11-01",
    "minutes": 28,
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
-   "highlight": "OpenAI 的金融服务负责人 Joseph Kim 与 swyx 和 Richard 讨论了在通用模型之上构建金融 AI 的决策过程。内容涵盖将金融推理训练到共享模型中、连接市场数据以及构建金融专业人士可以审查和信任的工作流。"
+   "highlight": "OpenAI 的金融服务负责人 Joseph Kim 与 swyx 和 Richard 讨论了在通用模型之上构建金融 AI 的决策过程。内容涵盖将金融推理训练到共享模型中、连接市场数据以及构建金融专业人士可以审查和信任的工作流。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:g5Witsq_KLY",
@@ -71,7 +117,9 @@
    "minutes": 51,
    "found": "2026-11-01",
    "via": "person",
-   "highlight": "Core Automation 联合创始人兼 CEO、前 OpenAI 研究副总裁 Jerry Tworek 探讨了 AI 推理、智能体以及如何超越常规预训练转向持续学习。他分享了构建能够解决日益复杂问题的系统以及使用智能体自动化 AI 研究的愿景。"
+   "highlight": "Core Automation 联合创始人兼 CEO、前 OpenAI 研究副总裁 Jerry Tworek 探讨了 AI 推理、智能体以及如何超越常规预训练转向持续学习。他分享了构建能够解决日益复杂问题的系统以及使用智能体自动化 AI 研究的愿景。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:x08qttt_CxY",
@@ -90,7 +138,9 @@
    "minutes": 24,
    "found": "2026-11-01",
    "via": "person",
-   "highlight": "部长 Evan Solomon 与 Cohere 的 Aidan Gomez 及 AI 研究员 Joëlle Pineau 共同探讨了如何构建值得信赖的 AI、将研究转化为机遇，以及加拿大在保持自主选择能力的同时如何在竞争中发展。"
+   "highlight": "部长 Evan Solomon 与 Cohere 的 Aidan Gomez 及 AI 研究员 Joëlle Pineau 共同探讨了如何构建值得信赖的 AI、将研究转化为机遇，以及加拿大在保持自主选择能力的同时如何在竞争中发展。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:vFOnDsy58NU",
@@ -107,7 +157,9 @@
    "found": "2026-11-01",
    "minutes": 52,
    "channelId": "UCiq1FIgtEK7LRAOB1JXTPig",
-   "highlight": "哈佛商学院教授 Karim R. Lakhani 与主持人探讨了 AI 如何改变我们的工作方式，并分享了人与 AI 协作的三种方式：赛博格、半人马和自我自动化者。讨论还涉及如何通过 AI 建立真正的专业知识以及如何培养判断力和品味。"
+   "highlight": "哈佛商学院教授 Karim R. Lakhani 与主持人探讨了 AI 如何改变我们的工作方式，并分享了人与 AI 协作的三种方式：赛博格、半人马和自我自动化者。讨论还涉及如何通过 AI 建立真正的专业知识以及如何培养判断力和品味。",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:PFIWtV78_oU",
@@ -124,7 +176,9 @@
    "found": "2026-11-01",
    "minutes": 23,
    "channelId": "UCipPA-ZHX6UYGH_Iyti1-Jw",
-   "highlight": "Alibaba Cloud 推出了 AgentCore，探讨了工作原型与可在生产环境中运行的智能体之间的差距，以及企业在将智能体从实验推向真实业务工作流时所面临的挑战。"
+   "highlight": "Alibaba Cloud 推出了 AgentCore，探讨了工作原型与可在生产环境中运行的智能体之间的差距，以及企业在将智能体从实验推向真实业务工作流时所面临的挑战。",
+   "kind": "product",
+   "sports": false
   },
   {
    "key": "youtube:EZcWEsMuLb4",
@@ -141,7 +195,9 @@
    "found": "2026-11-01",
    "minutes": 38,
    "channelId": "UCSI7h9hydQ40K5MJHnCrQvw",
-   "highlight": "Serval 联合创始人兼 CEO Jake Stauch 与 Sarah Guo 和 Elad Gil 探讨了将代码生成智能体交到企业 IT 团队手中所带来的变革。他解释了 Serval 如何直接挑战 ServiceNow，并讨论了确定性审批、审计追踪以及企业软件的未来。"
+   "highlight": "Serval 联合创始人兼 CEO Jake Stauch 与 Sarah Guo 和 Elad Gil 探讨了将代码生成智能体交到企业 IT 团队手中所带来的变革。他解释了 Serval 如何直接挑战 ServiceNow，并讨论了确定性审批、审计追踪以及企业软件的未来。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:iMsUcCYNKqY",
@@ -158,7 +214,9 @@
    ],
    "minutes": 53,
    "found": "2026-11-01",
-   "highlight": "OpenAI CEO Sam Altman 与 John 一起探讨了模型如何发现关键的 PHP 漏洞、测试时计算如何解锁海量智能体集群，以及沙盒化超人类模型仍是一个未解的安全难题。"
+   "highlight": "OpenAI CEO Sam Altman 与 John 一起探讨了模型如何发现关键的 PHP 漏洞、测试时计算如何解锁海量智能体集群，以及沙盒化超人类模型仍是一个未解的安全难题。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:d3a7Jw9s3yc",
@@ -177,7 +235,9 @@
    "minutes": 45,
    "found": "2026-11-01",
    "via": "person",
-   "highlight": "Nvidia CEO Jensen Huang 讨论了人工智能和机器人技术，并就人类生存所涉及的抽象世界和物理世界发表了看法。"
+   "highlight": "Nvidia CEO Jensen Huang 讨论了人工智能和机器人技术，并就人类生存所涉及的抽象世界和物理世界发表了看法。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:aeIY7Q0iebw",
@@ -196,7 +256,9 @@
    "minutes": 54,
    "found": "2026-11-01",
    "via": "person",
-   "highlight": "Microsoft AI的CEO Mustafa Suleyman在访谈中探讨了AI对人类工作、医学、能源和教育的变革，并警告AI意识可能带来的威胁。他还回顾了与Anthropic的分歧以及对超级智能的看法。"
+   "highlight": "Microsoft AI的CEO Mustafa Suleyman在访谈中探讨了AI对人类工作、医学、能源和教育的变革，并警告AI意识可能带来的威胁。他还回顾了与Anthropic的分歧以及对超级智能的看法。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:ncoMBc-oj_8",
@@ -215,7 +277,9 @@
    "minutes": 33,
    "found": "2026-11-01",
    "via": "person",
-   "highlight": "NVIDIA创始人兼CEO Jensen Huang在哈萨克斯坦阿斯塔纳出席炉边谈话，与副总理兼数字化发展部部长Zhaslan Madiyev共同探讨了AI的未来、Physical AI的发展以及能源与计算基础设施。"
+   "highlight": "NVIDIA创始人兼CEO Jensen Huang在哈萨克斯坦阿斯塔纳出席炉边谈话，与副总理兼数字化发展部部长Zhaslan Madiyev共同探讨了AI的未来、Physical AI的发展以及能源与计算基础设施。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:zHG6sAss_kE",
@@ -232,7 +296,9 @@
    "found": "2026-11-01",
    "minutes": 77,
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
-   "highlight": "Supabase联合创始人Paul Copplestone（CEO）和Ant Wilson（CTO）做播客，分享了该开源Postgres平台如何成长为AI构建应用的首选后端及相关技术特性。"
+   "highlight": "Supabase联合创始人Paul Copplestone（CEO）和Ant Wilson（CTO）做播客，分享了该开源Postgres平台如何成长为AI构建应用的首选后端及相关技术特性。",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:MRQTlwcW-aQ",
@@ -249,7 +315,9 @@
    "found": "2026-11-01",
    "minutes": 107,
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
-   "highlight": "Anthropic的工程负责人Katelyn Lesse与产品负责人Angela Jiang探讨了Anthropic如何构建Claude Managed Agents的架构、处理沙箱与凭证安全，以及使用Rust重构Messages API等技术细节。"
+   "highlight": "Anthropic的工程负责人Katelyn Lesse与产品负责人Angela Jiang探讨了Anthropic如何构建Claude Managed Agents的架构、处理沙箱与凭证安全，以及使用Rust重构Messages API等技术细节。",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:3Lc0xfW4r9Q",
@@ -266,7 +334,9 @@
    ],
    "minutes": 80,
    "found": "2026-11-01",
-   "highlight": "联合航空（United Airlines）CEO Scott Kirby在访谈中分析了航空商业模式、疫情期间的机队扩张策略、引入SpaceX Starlink以及航空交通管制瓶颈等行业话题。"
+   "highlight": "联合航空（United Airlines）CEO Scott Kirby在访谈中分析了航空商业模式、疫情期间的机队扩张策略、引入SpaceX Starlink以及航空交通管制瓶颈等行业话题。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:M_Dw4r-y1xM",
@@ -285,7 +355,9 @@
    "minutes": 55,
    "found": "2026-11-01",
    "via": "person",
-   "highlight": "在Oracle AI World活动中，Oracle联席CEO Clay Magourk与OpenAI CEO Sam Altman同台演讲，宣布Oracle扩大与OpenAI的合作，将ChatGPT和Codex整合进软件应用中。"
+   "highlight": "在Oracle AI World活动中，Oracle联席CEO Clay Magourk与OpenAI CEO Sam Altman同台演讲，宣布Oracle扩大与OpenAI的合作，将ChatGPT和Codex整合进软件应用中。",
+   "kind": "product",
+   "sports": false
   },
   {
    "key": "youtube:1OdoSzfUkec",
@@ -304,7 +376,9 @@
    "minutes": 42,
    "found": "2026-11-01",
    "via": "person",
-   "highlight": "Anthropic的创始人兄妹Dario和Daniela Amodei在访谈中讲述了他们追求更具人性、注重安全与伦理的AI发展路线，以及Claude的安全性与评估机制。"
+   "highlight": "Anthropic的创始人兄妹Dario和Daniela Amodei在访谈中讲述了他们追求更具人性、注重安全与伦理的AI发展路线，以及Claude的安全性与评估机制。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:ZAzWPE9CItg",
@@ -321,7 +395,9 @@
    "found": "2026-11-01",
    "minutes": 214,
    "channelId": "UCSHZKyawb77ixDdsGog4iWA",
-   "highlight": "数学家Ankur Moitra、Steven Brunton和Alex Kontorovich做客Lex Fridman播客，探讨AI在Navier-Stokes、黎曼猜想和复杂性理论等数学难题上取得突破的关键时刻。"
+   "highlight": "数学家Ankur Moitra、Steven Brunton和Alex Kontorovich做客Lex Fridman播客，探讨AI在Navier-Stokes、黎曼猜想和复杂性理论等数学难题上取得突破的关键时刻。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:vhPCo-8K78U",
@@ -338,7 +414,9 @@
    "found": "2026-11-01",
    "minutes": 17,
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
-   "highlight": "Leash Biosciences联合创始人Ian Quigley在播客中介绍了Minos框架及其科学智能体在药物化学和实验世界中的应用与表现。"
+   "highlight": "Leash Biosciences联合创始人Ian Quigley在播客中介绍了Minos框架及其科学智能体在药物化学和实验世界中的应用与表现。",
+   "kind": "product",
+   "sports": false
   },
   {
    "key": "youtube:24XUcWhqY_4",
@@ -357,7 +435,9 @@
    "minutes": 24,
    "found": "2026-11-01",
    "via": "person",
-   "highlight": "微软 (Microsoft) CEO Satya Nadella 在节目中探讨了开源与闭关模型的竞争，以及为什么企业需要拥有自己的智能。"
+   "highlight": "微软 (Microsoft) CEO Satya Nadella 在节目中探讨了开源与闭关模型的竞争，以及为什么企业需要拥有自己的智能。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:iJfF_VC10tI",
@@ -374,7 +454,9 @@
    "found": "2026-11-01",
    "minutes": 39,
    "channelId": "UCiq1FIgtEK7LRAOB1JXTPig",
-   "highlight": "来自 UCSF 的资深医生在节目中讨论了 AI 将如何改变每一个医疗专科，包括患者如何向聊天机器人提问、全景扫描以及医疗 AI 的炒作与现实。"
+   "highlight": "来自 UCSF 的资深医生在节目中讨论了 AI 将如何改变每一个医疗专科，包括患者如何向聊天机器人提问、全景扫描以及医疗 AI 的炒作与现实。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:6VprwfSc4Xk",
@@ -391,7 +473,9 @@
    "found": "2026-11-01",
    "minutes": 41,
    "channelId": "UCSI7h9hydQ40K5MJHnCrQvw",
-   "highlight": "Cloudflare CTO Dane Knecht 与 Sarah Guo 在 No Priors 节目中探讨了面向 agentic web（智能体网络）的安全性、零信任架构、零工与实习生招聘等话题。"
+   "highlight": "Cloudflare CTO Dane Knecht 与 Sarah Guo 在 No Priors 节目中探讨了面向 agentic web（智能体网络）的安全性、零信任架构、零工与实习生招聘等话题。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:PST8yesYOSo",
@@ -408,7 +492,9 @@
    "found": "2026-11-01",
    "minutes": 45,
    "channelId": "UCSI7h9hydQ40K5MJHnCrQvw",
-   "highlight": "CrowdStrike 总裁兼 CEO George Kurtz 与 Sarah Guo、Elad Gil 讨论了 adversaries 携带 AI 代理发起的攻击、CrowdStrike 与 Nvidia 共建安全模型实验室，以及开源权重与闭源模型的安全对比。"
+   "highlight": "CrowdStrike 总裁兼 CEO George Kurtz 与 Sarah Guo、Elad Gil 讨论了 adversaries 携带 AI 代理发起的攻击、CrowdStrike 与 Nvidia 共建安全模型实验室，以及开源权重与闭源模型的安全对比。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:IiZ9yd2Do8I",
@@ -425,7 +511,9 @@
    ],
    "minutes": 86,
    "found": "2026-11-01",
-   "highlight": "Modal CEO Erik Bernhardsson 与 Latent Space 探讨了 AI 算力的池化、GPU 供应、替代加速器以及智能体沙箱的安全性和发展。"
+   "highlight": "Modal CEO Erik Bernhardsson 与 Latent Space 探讨了 AI 算力的池化、GPU 供应、替代加速器以及智能体沙箱的安全性和发展。",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:DWHyPWnzGAI",
@@ -442,7 +530,9 @@
    ],
    "minutes": 27,
    "found": "2026-11-01",
-   "highlight": "Moshi 创始人兼 CEO Anekha Sokhal 与 swyx 在 AI Engineer NYC 上探讨了为大宗商品交易员构建 AI 工具、连接市场数据以及处理冲突来源的经验。"
+   "highlight": "Moshi 创始人兼 CEO Anekha Sokhal 与 swyx 在 AI Engineer NYC 上探讨了为大宗商品交易员构建 AI 工具、连接市场数据以及处理冲突来源的经验。",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:vhKLKoKhI0s",
@@ -459,7 +549,9 @@
    "found": "2026-11-01",
    "minutes": 120,
    "channelId": "UC3Sv1JuKpbOx3csUO8FAo5g",
-   "highlight": "科沃斯 CEO 钱程（David）在张小珺 Podcast 中分享了自己作为“企二代”与“创二代”接班的现实经历、思考以及对机器人的看法。"
+   "highlight": "科沃斯 CEO 钱程（David）在张小珺 Podcast 中分享了自己作为“企二代”与“创二代”接班的现实经历、思考以及对机器人的看法。",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:Vki6cklFqxo",
@@ -476,7 +568,9 @@
    ],
    "minutes": 44,
    "found": "2026-11-01",
-   "highlight": "Tenex 的 Alex Lieberman 与 CJ Hess 在 Latent Space 上探讨了如何组织 AI 原生工程团队、MetaHarness 流程、企业 AI 采纳以及 AI 构建的软件如何替代 SaaS。"
+   "highlight": "Tenex 的 Alex Lieberman 与 CJ Hess 在 Latent Space 上探讨了如何组织 AI 原生工程团队、MetaHarness 流程、企业 AI 采纳以及 AI 构建的软件如何替代 SaaS。",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:VYv3qrqh2FQ",
@@ -493,7 +587,9 @@
    ],
    "minutes": 9,
    "found": "2026-11-01",
-   "highlight": "本期视频通过厨房的比喻，为小白讲解了在 AI 时代如何选择电脑以及本地大模型是否有必要。"
+   "highlight": "本期视频通过厨房的比喻，为小白讲解了在 AI 时代如何选择电脑以及本地大模型是否有必要。",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:D-SVFneJ_Nk",
@@ -510,7 +606,9 @@
    "found": "2026-11-01",
    "minutes": 49,
    "channelId": "UCiq1FIgtEK7LRAOB1JXTPig",
-   "highlight": "Anthropic 旗下 Claude.ai、Cowork 和 Claude Code Desktop 的工程负责人 Felix Rieseberg 探讨了如何停止像 2024 年那样使用 Claude，并学会如何向 AI 赋予更大的目标。"
+   "highlight": "Anthropic 旗下 Claude.ai、Cowork 和 Claude Code Desktop 的工程负责人 Felix Rieseberg 探讨了如何停止像 2024 年那样使用 Claude，并学会如何向 AI 赋予更大的目标。",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:EAtLq9_vrE0",
@@ -527,7 +625,9 @@
    ],
    "minutes": 37,
    "found": "2026-11-01",
-   "highlight": "Evan Conrad of SF Compute joins swyx at AI Engineer New York to discuss building cloud operations for GPU trading and the market for programmable data centers. They cover how interruptions, storage, and hardware generations affect compute prices, and why an independent market operator is needed."
+   "highlight": "Evan Conrad of SF Compute joins swyx at AI Engineer New York to discuss building cloud operations for GPU trading and the market for programmable data centers. They cover how interruptions, storage, and hardware generations affect compute prices, and why an independent market operator is needed.",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:81j1sV32Wng",
@@ -544,7 +644,9 @@
    "found": "2026-11-01",
    "minutes": 14,
    "channelId": "UCroeMSea_O-xfgDvgbJGVQA",
-   "highlight": "Einar Vollset, co-founder of TinySeed and founder of Discretion Capital, speaks at MicroConf Europe 2026 about SaaS moats in the AI era. He argues that selling outcomes rather than tools and building compounding learning loops are key defenses for founders against frontier models."
+   "highlight": "Einar Vollset, co-founder of TinySeed and founder of Discretion Capital, speaks at MicroConf Europe 2026 about SaaS moats in the AI era. He argues that selling outcomes rather than tools and building compounding learning loops are key defenses for founders against frontier models.",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:ZOH8Q401vt0",
@@ -561,7 +663,9 @@
    ],
    "minutes": 75,
    "found": "2026-11-01",
-   "highlight": "Ben Davis, Ben Hylak, Dex Horthy, Allison Durham, Alex Volkov, and swyx discuss OpenAI DevDay, coding agents, and personal assistants. They compare what actually works in daily workflows versus impressive AI capabilities that fall apart in practice."
+   "highlight": "Ben Davis, Ben Hylak, Dex Horthy, Allison Durham, Alex Volkov, and swyx discuss OpenAI DevDay, coding agents, and personal assistants. They compare what actually works in daily workflows versus impressive AI capabilities that fall apart in practice.",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:V0IB8iMzrLQ",
@@ -578,7 +682,9 @@
    "found": "2026-11-01",
    "minutes": 171,
    "channelId": "UC3Sv1JuKpbOx3csUO8FAo5g",
-   "highlight": "张小珺 Podcast features a three-hour interview with Lindon Gao, founder and CEO of Dyna Robotics. They discuss Dyna's product-research approach, the robotic industry's challenges, and his personal journey of self-reflection as an entrepreneur."
+   "highlight": "张小珺 Podcast features a three-hour interview with Lindon Gao, founder and CEO of Dyna Robotics. They discuss Dyna's product-research approach, the robotic industry's challenges, and his personal journey of self-reflection as an entrepreneur.",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:AwuTTOJGEi0",
@@ -595,7 +701,9 @@
    "found": "2026-11-01",
    "minutes": 39,
    "channelId": "UCSI7h9hydQ40K5MJHnCrQvw",
-   "highlight": "Sarah Guo and Elad Gil are joined by OpenAI President and co-founder Greg Brockman to discuss OpenAI's rapid progress across frontier models, cybersecurity, and scientific discovery. They explore how AI agents solve math problems and transform drug discovery."
+   "highlight": "Sarah Guo and Elad Gil are joined by OpenAI President and co-founder Greg Brockman to discuss OpenAI's rapid progress across frontier models, cybersecurity, and scientific discovery. They explore how AI agents solve math problems and transform drug discovery.",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:7zF2mN9EPxU",
@@ -612,7 +720,9 @@
    "found": "2026-11-01",
    "minutes": 18,
    "channelId": "UC60lr26YqvcSrl1eDoB2U6A",
-   "highlight": "Artificial Lawyer interviews Leon Johnson of Omnilex to explore the 'new model' for law firms in the AI era and the type of work Omnilex will handle."
+   "highlight": "Artificial Lawyer interviews Leon Johnson of Omnilex to explore the 'new model' for law firms in the AI era and the type of work Omnilex will handle.",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:hQSBJVreLms",
@@ -629,7 +739,9 @@
    ],
    "minutes": 110,
    "found": "2026-11-01",
-   "highlight": "Ian Quigley, co-founder and CEO of Leash Bio, joins Brandon Anderson and RJ Honicky to discuss testing what AI learns about chemistry using DNA-encoded libraries. They cover public dataset shortcuts, model comparisons, and the economics of AI drug discovery."
+   "highlight": "Ian Quigley, co-founder and CEO of Leash Bio, joins Brandon Anderson and RJ Honicky to discuss testing what AI learns about chemistry using DNA-encoded libraries. They cover public dataset shortcuts, model comparisons, and the economics of AI drug discovery.",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:Jijc0XokSpQ",
@@ -646,7 +758,9 @@
    "found": "2026-11-01",
    "minutes": 56,
    "channelId": "UCiq1FIgtEK7LRAOB1JXTPig",
-   "highlight": "Silicon Valley Girl talks with James Manyika, who runs research and labs at Google, about a study on millions of Gemini conversations regarding how people use AI at work. They discuss what this means for jobs, salaries, and future AI forecasts."
+   "highlight": "Silicon Valley Girl talks with James Manyika, who runs research and labs at Google, about a study on millions of Gemini conversations regarding how people use AI at work. They discuss what this means for jobs, salaries, and future AI forecasts.",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:PDH_2bny9mU",
@@ -663,7 +777,9 @@
    "found": "2026-11-01",
    "minutes": 12,
    "channelId": "UC60lr26YqvcSrl1eDoB2U6A",
-   "highlight": "Steno showcases the open beta of Litigation Genius, an AI-enabled court reporting and litigation support product. The overview highlights its ability to handle handwriting, images, and social media posts alongside regular text documents, alongside automated case setups and source-cited answers."
+   "highlight": "Steno showcases the open beta of Litigation Genius, an AI-enabled court reporting and litigation support product. The overview highlights its ability to handle handwriting, images, and social media posts alongside regular text documents, alongside automated case setups and source-cited answers.",
+   "kind": "product",
+   "sports": false
   },
   {
    "key": "youtube:T4g7imgw5PI",
@@ -680,7 +796,9 @@
    "found": "2026-11-01",
    "minutes": 15,
    "channelId": "UC60lr26YqvcSrl1eDoB2U6A",
-   "highlight": "Artificial Lawyer interviews Anthony Seale, CEO of Legatics, discussing Legatics and Harvey Connectors."
+   "highlight": "Artificial Lawyer interviews Anthony Seale, CEO of Legatics, discussing Legatics and Harvey Connectors.",
+   "kind": "product",
+   "sports": false
   },
   {
    "key": "youtube:fJtpYWidccc",
@@ -697,7 +815,9 @@
    "found": "2026-11-01",
    "minutes": 25,
    "channelId": "UC60lr26YqvcSrl1eDoB2U6A",
-   "highlight": "Len Hickey 作为 Litigaze 的 CEO，在 Artificial Lawyer 的访谈与产品演示中探讨了 AI 决策系统（如 Jev 及 OpenAI Decisions API）在法律领域的应用。访谈重点展示了 Litigaze 如何将该技术用于 eDiscovery（电子取证）和合同审查，并讨论了使用开源模型进行后训练以降低成本、提高准确率的潜力。"
+   "highlight": "Len Hickey 作为 Litigaze 的 CEO，在 Artificial Lawyer 的访谈与产品演示中探讨了 AI 决策系统（如 Jev 及 OpenAI Decisions API）在法律领域的应用。访谈重点展示了 Litigaze 如何将该技术用于 eDiscovery（电子取证）和合同审查，并讨论了使用开源模型进行后训练以降低成本、提高准确率的潜力。",
+   "kind": "product",
+   "sports": false
   },
   {
    "key": "youtube:BHiYomkfoGQ",
@@ -714,7 +834,9 @@
    ],
    "minutes": 81,
    "found": "2026-11-01",
-   "highlight": "Dyna Robotics 的联合创始人兼首席科学家 Jason Ma 做客 Latent Space，探讨了物理 AI 的最新进展与实际落地。节目深入讨论了基于超过百万小时人类视频训练的世界动作模型 Dyna-2、机器人如何通过少量演示学习新任务，以及 Dyna 自研硬件和推动机器人实现商业化部署的经验。"
+   "highlight": "Dyna Robotics 的联合创始人兼首席科学家 Jason Ma 做客 Latent Space，探讨了物理 AI 的最新进展与实际落地。节目深入讨论了基于超过百万小时人类视频训练的世界动作模型 Dyna-2、机器人如何通过少量演示学习新任务，以及 Dyna 自研硬件和推动机器人实现商业化部署的经验。",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:zlD-CkLVKtU",
@@ -731,7 +853,9 @@
    ],
    "minutes": 28,
    "found": "2026-11-01",
-   "highlight": "Latent Space 团队面对每年 43,000 美元的 SaaS 工具报价，邀请开发者使用编码 агенты 和开源技术对其进行克隆。最终有 72 个团队提交了作品，节目总结了构建者如何在 Claude Code 和 Codex 之间分配工作，以及拥有软件与构建软件之间的差异。"
+   "highlight": "Latent Space 团队面对每年 43,000 美元的 SaaS 工具报价，邀请开发者使用编码 агенты 和开源技术对其进行克隆。最终有 72 个团队提交了作品，节目总结了构建者如何在 Claude Code 和 Codex 之间分配工作，以及拥有软件与构建软件之间的差异。",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "youtube:NufiHZfMwaw",
@@ -748,7 +872,9 @@
    ],
    "minutes": 33,
    "found": "2026-11-01",
-   "highlight": "Google DeepMind 的 Pushmeet Kohli 与 Biohub 的 Sal Candido 在 Latent Space 的特别小组讨论中，探讨了 AI 在生物学领域的应用与局限。他们讨论了 AlphaFold 的突破仅是个开始、为何仅靠计算和数据扩展无法解决蛋白质折叠问题，以及如何通过下一代 AI 模型变革对蛋白质、细胞和人类疾病的理解。"
+   "highlight": "Google DeepMind 的 Pushmeet Kohli 与 Biohub 的 Sal Candido 在 Latent Space 的特别小组讨论中，探讨了 AI 在生物学领域的应用与局限。他们讨论了 AlphaFold 的突破仅是个开始、为何仅靠计算和数据扩展无法解决蛋白质折叠问题，以及如何通过下一代 AI 模型变革对蛋白质、细胞和人类疾病的理解。",
+   "kind": "judgment",
+   "sports": false
   },
   {
    "key": "youtube:CZDwvcW-YTA",
@@ -765,7 +891,9 @@
    ],
    "minutes": 8,
    "found": "2026-11-01",
-   "highlight": "秋芝2046 通过工作室 room tour 介绍了 Agent 在现实生活中的应用，展示了由 Agent 接管工作室的开灯和关灯等日常管理工作。"
+   "highlight": "秋芝2046 通过工作室 room tour 介绍了 Agent 在现实生活中的应用，展示了由 Agent 接管工作室的开灯和关灯等日常管理工作。",
+   "kind": "product",
+   "sports": false
   }
  ],
  "videos": {
@@ -775,7 +903,9 @@
    "author": "Cheeky Pint",
    "minutes": 53,
    "summary": "Sam Altman, CEO of OpenAI, joins John to break down how models uncovered critical PHP vulnerabilities, why test-time compute unlocks massive agent swarms, and OpenAI's internal experiments proving complex math problems l…",
-   "highlight": "OpenAI CEO Sam Altman在访谈中讨论了模型如何发现关键PHP漏洞、测试时计算如何赋能大规模智能体集群，以及OpenAI在复杂数学问题上的内部实验。"
+   "highlight": "OpenAI CEO Sam Altman在访谈中讨论了模型如何发现关键PHP漏洞、测试时计算如何赋能大规模智能体集群，以及OpenAI在复杂数学问题上的内部实验。",
+   "kind": "judgment",
+   "sports": false
   }
  },
  "channels": {
@@ -794,11 +924,13 @@
   "channel:@siliconvalleygirl": {
    "url": "https://www.youtube.com/@SiliconValleyGirl",
    "id": "UCiq1FIgtEK7LRAOB1JXTPig",
+   "name": "Silicon Valley Girl",
    "count": 4
   },
   "channel:@xiaojunpodcast": {
    "url": "https://www.youtube.com/@xiaojunpodcast",
    "id": "UC3Sv1JuKpbOx3csUO8FAo5g",
+   "name": "张小珺 Podcast",
    "count": 2
   },
   "channel:@cheekypint": {
@@ -810,23 +942,201 @@
  },
  "news": [
   {
-   "id": "1w2yjjm",
-   "lastSeen": "2026-11-01",
-   "title": "DeepSeek unveils AI ‘super agent’ in coding race with OpenAI, Anthropic",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbFU5NlZJMVBaQ0txUnotazkwaWdmQzJwb3JvWUY4dTFHd2VERGZtdVJiMmxaTG9vR0pjZjFLOXZoZVRfRlFFZzM3dV81VVM3RDZLckQxZ01nc2ZFWGVvQlVoalk3X21iWDdBa29WcWNvblY1YVpGc3hPbDJCVVA3a2d2YVJDbFlZRUdkZ0NXTHplVTlEUGJ6RVBXTXZ1bWQ5eVRNNtIBpAFBVV95cUxQY3o3SXYteGFPRF9kQ3psaFZaTDJHMzhibnhoVE5LdjhGVUxkN2VBNnVuNHd2XzhodEpYLTRyMzhRcXNpWjY4SjBhMmdzek1oN0ZGRnh6RU5aWm12QUxYdDVvaktJUUU2UE1QVVdXUzhvdHFPZ0FrOHpOODJNQUlHYm5DSlI3aW8wS0dpMHFDWTNfNGpQeS0wYnU1TkIxbmtxVGRfSw?oc=5",
-   "source": "South China Morning Post",
-   "domain": "scmp.com",
-   "published": "2026-11-01",
+   "id": "1wfiuz1",
+   "lastSeen": "2026-11-02",
+   "title": "Sam Altman makes surprise South Korea visit as OpenAI builds on chip partnerships",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWXlvV0hJZUZkSjc0QnBBTk0wT2tnN3lLNC1WLVp3ck45eTMxV3dJcFdqMlFqVEJLMXBaWGVfa05FS0dyaUtRTHY0V3E3SlRiNlNUSDdaU0Rqalh2Yzh6M0ZHZ21BcFQ1czZ1YXc4Y1F3cHZXMDlsZ2IxRXBOdkEyYmRWUdIBiAFBVV95cUxNMWl2MmNCRWhLRzBKd19jc0RzTGhZUURCOTVDYjZKUGZmRmw5TTRuRGo4NXo4bDg5M1A5U3lQUnVDWHF1WnlWZ0o3WTFjRFM1enNQYy1GMThiY3NyWXFSOFdWV0ZzbzV5VUxvRlhtMndEZTZqaFRZZnVOUlVCRW5ycmtLQUU0Y3Az?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-11-02",
    "outlets": [
-    "South China Morning Post"
+    "CNBC"
    ],
    "themes": [],
    "headlines": [
-    "DeepSeek unveils AI ‘super agent’ in coding race with OpenAI, Anthropic"
+    "Sam Altman makes surprise South Korea visit as OpenAI builds on chip partnerships"
    ],
    "entities": [
-    "OpenAI",
-    "Anthropic",
+    "Sam Altman",
+    "OpenAI"
+   ],
+   "summary": "Sam Altman进行了对韩国的突防访问，同时OpenAI正致力于推进芯片合作伙伴关系。",
+   "meaning": "这显示了OpenAI在底层硬件供应链上的持续布局，对关注全球通用AI与算力进展的读者来说是不容错过的大事。",
+   "importance": 8
+  },
+  {
+   "id": "wyq435",
+   "lastSeen": "2026-11-02",
+   "title": "Abu Dhabi's ADNOC, G42 sign deal with OpenAI as Sam Altman travels to UAE",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTWMxZGNac0g1UDJOemxSbHJnU1g4cllCaWZxdzJEWVBIU2R6aG83R2RlMk9HV19ZTmYxSUMzRjBJU19pbXN6QWV6bHJCQXlJYlFRVEdEVFVQRFl3cTREcWlGUU5aOHc1VDRWQTIxZk0wWHo2a1F0MVZhTWp6VXRPUHQ4TjlONXE2LTc1UEVBY1VYYW56V3IyeFJnNWQwUnppaTNYc1ROTTgzZXN3WTg5SXJscm5BOHZD?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "Abu Dhabi's ADNOC, G42 sign deal with OpenAI as Sam Altman travels to UAE"
+   ],
+   "entities": [
+    "Sam Altman",
+    "OpenAI"
+   ],
+   "summary": "在Sam Altman访问阿联酋期间，阿布扎比的ADNOC和G42与OpenAI签署了协议。",
+   "meaning": "展示了OpenAI在中东地区的商业扩展与地缘合作，进一步强化了其全球化布局。",
+   "importance": 7
+  },
+  {
+   "id": "8200cb",
+   "lastSeen": "2026-11-02",
+   "title": "Elon Musk Tests What Nearly Half a Billion Dollars Can Buy in the Midterms",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPajZvWUlva0FScUU2d3RLSXRuQ1dhaThFZzlKNkZRVVJ1Uk5RdGdKdTVtQU1ER20tT2dqNzFObXh0RUxqeGRWOGlpcmJaaFFCdndEdnFCcExWZDhiMzR4LVQ2LV9laHNlTFBrSnB6Nkc3bW02RDlFbWhFSFoxSE1ZdEg3Ukw?oc=5",
+   "source": "The New York Times",
+   "domain": "nytimes.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "The New York Times"
+   ],
+   "themes": [],
+   "headlines": [
+    "Elon Musk Tests What Nearly Half a Billion Dollars Can Buy in the Midterms"
+   ],
+   "entities": [
+    "Elon Musk"
+   ],
+   "summary": "Elon Musk在期中选举中测试了近5亿美元资金能买到什么。",
+   "meaning": "反映了科技巨头在政治与社会资源上的巨大投入，属于科技人物相关的通用大事件。",
+   "importance": 4
+  },
+  {
+   "id": "uwoqnb",
+   "lastSeen": "2026-11-02",
+   "title": "Anthropic IPO: Silicon Valley’s AI Bets Are Built on Hype, Hope and Hubris",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNb1ZhMmFDZnhESjdhVURGOGFzaHdfcWFPSk1UQjhGZUNtUjhKTkNtbkhjdkhWZElKZkVLTFd0ZEZZNUJ6T3k5OGd1ZmtFMk4tUXVEZUUtblZOSHJfaHNEb1o2N3ZUY3FpSkt5UjZxZnM0YzAxQ1N1T3UtUDkyVWtIejg1ZzBUZXpxbVI3N2JQdmJTNmwyOGtXcUdyRk5tSEZDSjUzZEFtRE00S09SalFJY1BWaUZ0Szk2am5FTVZCYlZfWWxi?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic IPO: Silicon Valley’s AI Bets Are Built on Hype, Hope and Hubris"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "有观点认为，Anthropic的IPO表明硅谷的AI赌注建立在炒作、希望和傲慢之上。",
+   "meaning": "从资本市场视角审视当前AI热潮的泡沫与风险，对理解行业资本风向很有价值。",
+   "importance": 6
+  },
+  {
+   "id": "b601je",
+   "lastSeen": "2026-11-02",
+   "title": "Anthropic's IPO Is Also a Landmark Event for Ants",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUHBsLVlUQnc1NTRMTUZ4UVRCY3BDUERmZW13SU1PdHBEWjNjOEl1cXVUR1dHczVWTmp4a3gwNlJ0VnNXWDV4ZVo1clVDeFFJVE5DTkJLYmNnRG9uSExUTEJTYm8xbTBZdkM4cE9UQnppLXlydXZRQnhjNVhWMmdfWGlEdw?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's IPO Is Also a Landmark Event for Ants"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic的IPO对蚂蚁等也是一个里程碑事件。",
+   "meaning": "将AI初创公司的上市与更广泛的生态联系起来，属于市场观察层面的动态。",
+   "importance": 3
+  },
+  {
+   "id": "18p4lp6",
+   "lastSeen": "2026-11-02",
+   "title": "Anthropic Seeks Up to $3.5 Billion in Japan for Its Mega US IPO",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeE1JSHY4MlhmcGJZTDJ2aXoxaEdWaEZabl9hSTJic2FYODdCdk03cUtpRjNyVHNWOFp0MmNBeU1pa1ZBMExNT3cyNWlBVTBFWnhySlFjSUdUSU9DVjJ4cE5TdDFXbEJmVTJLMlpLT3BYUjZ6LXpoS2xQTnU4NVhvQ1V1TVlFWGdtZmp0dUstalZraDZOQURZNFlUYjJuTXRDWmFOT3QtNkNqazRUbW1NR3FXNA?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Seeks Up to $3.5 Billion in Japan for Its Mega US IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic在日本为其美国大型IPO寻求高达35亿美元的资金。",
+   "meaning": "显示出头部AI大厂在海外市场的融资动作与全球资本扩张步伐。",
+   "importance": 6
+  },
+  {
+   "id": "1whwoh9",
+   "lastSeen": "2026-11-02",
+   "title": "Will AI Change the Identity of Law Firm Partners?",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWVhOSVVHLXRadVZPRTdJVElSRVBSWkVDSmVfSldoeDZ2bEJ1ZDdhWV9JZ09ZeFpsY1ZCYjRRY2ZDMFgwYl9POU1pYmYzS3pRMktXMktIclc5V0FDQXh6RWNjWnRlbXdmUmY3R0xucWdQczJLT0hrU3BWRE55a1VoY3gyOWZYclQzMzhxcmlHVGczZE1FbG5xdw?oc=5",
+   "source": "Artificial Lawyer",
+   "domain": "artificiallawyer.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Artificial Lawyer"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "headlines": [
+    "Will AI Change the Identity of Law Firm Partners?"
+   ],
+   "entities": [],
+   "summary": "文章探讨了AI是否会改变律所合伙人的身份。",
+   "meaning": "直接切中法律AI方向，探讨技术对传统法律行业结构与从业人员角色的深远影响。",
+   "importance": 9
+  },
+  {
+   "id": "7kpsif",
+   "lastSeen": "2026-11-02",
+   "title": "AI, Taxes and Real Estate Collide in San Francisco’s BART Crisis",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbFh1MlIwUTZxbDZfc25qelFVX2tMb25QUFJCR3RQQjVmelB2TDl5MmFpMjA3dlg3TnRVUXlIaHJLM0RPOGZza01pQ0RCNl9NYmN5VHowcWJUVlNpSjZDMmdOZnVPaUJDcEZXQ3M3UFdXR29VeXR6aTVvVHlCRUZQNlhQOV9hdHBCanNzZXpjakZBSGdJNmNNNWNJODRYWlZ4ZmFLRV91YWhzRnc2VGxTZVZlb2NOVmJQX2JzZjdDWGM?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "headlines": [
+    "AI, Taxes and Real Estate Collide in San Francisco’s BART Crisis"
+   ],
+   "entities": [],
+   "summary": "在旧金山的BART危机中，AI、税收和房地产发生了碰撞。",
+   "meaning": "将AI与实体经济、城市治理及房产AI方向紧密结合，展示了技术在特定场景中的交叉影响。",
+   "importance": 8
+  },
+  {
+   "id": "1w2yjjm",
+   "lastSeen": "2026-11-02",
+   "title": "DeepSeek Unveils Autonomous Coding Agent Prototype",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNXhyOWhiLW00bk9LNG5JOHRySVNHMF83WEhoblJ5ck1qSlUzZFcwYkRCTTJ3WXVoYUlUellRZ0hHbGEteldoaVJSWmJwclgzWEstRm52bGN2RkQ2b05XZkp1R29uMERxMGl0amY0aThhMlh2M0VlYm9mRFhvak9NMWNIQm5lR2tuUXktWTZad1lnUTBjemc?oc=5",
+   "source": "The Information",
+   "domain": "theinformation.com",
+   "published": "2026-11-01",
+   "outlets": [
+    "South China Morning Post",
+    "The Information"
+   ],
+   "themes": [],
+   "headlines": [
+    "DeepSeek unveils AI ‘super agent’ in coding race with OpenAI, Anthropic",
+    "DeepSeek Unveils Autonomous Coding Agent Prototype"
+   ],
+   "entities": [
     "DeepSeek"
    ],
    "summary": "DeepSeek 在与 OpenAI 和 Anthropic 的编程竞赛中推出了 AI“超级代理”。这展示了中国 AI 在前沿模型和智能体领域的最新进展，直接对标国际顶尖大厂。",
@@ -936,6 +1246,28 @@
    "importance": 8
   },
   {
+   "id": "ud4q32",
+   "lastSeen": "2026-11-02",
+   "title": "Elon Musk says he is taking over an old Spam factory and a gun range to expand his Colossus 2 AI complex",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQblNHeVNwZ3NJaDN0UmpkUnc1SzJoNnFYbkEwNWVubEpnbFQ2Sk9qQ09EXzlGdTlpUEg5bkdoWmNIZmZVa2p3M3FlSjBoa3RGbG9QcUtsTzNzWGFaOXY3QVRTZ0JCQ0s3TC1kSG8wMm9Ra0V0SUZkYTVfSDhRSThLR0FQUEd6TkpvQXc?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-01",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "Elon Musk says he is taking over an old Spam factory and a gun range to expand his Colossus 2 AI complex"
+   ],
+   "entities": [
+    "Elon Musk"
+   ],
+   "summary": "Elon Musk表示他将接管一个旧的Spam工厂和一个靶场，以扩展其Colossus 2 AI集群。",
+   "meaning": "展示了头部算力基础设施建设的最新物理扩展，是了解AI底层算力规模的重要动态。",
+   "importance": 7
+  },
+  {
    "title": "OpenAI Raises Less Than Half of $30 Billion Target in Latest Round",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTW9TMmVsZkc2b05TYkloVW41X050RjdtZ1F5U01TRnJOSEthYTJpcDdPWVhJb0FvRGEteHgtbVhSS0lOVEZ3T2N5MTNpSUNWNXpETThZR0RvcFQwY2Q5R3ctRUFvM1ZtdFdMaXhGSnpPM2FiLUhORXNrem84cUpfVGpuQ0VmaGNsZUlxUVQ0dk4zQUE2cWFzUk8yM1R3cjc3dEczVw?oc=5",
    "source": "WSJ",
@@ -973,7 +1305,8 @@
    ],
    "headlines": [
     "OpenAI slashes funding target by $10 billion amid tech rout, FT reports",
-    "OpenAI slashes funding target by $10bn as tech anxieties mount"
+    "OpenAI slashes funding target by $10bn as tech anxieties mount",
+    "OpenAI slashes funding target by $10 billion amid tech rout, FT reports (Oct. 30)"
    ],
    "summary": "据英国《金融时报》报道，在科技股暴跌与行业焦虑加剧的背景下，OpenAI将融资目标大幅削减了100亿美元。",
    "meaning": "AI资本热潮正受到宏观市场波动的冲击，头部通用AI公司的资金链和超大规模估值正面临现实考验。",
@@ -1001,13 +1334,14 @@
    "id": "1w8z8fw"
   },
   {
-   "title": "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization",
-   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQV0JjNVJDNmxJSXdsWk4ySjhKVDRmdkhPTlNBWlliM28tbG1JM055YkdpYUhQUHZHazFIYjJyWXd0LU54NU9FUEpPNGU4REFDLUJpQmx4QlRwWjdDaU1MeTZhUDQwdmdHQ1RvTVdJYnRlMko4WlUxNXJpR2tNZVQwWDFwdXBUMGQyaWF1dkNyUzQzNDctMWdQci1aWjkxb2JjdlFLenNBdHpmMDc3eEEzUWFYY05WZ1dPblhHXzJwcVlua19ic1RqVzFMUXN4UnRwYUgyaEppM3h2TVQ2MEFsMFRyZTZxWWpYZlRGbGJ0ZkhoV1lHd2JyN3hsMko?oc=5",
-   "source": "Tom's Hardware",
-   "domain": "tomshardware.com",
+   "title": "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkZzbnhBaW1mZXJzZ0NBNDQxUk1CQW5WNTc0eDYxTGVvZGtIVTRjTGs5THBLLTRMZDFLM0o0ZWpSZU5qNDhxbjNUYXdvVk9wVVI4V01WRFdXQndvcHZndkl4aWE0NkpGVHJtZUlZUW9EX19xeF9HR0RXcUU5VlM1Rm15OTRIaENTeDVLTWhTdWhzWkItMk5JU2tEbXRyN2hrU1NhT3RXZE9FRkdE?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
    "published": "2026-10-30",
    "outlets": [
-    "Tom's Hardware"
+    "Tom's Hardware",
+    "Bloomberg"
    ],
    "themes": [],
    "entities": [
@@ -1016,11 +1350,14 @@
    ],
    "headlines": [
     "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization",
-    "Sam Altman meets with Samsung leadership to secure more RAM for data centers amid crushing shortages — OpenAI CEO travels to South Korea to meet Samsung leadership to discuss future AI data centers"
+    "Sam Altman meets with Samsung leadership to secure more RAM for data centers amid crushing shortages — OpenAI CEO travels to South Korea to meet Samsung leadership to discuss future AI data centers",
+    "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
+    "Elon Musk mocks OpenAI CEO Sam Altman's claim that PCs having RAM is terrible — 'The people deserve to have their RAM too!'"
    ],
    "summary": "OpenAI首席执行官Sam Altman称PC配备RAM使用效率低下并看好数据中心，同时赴韩与三星高管会面，以在严重短缺中为AI数据中心争取更多内存。",
    "meaning": "突显了通用AI算力扩张对上游硬件供应链的极度依赖，以及行业向云端和AI数据中心集中的趋势。",
-   "id": "10p9l18"
+   "id": "10p9l18",
+   "lastSeen": "2026-11-02"
   },
   {
    "title": "美方称“英伟达CEO黄仁勋成情报接触目标”，外交部：有关报道捕风捉影，纯属对华污蔑抹黑",
@@ -1065,6 +1402,28 @@
    "id": "mahsl0"
   },
   {
+   "title": "Hon Hai Chairman Says AI Demand Is Real After Meeting Sam Altman",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWE5jdWc5ZVRoeTA3TlJmN0FZTjNhZG9FU3d1S0hLRlVKcG1iaWNEYmdpcWRwUFFIVTk3NkpuZENzOUpRajUzaVdsM0RqM0RUb2k4a29qVWRGb1ctcTJSQzVSV3dOb1BsT0JiQmppbDdSYUN3VVhrN01nRHJMcHBFZHFqNWcyMnVZdDZUbGwzWm1MSXk0cFE1b21TXzd3clg5ZTVmVWVtZlAxSGxTZXJOenRRcnNYb0J6Wng4?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "Bloomberg.com",
+    "Bloomberg"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman"
+   ],
+   "headlines": [
+    "Hon Hai Chairman Says AI Demand Is Real After Meeting Sam Altman"
+   ],
+   "summary": "Hon Hai（鸿海）董事长在与 OpenAI 首席执行官 Sam Altman 会面后表示，人工智能的需求是真实存在的。",
+   "meaning": "硬件制造龙头与头部通用 AI 公司的接触进一步确认了底层算力与硬件需求的真实性，有助于缓解市场对 AI 泡沫的担忧。",
+   "id": "iaymhh",
+   "lastSeen": "2026-11-02"
+  },
+  {
    "title": "Sam Altman says he has ‘empathy’ for mathematicians who are upset about AI",
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQUJXUmlIdHhSSElOdjlZWVM3MEk3ZF9FQmc5dWhFYjBycGNqak14emNBelU4STJWdXlNb2FPZEVRSmJKa19TTDE0S0Z2YjRKOTdlN2hkRkFrcm9XcWxWV1p4azZSdkZvOWdCYXBxRHh4ZUptMW5nbW9OTHlHUHIyaWtLSmxPN3ZJ?oc=5",
    "source": "Business Insider",
@@ -1083,26 +1442,6 @@
    "summary": "OpenAI首席执行官Sam Altman表示，他对那些因AI发展而感到不安的数学家抱有同理心。",
    "meaning": "揭示了前沿通用AI正深入高难度学术与科学计算领域，其对专业科研人员职业生态带来的冲击正受到高层关注。",
    "id": "a7uv96"
-  },
-  {
-   "title": "Hon Hai Chairman Says AI Demand Is Real After Meeting Sam Altman",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWE5jdWc5ZVRoeTA3TlJmN0FZTjNhZG9FU3d1S0hLRlVKcG1iaWNEYmdpcWRwUFFIVTk3NkpuZENzOUpRajUzaVdsM0RqM0RUb2k4a29qVWRGb1ctcTJSQzVSV3dOb1BsT0JiQmppbDdSYUN3VVhrN01nRHJMcHBFZHFqNWcyMnVZdDZUbGwzWm1MSXk0cFE1b21TXzd3clg5ZTVmVWVtZlAxSGxTZXJOenRRcnNYb0J6Wng4?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "entities": [
-    "Sam Altman"
-   ],
-   "headlines": [
-    "Hon Hai Chairman Says AI Demand Is Real After Meeting Sam Altman"
-   ],
-   "summary": "Hon Hai（鸿海）董事长在与 OpenAI 首席执行官 Sam Altman 会面后表示，人工智能的需求是真实存在的。",
-   "meaning": "硬件制造龙头与头部通用 AI 公司的接触进一步确认了底层算力与硬件需求的真实性，有助于缓解市场对 AI 泡沫的担忧。",
-   "id": "iaymhh"
   },
   {
    "title": "'He's let the AI loose.' - Ari Emanuel on Sam Altman",
@@ -1245,28 +1584,6 @@
    "id": "1wgu09u"
   },
   {
-   "id": "1b5ecmm",
-   "lastSeen": "2026-11-02",
-   "title": "The big questions remaining after Anthropic’s blockbuster IPO prospectus",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9VYXRVZG52ZU8wZ183VXZkS192WXFoWm5uRm0wNE1PZFZBblEyTklTWnZodHhNVUIyZlNaZGI1Y2xRaGJqZ3FTSVplcjNaM2tZVzF6UlNpRTd4S0dlQzVrak5jOHFQN2tfdkpMalkzWXlvVjl5T0hpb9IBfkFVX3lxTFBsbUVyNW9GLVlJZ3dpSHl2MXVZa0pxdDRiN2FnakZCa3lwVDJFOXdiSW9iYTh3UnhOZ0xhYklQSnJXVmoxaGpwckIyNzkzWm9hTVhVOFBrZTFHbnV5LWVBcFdiRGFqMXUyRXZXNjM5Z1ZNVXdiR1E3eFlzLU04Zw?oc=5",
-   "source": "CNBC",
-   "domain": "cnbc.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "CNBC"
-   ],
-   "themes": [],
-   "headlines": [
-    "The big questions remaining after Anthropic’s blockbuster IPO prospectus"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic发布了其重磅IPO招股书，引发了外界对其未来发展和市场表现的诸多重大疑问。这标志着又一家头部AI企业迈向公开资本市场。",
-   "meaning": "作为通用AI领域的重大事件，其上市进程不仅关乎AI行业的资金走向与估值逻辑，也将对整个AI生态产生深远影响。",
-   "importance": 9
-  },
-  {
    "title": "Legaltech Rundown: Legora Introduces New Research Feature, Filevine Launches AI Voice Agents, and More",
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeW5CNmFVNHFuNG12MUpNUjdEQkt0MlZUc1FNTGpYNDZ1eS00cWw1UkpYSGtfVVBNQy1fY0t3UEphbm9OTXZ4aE92WE5BS2hDYTNPRzNUbTZWVmVaUk14N1JvSUt3cmJwLVdaMjFzbHRRY2tvU2ZhRncxUzRSNWpBVEFtTUgyY0dwb3lDRFlyS25RTnppZkw1MmxYeG9sSVlsMjRCaDdnSlRrUEZKelJ5Y2phemxzNWdoMm1laTVQTlpYN1dRUnF1dzFHLWFTaDlFNDVmeG5FbWtvOGpjWFQw?oc=5",
    "source": "Law.com",
@@ -1354,6 +1671,29 @@
    "summary": "智能体身份初创公司 Mintive 获得了 Cowboy Ventures、Coatue 以及天使投资人 Jeff Dean、Andrej Karpathy 的投资。",
    "meaning": "顶级 AI 学者与顶级风投联合押注智能体（Agent）身份安全与认证领域，标志着通用 AI 迈向多智能体协作阶段的关键基础设施正成为新的投资热点。",
    "id": "v3op4b"
+  },
+  {
+   "id": "3xt2jt",
+   "lastSeen": "2026-11-02",
+   "title": "NVIDIA CEO Jensen Huang May Have Been The Target Of A Chinese Government Spy",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMVc0U0Nud2JZVjlUNzBjRTkwQlBPRWpsNVB0bVhEWXRlWlhUNDgwdm52U0N5NHRaMnFDbDF2bHpsVFVObWNCNHFMWDNxRWRyOEUyWTE1OXo2RG5LbVZ1cGZ6WWdMUVpjRUh2dHRmMzhhZ2UzeU9LcEh6UXRHYlpab1FtZlh6bWpDVWloaGJuYUN1NWlraUlCcDB5bUsyYmVrXzMwa18tbmVRdFVoaVVJ?oc=5",
+   "source": "Engadget",
+   "domain": "engadget.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Engadget"
+   ],
+   "themes": [],
+   "headlines": [
+    "NVIDIA CEO Jensen Huang May Have Been The Target Of A Chinese Government Spy"
+   ],
+   "entities": [
+    "Jensen Huang",
+    "NVIDIA Research"
+   ],
+   "summary": "NVIDIA CEO Jensen Huang可能曾成为中国政府间谍的目标。",
+   "meaning": "涉及关键AI芯片领袖的安全与地缘政治动向，牵动整个AI硬件与中国AI生态的敏感神经。",
+   "importance": 8
   },
   {
    "title": "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative",
@@ -2742,6 +3082,38 @@
    "id": "15yhuju"
   },
   {
+   "id": "1b5ecmm",
+   "lastSeen": "2026-11-02",
+   "title": "The Biggest Takeaways From Anthropic’s IPO Prospectus",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1ocFhISXowTzhvOEN4cFBXWDdCdE9XUEkxNzNYd2xhYnhBN2xQaVlnVGtCT3YzSkhMT3dubmxRV041cFl3U1Z5UTJ5RERqRldhdERaM1Zfa1FCMUZMRkxRcGVBWDFLTlRwczFDQkN3MlFJMkZUdVJ1Tmpn?oc=5",
+   "source": "WSJ",
+   "domain": "wsj.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "CNBC",
+    "Axios",
+    "WSJ",
+    "WIRED",
+    "Fortune",
+    "South China Morning Post"
+   ],
+   "themes": [],
+   "headlines": [
+    "The big questions remaining after Anthropic’s blockbuster IPO prospectus",
+    "Inside Anthropic's massive — and wild — IPO prospectus",
+    "The Biggest Takeaways From Anthropic’s IPO Prospectus",
+    "Anthropic’s IPO Prospectus Reveals What’s Under the Hood",
+    "Anthropic’s IPO prospectus shows $16.3 billion in revenue, an $80.7 billion net loss, and goal of an 'age of miracles'",
+    "Why does Anthropic’s IPO prospectus have so many China ‘risk factor’ warnings?"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic发布了其重磅IPO招股书，引发了外界对其未来发展和市场表现的诸多重大疑问。这标志着又一家头部AI企业迈向公开资本市场。",
+   "meaning": "作为通用AI领域的重大事件，其上市进程不仅关乎AI行业的资金走向与估值逻辑，也将对整个AI生态产生深远影响。",
+   "importance": 9
+  },
+  {
    "title": "Anthropic discloses month-long training pause, AI security breaches in IPO filing",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWUlrWDlwMnBvb2RvQ1ZTVHpNdEFETnkycHVyVnlJNDVqdnNJRVo3MTZEZGxfbHFjczk2YmJVc2lqb25kZnZtcDhObmFYZ3BoMmtZUi02ZkNBTFZLMEE1VHE4clRXbWJSQTE3MWNMRFNSNDQ3c0tZeWRTdUZDODEyQWFnRlgwLVdkVnctalBhTEE1SjNQRk04REtWQ2VNOGk0c0ZnS2JvZkNjX3VfSWFaZjNBbExVOEYxS0dSRzc5azFFR3ltb2hqOHNn?oc=5",
    "source": "Reuters",
@@ -3239,6 +3611,50 @@
    "lastSeen": "2026-11-02"
   },
   {
+   "title": "Anthropic Raises Concerns",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZ0p1NTdJeG1Ed3l1RVFkQWdBUFFPNUJtVzhtRllJYVJWZFVUUnNrU2dWU09Lck1CbnFSbjFyWlpHVTM0eG82eEc2QjM3NXdiRUdOMGFXWUxKdHZXbXhTN3k1OHdIREY2aV93MlRXRVZwUHlwTnJHTkxUTUhoTTR0MmJKLWFsbUZhZWc?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Bloomberg.com",
+    "Bloomberg"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Raises Concerns"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic 在相关业务或进展中引发了业界的关切。",
+   "meaning": "其动态持续牵动着整个通用 AI 领域的发展神经。",
+   "id": "p24nwd",
+   "lastSeen": "2026-11-02"
+  },
+  {
+   "title": "Anthropic Files for IPO to Become First Frontier AI Lab to List",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSU91RXFjTktnUkEyQlRXY3FOdEJBTWNyVVg5QjB4Y0hNaVBFczJSZXdqNXpZWHRxNDBFa0JTWGNSSlhJdFFqSFdXWDVVX01KRTU2Ni1MdU5oYTVGZlBVQjRoYmxIcEI2OUs3UkQ2YjFfdWtUaXFYNFAteTkxaFhUOHBXZ0NaUy1nWnFZREhhaXc5VnhoZW5fVmlVSGVwU3ZhQUJLdE5hU3FSbklJVE1HVzNvUW5jNUh0d0h3TQ?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-26",
+   "outlets": [
+    "Bloomberg.com",
+    "Bloomberg"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Files for IPO to Become First Frontier AI Lab to List"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic已申请IPO，有望成为首家上市的前沿AI实验室。",
+   "meaning": "作为通用AI领域的大事，这将成为检验AI行业资本化道路的关键测试，并备受市场关注。",
+   "id": "1m2lc6m",
+   "lastSeen": "2026-11-02"
+  },
+  {
    "title": "Anthropic's 7 cofounders are about to make generational fortunes. One owns more shares than the CEO.",
    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOU2JGdlYtN1RmcWlheEQxSU5DOWFBNlpwQk9wMzNzTTA0Zkk5T3VrLTNqaG1jUUZJZUJTTjNRSThnbl9uak0tZU8yN1VFd3paNlNydkJ0VzlZeFpYTG1FM2lpbjlKVHcxSjBWRXB3a1I5MnFBXzMtZkVfekpEVkRrZA?oc=5",
    "source": "Business Insider",
@@ -3439,26 +3855,6 @@
    "id": "8i3m7c"
   },
   {
-   "title": "Anthropic Raises Concerns",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZ0p1NTdJeG1Ed3l1RVFkQWdBUFFPNUJtVzhtRllJYVJWZFVUUnNrU2dWU09Lck1CbnFSbjFyWlpHVTM0eG82eEc2QjM3NXdiRUdOMGFXWUxKdHZXbXhTN3k1OHdIREY2aV93MlRXRVZwUHlwTnJHTkxUTUhoTTR0MmJKLWFsbUZhZWc?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-10-26",
-   "outlets": [
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic Raises Concerns"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic 在相关业务或进展中引发了业界的关切。",
-   "meaning": "其动态持续牵动着整个通用 AI 领域的发展神经。",
-   "id": "p24nwd"
-  },
-  {
    "title": "Moonshot AI Launches More Powerful Kimi Model",
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYWgxWWpZQmVncVp4ekNpTlpBWjBTWVVtWkZBTXdNdnJydjh4dkFSRWxmdUNqTDRxay1heG5JUUk4eV9LNUgtNkFkeDFxVExYQ2s0RWdJSkFCVHhIRWlzZnJPem1pa3lEV1AwS0ZDZDNLZXZsZ0VQWVRaWTZHamlGWkl0clczdU9OZ2lRQzRfOXotZERKZEdDTnR6Y25xRHo1Wnc?oc=5",
    "source": "Caixin Global",
@@ -3537,26 +3933,6 @@
    "summary": "马斯克称 SpaceX 完成了 400 亿美元融资，并警告称新云行业将面临整合淘汰，相关股票在盘前下跌。",
    "meaning": "AI 与云服务基础设施的高速发展伴随着资本市场的剧烈波动与行业洗牌。",
    "id": "ch1m1o"
-  },
-  {
-   "title": "Anthropic Files for IPO to Become First Frontier AI Lab to List",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSU91RXFjTktnUkEyQlRXY3FOdEJBTWNyVVg5QjB4Y0hNaVBFczJSZXdqNXpZWHRxNDBFa0JTWGNSSlhJdFFqSFdXWDVVX01KRTU2Ni1MdU5oYTVGZlBVQjRoYmxIcEI2OUs3UkQ2YjFfdWtUaXFYNFAteTkxaFhUOHBXZ0NaUy1nWnFZREhhaXc5VnhoZW5fVmlVSGVwU3ZhQUJLdE5hU3FSbklJVE1HVzNvUW5jNUh0d0h3TQ?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-10-26",
-   "outlets": [
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic Files for IPO to Become First Frontier AI Lab to List"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic已申请IPO，有望成为首家上市的前沿AI实验室。",
-   "meaning": "作为通用AI领域的大事，这将成为检验AI行业资本化道路的关键测试，并备受市场关注。",
-   "id": "1m2lc6m"
   },
   {
    "title": "Owners of Elvis Presley’s Music Sue Anthropic for Copyright Infringement",

@@ -332,7 +332,10 @@
     .reader-key-form { display: flex; gap: 8px; padding: 14px 18px; border-bottom: 1px solid var(--line); }
     .reader-key-form[hidden] { display: none; }
     .reader-key-form input { flex: 1; min-width: 0; border: 1px solid var(--line-strong); border-radius: 10px; padding: 9px 11px; background: var(--raised); color: var(--text); font: inherit; font-size: 16px; outline: none; }
-    .book { display: flex; flex-direction: column; gap: 7px; width: 100%; border: 0; border-bottom: 1px solid var(--line); padding: 16px 18px; background: transparent; color: var(--text); font: inherit; text-align: left; cursor: pointer; }
+    .book-row { display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+    .book-delete { flex: none; margin-right: 14px; min-height: 34px; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 12px; background: var(--raised); color: var(--muted); font: inherit; font-size: 12px; cursor: pointer; }
+    .book-delete:hover, .book-delete:focus-visible { border-color: var(--accent-line); color: var(--accent-text); }
+    .book { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px; border: 0; padding: 16px 18px; background: transparent; color: var(--text); font: inherit; text-align: left; cursor: pointer; }
     .book:hover, .book:focus-visible { background: var(--hover); }
     .book-title { font-size: 15px; font-weight: 700; line-height: 1.4; }
     .book-meta { color: var(--muted); font-size: 12px; line-height: 1.5; }
@@ -2985,8 +2988,29 @@
           bar.style.setProperty('--done', `${progress?.pages ? Math.round(progress.page / progress.pages * 100) : 0}%`);
           button.appendChild(bar);
           button.addEventListener('click', () => openBook(entry));
-          return button;
+          const remove = document.createElement('button');
+          remove.type = 'button';
+          remove.className = 'book-delete';
+          remove.textContent = '删除';
+          remove.setAttribute('aria-label', `删除《${bookTitle(entry.name)}》`);
+          remove.addEventListener('click', () => removeBook(entry));
+          const row = document.createElement('div');
+          row.className = 'book-row';
+          row.append(button, remove);
+          return row;
         }));
+      };
+      // The PDF and all its highlights, notes, bookmarks and progress.
+      const removeBook = async entry => {
+        if (!confirm(`删除《${bookTitle(entry.name)}》？它的高亮、批注和书签也会一起删掉，不能恢复。`)) return;
+        try {
+          await readerCall('remove', { doc: entry.name });
+          try { localStorage.removeItem(`aiReaderPage:${entry.name}`); } catch { /* Nothing kept. */ }
+          showToast([`已删除《${bookTitle(entry.name)}》。`], 3000);
+        } catch (error) {
+          showToast([`没删掉：${/unknown action/.test(error.message) ? '函数 reader 还是旧版，在 Supabase 后台重新部署后再试。' : readerFailure(error)}`], 6000);
+        }
+        loadBooks();
       };
       const askReaderKey = message => {
         readerNote.textContent = message;

@@ -16,7 +16,7 @@ import fs from 'fs';
 import { collectNews } from './news.mjs';
 import { summarizeNews, highlightVideos, VIDEO_HIGHLIGHTS_PER_RUN } from './summarize.mjs';
 import { buildDigest } from './digest.mjs';
-import { personFromRow, searchPeople, PEOPLE_TITLE_OK } from './people.mjs';
+import { personFromRow, searchPeople, dedupePeople, PEOPLE_TITLE_OK } from './people.mjs';
 
 const AI = /\bAI\b|A\.I\.|artificial intelligence|machine learning|\bLLMs?\b|\bGPT|agent|chatbot|ChatGPT|Claude|Gemini|Qwen|Kimi|DeepSeek|robot|人工智能|大模型|模型|智能体|机器人|具身/i;
 const OLYMPIC = /olympi|paralympi|\bIOC\b|奥运|奥林匹克|冬奥/i;
@@ -316,6 +316,7 @@ if (interviewPeople) {
     report.push(`people: FAILED ${error.message}`);
   }
 }
+dedupePeople(items, interviewPeople, report);
 
 // Watchlist people on any channel (their talks and podcast guest spots), via YouTube search; needs the API key.
 if (YOUTUBE_API_KEY && watchlist) {

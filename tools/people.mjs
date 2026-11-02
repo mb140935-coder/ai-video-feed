@@ -173,4 +173,47 @@ export const searchPeople = async (people, items, previous, report, youtubeKey) 
   return state;
 };
 
-export const PEOPLE_TITLE_OK = (person, title) => new RegExp(person.names.map(escapeRegExp).join('|'), 'i').test(title) && !SECONDHAND.test(title);
+// The same interview uploaded by several channels shows once. Titles are compared without the person's names,
+// digits and stock words (对话, 演讲, 人工智能…). Two videos of one person count as the same when their lengths are
+// the same (2 characters in a row in common, e.g. the host "鲁健"), within a minute (3, e.g. the other guest
+// "章泽天"), or within 3%
+// and 5 characters. Bilibili is kept over YouTube (no ads), then the longer upload.
+const STOCK = /对话|对谈|访谈|专访|采访|演讲|发言|致辞|分享|院士|最新|独家|完整版?|全集|全程|人工智能|世界|大会|论坛|峰会|中国|节目|播客|podcast|interview|主任|创始人|董事长|cctv|ep|\d+/g;
+const longestCommon = (a, b) => {
+  let best = 0;
+  const row = new Array(b.length + 1).fill(0);
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = b.length; j >= 1; j--) {
+      row[j] = a[i - 1] === b[j - 1] && a[i - 1] !== '|' ? row[j - 1] + 1 : 0;
+      if (row[j] > best) best = row[j];
+    }
+  }
+  return best;
+};
+export const dedupePeople = (items, people, report) => {
+  const groups = {};
+  for (const item of items.values()) if (item.via === 'people') (groups[item.person] ||= []).push(item);
+  let removed = 0;
+  for (const [name, list] of Object.entries(groups)) {
+    const person = people?.find(entry => entry.name === name);
+    // Names, identity keywords (in most of their titles) and stock words become "|", so no match runs across them.
+    const words = [...(person?.names || [name]), ...(person?.keywords || [])].map(word => word.toLowerCase());
+    const bare = title => words.reduce((text, word) => text.split(word).join('|'), title.toLowerCase())
+      .replace(STOCK, '|').replace(/[^\p{L}|]/gu, '');
+    // The 2-character rule counts Chinese only ("ai" is in half the titles).
+    const cjk = title => bare(title).replace(/[^一-鿿|]/g, '|');
+    const kept = [];
+    list.sort((a, b) => Number(b.key.startsWith('bilibili:')) - Number(a.key.startsWith('bilibili:')) || (b.minutes || 0) - (a.minutes || 0));
+    for (const item of list) {
+      const same = kept.find(other => {
+        const gap = Math.abs((other.minutes || 0) - (item.minutes || 0));
+        const common = longestCommon(bare(other.title), bare(item.title));
+        return gap === 0 && longestCommon(cjk(other.title), cjk(item.title)) >= 2 || gap <= 1 && common >= 3 || gap <= (other.minutes || 0) * 0.03 && common >= 5;
+      });
+      if (same) { items.delete(item.key); removed++; } else kept.push(item);
+    }
+  }
+  report.push(`people: ${removed} duplicate uploads dropped`);
+};
+
+export const PEOPLE_TITLE_OK =(person, title) => new RegExp(person.names.map(escapeRegExp).join('|'), 'i').test(title) && !SECONDHAND.test(title);

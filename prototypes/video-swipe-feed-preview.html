@@ -71,7 +71,7 @@
     .search-bar[hidden] { display: none; }
     .search-bar button { flex: none; border: 1px solid var(--line-strong); border-radius: 10px; padding: 0 14px; background: var(--raised); color: var(--text); font: inherit; font-size: 13px; cursor: pointer; }
     .tabbar.searching > .tab, .tabbar.searching > .menu-wrap { display: none; }
-    .card { position: relative; height: min(846px, calc(100vh - 102px)); min-height: 620px; scroll-snap-align: start; overflow: hidden; border-bottom: 1px solid var(--line); background: linear-gradient(180deg, var(--surface), var(--surface-2)); }
+    .card { position: relative; height: min(846px, calc(100vh - 102px - var(--subbar, 0px))); min-height: 620px; scroll-snap-align: start; overflow: hidden; border-bottom: 1px solid var(--line); background: linear-gradient(180deg, var(--surface), var(--surface-2)); }
     .top { position: absolute; z-index: 2; inset: 18px 18px auto; display: flex; justify-content: space-between; align-items: flex-start; pointer-events: none; }
     .brand-block { display: flex; flex-direction: column; gap: 5px; }
     .brand { font-weight: 700; font-size: 13px; letter-spacing: .04em; }
@@ -119,12 +119,17 @@
     .add-status.ok { color: var(--green); }
     .add-section { padding: 12px 18px 4px; font-weight: 700; }
     /* 演讲 & Podcast: AI 演讲 / 人物访谈 switch and the person chips. */
-    .section-switch { display: flex; gap: 6px; padding: 12px 18px 0; }
-    .section-button { flex: 1; min-height: 38px; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 12px; background: var(--raised); color: var(--muted); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+    /* Sticky under the tab bar while 演讲 & Podcast is open (the feed snaps to cards, so it can't sit in the panel). */
+    .subbar { position: sticky; top: var(--tabbar-h, 54px); z-index: 9; box-sizing: border-box; height: 44px; display: flex; align-items: center; gap: 6px; padding: 0 12px; overflow-x: auto; background: var(--bar); border-bottom: 1px solid var(--line); backdrop-filter: blur(14px); scrollbar-width: none; }
+    .subbar::-webkit-scrollbar { display: none; }
+    .subbar[hidden] { display: none; }
+    .phone.with-subbar { --subbar: 44px; }
+    .section-switch { flex: none; display: flex; gap: 4px; }
+    .section-button { flex: none; min-height: 30px; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 12px; background: var(--raised); color: var(--muted); font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; white-space: nowrap; }
     .section-button.active { border-color: var(--text); background: var(--text); color: var(--surface); }
-    .person-bar { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 18px 0; }
+    .person-bar { flex: none; display: flex; gap: 6px; padding-left: 8px; border-left: 1px solid var(--line-strong); }
     .person-bar[hidden] { display: none; }
-    .person-chip { min-height: 32px; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 12px; background: var(--raised); color: var(--text); font: inherit; font-size: 12px; cursor: pointer; }
+    .person-chip { flex: none; white-space: nowrap; min-height: 30px; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 12px; background: var(--raised); color: var(--text); font: inherit; font-size: 12px; cursor: pointer; }
     .person-chip.active { border-color: var(--accent-line); color: var(--accent-text); font-weight: 700; }
     .person-chip.manage { color: var(--accent-text); }
     .history-item button.armed { border-color: #c0392b; background: #c0392b; color: #fff; }
@@ -210,7 +215,7 @@
     .hint { position: absolute; bottom: 4px; left: 50%; transform: translateX(-50%); color: var(--faint); font-size: 10px; }
     .notice { position: fixed; z-index: 10; top: 12px; left: 50%; transform: translateX(-50%); max-width: min(92vw, 700px); border: 1px solid var(--gold-line); border-radius: 12px; padding: 10px 14px; background: var(--gold-soft); color: var(--notice-text); font-size: 12px; line-height: 1.45; box-shadow: 0 8px 30px var(--shadow); }
     .notice[hidden] { display: none; }
-    @media (max-width: 520px) { .shell { padding: 0; } .phone { width: 100%; height: 100dvh; min-height: 580px; border: 0; border-radius: 0; } .card { height: calc(100dvh - 54px); min-height: 526px; } .player { inset: 64px 0 auto; height: 34%; } .details { inset: calc(34% + 76px) 16px 16px; gap: 6px; } }
+    @media (max-width: 520px) { .shell { padding: 0; } .phone { width: 100%; height: 100dvh; min-height: 580px; border: 0; border-radius: 0; } .card { height: calc(100dvh - 54px - var(--subbar, 0px)); min-height: 526px; } .player { inset: 64px 0 auto; height: 34%; } .details { inset: calc(34% + 76px) 16px 16px; gap: 6px; } }
     @media (max-width: 520px) and (max-height: 700px) { .player { height: 30%; } .details { inset: calc(30% + 76px) 14px 14px; gap: 5px; } .person-context, .highlight { font-size: 11px; line-height: 1.4; } }
     /* iPad and other tablets (portrait, or any touch screen this wide): fill the screen instead of a phone frame. */
     @media (min-width: 600px) and (orientation: portrait), (min-width: 600px) and (pointer: coarse) {
@@ -220,7 +225,7 @@
       .tabbar { padding: 10px max(24px, calc(50% - 400px)); gap: 10px; }
       .tab { font-size: 14px; min-height: 42px; }
       .menu-button { width: 44px; height: 42px; }
-      .card { height: calc(100dvh - 63px); min-height: 0; }
+      .card { height: calc(100dvh - 63px - var(--subbar, 0px)); min-height: 0; }
       .top { inset: 16px 28px auto; }
       .brand { font-size: 15px; }
       .focus-line { font-size: 11px; }
@@ -252,14 +257,14 @@
       .person-context-label, .highlight-label, .state, .source { font-size: 12px; }
       .actions a, .actions button { padding: 10px 14px; font-size: 13px; }
     }
-    @media (max-height: 700px) { .phone { height: 100vh; min-height: 0; } .card { height: calc(100vh - 54px); min-height: 0; } .player { inset: 64px 0 auto; height: 30%; } .details { inset: calc(30% + 76px) 14px 12px; gap: 5px; } .person-context, .highlight { font-size: 11px; line-height: 1.4; } .person-context-label, .highlight-label, .state { font-size: 10px; } .actions a, .actions button { padding: 9px 11px; font-size: 11px; } }
+    @media (max-height: 700px) { .phone { height: 100vh; min-height: 0; } .card { height: calc(100vh - 54px - var(--subbar, 0px)); min-height: 0; } .player { inset: 64px 0 auto; height: 30%; } .details { inset: calc(30% + 76px) 14px 12px; gap: 5px; } .person-context, .highlight { font-size: 11px; line-height: 1.4; } .person-context-label, .highlight-label, .state { font-size: 10px; } .actions a, .actions button { padding: 9px 11px; font-size: 11px; } }
     /* Computer (mouse, wide window): fill the window, video on the left, text on the right. */
     @media (min-width: 900px) and (orientation: landscape) and (pointer: fine) {
       .shell { padding: 0; }
       .phone { width: 100%; height: 100vh; min-height: 0; border: 0; border-radius: 0; box-shadow: none; scroll-padding-top: 55px; scrollbar-width: thin; }
       .tabbar { padding: 8px max(32px, calc(50% - 720px)); }
       .tab { font-size: 14px; }
-      .card { height: calc(100vh - 55px); min-height: 0; }
+      .card { height: calc(100vh - 55px - var(--subbar, 0px)); min-height: 0; }
       .top { inset: 16px max(32px, calc(50% - 720px)) auto; }
       .brand { font-size: 15px; }
       .focus-line { font-size: 11px; }
@@ -424,6 +429,13 @@
           <button type="button" id="search-close">取消</button>
         </div>
       </nav>
+      <div class="subbar" id="appearance-subbar" hidden>
+        <div class="section-switch" role="group" aria-label="板块">
+          <button type="button" class="section-button active" data-section="ai" aria-pressed="true">AI 演讲</button>
+          <button type="button" class="section-button" data-section="people" aria-pressed="false">人物访谈</button>
+        </div>
+        <div class="person-bar" id="person-bar" hidden></div>
+      </div>
       <div class="watch-undo" id="watch-undo" role="status" hidden><span id="watch-undo-text"></span><button type="button" id="watch-undo-button">撤销</button></div>
       <div class="sync-status" id="watch-sync-status" role="status">正在连接在线已看记录…</div>
       <div class="history-sheet" id="note-sheet" role="dialog" aria-modal="true" aria-labelledby="note-title" hidden>
@@ -862,11 +874,6 @@
       <div class="feed-note" id="curated-empty" hidden>这批精选视频都已看过；新增内容后会继续出现在这里。</div>
       </div>
       <div class="feed-panel" id="feed-appearances" role="tabpanel" aria-labelledby="tab-appearances" hidden>
-        <div class="section-switch" role="group" aria-label="板块">
-          <button type="button" class="section-button active" data-section="ai" aria-pressed="true">AI 演讲 &amp; Podcast</button>
-          <button type="button" class="section-button" data-section="people" aria-pressed="false">人物访谈</button>
-        </div>
-        <div class="person-bar" id="person-bar" hidden></div>
         <div class="feed-note">
           <div id="appearance-note">追踪 watchlist 中人物的公开演讲、播客和访谈。这里展示已登记的可核验来源；新发现可持续加入，不受精选 TAB 的每日条数限制。</div>
         </div>
@@ -3809,6 +3816,13 @@
           chip('＋ 加人物', false, openPeopleSheet, ' manage')
         );
       };
+      const subbar = document.getElementById('appearance-subbar');
+      const showSubbar = show => {
+        subbar.hidden = !show;
+        feed.classList.toggle('with-subbar', show);
+        if (show) feed.style.setProperty('--tabbar-h', `${document.querySelector('.tabbar').offsetHeight}px`);
+      };
+      window.addEventListener('resize', () => { if (!subbar.hidden) showSubbar(true); });
       sectionButtons.forEach(button => button.addEventListener('click', () => {
         appearanceSection = button.dataset.section;
         sectionButtons.forEach(other => {
@@ -3935,6 +3949,7 @@
           });
           panels.forEach(panel => { panel.hidden = panel.id !== targetId; });
           feed.classList.toggle('no-snap', targetId === 'feed-briefs' || targetId === 'feed-reader');
+          showSubbar(targetId === 'feed-appearances');
           feed.scrollTop = 0;
           activeCard = document.querySelector(`#${targetId} .card:not(.is-watched):not([hidden])`);
           pauseAllExcept(activeCard);

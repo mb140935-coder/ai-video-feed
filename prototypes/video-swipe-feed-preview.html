@@ -353,8 +353,8 @@
     @keyframes reader-flash { to { opacity: .9; } }
     .reader-note-pin { position: absolute; z-index: 3; transform: translate(-30%, -85%); border: 0; border-radius: 999px; padding: 2px 5px; background: var(--raised); box-shadow: 0 2px 6px var(--shadow); font-size: 12px; line-height: 1.2; cursor: pointer; }
     /* PDF.js text layer (pdf_viewer.css): invisible text over the page, so it can be selected. */
-    .textLayer { position: absolute; z-index: 2; inset: 0; overflow: clip; opacity: 1; line-height: 1; text-align: initial; -webkit-text-size-adjust: none; text-size-adjust: none; forced-color-adjust: none; transform-origin: 0 0; caret-color: CanvasText; }
-    .textLayer :is(span, br) { position: absolute; color: transparent; white-space: pre; cursor: text; transform-origin: 0 0; }
+    .textLayer { position: absolute; z-index: 2; inset: 0; overflow: hidden; opacity: 1; line-height: 1; text-align: initial; -webkit-text-size-adjust: none; text-size-adjust: none; forced-color-adjust: none; transform-origin: 0 0; caret-color: CanvasText; }
+    .textLayer span, .textLayer br { position: absolute; color: transparent; white-space: pre; cursor: text; transform-origin: 0 0; }
     .textLayer span.markedContent { top: 0; height: 0; }
     .textLayer span[role="img"] { user-select: none; cursor: default; }
     .textLayer ::selection { background: rgb(0 90 255 / .28); }
@@ -2919,9 +2919,10 @@
       // 📖 阅读: AI papers and guides to read, kept in a private Supabase bucket behind the 记一笔 passphrase (Edge
       // Function "reader", tools/supabase-reader.sql). PDF.js draws each page with its text layer, so selected text
       // can be highlighted in four colors, annotated (📝 批注) or asked about (💡 问); 🔖 marks pages. Highlights,
-      // notes, bookmarks and the page reached are shared across devices.
+      // notes, bookmarks and the page reached are shared across devices. PDF.js 2.16's legacy build: newer ones need
+      // Safari 15 (3.x) or 16.4 (4.x) and fail to load on older iPads.
       const READER_ENDPOINT = `${SUPABASE_URL}/functions/v1/reader`;
-      const PDFJS_BASE = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38';
+      const PDFJS_BASE = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.16.105/legacy/build';
       const HIGHLIGHT_COLORS = { yellow: '#f7d038', green: '#6fd08c', blue: '#73b7ff', pink: '#ff8fbd' };
       const READER_ZOOM_STORAGE = 'aiReaderZoom';
       const readerNote = document.getElementById('reader-note');
@@ -3047,8 +3048,15 @@
       try { readerZoom = Number(localStorage.getItem(READER_ZOOM_STORAGE)) || 1; } catch { /* Default size. */ }
       const loadPdfjs = async () => {
         if (!pdfjsLib) {
-          pdfjsLib = await import(`${PDFJS_BASE}/pdf.min.mjs`);
-          pdfjsLib.GlobalWorkerOptions.workerSrc = `${PDFJS_BASE}/pdf.worker.min.mjs`;
+          await new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = `${PDFJS_BASE}/pdf.min.js`;
+            script.onload = resolve;
+            script.onerror = () => reject(new Error('PDF 阅读组件没加载上，检查网络后再试'));
+            document.head.appendChild(script);
+          });
+          pdfjsLib = window['pdfjs-dist/build/pdf'] || window.pdfjsLib;
+          pdfjsLib.GlobalWorkerOptions.workerSrc = `${PDFJS_BASE}/pdf.worker.min.js`;
         }
         return pdfjsLib;
       };
@@ -3115,7 +3123,7 @@
           if (stale()) { canvas.width = 0; return; }
           const textLayer = document.createElement('div');
           textLayer.className = 'textLayer';
-          await new pdfjsLib.TextLayer({ textContentSource: pdfPage.streamTextContent(), container: textLayer, viewport }).render();
+          await pdfjsLib.renderTextLayer({ textContentStream: pdfPage.streamTextContent(), container: textLayer, viewport, textDivs: [] }).promise;
           if (stale()) { canvas.width = 0; return; }
           const marks = document.createElement('div');
           marks.className = 'reader-marks';
@@ -3145,7 +3153,6 @@
           page.scale = width / page.width;
           page.div.style.width = `${width}px`;
           page.div.style.height = `${Math.round(page.height * page.scale)}px`;
-          page.div.style.setProperty('--scale-factor', String(page.scale));
           clearPage(page);
           pageObserver.unobserve(page.div);
           pageObserver.observe(page.div);

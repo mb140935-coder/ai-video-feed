@@ -326,6 +326,61 @@
       #feed-briefs .digest .brief { padding-left: 20px; padding-right: 20px; }
       #feed-briefs .digest-story.lead h2 { font-size: 34px; }
     }
+    /* 📖 阅读: the book list, then a full-screen PDF reader. */
+    .reader-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .reader-head button, .reader-key-form button { flex: none; min-height: 36px; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 14px; background: var(--raised); color: var(--text); font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; }
+    .reader-key-form { display: flex; gap: 8px; padding: 14px 18px; border-bottom: 1px solid var(--line); }
+    .reader-key-form[hidden] { display: none; }
+    .reader-key-form input { flex: 1; min-width: 0; border: 1px solid var(--line-strong); border-radius: 10px; padding: 9px 11px; background: var(--raised); color: var(--text); font: inherit; font-size: 16px; outline: none; }
+    .book { display: flex; flex-direction: column; gap: 7px; width: 100%; border: 0; border-bottom: 1px solid var(--line); padding: 16px 18px; background: transparent; color: var(--text); font: inherit; text-align: left; cursor: pointer; }
+    .book:hover, .book:focus-visible { background: var(--hover); }
+    .book-title { font-size: 15px; font-weight: 700; line-height: 1.4; }
+    .book-meta { color: var(--muted); font-size: 12px; line-height: 1.5; }
+    .book-progress { height: 4px; border-radius: 2px; background: linear-gradient(90deg, var(--accent) var(--done), var(--line) var(--done)); }
+    .reader { position: fixed; z-index: 25; inset: 0; display: flex; flex-direction: column; background: var(--surface-2); }
+    .reader[hidden] { display: none; }
+    .reader-bar { display: flex; align-items: center; gap: 6px; padding: calc(8px + env(safe-area-inset-top, 0px)) 10px 8px; border-bottom: 1px solid var(--line); background: var(--bar); }
+    .reader-bar button { flex: none; min-width: 38px; min-height: 38px; border: 1px solid var(--line-strong); border-radius: 10px; padding: 0 9px; background: var(--raised); color: var(--text); font: inherit; font-size: 13px; cursor: pointer; }
+    .reader-bar button[aria-pressed="true"] { border-color: var(--gold-line); background: var(--gold-soft); }
+    .reader-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; font-weight: 700; }
+    .reader-pages { position: relative; flex: 1; min-height: 0; overflow: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; padding: 12px 8px calc(48px + env(safe-area-inset-bottom, 0px)); }
+    .reader-status { padding: 48px 20px; color: var(--muted); font-size: 13px; line-height: 1.6; text-align: center; }
+    .reader-page { position: relative; margin: 0 auto 12px; background: #fff; box-shadow: 0 2px 10px var(--shadow); }
+    .reader-page canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .reader-marks { position: absolute; inset: 0; pointer-events: none; }
+    .reader-hl { position: absolute; border-radius: 2px; opacity: .45; mix-blend-mode: multiply; }
+    .reader-hl.flash { animation: reader-flash .6s ease-in-out 4 alternate; }
+    @keyframes reader-flash { to { opacity: .9; } }
+    .reader-note-pin { position: absolute; z-index: 3; transform: translate(-30%, -85%); border: 0; border-radius: 999px; padding: 2px 5px; background: var(--raised); box-shadow: 0 2px 6px var(--shadow); font-size: 12px; line-height: 1.2; cursor: pointer; }
+    /* PDF.js text layer (pdf_viewer.css): invisible text over the page, so it can be selected. */
+    .textLayer { position: absolute; z-index: 2; inset: 0; overflow: clip; opacity: 1; line-height: 1; text-align: initial; -webkit-text-size-adjust: none; text-size-adjust: none; forced-color-adjust: none; transform-origin: 0 0; caret-color: CanvasText; }
+    .textLayer :is(span, br) { position: absolute; color: transparent; white-space: pre; cursor: text; transform-origin: 0 0; }
+    .textLayer span.markedContent { top: 0; height: 0; }
+    .textLayer span[role="img"] { user-select: none; cursor: default; }
+    .textLayer ::selection { background: rgb(0 90 255 / .28); }
+    .textLayer br::selection { background: transparent; }
+    .textLayer .endOfContent { display: block; position: absolute; inset: 100% 0 0; z-index: 0; cursor: default; user-select: none; }
+    .textLayer.selecting .endOfContent { top: 0; }
+    :root[data-theme="dark"] .reader-page { background: #1c1c1c; }
+    :root[data-theme="dark"] .reader-page canvas { filter: invert(.88) hue-rotate(180deg); }
+    :root[data-theme="dark"] .reader-hl { opacity: .35; mix-blend-mode: screen; }
+    .reader-tools { position: fixed; z-index: 27; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px; max-width: calc(100vw - 16px); border-radius: 22px; padding: 6px; background: var(--text); box-shadow: 0 8px 24px var(--shadow); }
+    .reader-tools[hidden], .reader-tools [hidden] { display: none; }
+    .reader-tools button { border: 0; border-radius: 999px; padding: 8px 10px; background: transparent; color: var(--surface); font: inherit; font-size: 13px; font-weight: 700; white-space: nowrap; cursor: pointer; }
+    .reader-tools .swatch { width: 28px; height: 28px; padding: 0; border: 2px solid var(--surface); background: var(--swatch); }
+    .reader-tools .swatch[aria-pressed="true"] { outline: 3px solid var(--accent); }
+    .reader-side { position: absolute; z-index: 28; top: 0; right: 0; bottom: 0; width: min(88vw, 380px); display: flex; flex-direction: column; border-left: 1px solid var(--line-strong); background: var(--raised); box-shadow: -10px 0 30px var(--shadow); }
+    .reader-side[hidden] { display: none; }
+    .reader-side-tabs { display: flex; gap: 6px; padding: calc(10px + env(safe-area-inset-top, 0px)) 10px 10px; border-bottom: 1px solid var(--line); }
+    .reader-side-tabs button { flex: 1; min-height: 36px; border: 1px solid var(--line-strong); border-radius: 10px; background: var(--surface); color: var(--muted); font: inherit; font-size: 12px; cursor: pointer; }
+    .reader-side-tabs button.active { border-color: var(--text); background: var(--text); color: var(--surface); font-weight: 700; }
+    .reader-side-list { flex: 1; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; padding-bottom: env(safe-area-inset-bottom, 0px); }
+    .reader-item { display: block; width: 100%; border: 0; border-bottom: 1px solid var(--line); padding: 12px 14px; background: transparent; color: var(--text); font: inherit; font-size: 13px; line-height: 1.5; text-align: left; cursor: pointer; }
+    .reader-item:hover, .reader-item:focus-visible { background: var(--hover); }
+    .reader-item small { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; }
+    .reader-quote { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; border-left: 3px solid var(--swatch, var(--line-strong)); padding-left: 8px; }
+    .reader-item-note { margin-top: 5px; color: var(--text-2); white-space: pre-wrap; }
+    .reader-empty { padding: 20px 14px; color: var(--muted); font-size: 13px; line-height: 1.6; }
   </style>
 </head>
 <body>
@@ -336,6 +391,7 @@
         <button class="tab" id="tab-briefs" data-feed-target="feed-briefs" type="button" role="tab" aria-selected="false" aria-controls="feed-briefs">简报 · <span id="brief-count">文字</span></button>
         <button class="tab active" id="tab-curated" data-feed-target="feed-curated" type="button" role="tab" aria-selected="true" aria-controls="feed-curated">精选视频</button>
         <button class="tab" id="tab-appearances" data-feed-target="feed-appearances" type="button" role="tab" aria-selected="false" aria-controls="feed-appearances">演讲 &amp; Podcast · <span id="appearance-count">人物</span></button>
+        <button class="tab" id="tab-reader" data-feed-target="feed-reader" type="button" role="tab" aria-selected="false" aria-controls="feed-reader">📖 阅读</button>
         <div class="menu-wrap">
           <button class="menu-button" id="menu-button" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="menu-dropdown" aria-label="菜单：已看历史、添加视频">☰</button>
           <div class="menu-dropdown" id="menu-dropdown" role="menu" hidden>
@@ -383,6 +439,42 @@
         </div>
       </div>
       <button type="button" class="ask-float" id="ask-float" hidden>💡 问一问</button>
+      <div class="reader" id="reader" role="dialog" aria-modal="true" aria-labelledby="reader-title" hidden>
+        <div class="reader-bar">
+          <button type="button" id="reader-back" aria-label="回到书架">←</button>
+          <div class="reader-title" id="reader-title"></div>
+          <button type="button" id="reader-page" aria-label="跳到某一页">–</button>
+          <button type="button" id="reader-zoom-out" aria-label="缩小">A−</button>
+          <button type="button" id="reader-zoom-in" aria-label="放大">A＋</button>
+          <button type="button" id="reader-bookmark" aria-pressed="false" aria-label="给这一页加书签">🔖</button>
+          <button type="button" id="reader-side-button" aria-controls="reader-side" aria-label="目录、书签、笔记">☰</button>
+        </div>
+        <div class="reader-pages" id="reader-pages"></div>
+        <aside class="reader-side" id="reader-side" hidden>
+          <div class="reader-side-tabs"><button type="button" data-side="toc">目录</button><button type="button" data-side="bookmarks">书签</button><button type="button" data-side="notes">笔记</button><button type="button" data-side="close" aria-label="收起">✕</button></div>
+          <div class="reader-side-list" id="reader-side-list"></div>
+        </aside>
+      </div>
+      <div class="reader-tools" id="reader-tools" hidden>
+        <button type="button" class="swatch" data-color="yellow" style="--swatch: #f7d038" aria-label="黄色高亮"></button>
+        <button type="button" class="swatch" data-color="green" style="--swatch: #6fd08c" aria-label="绿色高亮"></button>
+        <button type="button" class="swatch" data-color="blue" style="--swatch: #73b7ff" aria-label="蓝色高亮"></button>
+        <button type="button" class="swatch" data-color="pink" style="--swatch: #ff8fbd" aria-label="粉色高亮"></button>
+        <button type="button" data-tool="note">📝 批注</button>
+        <button type="button" data-tool="ask">💡 问</button>
+        <button type="button" data-tool="copy">复制</button>
+        <button type="button" data-tool="delete" aria-label="删除高亮">🗑</button>
+      </div>
+      <div class="history-sheet" id="reader-note-sheet" role="dialog" aria-modal="true" aria-labelledby="reader-note-title" hidden>
+        <div class="history-panel">
+          <div class="history-head"><span id="reader-note-title">📝 批注</span><button type="button" id="reader-note-close">关闭</button></div>
+          <form class="add-form note-form" id="reader-note-form">
+            <div class="add-status" id="reader-note-quote"></div>
+            <textarea id="reader-note-text" rows="4" placeholder="写下你的想法…"></textarea>
+            <button class="note-save" type="submit">保存批注</button>
+          </form>
+        </div>
+      </div>
       <div class="toast" id="toast" role="status" hidden></div>
       <div class="history-sheet" id="sleep-sheet" role="dialog" aria-modal="true" aria-labelledby="sleep-title" hidden>
         <div class="history-panel">
@@ -749,6 +841,12 @@
           <div id="appearance-note">追踪 watchlist 中人物的公开演讲、播客和访谈。这里展示已登记的可核验来源；新发现可持续加入，不受精选 TAB 的每日条数限制。</div>
         </div>
         <div id="appearance-cards"></div>
+      </div>
+      <div class="feed-panel" id="feed-reader" role="tabpanel" aria-labelledby="tab-reader" hidden>
+        <div class="feed-note reader-head"><span id="reader-note">要读的 AI 资料。</span><button type="button" id="reader-add">＋ 添加 PDF</button></div>
+        <input type="file" id="reader-file" accept="application/pdf,.pdf" multiple hidden>
+        <form class="reader-key-form" id="reader-key-form" hidden><input id="reader-key" type="password" placeholder="输入记一笔的口令" autocomplete="off"><button type="submit">打开书架</button></form>
+        <div id="reader-books"></div>
       </div>
     </div>
   </main>
@@ -2818,6 +2916,591 @@
         openAsk({ context, question: `「${text}」是谁 / 是什么？` });
       });
 
+      // 📖 阅读: AI papers and guides to read, kept in a private Supabase bucket behind the 记一笔 passphrase (Edge
+      // Function "reader", tools/supabase-reader.sql). PDF.js draws each page with its text layer, so selected text
+      // can be highlighted in four colors, annotated (📝 批注) or asked about (💡 问); 🔖 marks pages. Highlights,
+      // notes, bookmarks and the page reached are shared across devices.
+      const READER_ENDPOINT = `${SUPABASE_URL}/functions/v1/reader`;
+      const PDFJS_BASE = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38';
+      const HIGHLIGHT_COLORS = { yellow: '#f7d038', green: '#6fd08c', blue: '#73b7ff', pink: '#ff8fbd' };
+      const READER_ZOOM_STORAGE = 'aiReaderZoom';
+      const readerNote = document.getElementById('reader-note');
+      const readerKeyForm = document.getElementById('reader-key-form');
+      const readerKeyInput = document.getElementById('reader-key');
+      const readerBookList = document.getElementById('reader-books');
+      const readerFile = document.getElementById('reader-file');
+      const reader = document.getElementById('reader');
+      const readerTitle = document.getElementById('reader-title');
+      const readerPages = document.getElementById('reader-pages');
+      const readerPageButton = document.getElementById('reader-page');
+      const readerBookmark = document.getElementById('reader-bookmark');
+      const readerSide = document.getElementById('reader-side');
+      const readerSideList = document.getElementById('reader-side-list');
+      const readerTools = document.getElementById('reader-tools');
+      const readerNoteSheet = document.getElementById('reader-note-sheet');
+      const readerNoteQuote = document.getElementById('reader-note-quote');
+      const readerNoteText = document.getElementById('reader-note-text');
+
+      const readerCall = async (action, body = {}) => {
+        const key = readNoteKey();
+        if (!key) throw Object.assign(new Error('需要口令'), { needKey: true });
+        const response = await fetch(READER_ENDPOINT, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', 'x-note-key': key },
+          body: JSON.stringify({ action, ...body })
+        });
+        const result = await response.json().catch(() => ({}));
+        if (response.status === 401) {
+          writeNoteKey('');
+          throw Object.assign(new Error('口令不对'), { needKey: true });
+        }
+        if (!response.ok) throw new Error(result.error || `HTTP ${response.status}`);
+        return result;
+      };
+      const bookTitle = name => name.replace(/\.pdf$/i, '').replace(/[+_-]+/g, ' ').replace(/\s+/g, ' ').trim();
+      const readerFailure = error => /Failed to fetch|NetworkError|HTTP 404/.test(error.message) ? '阅读服务还没开通或暂时连不上（Supabase 函数 reader）。' : error.message;
+
+      // The book list.
+      let readerBooks = [];
+      const renderBooks = () => {
+        readerNote.textContent = readerBooks.length
+          ? `${readerBooks.length} 份要读的 AI 资料。选中文字可以高亮、批注、问一问；读到哪页、笔记和书签在各设备同步。`
+          : '书架是空的：点“＋ 添加 PDF”上传。';
+        readerBookList.replaceChildren(...readerBooks.map(entry => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'book';
+          makeText(button, 'span', 'book-title', bookTitle(entry.name));
+          const progress = entry.progress;
+          makeText(button, 'span', 'book-meta', [
+            progress?.pages ? `读到第 ${progress.page} / ${progress.pages} 页` : '还没开始读',
+            entry.highlights ? `${entry.highlights} 处高亮` : '',
+            entry.notes ? `${entry.notes} 条批注` : '',
+            entry.bookmarks ? `${entry.bookmarks} 个书签` : '',
+            progress?.at ? `${shortDate(progress.at)} 读过` : ''
+          ].filter(Boolean).join(' · '));
+          const bar = document.createElement('span');
+          bar.className = 'book-progress';
+          bar.style.setProperty('--done', `${progress?.pages ? Math.round(progress.page / progress.pages * 100) : 0}%`);
+          button.appendChild(bar);
+          button.addEventListener('click', () => openBook(entry));
+          return button;
+        }));
+      };
+      const askReaderKey = message => {
+        readerNote.textContent = message;
+        readerKeyForm.hidden = false;
+        readerBookList.replaceChildren();
+      };
+      const loadBooks = async () => {
+        readerKeyForm.hidden = true;
+        if (!readerBooks.length) readerNote.textContent = '正在打开书架…';
+        try {
+          readerBooks = (await readerCall('list')).docs || [];
+          renderBooks();
+        } catch (error) {
+          if (error.needKey) askReaderKey(error.message === '口令不对' ? '口令不对，再输一次。' : '书架只给你自己看：输入“记一笔”的口令打开（只要输一次）。');
+          else readerNote.textContent = `书架没打开：${readerFailure(error)}`;
+        }
+      };
+      readerKeyForm.addEventListener('submit', event => {
+        event.preventDefault();
+        if (!readerKeyInput.value.trim()) { readerKeyInput.focus(); return; }
+        writeNoteKey(readerKeyInput.value.trim());
+        readerKeyInput.value = '';
+        loadBooks();
+      });
+      document.getElementById('reader-add').addEventListener('click', () => {
+        if (!readNoteKey()) askReaderKey('先输入“记一笔”的口令，再添加 PDF。');
+        else readerFile.click();
+      });
+      // Storage keys keep to letters, digits, dots, dashes and underscores; the title is made from the key.
+      readerFile.addEventListener('change', async () => {
+        const files = [...readerFile.files];
+        readerFile.value = '';
+        for (const pdfFile of files) {
+          if (!/\.pdf$/i.test(pdfFile.name) && pdfFile.type !== 'application/pdf') {
+            showToast([`「${pdfFile.name}」不是 PDF：其他格式先转成 PDF 再加。`], 5000);
+            continue;
+          }
+          const base = pdfFile.name.replace(/\.pdf$/i, '').replace(/[^\w.-]+/g, '-').replace(/^[-.]+|[-.]+$/g, '').slice(0, 180);
+          const name = `${base || `pdf-${Date.now()}`}.pdf`;
+          readerNote.textContent = `正在上传「${pdfFile.name}」…`;
+          try {
+            const { url } = await readerCall('upload', { name });
+            const response = await fetch(url, { method: 'PUT', headers: { 'content-type': 'application/pdf', 'x-upsert': 'true' }, body: pdfFile });
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            showToast([`已加入书架：${bookTitle(name)}`], 3000);
+          } catch (error) {
+            showToast([`「${pdfFile.name}」没传上：${readerFailure(error)}`], 6000);
+            if (error.needKey) break;
+          }
+        }
+        loadBooks();
+      });
+
+      // The reader. book: { name, title, pdf, pages: [{ number, width, height, scale, div, wanted, rendered }], marks
+      // (id → mark), version (bumped by each layout), current, outline, flash }.
+      let pdfjsLib = null;
+      let book = null;
+      let readerZoom = 1;
+      try { readerZoom = Number(localStorage.getItem(READER_ZOOM_STORAGE)) || 1; } catch { /* Default size. */ }
+      const loadPdfjs = async () => {
+        if (!pdfjsLib) {
+          pdfjsLib = await import(`${PDFJS_BASE}/pdf.min.mjs`);
+          pdfjsLib.GlobalWorkerOptions.workerSrc = `${PDFJS_BASE}/pdf.worker.min.mjs`;
+        }
+        return pdfjsLib;
+      };
+      const readerStatus = text => {
+        const status = document.createElement('div');
+        status.className = 'reader-status';
+        status.textContent = text;
+        return status;
+      };
+      const newMarkId = () => crypto.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+      const marksOf = kind => [...(book?.marks.values() || [])].filter(mark => mark.kind === kind);
+
+      const drawMarks = page => {
+        const layer = page.div.querySelector('.reader-marks');
+        if (!layer) return;
+        layer.replaceChildren();
+        page.div.querySelectorAll('.reader-note-pin').forEach(pin => pin.remove());
+        marksOf('highlight').filter(mark => mark.page === page.number).forEach(mark => {
+          (mark.rects || []).forEach(([x, y, width, height]) => {
+            const box = document.createElement('div');
+            box.className = `reader-hl${book.flash === mark.id ? ' flash' : ''}`;
+            box.dataset.id = mark.id;
+            Object.assign(box.style, { left: `${x * 100}%`, top: `${y * 100}%`, width: `${width * 100}%`, height: `${height * 100}%`, background: HIGHLIGHT_COLORS[mark.color] || HIGHLIGHT_COLORS.yellow });
+            layer.appendChild(box);
+          });
+          const [x, y, width] = mark.rects?.[0] || [];
+          if (!mark.note || x == null) return;
+          const pin = document.createElement('button');
+          pin.type = 'button';
+          pin.className = 'reader-note-pin';
+          pin.textContent = '📝';
+          pin.title = mark.note;
+          pin.setAttribute('aria-label', `批注：${mark.note}`);
+          Object.assign(pin.style, { left: `${(x + width) * 100}%`, top: `${y * 100}%` });
+          pin.addEventListener('click', event => { event.stopPropagation(); openReaderNote(mark); });
+          page.div.appendChild(pin);
+        });
+      };
+      const redrawPage = number => {
+        const page = book?.pages[number - 1];
+        if (page?.rendered) drawMarks(page);
+      };
+
+      const clearPage = page => {
+        page.div.querySelectorAll('canvas').forEach(canvas => { canvas.width = 0; canvas.height = 0; });
+        page.div.replaceChildren();
+        page.rendered = 0;
+      };
+      const renderPage = async page => {
+        const current = book;
+        const version = current.version;
+        if (page.rendered === version || page.rendering === version) return;
+        page.rendering = version;
+        const stale = () => book !== current || current.version !== version || !page.wanted;
+        try {
+          const pdfPage = await current.pdf.getPage(page.number);
+          if (stale()) return;
+          const viewport = pdfPage.getViewport({ scale: page.scale });
+          const ratio = Math.min(window.devicePixelRatio || 1, 2);
+          const canvas = document.createElement('canvas');
+          canvas.width = Math.floor(viewport.width * ratio);
+          canvas.height = Math.floor(viewport.height * ratio);
+          await pdfPage.render({ canvasContext: canvas.getContext('2d'), viewport, transform: ratio === 1 ? null : [ratio, 0, 0, ratio, 0, 0] }).promise;
+          if (stale()) { canvas.width = 0; return; }
+          const textLayer = document.createElement('div');
+          textLayer.className = 'textLayer';
+          await new pdfjsLib.TextLayer({ textContentSource: pdfPage.streamTextContent(), container: textLayer, viewport }).render();
+          if (stale()) { canvas.width = 0; return; }
+          const marks = document.createElement('div');
+          marks.className = 'reader-marks';
+          clearPage(page);
+          page.div.append(canvas, marks, textLayer);
+          page.rendered = version;
+          drawMarks(page);
+        } catch (error) {
+          if (!stale()) page.div.replaceChildren(readerStatus(`第 ${page.number} 页没画出来：${error.message}`));
+        } finally {
+          if (page.rendering === version) page.rendering = 0;
+        }
+      };
+      // Pages are drawn as they come near the screen and dropped when far away, so long PDFs stay light on an iPad.
+      const pageObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+        const page = book?.pages[Number(entry.target.dataset.page) - 1];
+        if (!page || page.div !== entry.target) return;
+        page.wanted = entry.isIntersecting;
+        if (page.wanted) renderPage(page);
+        else if (page.rendered) clearPage(page);
+      }), { root: readerPages, rootMargin: '150% 0px' });
+
+      const layoutPages = () => {
+        const width = Math.round(Math.min(readerPages.clientWidth - 16, 1000) * readerZoom);
+        book.version++;
+        book.pages.forEach(page => {
+          page.scale = width / page.width;
+          page.div.style.width = `${width}px`;
+          page.div.style.height = `${Math.round(page.height * page.scale)}px`;
+          page.div.style.setProperty('--scale-factor', String(page.scale));
+          clearPage(page);
+          pageObserver.unobserve(page.div);
+          pageObserver.observe(page.div);
+        });
+      };
+      // yFraction: a spot on the page (a highlight) to bring a third of the way down the screen.
+      const goToPage = (number, yFraction = null) => {
+        const page = book?.pages[Math.min(Math.max(1, Math.round(number) || 1), book.pages.length) - 1];
+        if (!page) return;
+        readerPages.scrollTop = yFraction == null ? page.div.offsetTop - 12
+          : page.div.offsetTop + yFraction * page.div.offsetHeight - readerPages.clientHeight / 3;
+        updateCurrentPage();
+      };
+
+      let progressTimer = 0;
+      const saveProgress = () => {
+        clearTimeout(progressTimer);
+        if (!book) return;
+        const mark = { id: `progress:${book.name}`, doc: book.name, kind: 'progress', page: book.current, text: String(book.pages.length) };
+        book.marks.set(mark.id, mark);
+        try { localStorage.setItem(`aiReaderPage:${book.name}`, String(book.current)); } catch { /* Server copy only. */ }
+        readerCall('save', { mark }).catch(() => { /* Kept in this browser; saved with the next page turn. */ });
+      };
+      // The page a third of the way down the screen is the one being read.
+      const updateCurrentPage = () => {
+        if (!book) return;
+        const probe = readerPages.scrollTop + readerPages.clientHeight / 3;
+        let low = 0;
+        let high = book.pages.length - 1;
+        while (low < high) {
+          const middle = (low + high + 1) >> 1;
+          if (book.pages[middle].div.offsetTop <= probe) low = middle;
+          else high = middle - 1;
+        }
+        const number = low + 1;
+        readerPageButton.textContent = `${number} / ${book.pages.length}`;
+        readerBookmark.setAttribute('aria-pressed', String(marksOf('bookmark').some(mark => mark.page === number)));
+        if (number === book.current) return;
+        book.current = number;
+        clearTimeout(progressTimer);
+        progressTimer = setTimeout(saveProgress, 2500);
+      };
+      let readerScrollFrame = 0;
+      readerPages.addEventListener('scroll', () => {
+        if (toolTarget?.mark) closeReaderTools();
+        readerScrollFrame ||= requestAnimationFrame(() => { readerScrollFrame = 0; updateCurrentPage(); });
+      }, { passive: true });
+
+      const openBook = async entry => {
+        closeReaderTools();
+        readerSide.hidden = true;
+        reader.hidden = false;
+        pauseAllExcept(null);
+        readerTitle.textContent = bookTitle(entry.name);
+        readerPageButton.textContent = '–';
+        readerPages.replaceChildren(readerStatus('正在打开…'));
+        try {
+          const [lib, opened] = await Promise.all([loadPdfjs(), readerCall('open', { doc: entry.name })]);
+          const pdf = await lib.getDocument({ url: opened.url }).promise;
+          if (reader.hidden) { pdf.destroy(); return; }
+          // Page sizes up front, so the scroll bar and jumps are right before pages are drawn.
+          const sizes = [];
+          for (let start = 1; start <= pdf.numPages; start += 50) {
+            const batch = await Promise.all(Array.from({ length: Math.min(50, pdf.numPages - start + 1) }, (_, i) => pdf.getPage(start + i)));
+            batch.forEach(page => { const { width, height } = page.getViewport({ scale: 1 }); sizes.push([width, height]); });
+          }
+          book = {
+            name: entry.name,
+            title: bookTitle(entry.name),
+            pdf,
+            version: 0,
+            current: 0,
+            marks: new Map((opened.marks || []).map(mark => [mark.id, mark])),
+            pages: sizes.map(([width, height], index) => {
+              const div = document.createElement('div');
+              div.className = 'reader-page';
+              div.dataset.page = String(index + 1);
+              return { number: index + 1, width, height, div };
+            })
+          };
+          readerPages.replaceChildren(...book.pages.map(page => page.div));
+          layoutPages();
+          let localPage = 0;
+          try { localPage = Number(localStorage.getItem(`aiReaderPage:${entry.name}`)) || 0; } catch { /* None. */ }
+          goToPage(book.marks.get(`progress:${entry.name}`)?.page || localPage || 1);
+        } catch (error) {
+          readerPages.replaceChildren(readerStatus(error.needKey ? '口令不对：回到书架重新输入。' : `打不开：${readerFailure(error)}`));
+        }
+      };
+      const closeBook = () => {
+        if (book) {
+          saveProgress();
+          book.pages.forEach(page => { pageObserver.unobserve(page.div); clearPage(page); });
+          book.pdf.destroy();
+        }
+        book = null;
+        closeReaderTools();
+        reader.hidden = true;
+        readerPages.replaceChildren();
+        loadBooks();
+      };
+      document.getElementById('reader-back').addEventListener('click', closeBook);
+
+      const setReaderZoom = zoom => {
+        readerZoom = Math.min(3, Math.max(0.5, zoom));
+        try { localStorage.setItem(READER_ZOOM_STORAGE, String(readerZoom)); } catch { /* This visit only. */ }
+        if (!book) return;
+        const page = book.pages[(book.current || 1) - 1];
+        const offset = (readerPages.scrollTop - page.div.offsetTop) / page.div.offsetHeight;
+        layoutPages();
+        readerPages.scrollTop = page.div.offsetTop + offset * page.div.offsetHeight;
+      };
+      document.getElementById('reader-zoom-in').addEventListener('click', () => setReaderZoom(readerZoom * 1.2));
+      document.getElementById('reader-zoom-out').addEventListener('click', () => setReaderZoom(readerZoom / 1.2));
+      let readerResizeTimer = 0;
+      window.addEventListener('resize', () => {
+        clearTimeout(readerResizeTimer);
+        readerResizeTimer = setTimeout(() => { if (book) setReaderZoom(readerZoom); }, 200);
+      });
+      readerPageButton.addEventListener('click', () => {
+        if (!book) return;
+        const answer = prompt(`跳到第几页？（1–${book.pages.length}）`, String(book.current));
+        if (answer && Number(answer)) goToPage(Number(answer));
+      });
+
+      // Saved to this page at once; Supabase follows.
+      const saveMark = mark => {
+        book.marks.set(mark.id, mark);
+        redrawPage(mark.page);
+        renderReaderSide();
+        readerCall('save', { mark }).catch(error => showToast([`没存上：${readerFailure(error)}`], 5000));
+        return mark;
+      };
+      const deleteMark = mark => {
+        book.marks.delete(mark.id);
+        redrawPage(mark.page);
+        renderReaderSide();
+        readerCall('delete', { id: mark.id }).catch(error => showToast([`没删掉：${readerFailure(error)}`], 5000));
+      };
+
+      readerBookmark.addEventListener('click', () => {
+        updateCurrentPage();
+        if (!book?.current) return;
+        const existing = marksOf('bookmark').find(mark => mark.page === book.current);
+        if (existing) {
+          deleteMark(existing);
+          showToast([`已取消第 ${book.current} 页的书签。`], 1800);
+        } else {
+          const text = book.pages[book.current - 1].div.querySelector('.textLayer')?.textContent.replace(/\s+/g, ' ').trim().slice(0, 80) || '';
+          saveMark({ id: newMarkId(), doc: book.name, kind: 'bookmark', page: book.current, text });
+          showToast([`🔖 第 ${book.current} 页已加书签。`], 1800);
+        }
+        updateCurrentPage();
+      });
+
+      // Selected text → [x, y, width, height] of each line as fractions of its page (lines merged), so highlights
+      // keep their place at any zoom.
+      const selectionOnPage = () => {
+        const selection = document.getSelection();
+        if (!book || !selection?.rangeCount || selection.isCollapsed) return null;
+        const range = selection.getRangeAt(0);
+        const start = range.startContainer.nodeType === 1 ? range.startContainer : range.startContainer.parentElement;
+        const pageDiv = start?.closest('.reader-page');
+        const text = selection.toString().replace(/\s+/g, ' ').trim();
+        if (!pageDiv || !readerPages.contains(pageDiv) || !text) return null;
+        const box = pageDiv.getBoundingClientRect();
+        const lines = [];
+        [...range.getClientRects()]
+          .filter(rect => rect.width > 0.5 && rect.height > 0.5 && rect.height < box.height * 0.08 && rect.top >= box.top - 2 && rect.bottom <= box.bottom + 2)
+          .sort((a, b) => a.top - b.top || a.left - b.left)
+          .forEach(rect => {
+            const line = lines.find(item => Math.abs(item.top - rect.top) < rect.height * 0.5 && Math.abs(item.bottom - rect.bottom) < rect.height * 0.6);
+            if (!line) { lines.push({ left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom }); return; }
+            line.left = Math.min(line.left, rect.left);
+            line.right = Math.max(line.right, rect.right);
+            line.top = Math.min(line.top, rect.top);
+            line.bottom = Math.max(line.bottom, rect.bottom);
+          });
+        if (!lines.length) return null;
+        const fraction = value => Math.round(value * 10000) / 10000;
+        return {
+          page: Number(pageDiv.dataset.page),
+          text: text.slice(0, 5000),
+          rects: lines.map(line => [fraction((line.left - box.left) / box.width), fraction((line.top - box.top) / box.height), fraction((line.right - line.left) / box.width), fraction((line.bottom - line.top) / box.height)]),
+          rect: range.getBoundingClientRect()
+        };
+      };
+
+      // The tool bar: for new selections (highlight, 批注, 问, 复制) and for a tapped highlight (recolor, 批注, 问,
+      // 复制, delete). It sits below the selection; the phone's own copy menu is above it.
+      let toolTarget = null;
+      const showReaderTools = (target, rect) => {
+        toolTarget = target;
+        readerTools.querySelector('[data-tool="delete"]').hidden = !target.mark;
+        readerTools.querySelectorAll('.swatch').forEach(button => button.setAttribute('aria-pressed', String(target.mark?.color === button.dataset.color)));
+        readerTools.hidden = false;
+        const { offsetWidth: width, offsetHeight: height } = readerTools;
+        const top = rect.bottom + 12 + height > innerHeight - 8 ? rect.top - height - 12 : rect.bottom + 12;
+        readerTools.style.top = `${Math.max(8, top)}px`;
+        readerTools.style.left = `${Math.min(Math.max(8, rect.left + rect.width / 2 - width / 2), innerWidth - width - 8)}px`;
+      };
+      function closeReaderTools() {
+        readerTools.hidden = true;
+        toolTarget = null;
+      }
+      let readerSelectionTimer = 0;
+      document.addEventListener('selectionchange', () => {
+        if (reader.hidden) return;
+        clearTimeout(readerSelectionTimer);
+        readerSelectionTimer = setTimeout(() => {
+          const selected = selectionOnPage();
+          if (selected) showReaderTools({ selection: selected }, selected.rect);
+          else if (toolTarget?.selection) closeReaderTools();
+        }, 300);
+      });
+      // Keeps the selection when a tool is pressed.
+      readerTools.addEventListener('pointerdown', event => event.preventDefault());
+      readerPages.addEventListener('click', event => {
+        if (!book || !document.getSelection()?.isCollapsed) return;
+        const pageDiv = event.target.closest('.reader-page');
+        const number = Number(pageDiv?.dataset.page);
+        const box = pageDiv?.getBoundingClientRect();
+        const x = box && (event.clientX - box.left) / box.width;
+        const y = box && (event.clientY - box.top) / box.height;
+        const hit = pageDiv && marksOf('highlight').find(mark => mark.page === number
+          && (mark.rects || []).some(([left, top, width, height]) => x >= left && x <= left + width && y >= top && y <= top + height));
+        if (!hit) { closeReaderTools(); return; }
+        showReaderTools({ mark: hit }, pageDiv.querySelector(`.reader-hl[data-id="${CSS.escape(hit.id)}"]`).getBoundingClientRect());
+      });
+      const highlightSelection = (selection, color) => {
+        document.getSelection()?.removeAllRanges();
+        return saveMark({ id: newMarkId(), doc: book.name, kind: 'highlight', page: selection.page, color, text: selection.text, note: '', rects: selection.rects });
+      };
+      readerTools.addEventListener('click', event => {
+        const button = event.target.closest('button');
+        if (!button || !toolTarget || !book) return;
+        const { selection, mark } = toolTarget;
+        const text = mark?.text || selection.text;
+        closeReaderTools();
+        if (button.dataset.color) {
+          if (mark) saveMark({ ...mark, color: button.dataset.color });
+          else highlightSelection(selection, button.dataset.color);
+        } else if (button.dataset.tool === 'note') {
+          openReaderNote(mark || highlightSelection(selection, 'yellow'));
+        } else if (button.dataset.tool === 'ask') {
+          document.getSelection()?.removeAllRanges();
+          openAsk({
+            context: { title: book.title, source: `第 ${mark?.page || selection.page} 页` },
+            question: text.length <= 120 ? `「${text}」是谁 / 是什么？` : `用简单的话解释这段：「${text.slice(0, 420)}」`
+          });
+        } else if (button.dataset.tool === 'copy') {
+          navigator.clipboard?.writeText(text).then(() => showToast(['已复制。'], 1500), () => showToast(['这个浏览器不让复制。'], 2500));
+        } else if (button.dataset.tool === 'delete') {
+          deleteMark(mark);
+          showToast(['已删除高亮。', { text: '撤销', action: () => saveMark(mark) }], 4000);
+        }
+      });
+
+      // 📝 批注 on a highlight.
+      let editingMark = null;
+      function openReaderNote(mark) {
+        editingMark = mark;
+        readerNoteQuote.textContent = `第 ${mark.page} 页：「${mark.text.length > 160 ? `${mark.text.slice(0, 160)}…` : mark.text}」`;
+        readerNoteText.value = mark.note || '';
+        readerNoteSheet.hidden = false;
+        readerNoteText.focus();
+      }
+      const closeReaderNote = () => {
+        readerNoteSheet.hidden = true;
+        editingMark = null;
+      };
+      document.getElementById('reader-note-form').addEventListener('submit', event => {
+        event.preventDefault();
+        if (!editingMark || !book) return;
+        saveMark({ ...(book.marks.get(editingMark.id) || editingMark), note: readerNoteText.value.trim() });
+        closeReaderNote();
+      });
+      document.getElementById('reader-note-close').addEventListener('click', closeReaderNote);
+      readerNoteSheet.addEventListener('click', event => { if (event.target === readerNoteSheet) closeReaderNote(); });
+
+      // ☰: the PDF's own table of contents, bookmarks, and every highlight and 批注 in page order.
+      let readerSideTab = 'notes';
+      const sideItem = (parts, onClick, swatch) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'reader-item';
+        if (swatch) button.style.setProperty('--swatch', swatch);
+        parts.forEach(([tag, className, value]) => { if (value) makeText(button, tag, className, value); });
+        button.addEventListener('click', () => {
+          if (innerWidth < 700) readerSide.hidden = true;
+          onClick();
+        });
+        return button;
+      };
+      const sideEmpty = text => {
+        const empty = document.createElement('div');
+        empty.className = 'reader-empty';
+        empty.textContent = text;
+        return empty;
+      };
+      const outlinePage = async dest => {
+        const explicit = typeof dest === 'string' ? await book.pdf.getDestination(dest) : dest;
+        if (!Array.isArray(explicit)) return null;
+        return typeof explicit[0] === 'number' ? explicit[0] + 1 : await book.pdf.getPageIndex(explicit[0]) + 1;
+      };
+      async function renderReaderSide() {
+        if (!book || readerSide.hidden) return;
+        readerSide.querySelectorAll('[data-side]').forEach(button => button.classList.toggle('active', button.dataset.side === readerSideTab));
+        if (readerSideTab === 'toc') {
+          book.outline ??= await book.pdf.getOutline().catch(() => null) || [];
+          const items = [];
+          const add = (entries, depth) => entries.forEach(entry => {
+            const item = sideItem([['span', '', entry.title]], async () => {
+              const number = await outlinePage(entry.dest).catch(() => null);
+              if (number) goToPage(number);
+            });
+            item.style.paddingLeft = `${14 + depth * 16}px`;
+            items.push(item);
+            if (entry.items?.length) add(entry.items, depth + 1);
+          });
+          add(book.outline, 0);
+          readerSideList.replaceChildren(...(items.length ? items : [sideEmpty('这份 PDF 没有自带目录。可以用 🔖 给常看的页加书签。')]));
+        } else if (readerSideTab === 'bookmarks') {
+          const bookmarks = marksOf('bookmark').sort((a, b) => a.page - b.page);
+          readerSideList.replaceChildren(...(bookmarks.length
+            ? bookmarks.map(mark => sideItem([['span', '', `🔖 第 ${mark.page} 页`], ['small', '', mark.text]], () => goToPage(mark.page)))
+            : [sideEmpty('还没有书签：读到想回来的页，点上面的 🔖。')]));
+        } else {
+          const highlights = marksOf('highlight').sort((a, b) => a.page - b.page || (a.rects?.[0]?.[1] || 0) - (b.rects?.[0]?.[1] || 0));
+          readerSideList.replaceChildren(...(highlights.length
+            ? highlights.map(mark => sideItem([['span', 'reader-quote', mark.text], ['div', 'reader-item-note', mark.note && `📝 ${mark.note}`], ['small', '', `第 ${mark.page} 页`]], () => {
+              book.flash = mark.id;
+              goToPage(mark.page, mark.rects?.[0]?.[1] ?? 0);
+              redrawPage(mark.page);
+              setTimeout(() => { if (book?.flash === mark.id) book.flash = null; }, 2600);
+            }, HIGHLIGHT_COLORS[mark.color]))
+            : [sideEmpty('还没有高亮或批注：选中一段文字，在弹出的工具条里选颜色或“📝 批注”。')]));
+        }
+      }
+      document.getElementById('reader-side-button').addEventListener('click', () => {
+        readerSide.hidden = !readerSide.hidden;
+        renderReaderSide();
+      });
+      readerSide.querySelectorAll('[data-side]').forEach(button => button.addEventListener('click', () => {
+        if (button.dataset.side === 'close') { readerSide.hidden = true; return; }
+        readerSideTab = button.dataset.side;
+        renderReaderSide();
+      }));
+      document.addEventListener('keydown', event => {
+        if (event.key !== 'Escape' || reader.hidden || !readerNoteSheet.hidden || !askSheet.hidden) return;
+        if (!readerTools.hidden) closeReaderTools();
+        else if (!readerSide.hidden) readerSide.hidden = true;
+        else closeBook();
+      });
+
       // 🎧 用播客听: the same episode on Apple Podcasts, which keeps playing with the screen locked and has its own
       // sleep timer (a YouTube embed stops when the screen locks). Looked up with the iTunes Search API when a YouTube
       // card comes on screen; answers are kept in this browser, and misses for recent videos are retried after 3 days.
@@ -2992,7 +3675,7 @@
             item.setAttribute('aria-selected', String(selected));
           });
           panels.forEach(panel => { panel.hidden = panel.id !== targetId; });
-          feed.classList.toggle('no-snap', targetId === 'feed-briefs');
+          feed.classList.toggle('no-snap', targetId === 'feed-briefs' || targetId === 'feed-reader');
           feed.scrollTop = 0;
           activeCard = document.querySelector(`#${targetId} .card:not(.is-watched):not([hidden])`);
           pauseAllExcept(activeCard);
@@ -3003,6 +3686,7 @@
             pauseAllExcept(activeCard);
           }
           if (targetId === 'feed-briefs') await loadBriefs();
+          if (targetId === 'feed-reader') loadBooks();
         });
       });
 

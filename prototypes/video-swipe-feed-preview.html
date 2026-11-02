@@ -2735,7 +2735,7 @@
           makeText(row, 'span', 'toc-index', String(index + 1));
           const text = document.createElement('div');
           text.className = 'history-item-text';
-          makeText(text, 'div', 'history-item-title', `${isFavorite(item) ? '★ ' : ''}${item.querySelector('h1')?.textContent.trim() || '（无标题）'}`);
+          makeText(text, 'div', 'history-item-title', `${!item.dataset.home && favorites.has(cardKey(item)) ? '★ ' : ''}${item.querySelector('h1')?.textContent.trim() || '（无标题）'}`);
           const date = item.dataset.published || item.querySelector('.pub-date')?.textContent.match(/\d{4}-\d{2}-\d{2}/)?.[0] || '';
           makeText(text, 'div', 'history-item-meta', [...new Set([date, ...(item.querySelector('.source')?.textContent.split('·') || [])].map(part => part.trim()).filter(Boolean))].join(' · '));
           row.appendChild(text);

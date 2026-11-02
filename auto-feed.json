@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T19:01:20.353Z",
+ "updated": "2026-11-02T19:04:05.770Z",
  "items": [
   {
    "key": "youtube:-GKLZWEq-0c",
@@ -1577,7 +1577,7 @@
   "王坚": {
    "keywords": "阿里云 城市大脑 院士 之江实验室 阿里巴巴 云栖",
    "searched": "2026-11-02",
-   "youtube": "ok",
+   "youtube": "HTTP 429",
    "bilibili": "ok"
   },
   "徐新": {
@@ -1602,7 +1602,38 @@
  "peopleRejected": [
   "bilibili:BV1uib76CE9Z"
  ],
+ "watchAdded": [],
  "news": [
+  {
+   "id": "17br6v7",
+   "lastSeen": "2026-11-02",
+   "title": "Anthropic's loss shrinks, revenue jumps ahead of blockbuster IPO",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPalN1b2NwcllWRkRjRUNmOVBjSDMxWDNzdjZIclhDNTdMMFlaVUx2eWN1U19acllfTk0xX0JIbkJma21jVDFhZUR1czFjbVdLbThjMHVQZ0F4MkFvNmc0cURPN05FMkE3VFNyMTktbmNzWVIxN3c1YVFhSXpBTmZSQk1DZ013aDVRcXE5OEplekFkZWFJbmQxUEhDSVJ3RVVrZWJUd2ZRYWRfWUJhMVMycEZRRk8?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Business Insider",
+    "WSJ",
+    "Bloomberg.com",
+    "Reuters",
+    "Forbes"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill",
+    "Anthropic Unveils Paperwork for Blockbuster IPO",
+    "Anthropic Revenue Hits Nearly $17 Billion Before Blockbuster IPO",
+    "Anthropic's loss shrinks, revenue jumps ahead of blockbuster IPO",
+    "Anthropic Hit $17 Billion In Third Quarter Revenue Ahead Of IPO—But AI Spending Commitments Hit $900 Billion"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic's amended IPO paperwork revealed soaring Q3 revenue and a significant compute bill.",
+   "meaning": "Financial and compute metrics from leading foundational model providers offer vital visibility into the real costs and commercialization pace of generative AI.",
+   "importance": 8
+  },
   {
    "id": "18p4lp6",
    "lastSeen": "2026-11-02",
@@ -1629,32 +1660,6 @@
    "summary": "Anthropic在日本为其美国大型IPO寻求高达35亿美元的资金。",
    "meaning": "显示出头部AI大厂在海外市场的融资动作与全球资本扩张步伐。",
    "importance": 6
-  },
-  {
-   "id": "17br6v7",
-   "lastSeen": "2026-11-02",
-   "title": "Anthropic Revenue Hits Nearly $17 Billion Before Blockbuster IPO",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY1J3NXRpRXlFZHZiUUotRlNhandEU19SQVVyM3c1SW0teWRrMGxhUnpzbjJYN0hyTUlOMGd2a3dqSDl3ZG9tMFIyVEhkN1BnVDdTcmNzUF94dExOZEMwN0VUMTBKbE52U2hma3BLOVp3T0VCRVh0ZE1mVWdvU0RiNjFIOWhRTHdfeElXZUJHMkppd0hHbFRuVzNiODBURVJLNzJyLXpRSkx1TTlsaVJvUDJnSUo?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-11-02",
-   "outlets": [
-    "Business Insider",
-    "WSJ",
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill",
-    "Anthropic Unveils Paperwork for Blockbuster IPO",
-    "Anthropic Revenue Hits Nearly $17 Billion Before Blockbuster IPO"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic's amended IPO paperwork revealed soaring Q3 revenue and a significant compute bill.",
-   "meaning": "Financial and compute metrics from leading foundational model providers offer vital visibility into the real costs and commercialization pace of generative AI.",
-   "importance": 8
   },
   {
    "id": "1wfiuz1",
@@ -2624,8 +2629,8 @@
     "Jensen Huang",
     "NVIDIA Research"
    ],
-   "summary": "NVIDIA CEO Jensen Huang may have been the target of a Chinese government spy.",
-   "meaning": "This involves high-stakes geopolitical and security concerns surrounding top figures in the AI chip industry, though details remain unconfirmed.",
+   "summary": "NVIDIA CEO Jensen Huang may have been the target of a Chinese government spy, according to recent headlines.",
+   "meaning": "这涉及到中国AI与地缘政治安全及头部芯片巨头的安全动向，对于关注中国AI发展的读者而言值得保持警惕。",
    "importance": 6
   },
   {
@@ -3600,6 +3605,54 @@
    "lastSeen": "2026-11-02"
   },
   {
+   "id": "1gxhsi1",
+   "lastSeen": "2026-11-02",
+   "title": "Anthropic IPO Filing Calms Nerves With Signs of Healthy Growth",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQakRYRVlnTEZWNEF0ZWpVSGxvNGM4c0oyZUtJMXdQLXJXMUlaUnowcXZIRUtwVUNDbEd0NFhEb3ZieGUxbi1CVHdMQXRiMjY3YzFhaUpIeWVUTXNObzJqVVNIMl9LNi1HMTBiMVJUQ2huSXllLTdPd29YVnNvR284MFZxNTJ5R2RhMWN0bHBQdDIxTVJCX2tRd1FtLXU3OWJoZC1wX3pFb3RPNmJZeGx0R2tjdw?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Bloomberg.com",
+    "Fortune"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic IPO Filing Calms Nerves With Signs of Healthy Growth",
+    "Anthropic’s growth slowed and costs jumped in the third quarter, updated IPO filing shows"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic IPO filing calms nerves with signs of healthy growth.",
+   "meaning": "Financial health signals from a major AI lab indicate stabilizing market confidence in the commercial viability of foundational AI.",
+   "importance": 6
+  },
+  {
+   "id": "1tr6943",
+   "lastSeen": "2026-11-02",
+   "title": "The risk that AI wakes up and other warnings in Anthropic’s unusual IPO filing",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVkhmVGUzeUdLR0pBUUEwV2IwM2lRdVlWRDRSMk5yR2kzR1NDeWlMOFJpSVlNZDhZTGROLXVILWFEaXJtREI5LWpPQTM0Sll4YVBCZkhOUWE4cXNRZUtORFdMVE5mREFnYTF3ZlEzZlI4b1dZdG50SXFXVENfLXhfMWhMT2FfX0VZRlpkRlB2VlR2d0NsNi13aF9oOWtjcFJOOVpWSExENXVKbWp6UlBSeUpKZFpfMW9X?oc=5",
+   "source": "The Washington Post",
+   "domain": "washingtonpost.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "The Washington Post",
+    "South China Morning Post"
+   ],
+   "themes": [],
+   "headlines": [
+    "The risk that AI wakes up and other warnings in Anthropic’s unusual IPO filing",
+    "Why does Anthropic’s IPO prospectus have so many China ‘risk factor’ warnings?"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic's unusual IPO filing includes warnings about the risk that AI wakes up.",
+   "meaning": "Public disclosures from top AI companies regarding existential risks highlight ongoing regulatory and safety debates in general AI development.",
+   "importance": 5
+  },
+  {
    "title": "为什么黄仁勋帮不了欧洲人工智能",
    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1UQzdtai1OYjhueW1oZkZOdWJielpLYVhtRVhzWjFZV0o1MmNnWGtwa3E0eFBER3JwVnZFcXZlS2ktSkNvOWNRYlBiZUVZQ3BwY0Zr?oc=5",
    "source": "第一财经",
@@ -3900,50 +3953,6 @@
    "summary": "Anthropic proposes a plan for controlling powerful AI long after its current leaders depart.",
    "meaning": "Governance of advanced AI models is becoming a central focus for leading labs, impacting general AI safety and long-term control.",
    "id": "1ropudv"
-  },
-  {
-   "id": "1gxhsi1",
-   "lastSeen": "2026-11-02",
-   "title": "Anthropic IPO Filing Calms Nerves With Signs of Healthy Growth",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQakRYRVlnTEZWNEF0ZWpVSGxvNGM4c0oyZUtJMXdQLXJXMUlaUnowcXZIRUtwVUNDbEd0NFhEb3ZieGUxbi1CVHdMQXRiMjY3YzFhaUpIeWVUTXNObzJqVVNIMl9LNi1HMTBiMVJUQ2huSXllLTdPd29YVnNvR284MFZxNTJ5R2RhMWN0bHBQdDIxTVJCX2tRd1FtLXU3OWJoZC1wX3pFb3RPNmJZeGx0R2tjdw?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-10-27",
-   "outlets": [
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic IPO Filing Calms Nerves With Signs of Healthy Growth"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic IPO filing calms nerves with signs of healthy growth.",
-   "meaning": "Financial health signals from a major AI lab indicate stabilizing market confidence in the commercial viability of foundational AI.",
-   "importance": 6
-  },
-  {
-   "id": "1tr6943",
-   "lastSeen": "2026-11-02",
-   "title": "The risk that AI wakes up and other warnings in Anthropic’s unusual IPO filing",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVkhmVGUzeUdLR0pBUUEwV2IwM2lRdVlWRDRSMk5yR2kzR1NDeWlMOFJpSVlNZDhZTGROLXVILWFEaXJtREI5LWpPQTM0Sll4YVBCZkhOUWE4cXNRZUtORFdMVE5mREFnYTF3ZlEzZlI4b1dZdG50SXFXVENfLXhfMWhMT2FfX0VZRlpkRlB2VlR2d0NsNi13aF9oOWtjcFJOOVpWSExENXVKbWp6UlBSeUpKZFpfMW9X?oc=5",
-   "source": "The Washington Post",
-   "domain": "washingtonpost.com",
-   "published": "2026-10-27",
-   "outlets": [
-    "The Washington Post"
-   ],
-   "themes": [],
-   "headlines": [
-    "The risk that AI wakes up and other warnings in Anthropic’s unusual IPO filing"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic's unusual IPO filing includes warnings about the risk that AI wakes up.",
-   "meaning": "Public disclosures from top AI companies regarding existential risks highlight ongoing regulatory and safety debates in general AI development.",
-   "importance": 5
   },
   {
    "title": "AI Enters the Courtroom as Dubai Rethinks How Lawyers Train and Judges Work",

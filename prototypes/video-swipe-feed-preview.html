@@ -3016,7 +3016,9 @@
         answer.textContent = withClip ? '正在看刚才那段视频、查资料…' : '正在查…';
         askBody.appendChild(answer);
         askBody.scrollTop = askBody.scrollHeight;
-        try {
+        // Gemini's "high demand" (503) and rate limits (429) usually pass within seconds: try again twice.
+        const busy = message => /HTTP (503|429)|UNAVAILABLE|high demand|overloaded|RESOURCE_EXHAUSTED/i.test(message);
+        const ask = async () => {
           const response = await fetch(ASK_ENDPOINT, {
             method: 'POST',
             headers: { 'content-type': 'application/json', 'x-note-key': readNoteKey() },
@@ -3034,12 +3036,27 @@
             throw new Error('口令不对。在下面输入记笔记口令后再问一次。');
           }
           if (!response.ok || !result.answer) throw new Error(result.error || `HTTP ${response.status}`);
+          return result;
+        };
+        try {
+          let result;
+          for (let attempt = 1; !result; attempt++) {
+            try {
+              result = await ask();
+            } catch (error) {
+              if (attempt >= 3 || !busy(error.message)) throw error;
+              answer.textContent = `Gemini 这会儿很忙，${attempt * 3} 秒后再试（第 ${attempt + 1} 次）…`;
+              await new Promise(resolve => setTimeout(resolve, attempt * 3000));
+            }
+          }
           answer.className = 'ask-a';
           answer.textContent = result.answer;
           state.history.push({ question, answer: result.answer });
         } catch (error) {
           answer.className = 'ask-a error';
-          answer.textContent = /Failed to fetch|NetworkError|HTTP 404/.test(error.message) ? '问答服务还没开通或暂时连不上，请稍后再试。' : `没问到：${error.message}`;
+          answer.textContent = /Failed to fetch|NetworkError|HTTP 404/.test(error.message) ? '问答服务还没开通或暂时连不上，请稍后再试。'
+            : busy(error.message) ? 'Gemini 这会儿太忙（Google 那边临时过载），试了三次都没成功。过一两分钟再问一次。'
+            : `没问到：${error.message}`;
         }
         if (askState === state) askBody.scrollTop = askBody.scrollHeight;
       };

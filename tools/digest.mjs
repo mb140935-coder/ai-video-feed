@@ -3,7 +3,8 @@
 // outlets keep picking it up, so a story that really matters comes back the next day. 本周大事 is the top WEEKLY
 // of the last 7 days' picks.
 
-const DAILY = 8;
+// Odd: the lead, then the rest in two columns on iPad and computer, so no column ends a story short.
+const DAILY = 9;
 const WEEKLY = 5;
 const CANDIDATE_DAYS = 7;
 const KEEP_DIGESTS = 7; // Same week as the news itself (news.mjs MAX_AGE_DAYS).
@@ -32,16 +33,18 @@ export const buildDigest = (news, previousDigests = [], stats = {}, report = [])
   const byId = new Map(news.map(story => [story.id, story]));
   const score = new Map(news.map(story => [story.id, scoreStory(story, today)]));
 
-  // A rerun on the same day (a push to the workflow, a manual run) keeps the day's picks, so read marks still match.
+  const candidates = () => news
+    .filter(story => !picked.has(story.id) && daysBetween(story.published, today) < CANDIDATE_DAYS)
+    .sort((a, b) => score.get(b.id) - score.get(a.id))
+    .map(story => story.id);
+  // A rerun on the same day (a push to the workflow, a manual run) keeps the day's picks, so read marks still match;
+  // it only tops them up to DAILY (a day picked when DAILY was smaller).
   let digest = digests.find(entry => entry.date === today);
   if (!digest) {
-    const ids = news
-      .filter(story => !picked.has(story.id) && daysBetween(story.published, today) < CANDIDATE_DAYS)
-      .sort((a, b) => score.get(b.id) - score.get(a.id))
-      .slice(0, DAILY)
-      .map(story => story.id);
-    digest = { date: today, ids, scanned: stats.scanned || 0, events: stats.events || 0 };
+    digest = { date: today, ids: candidates().slice(0, DAILY), scanned: stats.scanned || 0, events: stats.events || 0 };
     digests.unshift(digest);
+  } else if (digest.ids.length < DAILY) {
+    digest.ids = [...digest.ids, ...candidates().slice(0, DAILY - digest.ids.length)];
   }
   const weekly = digests
     .filter(entry => daysBetween(entry.date, today) < 7)

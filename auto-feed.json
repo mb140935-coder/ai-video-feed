@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T18:45:09.711Z",
+ "updated": "2026-11-02T18:53:24.626Z",
  "items": [
   {
    "key": "youtube:-GKLZWEq-0c",
@@ -896,6 +896,27 @@
    "sports": false
   },
   {
+   "key": "youtube:36mG4iAsdm4",
+   "url": "https://www.youtube.com/watch?v=36mG4iAsdm4",
+   "title": "何超琼访谈引热议：公众如何理解财富、责任与个人选择",
+   "channel": "Shuai MU",
+   "channelId": "UCbiMFNUhQBIpIlw2yFgyYQQ",
+   "published": "2026-10-27",
+   "summary": "本期《半熟人生》选择喜马拉雅官方话题“章泽天专访“赌王之女”何超琼”，从“名人访谈与叙事边界”切入。我们不替听众做决定，而是把名人访谈与叙事边界拆成可核对的信息、现实成本、适用边界与后续观察四部分。节目区分公开事实、观点与待核实信息，并整理出普通人可以收藏、复查和参与讨论的行动清单。",
+   "tab": "people",
+   "person": "何超琼",
+   "tags": [
+    "人物访谈",
+    "何超琼"
+   ],
+   "minutes": 16,
+   "found": "2026-11-02",
+   "via": "people",
+   "highlight": "本期《半熟人生》节目围绕喜马拉雅官方话题“章泽天专访‘赌王之女’何超琼”展开，探讨公众如何理解财富、责任与个人选择。节目从名人访谈与叙事边界切入，将其拆解为可核对的信息、现实成本、适用边界与后续观察四部分。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
    "key": "bilibili:BV1HNJk6BEJm",
    "url": "https://www.bilibili.com/video/BV1HNJk6BEJm",
    "title": "对话：AI+数学的变与不变丨浙大数学高等研究院院长励建书×之江实验室主任王坚",
@@ -912,27 +933,6 @@
    "found": "2026-11-02",
    "via": "people",
    "highlight": "在第六届智能计算创新论坛上，浙江大学数学高等研究院院长、中国科学院院士励建书与之江实验室主任、中国工程院院士王坚展开了“AI+数学：变与不变”的主题对话。两位院士围绕AI与数学的关系进行了深入探讨。",
-   "kind": "judgment",
-   "sports": false
-  },
-  {
-   "key": "youtube:HhWAy26MyzM",
-   "url": "https://www.youtube.com/watch?v=HhWAy26MyzM",
-   "title": "李翔对谈徐新、高继扬：创新、热潮、泡沫和周期",
-   "channel": "对谈思考",
-   "channelId": "UCo4LCSJYQpuuiG12yWknLFA",
-   "published": "2026-10-08",
-   "summary": "在这期节目中，李翔和估值200亿的具身智能新贵高",
-   "tab": "people",
-   "person": "徐新",
-   "tags": [
-    "人物访谈",
-    "徐新"
-   ],
-   "minutes": 153,
-   "found": "2026-11-02",
-   "via": "people",
-   "highlight": "李翔对话星海图创始人、具身智能新贵高继扬与投资人徐新，共同探讨了科技创新、估值泡沫、泡沫破灭的可能以及当下火热的市场环境。嘉宾们从各自视角讨论了AI与具身智能赛道、新一代创业者画像及当前的周期变化。",
    "kind": "judgment",
    "sports": false
   },
@@ -997,27 +997,6 @@
    "sports": false
   },
   {
-   "key": "youtube:EgD8fT7tCdU",
-   "url": "https://www.youtube.com/watch?v=EgD8fT7tCdU",
-   "title": "CCTV 鲁健对话何超琼：我有野心，让澳门成全球文旅标杆（2024.12.27）",
-   "channel": "时代回音",
-   "channelId": "UCVP5IC7Yt8QtJsPIm0E6Nrw",
-   "published": "2026-09-06",
-   "summary": "何超琼——澳门信德集团董事长、全国政协常委、全国工商联副主席——既是澳门回归25年的\"参与者和见证者\"，也是推动澳门文旅转型的核心人物。她在节目中系统谈及：",
-   "tab": "people",
-   "person": "何超琼",
-   "tags": [
-    "人物访谈",
-    "何超琼"
-   ],
-   "minutes": 25,
-   "found": "2026-11-02",
-   "via": "people",
-   "highlight": "CCTV鲁健对话澳门信德集团董事长、全国政协常委何超琼。她系统谈及了保利美高梅博物馆及珍贵文物展出、将澳门打造为全球文旅标杆的野心、与张艺谋筹划融合AI与科技的驻场秀，以及大湾区身份等内容。",
-   "kind": "judgment",
-   "sports": false
-  },
-  {
    "key": "bilibili:BV1uib76CE9Z",
    "url": "https://www.bilibili.com/video/BV1uib76CE9Z",
    "title": "何超琼采访全集",
@@ -1034,69 +1013,6 @@
    "found": "2026-11-02",
    "via": "people",
    "highlight": "收录了何超琼的相关采访合集，探讨其在商业与文旅转型等方面的经历与观点。",
-   "kind": "judgment",
-   "sports": false
-  },
-  {
-   "key": "youtube:lxX3tGEHohM",
-   "url": "https://www.youtube.com/watch?v=lxX3tGEHohM",
-   "title": "章泽天对话何超琼：我的人生没得选啊，我17岁就跟着父亲应酬",
-   "channel": "Daily podcast",
-   "channelId": "UCjO5DMAqijYcev792OHNR_Q",
-   "published": "2026-09-03",
-   "summary": "",
-   "tab": "people",
-   "person": "何超琼",
-   "tags": [
-    "人物访谈",
-    "何超琼"
-   ],
-   "minutes": 108,
-   "found": "2026-11-02",
-   "via": "people",
-   "highlight": "章泽天对话何超琼，何超琼在访谈中谈及自己17岁便跟着父亲应酬的人生经历。",
-   "kind": "judgment",
-   "sports": false
-  },
-  {
-   "key": "youtube:alDZiCyjg3U",
-   "url": "https://www.youtube.com/watch?v=alDZiCyjg3U",
-   "title": "章泽天对话何超琼：人生没有写好的剧本",
-   "channel": "时代回音",
-   "channelId": "UCVP5IC7Yt8QtJsPIm0E6Nrw",
-   "published": "2026-09-02",
-   "summary": "“赌王之女”“豪门接班人”，外界最熟悉的标签，并不能真正解释她。",
-   "tab": "people",
-   "person": "何超琼",
-   "tags": [
-    "人物访谈",
-    "何超琼"
-   ],
-   "minutes": 108,
-   "found": "2026-11-02",
-   "via": "people",
-   "highlight": "章泽天对话何超琼，探讨标签之外的人生剧本。何超琼聊起了家庭、公关创业、家族企业经历、香港文化的黄金时代、竞争与人生压力等话题。",
-   "kind": "judgment",
-   "sports": false
-  },
-  {
-   "key": "youtube:epMZsHeO3m4",
-   "url": "https://www.youtube.com/watch?v=epMZsHeO3m4",
-   "title": "章泽天对话何超琼：标签之外，如何走出自己的人生剧本 | 章泽天个人播客 EP05",
-   "channel": "小天章 ON AIR",
-   "channelId": "UCc2LEidaJSTik3V66oWfIEw",
-   "published": "2026-09-02",
-   "summary": "",
-   "tab": "people",
-   "person": "何超琼",
-   "tags": [
-    "人物访谈",
-    "何超琼"
-   ],
-   "minutes": 108,
-   "found": "2026-11-02",
-   "via": "people",
-   "highlight": "章泽天个人播客节目中对话何超琼，探讨标签之外如何走出自己的人生剧本。",
    "kind": "judgment",
    "sports": false
   },
@@ -1283,26 +1199,6 @@
    "sports": false
   },
   {
-   "key": "bilibili:BV1jwJw6EEAf",
-   "url": "https://www.bilibili.com/video/BV1jwJw6EEAf",
-   "title": "徐新很经典的一场演讲",
-   "channel": "扣子的书房",
-   "published": "2026-06-14",
-   "summary": "这是投资女王徐新 2014年12月2日在由清科集团主办的 “中国高成长企业CEO峰会” 上发表的演讲。很经典，有很强的洞察力，尤其对消费者和创业者的分析。",
-   "tab": "people",
-   "person": "徐新",
-   "tags": [
-    "人物访谈",
-    "徐新"
-   ],
-   "minutes": 52,
-   "found": "2026-11-02",
-   "via": "people",
-   "highlight": "投资女王徐新在2014年中国高成长企业CEO峰会上发表经典演讲，展现出对消费者和创业者的深刻洞察。",
-   "kind": "method",
-   "sports": false
-  },
-  {
    "key": "bilibili:BV1zc5t6jE1S",
    "url": "https://www.bilibili.com/video/BV1zc5t6jE1S",
    "title": "王坚最新发言 | AI的未来与算力",
@@ -1461,26 +1357,6 @@
    "via": "people",
    "highlight": "黄仁勋与阿里云王坚院士展开对话。讨论了开源AI是中国超车的关键等议题。",
    "kind": "judgment",
-   "sports": false
-  },
-  {
-   "key": "bilibili:BV1NYbwz6Evv",
-   "url": "https://www.bilibili.com/video/BV1NYbwz6Evv",
-   "title": "投资女神徐新财富人生专访。",
-   "channel": "初心笔记1982",
-   "published": "2025-08-10",
-   "summary": "-",
-   "tab": "people",
-   "person": "徐新",
-   "tags": [
-    "人物访谈",
-    "徐新"
-   ],
-   "minutes": 49,
-   "found": "2026-11-02",
-   "via": "people",
-   "highlight": "投资人徐新接受财富人生专访，分享投资相关经历与思考。",
-   "kind": "method",
    "sports": false
   },
   {
@@ -1989,6 +1865,28 @@
    "importance": 6
   },
   {
+   "id": "1dzr4p7",
+   "lastSeen": "2026-11-02",
+   "title": "Comptroller Mark Levine says Anthropic IPO strips shareholder power",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPOElaQ05ROUJ4bl95MWg5c0liTzlfN3pLNHU5MC1ITXNFOUROMnFZOWhqNDQ4UDdfTHdxdUZZOElxYlJkendIa3h5aWVEVDZqaGYtaUV3R1UyQ0tUVW9uS1NQQW5RckxqV29mR2NlMUl2QVQzTGktTGdxQTJ6dVNUb0FIVnVrWmM?oc=5",
+   "source": "Quartz",
+   "domain": "qz.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Quartz"
+   ],
+   "themes": [],
+   "headlines": [
+    "Comptroller Mark Levine says Anthropic IPO strips shareholder power"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Comptroller Mark Levine stated that an Anthropic IPO strips shareholder power.",
+   "meaning": "This highlights growing governance and shareholder rights concerns regarding major AI companies going public, which is worth monitoring for the broader tech industry.",
+   "importance": 5
+  },
+  {
    "id": "1whwoh9",
    "lastSeen": "2026-11-02",
    "title": "Will AI Change the Identity of Law Firm Partners?",
@@ -2491,6 +2389,28 @@
    "id": "9q9obn"
   },
   {
+   "id": "hc3yg9",
+   "lastSeen": "2026-11-02",
+   "title": "Does AI Make Legal Operations More Essential or Less Necessary?",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRi1COFlNeFFYZE1LOFRMVFNMYTRpOXkxdjcyQzFaUmp1YTc2dGZJc2lIVjlReF8zNnhtb1ZNamM5ZXRoejk0dEhFdTVkeFZQQ1piaGNxcEZjc2pKMHUxRlBNVVBIR2RDYTZvVkUyTUhGMjdDWm5FQmdEM2VxOC0zOS1wZjZuYWNkZUFXQzhSeWtCU2NfR1VPdTltWVJWWkwyOVRUODJXTUxOYTg?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "headlines": [
+    "Does AI Make Legal Operations More Essential or Less Necessary?"
+   ],
+   "entities": [],
+   "summary": "An analysis questions whether AI makes legal operations more essential or less necessary.",
+   "meaning": "This touches directly on the legal AI domain, addressing how automation and AI adoption are reshaping the demand for legal operations and workforce structures.",
+   "importance": 6
+  },
+  {
    "title": "Canada, Nvidia Back Cohere at Over $20 Billion Valuation",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVk0xNE9EYzVuMEQ0OUJvYXNDMTFEN2tfVkVYWV9xSXpQWnlQUkNVTTIyWG5XOThJMHY3WWs5RktqWXpVMjN1ZmtXcVFUeVJMYjJNaEhFTTg1b0RNblJUTHZ3LW1wZ0JmRUZEUURwTy0yaC1nXzlHM3ZKeWFIUVJBdUZ5VlU0RXZxcTNKdGZ0ZHVoVWFILTRRWmVyVlN3V2V1X1VONWdTNjFYYVcwYUlj?oc=5",
    "source": "Bloomberg.com",
@@ -2579,7 +2499,7 @@
     "NVIDIA Research"
    ],
    "summary": "NVIDIA CEO Jensen Huang may have been the target of a Chinese government spy.",
-   "meaning": "这涉及到顶尖芯片巨头高管的安全与地缘政治风险，对关注中国AI与全球科技竞争的读者来说值得关注。",
+   "meaning": "This security and geopolitical concern involves a key leader in the AI hardware ecosystem, highlighting the intense global focus on AI leadership and hardware security.",
    "importance": 7
   },
   {
@@ -2985,6 +2905,32 @@
    "id": "18o9z6o"
   },
   {
+   "title": "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkZzbnhBaW1mZXJzZ0NBNDQxUk1CQW5WNTc0eDYxTGVvZGtIVTRjTGs5THBLLTRMZDFLM0o0ZWpSZU5qNDhxbjNUYXdvVk9wVVI4V01WRFdXQndvcHZndkl4aWE0NkpGVHJtZUlZUW9EX19xeF9HR0RXcUU5VlM1Rm15OTRIaENTeDVLTWhTdWhzWkItMk5JU2tEbXRyN2hrU1NhT3RXZE9FRkdE?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "CNBC",
+    "Bloomberg.com",
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman",
+    "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI CEO Sam Altman comments on cyber risk: What you need to know",
+    "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
+    "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization"
+   ],
+   "summary": "OpenAI 首席执行官 Sam Altman 就 AI 网络风险发表了相关评论。",
+   "meaning": "通用 AI 领袖对网络安全的表态，凸显了 AI 风险治理正成为行业核心议题。",
+   "id": "g6u2qa",
+   "lastSeen": "2026-11-02"
+  },
+  {
    "title": "DOJ Inquires About Nvidia’s Hugging Face Deal, Reuters Says",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNa3hzZk9tLVg4clhwcUE5N2pFeG9tUUlEOFpFVVlfd0VkXzFsWTZHVGdJMVdBWTN0VlJPc3N2NF9oQndxbG40end5b2xvbnU3TlEyVVNENDZSZUM5Q1VJa0FzSW1rci1hTnFhdWxxWGVaUzRud3ZFU1c1WUp6OFNwY01VSXoyV3ZMNTVlQTNrYzJUSFpvMmdlS3k0QlZVS0YtT3hQOWFwNHlmbV9kQmc?oc=5",
    "source": "Bloomberg.com",
@@ -3051,27 +2997,6 @@
    "summary": "美国司法部据报正调查Nvidia对AI平台Hugging Face约130亿美元的收购案，担忧其影响AI行业竞争并给客户带来压力。",
    "meaning": "监管机构对芯片巨头与AI平台联手的反垄断关注升级，预示着AI产业垂直整合将面临更加严苛的监管环境。",
    "id": "nbk8gr"
-  },
-  {
-   "title": "OpenAI CEO Sam Altman comments on cyber risk: What you need to know",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQS0JoelZlbzZ1cUdhbVZyVGFIS0p6VUdoSW9Va3YxSm9NaU5zQUVKU2VoTVl6YUhxVDNVSzRRQzhJMmRyTWNyekpMdmxDYmRYQ3RtT2d0R295eFljUVVYTlQ2b3FzNzB5c3pGelNaYUctVDZWZGpWUmYyQ2ptX0lTMlpiQXBweGtLb0lEYmdtaGR6djVtYTgxVFhVLVg4NXlaano1aVlRVmlJX1RGTmc?oc=5",
-   "source": "CNBC",
-   "domain": "cnbc.com",
-   "published": "2026-10-28",
-   "outlets": [
-    "CNBC"
-   ],
-   "themes": [],
-   "entities": [
-    "Sam Altman",
-    "OpenAI"
-   ],
-   "headlines": [
-    "OpenAI CEO Sam Altman comments on cyber risk: What you need to know"
-   ],
-   "summary": "OpenAI 首席执行官 Sam Altman 就 AI 网络风险发表了相关评论。",
-   "meaning": "通用 AI 领袖对网络安全的表态，凸显了 AI 风险治理正成为行业核心议题。",
-   "id": "g6u2qa"
   },
   {
    "title": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",

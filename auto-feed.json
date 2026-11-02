@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T18:53:24.626Z",
+ "updated": "2026-11-02T18:58:47.082Z",
  "items": [
   {
    "key": "youtube:-GKLZWEq-0c",
@@ -896,27 +896,6 @@
    "sports": false
   },
   {
-   "key": "youtube:36mG4iAsdm4",
-   "url": "https://www.youtube.com/watch?v=36mG4iAsdm4",
-   "title": "何超琼访谈引热议：公众如何理解财富、责任与个人选择",
-   "channel": "Shuai MU",
-   "channelId": "UCbiMFNUhQBIpIlw2yFgyYQQ",
-   "published": "2026-10-27",
-   "summary": "本期《半熟人生》选择喜马拉雅官方话题“章泽天专访“赌王之女”何超琼”，从“名人访谈与叙事边界”切入。我们不替听众做决定，而是把名人访谈与叙事边界拆成可核对的信息、现实成本、适用边界与后续观察四部分。节目区分公开事实、观点与待核实信息，并整理出普通人可以收藏、复查和参与讨论的行动清单。",
-   "tab": "people",
-   "person": "何超琼",
-   "tags": [
-    "人物访谈",
-    "何超琼"
-   ],
-   "minutes": 16,
-   "found": "2026-11-02",
-   "via": "people",
-   "highlight": "本期《半熟人生》节目围绕喜马拉雅官方话题“章泽天专访‘赌王之女’何超琼”展开，探讨公众如何理解财富、责任与个人选择。节目从名人访谈与叙事边界切入，将其拆解为可核对的信息、现实成本、适用边界与后续观察四部分。",
-   "kind": "judgment",
-   "sports": false
-  },
-  {
    "key": "bilibili:BV1HNJk6BEJm",
    "url": "https://www.bilibili.com/video/BV1HNJk6BEJm",
    "title": "对话：AI+数学的变与不变丨浙大数学高等研究院院长励建书×之江实验室主任王坚",
@@ -934,7 +913,8 @@
    "via": "people",
    "highlight": "在第六届智能计算创新论坛上，浙江大学数学高等研究院院长、中国科学院院士励建书与之江实验室主任、中国工程院院士王坚展开了“AI+数学：变与不变”的主题对话。两位院士围绕AI与数学的关系进行了深入探讨。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV11DaL6KEsG",
@@ -954,7 +934,8 @@
    "via": "people",
    "highlight": "中国工程院院士、之江实验室主任王坚在与起底工作室的深度对话中指出现在是中国AI最好的时代。双方探讨了中国AI模型走向世界、开源的意义、中美AI竞争的比拼核心以及AI泡沫是否会破裂等话题。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1efYs61EwA",
@@ -974,7 +955,8 @@
    "via": "people",
    "highlight": "鲁健在节目中对话何超琼，探讨了她将澳门打造成全球文旅标杆的野心与相关规划。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1bSbG6bEks",
@@ -994,27 +976,8 @@
    "via": "people",
    "highlight": "徐新在第四届价值投资征文大赛上作为评委发言，分享了如何沿着巴菲特、芒格和段永平的道路做对的事情，并领悟出看懂公司的三种方法论来指导投资。",
    "kind": "method",
-   "sports": false
-  },
-  {
-   "key": "bilibili:BV1uib76CE9Z",
-   "url": "https://www.bilibili.com/video/BV1uib76CE9Z",
-   "title": "何超琼采访全集",
-   "channel": "脑神经科学",
-   "published": "2026-09-06",
-   "summary": "-",
-   "tab": "people",
-   "person": "何超琼",
-   "tags": [
-    "人物访谈",
-    "何超琼"
-   ],
-   "minutes": 238,
-   "found": "2026-11-02",
-   "via": "people",
-   "highlight": "收录了何超琼的相关采访合集，探讨其在商业与文旅转型等方面的经历与观点。",
-   "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1LCtJ6XE99",
@@ -1034,7 +997,8 @@
    "via": "people",
    "highlight": "章泽天对话何超琼，探讨标签之外如何走出自己的人生剧本。外界熟悉的赌王之女与豪门接班人等标签，并不能真正解释她。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1DmbY6nETL",
@@ -1054,7 +1018,8 @@
    "via": "people",
    "highlight": "徐新在专访中强调专注和纪律性，选择有潜力的少数项目长期持有。通过找人、做KP与文化、品牌三大法宝来帮助企业成长。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1DwgL6pEft",
@@ -1074,7 +1039,8 @@
    "via": "people",
    "highlight": "何超琼接受《面对面》采访。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1VFuR6NE97",
@@ -1094,7 +1060,8 @@
    "via": "people",
    "highlight": "徐新在财富人生访谈中指出，投资本质是投人，创始人是第一判断要素，看重野心、韧性和学习能力。好企业不要轻易卖出，要陪伴成长。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "youtube:7GHPntssy9Y",
@@ -1115,7 +1082,8 @@
    "via": "people",
    "highlight": "今日资本创始人徐新接受深度访谈，分享投资京东和美团背后的判断逻辑。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1eUu46oEmE",
@@ -1135,7 +1103,8 @@
    "via": "people",
    "highlight": "徐新在一场演讲中探讨了移动互联网时代的用户变化、商业变革、创业投资机会、品牌渠道选择、团队管理以及融资竞争策略。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1pJ3c6BEUM",
@@ -1155,7 +1124,8 @@
    "via": "people",
    "highlight": "星海图CEO高继扬做客《详谈》，与李翔、徐新展开深度对话。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1NGgS6yER7",
@@ -1175,7 +1145,8 @@
    "via": "people",
    "highlight": "2026世界人工智能大会科学智能论坛上，王坚院士发表演讲。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "youtube:ULmr5ovKV8w",
@@ -1196,7 +1167,8 @@
    "via": "people",
    "highlight": "中国工程院院士、之江实验室主任、阿里云创始人王坚在2026世界人工智能大会期间接受东方卫视独家专访。全景式探讨中美AI发展路径，剖析全球AI治理长远布局。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1zc5t6jE1S",
@@ -1216,7 +1188,8 @@
    "via": "people",
    "highlight": "中国工程院院士王坚发表关于AI的未来与算力的最新发言。探讨了计算与人工智能、数据以及范式变革。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1kB5E6FEHs",
@@ -1236,7 +1209,8 @@
    "via": "people",
    "highlight": "之江实验室主任、阿里云创始人王坚探讨计算与人工智能、数据以及范式变革。分享了计算与AI的相关观点。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1re9uBbEtb",
@@ -1256,7 +1230,8 @@
    "via": "people",
    "highlight": "中国工程院院士王坚在最新演讲中谈到了DeepSeek、大模型幻觉以及计算星座等话题。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1MwwEzQEk7",
@@ -1276,7 +1251,8 @@
    "via": "people",
    "highlight": "央视网《龙咚锵-两会同频》对话全国政协委员、中国工程院院士王坚。双方从年轻人的远虑聊到AI的终极之问，探讨了模仿与创新的边界以及把算力送上太空的狂想。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1J1ZQBdEAz",
@@ -1296,7 +1272,8 @@
    "via": "people",
    "highlight": "今日资本徐新分享了自己的投资方法论。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1RhfoBeESS",
@@ -1316,7 +1293,8 @@
    "via": "people",
    "highlight": "今日资本徐新在南大校友会直播对话中分享了有关投资、学习和思考的精华内容，提及最成功的投资是京东和美团。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1XSF5zLEwj",
@@ -1336,7 +1314,8 @@
    "via": "people",
    "highlight": "今日资本徐新在南京大学120年校庆活动中进行深度分享，总结了错过字节跳动和拼多多后的看公司三段论。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "youtube:wzFysdqhby8",
@@ -1357,7 +1336,8 @@
    "via": "people",
    "highlight": "黄仁勋与阿里云王坚院士展开对话。讨论了开源AI是中国超车的关键等议题。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1HsthzyE4R",
@@ -1377,7 +1357,8 @@
    "via": "people",
    "highlight": "今日资本徐新接受专访，分享投资的底层逻辑。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV11KA2eKE4i",
@@ -1396,8 +1377,9 @@
    "found": "2026-11-02",
    "via": "people",
    "highlight": "阿里王坚院士在《财经》发表关于AI前世今生的演讲。",
-   "kind": "judgment",
-   "sports": false
+   "kind": "method",
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV17NCtYxERR",
@@ -1417,7 +1399,8 @@
    "via": "people",
    "highlight": "鲁健访谈对话何超琼。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   },
   {
    "key": "bilibili:BV1HizHYKEXw",
@@ -1437,7 +1420,8 @@
    "via": "people",
    "highlight": "投资大佬徐新分享每天冥想二十分钟是其成功的关键。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "firsthand": true
   }
  ],
  "videos": {
@@ -1488,7 +1472,7 @@
   "王坚": {
    "keywords": "阿里云 城市大脑 院士 之江实验室 阿里巴巴 云栖",
    "searched": "2026-11-02",
-   "youtube": "ok",
+   "youtube": "HTTP 429",
    "bilibili": "ok"
   },
   "徐新": {
@@ -1504,6 +1488,9 @@
    "bilibili": "ok"
   }
  },
+ "peopleRejected": [
+  "bilibili:BV1uib76CE9Z"
+ ],
  "news": [
   {
    "id": "18p4lp6",
@@ -1516,12 +1503,14 @@
    "outlets": [
     "Bloomberg",
     "Reuters",
-    "Bloomberg.com"
+    "Bloomberg.com",
+    "Quartz"
    ],
    "themes": [],
    "headlines": [
     "Anthropic Seeks Up to $3.5 Billion in Japan for Its Mega US IPO",
-    "Anthropic plans to sell $3.5 billion of shares to Japan investors in IPO, filing shows"
+    "Anthropic plans to sell $3.5 billion of shares to Japan investors in IPO, filing shows",
+    "Anthropic Q3 earnings: IPO filing shows revenue up about 1,200%"
    ],
    "entities": [
     "Anthropic"
@@ -2498,9 +2487,9 @@
     "Jensen Huang",
     "NVIDIA Research"
    ],
-   "summary": "NVIDIA CEO Jensen Huang may have been the target of a Chinese government spy.",
-   "meaning": "This security and geopolitical concern involves a key leader in the AI hardware ecosystem, highlighting the intense global focus on AI leadership and hardware security.",
-   "importance": 7
+   "summary": "NVIDIA CEO Jensen Huang may have been the target of a Chinese government spy, according to recent reports.",
+   "meaning": "This touches upon international security and Chinese AI developments, making it relevant to the broader context of AI geopolitics, though lacking specific product or sports details.",
+   "importance": 5
   },
   {
    "title": "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative",
@@ -2903,32 +2892,6 @@
    "summary": "法律科技公司 Everlaw 推出全新的 Agentic AI（智能体 AI）功能及审查管理产品。",
    "meaning": "法律 AI 正加速融入自主智能体技术，为案件审查与法律流程管理提供更深入的自动化支持。",
    "id": "18o9z6o"
-  },
-  {
-   "title": "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkZzbnhBaW1mZXJzZ0NBNDQxUk1CQW5WNTc0eDYxTGVvZGtIVTRjTGs5THBLLTRMZDFLM0o0ZWpSZU5qNDhxbjNUYXdvVk9wVVI4V01WRFdXQndvcHZndkl4aWE0NkpGVHJtZUlZUW9EX19xeF9HR0RXcUU5VlM1Rm15OTRIaENTeDVLTWhTdWhzWkItMk5JU2tEbXRyN2hrU1NhT3RXZE9FRkdE?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-10-28",
-   "outlets": [
-    "CNBC",
-    "Bloomberg.com",
-    "Tom's Hardware"
-   ],
-   "themes": [],
-   "entities": [
-    "Sam Altman",
-    "OpenAI"
-   ],
-   "headlines": [
-    "OpenAI CEO Sam Altman comments on cyber risk: What you need to know",
-    "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
-    "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization"
-   ],
-   "summary": "OpenAI 首席执行官 Sam Altman 就 AI 网络风险发表了相关评论。",
-   "meaning": "通用 AI 领袖对网络安全的表态，凸显了 AI 风险治理正成为行业核心议题。",
-   "id": "g6u2qa",
-   "lastSeen": "2026-11-02"
   },
   {
    "title": "DOJ Inquires About Nvidia’s Hugging Face Deal, Reuters Says",
@@ -3373,6 +3336,35 @@
    "summary": "OpenAI首席执行官Sam Altman称PC配备RAM使用效率低下并看好数据中心，同时赴韩与三星高管会面，以在严重短缺中为AI数据中心争取更多内存。",
    "meaning": "突显了通用AI算力扩张对上游硬件供应链的极度依赖，以及行业向云端和AI数据中心集中的趋势。",
    "id": "10p9l18",
+   "lastSeen": "2026-11-02"
+  },
+  {
+   "title": "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkZzbnhBaW1mZXJzZ0NBNDQxUk1CQW5WNTc0eDYxTGVvZGtIVTRjTGs5THBLLTRMZDFLM0o0ZWpSZU5qNDhxbjNUYXdvVk9wVVI4V01WRFdXQndvcHZndkl4aWE0NkpGVHJtZUlZUW9EX19xeF9HR0RXcUU5VlM1Rm15OTRIaENTeDVLTWhTdWhzWkItMk5JU2tEbXRyN2hrU1NhT3RXZE9FRkdE?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "CNBC",
+    "Bloomberg.com",
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "entities": [
+    "Sam Altman",
+    "OpenAI"
+   ],
+   "headlines": [
+    "OpenAI CEO Sam Altman comments on cyber risk: What you need to know",
+    "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
+    "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization",
+    "Sam Altman meets with Samsung leadership to secure more RAM for data centers amid crushing shortages — OpenAI CEO travels to South Korea to meet Samsung leadership to discuss future AI data centers",
+    "Elon Musk mocks OpenAI CEO Sam Altman's claim that PCs having RAM is terrible — 'The people deserve to have their RAM too!'",
+    "Watch the full discussion between OpenAI CEO Sam Altman and Oracle co-CEO Clay Magouyrk"
+   ],
+   "summary": "OpenAI 首席执行官 Sam Altman 就 AI 网络风险发表了相关评论。",
+   "meaning": "通用 AI 领袖对网络安全的表态，凸显了 AI 风险治理正成为行业核心议题。",
+   "id": "g6u2qa",
    "lastSeen": "2026-11-02"
   },
   {
@@ -5004,9 +4996,9 @@
   }
  ],
  "weekly": [
+  "18p4lp6",
   "7kpsif",
   "1w2yjjm",
-  "18p4lp6",
   "1wfiuz1",
   "1whwoh9"
  ]

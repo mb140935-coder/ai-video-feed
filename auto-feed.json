@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T19:34:08.967Z",
+ "updated": "2026-11-03T19:52:11.060Z",
  "items": [
   {
    "key": "youtube:JdPvoQrQJDI",
@@ -849,6 +849,28 @@
    "highlight": "六位AI高阶用户Ben Davis、Ben Hylak、Dex Horthy、Allison Durham、Alex Volkov和swyx共同讨论了OpenAI DevDay、编码代理、个人助手、模型偏好，以及AI令人惊叹的功能与实际可用产品之间的差距。他们分享了在日常工作流中真正好用的工具和避坑经验。"
   },
   {
+   "key": "youtube:eSGqW_VMMXQ",
+   "url": "https://www.youtube.com/watch?v=eSGqW_VMMXQ",
+   "title": "Why the future of healthcare is prevention | Dr. Eric Topol & Josh Woodward",
+   "channel": "Google",
+   "channelId": "UCK8sQmJBp8GCxrOtXWBpyEA",
+   "published": "2026-10-16",
+   "summary": "In this episode of Dialogues, Josh Woodward, VP, Google Labs and Gemini, sits down with Dr. Eric Topol, practicing cardiologist, founder and director of the Scripps Research Translational Institute, and author of \"Deep M…",
+   "about": "Google 官方：心脏病学家、《超级衰老》作者 Eric Topol 与 Google 的 Josh Woodward 谈 AI 怎样帮普通人提前预防疾病。",
+   "tab": "curated",
+   "tags": [
+    "个人健康 AI · 最高优先级"
+   ],
+   "minutes": 14,
+   "found": "2026-11-03",
+   "via": "pick",
+   "picked": true,
+   "field": "health",
+   "highlight": "Google Labs and Gemini VP Josh Woodward sits down with practicing cardiologist and author Dr. Eric Topol to explore how generative AI tools and ambient note-taking can return time to doctors. Dr. Topol also shares core insights from his book \"Super Agers\" and discusses his daily use of Gemini Notebook for medical research.",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
    "key": "youtube:V0IB8iMzrLQ",
    "url": "https://www.youtube.com/watch?v=V0IB8iMzrLQ",
    "title": "154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明",
@@ -1112,6 +1134,28 @@
    "field": "none"
   },
   {
+   "key": "youtube:9DyPz7FCHVQ",
+   "url": "https://www.youtube.com/watch?v=9DyPz7FCHVQ",
+   "title": "Isomorphic Labs President Max Jaderberg: Can AI Solve All Disease?",
+   "channel": "Giant Ideas",
+   "channelId": "UCS05ZcQoLI_jd90SwRnjj4Q",
+   "published": "2026-10-08",
+   "summary": "Today, we're joined by Max Jaderberg, President of Isomorphic Labs.",
+   "about": "Isomorphic Labs（DeepMind 的 AI 制药公司）总裁 Max Jaderberg：AI 能不能攻克所有疾病。",
+   "tab": "curated",
+   "tags": [
+    "医疗 AI"
+   ],
+   "minutes": 26,
+   "found": "2026-11-03",
+   "via": "pick",
+   "picked": true,
+   "field": "medical",
+   "highlight": "Isomorphic Labs President Max Jaderberg joins Tommy Stadlen and Cameron McLain to discuss how the Alphabet-backed company uses AI to design new medicines and solve all disease. Jaderberg explains the realities of modern drug discovery, the impact of AlphaFold, and why Isomorphic keeps its models and data in-house.",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
    "key": "youtube:oOpF0ZXSXuk",
    "url": "https://www.youtube.com/watch?v=oOpF0ZXSXuk",
    "title": "Stanford Doctor: Never Tell AI What You Think Is Wrong With You",
@@ -1132,6 +1176,94 @@
    "kind": "method",
    "sports": false,
    "highlight": "斯坦福大学医生兼计算机科学家Dr. Jonathan Chen在节目中探讨了如何向AI询问健康问题、利用病历准备就诊以及避免引导聊天程序得出预期答案。他解释了AI在诊断推理上的表现、信息遗漏问题，以及医生在面对强大AI工具时依然需要承担的责任。"
+  },
+  {
+   "key": "youtube:IntQVdKf4rU",
+   "url": "https://www.youtube.com/watch?v=IntQVdKf4rU",
+   "title": "The Ambient AI Inside 300 Health Systems w/ Dr. Shiv Rao, CEO, Abridge",
+   "channel": "CareTalk: Healthcare. Unfiltered. Podcast",
+   "channelId": "UCU_PaLz2TCVpJSShmNy9ukA",
+   "published": "2026-09-11",
+   "summary": "Doctors now need an estimated 30 hours a day to complete every clerical task asked of them. They are compensated not for the care they deliver but for the care they document. That gap is where physician burnout lives, an…",
+   "about": "CareTalk 访谈 Abridge CEO Shiv Rao：AI 自动写病历，已进入 300 家医疗系统。",
+   "tab": "curated",
+   "tags": [
+    "医疗 AI"
+   ],
+   "minutes": 34,
+   "found": "2026-11-03",
+   "via": "pick",
+   "picked": true,
+   "field": "medical",
+   "highlight": "Dr. Shiv Rao, Co-Founder and CEO of Abridge and practicing cardiologist, joins host John Driscoll to discuss how ambient AI deployed across more than 300 health systems is helping reduce physician burnout and returning time to clinicians. They also explore the next frontier of the technology in real-time clinical decision support.",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "youtube:OdbUmxhCWlY",
+   "url": "https://www.youtube.com/watch?v=OdbUmxhCWlY",
+   "title": "Dr. Eric Topol on Lessons From the Super Agers",
+   "channel": "Stanford Department of Medicine",
+   "channelId": "UCXb0w5GOQy0rLW1w8qGh_NQ",
+   "published": "2026-03-16",
+   "summary": "Dr. Eric Topol on Super Agers: why some people stay healthy into old age, and how AI and aging clocks may help prevent age-related disease.",
+   "about": "Stanford 医学院：Eric Topol 讲 AI 和下一阶段的疾病预防，个人健康数据怎么用起来。",
+   "tab": "curated",
+   "tags": [
+    "个人健康 AI · 最高优先级"
+   ],
+   "minutes": 45,
+   "found": "2026-11-03",
+   "via": "pick",
+   "picked": true,
+   "field": "health",
+   "highlight": "Dr. Eric Topol discusses lessons from his book \"Super Agers,\" exploring why some people stay healthy into old age and how AI and organ aging clocks can help prevent age-related diseases. In conversation with host Euan Ashley, he details early screening tools and lifestyle prescriptions for healthy longevity.",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "youtube:zmPW0PqZIlY",
+   "url": "https://www.youtube.com/watch?v=zmPW0PqZIlY",
+   "title": "Healthcare AI in 2026: From Novelty to Normalcy — A Fireside Chat",
+   "channel": "UCSF Department of Medicine",
+   "channelId": "UCxZIcphz5BUPAnnQSR3cm7Q",
+   "published": "2026-02-13",
+   "summary": "Artificial intelligence is moving fast in health care—but what will actually stick? In this Medical Grand Rounds fireside chat, Bob Wachter will explore how AI is shifting from novelty to everyday tool, and what that tra…",
+   "about": "UCSF 医学系炉边对谈：2026 年医疗 AI 从新鲜事变成日常，医院和医生实际怎么在用。",
+   "tab": "curated",
+   "tags": [
+    "医疗 AI"
+   ],
+   "minutes": 63,
+   "found": "2026-11-03",
+   "via": "pick",
+   "picked": true,
+   "field": "medical",
+   "highlight": "UCSF Department of Medicine Chair Bob Wachter explores how artificial intelligence is shifting from novelty to an everyday tool in healthcare and what that means for clinicians, health systems, and patients. He discusses the limits of the human-in-the-loop model and the real-world factors determining AI's impact on care.",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "youtube:mTnoAM-BvUs",
+   "url": "https://www.youtube.com/watch?v=mTnoAM-BvUs",
+   "title": "No Priors Ep. 130 | With OpenEvidence Founder Daniel Nadler",
+   "channel": "No Priors: AI, Machine Learning, Tech, & Startups",
+   "channelId": "UCSI7h9hydQ40K5MJHnCrQvw",
+   "published": "2025-09-05",
+   "summary": "How does a new technology get adopted by 40% of American doctors in just 18 months? In an era where the golden age of biotechnology has also created a dark age of physician burnout, OpenEvidence found the answer by funda…",
+   "about": "No Priors 访谈 OpenEvidence 创始人 Daniel Nadler：医生们大量在用的 AI 临床问答是怎么做出来的。",
+   "tab": "curated",
+   "tags": [
+    "医疗 AI"
+   ],
+   "minutes": 45,
+   "found": "2026-11-03",
+   "via": "pick",
+   "picked": true,
+   "field": "medical",
+   "highlight": "OpenEvidence founder Daniel Nadler joins Sarah Guo and Elad Gil to discuss how his company solved semantic search in medicine to help American doctors access critical information. He shares strategies on treating doctors as consumers, balancing patient involvement, and reshaping medical education.",
+   "kind": "method",
+   "sports": false
   },
   {
    "key": "bilibili:BV1jCpC6GE4x",
@@ -2193,31 +2325,31 @@
   "王坚": {
    "keywords": "阿里云 城市大脑 院士 之江实验室 阿里巴巴 云栖",
    "searched": "2026-11-03",
-   "youtube": "ok",
+   "youtube": "HTTP 429",
    "bilibili": "ok"
   },
   "徐新": {
    "keywords": "今日资本 投资 京东 美团 网易严选",
    "searched": "2026-11-03",
-   "youtube": "ok",
+   "youtube": "HTTP 429",
    "bilibili": "ok"
   },
   "何超琼": {
    "keywords": "",
    "searched": "2026-11-03",
-   "youtube": "ok",
+   "youtube": "HTTP 429",
    "bilibili": "ok"
   },
   "施一公": {
    "keywords": "",
    "searched": "2026-11-03",
-   "youtube": "ok",
+   "youtube": "HTTP 429",
    "bilibili": "ok"
   },
   "Warren Buffett": {
    "keywords": "",
    "searched": "2026-11-03",
-   "youtube": "ok",
+   "youtube": "HTTP 429",
    "bilibili": "ok"
   },
   "Charlie Munger": {

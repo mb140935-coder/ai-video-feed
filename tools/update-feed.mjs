@@ -436,6 +436,8 @@ try {
 // on later runs). 人物访谈 cards also get "firsthand" (the person on camera, not someone talking about them) and
 // go first, so they are judged in the run that finds them.
 const HEALTH_HINT = /health|medic|doctor|physician|patient|hospital|clinic|disease|cancer|drug|pharma|biotech|diagnos|nurse|therap|wellness|sleep|longevity|fitness|nutrition|diet|23andMe|\blabs?\b|symptom|医|健康|病|药|诊|护理|睡眠|养生|长寿|减肥|饮食|体检/i;
+// A highlight that came back in English (it happens now and then) is written again.
+kept.forEach(item => { if (item.highlight && !/[一-鿿]/.test(item.highlight)) delete item.highlight; });
 kept.forEach(item => {
   if (item.field === undefined && item.highlight && item.kind && !HEALTH_HINT.test(`${item.title}\n${item.summary || ''}\n${item.highlight}`)) item.field = 'none';
 });

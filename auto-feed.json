@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T19:31:09.549Z",
+ "updated": "2026-11-03T19:34:08.967Z",
  "items": [
   {
    "key": "youtube:JdPvoQrQJDI",
@@ -782,10 +782,10 @@
    ],
    "minutes": 37,
    "found": "2026-11-01",
-   "highlight": "Evan Conrad of SF Compute joins swyx at AI Engineer New York to discuss building cloud operations for GPU trading and the market for programmable data centers. They cover how interruptions, storage, and hardware generations affect compute prices, and why an independent market operator is needed.",
-   "kind": "judgment",
+   "kind": "method",
    "sports": false,
-   "field": "none"
+   "field": "none",
+   "highlight": "SF Compute的Evan Conrad在AI Engineer New York活动上与swyx对话，探讨了他们正在构建的GPU算力市场以及为何需要独立运营商。讨论涵盖了云运营的建立、硬件代际与中断对价格的影响、不同推理任务的合同条款、物理结算与现金结算的风险以及数据中心的编程化集群改造。"
   },
   {
    "key": "youtube:81j1sV32Wng",
@@ -802,10 +802,10 @@
    "found": "2026-11-01",
    "minutes": 14,
    "channelId": "UCroeMSea_O-xfgDvgbJGVQA",
-   "highlight": "Einar Vollset, co-founder of TinySeed and founder of Discretion Capital, speaks at MicroConf Europe 2026 about SaaS moats in the AI era. He argues that selling outcomes rather than tools and building compounding learning loops are key defenses for founders against frontier models.",
    "kind": "method",
    "sports": false,
-   "field": "none"
+   "field": "none",
+   "highlight": "TinySeed联合创始人兼Discretion Capital创始人Einar Vollset在MicroConf Europe 2026上发表演讲，探讨AI时代SaaS的防御壁垒与生存策略。他分析了从销售工具转向销售最终结果的市场潜力、AI带来的开发速度与智能代理访问的新趋势，并指出可持续学习的复合循环是新前沿模型无法轻易超越的核心防御。"
   },
   {
    "key": "bilibili:BV1PcJd6UE81",
@@ -843,10 +843,10 @@
    ],
    "minutes": 75,
    "found": "2026-11-01",
-   "highlight": "Ben Davis, Ben Hylak, Dex Horthy, Allison Durham, Alex Volkov, and swyx discuss OpenAI DevDay, coding agents, and personal assistants. They compare what actually works in daily workflows versus impressive AI capabilities that fall apart in practice.",
    "kind": "judgment",
    "sports": false,
-   "field": "none"
+   "field": "none",
+   "highlight": "六位AI高阶用户Ben Davis、Ben Hylak、Dex Horthy、Allison Durham、Alex Volkov和swyx共同讨论了OpenAI DevDay、编码代理、个人助手、模型偏好，以及AI令人惊叹的功能与实际可用产品之间的差距。他们分享了在日常工作流中真正好用的工具和避坑经验。"
   },
   {
    "key": "youtube:V0IB8iMzrLQ",
@@ -883,10 +883,10 @@
    "found": "2026-11-01",
    "minutes": 39,
    "channelId": "UCSI7h9hydQ40K5MJHnCrQvw",
-   "highlight": "Sarah Guo and Elad Gil are joined by OpenAI President and co-founder Greg Brockman to discuss OpenAI's rapid progress across frontier models, cybersecurity, and scientific discovery. They explore how AI agents solve math problems and transform drug discovery.",
    "kind": "judgment",
    "sports": false,
-   "field": "none"
+   "field": "none",
+   "highlight": "Sarah Guo和Elad Gil邀请OpenAI总裁兼联合创始人Greg Brockman做客No Priors播客，探讨公司在基础模型、网络安全和科学发现方面的快速进展。Greg分享了利用AI代理解决数百年历史数学难题的成果、AI在生物学药物发现中的潜力，以及主动式AI代理、网络安全漏洞修复及保持人类主导地位的见解。"
   },
   {
    "key": "youtube:7zF2mN9EPxU",
@@ -903,10 +903,10 @@
    "found": "2026-11-01",
    "minutes": 18,
    "channelId": "UC60lr26YqvcSrl1eDoB2U6A",
-   "highlight": "Artificial Lawyer interviews Leon Johnson of Omnilex to explore the 'new model' for law firms in the AI era and the type of work Omnilex will handle.",
    "kind": "judgment",
    "sports": false,
-   "field": "none"
+   "field": "none",
+   "highlight": "Artificial Lawyer访谈了Omnilex的Leon Johnson，探讨这位律师为何被AI原生的“新模式”律所吸引以及Omnilex将开展哪些具体工作。"
   },
   {
    "key": "youtube:hQSBJVreLms",
@@ -924,10 +924,10 @@
    ],
    "minutes": 110,
    "found": "2026-11-01",
-   "highlight": "Ian Quigley, co-founder and CEO of Leash Bio, joins Brandon Anderson and RJ Honicky to discuss testing what AI learns about chemistry using DNA-encoded libraries. They cover public dataset shortcuts, model comparisons, and the economics of AI drug discovery.",
    "kind": "method",
    "sports": false,
-   "field": "medical"
+   "field": "none",
+   "highlight": "Leash Bio联合创始人兼CEO Ian Quigley在Latent Space节目中，与Brandon Anderson和RJ Honicky探讨了Leash如何利用DNA编码文库（DELs）产生可重复的蛋白质-小分子结合数据。他们深入讨论了化学数据集中的捷径、公开竞赛的局限性、与Boltz的对比，以及将化学图景转化为推理代理沙盒的经济学和实验瓶颈。"
   },
   {
    "key": "youtube:Jijc0XokSpQ",
@@ -944,10 +944,10 @@
    "found": "2026-11-01",
    "minutes": 56,
    "channelId": "UCiq1FIgtEK7LRAOB1JXTPig",
-   "highlight": "Silicon Valley Girl talks with James Manyika, who runs research and labs at Google, about a study on millions of Gemini conversations regarding how people use AI at work. They discuss what this means for jobs, salaries, and future AI forecasts.",
    "kind": "judgment",
    "sports": false,
-   "field": "none"
+   "field": "none",
+   "highlight": "Google研究与实验室负责人James Manyika带领团队研究了数百万条真实的Gemini对话，发现普通人在工作中仅有约五分之一的任务会使用AI。访谈探讨了这一现象对工作和薪资的影响、对白领岗位消失预测的反驳，以及已经融入日常生活的AI突破。"
   },
   {
    "key": "youtube:PDH_2bny9mU",
@@ -964,10 +964,10 @@
    "found": "2026-11-01",
    "minutes": 12,
    "channelId": "UC60lr26YqvcSrl1eDoB2U6A",
-   "highlight": "Steno showcases the open beta of Litigation Genius, an AI-enabled court reporting and litigation support product. The overview highlights its ability to handle handwriting, images, and social media posts alongside regular text documents, alongside automated case setups and source-cited answers.",
    "kind": "product",
    "sports": false,
-   "field": "none"
+   "field": "none",
+   "highlight": "Steno推出 Litigation Genius 公开测试版，这是一款面向诉讼支持的AI庭审速记工具。产品特点包括自动创建案件档案、支持多格式文件（含医疗、财务记录和诉讼文书）、处理手写笔记与社交媒体图片、提供带精准原文引用的回答、自动生成摘要与时间线，以及引导式提示词功能。"
   },
   {
    "key": "youtube:T4g7imgw5PI",
@@ -984,10 +984,10 @@
    "found": "2026-11-01",
    "minutes": 15,
    "channelId": "UC60lr26YqvcSrl1eDoB2U6A",
-   "highlight": "Artificial Lawyer interviews Anthony Seale, CEO of Legatics, discussing Legatics and Harvey Connectors.",
    "kind": "product",
    "sports": false,
-   "field": "none"
+   "field": "none",
+   "highlight": "Artificial Lawyer对Legatics CEO Anthony Seale进行了关于Legatics与Harvey连接器的产品访谈。"
   },
   {
    "key": "youtube:fJtpYWidccc",
@@ -1129,9 +1129,9 @@
    "via": "pick",
    "picked": true,
    "field": "health",
-   "highlight": "Silicon Valley Girl chats with Dr. Jonathan Chen, a Stanford physician and computer scientist, about how to safely and effectively use AI for health inquiries, medical records preparation, and diagnostic reasoning tasks.",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "highlight": "斯坦福大学医生兼计算机科学家Dr. Jonathan Chen在节目中探讨了如何向AI询问健康问题、利用病历准备就诊以及避免引导聊天程序得出预期答案。他解释了AI在诊断推理上的表现、信息遗漏问题，以及医生在面对强大AI工具时依然需要承担的责任。"
   },
   {
    "key": "bilibili:BV1jCpC6GE4x",
@@ -2229,7 +2229,7 @@
   "姚明": {
    "keywords": "",
    "searched": "2026-11-03",
-   "youtube": "ok",
+   "youtube": "HTTP 429",
    "bilibili": "ok"
   },
   "邓亚萍": {
@@ -3828,27 +3828,26 @@
    "id": "v3op4b"
   },
   {
-   "id": "3xt2jt",
-   "lastSeen": "2026-11-03",
-   "title": "NVIDIA CEO Jensen Huang May Have Been The Target Of A Chinese Government Spy",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMVc0U0Nud2JZVjlUNzBjRTkwQlBPRWpsNVB0bVhEWXRlWlhUNDgwdm52U0N5NHRaMnFDbDF2bHpsVFVObWNCNHFMWDNxRWRyOEUyWTE1OXo2RG5LbVZ1cGZ6WWdMUVpjRUh2dHRmMzhhZ2UzeU9LcEh6UXRHYlpab1FtZlh6bWpDVWloaGJuYUN1NWlraUlCcDB5bUsyYmVrXzMwa18tbmVRdFVoaVVJ?oc=5",
-   "source": "Engadget",
-   "domain": "engadget.com",
+   "title": "SpaceX’s Largest Revenue Source Is a Finite Deal With Anthropic",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ044eGtubmthLU5BVE1IbUVZbGQ1MklPR1R2MzhTQ0xRdE95ZUEwSEx5b0ttZkRrWDNLWG4zQ3d6S3IwZjBQbUphajhfY2VCa0NIbkx2TEc0TWpENmRvS2ZpTHB1TVNKMEJvNjdlNHFNYVRzZUwtb2N6SnZoeG5ISmtwOUFsajdYMnd4dlJBcm1uQ1czNzVlRTlDUE81QVo3QW1kTGFoSXBmT1gxZ0RRa2ZPNm4?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
    "published": "2026-10-29",
    "outlets": [
-    "Engadget"
+    "Bloomberg.com",
+    "Bloomberg"
    ],
    "themes": [],
-   "headlines": [
-    "NVIDIA CEO Jensen Huang May Have Been The Target Of A Chinese Government Spy"
-   ],
    "entities": [
-    "Jensen Huang",
-    "NVIDIA Research"
+    "Anthropic"
    ],
-   "summary": "NVIDIA CEO Jensen Huang may have been the target of a Chinese government spy.",
-   "meaning": "NVIDIA 核心高管的安全动态备受瞩目，也折射出当前地缘政治下中美科技竞争的敏感氛围。",
-   "importance": 6
+   "headlines": [
+    "SpaceX’s Largest Revenue Source Is a Finite Deal With Anthropic"
+   ],
+   "summary": "报道显示，SpaceX当前最大的收入来源是与大模型公司Anthropic达成的一项有期限协议。",
+   "meaning": "这表明AI头部企业的庞大开销已成为支撑前沿航天与通信巨头营收的关键力量，展示出AI产业的资本外溢效应。",
+   "id": "lone9g",
+   "lastSeen": "2026-11-03"
   },
   {
    "title": "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative",
@@ -3889,26 +3888,6 @@
    "summary": "获得OpenAI支持的Thrive Holdings收购了安防服务公司ADT。",
    "meaning": "AI领军机构资本正加速布局安防与居住空间领域，推动AI生态与房产/家庭实体安全场景深度结合。",
    "id": "on408e"
-  },
-  {
-   "title": "SpaceX’s Largest Revenue Source Is a Finite Deal With Anthropic",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ044eGtubmthLU5BVE1IbUVZbGQ1MklPR1R2MzhTQ0xRdE95ZUEwSEx5b0ttZkRrWDNLWG4zQ3d6S3IwZjBQbUphajhfY2VCa0NIbkx2TEc0TWpENmRvS2ZpTHB1TVNKMEJvNjdlNHFNYVRzZUwtb2N6SnZoeG5ISmtwOUFsajdYMnd4dlJBcm1uQ1czNzVlRTlDUE81QVo3QW1kTGFoSXBmT1gxZ0RRa2ZPNm4?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-10-29",
-   "outlets": [
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "entities": [
-    "Anthropic"
-   ],
-   "headlines": [
-    "SpaceX’s Largest Revenue Source Is a Finite Deal With Anthropic"
-   ],
-   "summary": "报道显示，SpaceX当前最大的收入来源是与大模型公司Anthropic达成的一项有期限协议。",
-   "meaning": "这表明AI头部企业的庞大开销已成为支撑前沿航天与通信巨头营收的关键力量，展示出AI产业的资本外溢效应。",
-   "id": "lone9g"
   },
   {
    "title": "Opinion | Anthropic’s IPO Will Be a National-Security Win for Taiwan",
@@ -4852,6 +4831,30 @@
    "importance": 7
   },
   {
+   "id": "ee7dcj",
+   "lastSeen": "2026-11-03",
+   "title": "OpenAI is being sued over ChatGPT advice that allegedly led to an epilepsy patient's death",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBkYnd5MjVEbHlyT1RZaHd5Wkp4Q19rVk5hS2xRUG5BTnQwbzN2SVd4akpwTEhJcS1Tc0NUZHB6U3l5TXpvZF83dlFmMkJfQXBvZk5rV1prWE1OOXEzckc3eG5ocng5ai0wOVU2RUU2d0pueklmZEE5cUFtVXlWSk0?oc=5",
+   "source": "Quartz",
+   "domain": "qz.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "Quartz"
+   ],
+   "themes": [
+    "个人健康 AI"
+   ],
+   "headlines": [
+    "OpenAI is being sued over ChatGPT advice that allegedly led to an epilepsy patient's death"
+   ],
+   "entities": [
+    "OpenAI"
+   ],
+   "summary": "OpenAI is being sued over ChatGPT advice that allegedly led to an epilepsy patient's death. 这一事件涉及ChatGPT给出的医疗建议问题。",
+   "meaning": "这直接关系到个人健康AI的风险与边界，提醒我们在使用AI管理健康时必须警惕技术盲区和法律责任问题。",
+   "importance": 10
+  },
+  {
    "title": "Biden’s Antitrust Enforcers Are Starting an A.I. Legal Company",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTm40WU5NR0pqTGU0bFpQb2oxWVoyRDZZRDVqTEhIZXlJamJsMzJteVR0UkhyVXpVS1JMMFBWSTYzUmJpckhGTmxTektPeS1MaU5TOGhlS19OSkhaNTZNekp6cUFOeUJkR2VqYU9VVW9zc1EtQTRhSkowb3E1c2xGS1FFYmlaZnA3Tk94WHZoRFNfaWM?oc=5",
    "source": "The New York Times",
@@ -5784,6 +5787,28 @@
    "summary": "房地产自动化领域的行业高管公开表达人文关怀视角，并直言在 AI 时代十分厌恶“员工人数”（headcount）这一词汇。",
    "meaning": "切中房产 AI 议题，探讨了房地产行业在推进自动化转型过程中如何平衡技术效率与人力价值。",
    "id": "d244iq"
+  },
+  {
+   "id": "269jf1",
+   "lastSeen": "2026-11-03",
+   "title": "界面时评｜患者不信任AI开药，医院该补的是透明这一课",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UeC1QZXVtYmQwU1puS0hVc3d3YjhtR0hPMEpSaDRjYWtJcVpGZnNXZ0EwUkt4WFl3ZDdxNXRJNVp2SlVoc3JBTlNzTWswLS1xck5lRHRYNHI?oc=5",
+   "source": "Jiemian.com",
+   "domain": "jiemian.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Jiemian.com"
+   ],
+   "themes": [
+    "医疗 AI"
+   ],
+   "headlines": [
+    "界面时评｜患者不信任AI开药，医院该补的是透明这一课"
+   ],
+   "entities": [],
+   "summary": "界面时评指出患者不信任AI开药，医院该补的是透明这一课。文章探讨了医疗行业中AI落地时面临的信任和透明度挑战。",
+   "meaning": "这切中医疗AI在医院落地的核心痛点，说明技术普及不仅需要算法成熟，更需要消除患者的信任障碍。",
+   "importance": 7
   }
  ],
  "digests": [

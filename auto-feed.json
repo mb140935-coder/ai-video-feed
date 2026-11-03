@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T19:56:37.136Z",
+ "updated": "2026-11-03T19:59:59.931Z",
  "items": [
   {
    "key": "youtube:JdPvoQrQJDI",
@@ -913,26 +913,6 @@
    "field": "none"
   },
   {
-   "key": "youtube:V0IB8iMzrLQ",
-   "url": "https://www.youtube.com/watch?v=V0IB8iMzrLQ",
-   "title": "154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明",
-   "channel": "张小珺 Podcast",
-   "channelId": "UC3Sv1JuKpbOx3csUO8FAo5g",
-   "published": "2026-10-15",
-   "summary": "今天我们的嘉宾是一位美国连续创业者，Dyna Robotics创始人兼CEO Lindon Gao。此前，他做过两段生意，一次完整的创业。Dyna可以说是他的第四次创业了。 在硅谷，Dyna和之前来过我们节目的Pi（Physical Intelligence）的纯大脑研究路线非常不一样。相比从通用智能出发、探索机器人大脑的研究路径，Dyna选择了一条“Product-research”的道路：以具体的工作流为最小单元，从真实任务出发，反…",
-   "about": "张小珺长期深度访谈中国与硅谷的 AI、机器人和科技创业者。",
-   "tab": "appearances",
-   "tags": [
-    "关注频道"
-   ],
-   "minutes": 171,
-   "found": "2026-11-03",
-   "highlight": "张小珺 Podcast 访谈了 Dyna Robotics 创始人兼 CEO Lindon Gao。节目中探讨了 Dyna 走“Product-research”路线与以大脑研究为主的路线的区别、机器人行业的迷雾与抉择，以及 Lindon 本人关于创业修心与自我转变的感悟。",
-   "kind": "method",
-   "sports": false,
-   "field": "none"
-  },
-  {
    "key": "youtube:7zF2mN9EPxU",
    "url": "https://www.youtube.com/watch?v=7zF2mN9EPxU",
    "title": "AL Interview: Leon Johnson, Omnilex - AI-Native, New Model Law Firm",
@@ -961,9 +941,8 @@
    "published": "2026-10-14",
    "summary": "From a four-billion-measurement Kaggle competition to models that recognize a molecule’s chemist, Leash Bio is testing what AI actually learns about chemistry. Co-founder and CEO Ian Quigley joins Brandon Anderson and RJ…",
    "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
-   "tab": "curated",
+   "tab": "appearances",
    "tags": [
-    "医疗 AI",
     "Podcast"
    ],
    "minutes": 110,
@@ -1122,7 +1101,7 @@
    "published": "2026-10-10",
    "summary": "From the Bitter Lesson of AI scaling to the unsolved mysteries of protein folding, Google DeepMind’s Pushmeet Kohli and Biohub’s Sal Candido are rethinking what it takes to build AI that truly understands biology. In thi…",
    "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
-   "tab": "curated",
+   "tab": "appearances",
    "tags": [
     "医疗 AI",
     "Podcast"
@@ -1164,7 +1143,7 @@
    "published": "2026-10-08",
    "summary": "Today, we're joined by Max Jaderberg, President of Isomorphic Labs.",
    "about": "Isomorphic Labs（DeepMind 的 AI 制药公司）总裁 Max Jaderberg：AI 能不能攻克所有疾病。",
-   "tab": "curated",
+   "tab": "appearances",
    "tags": [
     "医疗 AI"
    ],
@@ -1208,7 +1187,7 @@
    "published": "2026-09-11",
    "summary": "Doctors now need an estimated 30 hours a day to complete every clerical task asked of them. They are compensated not for the care they deliver but for the care they document. That gap is where physician burnout lives, an…",
    "about": "CareTalk 访谈 Abridge CEO Shiv Rao：AI 自动写病历，已进入 300 家医疗系统。",
-   "tab": "curated",
+   "tab": "appearances",
    "tags": [
     "医疗 AI"
    ],
@@ -1252,7 +1231,7 @@
    "published": "2026-02-13",
    "summary": "Artificial intelligence is moving fast in health care—but what will actually stick? In this Medical Grand Rounds fireside chat, Bob Wachter will explore how AI is shifting from novelty to everyday tool, and what that tra…",
    "about": "UCSF 医学系炉边对谈：2026 年医疗 AI 从新鲜事变成日常，医院和医生实际怎么在用。",
-   "tab": "curated",
+   "tab": "appearances",
    "tags": [
     "医疗 AI"
    ],
@@ -1274,7 +1253,7 @@
    "published": "2025-09-05",
    "summary": "How does a new technology get adopted by 40% of American doctors in just 18 months? In an era where the golden age of biotechnology has also created a dark age of physician burnout, OpenEvidence found the answer by funda…",
    "about": "No Priors 访谈 OpenEvidence 创始人 Daniel Nadler：医生们大量在用的 AI 临床问答是怎么做出来的。",
-   "tab": "curated",
+   "tab": "appearances",
    "tags": [
     "医疗 AI"
    ],
@@ -2328,7 +2307,7 @@
    "url": "https://www.youtube.com/@xiaojunpodcast",
    "id": "UC3Sv1JuKpbOx3csUO8FAo5g",
    "name": "张小珺 Podcast",
-   "count": 1
+   "count": 0
   },
   "channel:@cheekypint": {
    "url": "https://www.youtube.com/@CheekyPint",
@@ -2365,7 +2344,7 @@
   "何超琼": {
    "keywords": "",
    "searched": "2026-11-03",
-   "youtube": "ok",
+   "youtube": "HTTP 429",
    "bilibili": "ok"
   },
   "施一公": {
@@ -2383,7 +2362,7 @@
   "Charlie Munger": {
    "keywords": "",
    "searched": "2026-11-03",
-   "youtube": "HTTP 429",
+   "youtube": "ok",
    "bilibili": "ok"
   },
   "姚明": {
@@ -4141,8 +4120,8 @@
     "NVIDIA Research"
    ],
    "summary": "NVIDIA CEO Jensen Huang may have been the target of a Chinese government spy, according to reports.",
-   "meaning": "这涉及到全球顶级 AI 芯片巨头 NVIDIA 的高层安全与地缘政治风险，对于关注中国 AI 发展与国际竞争的读者来说值得关注。",
-   "importance": 6
+   "meaning": "这涉及到中国 AI 及大厂高管的安全风险，对关注中国 AI 发展动态的读者有一定参考价值。",
+   "importance": 5
   },
   {
    "title": "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative",

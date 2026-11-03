@@ -1722,7 +1722,8 @@
 
         const playerArea = document.createElement('div');
         playerArea.className = 'player';
-        const media = mediaLink(item);
+        // play_url: a Bilibili copy that plays instead (no ads); the card keeps its own key, text and 已看 mark.
+        const media = mediaLink(item.play_url ? { official_media_url: item.play_url } : item);
         const safeId = `${item.person_id || 'speaker'}-${++renderedCardCount}`.replace(/[^a-z0-9-]/gi, '-').toLowerCase();
         if (media?.provider === 'youtube') {
           const frame = document.createElement('iframe');
@@ -1885,11 +1886,14 @@
         appearancesLoaded = true;
         appearanceNote.textContent = '正在读取已登记的人物演讲与 Podcast 来源…';
         try {
-          const csvEntries = (await loadAppearanceRows()).filter(item => !item.content_type);
+          // A registered video whose Bilibili upload the daily job found ("replaces" its YouTube key) plays that one.
+          const bilibiliCopies = new Map((await autoFeedPromise).items.filter(entry => entry.replaces).map(entry => [entry.replaces, entry.url]));
+          const csvEntries = (await loadAppearanceRows()).filter(item => !item.content_type)
+            .map(item => bilibiliCopies.has(appearanceMediaKey(item)) ? { ...item, play_url: bilibiliCopies.get(appearanceMediaKey(item)) } : item);
           // Auto-discovered videos join the registered ones; a video already registered keeps its hand-written card.
           const csvKeys = new Set(csvEntries.map(appearanceMediaKey));
           const autoEntries = (await autoFeedPromise).items
-            .filter(entry => entry.tab !== 'curated' && !csvKeys.has(entry.key))
+            .filter(entry => entry.tab !== 'curated' && !csvKeys.has(entry.key) && !csvKeys.has(entry.replaces))
             .map(autoFeedItem);
           const registeredEntries = [...csvEntries, ...autoEntries];
           await addedVideosReady;

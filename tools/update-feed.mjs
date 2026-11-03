@@ -334,20 +334,27 @@ for (const source of allSources) {
   }
 }
 
-// The same video from a followed Bilibili uploader and from a YouTube channel of the same name: the Bilibili one
-// stays (no ads) and notes the YouTube key in "replaces", so the page carries a 已看 mark over.
-const bilibiliNames = new Set(allSources.filter(source => source.channel.startsWith('bilibili:')).map(source => source.name));
-const youtubeTwins = new Map([...(previous.items || []), ...items.values()]
-  .filter(item => item.key.startsWith('youtube:') && bilibiliNames.has(item.channel))
-  .map(item => [`${item.channel}|${titleKey(item.title)}`, item.key]));
+// The same video from a followed Bilibili uploader and from their YouTube channel (same name, or named in
+// BILIBILI_TWINS): the Bilibili one stays (no ads) and notes the YouTube key in "replaces", so the page carries a
+// 已看 mark over. Same video: the titles match without episode numbers and punctuation, or the lengths are within
+// a minute and the titles start alike (uploads get small title edits, "Lindon" vs "Lindon Gao").
+const BILIBILI_TWINS = { 张小珺商业访谈录: '张小珺 Podcast' };
+const bareTitle = title => titleKey(title.replace(/^\s*(EP\s*)?\d+\s*[.、:：]\s*/i, ''));
+const sameVideo = (a, b) => bareTitle(a.title) === bareTitle(b.title)
+  || a.minutes != null && b.minutes != null && Math.abs(a.minutes - b.minutes) <= 1 && bareTitle(a.title).slice(0, 8) === bareTitle(b.title).slice(0, 8);
+const youtubeNames = new Map(allSources.filter(source => source.channel.startsWith('bilibili:')).map(source => [source.name, BILIBILI_TWINS[source.name] || source.name]));
+const youtubeCopies = [...new Map([...(previous.items || []), ...items.values()]
+  .filter(item => item.key.startsWith('youtube:') && [...youtubeNames.values()].includes(item.channel))
+  .map(item => [item.key, item])).values()];
 let replaced = 0;
-for (const item of items.values()) {
-  const twin = item.key.startsWith('bilibili:') && youtubeTwins.get(`${item.channel}|${titleKey(item.title)}`);
+for (const item of [...items.values()]) {
+  if (!item.key.startsWith('bilibili:') || !youtubeNames.has(item.channel)) continue;
+  const twin = youtubeCopies.find(copy => copy.channel === youtubeNames.get(item.channel) && sameVideo(copy, item));
   if (!twin) continue;
-  item.replaces = twin;
-  if (items.delete(twin)) replaced++;
+  item.replaces = twin.key;
+  if (items.delete(twin.key)) replaced++;
 }
-if (bilibiliNames.size) report.push(`bilibili follows: ${[...items.values()].filter(item => item.replaces).length} carry a YouTube twin, ${replaced} YouTube copies dropped`);
+if (youtubeNames.size) report.push(`bilibili follows: ${[...items.values()].filter(item => item.replaces).length} carry a YouTube twin, ${replaced} YouTube copies dropped`);
 
 // 人物访谈 first: the watchlist search below can use up the day's YouTube quota.
 let peopleState = previous.people || {};

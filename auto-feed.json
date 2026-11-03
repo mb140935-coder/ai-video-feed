@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T19:54:25.549Z",
+ "updated": "2026-11-03T19:56:37.136Z",
  "items": [
   {
    "key": "youtube:JdPvoQrQJDI",
@@ -908,6 +908,26 @@
    "found": "2026-11-03",
    "replaces": "youtube:V0IB8iMzrLQ",
    "highlight": "张小珺商业访谈录对话Dyna Robotics创始人兼CEO Lindon Gao，探讨了机器人世界的迷雾、分歧与抉择，以及修心、《沉思录》与王阳明。Dyna选择了一条以具体工作流为最小单元、从真实任务出发的Product-research道路。",
+   "kind": "method",
+   "sports": false,
+   "field": "none"
+  },
+  {
+   "key": "youtube:V0IB8iMzrLQ",
+   "url": "https://www.youtube.com/watch?v=V0IB8iMzrLQ",
+   "title": "154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明",
+   "channel": "张小珺 Podcast",
+   "channelId": "UC3Sv1JuKpbOx3csUO8FAo5g",
+   "published": "2026-10-15",
+   "summary": "今天我们的嘉宾是一位美国连续创业者，Dyna Robotics创始人兼CEO Lindon Gao。此前，他做过两段生意，一次完整的创业。Dyna可以说是他的第四次创业了。 在硅谷，Dyna和之前来过我们节目的Pi（Physical Intelligence）的纯大脑研究路线非常不一样。相比从通用智能出发、探索机器人大脑的研究路径，Dyna选择了一条“Product-research”的道路：以具体的工作流为最小单元，从真实任务出发，反…",
+   "about": "张小珺长期深度访谈中国与硅谷的 AI、机器人和科技创业者。",
+   "tab": "appearances",
+   "tags": [
+    "关注频道"
+   ],
+   "minutes": 171,
+   "found": "2026-11-03",
+   "highlight": "张小珺 Podcast 访谈了 Dyna Robotics 创始人兼 CEO Lindon Gao。节目中探讨了 Dyna 走“Product-research”路线与以大脑研究为主的路线的区别、机器人行业的迷雾与抉择，以及 Lindon 本人关于创业修心与自我转变的感悟。",
    "kind": "method",
    "sports": false,
    "field": "none"
@@ -2308,7 +2328,7 @@
    "url": "https://www.youtube.com/@xiaojunpodcast",
    "id": "UC3Sv1JuKpbOx3csUO8FAo5g",
    "name": "张小珺 Podcast",
-   "count": 0
+   "count": 1
   },
   "channel:@cheekypint": {
    "url": "https://www.youtube.com/@CheekyPint",
@@ -2333,7 +2353,7 @@
   "王坚": {
    "keywords": "阿里云 城市大脑 院士 之江实验室 阿里巴巴 云栖",
    "searched": "2026-11-03",
-   "youtube": "ok",
+   "youtube": "HTTP 429",
    "bilibili": "ok"
   },
   "徐新": {
@@ -2601,20 +2621,22 @@
   {
    "id": "1vd84sj",
    "lastSeen": "2026-11-03",
-   "title": "Meet Athena, The Commercial Real Estate Law Firm Powered By AI",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOM1pOSEg1eU5CNmtzd0JQVEItbEozdkltbUNvQWxXX21xZVMtZVFJVTZjNGFIeXJ1UV85X2JJeTJTTWZXRGxBRWpkR0JRcFBMempjZmJYeWx2dEwwTUpGUDVvUFFsSjNRU1dmUUlFNW5INE5RN2RtbXpWMkJxRjVHdmo1eGRvZTJFUVh0RHgxUVVQYVdTNFZ1c3hQLTl2MGZaRWx1cmlCMVI0Ui0xaDlBVzVpeU5fUQ?oc=5",
-   "source": "Forbes",
-   "domain": "forbes.com",
+   "title": "Ex-Legora and Big Law attorneys get a16z Speedrun backing for Athena, bringing the AI-native legal service to commercial real estate",
+   "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNZEQyOExEWHV3TkMtWlhjUnoxTWVxbl9sY08wVTdKanB2YW03U1dtMnFhcENMZVRubHVmeDJEMmgwVUpSX2ZIclplN0hQam1FMWlleWxHMFdhenR3cjB0RS1xMnV2RmxhQXlJWFpyYUNSMXRTbVBaMEdVd3p1bUkxQjFXd2dTZElpbUxPZDI1aHBtbnluLVRxYm1OSUFvV3Bkbi1mZkotSFhHY3ZxMjk4ODlkcktJSUYwd2dvQnBxYnZENUxkNFJ4YmxBTVpIMC1zcUFrZ1lGTTVKbTRGaExwajhBRGpfLUtmeEl4dXN1OVY2VUczRThmcTFTX29BcEk5Z1FuUTByNVZNRVFBRXRSZ3RDakNOc0FhdkE?oc=5",
+   "source": "markets.businessinsider.com",
+   "domain": "markets.businessinsider.com",
    "published": "2026-11-03",
    "outlets": [
-    "Forbes"
+    "Forbes",
+    "markets.businessinsider.com"
    ],
    "themes": [
     "法律 AI",
     "房产 AI"
    ],
    "headlines": [
-    "Meet Athena, The Commercial Real Estate Law Firm Powered By AI"
+    "Meet Athena, The Commercial Real Estate Law Firm Powered By AI",
+    "Ex-Legora and Big Law attorneys get a16z Speedrun backing for Athena, bringing the AI-native legal service to commercial real estate"
    ],
    "entities": [],
    "summary": "名为 Athena 的商业房地产律师事务所正式亮相，采用 AI 技术驱动。",
@@ -4118,9 +4140,9 @@
     "Jensen Huang",
     "NVIDIA Research"
    ],
-   "summary": "NVIDIA 首席执行官 Jensen Huang 可能成为中国政府间谍的目标。相关安全与地缘政治动态引发关注。",
-   "meaning": "涉及中国 AI 产业链核心人物的安全动态，对整个行业生态具有重大潜在影响。",
-   "importance": 7
+   "summary": "NVIDIA CEO Jensen Huang may have been the target of a Chinese government spy, according to reports.",
+   "meaning": "这涉及到全球顶级 AI 芯片巨头 NVIDIA 的高层安全与地缘政治风险，对于关注中国 AI 发展与国际竞争的读者来说值得关注。",
+   "importance": 6
   },
   {
    "title": "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative",

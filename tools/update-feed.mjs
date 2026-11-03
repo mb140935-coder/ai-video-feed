@@ -366,7 +366,7 @@ try {
 const videos = { ...(previous.videos || {}) };
 if (addedRows) {
   try {
-    const rows = addedRows.filter(row => !/^(channel|person|watch):/.test(row.key) && !videos[row.key]?.published);
+    const rows = addedRows.filter(row => !/^(channel|person|watch|rewatch):/.test(row.key) && !videos[row.key]?.published);
     const youtubeRows = rows.filter(row => row.key.startsWith('youtube:'));
     const details = await youtubeDetails(youtubeRows.map(row => row.key.slice('youtube:'.length)));
     youtubeRows.forEach(row => { if (details[row.key.slice('youtube:'.length)]) videos[row.key] = details[row.key.slice('youtube:'.length)]; });

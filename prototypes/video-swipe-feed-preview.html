@@ -197,6 +197,16 @@
     .history-item-text { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
     .history-item-title { font-size: 13px; line-height: 1.4; }
     .history-item-meta { color: var(--faint); font-size: 11px; }
+    .rewatch-panel { width: min(100%, 860px); }
+    .rewatch-frame { position: relative; width: 100%; height: 0; padding-top: 56.25%; background: var(--video); }
+    .rewatch-frame[hidden] { display: none; }
+    .rewatch-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .rewatch-links { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 18px calc(14px + env(safe-area-inset-bottom, 0px)); color: var(--muted); font-size: 12px; line-height: 1.5; }
+    .rewatch-links a { color: var(--accent-text); }
+    .history-item .history-item-text.playable { cursor: pointer; flex: 1; }
+    .history-item-buttons { flex: none; display: flex; gap: 6px; }
+    .history-item button.on { border-color: var(--text); background: var(--text); color: var(--surface); }
+    .watch-undo-buttons { flex: none; display: flex; gap: 6px; }
     .history-empty { padding: 24px 18px; color: var(--muted); font-size: 12px; line-height: 1.6; }
     .pub-date { align-self: flex-start; display: inline-flex; align-items: center; border: 1px solid var(--line-strong); border-radius: 999px; padding: 5px 9px; background: var(--raised); color: var(--text-2); font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
     .pub-date.fresh { border-color: var(--accent-line); background: var(--accent-soft); color: var(--accent-text); }
@@ -419,6 +429,7 @@
             <button type="button" role="menuitem" id="toc-button" aria-haspopup="dialog" aria-controls="toc-sheet"><span>📑 目录 · 跳到某个视频</span></button>
             <button type="button" role="menuitem" id="watchlist-button" aria-haspopup="dialog" aria-controls="watchlist"><span>☆ 追踪名单</span><span class="menu-count" id="watchlist-count"></span></button>
             <button type="button" role="menuitem" id="watch-history-button" aria-haspopup="dialog" aria-controls="watch-history"><span>✓ 已看历史</span><span class="menu-count" id="watch-history-count">0</span></button>
+            <button type="button" role="menuitem" id="rewatch-button" aria-haspopup="dialog" aria-controls="rewatch-sheet"><span>★ 重看列表</span><span class="menu-count" id="rewatch-count"></span></button>
             <button type="button" role="menuitem" id="search-button" aria-controls="search-bar"><span>🔍 搜索演讲 &amp; Podcast</span></button>
             <button type="button" role="menuitem" id="add-video-button" aria-haspopup="dialog" aria-controls="add-video"><span>＋ 添加视频 / 频道</span><span class="menu-count" id="added-count"></span></button>
             <button type="button" role="menuitem" id="sleep-button" aria-haspopup="dialog" aria-controls="sleep-sheet"><span>⏾ 定时停止</span><span class="menu-count" id="sleep-count"></span></button>
@@ -438,7 +449,7 @@
         </div>
         <div class="person-bar" id="person-bar" hidden></div>
       </div>
-      <div class="watch-undo" id="watch-undo" role="status" hidden><span id="watch-undo-text"></span><button type="button" id="watch-undo-button">撤销</button></div>
+      <div class="watch-undo" id="watch-undo" role="status" hidden><span id="watch-undo-text"></span><span class="watch-undo-buttons"><button type="button" id="watch-rewatch-button">★ 值得重看</button><button type="button" id="watch-undo-button">撤销</button></span></div>
       <div class="sync-status" id="watch-sync-status" role="status">正在连接在线已看记录…</div>
       <div class="history-sheet" id="note-sheet" role="dialog" aria-modal="true" aria-labelledby="note-title" hidden>
         <div class="history-panel">
@@ -534,6 +545,19 @@
         <div class="history-panel">
           <div class="history-head"><span id="watch-history-title">已看历史 · 手动标记看完的视频</span><button type="button" id="watch-history-close">关闭</button></div>
           <div class="history-list" id="watch-history-list"></div>
+        </div>
+      </div>
+      <div class="history-sheet" id="rewatch-sheet" role="dialog" aria-modal="true" aria-labelledby="rewatch-title" hidden>
+        <div class="history-panel">
+          <div class="history-head"><span id="rewatch-title">★ 重看列表 · 看完觉得值得再看的</span><button type="button" id="rewatch-close">关闭</button></div>
+          <div class="history-list" id="rewatch-list"></div>
+        </div>
+      </div>
+      <div class="history-sheet" id="rewatch-player" role="dialog" aria-modal="true" aria-labelledby="rewatch-player-title" hidden>
+        <div class="history-panel rewatch-panel">
+          <div class="history-head"><span id="rewatch-player-title"></span><button type="button" id="rewatch-player-close">关闭</button></div>
+          <div class="rewatch-frame" id="rewatch-frame"></div>
+          <div class="rewatch-links" id="rewatch-links"></div>
         </div>
       </div>
       <div class="history-sheet" id="add-video" role="dialog" aria-modal="true" aria-labelledby="add-video-title" hidden>
@@ -1297,6 +1321,7 @@
             lastWatchedKey = watchKey;
             const title = button.closest('.card')?.querySelector('h1')?.textContent || '视频';
             watchUndoText.textContent = `“${title}”已从信息流隐藏。`;
+            syncUndoRewatch();
             watchUndo.hidden = false;
             if (activeCard?.querySelector('.watch-toggle')?.dataset.watchKey === watchKey) {
               pauseAllExcept(null);
@@ -2073,6 +2098,21 @@
             .filter(Boolean).join(' · ');
           if (meta) makeText(text, 'div', 'history-item-meta', meta);
           row.appendChild(text);
+          const buttons = document.createElement('div');
+          buttons.className = 'history-item-buttons';
+          const star = document.createElement('button');
+          star.type = 'button';
+          const syncStar = () => {
+            const on = isRewatch(key);
+            star.textContent = on ? '★ 在重看列表' : '☆ 重看';
+            star.classList.toggle('on', on);
+          };
+          syncStar();
+          star.addEventListener('click', async () => {
+            await (isRewatch(key) ? removeRewatch(key) : addRewatch(key, card));
+            syncStar();
+          });
+          buttons.appendChild(star);
           const restore = document.createElement('button');
           restore.type = 'button';
           restore.textContent = '移出已看';
@@ -2086,7 +2126,8 @@
             appearanceSearch.dispatchEvent(new Event('input'));
             refreshCuratedCounters();
           });
-          row.appendChild(restore);
+          buttons.appendChild(restore);
+          row.appendChild(buttons);
           historyList.appendChild(row);
         });
       };
@@ -2221,6 +2262,7 @@
       const addedCards = new Map();
       let addedRows = [];
       let addedShared = false;
+      const REWATCH_PREFIX = 'rewatch:';
       const addSheet = document.getElementById('add-video');
       const peopleSheet = document.getElementById('people-sheet');
       const personName = row => String(row.title || row.key.slice('person:'.length)).split(/\s*[/／,，、]\s*/)[0].trim();
@@ -2235,7 +2277,9 @@
       const personRows = () => addedRows.filter(isPersonRow);
       // AI 追踪名单 additions: "watch:<name>" rows, title = names, url = who they are (tools/update-feed.mjs).
       const isWatchRow = row => row.key.startsWith('watch:');
-      const isListRow = row => isPersonRow(row) || isWatchRow(row);
+      // 重看列表: "rewatch:<watch key>" rows keep the link, title and source, so a video stays here after it leaves the feed.
+      const isRewatchRow = row => row.key.startsWith(REWATCH_PREFIX);
+      const isListRow = row => isPersonRow(row) || isWatchRow(row) || isRewatchRow(row);
       const addedVideoRows = () => addedRows.filter(row => !isChannelRow(row) && !isListRow(row));
       const addedChannelRows = () => addedRows.filter(isChannelRow);
 
@@ -2353,6 +2397,7 @@
         }
         if (!peopleSheet.hidden) renderPeopleList();
         updateWatchCount();
+        updateRewatch();
       };
 
       const saveAddedShared = async rows => {
@@ -2464,6 +2509,146 @@
         renderAddedVideos();
         addInput.value = '';
       };
+
+      // ★ 重看列表: videos marked 已看 that are worth another look (from the 已看 bar or 已看历史). They stay 已看, so
+      // they never return to the feed; the list plays them in its own player.
+      const rewatchSheet = document.getElementById('rewatch-sheet');
+      const rewatchList = document.getElementById('rewatch-list');
+      const rewatchPlayer = document.getElementById('rewatch-player');
+      const rewatchFrame = document.getElementById('rewatch-frame');
+      const rewatchRows = () => addedRows.filter(isRewatchRow);
+      const isRewatch = key => addedRows.some(row => row.key === REWATCH_PREFIX + key);
+      // A link back from the watch key (canonicalMediaKey), for videos whose card is gone.
+      const keyUrl = key => {
+        const [kind, ...rest] = key.split(':');
+        const id = rest.join(':');
+        if (kind === 'youtube') return `https://www.youtube.com/watch?v=${id}`;
+        if (kind === 'bilibili') return `https://www.bilibili.com/video/${id}`;
+        if (kind === 'spotify') return `https://open.spotify.com/episode/${id}`;
+        if (kind === 'url') return `https://${id}`;
+        return '';
+      };
+      const addRewatch = async (key, card = document.querySelector(`.watch-toggle[data-watch-key="${CSS.escape(key)}"]`)?.closest('.card')) => {
+        if (isRewatch(key)) return;
+        const row = {
+          key: REWATCH_PREFIX + key,
+          url: keyUrl(key) || ' ',
+          title: card?.querySelector('h1')?.textContent.trim() || '视频',
+          author: card?.querySelector('.source')?.textContent.trim() || '',
+          published: card ? cardDate(card) : '',
+          created_at: new Date().toISOString()
+        };
+        if (addedShared) {
+          try { await saveAddedShared([row]); } catch { addedShared = false; }
+        }
+        if (!addedShared) writeLocalAdded([row, ...readLocalAdded()]);
+        addedRows = [row, ...addedRows];
+        updateRewatch();
+        showToast([addedShared ? '★ 已存进重看列表（☰ 菜单里），手机、iPad、电脑同步。' : '★ 已存进重看列表（在线保存暂时连不上，先存在这台设备）。'], 4000);
+      };
+      const removeRewatch = key => removeAdded(REWATCH_PREFIX + key);
+
+      const syncUndoRewatch = () => {
+        const button = document.getElementById('watch-rewatch-button');
+        const on = !!lastWatchedKey && isRewatch(lastWatchedKey);
+        button.textContent = on ? '★ 已存重看' : '★ 值得重看';
+        button.disabled = on;
+      };
+      document.getElementById('watch-rewatch-button').addEventListener('click', () => {
+        if (lastWatchedKey) addRewatch(lastWatchedKey);
+      });
+
+      const openRewatch = row => {
+        const key = row.key.slice(REWATCH_PREFIX.length);
+        const url = row.url.trim() || keyUrl(key);
+        const media = url ? mediaLink({ official_media_url: url }) : null;
+        pauseAllExcept(null);
+        document.getElementById('rewatch-player-title').textContent = row.title;
+        rewatchFrame.replaceChildren();
+        const embed = media?.provider === 'youtube'
+          ? `https://www.youtube.com/embed/${media.videoId}?playsinline=1&rel=0&autoplay=1&start=${media.start || 0}`
+          : media?.embedUrl?.replace('autoplay=0', 'autoplay=1');
+        rewatchFrame.hidden = !embed;
+        if (embed) {
+          const frame = document.createElement('iframe');
+          frame.src = embed;
+          frame.title = row.title;
+          frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+          frame.allowFullscreen = true;
+          rewatchFrame.appendChild(frame);
+        }
+        const links = document.getElementById('rewatch-links');
+        links.replaceChildren();
+        makeText(links, 'span', '', [row.author, row.published].filter(Boolean).join(' · ') || ' ');
+        if (url) {
+          const link = document.createElement('a');
+          link.href = url;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.textContent = embed ? '在原网站打开' : '这条只能在原网站看 · 打开';
+          links.appendChild(link);
+        }
+        rewatchPlayer.hidden = false;
+      };
+      const closeRewatchPlayer = () => {
+        rewatchPlayer.hidden = true;
+        rewatchFrame.replaceChildren();
+      };
+      document.getElementById('rewatch-player-close').addEventListener('click', closeRewatchPlayer);
+      rewatchPlayer.addEventListener('click', event => { if (event.target === rewatchPlayer) closeRewatchPlayer(); });
+
+      const renderRewatchList = () => {
+        rewatchList.replaceChildren();
+        const rows = rewatchRows().sort((a, b) => (b.created_at || '').localeCompare(a.created_at || ''));
+        if (!rows.length) {
+          makeText(rewatchList, 'div', 'history-empty', '还没有值得重看的视频。看完一条点“已看”后，顶部会出现“★ 值得重看”；以前看过的，在“已看历史”里点“☆ 重看”。');
+          return;
+        }
+        rows.forEach(row => {
+          const item = document.createElement('div');
+          item.className = 'history-item';
+          const text = document.createElement('div');
+          text.className = 'history-item-text playable';
+          makeText(text, 'div', 'history-item-title', row.title);
+          const meta = [row.author, row.created_at ? `加入于 ${new Date(row.created_at).toLocaleDateString('zh-CN')}` : ''].filter(Boolean).join(' · ');
+          if (meta) makeText(text, 'div', 'history-item-meta', meta);
+          text.addEventListener('click', () => openRewatch(row));
+          const buttons = document.createElement('div');
+          buttons.className = 'history-item-buttons';
+          const play = document.createElement('button');
+          play.type = 'button';
+          play.textContent = '▶ 看';
+          play.addEventListener('click', () => openRewatch(row));
+          // Tap twice: confirm() is blocked on some iPads.
+          const remove = document.createElement('button');
+          remove.type = 'button';
+          remove.textContent = '移出';
+          remove.addEventListener('click', () => {
+            if (!remove.classList.contains('armed')) {
+              remove.classList.add('armed');
+              remove.textContent = '确认移出？';
+              setTimeout(() => { remove.classList.remove('armed'); remove.textContent = '移出'; }, 4000);
+              return;
+            }
+            removeAdded(row.key);
+          });
+          buttons.append(play, remove);
+          item.append(text, buttons);
+          rewatchList.appendChild(item);
+        });
+      };
+      const updateRewatch = () => {
+        const count = rewatchRows().length;
+        document.getElementById('rewatch-count').textContent = count ? String(count) : '';
+        if (!rewatchSheet.hidden) renderRewatchList();
+        if (!watchUndo.hidden) syncUndoRewatch();
+      };
+      document.getElementById('rewatch-button').addEventListener('click', () => {
+        rewatchSheet.hidden = false;
+        renderRewatchList();
+      });
+      document.getElementById('rewatch-close').addEventListener('click', () => { rewatchSheet.hidden = true; });
+      rewatchSheet.addEventListener('click', event => { if (event.target === rewatchSheet) rewatchSheet.hidden = true; });
 
       addForm.addEventListener('submit', async event => {
         event.preventDefault();

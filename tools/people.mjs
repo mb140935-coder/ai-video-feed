@@ -270,7 +270,8 @@ export const addPicks = async (picks, items, report, youtubeKey) => {
 
 // Hand-picked 精选 videos (docs/video-picks.json: [{ url, field, note? }], field "health" or "medical" as in
 // summarize.mjs), for good ones the channel polls missed (older than their window, or a channel not followed).
-// Added once with the platform's details; update-feed.mjs keeps them while they are listed and tags them by field.
+// Added once with the platform's details; update-feed.mjs keeps them while they are listed (no shelf life) and
+// places them by field: 个人健康 AI in 精选, the rest in 演讲 & Podcast.
 export const addVideoPicks = async (picks, items, report, youtubeKey) => {
   let added = 0;
   for (const pick of picks) {
@@ -283,7 +284,7 @@ export const addVideoPicks = async (picks, items, report, youtubeKey) => {
       items.set(key, {
         key, url: video.url, title: video.title, channel: video.channel, ...(video.channelId ? { channelId: video.channelId } : {}),
         published: video.published, summary: summarize(video.text.split('\n')[0] || ''), about: pick.note || `${video.channel} 的视频。`,
-        tab: 'curated', tags: [], minutes: video.minutes, found: day(Date.now()), via: 'pick', picked: true, field: pick.field || 'none'
+        tab: pick.field === 'health' ? 'curated' : 'appearances', tags: [], minutes: video.minutes, found: day(Date.now()), via: 'pick', picked: true, field: pick.field || 'none'
       });
       added++;
     } catch (error) {

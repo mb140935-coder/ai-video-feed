@@ -1902,7 +1902,7 @@
             .filter(Boolean));
           const unique = registeredEntries.filter(item => !curatedMediaKeys.has(appearanceMediaKey(item)));
           const excludedDuplicates = registeredEntries.length - unique.length;
-          const entries = unique.filter(item => item.section === 'people' || favorites.has(canonicalMediaKey(item.official_media_url) || `${canonicalMediaKey(item.official_publisher_url)}:${item.appearance_title}`)
+          const entries = unique.filter(item => item.section === 'people' || item.picked || favorites.has(canonicalMediaKey(item.official_media_url) || `${canonicalMediaKey(item.official_publisher_url)}:${item.appearance_title}`)
             || !shelfExpired({ kind: item.kind, sports: item.sports === true || item.sports === 'true', date: item.published_date, text: `${(item.tags || []).join(' ')} ${item.appearance_title}` }));
           const expiredCount = unique.length - entries.length;
           appearanceTotal = entries.length;
@@ -2266,6 +2266,8 @@
         sortDate: entry.published,
         kind: entry.kind,
         sports: entry.sports,
+        // Hand-picked (docs/video-picks.json): no shelf life.
+        picked: entry.via === 'pick',
         tags: entry.tags || [],
         brand: ['每日自动发现', `关注频道 · ${entry.channel}${entry.minutes ? ` · 约 ${entry.minutes} 分钟` : ''}`],
         cardText: {

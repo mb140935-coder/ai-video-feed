@@ -31,7 +31,7 @@ const MAX_ITEMS = 300;
 // Days a 演讲 & Podcast video stays, by kind (summarize.mjs); untyped videos count as judgment.
 const SHELF_DAYS = { product: 90, judgment: 365 };
 const SPORTS_TAG = /奥运|体育/;
-const expired = item => item.tab !== 'curated' && item.tab !== 'people' && !item.sports && !OLYMPIC.test(item.title) && !(item.tags || []).some(tag => SPORTS_TAG.test(tag))
+const expired = item => item.tab !== 'curated' && item.tab !== 'people' && item.via !== 'pick' && !item.sports && !OLYMPIC.test(item.title) && !(item.tags || []).some(tag => SPORTS_TAG.test(tag))
   && item.kind !== 'method' && Date.parse(item.published) < Date.now() - SHELF_DAYS[item.kind || 'judgment'] * 86400000;
 const MIN_MINUTES = 5;
 // Person search (YouTube Data API, 100 quota units per person of the free 10,000 a day).
@@ -467,13 +467,18 @@ try {
 const peopleRejected = [...new Set([...kept.filter(item => item.via === 'people' && item.firsthand === false).map(item => item.key), ...(previous.peopleRejected || [])])].slice(0, 1000);
 report.push(`people: ${kept.filter(item => item.via === 'people' && item.firsthand === false).length} not first-hand dropped`);
 kept = kept.filter(item => !(item.via === 'people' && item.firsthand === false));
-// 个人健康 AI (as high a priority as Olympic AI) and 医疗 AI go to 精选 with their tag; 人物访谈 stay in their section.
+// 个人健康 AI (as high a priority as Olympic AI) goes to 精选; 医疗 AI (the industry) stays in 演讲 & Podcast. Both
+// get their tag; 人物访谈 stay in their section. Olympic AI stays in 精选 whatever its field. A video judged again
+// into another field loses the old tag and, if only that tag had put it in 精选, goes back to 演讲 & Podcast.
 const FIELD_TAGS = { health: '个人健康 AI · 最高优先级', medical: '医疗 AI' };
 kept.forEach(item => {
+  if (item.tab === 'people') return;
   const tag = FIELD_TAGS[item.field];
-  if (!tag || item.tab === 'people') return;
-  item.tab = 'curated';
-  if (!(item.tags || []).includes(tag)) item.tags = [tag, ...(item.tags || [])];
+  const hadFieldTag = (item.tags || []).some(label => Object.values(FIELD_TAGS).includes(label));
+  item.tags = (item.tags || []).filter(label => !Object.values(FIELD_TAGS).includes(label) || label === tag);
+  if (tag && !item.tags.includes(tag)) item.tags = [tag, ...item.tags];
+  if (!tag && !hadFieldTag) return;
+  item.tab = item.field === 'health' || OLYMPIC.test(item.title) && AI.test(item.title) ? 'curated' : 'appearances';
 });
 report.push(`fields: ${kept.filter(item => item.field === 'health').length} 个人健康 AI, ${kept.filter(item => item.field === 'medical').length} 医疗 AI`);
 const expiredCount = kept.filter(expired).length;

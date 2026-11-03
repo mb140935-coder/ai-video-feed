@@ -1,6 +1,44 @@
 {
- "updated": "2026-11-03T03:29:55.875Z",
+ "updated": "2026-11-03T12:05:23.413Z",
  "items": [
+  {
+   "key": "youtube:JdPvoQrQJDI",
+   "url": "https://www.youtube.com/watch?v=JdPvoQrQJDI",
+   "title": "Artificial Lawyer Interview: Copilot for Legal - with Carina Negreanu, Microsoft",
+   "channel": "Artificial Lawyer",
+   "channelId": "UC60lr26YqvcSrl1eDoB2U6A",
+   "published": "2026-11-03",
+   "summary": "Artificial Lawyer Interview: Copilot for Legal - with Carina Negreanu, Microsoft We explore what it does, how it will work, and where it fits into the legal tech ecosystem. Key points: - Microsoft is in legal for the lon…",
+   "about": "Artificial Lawyer：法律科技媒体，访谈法律 AI 公司和律所。",
+   "tab": "appearances",
+   "tags": [
+    "法律 AI"
+   ],
+   "minutes": 26,
+   "found": "2026-11-03",
+   "highlight": "来自Microsoft的Carina Negreanu接受Artificial Lawyer采访，介绍了Copilot for Legal的定位、核心工作流与技能、模型选择以及在法律科技生态中的应用。",
+   "kind": "product",
+   "sports": false
+  },
+  {
+   "key": "youtube:i3sLTcgQe7c",
+   "url": "https://www.youtube.com/watch?v=i3sLTcgQe7c",
+   "title": "赚钱的AI短剧，都做对了什么？",
+   "channel": "秋芝2046",
+   "channelId": "UCrC3GjeSkxXgJ2hLQ2D-m4w",
+   "published": "2026-11-03",
+   "summary": "低成本做爆款AI短剧，教你四招，把时间和积分花在刀刃上～ 感谢铁铁们的点赞+订阅～",
+   "about": "你手动关注的频道：秋芝2046。",
+   "tab": "appearances",
+   "tags": [
+    "你关注的频道"
+   ],
+   "minutes": 12,
+   "found": "2026-11-03",
+   "highlight": "分享低成本制作爆款AI短剧的四招方法，帮助合理利用时间和积分。",
+   "kind": "method",
+   "sports": false
+  },
   {
    "key": "youtube:-GKLZWEq-0c",
    "url": "https://www.youtube.com/watch?v=-GKLZWEq-0c",
@@ -39,6 +77,25 @@
    "via": "person",
    "highlight": "Bloomberg Daybreak Europe 节目涵盖了全球市场新闻，今天的嘉宾包括 Leverage Shares 高级研究分析师 Violeta Todorova 和 Ryanair CEO Michael O’Leary。",
    "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "youtube:bJBEFzlKPoQ",
+   "url": "https://www.youtube.com/watch?v=bJBEFzlKPoQ",
+   "title": "Building Legal Agents When You Can't See the Data — Jacob Lauritzen, CTO of Legora",
+   "channel": "Latent Space",
+   "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+   "published": "2026-11-02",
+   "summary": "Legora can’t read a single trace of what its agent does for a lawyer. The data belongs to the law firm’s clients. How do you build and test an agent when you can’t see its work? Jacob Lauritzen is the CTO of Legora, one …",
+   "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
+   "tab": "appearances",
+   "tags": [
+    "Podcast"
+   ],
+   "minutes": 67,
+   "found": "2026-11-03",
+   "highlight": "Legora CTO Jacob Lauritzen探讨了在无法查看客户数据的情况下如何构建和测试法律AI代理，以及模型在法律工作中的应用和工程实践。",
+   "kind": "method",
    "sports": false
   },
   {
@@ -139,6 +196,27 @@
    "found": "2026-11-01",
    "via": "person",
    "highlight": "部长 Evan Solomon 与 Cohere 的 Aidan Gomez 及 AI 研究员 Joëlle Pineau 共同探讨了如何构建值得信赖的 AI、将研究转化为机遇，以及加拿大在保持自主选择能力的同时如何在竞争中发展。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "youtube:lR1Lb7_-BLY",
+   "url": "https://www.youtube.com/watch?v=lR1Lb7_-BLY",
+   "title": "Tim Dillon ROASTS Elon Musk & Pete Hegseth in HILARIOUS Halloween Special 🎃",
+   "channel": "Purge Viral 🎭",
+   "channelId": "UC1n7qMCivHs3hMRs9Il92DA",
+   "published": "2026-10-31",
+   "summary": "Tim Dillon brings his signature dark humor, outrageous observations, and completely unpredictable comedy to a special ...",
+   "about": "Elon Musk：xAI / Tesla。",
+   "tab": "appearances",
+   "tags": [
+    "人物新视频",
+    "Elon Musk"
+   ],
+   "minutes": 23,
+   "found": "2026-11-03",
+   "via": "person",
+   "highlight": "Tim Dillon在万圣节特别节目中对Elon Musk和Pete Hegseth进行了幽默的讽刺和政治评论。",
    "kind": "judgment",
    "sports": false
   },
@@ -896,6 +974,27 @@
    "sports": false
   },
   {
+   "key": "bilibili:BV1jCpC6GE4x",
+   "url": "https://www.bilibili.com/video/BV1jCpC6GE4x",
+   "title": "邓亚萍对话李小鹏：体操界神话与他的人生奥德赛时期|邓亚萍·冠军下半场EP2【视频播客】",
+   "channel": "邓亚萍",
+   "published": "2026-10-15",
+   "summary": "夺冠以后，还会失利；重回巅峰，也可能转身去做一个新手。这一期，我和李小鹏聊的，是人生一次次离开熟悉的岸、重新寻找方向的“奥德赛时期”。面对台上的伤病，他曾为那一点可能坚持到底；来到“冠军下半场”，他也愿意放空自己，试试另一种生活。我看到的，是他那股始终如一的认真劲儿：没人给你打分的时候，你也要相信自己值一个高分。",
+   "tab": "people",
+   "person": "邓亚萍",
+   "tags": [
+    "人物访谈",
+    "邓亚萍"
+   ],
+   "minutes": 38,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "邓亚萍对话体操界神话李小鹏，聊了体操界神话与他的人生奥德赛时期，探讨了夺冠后的失利、重回巅峰以及面对伤病和人生方向的选择。",
+   "kind": "method",
+   "sports": true,
+   "firsthand": true
+  },
+  {
    "key": "bilibili:BV1HNJk6BEJm",
    "url": "https://www.bilibili.com/video/BV1HNJk6BEJm",
    "title": "对话：AI+数学的变与不变丨浙大数学高等研究院院长励建书×之江实验室主任王坚",
@@ -938,6 +1037,28 @@
    "firsthand": true
   },
   {
+   "key": "youtube:8I6EL1cH5Fc",
+   "url": "https://www.youtube.com/watch?v=8I6EL1cH5Fc",
+   "title": "邓亚萍对话福原爱：初代大魔王vs瓷娃娃，亚运会的烙印。",
+   "channel": "山野赴屿",
+   "channelId": "UCULaztepQnLdkSxDuup5gHg",
+   "published": "2026-09-23",
+   "summary": "【邓亚萍播客首播】",
+   "tab": "people",
+   "person": "邓亚萍",
+   "tags": [
+    "人物访谈",
+    "邓亚萍"
+   ],
+   "minutes": 63,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "乒乓球超级全满贯邓亚萍对话前日本乒乓国手福原爱，全方位对谈了初代大魔王与瓷娃娃的初遇印象、与乒乓球结缘的原因、面对聚光灯的自我认知，以及对阵中国队时的心态调整。",
+   "kind": "method",
+   "sports": true,
+   "firsthand": true
+  },
+  {
    "key": "bilibili:BV1efYs61EwA",
    "url": "https://www.bilibili.com/video/BV1efYs61EwA",
    "title": "《名人故事会》鲁健对话何超琼：我有野心让澳门成为全球文旅标杆！",
@@ -975,6 +1096,49 @@
    "found": "2026-11-02",
    "via": "people",
    "highlight": "徐新在第四届价值投资征文大赛上作为评委发言，分享了如何沿着巴菲特、芒格和段永平的道路做对的事情，并领悟出看懂公司的三种方法论来指导投资。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true
+  },
+  {
+   "key": "bilibili:BV1jati6NE1i",
+   "url": "https://www.bilibili.com/video/BV1jati6NE1i",
+   "title": "邓亚萍对话赵蕊蕊：从女排世界冠军到科幻作家 | 邓亚萍·冠军下半场EP1【视频播客】",
+   "channel": "邓亚萍",
+   "published": "2026-09-07",
+   "summary": "我一直很好奇，运动员离开赛场以后，过去那些让我们赢下比赛的方法，还管不管用。这一期，我和赵蕊蕊聊了聊她从女排冠军到科幻作家的“下半场”：经历失去，也经历转身；告别熟悉的赛场，又在新的生活里重新找到自己。一路走来，那些曾经让她破碎的时刻，最终都成了重新生长的起点。那份生命力，也让我在对谈中一度落泪。她说：“我可以破碎，但不能枯萎。”",
+   "tab": "people",
+   "person": "邓亚萍",
+   "tags": [
+    "人物访谈",
+    "邓亚萍"
+   ],
+   "minutes": 62,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "邓亚萍对话赵蕊蕊，探讨了赵蕊蕊从女排世界冠军到科幻作家的人生转身，分享了经历失去、告别熟悉赛场以及在破碎中重新生长的经历与生命力。",
+   "kind": "method",
+   "sports": true,
+   "firsthand": true
+  },
+  {
+   "key": "youtube:knetdlviyDE",
+   "url": "https://www.youtube.com/watch?v=knetdlviyDE",
+   "title": "Warren Buffett: How To Calculate Intrinsic Value",
+   "channel": "Brian Feroldi",
+   "channelId": "UCs60_Z83HU76uygzHRQl0kA",
+   "published": "2026-09-05",
+   "summary": "",
+   "tab": "people",
+   "person": "Warren Buffett",
+   "tags": [
+    "人物访谈",
+    "Warren Buffett"
+   ],
+   "minutes": 15,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "作者、投资者兼金融教育家Brian Feroldi拆解了Warren Buffett用来评估股票内在价值的简单5步流程。",
    "kind": "method",
    "sports": false,
    "firsthand": true
@@ -1213,6 +1377,50 @@
    "firsthand": true
   },
   {
+   "key": "youtube:olmRW_91rHw",
+   "url": "https://www.youtube.com/watch?v=olmRW_91rHw",
+   "title": "Interview with Warren Buffett July 15th 2026 (1080p HD)",
+   "channel": "David Blackwell",
+   "channelId": "UCEALioIPvhEssWCMVDOTxsQ",
+   "published": "2026-07-15",
+   "summary": "After downing his third Cherry Coke of the morning (On Camera, Berkshire owns the company), 95-year-old Warren Buffett explains why he killed his \"lifetime\" pledge to the Gates Foundation after $47 billion in gifts, insi…",
+   "tab": "people",
+   "person": "Warren Buffett",
+   "tags": [
+    "人物访谈",
+    "Warren Buffett"
+   ],
+   "minutes": 60,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "95岁的Warren Buffett在访谈中解释了改变向盖茨基金会捐赠承诺的原因，谈及将资金转向自己孩子基金会的安排，并确认了Greg Abel、Alphabet投资及Kevin Warsh相关的情况。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true
+  },
+  {
+   "key": "youtube:g9ZtTf-m7is",
+   "url": "https://www.youtube.com/watch?v=g9ZtTf-m7is",
+   "title": "顶级强者的信念，可以改写现实！邓亚萍首次公开大满贯秘籍：“你想赢，就得先看见自己赢的样子！”| 圆桌派 第六季 | 优酷纪实人文 YOUKU DOCUMENTARY",
+   "channel": "YOUKU DOCUMENTARY-Get APP now",
+   "channelId": "UClrB06PsOMunWlRUe7k9m9w",
+   "published": "2026-07-13",
+   "summary": "🛠️ 【本期高能跃迁】简介：",
+   "tab": "people",
+   "person": "邓亚萍",
+   "tags": [
+    "人物访谈",
+    "邓亚萍"
+   ],
+   "minutes": 49,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "主持人窦文涛携手顶级乒乓球大满贯得主邓亚萍，在《圆桌派》中探讨了信念改写现实的力量，分享了大满贯的必胜秘籍与冠军思维，强调想赢就要先毫无保留地相信自己能赢并想象赢的样子。",
+   "kind": "method",
+   "sports": true,
+   "firsthand": true
+  },
+  {
    "key": "bilibili:BV1NXT66yEv8",
    "url": "https://www.bilibili.com/video/BV1NXT66yEv8",
    "title": "施一公高水平演讲，信息量极大，等于是免费听了一场高水准的课！",
@@ -1255,6 +1463,27 @@
    "firsthand": true
   },
   {
+   "key": "bilibili:BV1GU5W6ZEEP",
+   "url": "https://www.bilibili.com/video/BV1GU5W6ZEEP",
+   "title": "大方之谈丨对话邓亚萍：从冠军到普通人，如何面对“退场”【视频播客】",
+   "channel": "大方之谈",
+   "published": "2026-05-11",
+   "summary": "她是“初代大魔王”，曾经连26个字母都认不全，后来却读到剑桥经济学博士。冠军之外，邓亚萍第一次聊危机感、失败、退场、成长，以及普通人如何一步步改变人生。《大方之谈》第十七期，对话中国乒乓名将、奥运四金得主邓亚萍。",
+   "tab": "people",
+   "person": "邓亚萍",
+   "tags": [
+    "人物访谈",
+    "邓亚萍"
+   ],
+   "minutes": 45,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "中国乒乓名将、奥运四金得主邓亚萍在《大方之谈》中聊到了从冠军到普通人的转变，分享了关于危机感、失败、退场、成长以及普通人如何改变人生的经历。",
+   "kind": "method",
+   "sports": true,
+   "firsthand": true
+  },
+  {
    "key": "bilibili:BV1kB5E6FEHs",
    "url": "https://www.bilibili.com/video/BV1kB5E6FEHs",
    "title": "26.05.10之江实验室主任、阿里云创始人王坚：计算与人工智能，数据以及范式变革",
@@ -1273,6 +1502,50 @@
    "highlight": "之江实验室主任、阿里云创始人王坚探讨计算与人工智能、数据以及范式变革。分享了计算与AI的相关观点。",
    "kind": "judgment",
    "sports": false,
+   "firsthand": true
+  },
+  {
+   "key": "youtube:QQOWQcnNmr0",
+   "url": "https://www.youtube.com/watch?v=QQOWQcnNmr0",
+   "title": "Watch CNBC's full interview with Berkshire Hathaway Chair Warren Buffett",
+   "channel": "CNBC Television",
+   "channelId": "UCrp_UI8XtuYfpiqluWLD7Lw",
+   "published": "2026-05-02",
+   "summary": "",
+   "tab": "people",
+   "person": "Warren Buffett",
+   "tags": [
+    "人物访谈",
+    "Warren Buffett"
+   ],
+   "minutes": 25,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "Warren Buffett作为Berkshire Hathaway Chair参与了CNBC的完整访谈，带来最新的股市新闻与分析。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true
+  },
+  {
+   "key": "youtube:4BZX_kv3m1w",
+   "url": "https://www.youtube.com/watch?v=4BZX_kv3m1w",
+   "title": "窦文涛×邓亚萍：为什么说球场上的0.1秒，藏着人性的所有弱点？| 圆桌派 第五季 | 优酷纪实人文 YOUKU DOCUMENTARY",
+   "channel": "YOUKU DOCUMENTARY-Get APP now",
+   "channelId": "UClrB06PsOMunWlRUe7k9m9w",
+   "published": "2026-04-07",
+   "summary": "【本期座谈】✨",
+   "tab": "people",
+   "person": "邓亚萍",
+   "tags": [
+    "人物访谈",
+    "邓亚萍"
+   ],
+   "minutes": 30,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "在《圆桌派》中，窦文涛邀请“乒乓女皇”邓亚萍、文化杂家马未都及心理学家武志红，围绕乒乓球运动中藏着的人性弱点、心理压制与中国人的处世哲学展开对谈。",
+   "kind": "method",
+   "sports": true,
    "firsthand": true
   },
   {
@@ -1334,6 +1607,28 @@
    "found": "2026-11-02",
    "via": "people",
    "highlight": "今日资本徐新分享了自己的投资方法论。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true
+  },
+  {
+   "key": "youtube:z6Uvc9gIas4",
+   "url": "https://www.youtube.com/watch?v=z6Uvc9gIas4",
+   "title": "施一公演讲！",
+   "channel": "独孤信",
+   "channelId": "UCEjVKNzCTZrY8-YX_rd3udQ",
+   "published": "2026-02-10",
+   "summary": "",
+   "tab": "people",
+   "person": "施一公",
+   "tags": [
+    "人物访谈",
+    "施一公"
+   ],
+   "minutes": 32,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "施一公带来精彩演讲。",
    "kind": "method",
    "sports": false,
    "firsthand": true
@@ -1403,6 +1698,28 @@
    "firsthand": true
   },
   {
+   "key": "youtube:ePBUN0HrKJ0",
+   "url": "https://www.youtube.com/watch?v=ePBUN0HrKJ0",
+   "title": "speech in chinese | Learn Mandarin Chinese Listening & Speaking | learn Chinese online. 施一公演讲",
+   "channel": "Captain Chinese",
+   "channelId": "UCCZYEgcYLAR5l0ZcmHtlkog",
+   "published": "2025-09-07",
+   "summary": "👉This speech, \"The First Class of the New Semester,\" is delivered by Shi Yigong, the president of Westlake University, who is also a scientist.",
+   "tab": "people",
+   "person": "施一公",
+   "tags": [
+    "人物访谈",
+    "施一公"
+   ],
+   "minutes": 16,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "施一公带来开学第一课演讲，鼓励观众勇敢面对学习中文的困难，坚持听说练习并融入中文环境。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true
+  },
+  {
    "key": "bilibili:BV1HsthzyE4R",
    "url": "https://www.bilibili.com/video/BV1HsthzyE4R",
    "title": "今日资本徐新专访：投资的底层逻辑",
@@ -1419,6 +1736,71 @@
    "found": "2026-11-02",
    "via": "people",
    "highlight": "今日资本徐新接受专访，分享投资的底层逻辑。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true
+  },
+  {
+   "key": "youtube:LHeQ35w9csg",
+   "url": "https://www.youtube.com/watch?v=LHeQ35w9csg",
+   "title": "【施一公】施一公先生演讲，改变你的世界观，为什么说我们了解的世界不是客观的 480P",
+   "channel": "路在脚下",
+   "channelId": "UCQS-j-kUQqo04r9rbsCbQ_g",
+   "published": "2025-07-30",
+   "summary": "感谢大家的点赞支持，一起加油！",
+   "tab": "people",
+   "person": "施一公",
+   "tags": [
+    "人物访谈",
+    "施一公"
+   ],
+   "minutes": 16,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "施一公在演讲中探讨了为什么我们了解的世界不是客观的，旨在改变观众的世界观。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true
+  },
+  {
+   "key": "bilibili:BV14hVZzsEA2",
+   "url": "https://www.bilibili.com/video/BV14hVZzsEA2",
+   "title": "圆桌派第五季1《心战》-嘉宾：马未都、许子东、邓亚萍",
+   "channel": "豆鼓蒸橙",
+   "published": "2025-05-10",
+   "summary": "",
+   "tab": "people",
+   "person": "邓亚萍",
+   "tags": [
+    "人物访谈",
+    "邓亚萍"
+   ],
+   "minutes": 73,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "马未都、许子东和邓亚萍作为嘉宾出席圆桌派第五季第一期《心战》。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true
+  },
+  {
+   "key": "youtube:KUQAJEmtfF8",
+   "url": "https://www.youtube.com/watch?v=KUQAJEmtfF8",
+   "title": "Charlie Munger: 99 Years of Investing Wisdom in 60 Minutes",
+   "channel": "Investor Center",
+   "channelId": "UC2cL3pI1H3tiozKif6A8fmA",
+   "published": "2025-04-03",
+   "summary": "Watch Charlie Munger, Vice Chairman of Berkshire Hathaway and long-time partner of Warren Buffett, in this exclusive 2020 lecture at the Redlands Forum. In this engaging session, Munger shares his profound insights on in…",
+   "tab": "people",
+   "person": "Charlie Munger",
+   "tags": [
+    "人物访谈",
+    "Charlie Munger"
+   ],
+   "minutes": 67,
+   "found": "2026-11-03",
+   "via": "people",
+   "highlight": "Charlie Munger探讨了价值投资与资本配置的方法，分享了建立心智模型网络、克服认知偏差以及保持耐心与理性的策略。",
    "kind": "method",
    "sports": false,
    "firsthand": true
@@ -1571,7 +1953,7 @@
    "url": "https://www.youtube.com/@qiuzhi2046",
    "id": "UCrC3GjeSkxXgJ2hLQ2D-m4w",
    "name": "秋芝2046",
-   "count": 2
+   "count": 3
   },
   "channel:@andrejkarpathy": {
    "url": "https://www.youtube.com/@AndrejKarpathy",
@@ -1582,11 +1964,13 @@
   "channel:@siliconvalleygirl": {
    "url": "https://www.youtube.com/@SiliconValleyGirl",
    "id": "UCiq1FIgtEK7LRAOB1JXTPig",
+   "name": "Silicon Valley Girl",
    "count": 4
   },
   "channel:@xiaojunpodcast": {
    "url": "https://www.youtube.com/@xiaojunpodcast",
    "id": "UC3Sv1JuKpbOx3csUO8FAo5g",
+   "name": "张小珺 Podcast",
    "count": 2
   },
   "channel:@cheekypint": {
@@ -1599,67 +1983,133 @@
  "people": {
   "王坚": {
    "keywords": "阿里云 城市大脑 院士 之江实验室 阿里巴巴 云栖",
-   "searched": "2026-11-02",
-   "youtube": "HTTP 429",
+   "searched": "2026-11-03",
+   "youtube": "ok",
    "bilibili": "ok"
   },
   "徐新": {
    "keywords": "今日资本 投资 京东 美团 网易严选",
-   "searched": "2026-11-02",
-   "youtube": "HTTP 429",
+   "searched": "2026-11-03",
+   "youtube": "ok",
    "bilibili": "ok"
   },
   "何超琼": {
    "keywords": "",
-   "searched": "2026-11-02",
-   "youtube": "HTTP 429",
+   "searched": "2026-11-03",
+   "youtube": "ok",
    "bilibili": "ok"
   },
   "施一公": {
    "keywords": "",
-   "searched": "",
-   "youtube": "HTTP 429",
+   "searched": "2026-11-03",
+   "youtube": "ok",
    "bilibili": "ok"
   },
   "Warren Buffett": {
    "keywords": "",
-   "searched": "",
-   "youtube": "HTTP 429",
+   "searched": "2026-11-03",
+   "youtube": "ok",
    "bilibili": "ok"
   },
   "Charlie Munger": {
    "keywords": "",
-   "searched": "",
-   "youtube": "HTTP 429",
+   "searched": "2026-11-03",
+   "youtube": "ok",
+   "bilibili": "ok"
+  },
+  "姚明": {
+   "keywords": "",
+   "searched": "2026-11-03",
+   "youtube": "ok",
+   "bilibili": "ok"
+  },
+  "邓亚萍": {
+   "keywords": "",
+   "searched": "2026-11-03",
+   "youtube": "ok",
    "bilibili": "ok"
   }
  },
  "peopleRejected": [
+  "bilibili:BV15Txu6SEbp",
+  "youtube:KVgvyeIEuFA",
+  "youtube:uMLesu20cEQ",
+  "youtube:NoYNnaiDmdI",
+  "youtube:17MF4Rggw4A",
+  "youtube:uqX93ezE-hU",
+  "youtube:0oazYqhECz4",
+  "youtube:DMO5eKfsxGU",
+  "youtube:H2H5ax8HAVc",
+  "youtube:zjPjgLgaAnk",
   "bilibili:BV1uib76CE9Z"
  ],
  "watchAdded": [],
  "news": [
   {
-   "id": "dh3lg8",
+   "id": "1uyxaml",
    "lastSeen": "2026-11-03",
-   "title": "OpenAI hires former U.S. Army Secretary Dan Driscoll for national security role",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQeFN0VmlqRTB5WmVmamcxbEpIaDQ2UHFNeG4zWURvWGtXRnZLQTI0amFSY3gyODk5RjdOSjc5SVN5U2VxLVk5Z0tqT283M0tOeUxFQjR1NmY3Q0tJc0xndl9vYVM2NDJKemhOVm9ReU9kQWNuU25QeWxYZHZDMEZtVzNUcHJHWnPSAYwBQVVfeXFMTTdUTG1Bb3pveHRyWmxCVG5oZ01Obks4bkFTUlI1YmRacHl1anZkSnYzQ0E0NjNhRktOOE96QmZ3MFd4TVNnTHJIQnBCTWhCdERTaG1xT3VVU0FTbVdTbFFTZ0tzSV9mdVJaRWEyNjloNXExQ3RSQTdwc2dmZjJ4VG5OdFZwNzl1RjQ3UFo?oc=5",
-   "source": "CNBC",
-   "domain": "cnbc.com",
+   "title": "Anthropic’s third quarter results mean IPO math and history are not on its side, analysts say",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNLXZGRmN4Mm9UUjBzdnVOMHEwVlJTNkpVZE1Odi1keFhfQm15VmdEUTBiRkdoV1l3SnpmWER6elZiYjZ2UTN2WTFoeEZOVTI0dXhwbnN5eEs2Q05IcUFyY054ME5qel93dkpQV1haWGJDbWx1dFhNQUxBYlozenB3UUVkNDYxRG5qT0JiMFNQQUN0Z1lwQm1yczlqWjlmLW9VTFNhRk9SS1VlNG9mZERQV21tVWo5Q1BueUlrcW5lZDk?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
    "published": "2026-11-03",
    "outlets": [
-    "CNBC"
+    "Fortune"
    ],
    "themes": [],
    "headlines": [
-    "OpenAI hires former U.S. Army Secretary Dan Driscoll for national security role"
+    "Anthropic’s third quarter results mean IPO math and history are not on its side, analysts say"
    ],
    "entities": [
-    "OpenAI"
+    "Anthropic"
    ],
-   "summary": "OpenAI has hired former U.S. Army Secretary Dan Driscoll for a national security role.",
-   "meaning": "This indicates closer cooperation between top AI labs and defense sectors, reflecting the growing strategic importance of AI in national security.",
+   "summary": "Analyst views indicate that Anthropic's third-quarter results suggest IPO math and history are not in its favor. Financial reports show ongoing losses despite revenue growth.",
+   "meaning": "This highlights the financial pressures and market skepticism surrounding major AI company public offerings, serving as a key benchmark for the broader AI industry's path to profitability.",
    "importance": 7
+  },
+  {
+   "id": "12nrml9",
+   "lastSeen": "2026-11-03",
+   "title": "Anthropic plans Australian share offer in IPO, CommSec says",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOemZuN3Ria3VJdnlTMFphelNDSWFHeUpvM2dVa3JHNkdUQlZuWjRvZEdWS0c5c3BVQktYc2dkYWJERnVRblgwNUZOcjFpNTBIWTgxREtFazR0emkybTFIeVpaTmVnLTZ0YUZZUUtPX1Q1bEtRSzNnVy1rMDNPdUNzQVg2QTQ3MnJCeDgyLWdudi16ZVRqVGlIWHZXR3FDTF9CZkFKa25ESXVVVFJP?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic plans Australian share offer in IPO, CommSec says"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "According to CommSec, Anthropic plans an Australian share offer as part of its upcoming IPO. This expands the geographic scope of its public market entry.",
+   "meaning": "Expanding share offerings internationally demonstrates aggressive capital-raising strategies ahead of the public debut, reflecting strong global demand for major AI assets.",
+   "importance": 6
+  },
+  {
+   "id": "1rqs2zj",
+   "lastSeen": "2026-11-03",
+   "title": "Anthropic Revenue Nears $17 Billion as IPO Looms",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUEV6SkM2MWhJMFZ3bm1hRExOUzRTTXlRZExMcHQ4ZjdjU0RFTTJLanNIUWpydlY1MjIxZXpHa0RyTGVDOGtwTVJBRjM1STFTeGFReWlfVzRIb2ZYYlNIaFdGVDJHWFpiX0VOLUtESFFCYkdRb0k1QU9KZTNZbWJYWVY2SDc0LXVYTTByeUM0aGdzYmd4XzZjRFdlVWRPdU5xZ2Q1bDdIRXE1TjB4d2ZZX3htX2lITmtZcTNMUDZ5aXBnZHRTalE?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "Bloomberg"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Revenue Nears $17 Billion as IPO Looms"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic's revenue nears $17 billion as its IPO looms. The company is actively preparing its public market debut amidst significant financial scaling.",
+   "meaning": "Reaching near $17 billion in revenue underscores the massive commercial scale top-tier AI labs are achieving, making its IPO one of the most critical general AI milestones to watch.",
+   "importance": 9
   },
   {
    "id": "18p4lp6",
@@ -1687,6 +2137,32 @@
    "summary": "Anthropic在日本为其美国大型IPO寻求高达35亿美元的资金。",
    "meaning": "显示出头部AI大厂在海外市场的融资动作与全球资本扩张步伐。",
    "importance": 6
+  },
+  {
+   "id": "dh3lg8",
+   "lastSeen": "2026-11-03",
+   "title": "OpenAI hires former US Army secretary as military seeks to expand AI use",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdVIwNmtWSjgyZ3BiQUV2akNTSzVrQnQyeTVVSEtua3BBVXpiQURSQmsyVzVwY2R3QTdOTWZER24xTTBPay0ybXl6RzBPdmtzOVdPbnR4dmtDOEliZWtyQUZwVjhtN1h4VVo4c09iVTMweVVYUmdSdjUyeEtNZXpOYXdFTk4?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "CNBC",
+    "WSJ",
+    "Financial Times"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI hires former U.S. Army Secretary Dan Driscoll for national security role",
+    "OpenAI Hires Former Army Secretary Dan Driscoll to Cybersecurity Role",
+    "OpenAI hires former US Army secretary as military seeks to expand AI use"
+   ],
+   "entities": [
+    "OpenAI"
+   ],
+   "summary": "OpenAI has hired former U.S. Army Secretary Dan Driscoll for a national security role.",
+   "meaning": "This indicates closer cooperation between top AI labs and defense sectors, reflecting the growing strategic importance of AI in national security.",
+   "importance": 7
   },
   {
    "id": "1wfiuz1",
@@ -1758,6 +2234,123 @@
    "importance": 6
   },
   {
+   "id": "jp5ozk",
+   "lastSeen": "2026-11-03",
+   "title": "Watch Elon Musk-Starlink Row: Ryanair CEO Rules Out Making Up",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeEE0eVY3emhOOGh1ZU1CU0tKNkhYRl9fd3hFaVdYM2lfTElaWHRzN0h0ZThXVWVvdk56Q1NLMG96SXpWSkVVZ040X01qTmlCQld6Z2pRY19GOVRfc0w0VUNRVmktdVphT3lkaERScXlqYWE0YTI1RWtpMjcwdndTQWRzM3RMcXM?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg.com",
+    "Bloomberg"
+   ],
+   "themes": [],
+   "headlines": [
+    "Watch Elon Musk-Starlink Row: Ryanair CEO Rules Out Making Up"
+   ],
+   "entities": [
+    "Elon Musk"
+   ],
+   "summary": "Ryanair CEO ruled out making up in the row with Elon Musk and Starlink.",
+   "meaning": "This highlights ongoing public friction between high-profile executives and tech infrastructure providers.",
+   "importance": 3
+  },
+  {
+   "id": "ehw7b2",
+   "lastSeen": "2026-11-03",
+   "title": "NYC Comptroller Steps Up Criticism of Anthropic After IPO Filing",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUGh6VXo3cER6UGw2dGZ5LUlkYUZfeHVXamJfdFlibE1BMUVWRG5yRkFfUUpQR3c3U2M0MGllTjJzUDhaSVZsd1QtMG5KQ1N2VjI5cncyS3ZXcnhTYlBra3RxU3IxOGtxQmhocGJha184LXNxRGZKaVRLYnJ4OVVBa3FmTUQ0ajZLMFFNY0o4UWxodnRibjNXbUo0dG14dHV2RkFrdk1QMVdHTHpnUWpXWmp1NXliUQ?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg.com",
+    "Bloomberg"
+   ],
+   "themes": [],
+   "headlines": [
+    "NYC Comptroller Steps Up Criticism of Anthropic After IPO Filing"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "The NYC Comptroller stepped up criticism of Anthropic following its IPO filing.",
+   "meaning": "Regulatory and public stakeholder scrutiny over major AI labs is intensifying as they approach public markets.",
+   "importance": 5
+  },
+  {
+   "id": "ii6ph0",
+   "lastSeen": "2026-11-03",
+   "title": "Anthropic Braces for Pre-IPO Election Impact as AI Debate Rages",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdHl6bTlzTEs0Zkt0UkQ5NGhDUXozSEtSbHFhek0xRDlPZUZ5X2JwUmpMcDl2dk5BQVF3QVhOTDhTTTZaU0FRcGJOSWNja1VrOEFzdHZzb2c5WlFodU9sRHJhWmhudDlYRXM3YmkwcG5tbU16b3RVMW1IM1k5cko1dG9YTElTSUZ3MmEwX1lqb21VVXhXX3BOTXNpcEl2S2xvajY5REtQT3YtYnp3VDJuTTloTlg?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg.com",
+    "Bloomberg"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Braces for Pre-IPO Election Impact as AI Debate Rages"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic is bracing for pre-IPO election impacts amidst ongoing AI debates.",
+   "meaning": "Macro and political factors are increasingly intersecting with major AI company milestones.",
+   "importance": 5
+  },
+  {
+   "id": "17br6v7",
+   "lastSeen": "2026-11-03",
+   "title": "Watch Anthropic Revenue Surges Ahead of IPO",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWTF0enloM1ZxYmtfcnZ6b0dsSjhJNnJpOHdNM01SNGdIZDhJUjBITjE1a29ZakRFSmdlQ3FDUWRyUlVneWNNcl9jLVdvNTFvdC1fSkhBSXY4TzhHVkRicDdZU3NncmxhdXVJYWtYczVIVlhlV3pBN01qRkpsN1I5UjBySGg?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Business Insider",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill",
+    "Watch Anthropic Revenue Surges Ahead of IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill.",
+   "meaning": "It underscores the high-revenue yet incredibly capital-intensive nature of scaling frontier AI models, offering rare financial transparency into the industry's leaders.",
+   "importance": 8
+  },
+  {
+   "id": "15rm220",
+   "lastSeen": "2026-11-03",
+   "title": "Anthropic reveals $900bn AI spending commitments ahead of IPO",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeHIxTTNxemhYRmRhV2dJOXlhc1ZBdW05MVp2MkFWdy02SVhIdzZqaWplcXl4SHQ0eGc4RFlaRlNwVWw2d2NQUjJucnFseEJ6ZUdpOUloSG9HOXczOGxmRGhuRk9XZ2VYTFNVUHJPQXltZ0d4S3pVTnZMOElUS0lXcGxBT3M?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Financial Times",
+    "Forbes"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic reveals $900bn AI spending commitments ahead of IPO",
+    "Anthropic Hit $17 Billion In Third Quarter Revenue Ahead Of IPO—But AI Spending Commitments Hit $900 Billion"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic reveals $900 billion AI spending commitments ahead of its IPO.",
+   "meaning": "The staggering infrastructure spending commitment signals that the compute race for advanced AI capabilities remains relentlessly aggressive.",
+   "importance": 8
+  },
+  {
    "id": "8200cb",
    "lastSeen": "2026-11-02",
    "title": "Elon Musk Tests What Nearly Half a Billion Dollars Can Buy in the Midterms",
@@ -1823,28 +2416,6 @@
    "summary": "在旧金山的BART危机中，AI、税收和房地产发生了碰撞。",
    "meaning": "将AI与实体经济、城市治理及房产AI方向紧密结合，展示了技术在特定场景中的交叉影响。",
    "importance": 8
-  },
-  {
-   "id": "jp5ozk",
-   "lastSeen": "2026-11-02",
-   "title": "Watch Elon Musk-Starlink Row: Ryanair CEO Rules Out Making Up",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeEE0eVY3emhOOGh1ZU1CU0tKNkhYRl9fd3hFaVdYM2lfTElaWHRzN0h0ZThXVWVvdk56Q1NLMG96SXpWSkVVZ040X01qTmlCQld6Z2pRY19GOVRfc0w0VUNRVmktdVphT3lkaERScXlqYWE0YTI1RWtpMjcwdndTQWRzM3RMcXM?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-11-02",
-   "outlets": [
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "headlines": [
-    "Watch Elon Musk-Starlink Row: Ryanair CEO Rules Out Making Up"
-   ],
-   "entities": [
-    "Elon Musk"
-   ],
-   "summary": "Ryanair CEO ruled out making up in the row with Elon Musk and Starlink.",
-   "meaning": "This highlights ongoing public friction between high-profile executives and tech infrastructure providers.",
-   "importance": 3
   },
   {
    "id": "1mm280k",
@@ -1935,50 +2506,6 @@
    "importance": 8
   },
   {
-   "id": "ehw7b2",
-   "lastSeen": "2026-11-02",
-   "title": "NYC Comptroller Steps Up Criticism of Anthropic After IPO Filing",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUGh6VXo3cER6UGw2dGZ5LUlkYUZfeHVXamJfdFlibE1BMUVWRG5yRkFfUUpQR3c3U2M0MGllTjJzUDhaSVZsd1QtMG5KQ1N2VjI5cncyS3ZXcnhTYlBra3RxU3IxOGtxQmhocGJha184LXNxRGZKaVRLYnJ4OVVBa3FmTUQ0ajZLMFFNY0o4UWxodnRibjNXbUo0dG14dHV2RkFrdk1QMVdHTHpnUWpXWmp1NXliUQ?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-11-02",
-   "outlets": [
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "headlines": [
-    "NYC Comptroller Steps Up Criticism of Anthropic After IPO Filing"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "The NYC Comptroller stepped up criticism of Anthropic following its IPO filing.",
-   "meaning": "Regulatory and public stakeholder scrutiny over major AI labs is intensifying as they approach public markets.",
-   "importance": 5
-  },
-  {
-   "id": "ii6ph0",
-   "lastSeen": "2026-11-02",
-   "title": "Anthropic Braces for Pre-IPO Election Impact as AI Debate Rages",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdHl6bTlzTEs0Zkt0UkQ5NGhDUXozSEtSbHFhek0xRDlPZUZ5X2JwUmpMcDl2dk5BQVF3QVhOTDhTTTZaU0FRcGJOSWNja1VrOEFzdHZzb2c5WlFodU9sRHJhWmhudDlYRXM3YmkwcG5tbU16b3RVMW1IM1k5cko1dG9YTElTSUZ3MmEwX1lqb21VVXhXX3BOTXNpcEl2S2xvajY5REtQT3YtYnp3VDJuTTloTlg?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-11-02",
-   "outlets": [
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic Braces for Pre-IPO Election Impact as AI Debate Rages"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic is bracing for pre-IPO election impacts amidst ongoing AI debates.",
-   "meaning": "Macro and political factors are increasingly intersecting with major AI company milestones.",
-   "importance": 5
-  },
-  {
    "id": "1v3vxw0",
    "lastSeen": "2026-11-02",
    "title": "Syndigo Signs Multi-Year Strategic Partnership Agreement with Microsoft to Develop and Co-Sell AI-Powered Commerce Solutions",
@@ -2045,48 +2572,70 @@
    "importance": 6
   },
   {
-   "id": "17br6v7",
+   "id": "hi1b2s",
    "lastSeen": "2026-11-03",
-   "title": "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaUtiN1hwUXNHOU5wQ1V5Qll2TjF0SXJIWjR1aG04TzBtMkh4Qkd1OVB6VlFmLXlEMkRndTFYMzlxOXhnX0M0bE12Sl8wMFBoVWNJV21ubTh2dlVMR1VPeHVRTHVTN05zallIZHJPZXN6SHIxYU9yM013dEJObVc2bGFFRWFrZ29ydlJfWWROQ0RfNkV2Yi00?oc=5",
-   "source": "Business Insider",
-   "domain": "businessinsider.com",
+   "title": "Anthropic posts $17B quarterly revenue but losses continue in fresh IPO filing",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOa09ReEZKQUZMUjIzWWo4RjlIdU9QWGpYZ3dlV0ZYRmo4WWlPR0tRTzgyUUR4Q0VHdGIzakJid3lRSEhBQmJTaVZQS2dXQ2NEMDhUY21tT2YwT1ZiazZlNmZ2cXNwOTkycUYxWksxbk5oSUMycXVxaHV3QTBIak1haWx0Uk84SHV1LTh1cU9rMGhtRGU2Q1E?oc=5",
+   "source": "AP News",
+   "domain": "apnews.com",
    "published": "2026-11-02",
    "outlets": [
-    "Business Insider"
+    "AP News"
    ],
    "themes": [],
    "headlines": [
-    "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill"
+    "Anthropic posts $17B quarterly revenue but losses continue in fresh IPO filing"
    ],
    "entities": [
     "Anthropic"
    ],
-   "summary": "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill.",
-   "meaning": "It underscores the high-revenue yet incredibly capital-intensive nature of scaling frontier AI models, offering rare financial transparency into the industry's leaders.",
+   "summary": "A fresh IPO filing shows Anthropic posting $17 billion in quarterly revenue while losses continue. The data was released in its latest prospectus update.",
+   "meaning": "The juxtaposition of massive revenue with ongoing losses illustrates the high-cost, high-reward nature of scaling frontier AI models, offering vital insight into industry-wide economics.",
    "importance": 8
   },
   {
-   "id": "15rm220",
+   "id": "6k8ryl",
    "lastSeen": "2026-11-03",
-   "title": "Anthropic reveals $900bn AI spending commitments ahead of IPO",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeHIxTTNxemhYRmRhV2dJOXlhc1ZBdW05MVp2MkFWdy02SVhIdzZqaWplcXl4SHQ0eGc4RFlaRlNwVWw2d2NQUjJucnFseEJ6ZUdpOUloSG9HOXczOGxmRGhuRk9XZ2VYTFNVUHJPQXltZ0d4S3pVTnZMOElUS0lXcGxBT3M?oc=5",
-   "source": "Financial Times",
-   "domain": "ft.com",
+   "title": "Anthropic releases amended IPO prospectus with third-quarter financials",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdzN3SjJ4TW80RjJSendoQnBrN0FwazUyWTI5Ukk0X25NdkdSM19BZndZSDJxUm1ZZU1ER1phZGJ4SFh1ZXBoSnNGR1RqRjU1MDMzLWdxVGQwYTEwbnBBX3FMSzVJRHR5a01OQUNRM1l0X0laQkZ2bi1fTDVoMHlCMWNGUWk4a0Q5RThjOU00ODRFdGFOWjZLX0hSRU55NmhjbHhjcXlRd0lzV0kwTWU2QXg5b1g?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
    "published": "2026-11-02",
    "outlets": [
-    "Financial Times"
+    "CNBC"
    ],
    "themes": [],
    "headlines": [
-    "Anthropic reveals $900bn AI spending commitments ahead of IPO"
+    "Anthropic releases amended IPO prospectus with third-quarter financials"
    ],
    "entities": [
     "Anthropic"
    ],
-   "summary": "Anthropic reveals $900 billion AI spending commitments ahead of its IPO.",
-   "meaning": "The staggering infrastructure spending commitment signals that the compute race for advanced AI capabilities remains relentlessly aggressive.",
-   "importance": 8
+   "summary": "Anthropic released an amended IPO prospectus featuring its third-quarter financials. The filing details the latest revenue and loss figures ahead of the offering.",
+   "meaning": "Updated financial prospectuses provide transparent windows into the financial health of leading AI foundation model providers as they transition to public entities.",
+   "importance": 6
+  },
+  {
+   "id": "z6i4ub",
+   "lastSeen": "2026-11-03",
+   "title": "Watch Robinhood in ‘Food Fight’ for Anthropic IPO Retail Allocation",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVWpPX3U3SExlRzNIaFp2NExKQUFRZzdJZDlrendJQXc5QTVtVEkxdGFZa0NDN0RRdmpmdk1lb3o4aUdhRW54R0xnX3AxR09tYS1OQklMenJyNXlObnpvUlJtRnVjYjdTNWtvcjZWWVdDSEJSRUgxc3BaLXBDdmhPYm1ETGdHbFhZdjZPSkhONnlOOUZEeTBFYjBvODJfeDN0ZjFONTBLbTdkQ2c?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg"
+   ],
+   "themes": [],
+   "headlines": [
+    "Watch Robinhood in ‘Food Fight’ for Anthropic IPO Retail Allocation"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Robinhood is involved in a competition for retail allocation of the Anthropic IPO. Retail investors are vying for access to the high-profile AI offering.",
+   "meaning": "Retail platform competition for AI IPO shares shows unprecedented public demand to invest directly in foundational AI technology companies.",
+   "importance": 7
   },
   {
    "id": "1whwoh9",
@@ -3199,7 +3748,7 @@
   },
   {
    "id": "17br6v7",
-   "lastSeen": "2026-11-02",
+   "lastSeen": "2026-11-03",
    "title": "Anthropic's loss shrinks, revenue jumps ahead of blockbuster IPO",
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPalN1b2NwcllWRkRjRUNmOVBjSDMxWDNzdjZIclhDNTdMMFlaVUx2eWN1U19acllfTk0xX0JIbkJma21jVDFhZUR1czFjbVdLbThjMHVQZ0F4MkFvNmc0cURPN05FMkE3VFNyMTktbmNzWVIxN3c1YVFhSXpBTmZSQk1DZ013aDVRcXE5OEplekFkZWFJbmQxUEhDSVJ3RVVrZWJUd2ZRYWRfWUJhMVMycEZRRk8?oc=5",
    "source": "Reuters",
@@ -3211,7 +3760,8 @@
     "Bloomberg.com",
     "Reuters",
     "Forbes",
-    "Financial Times"
+    "Financial Times",
+    "Bloomberg"
    ],
    "themes": [],
    "headlines": [
@@ -3915,6 +4465,30 @@
    "importance": 9
   },
   {
+   "id": "1otwpkx",
+   "lastSeen": "2026-11-03",
+   "title": "What to Know About the Anthropic IPO",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVlc5a0lMc2prYk5VbWQ1bk5UMXc4RzdQcEZtaThpbVI2bFJ4VzNKNFNQT0FhLWJtb1BuR0ZKZXUwMFViMTVUWEJLRmcwdXNFVmFZQnpLUERjN0hGMmRUbWVDUFU4R1VfUUozMmxIQ3d1eVNnb1hVMFlLQWswVVlGb2ZzYy1iV1lrYUN5ZWFnNE9JY19ZeEFPX183WC1wLW1aYTNTYy1NUmt3VHhzUTBxWkZjc3Y?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Business Insider",
+    "Bloomberg"
+   ],
+   "themes": [],
+   "headlines": [
+    "What Smart People Are Saying About Anthropic's IPO Paperwork",
+    "What to Know About the Anthropic IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "各界知名人士对Anthropic的IPO文件展开讨论与评价。",
+   "meaning": "反映出资本市场与行业专家对AI头部企业上市及未来发展路径的高度关切。",
+   "importance": 5
+  },
+  {
    "title": "为什么黄仁勋帮不了欧洲人工智能",
    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1UQzdtai1OYjhueW1oZkZOdWJielpLYVhtRVhzWjFZV0o1MmNnWGtwa3E0eFBER3JwVnZFcXZlS2ktSkNvOWNRYlBiZUVZQ3BwY0Zr?oc=5",
    "source": "第一财经",
@@ -4283,28 +4857,6 @@
    "importance": 8
   },
   {
-   "id": "1otwpkx",
-   "lastSeen": "2026-11-03",
-   "title": "What Smart People Are Saying About Anthropic's IPO Paperwork",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMV9KRlFKc285NkN5VDFQcTd5NWFWajJQM0NHaUFGTjU5V05NX1lrNDFwaTIzVnktYXZHM24xVXJUV000SmJXMGdJZHhUTmFFdHItZGF3OHZfLVRmOU4tMm5EcEV4Y25ZM0RIOHpDeDI4aERqVWx2SHFPWE85WGsyaU1JOE9aTzRmbGs3MVp3?oc=5",
-   "source": "Business Insider",
-   "domain": "businessinsider.com",
-   "published": "2026-10-27",
-   "outlets": [
-    "Business Insider"
-   ],
-   "themes": [],
-   "headlines": [
-    "What Smart People Are Saying About Anthropic's IPO Paperwork"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "各界知名人士对Anthropic的IPO文件展开讨论与评价。",
-   "meaning": "反映出资本市场与行业专家对AI头部企业上市及未来发展路径的高度关切。",
-   "importance": 5
-  },
-  {
    "id": "7ns04d",
    "lastSeen": "2026-11-03",
    "title": "Anthropic’s IPO May See Australia’s Biggest Lender Sitting on Multi-Billion Windfall",
@@ -4369,6 +4921,28 @@
    "summary": "Moonshot在搞砸Kimi K3.1 Pro发布后公开道歉并恢复了用户配额。",
    "meaning": "反映出中国大模型厂商在产品迭代和用户运营上面临的压力与应对机制，值得中国AI赛道观察。",
    "importance": 7
+  },
+  {
+   "id": "16aa40y",
+   "lastSeen": "2026-11-03",
+   "title": "Elon Musk’s AI Odyssey review – the dullest, most pointless riposte possible to Christopher Nolan’s brilliant epic",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPc3dBazFsb1RuR0tNZllXdEJOS1RvUDc4ZGhFclVLbTZCeWZKQzY1aWNXU2tnNEdoS2E0RWR3NThGcTZyN1NwZjBFOXduX3V6V29acTczTFA4SGFSa01QWUw1eW5LeWt1a2M4QWg0RmkwZldIbThKd2FnT0ZZb1BmNXh0Q1pvbDN6SWVTUjhTVkc3V2RXQ082N2p3?oc=5",
+   "source": "The Guardian",
+   "domain": "theguardian.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "The Guardian"
+   ],
+   "themes": [],
+   "headlines": [
+    "Elon Musk’s AI Odyssey review – the dullest, most pointless riposte possible to Christopher Nolan’s brilliant epic"
+   ],
+   "entities": [
+    "Elon Musk"
+   ],
+   "summary": "Reviews criticize 'Elon Musk’s AI Odyssey', calling it a dull response to cinematic epics. The work touches on Elon Musk and AI themes.",
+   "meaning": "While capturing cultural commentary on prominent AI figures, this holds lower direct relevance for readers focused on technical or industrial AI advancements.",
+   "importance": 2
   },
   {
    "title": "AI Enters the Courtroom as Dubai Rethinks How Lawyers Train and Judges Work",

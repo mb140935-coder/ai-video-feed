@@ -1,4 +1,10 @@
 [
  { "url": "https://www.youtube.com/watch?v=oOpF0ZXSXuk", "field": "health", "note": "Silicon Valley Girl 采访 Stanford 医生：普通人怎么向 AI 问病情、怎么用 AI 看自己的健康数据。" },
- { "url": "https://www.youtube.com/watch?v=iJfF_VC10tI", "field": "health", "note": "Silicon Valley Girl 采访行医 40 年的 UCSF 医生：病人怎么问 AI、全身扫描值不值得做、医疗 AI 的炒作和现实。" }
+ { "url": "https://www.youtube.com/watch?v=iJfF_VC10tI", "field": "health", "note": "Silicon Valley Girl 采访行医 40 年的 UCSF 医生：病人怎么问 AI、全身扫描值不值得做、医疗 AI 的炒作和现实。" },
+ { "url": "https://www.youtube.com/watch?v=eSGqW_VMMXQ", "field": "health", "note": "Google 官方：心脏病学家、《超级衰老》作者 Eric Topol 与 Google 的 Josh Woodward 谈 AI 怎样帮普通人提前预防疾病。" },
+ { "url": "https://www.youtube.com/watch?v=OdbUmxhCWlY", "field": "health", "note": "Stanford 医学院：Eric Topol 讲 AI 和下一阶段的疾病预防，个人健康数据怎么用起来。" },
+ { "url": "https://www.youtube.com/watch?v=zmPW0PqZIlY", "field": "medical", "note": "UCSF 医学系炉边对谈：2026 年医疗 AI 从新鲜事变成日常，医院和医生实际怎么在用。" },
+ { "url": "https://www.youtube.com/watch?v=mTnoAM-BvUs", "field": "medical", "note": "No Priors 访谈 OpenEvidence 创始人 Daniel Nadler：医生们大量在用的 AI 临床问答是怎么做出来的。" },
+ { "url": "https://www.youtube.com/watch?v=IntQVdKf4rU", "field": "medical", "note": "CareTalk 访谈 Abridge CEO Shiv Rao：AI 自动写病历，已进入 300 家医疗系统。" },
+ { "url": "https://www.youtube.com/watch?v=9DyPz7FCHVQ", "field": "medical", "note": "Isomorphic Labs（DeepMind 的 AI 制药公司）总裁 Max Jaderberg：AI 能不能攻克所有疾病。" }
 ]

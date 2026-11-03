@@ -87,6 +87,7 @@
     .appearance-preview h2 { margin: 0; max-width: 310px; font-size: 20px; line-height: 1.35; }
     .appearance-preview p { margin: 0; color: var(--text-2); font-size: 12px; line-height: 1.5; }
     .appearance-open { display: inline-flex; align-items: center; min-height: 44px; margin-top: 4px; border-radius: 999px; padding: 0 16px; background: var(--text); color: var(--surface); font-size: 12px; font-weight: 700; text-decoration: none; }
+    .ad-mute-note { position: absolute; z-index: 2; top: 8px; left: 12px; border-radius: 8px; background: #000c; padding: 5px 8px; color: #fff; font-size: 11px; pointer-events: none; }
     .tap-note { position: absolute; z-index: 1; bottom: 8px; right: 12px; border-radius: 8px; background: #0009; padding: 5px 8px; color: #ddd; font-size: 10px; pointer-events: none; }
     .details { position: absolute; inset: calc(42% + 86px) 20px 20px; display: flex; flex-direction: column; gap: 8px; }
     .tags { display: flex; gap: 7px; flex-wrap: wrap; }
@@ -975,6 +976,43 @@
         });
         players.set(frame.id, player);
       };
+
+      // Ads mute themselves, by guess: YouTube's player API says nothing about ads, but while one runs the video's
+      // own clock stops (or the player reports another video) though the player says it is playing. After
+      // AD_STALL_MS of that the player is muted, with a note on the card; sound comes back once the clock moves
+      // again. A player the viewer muted is left alone. Long buffering can look the same and mute it briefly.
+      const AD_STALL_MS = 1500;
+      const adWatch = new Map();
+      setInterval(() => {
+        players.forEach((player, playerId) => {
+          const frame = document.getElementById(playerId);
+          if (!frame || !player.getCurrentTime) return;
+          const watch = adWatch.get(playerId) || { time: -1, since: Date.now(), muted: false };
+          adWatch.set(playerId, watch);
+          const running = ['playing', 'buffering'].includes(frame.dataset.playState);
+          const time = player.getCurrentTime();
+          const otherVideo = player.getVideoData?.()?.video_id && player.getVideoData().video_id !== frame.dataset.videoId;
+          if (!running) {
+            watch.time = time;
+            watch.since = Date.now();
+            return;
+          }
+          if (Math.abs(time - watch.time) > 0.2 && !otherVideo) {
+            watch.time = time;
+            watch.since = Date.now();
+            if (watch.muted) {
+              watch.muted = false;
+              player.unMute?.();
+              frame.parentElement.querySelector('.ad-mute-note')?.remove();
+            }
+            return;
+          }
+          if (watch.muted || player.isMuted?.() || Date.now() - watch.since < AD_STALL_MS && !otherVideo) return;
+          watch.muted = true;
+          player.mute?.();
+          makeText(frame.parentElement, 'span', 'ad-mute-note', '🔇 像是广告，先静音');
+        });
+      }, 500);
 
       const initializeFrames = (root = document) => {
         root.querySelectorAll('iframe[data-video-id]').forEach(frame => {

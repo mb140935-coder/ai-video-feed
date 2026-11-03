@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T12:05:23.413Z",
+ "updated": "2026-11-03T19:31:09.549Z",
  "items": [
   {
    "key": "youtube:JdPvoQrQJDI",
@@ -18,7 +18,8 @@
    "found": "2026-11-03",
    "highlight": "来自Microsoft的Carina Negreanu接受Artificial Lawyer采访，介绍了Copilot for Legal的定位、核心工作流与技能、模型选择以及在法律科技生态中的应用。",
    "kind": "product",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:i3sLTcgQe7c",
@@ -37,7 +38,70 @@
    "found": "2026-11-03",
    "highlight": "分享低成本制作爆款AI短剧的四招方法，帮助合理利用时间和积分。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
+  },
+  {
+   "key": "youtube:sHHYVvG_C4Q",
+   "url": "https://www.youtube.com/watch?v=sHHYVvG_C4Q",
+   "title": "Wharton Entrepreneurship Professor: What I Push My Students to Build Now That They Have AI",
+   "channel": "Silicon Valley Girl",
+   "channelId": "UCiq1FIgtEK7LRAOB1JXTPig",
+   "published": "2026-11-03",
+   "summary": "AI can draft most of your work in seconds. But if you only fix 10% of what it writes, what are you actually losing? In this episode, I talked to Ethan Mollick, a Wharton professor of entrepreneurship and innovation who c…",
+   "about": "Marina Mogilko（Silicon Valley Girl）采访 AI 从业者和研究者，话题偏职业与日常使用。",
+   "tab": "appearances",
+   "tags": [
+    "关注频道"
+   ],
+   "minutes": 54,
+   "found": "2026-11-03",
+   "highlight": "沃顿商学院创业与创新教授 Ethan Mollick 讨论了在拥有 AI 的时代如何管理 AI 智能体、保留个人思考、亲自动手撰写初稿以及 AI 时代的入门级工作与品味问题。",
+   "kind": "method",
+   "sports": false,
+   "field": "none"
+  },
+  {
+   "key": "youtube:QsL2BIvRJI8",
+   "url": "https://www.youtube.com/watch?v=QsL2BIvRJI8",
+   "title": "The company building America’s uranium supply from scratch",
+   "channel": "Cheeky Pint",
+   "channelId": "UCXi7Hg2nSB40ujzM2CMtF-Q",
+   "published": "2026-11-03",
+   "summary": "Scott Nolan, Co-Founder and CEO of General Matter, joins John for a pint to discuss the engineering, economics, and geopolitics behind uranium enrichment. Scott breaks down why advanced reactors can't scale without High-…",
+   "about": "你手动关注的频道：Cheeky Pint。",
+   "tab": "appearances",
+   "tags": [
+    "你关注的频道"
+   ],
+   "minutes": 59,
+   "found": "2026-11-03",
+   "highlight": "General Matter 联合创始人兼 CEO Scott Nolan 讨论了铀浓缩背后的工程学、经济学与地缘政治，分析了高丰度低浓缩铀（HALEU）的重要性以及在美国本土建设设施以替代俄罗斯进口的计划。",
+   "kind": "judgment",
+   "sports": false,
+   "field": "none"
+  },
+  {
+   "key": "youtube:TjPPIf-M6KE",
+   "url": "https://www.youtube.com/watch?v=TjPPIf-M6KE",
+   "title": "Sam Altman On AI Revolution, Superintelligence & Future Of Humanity | FO583 Raj Shamani",
+   "channel": "Raj Shamani",
+   "channelId": "UCzwCEE_PchiBULMnAJqhGVg",
+   "published": "2026-11-03",
+   "summary": "",
+   "about": "Sam Altman：OpenAI CEO。",
+   "tab": "appearances",
+   "tags": [
+    "人物新视频",
+    "Sam Altman"
+   ],
+   "minutes": 68,
+   "found": "2026-11-03",
+   "via": "person",
+   "highlight": "OpenAI CEO Sam Altman 在访谈中讨论了 OpenAI 的早期发展、算力赌注、非共识下注、发布 ChatGPT 的决策以及 AI 对科学发现和未来人类社会的影响。",
+   "kind": "judgment",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:-GKLZWEq-0c",
@@ -56,7 +120,8 @@
    "found": "2026-11-02",
    "highlight": "Ajelix 的 COO 兼联合创始人 Agnese Jaunošāne 分享了他们如何在没有营销预算的情况下，通过“AI + Excel”的第一性原理 SEO 和产品迭代，在没有广告支持的情况下实现 35 万注册用户的有机 SaaS 增长。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:mW6cCpcIV_0",
@@ -77,7 +142,8 @@
    "via": "person",
    "highlight": "Bloomberg Daybreak Europe 节目涵盖了全球市场新闻，今天的嘉宾包括 Leverage Shares 高级研究分析师 Violeta Todorova 和 Ryanair CEO Michael O’Leary。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:bJBEFzlKPoQ",
@@ -96,7 +162,8 @@
    "found": "2026-11-03",
    "highlight": "Legora CTO Jacob Lauritzen探讨了在无法查看客户数据的情况下如何构建和测试法律AI代理，以及模型在法律工作中的应用和工程实践。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:6ck6Sp_yQro",
@@ -117,7 +184,8 @@
    "via": "person",
    "highlight": "Yann LeCun、Yoshua Bengio 和 Geoffrey Hinton 共同讲解了深度学习的基本原理，探讨了多层神经网络如何通过反向传播算法驱动的梯度下降从原始数据中学习表示。内容涵盖了卷积神经网络、分布式表示以及循环神经网络等主题。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:KM3VQZKjpiY",
@@ -136,7 +204,8 @@
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
    "highlight": "Arca 的 AI 负责人 Aman Singh 与 Latent Space 编审 Richard MacManus 一起探讨了 Arca 如何构建一个 AI 原生的财富管理公司。Singh 解释了 Arca 的架构（包括自定义 harness 和持久记忆），以及他们如何运行跨越数天的智能体工作流。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:v-d1WTqIULs",
@@ -155,7 +224,8 @@
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
    "highlight": "OpenAI 的金融服务负责人 Joseph Kim 与 swyx 和 Richard 讨论了在通用模型之上构建金融 AI 的决策过程。内容涵盖将金融推理训练到共享模型中、连接市场数据以及构建金融专业人士可以审查和信任的工作流。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:g5Witsq_KLY",
@@ -175,8 +245,9 @@
    "found": "2026-11-01",
    "via": "person",
    "highlight": "Core Automation 联合创始人兼 CEO、前 OpenAI 研究副总裁 Jerry Tworek 探讨了 AI 推理、智能体以及如何超越常规预训练转向持续学习。他分享了构建能够解决日益复杂问题的系统以及使用智能体自动化 AI 研究的愿景。",
-   "kind": "judgment",
-   "sports": false
+   "kind": "method",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:x08qttt_CxY",
@@ -197,7 +268,8 @@
    "via": "person",
    "highlight": "部长 Evan Solomon 与 Cohere 的 Aidan Gomez 及 AI 研究员 Joëlle Pineau 共同探讨了如何构建值得信赖的 AI、将研究转化为机遇，以及加拿大在保持自主选择能力的同时如何在竞争中发展。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:lR1Lb7_-BLY",
@@ -218,7 +290,8 @@
    "via": "person",
    "highlight": "Tim Dillon在万圣节特别节目中对Elon Musk和Pete Hegseth进行了幽默的讽刺和政治评论。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:vFOnDsy58NU",
@@ -237,7 +310,8 @@
    "channelId": "UCiq1FIgtEK7LRAOB1JXTPig",
    "highlight": "哈佛商学院教授 Karim R. Lakhani 与主持人探讨了 AI 如何改变我们的工作方式，并分享了人与 AI 协作的三种方式：赛博格、半人马和自我自动化者。讨论还涉及如何通过 AI 建立真正的专业知识以及如何培养判断力和品味。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:PFIWtV78_oU",
@@ -256,7 +330,8 @@
    "channelId": "UCipPA-ZHX6UYGH_Iyti1-Jw",
    "highlight": "Alibaba Cloud 推出了 AgentCore，探讨了工作原型与可在生产环境中运行的智能体之间的差距，以及企业在将智能体从实验推向真实业务工作流时所面临的挑战。",
    "kind": "product",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:EZcWEsMuLb4",
@@ -275,7 +350,8 @@
    "channelId": "UCSI7h9hydQ40K5MJHnCrQvw",
    "highlight": "Serval 联合创始人兼 CEO Jake Stauch 与 Sarah Guo 和 Elad Gil 探讨了将代码生成智能体交到企业 IT 团队手中所带来的变革。他解释了 Serval 如何直接挑战 ServiceNow，并讨论了确定性审批、审计追踪以及企业软件的未来。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:iMsUcCYNKqY",
@@ -294,7 +370,8 @@
    "found": "2026-11-01",
    "highlight": "OpenAI CEO Sam Altman 与 John 一起探讨了模型如何发现关键的 PHP 漏洞、测试时计算如何解锁海量智能体集群，以及沙盒化超人类模型仍是一个未解的安全难题。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:d3a7Jw9s3yc",
@@ -315,7 +392,8 @@
    "via": "person",
    "highlight": "Nvidia CEO Jensen Huang 讨论了人工智能和机器人技术，并就人类生存所涉及的抽象世界和物理世界发表了看法。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:aeIY7Q0iebw",
@@ -336,7 +414,8 @@
    "via": "person",
    "highlight": "Microsoft AI的CEO Mustafa Suleyman在访谈中探讨了AI对人类工作、医学、能源和教育的变革，并警告AI意识可能带来的威胁。他还回顾了与Anthropic的分歧以及对超级智能的看法。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:ncoMBc-oj_8",
@@ -357,7 +436,8 @@
    "via": "person",
    "highlight": "NVIDIA创始人兼CEO Jensen Huang在哈萨克斯坦阿斯塔纳出席炉边谈话，与副总理兼数字化发展部部长Zhaslan Madiyev共同探讨了AI的未来、Physical AI的发展以及能源与计算基础设施。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:zHG6sAss_kE",
@@ -376,7 +456,8 @@
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
    "highlight": "Supabase联合创始人Paul Copplestone（CEO）和Ant Wilson（CTO）做播客，分享了该开源Postgres平台如何成长为AI构建应用的首选后端及相关技术特性。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:MRQTlwcW-aQ",
@@ -395,7 +476,8 @@
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
    "highlight": "Anthropic的工程负责人Katelyn Lesse与产品负责人Angela Jiang探讨了Anthropic如何构建Claude Managed Agents的架构、处理沙箱与凭证安全，以及使用Rust重构Messages API等技术细节。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:3Lc0xfW4r9Q",
@@ -414,7 +496,8 @@
    "found": "2026-11-01",
    "highlight": "联合航空（United Airlines）CEO Scott Kirby在访谈中分析了航空商业模式、疫情期间的机队扩张策略、引入SpaceX Starlink以及航空交通管制瓶颈等行业话题。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:M_Dw4r-y1xM",
@@ -435,7 +518,8 @@
    "via": "person",
    "highlight": "在Oracle AI World活动中，Oracle联席CEO Clay Magourk与OpenAI CEO Sam Altman同台演讲，宣布Oracle扩大与OpenAI的合作，将ChatGPT和Codex整合进软件应用中。",
    "kind": "product",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:1OdoSzfUkec",
@@ -456,7 +540,8 @@
    "via": "person",
    "highlight": "Anthropic的创始人兄妹Dario和Daniela Amodei在访谈中讲述了他们追求更具人性、注重安全与伦理的AI发展路线，以及Claude的安全性与评估机制。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:ZAzWPE9CItg",
@@ -475,7 +560,8 @@
    "channelId": "UCSHZKyawb77ixDdsGog4iWA",
    "highlight": "数学家Ankur Moitra、Steven Brunton和Alex Kontorovich做客Lex Fridman播客，探讨AI在Navier-Stokes、黎曼猜想和复杂性理论等数学难题上取得突破的关键时刻。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:vhPCo-8K78U",
@@ -494,7 +580,8 @@
    "channelId": "UCxBcwypKK-W3GHd_RZ9FZrQ",
    "highlight": "Leash Biosciences联合创始人Ian Quigley在播客中介绍了Minos框架及其科学智能体在药物化学和实验世界中的应用与表现。",
    "kind": "product",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:24XUcWhqY_4",
@@ -515,7 +602,8 @@
    "via": "person",
    "highlight": "微软 (Microsoft) CEO Satya Nadella 在节目中探讨了开源与闭关模型的竞争，以及为什么企业需要拥有自己的智能。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:iJfF_VC10tI",
@@ -525,8 +613,9 @@
    "published": "2026-10-23",
    "summary": "He has practiced medicine for 40 years, and he still takes shifts in the hospital. I asked him what I actually want to know as a patient and a mom. I put 6 years of my labs and my 23andMe data into one AI setup. Is that …",
    "about": "Marina Mogilko（Silicon Valley Girl）采访 AI 从业者和研究者，话题偏职业与日常使用。",
-   "tab": "appearances",
+   "tab": "curated",
    "tags": [
+    "个人健康 AI · 最高优先级",
     "关注频道"
    ],
    "found": "2026-11-01",
@@ -534,7 +623,9 @@
    "channelId": "UCiq1FIgtEK7LRAOB1JXTPig",
    "highlight": "来自 UCSF 的资深医生在节目中讨论了 AI 将如何改变每一个医疗专科，包括患者如何向聊天机器人提问、全景扫描以及医疗 AI 的炒作与现实。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "picked": true,
+   "field": "health"
   },
   {
    "key": "youtube:6VprwfSc4Xk",
@@ -553,7 +644,8 @@
    "channelId": "UCSI7h9hydQ40K5MJHnCrQvw",
    "highlight": "Cloudflare CTO Dane Knecht 与 Sarah Guo 在 No Priors 节目中探讨了面向 agentic web（智能体网络）的安全性、零信任架构、零工与实习生招聘等话题。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:PST8yesYOSo",
@@ -572,7 +664,8 @@
    "channelId": "UCSI7h9hydQ40K5MJHnCrQvw",
    "highlight": "CrowdStrike 总裁兼 CEO George Kurtz 与 Sarah Guo、Elad Gil 讨论了 adversaries 携带 AI 代理发起的攻击、CrowdStrike 与 Nvidia 共建安全模型实验室，以及开源权重与闭源模型的安全对比。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:IiZ9yd2Do8I",
@@ -591,7 +684,8 @@
    "found": "2026-11-01",
    "highlight": "Modal CEO Erik Bernhardsson 与 Latent Space 探讨了 AI 算力的池化、GPU 供应、替代加速器以及智能体沙箱的安全性和发展。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:DWHyPWnzGAI",
@@ -610,7 +704,8 @@
    "found": "2026-11-01",
    "highlight": "Moshi 创始人兼 CEO Anekha Sokhal 与 swyx 在 AI Engineer NYC 上探讨了为大宗商品交易员构建 AI 工具、连接市场数据以及处理冲突来源的经验。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:vhKLKoKhI0s",
@@ -629,7 +724,8 @@
    "channelId": "UC3Sv1JuKpbOx3csUO8FAo5g",
    "highlight": "科沃斯 CEO 钱程（David）在张小珺 Podcast 中分享了自己作为“企二代”与“创二代”接班的现实经历、思考以及对机器人的看法。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:Vki6cklFqxo",
@@ -648,26 +744,8 @@
    "found": "2026-11-01",
    "highlight": "Tenex 的 Alex Lieberman 与 CJ Hess 在 Latent Space 上探讨了如何组织 AI 原生工程团队、MetaHarness 流程、企业 AI 采纳以及 AI 构建的软件如何替代 SaaS。",
    "kind": "method",
-   "sports": false
-  },
-  {
-   "key": "youtube:VYv3qrqh2FQ",
-   "url": "https://www.youtube.com/watch?v=VYv3qrqh2FQ",
-   "title": "AI时代，如何选电脑？【小白必看】",
-   "channel": "秋芝2046",
-   "channelId": "UCrC3GjeSkxXgJ2hLQ2D-m4w",
-   "published": "2026-10-21",
-   "summary": "AI时代选电脑看什么？本地大模型有没有必要？ 用一间厨房讲透，小白也能看懂！还附了配置速查表哦~ 感谢铁铁们的点赞+订阅～",
-   "about": "你手动关注的频道：秋芝2046。",
-   "tab": "appearances",
-   "tags": [
-    "你关注的频道"
-   ],
-   "minutes": 9,
-   "found": "2026-11-01",
-   "highlight": "本期视频通过厨房的比喻，为小白讲解了在 AI 时代如何选择电脑以及本地大模型是否有必要。",
-   "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:D-SVFneJ_Nk",
@@ -686,7 +764,8 @@
    "channelId": "UCiq1FIgtEK7LRAOB1JXTPig",
    "highlight": "Anthropic 旗下 Claude.ai、Cowork 和 Claude Code Desktop 的工程负责人 Felix Rieseberg 探讨了如何停止像 2024 年那样使用 Claude，并学会如何向 AI 赋予更大的目标。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:EAtLq9_vrE0",
@@ -705,7 +784,8 @@
    "found": "2026-11-01",
    "highlight": "Evan Conrad of SF Compute joins swyx at AI Engineer New York to discuss building cloud operations for GPU trading and the market for programmable data centers. They cover how interruptions, storage, and hardware generations affect compute prices, and why an independent market operator is needed.",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:81j1sV32Wng",
@@ -724,7 +804,29 @@
    "channelId": "UCroeMSea_O-xfgDvgbJGVQA",
    "highlight": "Einar Vollset, co-founder of TinySeed and founder of Discretion Capital, speaks at MicroConf Europe 2026 about SaaS moats in the AI era. He argues that selling outcomes rather than tools and building compounding learning loops are key defenses for founders against frontier models.",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1PcJd6UE81",
+   "url": "https://www.bilibili.com/video/BV1PcJd6UE81",
+   "title": "AI时代，如何选电脑？【小白必看】",
+   "channel": "秋芝2046",
+   "channelId": "bilibili:385670211",
+   "published": "2026-10-19",
+   "summary": "AI时代选电脑看什么？本地大模型有没有必要？ 用一间厨房讲透，小白也能看懂！还附了配置速查表哦～",
+   "about": "你手动关注的 B 站 UP 主：秋芝2046。",
+   "tab": "appearances",
+   "tags": [
+    "你关注的频道"
+   ],
+   "minutes": 11,
+   "found": "2026-11-03",
+   "replaces": "youtube:VYv3qrqh2FQ",
+   "highlight": "秋芝2046 探讨了在 AI 时代如何选择电脑，以及本地大模型是否有必要，并通过一间厨房的比喻让小白也能轻松看懂。",
+   "kind": "method",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:ZOH8Q401vt0",
@@ -743,7 +845,8 @@
    "found": "2026-11-01",
    "highlight": "Ben Davis, Ben Hylak, Dex Horthy, Allison Durham, Alex Volkov, and swyx discuss OpenAI DevDay, coding agents, and personal assistants. They compare what actually works in daily workflows versus impressive AI capabilities that fall apart in practice.",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:V0IB8iMzrLQ",
@@ -762,7 +865,8 @@
    "channelId": "UC3Sv1JuKpbOx3csUO8FAo5g",
    "highlight": "张小珺 Podcast features a three-hour interview with Lindon Gao, founder and CEO of Dyna Robotics. They discuss Dyna's product-research approach, the robotic industry's challenges, and his personal journey of self-reflection as an entrepreneur.",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:AwuTTOJGEi0",
@@ -781,7 +885,8 @@
    "channelId": "UCSI7h9hydQ40K5MJHnCrQvw",
    "highlight": "Sarah Guo and Elad Gil are joined by OpenAI President and co-founder Greg Brockman to discuss OpenAI's rapid progress across frontier models, cybersecurity, and scientific discovery. They explore how AI agents solve math problems and transform drug discovery.",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:7zF2mN9EPxU",
@@ -800,7 +905,8 @@
    "channelId": "UC60lr26YqvcSrl1eDoB2U6A",
    "highlight": "Artificial Lawyer interviews Leon Johnson of Omnilex to explore the 'new model' for law firms in the AI era and the type of work Omnilex will handle.",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:hQSBJVreLms",
@@ -811,15 +917,17 @@
    "published": "2026-10-14",
    "summary": "From a four-billion-measurement Kaggle competition to models that recognize a molecule’s chemist, Leash Bio is testing what AI actually learns about chemistry. Co-founder and CEO Ian Quigley joins Brandon Anderson and RJ…",
    "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
-   "tab": "appearances",
+   "tab": "curated",
    "tags": [
+    "医疗 AI",
     "Podcast"
    ],
    "minutes": 110,
    "found": "2026-11-01",
    "highlight": "Ian Quigley, co-founder and CEO of Leash Bio, joins Brandon Anderson and RJ Honicky to discuss testing what AI learns about chemistry using DNA-encoded libraries. They cover public dataset shortcuts, model comparisons, and the economics of AI drug discovery.",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "medical"
   },
   {
    "key": "youtube:Jijc0XokSpQ",
@@ -838,7 +946,8 @@
    "channelId": "UCiq1FIgtEK7LRAOB1JXTPig",
    "highlight": "Silicon Valley Girl talks with James Manyika, who runs research and labs at Google, about a study on millions of Gemini conversations regarding how people use AI at work. They discuss what this means for jobs, salaries, and future AI forecasts.",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:PDH_2bny9mU",
@@ -857,7 +966,8 @@
    "channelId": "UC60lr26YqvcSrl1eDoB2U6A",
    "highlight": "Steno showcases the open beta of Litigation Genius, an AI-enabled court reporting and litigation support product. The overview highlights its ability to handle handwriting, images, and social media posts alongside regular text documents, alongside automated case setups and source-cited answers.",
    "kind": "product",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:T4g7imgw5PI",
@@ -876,7 +986,8 @@
    "channelId": "UC60lr26YqvcSrl1eDoB2U6A",
    "highlight": "Artificial Lawyer interviews Anthony Seale, CEO of Legatics, discussing Legatics and Harvey Connectors.",
    "kind": "product",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:fJtpYWidccc",
@@ -895,7 +1006,8 @@
    "channelId": "UC60lr26YqvcSrl1eDoB2U6A",
    "highlight": "Len Hickey 作为 Litigaze 的 CEO，在 Artificial Lawyer 的访谈与产品演示中探讨了 AI 决策系统（如 Jev 及 OpenAI Decisions API）在法律领域的应用。访谈重点展示了 Litigaze 如何将该技术用于 eDiscovery（电子取证）和合同审查，并讨论了使用开源模型进行后训练以降低成本、提高准确率的潜力。",
    "kind": "product",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:BHiYomkfoGQ",
@@ -914,7 +1026,8 @@
    "found": "2026-11-01",
    "highlight": "Dyna Robotics 的联合创始人兼首席科学家 Jason Ma 做客 Latent Space，探讨了物理 AI 的最新进展与实际落地。节目深入讨论了基于超过百万小时人类视频训练的世界动作模型 Dyna-2、机器人如何通过少量演示学习新任务，以及 Dyna 自研硬件和推动机器人实现商业化部署的经验。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:zlD-CkLVKtU",
@@ -933,7 +1046,28 @@
    "found": "2026-11-01",
    "highlight": "Latent Space 团队面对每年 43,000 美元的 SaaS 工具报价，邀请开发者使用编码 агенты 和开源技术对其进行克隆。最终有 72 个团队提交了作品，节目总结了构建者如何在 Claude Code 和 Codex 之间分配工作，以及拥有软件与构建软件之间的差异。",
    "kind": "method",
-   "sports": false
+   "sports": false,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1Nyp96pEGD",
+   "url": "https://www.bilibili.com/video/BV1Nyp96pEGD",
+   "title": "人人都要学！Agent 视觉创作全流程～【小白教程】",
+   "channel": "秋芝2046",
+   "channelId": "bilibili:385670211",
+   "published": "2026-10-12",
+   "summary": "做PPT、商品图、广告片！ 从活动策划到TVC成片，一期带你跑通创作型Agent全流程！",
+   "about": "你手动关注的 B 站 UP 主：秋芝2046。",
+   "tab": "appearances",
+   "tags": [
+    "你关注的频道"
+   ],
+   "minutes": 16,
+   "found": "2026-11-03",
+   "highlight": "秋芝2046 带来了 Agent 视觉创作全流程教程，涵盖做 PPT、商品图、广告片，从活动策划到 TVC 成片一期跑通。",
+   "kind": "method",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:NufiHZfMwaw",
@@ -944,33 +1078,59 @@
    "published": "2026-10-10",
    "summary": "From the Bitter Lesson of AI scaling to the unsolved mysteries of protein folding, Google DeepMind’s Pushmeet Kohli and Biohub’s Sal Candido are rethinking what it takes to build AI that truly understands biology. In thi…",
    "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
-   "tab": "appearances",
+   "tab": "curated",
    "tags": [
+    "医疗 AI",
     "Podcast"
    ],
    "minutes": 33,
    "found": "2026-11-01",
    "highlight": "Google DeepMind 的 Pushmeet Kohli 与 Biohub 的 Sal Candido 在 Latent Space 的特别小组讨论中，探讨了 AI 在生物学领域的应用与局限。他们讨论了 AlphaFold 的突破仅是个开始、为何仅靠计算和数据扩展无法解决蛋白质折叠问题，以及如何通过下一代 AI 模型变革对蛋白质、细胞和人类疾病的理解。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "medical"
   },
   {
-   "key": "youtube:CZDwvcW-YTA",
-   "url": "https://www.youtube.com/watch?v=CZDwvcW-YTA",
+   "key": "bilibili:BV1nwp46KEcj",
+   "url": "https://www.bilibili.com/video/BV1nwp46KEcj",
    "title": "Agent 接管了我的新工作室！",
    "channel": "秋芝2046",
-   "channelId": "UCrC3GjeSkxXgJ2hLQ2D-m4w",
+   "channelId": "bilibili:385670211",
    "published": "2026-10-09",
-   "summary": "这期来个工作室room tour，现在开灯关灯都归Agent管啦！ 最后一个走也不用惦记关灯了哈哈～ 感谢朋友们的点赞+订阅~",
-   "about": "你手动关注的频道：秋芝2046。",
+   "summary": "这期来个工作室room tour，现在开灯关灯都归Agent管啦！ 最后一个走也不用惦记关灯了哈哈～",
+   "about": "你手动关注的 B 站 UP 主：秋芝2046。",
    "tab": "appearances",
    "tags": [
     "你关注的频道"
    ],
    "minutes": 8,
-   "found": "2026-11-01",
-   "highlight": "秋芝2046 通过工作室 room tour 介绍了 Agent 在现实生活中的应用，展示了由 Agent 接管工作室的开灯和关灯等日常管理工作。",
-   "kind": "product",
+   "found": "2026-11-03",
+   "replaces": "youtube:CZDwvcW-YTA",
+   "highlight": "秋芝2046 展示了工作室 Room Tour，分享了使用 Agent 接管新工作室、管理开关灯等日常自动化的体验。",
+   "kind": "method",
+   "sports": false,
+   "field": "none"
+  },
+  {
+   "key": "youtube:oOpF0ZXSXuk",
+   "url": "https://www.youtube.com/watch?v=oOpF0ZXSXuk",
+   "title": "Stanford Doctor: Never Tell AI What You Think Is Wrong With You",
+   "channel": "Silicon Valley Girl",
+   "channelId": "UCiq1FIgtEK7LRAOB1JXTPig",
+   "published": "2026-09-25",
+   "summary": "Dr. Jonathan Chen is a Stanford physician and computer scientist who teaches doctors how to use AI. His team found that GPT-4 alone outperformed doctors using it on diagnostic reasoning tasks. But being smarter doesn’t a…",
+   "about": "Silicon Valley Girl 采访 Stanford 医生：普通人怎么向 AI 问病情、怎么用 AI 看自己的健康数据。",
+   "tab": "curated",
+   "tags": [
+    "个人健康 AI · 最高优先级"
+   ],
+   "minutes": 49,
+   "found": "2026-11-03",
+   "via": "pick",
+   "picked": true,
+   "field": "health",
+   "highlight": "Silicon Valley Girl chats with Dr. Jonathan Chen, a Stanford physician and computer scientist, about how to safely and effectively use AI for health inquiries, medical records preparation, and diagnostic reasoning tasks.",
+   "kind": "method",
    "sports": false
   },
   {
@@ -1013,7 +1173,8 @@
    "highlight": "在第六届智能计算创新论坛上，浙江大学数学高等研究院院长、中国科学院院士励建书与之江实验室主任、中国工程院院士王坚展开了“AI+数学：变与不变”的主题对话。两位院士围绕AI与数学的关系进行了深入探讨。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1o1pi6oERQ",
@@ -1034,7 +1195,8 @@
    "highlight": "西湖大学校长及中国科学院院士施一公带来演讲。内容涉及相关主题。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:8I6EL1cH5Fc",
@@ -1056,7 +1218,8 @@
    "highlight": "乒乓球超级全满贯邓亚萍对话前日本乒乓国手福原爱，全方位对谈了初代大魔王与瓷娃娃的初遇印象、与乒乓球结缘的原因、面对聚光灯的自我认知，以及对阵中国队时的心态调整。",
    "kind": "method",
    "sports": true,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1efYs61EwA",
@@ -1098,7 +1261,8 @@
    "highlight": "徐新在第四届价值投资征文大赛上作为评委发言，分享了如何沿着巴菲特、芒格和段永平的道路做对的事情，并领悟出看懂公司的三种方法论来指导投资。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1jati6NE1i",
@@ -1119,7 +1283,8 @@
    "highlight": "邓亚萍对话赵蕊蕊，探讨了赵蕊蕊从女排世界冠军到科幻作家的人生转身，分享了经历失去、告别熟悉赛场以及在破碎中重新生长的经历与生命力。",
    "kind": "method",
    "sports": true,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:knetdlviyDE",
@@ -1141,7 +1306,8 @@
    "highlight": "作者、投资者兼金融教育家Brian Feroldi拆解了Warren Buffett用来评估股票内在价值的简单5步流程。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1LCtJ6XE99",
@@ -1162,7 +1328,8 @@
    "highlight": "章泽天对话何超琼，探讨标签之外如何走出自己的人生剧本。外界熟悉的赌王之女与豪门接班人等标签，并不能真正解释她。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1r7hu66Eb6",
@@ -1183,7 +1350,8 @@
    "highlight": "西湖大学校长及中国科学院院士施一公分享了其一生感悟与收获的经典演讲。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1DmbY6nETL",
@@ -1204,7 +1372,8 @@
    "highlight": "徐新在专访中强调专注和纪律性，选择有潜力的少数项目长期持有。通过找人、做KP与文化、品牌三大法宝来帮助企业成长。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1DwgL6pEft",
@@ -1225,7 +1394,8 @@
    "highlight": "何超琼接受《面对面》采访。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1VFuR6NE97",
@@ -1246,7 +1416,8 @@
    "highlight": "徐新在财富人生访谈中指出，投资本质是投人，创始人是第一判断要素，看重野心、韧性和学习能力。好企业不要轻易卖出，要陪伴成长。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV17uuM6rEKv",
@@ -1267,7 +1438,8 @@
    "highlight": "西湖大学校长施一公教授在开学典礼上发表致辞。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:7GHPntssy9Y",
@@ -1289,7 +1461,8 @@
    "highlight": "今日资本创始人徐新接受深度访谈，分享投资京东和美团背后的判断逻辑。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1eUu46oEmE",
@@ -1310,7 +1483,8 @@
    "highlight": "徐新在一场演讲中探讨了移动互联网时代的用户变化、商业变革、创业投资机会、品牌渠道选择、团队管理以及融资竞争策略。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1pJ3c6BEUM",
@@ -1331,7 +1505,8 @@
    "highlight": "星海图CEO高继扬做客《详谈》，与李翔、徐新展开深度对话。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1NGgS6yER7",
@@ -1352,7 +1527,8 @@
    "highlight": "2026世界人工智能大会科学智能论坛上，王坚院士发表演讲。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:ULmr5ovKV8w",
@@ -1374,7 +1550,8 @@
    "highlight": "中国工程院院士、之江实验室主任、阿里云创始人王坚在2026世界人工智能大会期间接受东方卫视独家专访。全景式探讨中美AI发展路径，剖析全球AI治理长远布局。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:olmRW_91rHw",
@@ -1396,7 +1573,8 @@
    "highlight": "95岁的Warren Buffett在访谈中解释了改变向盖茨基金会捐赠承诺的原因，谈及将资金转向自己孩子基金会的安排，并确认了Greg Abel、Alphabet投资及Kevin Warsh相关的情况。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:g9ZtTf-m7is",
@@ -1418,7 +1596,8 @@
    "highlight": "主持人窦文涛携手顶级乒乓球大满贯得主邓亚萍，在《圆桌派》中探讨了信念改写现实的力量，分享了大满贯的必胜秘籍与冠军思维，强调想赢就要先毫无保留地相信自己能赢并想象赢的样子。",
    "kind": "method",
    "sports": true,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1NXT66yEv8",
@@ -1439,7 +1618,8 @@
    "highlight": "西湖大学校长及中国科学院院士施一公带来高水平演讲，信息量极大。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1zc5t6jE1S",
@@ -1460,7 +1640,8 @@
    "highlight": "中国工程院院士王坚发表关于AI的未来与算力的最新发言。探讨了计算与人工智能、数据以及范式变革。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1GU5W6ZEEP",
@@ -1481,7 +1662,8 @@
    "highlight": "中国乒乓名将、奥运四金得主邓亚萍在《大方之谈》中聊到了从冠军到普通人的转变，分享了关于危机感、失败、退场、成长以及普通人如何改变人生的经历。",
    "kind": "method",
    "sports": true,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1kB5E6FEHs",
@@ -1502,7 +1684,8 @@
    "highlight": "之江实验室主任、阿里云创始人王坚探讨计算与人工智能、数据以及范式变革。分享了计算与AI的相关观点。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:QQOWQcnNmr0",
@@ -1524,7 +1707,8 @@
    "highlight": "Warren Buffett作为Berkshire Hathaway Chair参与了CNBC的完整访谈，带来最新的股市新闻与分析。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:4BZX_kv3m1w",
@@ -1546,7 +1730,8 @@
    "highlight": "在《圆桌派》中，窦文涛邀请“乒乓女皇”邓亚萍、文化杂家马未都及心理学家武志红，围绕乒乓球运动中藏着的人性弱点、心理压制与中国人的处世哲学展开对谈。",
    "kind": "method",
    "sports": true,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1re9uBbEtb",
@@ -1567,7 +1752,8 @@
    "highlight": "中国工程院院士王坚在最新演讲中谈到了DeepSeek、大模型幻觉以及计算星座等话题。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1MwwEzQEk7",
@@ -1588,7 +1774,8 @@
    "highlight": "央视网《龙咚锵-两会同频》对话全国政协委员、中国工程院院士王坚。双方从年轻人的远虑聊到AI的终极之问，探讨了模仿与创新的边界以及把算力送上太空的狂想。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1J1ZQBdEAz",
@@ -1609,7 +1796,8 @@
    "highlight": "今日资本徐新分享了自己的投资方法论。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:z6Uvc9gIas4",
@@ -1631,7 +1819,8 @@
    "highlight": "施一公带来精彩演讲。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1RhfoBeESS",
@@ -1652,7 +1841,8 @@
    "highlight": "今日资本徐新在南大校友会直播对话中分享了有关投资、学习和思考的精华内容，提及最成功的投资是京东和美团。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1XSF5zLEwj",
@@ -1673,7 +1863,8 @@
    "highlight": "今日资本徐新在南京大学120年校庆活动中进行深度分享，总结了错过字节跳动和拼多多后的看公司三段论。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:wzFysdqhby8",
@@ -1695,7 +1886,8 @@
    "highlight": "黄仁勋与阿里云王坚院士展开对话。讨论了开源AI是中国超车的关键等议题。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:ePBUN0HrKJ0",
@@ -1717,7 +1909,8 @@
    "highlight": "施一公带来开学第一课演讲，鼓励观众勇敢面对学习中文的困难，坚持听说练习并融入中文环境。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1HsthzyE4R",
@@ -1738,7 +1931,8 @@
    "highlight": "今日资本徐新接受专访，分享投资的底层逻辑。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:LHeQ35w9csg",
@@ -1760,7 +1954,8 @@
    "highlight": "施一公在演讲中探讨了为什么我们了解的世界不是客观的，旨在改变观众的世界观。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV14hVZzsEA2",
@@ -1781,7 +1976,8 @@
    "highlight": "马未都、许子东和邓亚萍作为嘉宾出席圆桌派第五季第一期《心战》。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:KUQAJEmtfF8",
@@ -1803,7 +1999,8 @@
    "highlight": "Charlie Munger探讨了价值投资与资本配置的方法，分享了建立心智模型网络、克服认知偏差以及保持耐心与理性的策略。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1xc98YAEwk",
@@ -1826,7 +2023,8 @@
    "note": "央视新闻专访",
    "highlight": "中国工程院院士王坚探讨了算力革命将带来的改变。阐述了其对相关领域的见解与观点。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "bilibili:BV11KA2eKE4i",
@@ -1847,7 +2045,8 @@
    "highlight": "阿里王坚院士在《财经》发表关于AI前世今生的演讲。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1qTrwY3EJC",
@@ -1868,7 +2067,8 @@
    "highlight": "西湖大学校长及中国科学院院士施一公发表了关于宇宙和生命的演讲，内容深刻且引人深思。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV17NCtYxERR",
@@ -1889,7 +2089,8 @@
    "highlight": "鲁健访谈对话何超琼。",
    "kind": "judgment",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1HizHYKEXw",
@@ -1910,7 +2111,8 @@
    "highlight": "投资大佬徐新分享每天冥想二十分钟是其成功的关键。",
    "kind": "method",
    "sports": false,
-   "firsthand": true
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1vv4y1v7VR",
@@ -1933,7 +2135,8 @@
    "note": "凤凰卫视《问答神州》吴小莉专访",
    "highlight": "中国工程院院士、阿里云之父王坚接受凤凰专访。讨论了关于未来百年技术与人类发展的宏观预测。",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "field": "none"
   }
  ],
  "videos": {
@@ -1953,7 +2156,7 @@
    "url": "https://www.youtube.com/@qiuzhi2046",
    "id": "UCrC3GjeSkxXgJ2hLQ2D-m4w",
    "name": "秋芝2046",
-   "count": 3
+   "count": 1
   },
   "channel:@andrejkarpathy": {
    "url": "https://www.youtube.com/@AndrejKarpathy",
@@ -1965,7 +2168,7 @@
    "url": "https://www.youtube.com/@SiliconValleyGirl",
    "id": "UCiq1FIgtEK7LRAOB1JXTPig",
    "name": "Silicon Valley Girl",
-   "count": 4
+   "count": 6
   },
   "channel:@xiaojunpodcast": {
    "url": "https://www.youtube.com/@xiaojunpodcast",
@@ -1977,7 +2180,13 @@
    "url": "https://www.youtube.com/@CheekyPint",
    "id": "UCXi7Hg2nSB40ujzM2CMtF-Q",
    "name": "Cheeky Pint",
-   "count": 2
+   "count": 3
+  },
+  "channel:bilibili/385670211": {
+   "url": "https://space.bilibili.com/385670211",
+   "id": "bilibili:385670211",
+   "name": "秋芝2046",
+   "count": 3
   }
  },
  "people": {
@@ -2031,6 +2240,9 @@
   }
  },
  "peopleRejected": [
+  "youtube:dBkAtDXYCSk",
+  "youtube:pBEQVGSbLY8",
+  "youtube:nAnZDuRLDDo",
   "bilibili:BV15Txu6SEbp",
   "youtube:KVgvyeIEuFA",
   "youtube:uMLesu20cEQ",
@@ -2058,7 +2270,8 @@
    ],
    "themes": [],
    "headlines": [
-    "Anthropic’s third quarter results mean IPO math and history are not on its side, analysts say"
+    "Anthropic’s third quarter results mean IPO math and history are not on its side, analysts say",
+    "Anthropic’s third-quarter results mean IPO math and history are not on its side, analysts say"
    ],
    "entities": [
     "Anthropic"
@@ -2090,25 +2303,183 @@
    "importance": 6
   },
   {
-   "id": "1rqs2zj",
+   "id": "1hb20we",
    "lastSeen": "2026-11-03",
-   "title": "Anthropic Revenue Nears $17 Billion as IPO Looms",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUEV6SkM2MWhJMFZ3bm1hRExOUzRTTXlRZExMcHQ4ZjdjU0RFTTJLanNIUWpydlY1MjIxZXpHa0RyTGVDOGtwTVJBRjM1STFTeGFReWlfVzRIb2ZYYlNIaFdGVDJHWFpiX0VOLUtESFFCYkdRb0k1QU9KZTNZbWJYWVY2SDc0LXVYTTByeUM0aGdzYmd4XzZjRFdlVWRPdU5xZ2Q1bDdIRXE1TjB4d2ZZX3htX2lITmtZcTNMUDZ5aXBnZHRTalE?oc=5",
-   "source": "Bloomberg",
-   "domain": "bloomberg.com",
+   "title": "Mistral launches open-weight AI model ML4 to rival top systems",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5PZmZIaHkybTdSWEJ4eV9WRDZPaVd3clk1Snc0N3RKNTZLa0JmRjJha3d3NWpKWWVEQjJzS2Vtb3J6OVZoS3B5d0lzdFg5TDNpQWhSQUQzWXg5SHJYdUR5My1CX3N1RmdGMkg2OWR3?oc=5",
+   "source": "qz.com",
+   "domain": "qz.com",
    "published": "2026-11-03",
    "outlets": [
-    "Bloomberg"
+    "qz.com"
    ],
    "themes": [],
    "headlines": [
-    "Anthropic Revenue Nears $17 Billion as IPO Looms"
+    "Mistral launches open-weight AI model ML4 to rival top systems"
    ],
    "entities": [
-    "Anthropic"
+    "Mistral AI"
    ],
-   "summary": "Anthropic's revenue nears $17 billion as its IPO looms. The company is actively preparing its public market debut amidst significant financial scaling.",
-   "meaning": "Reaching near $17 billion in revenue underscores the massive commercial scale top-tier AI labs are achieving, making its IPO one of the most critical general AI milestones to watch.",
+   "summary": "Mistral 推出开源权重 AI 模型 ML4，旨在与顶级系统竞争。",
+   "meaning": "开源大模型的竞争持续升级，Mistral 的新动作可能为开发者和企业提供更多高性能且可定制的选择。",
+   "importance": 7
+  },
+  {
+   "id": "1ihaw49",
+   "lastSeen": "2026-11-03",
+   "title": "ADNOC OpenAI Deal Puts AI Agents On Every Barrel. Who Signs Off?",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOGFGcDRaUU4xQW1qNEhiU3B1ZjBOMnY4V1NMQ1hZZ3YzdkNpU3M1QUpZbFFzbkRnZ1NOMEpDVTQ5RXNOVlJka3hSc0p3Zjczd3dycEMzekNrXzZaS0M2bFF0UDRVa3h4bE9ka3ZuUFdJOE5NR0xlZnBPMVdNSHFldkNyZ0IzUkdJM1NGcV8teUs3UHp2TWNURENrUXVBR2JNQWdUalN6cDNiUlRUNGhmOTZtRGJOaV9CODE5YkxhcmVBQQ?oc=5",
+   "source": "Forbes",
+   "domain": "forbes.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "Forbes"
+   ],
+   "themes": [],
+   "headlines": [
+    "ADNOC OpenAI Deal Puts AI Agents On Every Barrel. Who Signs Off?"
+   ],
+   "entities": [
+    "OpenAI"
+   ],
+   "summary": "ADNOC 与 OpenAI 达成协议，将 AI 代理应用到每一桶油的生产和管理中。",
+   "meaning": "展示了 AI 代理在传统能源工业巨头中的深度落地，标志着大模型正在向更复杂的实体工业场景渗透。",
+   "importance": 6
+  },
+  {
+   "id": "v2xfj8",
+   "lastSeen": "2026-11-03",
+   "title": "Apple Launches Beta Versions of Watch AI Listening Tools, New Health App",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPNVVBQnczQ0dUZFYwcG5wUjRkU3BpNHQxRk9jNXRLNUcwb1pvWERNLUdKcVhjTjFSeTZ5UUNYeElicHFraUIyV09iSFgtYkJzb2RrdGlIckljN2VZVzVQUEUzQnNZNUFQWUo0NWI1ekdBMGhDemllZldzWFNMZHhQUmRkZkJDQVRRZURHNTlqMUFLWHRjbmE3ZERsVEtxVnREQ0MwVEpyUFczMDk4TjItMzFBaTJVamFjbmI5empyQmFZc09OZEttMw?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [
+    "个人健康 AI"
+   ],
+   "headlines": [
+    "Apple Launches Beta Versions of Watch AI Listening Tools, New Health App"
+   ],
+   "entities": [
+    "Apple ML Research"
+   ],
+   "summary": "Apple 推出了 Watch AI 监听工具和新健康应用的测试版。",
+   "meaning": "这是个人健康 AI 的重要进展，展示了科技巨头如何利用智能穿戴设备帮助普通人管理日常健康。",
+   "importance": 9
+  },
+  {
+   "id": "1vd84sj",
+   "lastSeen": "2026-11-03",
+   "title": "Meet Athena, The Commercial Real Estate Law Firm Powered By AI",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOM1pOSEg1eU5CNmtzd0JQVEItbEozdkltbUNvQWxXX21xZVMtZVFJVTZjNGFIeXJ1UV85X2JJeTJTTWZXRGxBRWpkR0JRcFBMempjZmJYeWx2dEwwTUpGUDVvUFFsSjNRU1dmUUlFNW5INE5RN2RtbXpWMkJxRjVHdmo1eGRvZTJFUVh0RHgxUVVQYVdTNFZ1c3hQLTl2MGZaRWx1cmlCMVI0Ui0xaDlBVzVpeU5fUQ?oc=5",
+   "source": "Forbes",
+   "domain": "forbes.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "Forbes"
+   ],
+   "themes": [
+    "法律 AI",
+    "房产 AI"
+   ],
+   "headlines": [
+    "Meet Athena, The Commercial Real Estate Law Firm Powered By AI"
+   ],
+   "entities": [],
+   "summary": "名为 Athena 的商业房地产律师事务所正式亮相，采用 AI 技术驱动。",
+   "meaning": "体现了法律 AI 与房产 AI 在垂直细分领域的落地，垂直行业正迎来 AI 原生律所的挑战。",
+   "importance": 6
+  },
+  {
+   "id": "j56x22",
+   "lastSeen": "2026-11-03",
+   "title": "McDonald’s taps law firm White & Case in cases alleging AI-powered price-fixing",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWEI0UEd2b3RENkZ6RFhpYXgwUVZhbWN5OW53Z05McGFWT1ZFZ3ptcWg2dXIwRjlsQnNENWJfMTZNSU9VcVMzYWx0MUN3Z1BWdmpxSDMyb1U1Y2luWExlR0tVQ2dxdlluNjRIb1ltby12WXhKMnphY2Zna2hpS0NXc2lpRVFocGluVml6SnA3d3pPMmhSZHduQk1va2xiVjYxd0dBVkoxWEhCOGdvUlJhT191dFBFTHM4dUJnZGY1b19VaTZ1?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "headlines": [
+    "McDonald’s taps law firm White & Case in cases alleging AI-powered price-fixing"
+   ],
+   "entities": [],
+   "summary": "麦当劳聘请律所 White & Case 处理有关 AI 驱动价格操纵的诉讼。",
+   "meaning": "随着 AI 在商业定价中的广泛应用，相关的法律合规和反垄断诉讼风险正在浮出水面。",
+   "importance": 5
+  },
+  {
+   "id": "m3gbre",
+   "lastSeen": "2026-11-03",
+   "title": "Ex-Legorans Bag $2.4m For Real Estate AI Native",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdFhMOGFyWm5KOHJWWDZORWo0NlEteHpPazVabXdLd2kwYmZscHRGVHFhMGxsOTVpb2dFVy11aDl1R19nX24ySGNyQ2F6aHozTndHYnRLbVdLUlBLMGN2bmhidFNiZkx1aTRpcVpBZndCekw5aUp0RWdiRkx3VWVvQnc1cDJ1T041cWp5SmNmWWZfSG1JbHc?oc=5",
+   "source": "Artificial Lawyer",
+   "domain": "artificiallawyer.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "Artificial Lawyer"
+   ],
+   "themes": [
+    "法律 AI",
+    "房产 AI"
+   ],
+   "headlines": [
+    "Ex-Legorans Bag $2.4m For Real Estate AI Native"
+   ],
+   "entities": [],
+   "summary": "前 Legorans 团队为其房产 AI 原生项目筹集了 240 万美元资金。",
+   "meaning": "反映了资本市场对房产 AI 垂直应用方向的持续关注和投资热情。",
+   "importance": 4
+  },
+  {
+   "id": "19koaps",
+   "lastSeen": "2026-11-03",
+   "title": "RARE REAL ESTATE BRINGS A COMPETITIVE EDGE IN THE AGE OF AI.",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeDFXbkpXUjNWc01QbkJidXdnbXNLZnMwbnZXLTJlMUpxenk3RlVEbTlzRHd4WlJwNHhxMmhCT2tGajA0c2ZVUDhsWmQ2Sy1lZ1BPN2phakU1YzRMNW1xSTFfSTM0TmRhNFBNeEk2YlB4RlRTRmZWcjFXSDhBYWp0S045bUFsaDRLUmhJT1FYVElhUXNZanBFU3V4QThlV1FUdjJPLUdiSnFuem9WVHRpVg?oc=5",
+   "source": "The Real Deal",
+   "domain": "therealdeal.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "The Real Deal"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "headlines": [
+    "RARE REAL ESTATE BRINGS A COMPETITIVE EDGE IN THE AGE OF AI."
+   ],
+   "entities": [],
+   "summary": "探讨了在 AI 时代稀缺的房地产如何带来竞争优势。",
+   "meaning": "从宏观角度探讨了 AI 时代下传统资产的新价值定位，属于行业观察类内容。",
+   "importance": 3
+  },
+  {
+   "id": "xggvob",
+   "lastSeen": "2026-11-03",
+   "title": "Harvard Working Paper Finds Flourish AI App Improves Stress, Depression, and Anxiety Symptoms",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPUmY4NjVUWlVqSEVxZmRFaVJ0bWlwa25UU2lYY092QnhaMFZSQ0FqM3FyNzBJR1pnYUdMNUd5UHBPSnFPTzh5TVA1ZkttUmtMVU9QUzdGZUJpT05yOVpxcm1pY2JHMmN1S0d0TmNvcEwzRVZmbXRlcVN5TmxVSkZYNnE2aTJwbWpHd3hEUzhibHBVbVh4Yk51bm1KLVI0UUlFdFI4TU42U29zdmd6TUw1TEtTNzZNcEhvcVZxM1R6Nm12cWk1dVRwalhPcHJoek85YjNRbGJpdmxoZzVjTFR2NkJhNDQ?oc=5",
+   "source": "markets.businessinsider.com",
+   "domain": "markets.businessinsider.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "markets.businessinsider.com"
+   ],
+   "themes": [
+    "个人健康 AI"
+   ],
+   "headlines": [
+    "Harvard Working Paper Finds Flourish AI App Improves Stress, Depression, and Anxiety Symptoms"
+   ],
+   "entities": [],
+   "summary": "哈佛工作论文发现，Flourish AI 应用能够改善压力、抑郁和焦虑症状。",
+   "meaning": "直接关系到个人健康 AI 的实际疗效验证，为普通人如何利用 AI 管理心理健康提供了科学参考。",
    "importance": 9
   },
   {
@@ -2137,6 +2508,32 @@
    "summary": "Anthropic在日本为其美国大型IPO寻求高达35亿美元的资金。",
    "meaning": "显示出头部AI大厂在海外市场的融资动作与全球资本扩张步伐。",
    "importance": 6
+  },
+  {
+   "id": "1rqs2zj",
+   "lastSeen": "2026-11-03",
+   "title": "Anthropic Revenue Nears $17 Billion as IPO Looms",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUEV6SkM2MWhJMFZ3bm1hRExOUzRTTXlRZExMcHQ4ZjdjU0RFTTJLanNIUWpydlY1MjIxZXpHa0RyTGVDOGtwTVJBRjM1STFTeGFReWlfVzRIb2ZYYlNIaFdGVDJHWFpiX0VOLUtESFFCYkdRb0k1QU9KZTNZbWJYWVY2SDc0LXVYTTByeUM0aGdzYmd4XzZjRFdlVWRPdU5xZ2Q1bDdIRXE1TjB4d2ZZX3htX2lITmtZcTNMUDZ5aXBnZHRTalE?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg",
+    "Forbes",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Revenue Nears $17 Billion as IPO Looms",
+    "Anthropic Hit $17 Billion In Third Quarter Revenue Ahead Of IPO—But AI Spending Commitments Hit $900 Billion",
+    "Anthropic Revenue Hits Nearly $17 Billion Before Blockbuster IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic's revenue nears $17 billion as its IPO looms. The company is actively preparing its public market debut amidst significant financial scaling.",
+   "meaning": "Reaching near $17 billion in revenue underscores the massive commercial scale top-tier AI labs are achieving, making its IPO one of the most critical general AI milestones to watch.",
+   "importance": 9
   },
   {
    "id": "dh3lg8",
@@ -2301,30 +2698,6 @@
    "summary": "Anthropic is bracing for pre-IPO election impacts amidst ongoing AI debates.",
    "meaning": "Macro and political factors are increasingly intersecting with major AI company milestones.",
    "importance": 5
-  },
-  {
-   "id": "17br6v7",
-   "lastSeen": "2026-11-03",
-   "title": "Watch Anthropic Revenue Surges Ahead of IPO",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWTF0enloM1ZxYmtfcnZ6b0dsSjhJNnJpOHdNM01SNGdIZDhJUjBITjE1a29ZakRFSmdlQ3FDUWRyUlVneWNNcl9jLVdvNTFvdC1fSkhBSXY4TzhHVkRicDdZU3NncmxhdXVJYWtYczVIVlhlV3pBN01qRkpsN1I5UjBySGg?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-11-02",
-   "outlets": [
-    "Business Insider",
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill",
-    "Watch Anthropic Revenue Surges Ahead of IPO"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill.",
-   "meaning": "It underscores the high-revenue yet incredibly capital-intensive nature of scaling frontier AI models, offering rare financial transparency into the industry's leaders.",
-   "importance": 8
   },
   {
    "id": "15rm220",
@@ -2638,6 +3011,51 @@
    "importance": 7
   },
   {
+   "id": "hpegcb",
+   "lastSeen": "2026-11-03",
+   "title": "Isomorphic Labs President Says AI Will Design All Drugs One Day",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNQnR6dXJGSXIzSDdHZkxpN2JfUnlJZFVyMDYyZTRuSHlCMDlqbHJjWlE2SHhJODRNX1dEVzZQLWxmY1hPWFZKUTcweU03dlZvLW9SekZpd2MzX0t5OFVFMktXZ3R2R2JLakozU3FiYVpjSGhYS1Y0WHpoMm10S1lPd2FrNncydVpjaWhnd3ZXbUluU3R6N0tXc1U0M2U5ZEsxc2pMV005bTUzRUtpR253eE5CZmJOWHUtV0Y1WlFsSlBpcGVBQ2tlY01ud1pGTTBZUmNIM0pfTEU?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Bloomberg.com",
+    "Bloomberg"
+   ],
+   "themes": [
+    "医疗 AI"
+   ],
+   "headlines": [
+    "Isomorphic Labs President Says AI Will Design All Drugs One Day"
+   ],
+   "entities": [],
+   "summary": "Isomorphic Labs 总裁表示，AI 有朝一日将设计所有药物。",
+   "meaning": "医疗 AI 领域的领军人物对 AI 药物研发的未来做出了极高期许，预示着制药行业将发生颠覆性变革。",
+   "importance": 8
+  },
+  {
+   "id": "17br6v7",
+   "lastSeen": "2026-11-03",
+   "title": "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaUtiN1hwUXNHOU5wQ1V5Qll2TjF0SXJIWjR1aG04TzBtMkh4Qkd1OVB6VlFmLXlEMkRndTFYMzlxOXhnX0M0bE12Sl8wMFBoVWNJV21ubTh2dlVMR1VPeHVRTHVTN05zallIZHJPZXN6SHIxYU9yM013dEJObVc2bGFFRWFrZ29ydlJfWWROQ0RfNkV2Yi00?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic 修改后的 IPO 文件披露了其飙升的第三季度收入和惊人的算力账单。",
+   "meaning": "反映了头部通用 AI 厂商高昂的运营成本与快速增长的商业化收入并存的行业现状。",
+   "importance": 7
+  },
+  {
    "id": "1whwoh9",
    "lastSeen": "2026-11-02",
    "title": "Will AI Change the Identity of Law Firm Partners?",
@@ -2680,6 +3098,28 @@
    "summary": "A US appeals court ruled that a law firm's use of AI does not warrant cutting legal fees.",
    "meaning": "This is a notable development for legal AI, validating the commercial integration of AI tools in legal practices without penalizing firms on billable rates.",
    "importance": 9
+  },
+  {
+   "id": "1z09b2z",
+   "lastSeen": "2026-11-03",
+   "title": "Legal Tech Startup Litmas AI Launches Updated Agentic Litigation Platform",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOE9KX2hpMjA0Y29oV0hCQTdHQ3VKZmRkTk9ldEFXNXNwQm1MbUVfbGVIQTFiUGE2aVZmZ2RacjZra0tqeVFpWFV6X1ZsekxtWkJ3LXg0c2NoV0lZX1JzT3dsbXEtSVRJMnpCSk9zRzNZQzdSXzY3YUt6LV9DaXZpYVg2US1uNkFjUm05cHE1ZEJmZ2txQkN1ZThBUjNPcHY4WS1yTXhJMnd5dEdlT09FaHhfV1hHb3FhelhV?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "headlines": [
+    "Legal Tech Startup Litmas AI Launches Updated Agentic Litigation Platform"
+   ],
+   "entities": [],
+   "summary": "Legal Tech startup Litmas AI has launched an updated agentic litigation platform.",
+   "meaning": "法律 AI 领域的持续迭代正在推进，智能体技术在诉讼领域的落地值得法律从业者关注。",
+   "importance": 5
   },
   {
    "id": "1w2yjjm",
@@ -2850,6 +3290,28 @@
    "summary": "Z.ai founder states that self-improving AI is the key step towards AGI while emphasizing that safety is key.",
    "meaning": "As a prominent Chinese AI perspective, this highlights core industry directions toward AGI and safety, which is crucial for tracking overall AI progress.",
    "importance": 7
+  },
+  {
+   "id": "1fq58r",
+   "lastSeen": "2026-11-03",
+   "title": "OpenAI Wants Everyone to Call AI Data Centers 'Compute Campuses'",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaDB2b0M4TF9RNnhlZWxmdFVLWFRGQU1GcTVxcDUwbTVDcThhM3UtclBXU2QyYnp3WjM3MFgxN3JIa1hwbVR4NTVua01Sa25JN1A2X3JDWi0tbGZtLVI2aXBKUHZadWRCRXIzc25BbU94RlJna0F4OXAxX3ZmeC1YS3FQclFhM1hsYTRPQmZsWVBVRUFFNUhpMDhmZ1c?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-01",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI Wants Everyone to Call AI Data Centers 'Compute Campuses'"
+   ],
+   "entities": [
+    "OpenAI"
+   ],
+   "summary": "OpenAI wants everyone to refer to AI data centers as 'compute campuses'.",
+   "meaning": "OpenAI 试图重新定义算力基础设施的称呼，反映出 AI 大厂对算力规模和园区化布局的重视。",
+   "importance": 6
   },
   {
    "title": "OpenAI Raises Less Than Half of $30 Billion Target in Latest Round",
@@ -3228,6 +3690,50 @@
    "importance": 6
   },
   {
+   "id": "gjgrem",
+   "lastSeen": "2026-11-03",
+   "title": "Who’s responsible when clinical AI goes wrong? AMA weighs in",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOT2VSWk5GUUp3c212d2tRb2ZVcW1DZ3ladlhSNllmcmtTX3RmVmhNX0txNWd3VTE3VzBNdnc1c3BUWlVQcDdSSFRlWnpqb2tQdE9jN0VDemlua0RSTDlvamhVaUxLVnY4SXFldlUxa3BnR1pNcWhrOE9Ld3JnRmV5aFlZQjA2M3dpeUVuTFprU0RyOUpNY245elhkaWhGdzdpc0dBb1ZPQ1F6dlE?oc=5",
+   "source": "Fierce Healthcare",
+   "domain": "fiercehealthcare.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "Fierce Healthcare"
+   ],
+   "themes": [
+    "医疗 AI"
+   ],
+   "headlines": [
+    "Who’s responsible when clinical AI goes wrong? AMA weighs in"
+   ],
+   "entities": [],
+   "summary": "The AMA has weighed in on the issue of responsibility when clinical AI goes wrong.",
+   "meaning": "医疗 AI 责任归属问题受到行业协会关注，直接关系到医疗 AI 在临床落地的安全边界与合规性。",
+   "importance": 7
+  },
+  {
+   "id": "i64xss",
+   "lastSeen": "2026-11-03",
+   "title": "Industry Voices—The other AI divide is already opening in healthcare",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbXhMcE0tQmdoZl95RjlucVVsazJRWVNxUWtpX0VZT3lGejBxbHVSSDRlXzZrUndZSkRhN0g0bGJNODVzcDI2R1VrZFBGcWlERk5yN1RCYWc2RVpVYWJnNmdaQS0yd29aWHFGR1J3TDB3cVpWRlVMV0FkRjBMX0k3T2JFRTQ3bnNBTzNpdmxNR0pMdWVJNjkwUk9jbjJoZXFaLTQ4MmozQS1jTG1odGRoZWVFaUs2QQ?oc=5",
+   "source": "Fierce Healthcare",
+   "domain": "fiercehealthcare.com",
+   "published": "2026-10-30",
+   "outlets": [
+    "Fierce Healthcare"
+   ],
+   "themes": [
+    "医疗 AI"
+   ],
+   "headlines": [
+    "Industry Voices—The other AI divide is already opening in healthcare"
+   ],
+   "entities": [],
+   "summary": "Industry voices highlight that another AI divide is already opening in healthcare.",
+   "meaning": "医疗行业内部正在显现新的 AI 鸿沟，提醒我们关注医疗 AI 普及过程中的不平等问题。",
+   "importance": 6
+  },
+  {
    "title": "Canada, Nvidia Back Cohere at Over $20 Billion Valuation",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVk0xNE9EYzVuMEQ0OUJvYXNDMTFEN2tfVkVYWV9xSXpQWnlQUkNVTTIyWG5XOThJMHY3WWs5RktqWXpVMjN1ZmtXcVFUeVJMYjJNaEhFTTg1b0RNblJUTHZ3LW1wZ0JmRUZEUURwTy0yaC1nXzlHM3ZKeWFIUVJBdUZ5VlU0RXZxcTNKdGZ0ZHVoVWFILTRRWmVyVlN3V2V1X1VONWdTNjFYYVcwYUlj?oc=5",
    "source": "Bloomberg.com",
@@ -3320,6 +3826,29 @@
    "summary": "智能体身份初创公司 Mintive 获得了 Cowboy Ventures、Coatue 以及天使投资人 Jeff Dean、Andrej Karpathy 的投资。",
    "meaning": "顶级 AI 学者与顶级风投联合押注智能体（Agent）身份安全与认证领域，标志着通用 AI 迈向多智能体协作阶段的关键基础设施正成为新的投资热点。",
    "id": "v3op4b"
+  },
+  {
+   "id": "3xt2jt",
+   "lastSeen": "2026-11-03",
+   "title": "NVIDIA CEO Jensen Huang May Have Been The Target Of A Chinese Government Spy",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMVc0U0Nud2JZVjlUNzBjRTkwQlBPRWpsNVB0bVhEWXRlWlhUNDgwdm52U0N5NHRaMnFDbDF2bHpsVFVObWNCNHFMWDNxRWRyOEUyWTE1OXo2RG5LbVZ1cGZ6WWdMUVpjRUh2dHRmMzhhZ2UzeU9LcEh6UXRHYlpab1FtZlh6bWpDVWloaGJuYUN1NWlraUlCcDB5bUsyYmVrXzMwa18tbmVRdFVoaVVJ?oc=5",
+   "source": "Engadget",
+   "domain": "engadget.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Engadget"
+   ],
+   "themes": [],
+   "headlines": [
+    "NVIDIA CEO Jensen Huang May Have Been The Target Of A Chinese Government Spy"
+   ],
+   "entities": [
+    "Jensen Huang",
+    "NVIDIA Research"
+   ],
+   "summary": "NVIDIA CEO Jensen Huang may have been the target of a Chinese government spy.",
+   "meaning": "NVIDIA 核心高管的安全动态备受瞩目，也折射出当前地缘政治下中美科技竞争的敏感氛围。",
+   "importance": 6
   },
   {
    "title": "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative",
@@ -3627,6 +4156,50 @@
    "importance": 5
   },
   {
+   "id": "lp87qp",
+   "lastSeen": "2026-11-03",
+   "title": "Anthropic IPO May Spark AI Rally as Short Bets on Tech Pile Up",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZzBXQnZEZmx3cTFkcnU4ZEppX19Ca2VNSE9pUUotcTg4VjdDcU92MXlWMHdTT3d1YW45dGFicXh0UTBwdzV2bVUwRVl1R2ZaOE1KYTAyR21mNDBiLUlDQVBEbV9IUzJlR2xTZWhVYXJyclN5b2xVZnR0cm15bG42WWRLeVdhMjkyR254UDdnSkVobXU3b1JyQVlRY2I3YldocXFqY2ZPa3FoU3N3ajk2c1ZOOA?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic IPO May Spark AI Rally as Short Bets on Tech Pile Up"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic's potential IPO may spark an AI rally as short bets on tech pile up.",
+   "meaning": "头部 AI 企业的资本市场动作可能引爆板块行情，影响整个行业融资与估值走向。",
+   "importance": 6
+  },
+  {
+   "id": "17kxfiz",
+   "lastSeen": "2026-11-03",
+   "title": "Anthropic’s IPO filing shows most of its compute goes to R&D, not serving customers",
+   "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPZ19jcFFQMTkwa2UxaVNfSXFQSlZZbXNXOE9MV1gzR1RjYm4wVUc4NjI4YzFrU3BSYzA5UmpKekhOX1l0MkRTMEpPeGJqUF9NMDZJWXRVUjFNVG8zZm4xbUZzUF9sRG5kSzlUVkctN2xzNnkyX3ktS2RwREpNX2R2LWhiNUkweUgtUk1fNFRQbWJvVnNFR1FNZDFEeFFzZGZNUm1NUE83dFBLbnFEUjZWRGdTczJHMVFCVmVta2RWWmQ2T3BtUGlCcUJnVDItVU00WTd4ZXh5QjBuSmU0cERuUW5oRzBDSHQ0bXVHSlc3WU9oZmRfNXpzRGoxM181M1RBdWZjT3VsLXRiMUxrVS1qQVZtV3ZncU1UNWxFUWcxTFZzMUFEOEI1Tmc2bjBkZGl1OGNrUlZZRkRTZlN5?oc=5",
+   "source": "Tom's Hardware",
+   "domain": "tomshardware.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic’s IPO filing shows most of its compute goes to R&D, not serving customers"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic's IPO filing shows most of its compute goes to R&D rather than serving customers.",
+   "meaning": "通过招股书披露的数据可以看出，大模型头部厂商目前的核心投入仍在基础研发与算力消耗上。",
+   "importance": 6
+  },
+  {
    "title": "AI Is Upending Law Firm Pricing; IBM and Mastercard Want a Share of the Savings",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObktRd0duc09SUzJWdkMyeXJjbmM1NEloTjhiRHhNc01xMjR6M1ZEcm5FS1g2cjJyRklCZDVCSklSaGlQUlZtUFotRm1kRHhZMUhhSnMybVVVVVVkeGJjQjZCRFRCaWNmMVJhYmlTN2huWkZLS2tOMmNUYUNtd3BXNE4zcXVwREF5Qy1vMEJYaFJjdG9YQW04a3phMmlJa2hxQmxWdXJZcjVUMjFUUnA5M0lSTFJPMkgxRlVmM2lVOA?oc=5",
    "source": "Law.com",
@@ -3747,6 +4320,94 @@
    "id": "18o9z6o"
   },
   {
+   "id": "1vat0dw",
+   "lastSeen": "2026-11-03",
+   "title": "Healthcare's AI Race Heats up",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOamtiV2hKT2w5ZUlic3lORWg4a09FSXdMUEhfYjg0d2NIY2JrRFE2cnpUMlh2aGItUmJ6T0ZNUE43aDMyTUlNMkVhbnpfXzc5OVVTVXpidHdQTlh4bmp5RW5sSHBvZFQzTlBiallFS3BJMF9LWU0tNFhrOU9lMU50NG1QUGI2MkZ4WlN6bEZ5ZUNyd1NaMzlOQmtB?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [
+    "医疗 AI"
+   ],
+   "headlines": [
+    "Healthcare's AI Race Heats up"
+   ],
+   "entities": [],
+   "summary": "The healthcare AI race is heating up across the industry.",
+   "meaning": "医疗 AI 赛道竞争持续升温，医疗行业诊断与落地的商业化节奏正在加快。",
+   "importance": 7
+  },
+  {
+   "id": "takvqx",
+   "lastSeen": "2026-11-03",
+   "title": "NYU Langone brings OpenEvidence’s clinical AI into the EHR systemwide",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQb2FHU2FONnFsUWxYWXpRVlc2a1JxU2FwOHEzS3FQNjdvaGphR092UFVBZjNIWDd2MmpiZ19UZmdYdlItME5DNzBfYjdBXy1RYjZnaEJRVHdoeFNzU2lZWUI3b3p0Y0Z6bTBaV0ZfRWxULUJIa1NORDJNaXZFY2M1OXltRDdQWTVqN0pJb3VtYmZUd0RzYUNzcUF5WmVMMHRSaHdXNXcxcGstUkNHUjIwaTZ3WXhQc0k?oc=5",
+   "source": "Fierce Healthcare",
+   "domain": "fiercehealthcare.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Fierce Healthcare"
+   ],
+   "themes": [
+    "医疗 AI"
+   ],
+   "headlines": [
+    "NYU Langone brings OpenEvidence’s clinical AI into the EHR systemwide"
+   ],
+   "entities": [],
+   "summary": "NYU Langone has brought OpenEvidence's clinical AI into the EHR system systemwide.",
+   "meaning": "临床 AI 成功在大型医疗机构的电子健康记录（EHR）系统中全面落地，是医疗行业 AI 深度应用的典型案例。",
+   "importance": 8
+  },
+  {
+   "id": "q2dqan",
+   "lastSeen": "2026-11-03",
+   "title": "Flagship brings 3 biotech platforms together to launch AI drug discovery player Etcelera",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNekdmU282MnZTSGtzemJ1OUpDUE9SZ3FjMm8yU0pGendOcTlXVmtHejUtLWVvNEtMYXdYbzVWTkRaTDQ2bUljTUpDaXA4a292REI0MWVBcVozZDhIX2x5bmFhZEFLOUZzQ1JYdElhM2FVU3NuZlU0eFRGbnhxemJld0NzT3VQNGh1SWEzREVDb092TzVQYWF0RnVSNC12VzhQLWt6Qg?oc=5",
+   "source": "Fierce Biotech",
+   "domain": "fiercebiotech.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Fierce Biotech"
+   ],
+   "themes": [
+    "医疗 AI"
+   ],
+   "headlines": [
+    "Flagship brings 3 biotech platforms together to launch AI drug discovery player Etcelera"
+   ],
+   "entities": [],
+   "summary": "Flagship has brought three biotech platforms together to launch an AI drug discovery player named Etcelera.",
+   "meaning": "生物医药领域通过整合平台推出新的 AI 药物研发公司，展示了 AI 在药物研发赛道的资本与技术集聚趋势。",
+   "importance": 8
+  },
+  {
+   "id": "i8hvpc",
+   "lastSeen": "2026-11-03",
+   "title": "Transforming into an AI learning health system",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTFJlX2I3UGJtOW91c1M1Njd0UEZPMkpIZHlEcWszX0M2aUt3bTk4bktSRURqRDZKV1VzU0lCYlI4NFByOHdLUlVDMFZ4OUtwdm9MMHhtZDREMmxSNHFMUHkxeDVXVWR4QV9jS1V5MmNia2VqTTdZemVaa2czZmNuajVfRFM5d1R5NHc?oc=5",
+   "source": "Healthcare IT News",
+   "domain": "healthcareitnews.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Healthcare IT News"
+   ],
+   "themes": [
+    "医疗 AI"
+   ],
+   "headlines": [
+    "Transforming into an AI learning health system"
+   ],
+   "entities": [],
+   "summary": "有机构探讨了将系统转型为AI学习型健康系统的相关进展。这展示了AI在医疗领域的深入应用方向。",
+   "meaning": "这契合医疗AI和个人健康AI的发展趋势，表明AI正逐步融入医疗体系的底层架构中，值得关注其落地效果。",
+   "importance": 6
+  },
+  {
    "id": "17br6v7",
    "lastSeen": "2026-11-03",
    "title": "Anthropic's loss shrinks, revenue jumps ahead of blockbuster IPO",
@@ -3778,6 +4439,34 @@
    ],
    "summary": "Anthropic's amended IPO paperwork revealed soaring Q3 revenue and a significant compute bill.",
    "meaning": "Financial and compute metrics from leading foundational model providers offer vital visibility into the real costs and commercialization pace of generative AI.",
+   "importance": 8
+  },
+  {
+   "id": "17br6v7",
+   "lastSeen": "2026-11-03",
+   "title": "Anthropic revenue growth slows, compute financing risks mount ahead of IPO",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPalN1b2NwcllWRkRjRUNmOVBjSDMxWDNzdjZIclhDNTdMMFlaVUx2eWN1U19acllfTk0xX0JIbkJma21jVDFhZUR1czFjbVdLbThjMHVQZ0F4MkFvNmc0cURPN05FMkE3VFNyMTktbmNzWVIxN3c1YVFhSXpBTmZSQk1DZ013aDVRcXE5OEplekFkZWFJbmQxUEhDSVJ3RVVrZWJUd2ZRYWRfWUJhMVMycEZRRk8?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "Business Insider",
+    "Bloomberg.com",
+    "Financial Times",
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill",
+    "Watch Anthropic Revenue Surges Ahead of IPO",
+    "Anthropic’s seven founders tighten grip ahead of blockbuster IPO",
+    "Anthropic revenue growth slows, compute financing risks mount ahead of IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic's amended IPO paperwork reveals soaring Q3 revenue and a stunning compute bill.",
+   "meaning": "It underscores the high-revenue yet incredibly capital-intensive nature of scaling frontier AI models, offering rare financial transparency into the industry's leaders.",
    "importance": 8
   },
   {
@@ -4243,6 +4932,28 @@
    "id": "aap4qd"
   },
   {
+   "id": "1wp8x0b",
+   "lastSeen": "2026-11-03",
+   "title": "Medical AI Diagnosis: Key Barriers & Challenges to Building a Profitable Independent Business",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5YM2Vrek5KMUJOaktIRm9nZ3VBLWc5NEJzeDRaSlNMUDlSUWlac2NubkgyZzRaN3c2RUVRMUdaMmtaWk5kcVItZjQxUktqUUlGODY4?oc=5",
+   "source": "36Kr",
+   "domain": "eu.36kr.com",
+   "published": "2026-10-28",
+   "outlets": [
+    "36Kr"
+   ],
+   "themes": [
+    "医疗 AI"
+   ],
+   "headlines": [
+    "Medical AI Diagnosis: Key Barriers & Challenges to Building a Profitable Independent Business"
+   ],
+   "entities": [],
+   "summary": "文章分析了医疗AI诊断在建立盈利性独立业务时面临的关键壁垒与挑战。这反映了当前医疗AI商业化落地的实际困境。",
+   "meaning": "对于关注医疗AI行业落地的读者来说，了解这些商业挑战有助于理性评估医疗AI公司及诊断技术的市场前景。",
+   "importance": 5
+  },
+  {
    "title": "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkZzbnhBaW1mZXJzZ0NBNDQxUk1CQW5WNTc0eDYxTGVvZGtIVTRjTGs5THBLLTRMZDFLM0o0ZWpSZU5qNDhxbjNUYXdvVk9wVVI4V01WRFdXQndvcHZndkl4aWE0NkpGVHJtZUlZUW9EX19xeF9HR0RXcUU5VlM1Rm15OTRIaENTeDVLTWhTdWhzWkItMk5JU2tEbXRyN2hrU1NhT3RXZE9FRkdE?oc=5",
    "source": "Bloomberg",
@@ -4325,6 +5036,31 @@
    "summary": "The Information等媒体报道，长期采购Nvidia芯片的OpenAI正计划购买Google的AI芯片，以推进其AI基础设施建设。",
    "meaning": "这是不能错过的通用AI重大事件，表明OpenAI正试图摆脱单一硬件依赖，AI算力格局正发生重大调整。",
    "id": "1xf7smd"
+  },
+  {
+   "id": "1otwpkx",
+   "lastSeen": "2026-11-03",
+   "title": "What to Know About the Anthropic IPO",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVlc5a0lMc2prYk5VbWQ1bk5UMXc4RzdQcEZtaThpbVI2bFJ4VzNKNFNQT0FhLWJtb1BuR0ZKZXUwMFViMTVUWEJLRmcwdXNFVmFZQnpLUERjN0hGMmRUbWVDUFU4R1VfUUozMmxIQ3d1eVNnb1hVMFlLQWswVVlGb2ZzYy1iV1lrYUN5ZWFnNE9JY19ZeEFPX183WC1wLW1aYTNTYy1NUmt3VHhzUTBxWkZjc3Y?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Business Insider",
+    "Bloomberg",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "What Smart People Are Saying About Anthropic's IPO Paperwork",
+    "What to Know About the Anthropic IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "各界知名人士对Anthropic的IPO文件展开讨论与评价。",
+   "meaning": "反映出资本市场与行业专家对AI头部企业上市及未来发展路径的高度关切。",
+   "importance": 5
   },
   {
    "title": "Watch the full discussion between OpenAI CEO Sam Altman and Oracle co-CEO Clay Magouyrk",
@@ -4463,30 +5199,6 @@
    "summary": "2026胡润百富榜发布，字节跳动张一鸣以6700亿元刷新中国首富财富纪录，DeepSeek创始人梁文锋首次进入榜单前十。",
    "meaning": "中国AI领军人物及其企业获得极高商业估值认可，展示了中国AI在资本与产业层面的爆发力，值得中国AI方向的读者密切关注。",
    "importance": 9
-  },
-  {
-   "id": "1otwpkx",
-   "lastSeen": "2026-11-03",
-   "title": "What to Know About the Anthropic IPO",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVlc5a0lMc2prYk5VbWQ1bk5UMXc4RzdQcEZtaThpbVI2bFJ4VzNKNFNQT0FhLWJtb1BuR0ZKZXUwMFViMTVUWEJLRmcwdXNFVmFZQnpLUERjN0hGMmRUbWVDUFU4R1VfUUozMmxIQ3d1eVNnb1hVMFlLQWswVVlGb2ZzYy1iV1lrYUN5ZWFnNE9JY19ZeEFPX183WC1wLW1aYTNTYy1NUmt3VHhzUTBxWkZjc3Y?oc=5",
-   "source": "Bloomberg",
-   "domain": "bloomberg.com",
-   "published": "2026-10-27",
-   "outlets": [
-    "Business Insider",
-    "Bloomberg"
-   ],
-   "themes": [],
-   "headlines": [
-    "What Smart People Are Saying About Anthropic's IPO Paperwork",
-    "What to Know About the Anthropic IPO"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "各界知名人士对Anthropic的IPO文件展开讨论与评价。",
-   "meaning": "反映出资本市场与行业专家对AI头部企业上市及未来发展路径的高度关切。",
-   "importance": 5
   },
   {
    "title": "为什么黄仁勋帮不了欧洲人工智能",
@@ -4945,6 +5657,74 @@
    "importance": 2
   },
   {
+   "id": "14m8l02",
+   "lastSeen": "2026-11-03",
+   "title": "Anthropic inks lease for more SoMa offices after IPO announcement",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUEV1eG5NR1FaWVdEdnZVZ3h6SS1yNWtoeW9NLUpXWFFrY2dwTzNqUENoMlZod29RU3BjeWI4U2p6bG5UQ0pnb01UR3NiNDc1VDdRZmVWY0t2d2VXZ3VEUmU4SG1KQk90aEQ5R1pqNFFCSWl5RjlnWTFwS0lxS05POXRsZENLWnlwTXBWdHNrOWtjSmtlNGdJVkwwLWtVZGRz?oc=5",
+   "source": "The Real Deal",
+   "domain": "therealdeal.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "The Real Deal"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic inks lease for more SoMa offices after IPO announcement"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic在宣布IPO计划后，又签署了更多SoMa办公室的租赁协议。这显示出该公司在走向资本市场过程中的业务扩张步伐。",
+   "meaning": "作为通用AI领域的重要玩家，Anthropic的IPO与业务动作是不可错过的行业大事件，反映了头部AI公司的最新动向。",
+   "importance": 7
+  },
+  {
+   "id": "hqrc97",
+   "lastSeen": "2026-11-03",
+   "title": "Nvidia's worst nightmare may be lurking inside Anthropic's IPO filing",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNT0JQTk8zZ2tFMldwSU5hLUJ2NzNfMDlxWWlWX29sWGk1bjJzZzdzb0V3OXM3Vmd3VDRqeXd5NVF0b0VPdFNYeU1UMXJwQk11M0l2OEFJN3JTc2I0aWdiNUxibVZ3MlpZQ1B4YW9wa2t1QVZac1BlaUVPV1JFRERVRmlBRWhZR0dyeWR3T0ljS0JMZ1NvQVV4eERfWHZWLS1XMVZaNEV3QWZSQTg?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "Nvidia's worst nightmare may be lurking inside Anthropic's IPO filing"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "有观点指出Anthropic的IPO文件中可能隐藏着Nvidia的最糟噩梦。这引发了市场对AI芯片及大模型厂商竞争格局的关注。",
+   "meaning": "这关系到通用AI底层算力与大模型厂商的博弈格局，是理解当前AI产业竞争的重要视角。",
+   "importance": 7
+  },
+  {
+   "id": "c5zl3x",
+   "lastSeen": "2026-11-03",
+   "title": "Video: When ChatGPT’s Medical Advice Led to Tragedy",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNFdKUThXbnpJbkI0OUEyY3d6SWRoN09KX2hWMm93ZlVyalByWDZXOVFZMHV6Q3R1MVRoLWsyMmhTY2tTV2NPbVJ6QWdHQlVDNlNvWERGWGRQSFN3VTBvVXhjTmdWOW9tcUhZZGxyVmdJZnB0dGxYWWh3Z3JVdzlzTnlxXzhKck41eC1vWXFfR2JuY3lYUzVfTlVR?oc=5",
+   "source": "The New York Times",
+   "domain": "nytimes.com",
+   "published": "2026-10-27",
+   "outlets": [
+    "The New York Times"
+   ],
+   "themes": [
+    "个人健康 AI"
+   ],
+   "headlines": [
+    "Video: When ChatGPT’s Medical Advice Led to Tragedy"
+   ],
+   "entities": [
+    "OpenAI"
+   ],
+   "summary": "一段视频报道了ChatGPT的医疗建议导致悲剧的案例。这凸显了当前AI在个人健康和医疗咨询应用中的巨大风险。",
+   "meaning": "这直接关系到读者最关心的个人健康AI方向，警示我们在使用AI管理健康时必须保持极高的谨慎，防范安全隐患。",
+   "importance": 9
+  },
+  {
    "title": "AI Enters the Courtroom as Dubai Rethinks How Lawyers Train and Judges Work",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZnNsOUpnZl9vdTBta2ktMkdBTmxOdTRnSTVUX1ItR3B1Qjl0ZlVkMU5KZC03bnBMRjFPbXJNWXNFLWxGY2YtQVVMbkNkZEVCWFYtSG5PTUx5MTM5eVdlRktxUjE5OVYyT002QjZKM0FPTmwxdVFZRFJzd3o2QkROY09VQm1lT0h1eXMwdmVOcWsyeW55OXkteldSY21nUmwyZk9RYlhtZWtDeGZTRkoxZlA0YUwyUzdQejFhYXhUZ3d1SDUybWpVblFB?oc=5",
    "source": "Law.com",
@@ -5008,6 +5788,22 @@
  ],
  "digests": [
   {
+   "date": "2026-11-04",
+   "ids": [
+    "v2xfj8",
+    "xggvob",
+    "1rqs2zj",
+    "dh3lg8",
+    "hpegcb",
+    "15rm220",
+    "1cx8la9",
+    "hi1b2s",
+    "ehw7b2"
+   ],
+   "scanned": 177,
+   "events": 136
+  },
+  {
    "date": "2026-11-03",
    "ids": [
     "7kpsif",
@@ -5040,10 +5836,10 @@
   }
  ],
  "weekly": [
-  "17br6v7",
-  "18p4lp6",
-  "7kpsif",
-  "1w2yjjm",
-  "1wfiuz1"
+  "v2xfj8",
+  "xggvob",
+  "1rqs2zj",
+  "dh3lg8",
+  "hpegcb"
  ]
 }

@@ -99,7 +99,7 @@ export const summarizeNews = async (stories, report = []) => {
 // whether the person is on camera rather than being talked about. Same model and per-run cap as the news, so notes
 // keep their quota.
 const VIDEO_INSTRUCTIONS = `你是一位中文编辑，为一位关注 AI 的读者整理视频卡片的“内容重点”。每条给你视频标题、频道名和发布方简介（原文，可能是英文）。为每条写：
-- highlight：两到三句中文，说清谁在讲（讲者和身份）、主要谈了哪些话题、观点或发布。只能使用标题和简介里出现的信息，不要编造；简介很少时只写能确定的，宁短勿编。不要写“本视频”“该视频”这类开头，直接说内容。输入里已有 highlight 时原样返回。
+- highlight：两到三句简体中文（原文是英文也要用中文写），说清谁在讲（讲者和身份）、主要谈了哪些话题、观点或发布。只能使用标题和简介里出现的信息，不要编造；简介很少时只写能确定的，宁短勿编。不要写“本视频”“该视频”这类开头，直接说内容。输入里已有 highlight 时原样返回。
 - kind：这条内容主要讲的是哪一类，决定它多久过时：
   product = 产品更新：发布会、新模型 / 新功能演示、benchmark、价格、路线图、“我们下个版本会…”。几个月就过时。
   judgment = 行业判断：预测、AGI 时间线、竞争格局、谁会赢、行业趋势和观点。一年内还有参考价值。
@@ -158,7 +158,8 @@ export const highlightVideos = async (entries, report = []) => {
       for (const { id, highlight, kind, sports, firsthand, field } of await highlightBatch(key, model, batch)) {
         const target = batch[id]?.target;
         if (!target) continue;
-        if (!target.highlight && highlight?.trim()) target.highlight = highlight.trim();
+        // English slips through now and then; it is left for the next run.
+        if (!target.highlight && /[一-鿿]/.test(highlight || '')) target.highlight = highlight.trim();
         if (['product', 'judgment', 'method'].includes(kind)) target.kind = kind;
         if (typeof sports === 'boolean') target.sports = sports;
         if (batch[id].person && typeof firsthand === 'boolean') target.firsthand = firsthand;

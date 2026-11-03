@@ -6,7 +6,7 @@ const API = 'https://generativelanguage.googleapis.com/v1beta';
 const BATCH = 10;
 const PAUSE_MS = 7000; // Stays under the free tier's requests-per-minute limit.
 
-const INSTRUCTIONS = `你是一位中文 AI 新闻编辑，为一位读者写简报。读者最关心：奥运 AI（最高优先级）、体育 AI、中国 AI、房产 AI、法律 AI，以及不能错过的通用 AI 大事。
+const INSTRUCTIONS = `你是一位中文 AI 新闻编辑，为一位读者写简报。读者最关心：奥运 AI 和个人健康 AI（普通人怎么用 AI 管理自己的健康；这两类最高优先级）、体育 AI、中国 AI、医疗 AI（医疗行业：诊断、药物研发、医院落地）、房产 AI、法律 AI，以及不能错过的通用 AI 大事。
 每条新闻只给你几家媒体的标题（可能是英文或中文），没有正文。为每条写：
 - summary：最多两句中文，说清是谁、做了什么、关键数字。只能使用标题里出现的事实；标题之间有出入时用保守的说法；不要补充标题里没有的数字、日期、人名或细节。
 - meaning：一到两句中文，说明“这意味着什么”、为什么值得关注；尽量联系读者关心的方向。可以做判断，但不要编造新事实。
@@ -94,7 +94,7 @@ export const summarizeNews = async (stories, report = []) => {
 // 内容重点 for video cards: two or three Chinese sentences from the video's title and full YouTube description
 // (the card's own excerpt stops at 220 characters), plus the content type that sets its shelf life in
 // 演讲 & Podcast (product 3 months, judgment 1 year, method kept) and whether it is about sports or the Olympics
-// (always kept). Entries are { title, channel, description, person?, target }; the results go to target.highlight
+// (always kept), and its field (个人健康 AI / 医疗 AI, which go to 精选). Entries are { title, channel, description, person?, target }; the results go to target.highlight
 // (only when it has none yet), target.kind, target.sports and, for 人物访谈 (entries with a person), target.firsthand:
 // whether the person is on camera rather than being talked about. Same model and per-run cap as the news, so notes
 // keep their quota.
@@ -106,6 +106,10 @@ const VIDEO_INSTRUCTIONS = `你是一位中文编辑，为一位关注 AI 的读
   method = 方法思路：怎么做决策、组织和招人、为什么选这条技术路线、做事方法、踩过的坑、原理讲解。几年都有用。
   三类都有时按主要篇幅归一类；拿不准时选 judgment。
 - sports：是否和体育或奥运相关（体育 AI、赛事、运动员、转播、奥运会等），true 或 false。
+- field：这条主要讲哪个领域：
+  health = 个人健康 AI：讲给普通人听的，怎么用 AI 管自己的健康（问 AI 病情和症状、让 AI 看化验单 / 基因数据 / 体检报告、AI 管睡眠饮食运动、医生教大家怎么用 AI 看病）。
+  medical = 医疗 AI：讲给行业听的，AI 在医疗行业的应用（AI 诊断、医疗大模型、药物研发、医院和医生的工作流程、医疗 AI 公司）。
+  none = 其他。只是顺带提到医疗或健康的填 none；health 和 medical 都沾边时，看主要讲给谁听。
 - firsthand：输入里有 person 时，判断这是不是 person 本人出镜、亲口讲话的访谈、对话、演讲或节目（true）；如果是别人在评论、解读、讲述、转述 person 或 person 的访谈，或是剪辑拼接、AI 配音、二次创作（false）。拿不准时看标题和简介是否像本人在说话。输入里没有 person 时填 true。
 人名、公司名、产品名保留原文（可附常见中文名）。按输入顺序返回每条的 id。`;
 
@@ -113,8 +117,8 @@ const VIDEO_SCHEMA = {
   type: 'ARRAY',
   items: {
     type: 'OBJECT',
-    properties: { id: { type: 'INTEGER' }, highlight: { type: 'STRING' }, kind: { type: 'STRING', enum: ['product', 'judgment', 'method'] }, sports: { type: 'BOOLEAN' }, firsthand: { type: 'BOOLEAN' } },
-    required: ['id', 'highlight', 'kind', 'sports', 'firsthand']
+    properties: { id: { type: 'INTEGER' }, highlight: { type: 'STRING' }, kind: { type: 'STRING', enum: ['product', 'judgment', 'method'] }, sports: { type: 'BOOLEAN' }, firsthand: { type: 'BOOLEAN' }, field: { type: 'STRING', enum: ['health', 'medical', 'none'] } },
+    required: ['id', 'highlight', 'kind', 'sports', 'firsthand', 'field']
   }
 };
 
@@ -151,13 +155,15 @@ export const highlightVideos = async (entries, report = []) => {
   for (let start = 0; start < pending.length; start += BATCH) {
     const batch = pending.slice(start, start + BATCH);
     try {
-      for (const { id, highlight, kind, sports, firsthand } of await highlightBatch(key, model, batch)) {
+      for (const { id, highlight, kind, sports, firsthand, field } of await highlightBatch(key, model, batch)) {
         const target = batch[id]?.target;
         if (!target) continue;
         if (!target.highlight && highlight?.trim()) target.highlight = highlight.trim();
         if (['product', 'judgment', 'method'].includes(kind)) target.kind = kind;
         if (typeof sports === 'boolean') target.sports = sports;
         if (batch[id].person && typeof firsthand === 'boolean') target.firsthand = firsthand;
+        // A hand-picked video keeps the field it was picked for.
+        if (['health', 'medical', 'none'].includes(field) && !target.picked) target.field = field;
         if (target.highlight && target.kind) done++;
       }
     } catch (error) {

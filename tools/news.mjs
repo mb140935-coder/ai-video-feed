@@ -14,7 +14,8 @@ const OUTLETS = [
   'cnn.com', 'washingtonpost.com', 'forbes.com', 'geekwire.com', 'tomshardware.com', 'qz.com', 'engadget.com',
   'scmp.com', 'nikkei.com', 'asia.nikkei.com', 'caixinglobal.com', 'thenextweb.com', 'sportspromedia.com', 'sportico.com',
   'artificiallawyer.com', 'law.com', 'abajournal.com', 'inman.com', 'therealdeal.com', 'olympics.com', 'insidethegames.biz',
-  '36kr.com', 'caixin.com', 'thepaper.cn', 'latepost.com', 'jiqizhixin.com', 'qbitai.com', 'yicai.com', 'jiemian.com'
+  '36kr.com', 'caixin.com', 'thepaper.cn', 'latepost.com', 'jiqizhixin.com', 'qbitai.com', 'yicai.com', 'jiemian.com',
+  'statnews.com', 'fiercehealthcare.com', 'fiercebiotech.com', 'healthcareitnews.com', 'vcbeat.top'
 ];
 // A headline must read like news worth pushing: AI, or a big business event.
 const AI = /\bAI\b|A\.I\.|artificial intelligence|machine learning|\bLLMs?\b|model|agent|chatbot|ChatGPT|Claude|Gemini|robot|人工智能|大模型|模型|智能体|机器人/i;
@@ -23,7 +24,13 @@ const THEMES = [
   { title: '奥运 AI', query: '(Olympic OR Olympics OR IOC OR Paralympic) ("artificial intelligence" OR AI)', must: /olympi|paralympi|\bIOC\b/i },
   { title: '体育 AI', query: '"artificial intelligence" (sports OR NFL OR NBA OR "Premier League" OR "Formula 1" OR FIFA)', must: /sport|NFL|NBA|league|F1|Formula|FIFA|club|team/i },
   { title: '法律 AI', query: '("legal AI" OR "AI legal" OR "law firm" AI OR Harvey OR Legora)', must: /legal|law|lawyer|Harvey|Legora/i },
-  { title: '房产 AI', query: '"real estate" ("artificial intelligence" OR AI)', must: /real estate|property|propert|housing|mortgage|broker/i }
+  { title: '房产 AI', query: '"real estate" ("artificial intelligence" OR AI)', must: /real estate|property|propert|housing|mortgage|broker/i },
+  // 个人健康 AI: how people use AI for their own health (as high a priority as 奥运 AI); 医疗 AI: the industry.
+  // zh: a Chinese query too.
+  { title: '个人健康 AI', query: '("ChatGPT Health" OR "AI health coach" OR "health app" OR wearable OR "Apple Watch" OR Oura OR "medical advice" OR symptoms) (AI OR ChatGPT OR chatbot)',
+    zh: '(AI OR 大模型) (健康管理 OR 问诊 OR 体检报告 OR 可穿戴 OR 睡眠 OR 健康助手)', must: /health|wellness|symptom|patient|doctor|medical|sleep|fitness|diagnos|mental|stress|anxiety|depress|健康|问诊|体检|睡眠|医生|患者|心理/i },
+  { title: '医疗 AI', query: '("healthcare AI" OR "medical AI" OR "AI diagnosis" OR "AI drug discovery" OR "clinical AI" OR hospital AI OR Abridge OR "Hippocratic AI" OR "Med-Gemini")',
+    zh: '(医疗大模型 OR AI医疗 OR AI诊断 OR AI制药 OR 医院 大模型)', must: /health|medic|clinic|hospital|diagnos|drug|pharma|biotech|patient|doctor|Abridge|Hippocratic|医疗|医院|诊断|药|医生|患者/i }
 ];
 
 const decode = text => text.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
@@ -93,7 +100,10 @@ export const collectNews = async (watchlist, previous = [], report = [], stats =
       return [[person.name, `"${person.name}"`, false, keep], ...(chinese ? [[person.name, `"${chinese}"`, true, keep]] : [])];
     }),
     ...labs.map(lab => [lab.name, `"${lab.aliases[0]}"`, false, title => EVENT.test(title)]),
-    ...THEMES.map(theme => [theme.title, theme.query, false, title => theme.must.test(title) && AI.test(title)])
+    ...THEMES.flatMap(theme => {
+      const keep = title => theme.must.test(title) && AI.test(title);
+      return [[theme.title, theme.query, false, keep], ...(theme.zh ? [[theme.title, theme.zh, true, keep]] : [])];
+    })
   ];
 
   const days = MAX_AGE_DAYS;

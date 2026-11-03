@@ -4,6 +4,8 @@
 // that tell this person apart from namesakes ("阿里云 城市大脑 院士"). A person seen for the first time (or whose
 // keywords changed) gets a search of the past two years; after that each run looks for new videos only.
 // No AI filter: they can talk about anything. Clips, compilations, commentary and gossip are left out.
+// Also here, since they share the Bilibili and YouTube lookups: followed Bilibili uploaders (bilibiliUp,
+// pollBilibiliUp) and the hand-picked 精选 videos (docs/video-picks.json, addVideoPicks).
 
 const BACKFILL_DAYS = 730;
 const RECENT_DAYS = 7;
@@ -223,27 +225,35 @@ export const PEOPLE_TITLE_OK =(person, title) => new RegExp(person.names.map(esc
 // Hand-picked 人物访谈 (docs/people-picks.json: [{ person, url, note? }]), for interviews the search misses or its
 // title rules would skip. They are added once with the platform's own title, date and length, marked picked (kept
 // whatever the title says, never judged second-hand, and preferred when another upload of the same video exists).
+// A Bilibili or YouTube link → its feed key; '' for anything else.
+export const pickKey = url => {
+  const bvid = url.match(/bilibili\.com\/video\/(BV\w+)/)?.[1];
+  const youtubeId = url.match(/(?:v=|youtu\.be\/)([\w-]{11})/)?.[1];
+  return bvid ? `bilibili:${bvid}` : youtubeId ? `youtube:${youtubeId}` : '';
+};
+// Title, channel, date, length and description of one video, from the platform.
+const fetchVideo = async (key, youtubeKey) => {
+  const id = key.slice(key.indexOf(':') + 1);
+  if (key.startsWith('bilibili:')) {
+    const data = await getJson(`https://api.bilibili.com/x/web-interface/view?bvid=${id}`, { headers: await bilibiliHeaders() });
+    if (data.code !== 0) throw new Error(`code ${data.code}`);
+    const info = data.data;
+    return { url: `https://www.bilibili.com/video/${id}`, title: info.title, channel: info.owner?.name || '', published: day(info.pubdate * 1000), minutes: Math.round(info.duration / 60), text: info.desc || '' };
+  }
+  if (!youtubeKey) throw new Error('no YouTube key');
+  const info = (await getJson(`https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&id=${id}&key=${youtubeKey}`)).items?.[0];
+  if (!info) throw new Error('not found');
+  return { url: `https://www.youtube.com/watch?v=${id}`, title: decode(info.snippet.title), channel: info.snippet.channelTitle, channelId: info.snippet.channelId, published: info.snippet.publishedAt.slice(0, 10), minutes: isoMinutes(info.contentDetails.duration), text: info.snippet.description || '' };
+};
+
 export const addPicks = async (picks, items, report, youtubeKey) => {
   let added = 0;
   for (const pick of picks) {
-    const bvid = pick.url.match(/bilibili\.com\/video\/(BV\w+)/)?.[1];
-    const youtubeId = pick.url.match(/(?:v=|youtu\.be\/)([\w-]{11})/)?.[1];
-    const key = bvid ? `bilibili:${bvid}` : youtubeId ? `youtube:${youtubeId}` : '';
+    const key = pickKey(pick.url);
     if (!key) { report.push(`pick ${pick.url}: not a Bilibili or YouTube link`); continue; }
     if (items.has(key)) { Object.assign(items.get(key), { picked: true, firsthand: true }); continue; }
     try {
-      let video;
-      if (bvid) {
-        const data = await getJson(`https://api.bilibili.com/x/web-interface/view?bvid=${bvid}`, { headers: await bilibiliHeaders() });
-        if (data.code !== 0) throw new Error(`code ${data.code}`);
-        const info = data.data;
-        video = { url: `https://www.bilibili.com/video/${bvid}`, title: info.title, channel: info.owner?.name || '', published: day(info.pubdate * 1000), minutes: Math.round(info.duration / 60), text: info.desc || '' };
-      } else {
-        if (!youtubeKey) throw new Error('no YouTube key');
-        const info = (await getJson(`https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&id=${youtubeId}&key=${youtubeKey}`)).items?.[0];
-        if (!info) throw new Error('not found');
-        video = { url: `https://www.youtube.com/watch?v=${youtubeId}`, title: decode(info.snippet.title), channel: info.snippet.channelTitle, channelId: info.snippet.channelId, published: info.snippet.publishedAt.slice(0, 10), minutes: isoMinutes(info.contentDetails.duration), text: info.snippet.description || '' };
-      }
+      const video = await fetchVideo(key, youtubeKey);
       items.set(key, {
         key, url: video.url, title: video.title, channel: video.channel, ...(video.channelId ? { channelId: video.channelId } : {}),
         published: video.published, summary: summarize(video.text.split('\n')[0] || ''), tab: 'people', person: pick.person,
@@ -256,4 +266,64 @@ export const addPicks = async (picks, items, report, youtubeKey) => {
     }
   }
   report.push(`people picks: ${added} added`);
+};
+
+// Hand-picked 精选 videos (docs/video-picks.json: [{ url, field, note? }], field "health" or "medical" as in
+// summarize.mjs), for good ones the channel polls missed (older than their window, or a channel not followed).
+// Added once with the platform's details; update-feed.mjs keeps them while they are listed and tags them by field.
+export const addVideoPicks = async (picks, items, report, youtubeKey) => {
+  let added = 0;
+  for (const pick of picks) {
+    const key = pickKey(pick.url);
+    if (!key) { report.push(`video pick ${pick.url}: not a Bilibili or YouTube link`); continue; }
+    const existing = items.get(key);
+    if (existing) { Object.assign(existing, { picked: true, field: pick.field || existing.field }); continue; }
+    try {
+      const video = await fetchVideo(key, youtubeKey);
+      items.set(key, {
+        key, url: video.url, title: video.title, channel: video.channel, ...(video.channelId ? { channelId: video.channelId } : {}),
+        published: video.published, summary: summarize(video.text.split('\n')[0] || ''), about: pick.note || `${video.channel} 的视频。`,
+        tab: 'curated', tags: [], minutes: video.minutes, found: day(Date.now()), via: 'pick', picked: true, field: pick.field || 'none'
+      });
+      added++;
+    } catch (error) {
+      report.push(`video pick ${key}: FAILED ${error.message}`);
+    }
+  }
+  report.push(`video picks: ${added} added`);
+};
+
+// Followed Bilibili uploaders ("channel:bilibili/<mid>" rows): the name from the uploader card, then their new
+// videos from the video search (by name, newest first), kept when the uploader id matches.
+export const bilibiliUp = async mid => {
+  const data = await getJson(`https://api.bilibili.com/x/web-interface/card?mid=${mid}`, { headers: await bilibiliHeaders() });
+  if (data.code !== 0 || !data.data?.card?.name) return { error: 'B 站没有这个 UP 主' };
+  return { id: `bilibili:${mid}`, name: data.data.card.name };
+};
+export const pollBilibiliUp = async (source, maxAgeDays, minMinutes) => {
+  const mid = Number(source.channel.slice('bilibili:'.length));
+  const cutoff = Date.now() - maxAgeDays * 864e5;
+  const results = [];
+  for (let page = 1; page <= 2; page++) {
+    const data = await getJson(`https://api.bilibili.com/x/web-interface/search/type?search_type=video&keyword=${encodeURIComponent(source.name)}&order=pubdate&page=${page}`, { headers: await bilibiliHeaders() });
+    if (data.code !== 0) throw new Error(`code ${data.code} ${data.message || ''}`.trim());
+    const rows = (data.data?.result || []).filter(row => row.mid === mid);
+    results.push(...rows);
+    if (!rows.length || rows.some(row => row.pubdate * 1000 < cutoff)) break;
+    await new Promise(resolve => setTimeout(resolve, 800));
+  }
+  return results.filter(row => row.bvid && row.pubdate * 1000 >= cutoff && clockMinutes(row.duration) >= minMinutes).map(row => ({
+    key: `bilibili:${row.bvid}`,
+    url: `https://www.bilibili.com/video/${row.bvid}`,
+    title: decode(row.title || ''),
+    channel: source.name,
+    channelId: source.channel,
+    published: day(row.pubdate * 1000),
+    summary: summarize(decode(row.description || '')),
+    about: source.about,
+    tab: 'appearances',
+    tags: source.tags,
+    minutes: clockMinutes(row.duration),
+    found: day(Date.now())
+  }));
 };

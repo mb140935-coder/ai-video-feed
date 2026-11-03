@@ -9,6 +9,8 @@
 //    updates 3 months, industry judgment and untyped 1 year, method never). Sports and Olympic videos and 精选 stay.
 // 5. 人物访谈: interviews and talks of the people listed on the page, from YouTube and Bilibili (people.mjs). They
 //    never expire; the page hides the ones marked 已看.
+// 6. 个人健康 AI and 医疗 AI: videos Gemini puts in either field (summarize.mjs) go to 精选 with that tag, like
+//    Olympic AI; hand-picked ones are listed in docs/video-picks.json.
 // With a YOUTUBE_API_KEY (YouTube Data API v3) it also drops videos under MIN_MINUTES and dates hand-added
 // YouTube videos; without one those two steps are skipped and the title rules below do the filtering.
 // Usage: node update-feed.mjs <path to auto-feed.json>   (read if present, then rewritten)
@@ -16,7 +18,7 @@ import fs from 'fs';
 import { collectNews } from './news.mjs';
 import { summarizeNews, highlightVideos, VIDEO_HIGHLIGHTS_PER_RUN } from './summarize.mjs';
 import { buildDigest } from './digest.mjs';
-import { personFromRow, searchPeople, dedupePeople, addPicks, PEOPLE_TITLE_OK } from './people.mjs';
+import { personFromRow, searchPeople, dedupePeople, addPicks, PEOPLE_TITLE_OK, titleKey, bilibiliUp, pollBilibiliUp, addVideoPicks, pickKey } from './people.mjs';
 
 const AI = /\bAI\b|A\.I\.|artificial intelligence|machine learning|\bLLMs?\b|\bGPT|agent|chatbot|ChatGPT|Claude|Gemini|Qwen|Kimi|DeepSeek|robot|人工智能|大模型|模型|智能体|机器人|具身/i;
 const OLYMPIC = /olympi|paralympi|\bIOC\b|奥运|奥林匹克|冬奥/i;
@@ -91,6 +93,7 @@ const titleWanted = (source, title) => !EXCLUDE.test(title)
   && (!source.talksOnly || TALK.test(title));
 
 const pollSource = async source => {
+  if (source.channel.startsWith('bilibili:')) return (await pollBilibiliUp(source, MAX_AGE_DAYS, MIN_MINUTES)).filter(item => titleWanted(source, item.title));
   const xml = await fetchText(`https://www.youtube.com/feeds/videos.xml?channel_id=${source.channel}`);
   // A channel the user followed by link gets its name from the feed (the first <title> is the channel's).
   if (!source.name) {
@@ -254,12 +257,16 @@ for (const row of followedRows) {
   const known = previous.channels?.[row.key];
   const builtIn = SOURCES.find(source => source.followKey === row.key);
   let info = builtIn ? { id: builtIn.channel } : known?.id ? known : null;
-  if (!info) {
+  const mid = row.key.match(/^channel:bilibili\/(\d+)$/)?.[1];
+  if (!info && mid) {
+    try { info = await bilibiliUp(mid); } catch (error) { report.push(`channel ${row.key}: not resolved yet (${error.message})`); }
+  } else if (!info) {
     try { info = await resolveChannel(row); } catch (error) { report.push(`channel ${row.key}: not resolved yet (${error.message})`); }
   }
   channels[row.key] = { url: row.url, ...(info || {}) };
   if (channels[row.key].id && !SOURCES.some(source => source.channel === channels[row.key].id)) {
-    userSources.push({ channel: channels[row.key].id, name: known?.name || '', match: null, tags: ['你关注的频道'], about: known?.name ? `你手动关注的频道：${known.name}。` : '', key: row.key });
+    const name = known?.name || channels[row.key].name || '';
+    userSources.push({ channel: channels[row.key].id, name, match: null, tags: ['你关注的频道'], about: name ? `你手动关注的${mid ? ' B 站 UP 主' : '频道'}：${name}。` : '', key: row.key });
   }
 }
 const followedKeys = new Set(followedRows.map(row => row.key));
@@ -286,12 +293,20 @@ if (peopleGroup) {
 const people = peopleGroup?.items || [];
 // 人物访谈 list from the page; null when the table can't be read (their videos are then kept as they are).
 const interviewPeople = addedRows ? addedRows.filter(row => row.key.startsWith('person:')).map(personFromRow) : null;
+let videoPicks = [];
+try {
+  videoPicks = JSON.parse(fs.readFileSync(new URL('../docs/video-picks.json', import.meta.url), 'utf8'));
+} catch (error) {
+  report.push(`video picks: not read (${error.message})`);
+}
+const pickedKeys = new Set(videoPicks.map(pick => pickKey(pick.url)));
 const sourceFor = item => allSources.find(source => source.channel === item.channelId || (!source.key && source.name === item.channel));
 // Earlier items stay only while they still pass the current rules (and their channel is still followed).
 const items = new Map((previous.items || [])
   .filter(item => {
     // Found by the person search: kept (until its shelf life ends), whatever channel it is on, while its title passes.
     // 人物访谈: kept while the person is still on the list and the title still passes.
+    if (item.via === 'pick') return pickedKeys.has(item.key);
     if (item.via === 'people') {
       if (!interviewPeople) return true;
       const person = interviewPeople.find(entry => entry.name === item.person);
@@ -319,6 +334,21 @@ for (const source of allSources) {
   }
 }
 
+// The same video from a followed Bilibili uploader and from a YouTube channel of the same name: the Bilibili one
+// stays (no ads) and notes the YouTube key in "replaces", so the page carries a 已看 mark over.
+const bilibiliNames = new Set(allSources.filter(source => source.channel.startsWith('bilibili:')).map(source => source.name));
+const youtubeTwins = new Map([...(previous.items || []), ...items.values()]
+  .filter(item => item.key.startsWith('youtube:') && bilibiliNames.has(item.channel))
+  .map(item => [`${item.channel}|${titleKey(item.title)}`, item.key]));
+let replaced = 0;
+for (const item of items.values()) {
+  const twin = item.key.startsWith('bilibili:') && youtubeTwins.get(`${item.channel}|${titleKey(item.title)}`);
+  if (!twin) continue;
+  item.replaces = twin;
+  if (items.delete(twin)) replaced++;
+}
+if (bilibiliNames.size) report.push(`bilibili follows: ${[...items.values()].filter(item => item.replaces).length} carry a YouTube twin, ${replaced} YouTube copies dropped`);
+
 // 人物访谈 first: the watchlist search below can use up the day's YouTube quota.
 let peopleState = previous.people || {};
 if (interviewPeople) {
@@ -335,6 +365,7 @@ try {
   report.push(`people picks: FAILED ${error.message}`);
 }
 dedupePeople(items, interviewPeople, report);
+await addVideoPicks(videoPicks, items, report, YOUTUBE_API_KEY);
 
 // Watchlist people on any channel (their talks and podcast guest spots), via YouTube search; needs the API key.
 if (YOUTUBE_API_KEY && watchlist) {
@@ -404,11 +435,16 @@ try {
 // 内容重点 and content type for YouTube cards without them yet, from the full description (newest first; the rest
 // on later runs). 人物访谈 cards also get "firsthand" (the person on camera, not someone talking about them) and
 // go first, so they are judged in the run that finds them.
+const HEALTH_HINT = /health|medic|doctor|physician|patient|hospital|clinic|disease|cancer|drug|pharma|biotech|diagnos|nurse|therap|wellness|sleep|longevity|fitness|nutrition|diet|23andMe|\blabs?\b|symptom|医|健康|病|药|诊|护理|睡眠|养生|长寿|减肥|饮食|体检/i;
+kept.forEach(item => {
+  if (item.field === undefined && item.highlight && item.kind && !HEALTH_HINT.test(`${item.title}\n${item.summary || ''}\n${item.highlight}`)) item.field = 'none';
+});
 try {
   const pending = [
     ...kept.filter(item => /^(youtube|bilibili):/.test(item.key)).map(item => ({ key: item.key, title: item.title, channel: item.channel, published: item.published, person: item.via === 'people' && !item.picked ? item.person : undefined, target: item })),
     ...Object.entries(videos).filter(([key]) => key.startsWith('youtube:')).map(([key, info]) => ({ key, title: info.title, channel: info.author, published: info.published, target: info }))
-  ].filter(entry => !entry.target.highlight || !entry.target.kind || entry.person && entry.target.firsthand === undefined)
+  ].filter(entry => !entry.target.highlight || !entry.target.kind || entry.person && entry.target.firsthand === undefined
+    || entry.target !== videos[entry.key] && entry.target.tab !== 'people' && entry.target.field === undefined)
     .sort((a, b) => Number(Boolean(b.person)) - Number(Boolean(a.person)) || (b.published || '').localeCompare(a.published || ''))
     .slice(0, VIDEO_HIGHLIGHTS_PER_RUN);
   const details = await youtubeDetails(pending.filter(entry => entry.key.startsWith('youtube:')).map(entry => entry.key.slice('youtube:'.length)));
@@ -422,6 +458,15 @@ try {
 const peopleRejected = [...new Set([...kept.filter(item => item.via === 'people' && item.firsthand === false).map(item => item.key), ...(previous.peopleRejected || [])])].slice(0, 1000);
 report.push(`people: ${kept.filter(item => item.via === 'people' && item.firsthand === false).length} not first-hand dropped`);
 kept = kept.filter(item => !(item.via === 'people' && item.firsthand === false));
+// 个人健康 AI (as high a priority as Olympic AI) and 医疗 AI go to 精选 with their tag; 人物访谈 stay in their section.
+const FIELD_TAGS = { health: '个人健康 AI · 最高优先级', medical: '医疗 AI' };
+kept.forEach(item => {
+  const tag = FIELD_TAGS[item.field];
+  if (!tag || item.tab === 'people') return;
+  item.tab = 'curated';
+  if (!(item.tags || []).includes(tag)) item.tags = [tag, ...(item.tags || [])];
+});
+report.push(`fields: ${kept.filter(item => item.field === 'health').length} 个人健康 AI, ${kept.filter(item => item.field === 'medical').length} 医疗 AI`);
 const expiredCount = kept.filter(expired).length;
 kept = kept.filter(item => !expired(item));
 report.push(`shelf life: ${expiredCount} expired, ${kept.filter(item => !item.kind).length} of ${kept.length} not typed yet`);

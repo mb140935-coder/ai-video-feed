@@ -9,8 +9,8 @@ const WEEKLY = 5;
 const CANDIDATE_DAYS = 7;
 const KEEP_DIGESTS = 7; // Same week as the news itself (news.mjs MAX_AGE_DAYS).
 
-// Reader priority (docs/reader-profile-v1.json): 奥运 AI first, then 体育, then 房产 / 法律.
-const THEME_WEIGHT = { '奥运 AI': 4, '体育 AI': 3, '房产 AI': 2, '法律 AI': 2 };
+// Reader priority (docs/reader-profile-v1.json): 奥运 AI and 个人健康 AI first, then 体育, then 医疗 / 房产 / 法律.
+const THEME_WEIGHT = { '奥运 AI': 4, '个人健康 AI': 4, '体育 AI': 3, '医疗 AI': 2, '房产 AI': 2, '法律 AI': 2 };
 
 // The job runs at 06:17 Beijing time, so days are Beijing days.
 const beijingDate = (time = Date.now()) => new Date(time + 8 * 3600e3).toISOString().slice(0, 10);

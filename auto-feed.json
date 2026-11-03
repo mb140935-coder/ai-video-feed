@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T19:52:11.060Z",
+ "updated": "2026-11-03T19:54:25.549Z",
  "items": [
   {
    "key": "youtube:JdPvoQrQJDI",
@@ -708,26 +708,6 @@
    "field": "none"
   },
   {
-   "key": "youtube:vhKLKoKhI0s",
-   "url": "https://www.youtube.com/watch?v=vhKLKoKhI0s",
-   "title": "155. 和科沃斯钱程聊，父与子、企二代接班的样本与肌理、机器人，和我内心的追寻",
-   "channel": "张小珺 Podcast",
-   "published": "2026-10-21",
-   "summary": "今天我们的嘉宾是科沃斯CEO钱程（David）。 他出生于1990年，曾是中国最年轻A股上市公司CEO，也是一名企二代、创二代。我很好奇的是，当一代中国企业开始从创业进入传承，真正在经历这个过程的当事人，他所面临的现实与所思所想？ 钱程有一种不符合自己年龄的云淡风轻，非常在意经营。他最喜爱的食物是燕麦碗；朋友圈头像是自己家的狗， 特意把狗眼睛颜色换成会发光的红色，是为了提醒自己要更具有狼性。 从我们的谈话中，你能看到创二代和创一代不同的…",
-   "about": "张小珺长期深度访谈中国与硅谷的 AI、机器人和科技创业者。",
-   "tab": "appearances",
-   "tags": [
-    "关注频道"
-   ],
-   "found": "2026-11-01",
-   "minutes": 120,
-   "channelId": "UC3Sv1JuKpbOx3csUO8FAo5g",
-   "highlight": "科沃斯 CEO 钱程（David）在张小珺 Podcast 中分享了自己作为“企二代”与“创二代”接班的现实经历、思考以及对机器人的看法。",
-   "kind": "method",
-   "sports": false,
-   "field": "none"
-  },
-  {
    "key": "youtube:Vki6cklFqxo",
    "url": "https://www.youtube.com/watch?v=Vki6cklFqxo",
    "title": "AI in NYC: How Tenex Builds an AI-Native Engineering Team — Alex Lieberman & CJ Hess",
@@ -743,6 +723,27 @@
    "minutes": 44,
    "found": "2026-11-01",
    "highlight": "Tenex 的 Alex Lieberman 与 CJ Hess 在 Latent Space 上探讨了如何组织 AI 原生工程团队、MetaHarness 流程、企业 AI 采纳以及 AI 构建的软件如何替代 SaaS。",
+   "kind": "method",
+   "sports": false,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1NtJB6TEkE",
+   "url": "https://www.bilibili.com/video/BV1NtJB6TEkE",
+   "title": "和科沃斯钱程聊，父与子、企二代接班的样本与肌理、机器人、我内心的追寻",
+   "channel": "张小珺商业访谈录",
+   "channelId": "bilibili:280780745",
+   "published": "2026-10-21",
+   "summary": "今天我们的嘉宾是科沃斯CEO钱程（David）。他出生于1990年，曾是中国最年轻A股上市公司CEO，也是一名企二代、创二代。我很好奇的是，当一代中国企业开始从创业进入传承，真正在经历这个过程的当事人，他所面临的现实与所思所想？ 钱程有一种不符合自己年龄的云淡风轻，非常在意经营。他最喜爱的食物是燕麦碗；朋友圈头像是自己家的狗， 特意把狗眼睛颜色换成会发光的红色，是为了提醒自己要更具有狼性。 从我们的谈话中，你能看到创二代和创一代不同的性…",
+   "about": "你手动关注的 B 站 UP 主：张小珺商业访谈录。",
+   "tab": "appearances",
+   "tags": [
+    "你关注的频道"
+   ],
+   "minutes": 120,
+   "found": "2026-11-03",
+   "replaces": "youtube:vhKLKoKhI0s",
+   "highlight": "张小珺商业访谈录邀请了科沃斯CEO钱程（David），聊了父与子、企二代接班的样本与肌理、机器人以及他内心的追寻。访谈中探讨了当一代中国企业开始从创业进入传承时，当事人的现实经历与所思所想。",
    "kind": "method",
    "sports": false,
    "field": "none"
@@ -866,29 +867,9 @@
    "via": "pick",
    "picked": true,
    "field": "health",
-   "highlight": "Google Labs and Gemini VP Josh Woodward sits down with practicing cardiologist and author Dr. Eric Topol to explore how generative AI tools and ambient note-taking can return time to doctors. Dr. Topol also shares core insights from his book \"Super Agers\" and discusses his daily use of Gemini Notebook for medical research.",
    "kind": "judgment",
-   "sports": false
-  },
-  {
-   "key": "youtube:V0IB8iMzrLQ",
-   "url": "https://www.youtube.com/watch?v=V0IB8iMzrLQ",
-   "title": "154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明",
-   "channel": "张小珺 Podcast",
-   "published": "2026-10-15",
-   "summary": "今天我们的嘉宾是一位美国连续创业者，Dyna Robotics创始人兼CEO Lindon Gao。此前，他做过两段生意，一次完整的创业。Dyna可以说是他的第四次创业了。 在硅谷，Dyna和之前来过我们节目的Pi（Physical Intelligence）的纯大脑研究路线非常不一样。相比从通用智能出发、探索机器人大脑的研究路径，Dyna选择了一条“Product-research”的道路：以具体的工作流为最小单元，从真实任务出发，反…",
-   "about": "张小珺长期深度访谈中国与硅谷的 AI、机器人和科技创业者。",
-   "tab": "appearances",
-   "tags": [
-    "关注频道"
-   ],
-   "found": "2026-11-01",
-   "minutes": 171,
-   "channelId": "UC3Sv1JuKpbOx3csUO8FAo5g",
-   "highlight": "张小珺 Podcast features a three-hour interview with Lindon Gao, founder and CEO of Dyna Robotics. They discuss Dyna's product-research approach, the robotic industry's challenges, and his personal journey of self-reflection as an entrepreneur.",
-   "kind": "method",
    "sports": false,
-   "field": "none"
+   "highlight": "Google Labs and Gemini的VP Josh Woodward与心脏病学家、Scripps Research Translational Institute创始人兼主任Eric Topol展开对话。他们探讨了生成式AI工具与环境化笔记如何帮助医生节省时间，并讨论了Eric Topol的新书《Super Agers》的核心见解以及他如何日常使用Gemini Notebook。"
   },
   {
    "key": "youtube:AwuTTOJGEi0",
@@ -909,6 +890,27 @@
    "sports": false,
    "field": "none",
    "highlight": "Sarah Guo和Elad Gil邀请OpenAI总裁兼联合创始人Greg Brockman做客No Priors播客，探讨公司在基础模型、网络安全和科学发现方面的快速进展。Greg分享了利用AI代理解决数百年历史数学难题的成果、AI在生物学药物发现中的潜力，以及主动式AI代理、网络安全漏洞修复及保持人类主导地位的见解。"
+  },
+  {
+   "key": "bilibili:BV1wgpy69Ekz",
+   "url": "https://www.bilibili.com/video/BV1wgpy69Ekz",
+   "title": "对Dyna创始人Lindon Gao的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明",
+   "channel": "张小珺商业访谈录",
+   "channelId": "bilibili:280780745",
+   "published": "2026-10-15",
+   "summary": "今天我们的嘉宾是一位美国连续创业者，Dyna Robotics创始人兼CEO Lindon Gao。此前，他做过两段生意，一次完整的创业。Dyna可以说是他的第四次创业了。 在硅谷，Dyna和之前来过我们节目的Pi（Physical Intelligence）的纯大脑研究路线非常不一样。相比从通用智能出发、探索机器人大脑的研究路径，Dyna选择了一条“Product-research”的道路：以具体的工作流为最小单元，从真实任务出发，反…",
+   "about": "你手动关注的 B 站 UP 主：张小珺商业访谈录。",
+   "tab": "appearances",
+   "tags": [
+    "你关注的频道"
+   ],
+   "minutes": 171,
+   "found": "2026-11-03",
+   "replaces": "youtube:V0IB8iMzrLQ",
+   "highlight": "张小珺商业访谈录对话Dyna Robotics创始人兼CEO Lindon Gao，探讨了机器人世界的迷雾、分歧与抉择，以及修心、《沉思录》与王阳明。Dyna选择了一条以具体工作流为最小单元、从真实任务出发的Product-research道路。",
+   "kind": "method",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:7zF2mN9EPxU",
@@ -1151,9 +1153,9 @@
    "via": "pick",
    "picked": true,
    "field": "medical",
-   "highlight": "Isomorphic Labs President Max Jaderberg joins Tommy Stadlen and Cameron McLain to discuss how the Alphabet-backed company uses AI to design new medicines and solve all disease. Jaderberg explains the realities of modern drug discovery, the impact of AlphaFold, and why Isomorphic keeps its models and data in-house.",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "highlight": "Isomorphic Labs总裁Max Jaderberg在Giant Ideas节目中探讨了AI是否能解决所有疾病。他分享了Isomorphic Labs如何利用AI设计新药、早期AI药物发现过度承诺的原因、AlphaFold带来的改变以及公司如何将模型保留在内部。"
   },
   {
    "key": "youtube:oOpF0ZXSXuk",
@@ -1195,9 +1197,9 @@
    "via": "pick",
    "picked": true,
    "field": "medical",
-   "highlight": "Dr. Shiv Rao, Co-Founder and CEO of Abridge and practicing cardiologist, joins host John Driscoll to discuss how ambient AI deployed across more than 300 health systems is helping reduce physician burnout and returning time to clinicians. They also explore the next frontier of the technology in real-time clinical decision support.",
-   "kind": "judgment",
-   "sports": false
+   "kind": "product",
+   "sports": false,
+   "highlight": "Abridge创始人兼CEO、UPMC心脏病学家Dr. Shiv Rao做客CareTalk播客，讨论了部署在300多家医疗系统中的环境AI平台如何帮助临床医生节省文书时间，并探讨了该技术向实时临床决策支持发展的未来趋势。"
   },
   {
    "key": "youtube:OdbUmxhCWlY",
@@ -1217,9 +1219,9 @@
    "via": "pick",
    "picked": true,
    "field": "health",
-   "highlight": "Dr. Eric Topol discusses lessons from his book \"Super Agers,\" exploring why some people stay healthy into old age and how AI and organ aging clocks can help prevent age-related diseases. In conversation with host Euan Ashley, he details early screening tools and lifestyle prescriptions for healthy longevity.",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "highlight": "心脏病学家、Super Agers作者Eric Topol在斯坦福医学院探讨了为什么有些人能健康步入老年，以及AI和衰老时钟如何帮助预防与年龄相关的疾病。他分享了预防疾病的工具、基于风险的筛查以及健康长寿的生活方式建议。"
   },
   {
    "key": "youtube:zmPW0PqZIlY",
@@ -1239,9 +1241,9 @@
    "via": "pick",
    "picked": true,
    "field": "medical",
-   "highlight": "UCSF Department of Medicine Chair Bob Wachter explores how artificial intelligence is shifting from novelty to an everyday tool in healthcare and what that means for clinicians, health systems, and patients. He discusses the limits of the human-in-the-loop model and the real-world factors determining AI's impact on care.",
    "kind": "judgment",
-   "sports": false
+   "sports": false,
+   "highlight": "UCSF医学院教授Bob Wachter在Medical Grand Rounds访谈中探讨了医疗AI如何从新鲜事物转变为日常工具，以及这一转变对临床医生、医疗系统和患者意味着什么，同时讨论了人机协同模型的局限性。"
   },
   {
    "key": "youtube:mTnoAM-BvUs",
@@ -1261,9 +1263,9 @@
    "via": "pick",
    "picked": true,
    "field": "medical",
-   "highlight": "OpenEvidence founder Daniel Nadler joins Sarah Guo and Elad Gil to discuss how his company solved semantic search in medicine to help American doctors access critical information. He shares strategies on treating doctors as consumers, balancing patient involvement, and reshaping medical education.",
-   "kind": "method",
-   "sports": false
+   "kind": "product",
+   "sports": false,
+   "highlight": "No Priors节目邀请了OpenEvidence创始人Daniel Nadler，讨论了该公司如何解决医疗领域的语义搜索问题，在短短18个月内被40%的美国医生采用。他们探讨了将医生视为消费者的策略以及技术将如何重塑医学和医学教育。"
   },
   {
    "key": "bilibili:BV1jCpC6GE4x",
@@ -2306,7 +2308,7 @@
    "url": "https://www.youtube.com/@xiaojunpodcast",
    "id": "UC3Sv1JuKpbOx3csUO8FAo5g",
    "name": "张小珺 Podcast",
-   "count": 2
+   "count": 0
   },
   "channel:@cheekypint": {
    "url": "https://www.youtube.com/@CheekyPint",
@@ -2319,13 +2321,19 @@
    "id": "bilibili:385670211",
    "name": "秋芝2046",
    "count": 3
+  },
+  "channel:bilibili/280780745": {
+   "url": "https://space.bilibili.com/280780745",
+   "id": "bilibili:280780745",
+   "name": "张小珺商业访谈录",
+   "count": 2
   }
  },
  "people": {
   "王坚": {
    "keywords": "阿里云 城市大脑 院士 之江实验室 阿里巴巴 云栖",
    "searched": "2026-11-03",
-   "youtube": "HTTP 429",
+   "youtube": "ok",
    "bilibili": "ok"
   },
   "徐新": {
@@ -2337,7 +2345,7 @@
   "何超琼": {
    "keywords": "",
    "searched": "2026-11-03",
-   "youtube": "HTTP 429",
+   "youtube": "ok",
    "bilibili": "ok"
   },
   "施一公": {
@@ -2355,7 +2363,7 @@
   "Charlie Munger": {
    "keywords": "",
    "searched": "2026-11-03",
-   "youtube": "ok",
+   "youtube": "HTTP 429",
    "bilibili": "ok"
   },
   "姚明": {
@@ -2367,7 +2375,7 @@
   "邓亚萍": {
    "keywords": "",
    "searched": "2026-11-03",
-   "youtube": "ok",
+   "youtube": "HTTP 429",
    "bilibili": "ok"
   }
  },
@@ -2501,6 +2509,94 @@
    "summary": "Apple 推出了 Watch AI 监听工具和新健康应用的测试版。",
    "meaning": "这是个人健康 AI 的重要进展，展示了科技巨头如何利用智能穿戴设备帮助普通人管理日常健康。",
    "importance": 9
+  },
+  {
+   "id": "1dofo3j",
+   "lastSeen": "2026-11-03",
+   "title": "Anthropic Touts Claude’s Chip Design Skills to IPO Investors",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYnpwS0FzRk9KWUhPNC1rT3JnNWdLN1NhTWM0VU5zWHkyZEo5NVR1dXJhTWdVY2R0ZGEwcVhDTGZ3TkR5SGRIemoyenlCUU1TV2xMTzNBa0xtZDJSb1hGeUVqVlhBVmJNRVFkVS1qb21LdmtqOUxmWEtVOEgwd3JnRnNJMHJIQXdfYndBMUpjZWNPaGRwSW55ZWJsdEk?oc=5",
+   "source": "The Information",
+   "domain": "theinformation.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "The Information"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Touts Claude’s Chip Design Skills to IPO Investors"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic 向 IPO 投资者展示了 Claude 的芯片设计能力。该公司在上市前备受关注。",
+   "meaning": "这展示了 AI 大模型在底层硬件研发中的应用潜力，属于不可错过的通用 AI 行业大事。",
+   "importance": 8
+  },
+  {
+   "id": "1tahe13",
+   "lastSeen": "2026-11-03",
+   "title": "The IPO Market Is Open For Anthropic. Not For Everyone Else.",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUl9Idk9HS21XSzJpc0NwdVlmSXU1X0xlZnZVMWlWY2c4eGVFMGJpNGVMSl81Y1djWUVvZl81RkFpUXh4aFZCRnVxel8yckF1cjhKZmJhc2tvSWlDVmtiZWtsZW1CeHJVX2Z3S0FyMER0TFZxaGFPWS1PNjZnam1SWG1uMzAtOTNyc0RWcUI1d1pxOXN2MGFvVWRPTQ?oc=5",
+   "source": "WSJ",
+   "domain": "wsj.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "WSJ"
+   ],
+   "themes": [],
+   "headlines": [
+    "The IPO Market Is Open For Anthropic. Not For Everyone Else."
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "报道称 IPO 市场对 Anthropic 开放，但并非对所有人开放。Anthropic 已申请在纳斯达克上市。",
+   "meaning": "AI 独角兽的上市进程标志着资本市场对头部大模型公司的态度，值得持续关注。",
+   "importance": 7
+  },
+  {
+   "id": "fe9izc",
+   "lastSeen": "2026-11-03",
+   "title": "Watch Dan Ives Sees Anthropic IPO Facing Valuation Pressure",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQXzl0c0hYQzlNc3BSRGNmYjNiRWRKZ08zeWoxQkZ4V3BSMEIzVWdzOERoQ2otRDlnam9id19HX2dkZDdvbUE5Q1pRanRaV2hsSWZPZXd2bFprQmRUNjRpT0h2VDR4akJ3LWZoRU0ySGxGcGZZamFMcGk5M3V5c25PS0xZQ2I0TVNWTmlROF9wWVk3eXNZNElLWmFkbzBDSmswaFpTS3NsVkZ5cTBh?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Watch Dan Ives Sees Anthropic IPO Facing Valuation Pressure"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Dan Ives 认为 Anthropic 在 IPO 过程中面临估值压力。相关 CFD 产品也受到市场关注。",
+   "meaning": "反映了市场对高估值 AI 企业的审慎态度，属于重要的通用 AI 商业动态。",
+   "importance": 6
+  },
+  {
+   "id": "14bybv8",
+   "lastSeen": "2026-11-03",
+   "title": "STARTRADER Spotlights ANTHUSD Pre-IPO CFD as Anthropic Files to List on Nasdaq",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPdUhHMTNoRjhzaEJiTmVVNE4tb2c3MG5pZUltbERYejcwWHVnbE81Tkc4VlFweEgxZnBiNTZpQWluc2NSUVVEV2xTUWlSUnBMT0xhOXFyMzNmaXl5YzRDUTB0VVhQSjg3R0dEeVpNaHpJSDAwV2haTWpmbzZnMVduYzVsZjU1R21wWV9GWWtfZW9MV3c2UmtfZEpOdHRSUjZ5NVc5NUtsbGd2aWRQSGhWOFc3bTQ5aTA0dkRuZGJadVdUYVV6VTRaT0FjektPQ2taNTVV?oc=5",
+   "source": "markets.businessinsider.com",
+   "domain": "markets.businessinsider.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "markets.businessinsider.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "STARTRADER Spotlights ANTHUSD Pre-IPO CFD as Anthropic Files to List on Nasdaq"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "随着 Anthropic 申请在纳斯达克上市，相关平台推出了 ANTHUSD 预 IPO CFD。资本市场正积极布局其上市交易。",
+   "meaning": "预示着 AI 行业头部企业的资本化进程正在加速。",
+   "importance": 6
   },
   {
    "id": "1vd84sj",
@@ -3186,6 +3282,28 @@
    "summary": "Anthropic 修改后的 IPO 文件披露了其飙升的第三季度收入和惊人的算力账单。",
    "meaning": "反映了头部通用 AI 厂商高昂的运营成本与快速增长的商业化收入并存的行业现状。",
    "importance": 7
+  },
+  {
+   "id": "hh1sec",
+   "lastSeen": "2026-11-03",
+   "title": "Athenahealth launches tool to bring patient health records into Anthropic's Claude",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMU9mUnA3eGNRaE42VV9SdE5yWFpwUVBWazdiNFV2QmpsWFY5V1hrdV9wMEJiUFIxamVLaXNLNmNTczRGRHZkMWlDT0JWUkhhZExkc25BeWhxNDN2TThXcUszN3dVcU5VS3NCbzUySmRva0NjRmFHVmNfTXhRTWlUYWswVzNzRjRjQ3JKbk9pX2tKM2d1cHlQUWRBSDZfblZSTkV5Z2VzRnJJVTNVem05VmUwTzE3OGE1dXVZN0JJMlQydHpHUS1tVVR3?oc=5",
+   "source": "Fierce Healthcare",
+   "domain": "fiercehealthcare.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Fierce Healthcare"
+   ],
+   "themes": [],
+   "headlines": [
+    "Athenahealth launches tool to bring patient health records into Anthropic's Claude"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Athenahealth 推出了新工具，将患者健康记录接入 Anthropic 的 Claude。这连接了医疗健康数据与前沿 AI 大模型。",
+   "meaning": "这是医疗 AI 落地的重要进展，展示了个人健康数据与大模型结合的潜力，直接呼应了读者对医疗 AI 与个人健康管理的关注。",
+   "importance": 9
   },
   {
    "id": "1whwoh9",
@@ -3980,6 +4098,29 @@
    "meaning": "这表明AI头部企业的庞大开销已成为支撑前沿航天与通信巨头营收的关键力量，展示出AI产业的资本外溢效应。",
    "id": "lone9g",
    "lastSeen": "2026-11-03"
+  },
+  {
+   "id": "3xt2jt",
+   "lastSeen": "2026-11-03",
+   "title": "NVIDIA CEO Jensen Huang May Have Been The Target Of A Chinese Government Spy",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMVc0U0Nud2JZVjlUNzBjRTkwQlBPRWpsNVB0bVhEWXRlWlhUNDgwdm52U0N5NHRaMnFDbDF2bHpsVFVObWNCNHFMWDNxRWRyOEUyWTE1OXo2RG5LbVZ1cGZ6WWdMUVpjRUh2dHRmMzhhZ2UzeU9LcEh6UXRHYlpab1FtZlh6bWpDVWloaGJuYUN1NWlraUlCcDB5bUsyYmVrXzMwa18tbmVRdFVoaVVJ?oc=5",
+   "source": "Engadget",
+   "domain": "engadget.com",
+   "published": "2026-10-29",
+   "outlets": [
+    "Engadget"
+   ],
+   "themes": [],
+   "headlines": [
+    "NVIDIA CEO Jensen Huang May Have Been The Target Of A Chinese Government Spy"
+   ],
+   "entities": [
+    "Jensen Huang",
+    "NVIDIA Research"
+   ],
+   "summary": "NVIDIA 首席执行官 Jensen Huang 可能成为中国政府间谍的目标。相关安全与地缘政治动态引发关注。",
+   "meaning": "涉及中国 AI 产业链核心人物的安全动态，对整个行业生态具有重大潜在影响。",
+   "importance": 7
   },
   {
    "title": "Putin praises Elon Musk as a ‘genius’ as Russia develops Starlink alternative",

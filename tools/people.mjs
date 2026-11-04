@@ -229,7 +229,7 @@ export const dedupePeople = (items, people, report) => {
 
 export const PEOPLE_TITLE_OK =(person, title) => new RegExp(person.names.map(escapeRegExp).join('|'), 'i').test(title) && !SECONDHAND.test(title);
 
-// Hand-picked 人物访谈 (docs/people-picks.json: [{ person, url, note? }]), for interviews the search misses or its
+// Hand-picked 人物访谈 (docs/people-picks.json: [{ person, url, note?, title?, channel?, published?, minutes? }]; the last four only for links that are not Bilibili or YouTube), for interviews the search misses or its
 // title rules would skip. They are added once with the platform's own title, date and length, marked picked (kept
 // whatever the title says, never judged second-hand, and preferred when another upload of the same video exists).
 // A Bilibili or YouTube link → its feed key; '' for anything else.
@@ -257,7 +257,22 @@ export const addPicks = async (picks, items, report, youtubeKey) => {
   let added = 0;
   for (const pick of picks) {
     const key = pickKey(pick.url);
-    if (!key) { report.push(`pick ${pick.url}: not a Bilibili or YouTube link`); continue; }
+    // Elsewhere (Tencent / iflix and the like, not embeddable): the pick gives title, channel, published and minutes,
+    // and the card links out. Key as the page's canonicalMediaKey has it, so 已看 matches.
+    if (!key && pick.title) {
+      const url = new URL(pick.url);
+      const otherKey = `url:${url.hostname.replace(/^www\./, '')}${url.pathname.replace(/\/$/, '')}`;
+      if (!items.has(otherKey)) {
+        items.set(otherKey, {
+          key: otherKey, url: pick.url, title: pick.title, channel: pick.channel || url.hostname, published: pick.published || '',
+          summary: '', tab: 'people', person: pick.person, tags: ['人物访谈', pick.person], minutes: pick.minutes ?? null,
+          found: day(Date.now()), via: 'people', picked: true, firsthand: true, ...(pick.note ? { note: pick.note } : {})
+        });
+        added++;
+      }
+      continue;
+    }
+    if (!key) { report.push(`pick ${pick.url}: not a Bilibili or YouTube link, and no title given`); continue; }
     if (items.has(key)) { Object.assign(items.get(key), { picked: true, firsthand: true }); continue; }
     try {
       const video = await fetchVideo(key, youtubeKey);

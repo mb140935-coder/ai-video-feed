@@ -87,7 +87,7 @@
     .appearance-preview h2 { margin: 0; max-width: 310px; font-size: 20px; line-height: 1.35; }
     .appearance-preview p { margin: 0; color: var(--text-2); font-size: 12px; line-height: 1.5; }
     .appearance-open { display: inline-flex; align-items: center; min-height: 44px; margin-top: 4px; border-radius: 999px; padding: 0 16px; background: var(--text); color: var(--surface); font-size: 12px; font-weight: 700; text-decoration: none; }
-    .ad-mute-note { position: absolute; z-index: 2; top: 8px; left: 12px; border-radius: 8px; background: #000c; padding: 5px 8px; color: #fff; font-size: 11px; pointer-events: none; }
+    .ad-mute-note { position: absolute; z-index: 2; top: 8px; left: 12px; border: 0; border-radius: 8px; background: #000c; padding: 7px 10px; color: #fff; font: inherit; font-size: 12px; cursor: pointer; }
     .tap-note { position: absolute; z-index: 1; bottom: 8px; right: 12px; border-radius: 8px; background: #0009; padding: 5px 8px; color: #ddd; font-size: 10px; pointer-events: none; }
     .details { position: absolute; inset: calc(42% + 86px) 20px 20px; display: flex; flex-direction: column; gap: 8px; }
     .tags { display: flex; gap: 7px; flex-wrap: wrap; }
@@ -981,36 +981,55 @@
       // own clock stops (or the player reports another video) though the player says it is playing. After
       // AD_STALL_MS of that the player is muted, with a note on the card; sound comes back once the clock moves
       // again. A player the viewer muted is left alone. Long buffering can look the same and mute it briefly.
+      // On some iPads the player can go black after that and never come back; the note is then a button that
+      // reloads the video where it stopped, and that player is not muted for ads again.
       const AD_STALL_MS = 1500;
       const adWatch = new Map();
+      const clearAdMute = (player, frame, watch) => {
+        watch.muted = false;
+        player.unMute?.();
+        frame.parentElement.querySelector('.ad-mute-note')?.remove();
+      };
+      const showAdMuteNote = (player, frame, watch) => {
+        const note = document.createElement('button');
+        note.type = 'button';
+        note.className = 'ad-mute-note';
+        note.textContent = '🔇 像是广告，已静音 · 黑屏了点这里';
+        note.addEventListener('click', event => {
+          event.stopPropagation();
+          clearAdMute(player, frame, watch);
+          watch.off = true;
+          player.loadVideoById?.({ videoId: frame.dataset.videoId, startSeconds: Math.max(0, Math.floor(watch.time)) });
+        });
+        frame.parentElement.appendChild(note);
+      };
       setInterval(() => {
         players.forEach((player, playerId) => {
           const frame = document.getElementById(playerId);
           if (!frame || !player.getCurrentTime) return;
-          const watch = adWatch.get(playerId) || { time: -1, since: Date.now(), muted: false };
+          const watch = adWatch.get(playerId) || { time: -1, since: Date.now(), muted: false, off: false };
           adWatch.set(playerId, watch);
+          if (watch.off) return;
           const running = ['playing', 'buffering'].includes(frame.dataset.playState);
           const time = player.getCurrentTime();
           const otherVideo = player.getVideoData?.()?.video_id && player.getVideoData().video_id !== frame.dataset.videoId;
           if (!running) {
-            watch.time = time;
+            // Paused or ended: an ad can't be running, so sound and the note go back to normal.
+            if (watch.muted && ['paused', 'ended', 'cued'].includes(frame.dataset.playState)) clearAdMute(player, frame, watch);
+            if (!watch.muted) watch.time = time;
             watch.since = Date.now();
             return;
           }
           if (Math.abs(time - watch.time) > 0.2 && !otherVideo) {
             watch.time = time;
             watch.since = Date.now();
-            if (watch.muted) {
-              watch.muted = false;
-              player.unMute?.();
-              frame.parentElement.querySelector('.ad-mute-note')?.remove();
-            }
+            if (watch.muted) clearAdMute(player, frame, watch);
             return;
           }
           if (watch.muted || player.isMuted?.() || Date.now() - watch.since < AD_STALL_MS && !otherVideo) return;
           watch.muted = true;
           player.mute?.();
-          makeText(frame.parentElement, 'span', 'ad-mute-note', '🔇 像是广告，先静音');
+          showAdMuteNote(player, frame, watch);
         });
       }, 500);
 
@@ -1779,7 +1798,7 @@
             link.className = 'appearance-open';
             link.href = media.url;
             link.target = '_self';
-            link.textContent = /podcast/i.test(item.format) ? '打开原 Podcast' : '打开原演讲 / 访谈';
+            link.textContent = item.open_label || (/podcast/i.test(item.format) ? '打开原 Podcast' : '打开原演讲 / 访谈');
             preview.appendChild(link);
           }
           playerArea.appendChild(preview);
@@ -2279,7 +2298,8 @@
 
       // 人物访谈 (people.mjs in the daily job): no content type or shelf life; hidden once marked 已看.
       const peopleFeedItem = entry => {
-        const site = entry.key.startsWith('bilibili:') ? 'B 站' : 'YouTube';
+        // Picks from elsewhere (iflix and the like) can't be embedded: the card links out.
+        const site = entry.key.startsWith('bilibili:') ? 'B 站' : entry.key.startsWith('youtube:') ? 'YouTube' : '外部网站';
         const keywords = (autoFeed.people[entry.person]?.keywords || '').trim();
         return {
           person_id: 'people',
@@ -2297,9 +2317,10 @@
           tags: [entry.person],
           brand: ['人物访谈', `${entry.person} · ${site} · ${entry.channel}${entry.minutes ? ` · 约 ${entry.minutes} 分钟` : ''}`],
           cardText: {
-            person: `${entry.person}${keywords ? `（${keywords.split(/\s+/).join(' · ')}）` : ''}。${entry.note ? `${entry.note}。` : ''}上传者：${entry.channel}。`,
+            person: `${entry.person}${keywords ? `（${keywords.split(/\s+/).join(' · ')}）` : ''}。${entry.note ? `${entry.note.replace(/。$/, '')}。` : ''}上传者：${entry.channel}。`,
             highlight: entry.highlight ? `${entry.highlight}（AI 根据发布方简介整理）` : entry.summary ? `发布方简介摘录（自动抓取，未人工整理）：${entry.summary}` : '发布方没有提供简介；这里不推测内容。'
           },
+          ...(site === '外部网站' ? { open_label: `到 ${entry.channel} 观看` } : {}),
           autoDiscovered: true
         };
       };

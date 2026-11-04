@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T20:36:48.958Z",
+ "updated": "2026-11-04T21:10:24.843Z",
  "items": [
   {
    "key": "youtube:QmDLDy3ZSNE",
@@ -15,7 +15,11 @@
     "Podcast"
    ],
    "minutes": 72,
-   "found": "2026-11-04"
+   "found": "2026-11-04",
+   "highlight": "Latent Space播客探讨了关于Kill My SaaS的内容，agent可以重建工具并通过入口检查，而选择赢家仍需要懂需求的人。对话还涉及OpenClaw在中国的使用以及Thinking Machines交互模型带来的改变。",
+   "kind": "method",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:f_z0GePw2Eo",
@@ -33,7 +37,33 @@
    ],
    "minutes": 55,
    "found": "2026-11-04",
-   "via": "person"
+   "via": "person",
+   "highlight": "畅销书传记作家Walter Isaacson与Microsoft AI CEO Mustafa Suleyman在The Builders播客首期节目中展开对话，探讨人工智能时代的技术重塑、人类选择、工作与生活以及相关担忧。",
+   "kind": "judgment",
+   "sports": false,
+   "field": "none"
+  },
+  {
+   "key": "youtube:ooGKNwJWdb8",
+   "url": "https://www.youtube.com/watch?v=ooGKNwJWdb8",
+   "title": "Confronting Our AI Future: Closing Keynote \"Discovery Loop\" with Jeff Dean and Fei-Fei Li",
+   "channel": "Stanford HAI",
+   "channelId": "UChugFTK0KyrES9terTid8vA",
+   "published": "2026-11-04",
+   "summary": "This closing fireside chat brings together two of the field's most consequential builders — Jeff Dean, whose work at Google has ...",
+   "about": "Jeff Dean：Google 首席科学家。",
+   "tab": "appearances",
+   "tags": [
+    "人物新视频",
+    "Jeff Dean"
+   ],
+   "minutes": 48,
+   "found": "2026-11-04",
+   "via": "person",
+   "highlight": "Stanford HAI闭幕主题炉边谈话邀请了Google的Jeff Dean与斯坦福大学教授、World Labs联合创始人兼CEO Fei-Fei Li，讨论人工智能领域的风险、未解问题以及未来的选择。",
+   "kind": "judgment",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:JdPvoQrQJDI",
@@ -151,7 +181,11 @@
     "Podcast"
    ],
    "minutes": 35,
-   "found": "2026-11-04"
+   "found": "2026-11-04",
+   "highlight": "Warp.dev创始人兼CEO Zach Lloyd在Latent Space节目中向swyx介绍了Warp的软件工厂基础设施技术栈。他演示了如何将任务转化为Pull Request、衡量Agent质量以及优化工作流，并分享了通过调优模型和使用子Agent将内部成本从每个PR约80美元降至15至20美元的经验。",
+   "kind": "method",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:-GKLZWEq-0c",
@@ -961,22 +995,6 @@
    "kind": "method",
    "sports": false,
    "field": "none"
-  },
-  {
-   "key": "youtube:V0IB8iMzrLQ",
-   "url": "https://www.youtube.com/watch?v=V0IB8iMzrLQ",
-   "title": "154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明",
-   "channel": "张小珺 Podcast",
-   "channelId": "UC3Sv1JuKpbOx3csUO8FAo5g",
-   "published": "2026-10-15",
-   "summary": "今天我们的嘉宾是一位美国连续创业者，Dyna Robotics创始人兼CEO Lindon Gao。此前，他做过两段生意，一次完整的创业。Dyna可以说是他的第四次创业了。 在硅谷，Dyna和之前来过我们节目的Pi（Physical Intelligence）的纯大脑研究路线非常不一样。相比从通用智能出发、探索机器人大脑的研究路径，Dyna选择了一条“Product-research”的道路：以具体的工作流为最小单元，从真实任务出发，反…",
-   "about": "张小珺长期深度访谈中国与硅谷的 AI、机器人和科技创业者。",
-   "tab": "appearances",
-   "tags": [
-    "关注频道"
-   ],
-   "minutes": 171,
-   "found": "2026-11-04"
   },
   {
    "key": "youtube:7zF2mN9EPxU",
@@ -2148,7 +2166,30 @@
    "via": "people",
    "picked": true,
    "firsthand": true,
-   "note": "《十三邀》第九季许知远对话姚明，十三邀官方账号发的片段（完整版只在腾讯视频）"
+   "note": "《十三邀》第九季许知远对话姚明，十三邀官方账号发的片段（完整版只在腾讯视频）",
+   "highlight": "姚明在《十三邀》节目中分享了那段时间思维完全变形的经历，探讨了个人心态与外部环境的变化。",
+   "kind": "judgment",
+   "sports": false
+  },
+  {
+   "key": "url:iflix.com/zh-cn/play/7za06kan0mbbnjc/p4101c09qxs",
+   "url": "https://www.iflix.com/zh-cn/play/7za06kan0mbbnjc/p4101c09qxs",
+   "title": "十三邀 第九季 第1集：许知远对话姚明 | 渴望一种渺小（完整版）",
+   "channel": "十三邀 · 腾讯视频（iflix）",
+   "published": "2026-01-29",
+   "summary": "",
+   "tab": "people",
+   "person": "姚明",
+   "tags": [
+    "人物访谈",
+    "姚明"
+   ],
+   "minutes": 75,
+   "found": "2026-11-04",
+   "via": "people",
+   "picked": true,
+   "firsthand": true,
+   "note": "《十三邀》第九季第 1 集完整版，许知远对话姚明。只能在 iflix 网站播放，点卡片上的按钮打开。"
   },
   {
    "key": "bilibili:BV12KkQBbEdX",
@@ -2594,7 +2635,8 @@
    "kind": "method",
    "sports": false,
    "firsthand": true,
-   "field": "none"
+   "field": "none",
+   "highlight": "億萬富翁投資者、Berkshire Hathaway 首席執行官 Warren Buffett 談論了股票市場投資、如何投資以及如何賺錢。其股票投資組合備受投資者關注，持倉包括 Apple、Coca-Cola、American Express 等多家公司。"
   },
   {
    "key": "bilibili:BV1uAiweTEiZ",
@@ -3349,7 +3391,12 @@
    ],
    "minutes": 18,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "Berkshire Hathaway 副主席 Charlie Munger 透過觀察現實並運用心智模型，在股市及其他領域取得巨大成功。本系列將探討 Charlie Munger 用於投資、經濟學、創業及職業生涯的關鍵心智模型。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV13v411Y7gm",
@@ -3366,7 +3413,12 @@
    ],
    "minutes": 119,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "Charlie Munger 在 Daily Journal 的分享交流。探討了相關投資與商業話題。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1my4y1275Q",
@@ -3383,25 +3435,12 @@
    ],
    "minutes": 76,
    "found": "2026-11-04",
-   "via": "people"
-  },
-  {
-   "key": "youtube:S15XpqbUFFA",
-   "url": "https://www.youtube.com/watch?v=S15XpqbUFFA",
-   "title": "Charlie Munger: 100 Years of Wisdom Summed up in 20 Minutes",
-   "channel": "Investor Center",
-   "channelId": "UC2cL3pI1H3tiozKif6A8fmA",
-   "published": "2020-08-10",
-   "summary": "Charlie Munger, Vice President of Berkshire Hathaway and Warren Buffett’s business partner, talks about the lessons he has learned over his nearly 100 years of life. This original interview took place in 2008.",
-   "tab": "people",
-   "person": "Charlie Munger",
-   "tags": [
-    "人物访谈",
-    "Charlie Munger"
-   ],
-   "minutes": 23,
-   "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "Charlie Munger 發表關於人類誤判心理學的完整演講。剖析了人類決策與心理誤區的相關主題。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1Gt4y197PH",
@@ -3418,7 +3457,12 @@
    ],
    "minutes": 60,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "姚明接受央視體壇風云會專訪。節目聚焦 CBA 復賽並展望中國籃球的未來發展。",
+   "kind": "judgment",
+   "sports": true,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1Lp4y1D7vW",
@@ -3435,7 +3479,12 @@
    ],
    "minutes": 9,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "何超琼發表全英文演講。展示了其個人風采與相關主題的分享。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1cv41167E2",
@@ -3452,7 +3501,12 @@
    ],
    "minutes": 17,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "何超琼在香港回歸 20 週年之際接受採訪。分享了相關經歷與見解。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:NmYnncPerPg",
@@ -3470,7 +3524,12 @@
    ],
    "minutes": 45,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "中國工程院院士、阿里雲創始人王堅亮相 CCTV《開講啦》節目。分享了其創新與科技發展的相關經歷與見解。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:x0DrOjr7O0A",
@@ -3488,7 +3547,12 @@
    ],
    "minutes": 27,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "今日資本創始人徐新分享了今日資本的投資原則。探討了如何打造第一品牌的商業理念與方法。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1px411Z7kH",
@@ -3505,7 +3569,12 @@
    ],
    "minutes": 44,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "Charlie Munger带来南加州大学2007年5月的演讲。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1M4411J7MG",
@@ -3522,7 +3591,12 @@
    ],
    "minutes": 46,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "鲁豫有约节目采访姚明。",
+   "kind": "judgment",
+   "sports": true,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1w4411J7JD",
@@ -3539,7 +3613,12 @@
    ],
    "minutes": 46,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "鲁豫有约节目采访邓亚萍。",
+   "kind": "judgment",
+   "sports": true,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1Ss411572S",
@@ -3556,7 +3635,12 @@
    ],
    "minutes": 63,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "邓亚萍在剑桥大学进行英文演讲。",
+   "kind": "method",
+   "sports": true,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1bW411u7oM",
@@ -3573,7 +3657,12 @@
    ],
    "minutes": 895,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "Warren Buffett接受采访。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1CW411M71s",
@@ -3590,7 +3679,12 @@
    ],
    "minutes": 779,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "Charlie Munger接受访谈。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "youtube:oQ6gs1i55kg",
@@ -3608,7 +3702,12 @@
    ],
    "minutes": 45,
    "found": "2026-11-04",
-   "via": "people"
+   "via": "people",
+   "highlight": "今日资本创始人徐新在《爱拼大讲堂》节目中分享要有想赢的激情，讲述创业经历与智慧。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
   }
  ],
  "videos": {
@@ -3646,7 +3745,7 @@
    "url": "https://www.youtube.com/@xiaojunpodcast",
    "id": "UC3Sv1JuKpbOx3csUO8FAo5g",
    "name": "张小珺 Podcast",
-   "count": 1
+   "count": 0
   },
   "channel:@cheekypint": {
    "url": "https://www.youtube.com/@CheekyPint",
@@ -3726,6 +3825,7 @@
   }
  },
  "peopleRejected": [
+  "youtube:S15XpqbUFFA",
   "youtube:CWMj2g0avnE",
   "youtube:oQXS-9tnB8c",
   "youtube:kf1BLodDVT0",
@@ -3924,6 +4024,50 @@
    "summary": "Anthropic的上市进程被视为重新思考IPO规则的一个机会。",
    "meaning": "反映出AI独角兽企业在资本市场正受到特殊关注，可能重塑科技股上市的标准。",
    "importance": 5
+  },
+  {
+   "id": "1r16iok",
+   "lastSeen": "2026-11-04",
+   "title": "Sam Altman joked about AI's thirst for memory with a new social media nickname",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQ0ZjLWNOSHhNLURmZmlPZEdzNVNSSVBybUZ1ZTA5aUlmNVFPeGxMaWtnTFhpaE02WWVEU3YySXJPQU5VclJvQlBITTRkMFNOLVhtQ0Y5NG9UZG5xMktQQ1NZYTMwRW9zcm5LeUdLQTJJZVZTRk1CVGFUdWYzQ01yMEdDTDZhdjBMRUZaNnJuM29HbW1UU25ta0xmUQ?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-04",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "Sam Altman joked about AI's thirst for memory with a new social media nickname"
+   ],
+   "entities": [
+    "Sam Altman"
+   ],
+   "summary": "Sam Altman recently adopted a new social media nickname to joke about AI's high demand for memory. This playful jab highlights ongoing resource challenges in the AI industry.",
+   "meaning": "虽然属于行业趣闻，但它侧面反映了算力和内存瓶颈依然是当前AI发展的重要话题，属于通用AI领域的轻松花絮。",
+   "importance": 3
+  },
+  {
+   "id": "1vp0r24",
+   "lastSeen": "2026-11-04",
+   "title": "A rare second exit: AI startup Suplari acquired by Docusign nearly 3 years after Microsoft spinout",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPejYzVEt5YXNiZnJxLVpkalA2Y0g3RWdLNkZRUlpRXzd5X0FGSVhmZFVOOTdDXzJCczNFTllVY1F0SG93T1lmYzlBRzVHVk5jcWJPTExCaG5SdDZ4REtGSmZHNHBzcVRnY0dGT3hQLWF0UGlzN1ZKWHZ3XzRWZklQM3NqbnBmalBHeFdkcWowQ1RmZ0pZUU1YeV8xRmdtUnZhZHYwOE44N0dlUWxhM0lqblZ2OG1TVE9qdERqSERB?oc=5",
+   "source": "GeekWire",
+   "domain": "geekwire.com",
+   "published": "2026-11-04",
+   "outlets": [
+    "GeekWire"
+   ],
+   "themes": [],
+   "headlines": [
+    "A rare second exit: AI startup Suplari acquired by Docusign nearly 3 years after Microsoft spinout"
+   ],
+   "entities": [
+    "Microsoft AI"
+   ],
+   "summary": "AI startup Suplari has been acquired by Docusign nearly three years after spinning out from Microsoft. This represents a rare secondary exit in the current market.",
+   "meaning": "这展示了AI初创企业在微软孵化后走向独立收购的资本路径，对于关注企业级AI并购和通用AI市场动态的读者具有一定参考价值。",
+   "importance": 4
   },
   {
    "id": "1e7tfpr",
@@ -5333,7 +5477,8 @@
    "headlines": [
     "Elon Musk mocks OpenAI CEO Sam Altman's claim that PCs having RAM is terrible — 'The people deserve to have their RAM too!'",
     "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
-    "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization"
+    "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization",
+    "Sam Altman meets with Samsung leadership to secure more RAM for data centers amid crushing shortages — OpenAI CEO travels to South Korea to meet Samsung leadership to discuss future AI data centers"
    ],
    "entities": [
     "Sam Altman",

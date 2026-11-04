@@ -960,6 +960,7 @@
           events: {
             onReady: event => {
               if (frame.closest('.card') !== activeCard) event.target.pauseVideo();
+              muteForAd(event.target, frame.id); // Sound comes back when the video itself starts (below).
             },
             onStateChange: event => {
               const stateNames = {
@@ -977,24 +978,38 @@
         players.set(frame.id, player);
       };
 
-      // Ads mute themselves, by guess: YouTube's player API says nothing about ads, but while one runs the video's
-      // own clock stops (or the player reports another video) though the player says it is playing. After
-      // AD_STALL_MS of that the player is muted, with a note on the card; sound comes back once the clock moves
-      // again. A player the viewer muted is left alone. Long buffering can look the same and mute it briefly.
-      // On some iPads the player can go black after that and never come back; the note is then a button that
-      // reloads the video where it stopped, and that player is not muted for ads again.
-      const AD_STALL_MS = 1500;
+      // No ad sound, by guess: YouTube's player API says nothing about ads, but while one runs the video's own clock
+      // stops (or the player reports another video) though the player says it is playing. So every YouTube player
+      // starts muted (pre-roll ads are silent from their first second) and gets its sound back once the video's own
+      // clock moves; later, AD_STALL_MS of a stopped clock while playing (a mid-roll ad) mutes it again until the
+      // clock moves. Long buffering looks the same and is silent too. A player the viewer muted stays muted.
+      // When it has been muted a while, a note on the card is a button: on some iPads the player went black there,
+      // and tapping it brings the sound back and reloads the video where it stopped (that player is then left alone).
+      const AD_STALL_MS = 750;
+      const AD_NOTE_MS = 1500;
       const adWatch = new Map();
+      const watchFor = playerId => {
+        if (!adWatch.has(playerId)) adWatch.set(playerId, { time: -1, since: Date.now(), muted: false, mutedAt: 0, off: false });
+        return adWatch.get(playerId);
+      };
+      const muteForAd = (player, playerId) => {
+        const watch = watchFor(playerId);
+        if (watch.off || watch.muted || player.isMuted?.()) return;
+        watch.muted = true;
+        watch.mutedAt = Date.now();
+        player.mute?.();
+      };
       const clearAdMute = (player, frame, watch) => {
         watch.muted = false;
         player.unMute?.();
         frame.parentElement.querySelector('.ad-mute-note')?.remove();
       };
       const showAdMuteNote = (player, frame, watch) => {
+        if (frame.parentElement.querySelector('.ad-mute-note')) return;
         const note = document.createElement('button');
         note.type = 'button';
         note.className = 'ad-mute-note';
-        note.textContent = '🔇 像是广告，已静音 · 黑屏了点这里';
+        note.textContent = '🔇 广告静音中 · 没声音或黑屏点这里';
         note.addEventListener('click', event => {
           event.stopPropagation();
           clearAdMute(player, frame, watch);
@@ -1007,16 +1022,13 @@
         players.forEach((player, playerId) => {
           const frame = document.getElementById(playerId);
           if (!frame || !player.getCurrentTime) return;
-          const watch = adWatch.get(playerId) || { time: -1, since: Date.now(), muted: false, off: false };
-          adWatch.set(playerId, watch);
+          const watch = watchFor(playerId);
           if (watch.off) return;
           const running = ['playing', 'buffering'].includes(frame.dataset.playState);
           const time = player.getCurrentTime();
           const otherVideo = player.getVideoData?.()?.video_id && player.getVideoData().video_id !== frame.dataset.videoId;
+          if (watch.time < 0) watch.time = time;
           if (!running) {
-            // Paused or ended: an ad can't be running, so sound and the note go back to normal.
-            if (watch.muted && ['paused', 'ended', 'cued'].includes(frame.dataset.playState)) clearAdMute(player, frame, watch);
-            if (!watch.muted) watch.time = time;
             watch.since = Date.now();
             return;
           }
@@ -1026,12 +1038,10 @@
             if (watch.muted) clearAdMute(player, frame, watch);
             return;
           }
-          if (watch.muted || player.isMuted?.() || Date.now() - watch.since < AD_STALL_MS && !otherVideo) return;
-          watch.muted = true;
-          player.mute?.();
-          showAdMuteNote(player, frame, watch);
+          if (!watch.muted && (otherVideo || Date.now() - watch.since >= AD_STALL_MS)) muteForAd(player, playerId);
+          if (watch.muted && Date.now() - watch.mutedAt >= AD_NOTE_MS) showAdMuteNote(player, frame, watch);
         });
-      }, 500);
+      }, 250);
 
       const initializeFrames = (root = document) => {
         root.querySelectorAll('iframe[data-video-id]').forEach(frame => {

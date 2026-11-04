@@ -1,4 +1,17 @@
 [
- { "person": "王坚", "url": "https://www.bilibili.com/video/BV1vv4y1v7VR", "note": "凤凰卫视《问答神州》吴小莉专访" },
- { "person": "王坚", "url": "https://www.bilibili.com/video/BV1xc98YAEwk", "note": "央视新闻专访" }
+ {
+ "person": "王坚",
+ "url": "https://www.bilibili.com/video/BV1vv4y1v7VR",
+ "note": "凤凰卫视《问答神州》吴小莉专访"
+ },
+ {
+ "person": "王坚",
+ "url": "https://www.bilibili.com/video/BV1xc98YAEwk",
+ "note": "央视新闻专访"
+ },
+ {
+ "person": "姚明",
+ "url": "https://www.bilibili.com/video/BV1Qz6rBMEkX",
+ "note": "《十三邀》第九季许知远对话姚明，十三邀官方账号发的片段（完整版只在腾讯视频）"
+ }
 ]

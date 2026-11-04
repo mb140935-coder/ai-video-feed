@@ -2,14 +2,16 @@
 // included) of the people the user lists on the page, found on YouTube and Bilibili. The list is rows in Supabase
 // added_videos whose key is "person:<name>": title holds the names ("王坚 / Wang Jian"), url the identity keywords
 // that tell this person apart from namesakes ("阿里云 城市大脑 院士"). A person seen for the first time (or whose
-// keywords changed) gets a search of the past two years; after that each run looks for new videos only.
+// keywords changed) gets a search of everything, however old; after that each run looks for new videos only.
 // No AI filter: they can talk about anything. Clips, compilations, commentary and gossip are left out.
 // Also here, since they share the Bilibili and YouTube lookups: followed Bilibili uploaders (bilibiliUp,
 // pollBilibiliUp) and the hand-picked 精选 videos (docs/video-picks.json, addVideoPicks).
 
-const BACKFILL_DAYS = 730;
+// Backfill: no date limit (Infinity). Bumping BACKFILL_VERSION searches everyone from scratch once more.
+const BACKFILL_DAYS = Infinity;
+const BACKFILL_VERSION = 2;
 const RECENT_DAYS = 7;
-const MAX_NEW_BACKFILL = 15;
+const MAX_NEW_BACKFILL = 25;
 const MAX_NEW_DAILY = 5;
 const MIN_MINUTES = 15;
 const MIN_SPEECH_MINUTES = 8;
@@ -65,10 +67,10 @@ const getJson = async (url, options) => {
 };
 
 const searchYouTube = async (person, sinceDays, key) => {
-  const since = new Date(Date.now() - sinceDays * 864e5).toISOString();
+  const since = Number.isFinite(sinceDays) ? `&publishedAfter=${new Date(Date.now() - sinceDays * 864e5).toISOString()}` : '';
   const query = encodeURIComponent(person.names.join('|'));
   const order = sinceDays > RECENT_DAYS ? 'relevance' : 'date';
-  const found = await getJson(`https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&order=${order}&maxResults=50&publishedAfter=${since}&q=${query}&key=${key}`);
+  const found = await getJson(`https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&order=${order}&maxResults=50${since}&q=${query}&key=${key}`);
   const ids = (found.items || []).map(item => item.id?.videoId).filter(Boolean);
   if (!ids.length) return [];
   const details = await getJson(`https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&id=${ids.join(',')}&key=${key}`);
@@ -97,16 +99,18 @@ const bilibiliHeaders = async () => {
 
 const searchBilibili = async (person, sinceDays) => {
   const backfill = sinceDays > RECENT_DAYS;
-  const cutoff = Date.now() - sinceDays * 864e5;
+  const cutoff = Number.isFinite(sinceDays) ? Date.now() - sinceDays * 864e5 : 0;
   const results = [];
-  for (let page = 1; page <= (backfill ? 3 : 1); page++) {
-    const url = `https://api.bilibili.com/x/web-interface/search/type?search_type=video&keyword=${encodeURIComponent(person.name)}&order=${backfill ? 'totalrank' : 'pubdate'}&page=${page}`;
-    const data = await getJson(url, { headers: await bilibiliHeaders() });
-    if (data.code !== 0) throw new Error(`code ${data.code} ${data.message || ''}`.trim());
-    const rows = data.data?.result || [];
-    results.push(...rows);
-    if (rows.length < 20) break;
-    await new Promise(resolve => setTimeout(resolve, 800));
+  for (const keyword of backfill ? [person.name, `${person.name} 访谈`, `${person.name} 演讲`] : [person.name]) {
+    for (let page = 1; page <= (backfill ? 3 : 1); page++) {
+      const url = `https://api.bilibili.com/x/web-interface/search/type?search_type=video&keyword=${encodeURIComponent(keyword)}&order=${backfill ? 'totalrank' : 'pubdate'}&page=${page}`;
+      const data = await getJson(url, { headers: await bilibiliHeaders() });
+      if (data.code !== 0) throw new Error(`code ${data.code} ${data.message || ''}`.trim());
+      const rows = (data.data?.result || []).filter(row => !results.some(seen => seen.bvid === row.bvid));
+      results.push(...rows);
+      await new Promise(resolve => setTimeout(resolve, 800));
+      if ((data.data?.result || []).length < 20) break;
+    }
   }
   return results.filter(row => row.bvid && row.pubdate * 1000 >= cutoff && (row.play || 0) >= MIN_BILIBILI_PLAYS).map(row => ({
     key: `bilibili:${row.bvid}`,
@@ -132,9 +136,9 @@ export const searchPeople = async (people, items, previous, report, youtubeKey, 
   const seenTitles = new Set([...items.values()].filter(item => item.via === 'people').map(item => titleKey(item.title)));
   for (const person of people) {
     const before = previous[person.name];
-    const backfill = !before?.searched || before.keywords !== person.keywords.join(' ');
+    const backfill = !before?.searched || before.keywords !== person.keywords.join(' ') || before.backfill !== BACKFILL_VERSION;
     const sinceDays = backfill ? BACKFILL_DAYS : RECENT_DAYS;
-    const entry = { keywords: person.keywords.join(' '), searched: before?.searched || '', youtube: '', bilibili: '' };
+    const entry = { keywords: person.keywords.join(' '), searched: before?.searched || '', backfill: backfill ? undefined : before.backfill, youtube: '', bilibili: '' };
     const candidates = [];
     if (youtubeKey) {
       try { candidates.push(...await searchYouTube(person, sinceDays, youtubeKey)); entry.youtube = 'ok'; }
@@ -170,7 +174,10 @@ export const searchPeople = async (people, items, previous, report, youtubeKey, 
     }
     // A failed search is retried in full next run.
     if (entry.youtube !== 'ok' && youtubeKey || entry.bilibili !== 'ok') { if (backfill) entry.searched = ''; }
-    else entry.searched = day(Date.now());
+    else {
+      entry.searched = day(Date.now());
+      entry.backfill = BACKFILL_VERSION;
+    }
     state[person.name] = entry;
     report.push(`people ${person.name}: ${backfill ? 'backfill' : 'daily'}, ${candidates.length} results, ${added} new`);
   }

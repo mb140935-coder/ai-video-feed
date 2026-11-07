@@ -1,6 +1,50 @@
 {
- "updated": "2026-11-06T02:29:07.841Z",
+ "updated": "2026-11-07T01:58:47.074Z",
  "items": [
+  {
+   "key": "youtube:erzdOM2oZCg",
+   "url": "https://www.youtube.com/watch?v=erzdOM2oZCg",
+   "title": "Ron Barron's Interview with Elon Musk Makes Tons of News",
+   "channel": "Randy Kirk",
+   "channelId": "UCQW2mxSiyhvpiGDHBCgpTJA",
+   "published": "2026-11-07",
+   "summary": "",
+   "about": "Elon Musk：xAI / Tesla。",
+   "tab": "appearances",
+   "tags": [
+    "人物新视频",
+    "Elon Musk"
+   ],
+   "minutes": 41,
+   "found": "2026-11-07",
+   "via": "person",
+   "highlight": "Ron Barron对Elon Musk进行了访谈并带来了大量新闻资讯，讨论了相关股票在经历前一天下跌后的市场走势以及宏观经济和基本面背景。",
+   "kind": "judgment",
+   "sports": false,
+   "field": "none"
+  },
+  {
+   "key": "youtube:R56MqmVwbps",
+   "url": "https://www.youtube.com/watch?v=R56MqmVwbps",
+   "title": "“Don’t Talk about This.” - Sam Altman’s Big Problem, Mossad & Joe Rogan | James Li",
+   "channel": "Julian Dorey",
+   "channelId": "UC0A-v_DL-h76F75xik8h03Q",
+   "published": "2026-11-06",
+   "summary": "",
+   "about": "Sam Altman：OpenAI CEO。",
+   "tab": "appearances",
+   "tags": [
+    "人物新视频",
+    "Sam Altman"
+   ],
+   "minutes": 199,
+   "found": "2026-11-07",
+   "via": "person",
+   "highlight": "独立记者兼内容创作者 James Li 做客 Julian Dorey Podcast 第 498 期节目。双方在节目中探讨了 Sam Altman 的相关话题、Mossad 以及 Joe Rogan。",
+   "kind": "judgment",
+   "sports": false,
+   "field": "none"
+  },
   {
    "key": "youtube:x7Z_1miRWB8",
    "url": "https://www.youtube.com/watch?v=x7Z_1miRWB8",
@@ -19,6 +63,28 @@
    "found": "2026-11-06",
    "via": "person",
    "highlight": "Google DeepMind 联合创始人兼董事长 Demis Hassabis 在 Masters of Scale Summit '26 上与 Reid Hoffman 对话。他指出世界尚未准备好迎接 AI 的下一步发展，并探讨了如何有效治理前沿 AI 以及为什么需要更多样化的专家参与。",
+   "kind": "judgment",
+   "sports": false,
+   "field": "none"
+  },
+  {
+   "key": "youtube:yfnmAsXqvIs",
+   "url": "https://www.youtube.com/watch?v=yfnmAsXqvIs",
+   "title": "Watch Live: OpenAI Co-Founder Greg Brockman at WSJ Tech | WSJ",
+   "channel": "WSJ Events",
+   "channelId": "UCZh2cjNAEMVguN1Lg00IWNA",
+   "published": "2026-11-05",
+   "summary": "What will it take to build—and pay for—the next generation of AI? OpenAI-co-founder and President Greg Brockman, who ...",
+   "about": "Greg Brockman：OpenAI 联合创始人、总裁。",
+   "tab": "appearances",
+   "tags": [
+    "人物新视频",
+    "Greg Brockman"
+   ],
+   "minutes": 29,
+   "found": "2026-11-07",
+   "via": "person",
+   "highlight": "OpenAI 联合创始人兼总裁 Greg Brockman 在 WSJ Tech 活动上进行直播访谈。他讨论了构建下一代 AI 所需的计算与资金投入、ChatGPT 的商业演进、安全与网络安全问题以及技术未来的发展方向。",
    "kind": "judgment",
    "sports": false,
    "field": "none"
@@ -1373,6 +1439,28 @@
    "highlight": "No Priors节目邀请了OpenEvidence创始人Daniel Nadler，讨论了该公司如何解决医疗领域的语义搜索问题，在短短18个月内被40%的美国医生采用。他们探讨了将医生视为消费者的策略以及技术将如何重塑医学和医学教育。"
   },
   {
+   "key": "bilibili:BV1Yg4i6xEGj",
+   "url": "https://www.bilibili.com/video/BV1Yg4i6xEGj",
+   "title": "杨振宁演讲，顶级学者的思维，让人受益匪浅！",
+   "channel": "底层思想",
+   "published": "2026-11-06",
+   "summary": "",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 30,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "杨振宁的演讲分享了顶级学者的思维方式与人生经验。内容展现了一代科学大师的深刻思考。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
    "key": "youtube:1YUA2uO-uNM",
    "url": "https://www.youtube.com/watch?v=1YUA2uO-uNM",
    "title": "Warren Buffett: Anyone Managing Your Money Has Their Own Incentives",
@@ -1392,6 +1480,28 @@
    "highlight": "Warren Buffett 在 Omaha Archive 的视频中讨论了金钱管理中的个人动机问题。视频内容基于 Berkshire Hathaway 和 CNBC 的素材，仅供教育和评论使用。",
    "kind": "judgment",
    "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1Xyxj6qE38",
+   "url": "https://www.bilibili.com/video/BV1Xyxj6qE38",
+   "title": "【中英双语】科比亲述：连砍40+，菲尔却要我收着打？科比回忆与奥尼尔的往事｜The Corp专访",
+   "channel": "Ye队来了",
+   "published": "2026-10-28",
+   "summary": "科比与棒球名将 A-Rod、Big Cat 对谈：从退役后的商业与写作，聊到乔丹的影响、公牛传闻、OK组合，以及训练场上的竞争标准",
+   "tab": "people",
+   "person": "奥尼尔",
+   "tags": [
+    "人物访谈",
+    "奥尼尔"
+   ],
+   "minutes": 42,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "科比在专访中亲述了篮球生涯的往事，回忆了砍下高分时菲尔的指导、与奥尼尔的 OK 组合经历，以及乔丹的影响和训练场上的竞争标准。",
+   "kind": "method",
+   "sports": true,
    "firsthand": true,
    "field": "none"
   },
@@ -1439,6 +1549,50 @@
    "field": "none"
   },
   {
+   "key": "bilibili:BV1dqHy63Ede",
+   "url": "https://www.bilibili.com/video/BV1dqHy63Ede",
+   "title": "【中文字幕-人工校对版】清华大学讲座《我的学习和教学生涯》（杨振宁）",
+   "channel": "无名鼠辈-",
+   "published": "2026-10-07",
+   "summary": "2004年，杨振宁先生在清华大学发表演讲《我的学习和教学生涯》。他回顾求学、科研与教学经历，分享科学探索的方法与人生感悟。这是一场献给青年人的珍贵讲座，展现了一代科学大师对知识、教育和未来人才培养的深刻思考。",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 115,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "杨振宁于 2004 年在清华大学发表题为《我的学习和教学生涯》的讲座，回顾了求学、科研与教学经历。他分享了科学探索的方法与人生感悟，展现了对知识和教育的思考。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1CmhD6wEtG",
+   "url": "https://www.bilibili.com/video/BV1CmhD6wEtG",
+   "title": "2003.9 吴小莉专访刘晓庆 : 危机和灾难构造我的人生",
+   "channel": "黄氏简森",
+   "published": "2026-09-26",
+   "summary": "",
+   "tab": "people",
+   "person": "刘晓庆",
+   "tags": [
+    "人物访谈",
+    "刘晓庆"
+   ],
+   "minutes": 75,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "吴小莉专访刘晓庆，探讨了人生中的危机和灾难对其人生的塑造。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
    "key": "bilibili:BV15Cac6yEKW",
    "url": "https://www.bilibili.com/video/BV15Cac6yEKW",
    "title": "“数值怪”+“机制怪”=“初代大魔王”！与冠军邓亚萍畅聊乒乓【视频播客 | 元来如此EP.06】",
@@ -1480,6 +1634,28 @@
    "highlight": "乒乓球超级全满贯邓亚萍对话前日本乒乓国手福原爱，全方位对谈了初代大魔王与瓷娃娃的初遇印象、与乒乓球结缘的原因、面对聚光灯的自我认知，以及对阵中国队时的心态调整。",
    "kind": "method",
    "sports": true,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1N2ej61ESC",
+   "url": "https://www.bilibili.com/video/BV1N2ej61ESC",
+   "title": "1994年44岁刘晓庆接受采访，个性张扬果然语不惊人死不休",
+   "channel": "枫叶家园886",
+   "published": "2026-09-15",
+   "summary": "1994年44岁刘晓庆接受采访，个性张扬果然语不惊人死不休",
+   "tab": "people",
+   "person": "刘晓庆",
+   "tags": [
+    "人物访谈",
+    "刘晓庆"
+   ],
+   "minutes": 22,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "1994年44岁的刘晓庆接受采访，展现了其个性张扬的访谈内容。",
+   "kind": "judgment",
+   "sports": false,
    "firsthand": true,
    "field": "none"
   },
@@ -1927,6 +2103,28 @@
    "field": "none"
   },
   {
+   "key": "bilibili:BV1CP7X6wE55",
+   "url": "https://www.bilibili.com/video/BV1CP7X6wE55",
+   "title": "杨振宁八十岁时一场经典演讲",
+   "channel": "扣子的书房",
+   "published": "2026-06-03",
+   "summary": "这是杨振宁2002年八十岁时在港中大的一场演讲，很棒，尤其讲机遇那段，印象深刻。",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 68,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "杨振宁于 2002 年八十岁时在香港中文大学发表经典演讲，特别分享了关于机遇的深刻感悟。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
    "key": "bilibili:BV1zc5t6jE1S",
    "url": "https://www.bilibili.com/video/BV1zc5t6jE1S",
    "title": "王坚最新发言 | AI的未来与算力",
@@ -2016,6 +2214,28 @@
    "field": "none"
   },
   {
+   "key": "bilibili:BV1XgQhBqE7v",
+   "url": "https://www.bilibili.com/video/BV1XgQhBqE7v",
+   "title": "75岁刘晓庆最新专访太通透了：只要活着，一切都是浮云！豁然开朗",
+   "channel": "元宝说吖",
+   "published": "2026-04-13",
+   "summary": "",
+   "tab": "people",
+   "person": "刘晓庆",
+   "tags": [
+    "人物访谈",
+    "刘晓庆"
+   ],
+   "minutes": 36,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "75岁刘晓庆的最新专访，分享了关于活着与人生看法的通透观点。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
    "key": "youtube:4BZX_kv3m1w",
    "url": "https://www.youtube.com/watch?v=4BZX_kv3m1w",
    "title": "窦文涛×邓亚萍：为什么说球场上的0.1秒，藏着人性的所有弱点？| 圆桌派 第五季 | 优酷纪实人文 YOUKU DOCUMENTARY",
@@ -2055,6 +2275,28 @@
    "found": "2026-11-02",
    "via": "people",
    "highlight": "中国工程院院士王坚在最新演讲中谈到了DeepSeek、大模型幻觉以及计算星座等话题。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1CU9MBcEKw",
+   "url": "https://www.bilibili.com/video/BV1CU9MBcEKw",
+   "title": "刘晓庆：“我是一个伟大的女人”",
+   "channel": "酒醉小精怪",
+   "published": "2026-04-03",
+   "summary": "",
+   "tab": "people",
+   "person": "刘晓庆",
+   "tags": [
+    "人物访谈",
+    "刘晓庆"
+   ],
+   "minutes": 36,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "刘晓庆表达了关于自身人生定位的自白：“我是一个伟大的女人”。",
    "kind": "judgment",
    "sports": false,
    "firsthand": true,
@@ -2194,6 +2436,29 @@
    "field": "none"
   },
   {
+   "key": "youtube:En859_bDrvM",
+   "url": "https://www.youtube.com/watch?v=En859_bDrvM",
+   "title": "主咖和Ta的朋友们 | 刘晓庆大女主发言燃翻全场，现场还秀了自己的书法！",
+   "channel": "喜综大爆炸",
+   "channelId": "UC6Q9E3iNQ6qgjiJO9h0I1UQ",
+   "published": "2026-02-02",
+   "summary": "| 喜綜最先知💥快樂笑爆炸！",
+   "tab": "people",
+   "person": "刘晓庆",
+   "tags": [
+    "人物访谈",
+    "刘晓庆"
+   ],
+   "minutes": 20,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "刘晓庆在节目中带来发言并现场秀书法。喜综大爆炸带来相关内容。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
    "key": "bilibili:BV1Qz6rBMEkX",
    "url": "https://www.bilibili.com/video/BV1Qz6rBMEkX",
    "title": "姚明：那段时间，我的思维完全变形了｜十三邀×姚明",
@@ -2236,6 +2501,50 @@
    "picked": true,
    "firsthand": true,
    "note": "《十三邀》第九季第 1 集完整版，许知远对话姚明。只能在 iflix 网站播放，点卡片上的按钮打开。"
+  },
+  {
+   "key": "bilibili:BV1uB2hBDEQb",
+   "url": "https://www.bilibili.com/video/BV1uB2hBDEQb",
+   "title": "200年杨振宁先生在北大的演讲（关于中国科技发展、数学与物理、诺奖以及耐心回复学生的提问）",
+   "channel": "院士智慧阁",
+   "published": "2025-12-04",
+   "summary": "",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 77,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "杨振宁先生在北大发表演讲，内容涉及中国科技发展、数学与物理、诺奖以及耐心回复学生提问。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1bKypBXEUH",
+   "url": "https://www.bilibili.com/video/BV1bKypBXEUH",
+   "title": "大鲨鱼奥尼尔名人堂演讲-极具个人魅力",
+   "channel": "打雷就下雨嘛",
+   "published": "2025-11-19",
+   "summary": "沙奎尔·奥尼尔（Shaquille O’Neal）在 2016年奈史密斯篮球名人堂 入选仪式上的演讲，被誉为 “充满激情、幽默、感恩与人性光辉的经典之作”。他的演讲风格与其球场形象高度一致——霸气中带着温情，夸张里藏着真诚，既展现了“大鲨鱼”的巨星气场，也流露出一个父亲、队友和学生的柔软内心。",
+   "tab": "people",
+   "person": "奥尼尔",
+   "tags": [
+    "人物访谈",
+    "奥尼尔"
+   ],
+   "minutes": 30,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "沙奎尔·奥尼尔（Shaquille O’Neal）在2016年奈史密斯篮球名人堂入选仪式上发表了充满激情与幽默的演讲，展现了其巨星气场与真诚温情。",
+   "kind": "judgment",
+   "sports": true,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV12KkQBbEdX",
@@ -2282,6 +2591,72 @@
    "field": "none"
   },
   {
+   "key": "bilibili:BV1VByeBhES7",
+   "url": "https://www.bilibili.com/video/BV1VByeBhES7",
+   "title": "杨振宁和翁帆一起接受杨澜访谈",
+   "channel": "院士智慧阁",
+   "published": "2025-10-30",
+   "summary": "",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 40,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "杨振宁和翁帆一起接受杨澜访谈。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV16TyvBrEaG",
+   "url": "https://www.bilibili.com/video/BV16TyvBrEaG",
+   "title": "杨振宁首次直播全程记录",
+   "channel": "院士智慧阁",
+   "published": "2025-10-30",
+   "summary": "",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 88,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "记录了杨振宁的首次直播全程。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1vCybBQEVZ",
+   "url": "https://www.bilibili.com/video/BV1vCybBQEVZ",
+   "title": "84岁的杨振宁在新加坡南洋理工大学发表演讲：听大师讲大师们的故事",
+   "channel": "语音精修社",
+   "published": "2025-10-30",
+   "summary": "",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 56,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "84岁的杨振宁在新加坡南洋理工大学发表演讲，讲述大师们的故事。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
    "key": "bilibili:BV1S8sVziEDd",
    "url": "https://www.bilibili.com/video/BV1S8sVziEDd",
    "title": "《体坛零距离》“跨时代对话”姚明 杨瀚森",
@@ -2300,6 +2675,118 @@
    "highlight": "体坛零距离带来姚明与杨瀚森的跨时代对话。",
    "kind": "method",
    "sports": true,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1adWdzdEhx",
+   "url": "https://www.bilibili.com/video/BV1adWdzdEhx",
+   "title": "杨振宁1988访谈：教育、人才、学习、造物主",
+   "channel": "Energy_Battery",
+   "published": "2025-10-21",
+   "summary": "",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 85,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "杨振宁于1988年接受访谈，探讨教育、人才、学习与造物主等话题。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1dsWXzJEGz",
+   "url": "https://www.bilibili.com/video/BV1dsWXzJEGz",
+   "title": "【2007上海东方卫视】《对话科学》杨振宁专访",
+   "channel": "2003年滴小黄同学",
+   "published": "2025-10-21",
+   "summary": "百视TV",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 46,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "东方卫视《对话科学》栏目播出了对杨振宁的专访。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "youtube:pPkrQEwl6Uo",
+   "url": "https://www.youtube.com/watch?v=pPkrQEwl6Uo",
+   "title": "从杨振宁和与他相关的几位名人的选择看人生中的命和运【直播精选】第666期",
+   "channel": "马方说管理",
+   "channelId": "UCzzsHdzhQDgmZhykIzRl37A",
+   "published": "2025-10-20",
+   "summary": "",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 27,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "马方在管理直播精选节目中，探讨了杨振宁等名人的选择并分析了人生中的命和运。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "youtube:za8O_MC0Nt8",
+   "url": "https://www.youtube.com/watch?v=za8O_MC0Nt8",
+   "title": "杨振宁中国科学院大学演讲互动 我很高兴中国政府没有上当 我懂高能物理 不要再搞大对撞机 The party is over",
+   "channel": "六翼长老",
+   "channelId": "UCyENblfpwdnDipTqRg39-QA",
+   "published": "2025-10-18",
+   "summary": "2019年4月29日，杨振宁应明德讲堂思想系列主持人、人文学院汪前进教授的邀请来到中国科学院大学雁栖湖校区，做客“明德讲堂”，李树深校长主持了本场讲座。杨先生与中国科学院大学的近两千研究生再次分享了自己的学习与研究经历，并明确重申，对于几年前反对中国建造大型对撞机这一观点，“我的看法完全没有改变”。不要再去搞大对撞机cepc，现在处于没落的时候。这个领域在杨老做研究生的时候开始大放光彩，事实上也可以说这几十年来，在物理学里面大家认为最重…",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 8,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "杨振宁在中国科学院大学演讲互动中表示，自己对于反对中国建造大型对撞机的观点完全没有改变，并对中国政府没有上当表示高兴。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV182WszhET6",
+   "url": "https://www.bilibili.com/video/BV182WszhET6",
+   "title": "1995年杨振宁于中国科学技术大学演讲：《近代科学进入中国的回顾与前瞻》",
+   "channel": "Youtube高质量精选",
+   "published": "2025-10-18",
+   "summary": "◎",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 75,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "杨振宁于1995年在中国科学技术大学发表了题为《近代科学进入中国的回顾与前瞻》的演讲。",
+   "kind": "method",
+   "sports": false,
    "firsthand": true,
    "field": "none"
   },
@@ -2344,6 +2831,29 @@
    "found": "2026-11-03",
    "via": "people",
    "highlight": "施一公带来开学第一课演讲，鼓励观众勇敢面对学习中文的困难，坚持听说练习并融入中文环境。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "youtube:gFTDHCvx4xM",
+   "url": "https://www.youtube.com/watch?v=gFTDHCvx4xM",
+   "title": "【超清修复】杨振宁：20世纪物理学黄金时代，我所认识的爱因斯坦、普朗克、费米与海森伯｜狭义相对论、广义相对论、量子力学",
+   "channel": "大汪观世界",
+   "channelId": "UCGJYswYITlIY6kMsU6WXlJw",
+   "published": "2025-08-13",
+   "summary": "",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 56,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "杨振宁在2002年的演讲中介绍了20世纪物理学黄金时代，分享了他所认识的爱因斯坦、普朗克、费米与海森伯等科学家的经历与影响。",
    "kind": "method",
    "sports": false,
    "firsthand": true,
@@ -2751,6 +3261,72 @@
    "field": "none"
   },
   {
+   "key": "bilibili:BV1W2421T7Sk",
+   "url": "https://www.bilibili.com/video/BV1W2421T7Sk",
+   "title": "【杨振宁】质子的结构 1973年的演讲",
+   "channel": "Uniempty",
+   "published": "2024-03-13",
+   "summary": "The Structure of the Proton （1973）",
+   "tab": "people",
+   "person": "杨振宁",
+   "tags": [
+    "人物访谈",
+    "杨振宁"
+   ],
+   "minutes": 51,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "杨振宁于1973年发表了关于质子结构的演讲。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV14t421h7GA",
+   "url": "https://www.bilibili.com/video/BV14t421h7GA",
+   "title": "阿伦.艾弗森做客奥尼尔博客完整版",
+   "channel": "账号已注销",
+   "published": "2024-02-22",
+   "summary": "YouTube",
+   "tab": "people",
+   "person": "奥尼尔",
+   "tags": [
+    "人物访谈",
+    "奥尼尔"
+   ],
+   "minutes": 70,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "NBA传奇球星奥尼尔主持的博客节目，邀请了阿伦.艾弗森做客并进行访谈。节目中两人进行了深入对话。",
+   "kind": "judgment",
+   "sports": true,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1qK411a7gD",
+   "url": "https://www.bilibili.com/video/BV1qK411a7gD",
+   "title": "【奥尼尔播客】奥尼尔被仇恨激怒，揭露不为人知的无家可归者故事及更多 | Ep. 1",
+   "channel": "金州武术家",
+   "published": "2024-01-21",
+   "summary": "",
+   "tab": "people",
+   "person": "奥尼尔",
+   "tags": [
+    "人物访谈",
+    "奥尼尔"
+   ],
+   "minutes": 60,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "奥尼尔主持的播客节目中，奥尼尔讲述了自己被仇恨激怒的经历，并揭露了不为人知的无家可归者的故事。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
    "key": "bilibili:BV14T4y187nm",
    "url": "https://www.bilibili.com/video/BV14T4y187nm",
    "title": "分子医学论坛第41期 中国科学院院士施一公：RNA Splicing @ Atomic Resolution",
@@ -3129,6 +3705,50 @@
    "field": "none"
   },
   {
+   "key": "bilibili:BV11k4y1t7ei",
+   "url": "https://www.bilibili.com/video/BV11k4y1t7ei",
+   "title": "刘晓庆：戏里戏外（上）",
+   "channel": "PC-262",
+   "published": "2023-03-20",
+   "summary": "·",
+   "tab": "people",
+   "person": "刘晓庆",
+   "tags": [
+    "人物访谈",
+    "刘晓庆"
+   ],
+   "minutes": 30,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "刘晓庆讲述了自己戏里戏外的经历与人生感悟。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1wv4y1a7q6",
+   "url": "https://www.bilibili.com/video/BV1wv4y1a7q6",
+   "title": "杨澜：你怎么面对牢狱生活？刘晓庆的回答太直白，杨澜听愣了！",
+   "channel": "PC-262",
+   "published": "2023-03-07",
+   "summary": "·",
+   "tab": "people",
+   "person": "刘晓庆",
+   "tags": [
+    "人物访谈",
+    "刘晓庆"
+   ],
+   "minutes": 22,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "杨澜对话刘晓庆，询问其如何面对牢狱生活，刘晓庆作出了直白的回答。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
    "key": "bilibili:BV1vv4y1v7VR",
    "url": "https://www.bilibili.com/video/BV1vv4y1v7VR",
    "title": "凤凰专访中国工程院院士王坚：100年后，可能去火星很容易，留在地球很难丨问答神州",
@@ -3170,6 +3790,28 @@
    "found": "2026-11-04",
    "via": "people",
    "highlight": "窦文涛、潘采夫、邓亚萍、周轶君在《圆桌派》第六季中展开对话，探讨挑战与失败等话题。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1KN4y177RV",
+   "url": "https://www.bilibili.com/video/BV1KN4y177RV",
+   "title": "刘晓庆2012年事业巅峰采访",
+   "channel": "love032410",
+   "published": "2022-07-24",
+   "summary": "up主自购买，转载需要标注",
+   "tab": "people",
+   "person": "刘晓庆",
+   "tags": [
+    "人物访谈",
+    "刘晓庆"
+   ],
+   "minutes": 37,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "刘晓庆在2012年事业巅峰时期接受的访谈采访。",
    "kind": "judgment",
    "sports": false,
    "firsthand": true,
@@ -3399,6 +4041,28 @@
    "field": "none"
   },
   {
+   "key": "bilibili:BV1YU4y1E7U1",
+   "url": "https://www.bilibili.com/video/BV1YU4y1E7U1",
+   "title": "奥尼尔名人堂演讲中英字幕（剩余部分+结尾超高能）",
+   "channel": "炮斌",
+   "published": "2021-08-19",
+   "summary": "最后一段翻译纯粹照着我喜欢来了。也希望有志之士能帮忙纠错，最好是直接发在弹幕上，一起改进",
+   "tab": "people",
+   "person": "奥尼尔",
+   "tags": [
+    "人物访谈",
+    "奥尼尔"
+   ],
+   "minutes": 16,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "奥尼尔名人堂演讲的剩余部分及结尾内容，带有中英字幕。",
+   "kind": "judgment",
+   "sports": true,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
    "key": "youtube:ieXLNVwshRU",
    "url": "https://www.youtube.com/watch?v=ieXLNVwshRU",
    "title": "Warren Buffett's Investment Strategy: How to Live and Invest like a Legend (Full Interview)",
@@ -3416,6 +4080,28 @@
    "found": "2026-11-04",
    "via": "people",
    "highlight": "Warren Buffett在访谈中讨论了童年、家庭、妻子Susie的离去、伯克希尔哈撒韦公司以及与Charlie Munger的友谊等众多话题。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1To4y1C7A9",
+   "url": "https://www.bilibili.com/video/BV1To4y1C7A9",
+   "title": "纪录片【刘晓庆：人生不怕从头再来】",
+   "channel": "多元仓库",
+   "published": "2021-06-27",
+   "summary": "网络",
+   "tab": "people",
+   "person": "刘晓庆",
+   "tags": [
+    "人物访谈",
+    "刘晓庆"
+   ],
+   "minutes": 48,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "纪录片《刘晓庆：人生不怕从头再来》讲述了刘晓庆的人生经历。",
    "kind": "judgment",
    "sports": false,
    "firsthand": true,
@@ -3578,6 +4264,28 @@
    "field": "none"
   },
   {
+   "key": "bilibili:BV1PK4y1k789",
+   "url": "https://www.bilibili.com/video/BV1PK4y1k789",
+   "title": "非常道对话刘晓庆：浴火凤凰",
+   "channel": "你的女王陛下大人",
+   "published": "2020-04-15",
+   "summary": "优酷",
+   "tab": "people",
+   "person": "刘晓庆",
+   "tags": [
+    "人物访谈",
+    "刘晓庆"
+   ],
+   "minutes": 69,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "《非常道》节目对话刘晓庆，主题为“浴火凤凰”，回顾其人生与演艺生涯。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
    "key": "youtube:x0DrOjr7O0A",
    "url": "https://www.youtube.com/watch?v=x0DrOjr7O0A",
    "title": "徐新：今日资本的原则是打造第一品牌",
@@ -3618,6 +4326,28 @@
    "via": "people",
    "highlight": "Charlie Munger带来南加州大学2007年5月的演讲。",
    "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV174411j7cM",
+   "url": "https://www.bilibili.com/video/BV174411j7cM",
+   "title": "《可凡倾听》（刘晓庆专访）",
+   "channel": "账号已注销",
+   "published": "2019-05-20",
+   "summary": "优酷",
+   "tab": "people",
+   "person": "刘晓庆",
+   "tags": [
+    "人物访谈",
+    "刘晓庆"
+   ],
+   "minutes": 47,
+   "found": "2026-11-07",
+   "via": "people",
+   "highlight": "《可凡倾听》节目对刘晓庆进行的专访内容。",
+   "kind": "judgment",
    "sports": false,
    "firsthand": true,
    "field": "none"
@@ -3813,62 +4543,92 @@
  "people": {
   "王坚": {
    "keywords": "阿里云 城市大脑 院士 之江实验室 阿里巴巴 云栖",
-   "searched": "2026-11-06",
+   "searched": "2026-11-07",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "徐新": {
    "keywords": "今日资本 投资 京东 美团 网易严选",
-   "searched": "2026-11-06",
+   "searched": "2026-11-07",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "何超琼": {
    "keywords": "",
-   "searched": "2026-11-06",
+   "searched": "2026-11-07",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "施一公": {
    "keywords": "",
-   "searched": "2026-11-06",
+   "searched": "2026-11-07",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "Warren Buffett": {
    "keywords": "",
-   "searched": "2026-11-06",
+   "searched": "2026-11-07",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "Charlie Munger": {
    "keywords": "",
-   "searched": "2026-11-06",
+   "searched": "2026-11-07",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "姚明": {
    "keywords": "",
-   "searched": "2026-11-06",
+   "searched": "2026-11-07",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "邓亚萍": {
    "keywords": "",
-   "searched": "2026-11-06",
+   "searched": "2026-11-07",
+   "backfill": 2,
+   "youtube": "ok",
+   "bilibili": "ok"
+  },
+  "杨振宁": {
+   "keywords": "",
+   "searched": "2026-11-07",
+   "backfill": 2,
+   "youtube": "ok",
+   "bilibili": "ok"
+  },
+  "奥尼尔": {
+   "keywords": "NBA",
+   "searched": "2026-11-07",
+   "backfill": 2,
+   "youtube": "ok",
+   "bilibili": "ok"
+  },
+  "刘晓庆": {
+   "keywords": "",
+   "searched": "2026-11-07",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   }
  },
  "peopleRejected": [
+  "youtube:ebjK9JsHE4E",
+  "bilibili:BV1pBxe6vEfY",
+  "bilibili:BV1osBfB9ENL",
+  "youtube:oqeXx3q5d-I",
+  "youtube:QPF0L4Y_xFY",
+  "bilibili:BV1AEW1z3EAf",
+  "bilibili:BV1rKWtzxEu1",
+  "bilibili:BV1wcVNzNEKd",
+  "bilibili:BV1V3rVYMEan",
   "youtube:S15XpqbUFFA",
   "youtube:CWMj2g0avnE",
   "youtube:oQXS-9tnB8c",
@@ -3891,6 +4651,409 @@
  ],
  "watchAdded": [],
  "news": [
+  {
+   "id": "dl31kz",
+   "lastSeen": "2026-11-07",
+   "title": "Anthropic’s IPO Seen as AI’s True Reckoning",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQcWdnSE1HT3NiM2VseHpuNm1iTWZvWnFJNlpnUklnN3Q0THpTdXR3MUpxZ0NGRDM0SGJHTFZmQ0xaLXgwcFRFTnlya3dVb2txamh3TVVpd2xoSWN6cE1xZ0FhZm9aQ2xqR0NXZnJoNjllSEpPbHZQYUdvc3R5ODZ2SDhHa1NhTzdmVzI2eEZ0RDRFanlCQmI0aUNfdm5NdEQ0WUhYbU0yNUwwVnkzT0JwOUlsTEMtR2s?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-07",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic’s IPO Seen as AI’s True Reckoning"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic的IPO被视为AI行业的一次真正清算。这意味着市场正在重新评估AI企业的商业价值。",
+   "meaning": "作为通用AI领域的重要事件，它反映了资本风向的变化，值得持续关注。",
+   "importance": 8
+  },
+  {
+   "id": "5jh82e",
+   "lastSeen": "2026-11-07",
+   "title": "OpenAI gets $11 billion funding at $1.25 trillion valuation, source says",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdlpNRm5XVy11c3hLY0NRdjh2T3VmOE1LOWQ2LXlvcFhmZlFJYkQya3N3QWxud2UteUZpWVlCTXVHUXZZTjIwRlVQaUhqOGhyM2lDaDJTSGcxMnE5MzhOZ1NHYlJIc1p5bHRxaVZjZDd4MFY2RWMtRkNlYkhSVkdpMlRBWi1PYUNmZGNydXZnOTZFMTFoOHR0azBpUlU1aHpVdFA4dlhCV0dDNm91VE0xSVg0bXZhcF9jaVAzcXYzaldOdw?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "Bloomberg.com",
+    "Reuters",
+    "TechCrunch"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI Completes $11 Billion Portion of Funding at $1.25 Trillion Value",
+    "OpenAI gets $11 billion funding at $1.25 trillion valuation, source says",
+    "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation"
+   ],
+   "entities": [
+    "OpenAI"
+   ],
+   "summary": "根据报道，OpenAI完成了110亿美元的融资，估值达到1.25万亿美元。这一巨额融资显示出顶级AI巨头依然受到资本追捧。",
+   "meaning": "这是通用AI领域不能错过的重大进展，标志着头部企业的资金和估值进入新阶段。",
+   "importance": 9
+  },
+  {
+   "id": "10pesz8",
+   "lastSeen": "2026-11-07",
+   "title": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTUFLWVAtU2RBOExLNGFGcm1lMzctY0xNXy1oUnlrSHBWcnJUWmRXOHkxcGZDYW5vWWR3RURYaWhkOU9DRFAxSjhnNG1hN0dYN3lMT2Z0bWJPb3FYOW80Um82ZFRoN2RqVG50aFFlc1lKcDY3Q2FuWkpQYkJIclk4dzZJTDhoN3R4S3dhTWJQTU1IQkpDcktTRzVwRHdYYjdMYnMw?oc=5",
+   "source": "The Verge",
+   "domain": "theverge.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "The Verge"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO"
+   ],
+   "entities": [
+    "OpenAI",
+    "Anthropic"
+   ],
+   "summary": "OpenAI的估值达到1.25万亿美元，而其竞争对手Anthropic正接近IPO。两大头部企业的最新进展凸显了AI市场的资金热度。",
+   "meaning": "这展示了AI行业头部格局的最新演变，对理解整个通用AI生态极具参考价值。",
+   "importance": 8
+  },
+  {
+   "id": "9cdk9n",
+   "lastSeen": "2026-11-07",
+   "title": "Anthropic's falling IPO valuation raises stakes for broader AI trade",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4yTl96WG92c29IdFAtUW9FWXhGRDNRaFhyVXVEb1ZWMHNTTzRpcTk4cVBYbGJQSGc4S1R0c0RXSnVuUVA4LUJZc19IeGlzb3dlZFo2TWFxb3JNd0I1Q29mcXpKQ3hLS3Jka1VIRFp0aE1rTzlMN0E?oc=5",
+   "source": "Axios",
+   "domain": "axios.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "Axios",
+    "Quartz"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's falling IPO valuation raises stakes for broader AI trade",
+    "Anthropic's IPO valuation expectations are falling after AI stock selloff"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "在AI股票遭到抛售之后，Anthropic的IPO估值预期正在下降。这推高了更广泛AI板块的投资风险。",
+   "meaning": "提醒投资者和关注者，AI概念股的资本热潮正在面临调整压力。",
+   "importance": 6
+  },
+  {
+   "id": "ygjn0c",
+   "lastSeen": "2026-11-07",
+   "title": "9 tech titans took a $150 billion wealth hit during Thursday's AI stock plunge — with Elon Musk alone losing $80 billion",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSTZzdFgyOHFOTUJ2aGlXNzVzYW1ZQkRqRk9XTi0zckNOa3c0amVvYUtSZ2RGS0loWGM3bklQY3psT25qeWRNa2U5bzZyV2tYbGhRcU1lSElJNk1fY3h4MzV3T3hBeVhPSEczQjJhb2puVFhkRjNveFpxMDJyZHB0cS1hNE43ekluQXFXZkhnNXNOLS1VeUU0ckRaa1pWQlpuWWlzaHVwcw?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "9 tech titans took a $150 billion wealth hit during Thursday's AI stock plunge — with Elon Musk alone losing $80 billion"
+   ],
+   "entities": [
+    "Elon Musk"
+   ],
+   "summary": "周四的AI股票暴跌导致9位科技巨头财富缩水1500亿美元，其中Elon Musk一人就损失了800亿美元。市场波动对AI板块富豪的身家造成了直接冲击。",
+   "meaning": "体现了当前资本市场对AI板块情绪的剧烈波动，属于重要的行业动态。",
+   "importance": 6
+  },
+  {
+   "id": "133u6ho",
+   "lastSeen": "2026-11-07",
+   "title": "China reportedly recruited AI exec to spy on Jensen Huang",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB5SXpaOWZleWQzNG5uTGI4STBQTE16UzFqeGRrR1VuQ3gxUlJjckFnRTllYllfNmNnaHFwSEtNbnd6UVFtWXBCQTBWc21zajF6Q2xmOVB4Tld5a1VEcVRucERPWXo3Vk1BVEZjSTExVTFFLTE5U0NlU3pWNA?oc=5",
+   "source": "The Verge",
+   "domain": "theverge.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "The Verge"
+   ],
+   "themes": [],
+   "headlines": [
+    "China reportedly recruited AI exec to spy on Jensen Huang"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ],
+   "summary": "据报道中国曾招募AI高管以监视Jensen Huang。相关媒体报道了这一涉及AI界领袖的安全传闻。",
+   "meaning": "涉及中国AI相关背景及行业领袖的安全动态，可作为行业八卦和宏观背景了解。",
+   "importance": 4
+  },
+  {
+   "id": "1ql9o8o",
+   "lastSeen": "2026-11-07",
+   "title": "Nvidia CEO Jensen Huang seen as target of Chinese spy plot, according to the New York Times",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRkFYeXcyTVdDV0VFRkxvUUk2VVAxZTdIdWVmRnEtako3WmxxRW9pc1J6N29zR05DR0s2WDlmZmJVb2RWOFRzZ1NsLUs4N2Zna1M0c2c3TjluNmlSRHJWWDNkdkcyNXk4QmdEUDlnMFpOT0FySmFSSktRY21CczdmaHpCLS1uMkQ2UHc4SUt4NjJOQlBjRUNtWG5iUUxvNmRrMTJzUVBvcGh2Ny1ZcHVuWDNISVFnUnRwS2c2NExtRW5lMWZNOW1vZ056dlI3Zw?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Nvidia CEO Jensen Huang seen as target of Chinese spy plot, according to the New York Times"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ],
+   "summary": "纽约时报报道称，Nvidia CEO Jensen Huang成为中国间谍阴谋的目标。该消息引发了外界对半导体行业领袖安全的关注。",
+   "meaning": "侧面反映了AI硬件巨头高管在全球地缘与科技竞争中的敏感地位。",
+   "importance": 4
+  },
+  {
+   "id": "1btukur",
+   "lastSeen": "2026-11-07",
+   "title": "美股科技股重挫，AI投资预期遭拷问，AMD苏姿丰喊话：市场太短视了",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkMmV1b0RJVW5hMkF4TkdGRzB3YWlIbXd4RmVSVzJPaFp3VldFNm5tVC0tWXlPa0pndWs3NVZObG42TV8xMGpybGpmSnkweDlONW1RM19yajJtWEJyaEpxRA?oc=5",
+   "source": "ThePaper.cn",
+   "domain": "thepaper.cn",
+   "published": "2026-11-06",
+   "outlets": [
+    "ThePaper.cn"
+   ],
+   "themes": [],
+   "headlines": [
+    "美股科技股重挫，AI投资预期遭拷问，AMD苏姿丰喊话：市场太短视了"
+   ],
+   "entities": [
+    "Lisa Su"
+   ],
+   "summary": "美股科技股重挫引发对AI投资预期的拷问，AMD的Lisa Su公开喊话认为市场太短视。芯片巨头高管对短期市场抛售进行了回应。",
+   "meaning": "中国AI及芯片相关的行业领袖观点，有助于读者理解硬件层面的市场情绪。",
+   "importance": 5
+  },
+  {
+   "id": "16p4voe",
+   "lastSeen": "2026-11-07",
+   "title": "Tesla to wind down Cybertruck production as Elon Musk focuses on robotics and AI",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOckp5MHVCMWRzVEZIQlVUZjc5QjVOZEpHNHBPY0VCbGtocXRtMXJXcDJyRTBSYVI5OVJ0eWM2LVFha0FsOGJSVV9PdHNmR252NU5NYTRmQWE0eE5yVHdnaDJXVDVvZDhmdExmMnVUalNTeVpURXIxZ2tpdVd6SXNfamN5djF2Q3JhclJReUFSLXlsWXFIbUhCSGFNM2hONzhxYXRSakxQeFlySGZYYnN1OFFDMDJRS3czVUpqZlRIN0w4S2JxTC1mRU9hZw?oc=5",
+   "source": "The Guardian",
+   "domain": "theguardian.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "The Guardian"
+   ],
+   "themes": [],
+   "headlines": [
+    "Tesla to wind down Cybertruck production as Elon Musk focuses on robotics and AI"
+   ],
+   "entities": [
+    "Elon Musk"
+   ],
+   "summary": "由于Elon Musk将重心转向机器人和AI，Tesla将逐步缩减Cybertruck的产量。车企巨头正在调整其战略资源配置。",
+   "meaning": "体现了AI和机器人技术对传统汽车制造巨头战略重心的深远影响。",
+   "importance": 6
+  },
+  {
+   "id": "3p7z20",
+   "lastSeen": "2026-11-07",
+   "title": "李飞飞世界模型再升级，云端GPU每秒15帧实时生成_精彩视频为您呈现",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE84cDVWQ2hNWWFOWWFhNTZMbDdZa3ViZnZ6S0ZrZ3NuUE9lWGJkRjBKUnIxbWRBcFRsUC1uaGcyRi1GS2VBRE41a0ZkQkdJT1ZvMXdURkJ3?oc=5",
+   "source": "36氪",
+   "domain": "m.36kr.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "36氪"
+   ],
+   "themes": [],
+   "headlines": [
+    "李飞飞世界模型再升级，云端GPU每秒15帧实时生成_精彩视频为您呈现"
+   ],
+   "entities": [
+    "Fei-Fei Li"
+   ],
+   "summary": "Fei-Fei Li的世界模型再次升级，实现了云端GPU每秒15帧的实时生成。相关精彩视频展示了其最新技术成果。",
+   "meaning": "中国AI背景的顶级学者在世界模型上取得新进展，对AI底层技术演进有重要意义。",
+   "importance": 7
+  },
+  {
+   "id": "ns3zmy",
+   "lastSeen": "2026-11-07",
+   "title": "OpenAI CFO says blue tsunami ‘didn’t dramatically change’ IPO plans",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOM0VVVjV5aURBZVBYemhIUW1vVU1YVENfamJ0RnVxZjZpeDhSUFZDRm9sbncwc3BTeFQwTDNia1ZCQ0YtbGl5R1ZxUmQtZmdWMmZLOTNseF8ybnktN1VWQVlyS3hIMXlLLUw2WWJFcVZEMEZ1SUlUSU4tekFFOWRfRldicjk0ZmhJV0V1aHpaMW5QT3dx?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI CFO says blue tsunami ‘didn’t dramatically change’ IPO plans"
+   ],
+   "entities": [
+    "OpenAI"
+   ],
+   "summary": "OpenAI CFO stated that a blue tsunami did not dramatically change their IPO plans.",
+   "meaning": "This indicates that major AI companies are proceeding with their long-term financial strategies despite external market shifts, which is a key event in general AI business development.",
+   "importance": 7
+  },
+  {
+   "id": "vrvq5o",
+   "lastSeen": "2026-11-07",
+   "title": "Anthropic IPO announcement odds drop on Kalshi following midterms and AI sell-off",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVkV4WTlpM3hKLUxlRXdrV1JBb3B0Q0VxYVc5bHdDZEh5bG14V2h1eVFXeE5IZllWbEU4TFE3X2k0MnpWVUhrT05BWnkxa2I2NDhPTEJlY1R0d1Y4Q0NmZ0FNQlJsVmMyWjV4VjBCSWxnQTdLamFyMnVqRWQ4bzhKRWQ5VTBsOWdqTURz0gGQAUFVX3lxTE1PZFZSN3pSZmFYLWRXV3FWSUtBWl85aUJlV1REX1N5SzVScE5xQ1lvcnl3Zll5a2hlUXlnUWpHLXFfY3cyeGNyOGRySnNwbklJd2tBbXQ2Q2dnSkd0OFJlR0h0SXl2OGpBcTd6SjVQdnpRQUZTRVRlNjZxQjJBcWl3blY1dGdieXN3ektwY1FobA?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic IPO announcement odds drop on Kalshi following midterms and AI sell-off"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic IPO announcement odds dropped on Kalshi following midterms and an AI sell-off.",
+   "meaning": "Market sentiment and political shifts are beginning to directly impact public offerings in the AI sector.",
+   "importance": 6
+  },
+  {
+   "id": "vhe5zs",
+   "lastSeen": "2026-11-07",
+   "title": "Anthropic IPO Buyers See Valuation as Low as $1.1 Trillion",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSnFFOWdvbmtEcGNObXJldm1QTGRoeXRMbnQ1THZ6REh2bDE4V2U4VmNDbVdOWHRtNm9TaGdCbTBrZUotOWdNZWszbmNoSUpjWnlNN2NNZ1NUcUJPVWRKb2s2RTlPZ19hNGZoR28tSWllbWFzQ0FNTUdoYl9GODVmb1JSdElLd0l0dWFSTktsbFBqSW1YVFJ2SU90anhWZjNMT0RJaFJJWlpfTUVtaDduTw?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic IPO Buyers See Valuation as Low as $1.1 Trillion"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Potential Anthropic IPO buyers see valuation as low as $1.1 trillion.",
+   "meaning": "This highlights differing market perceptions of leading AI labs' worth as they approach the public market.",
+   "importance": 6
+  },
+  {
+   "id": "1yt763s",
+   "lastSeen": "2026-11-07",
+   "title": "Anthropic to press ahead with IPO targeting $1.5tn valuation",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbjV5NWJDbm9FZ2VFTmNEWHdHVUt5ODJwdlZOQjgzZTdJdkFwN0FzQkNsVFdENVJ3MnZybWFvTXltVVFwYVUyWVY4UjRsaFlFajdwMk9QV1gyRmx2UzFpOTlzaWpZdGRrRG1HVTY1c2lMbGJ1eURCQ2E5M1ljSWZNanViUXI?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "Financial Times"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic to press ahead with IPO targeting $1.5tn valuation"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic is pressing ahead with its IPO while targeting a $1.5tn valuation.",
+   "meaning": "A massive valuation target for a top-tier AI lab signals continued massive investor appetite, setting a major benchmark for the AI industry.",
+   "importance": 8
+  },
+  {
+   "id": "1exwhn8",
+   "lastSeen": "2026-11-07",
+   "title": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQllMZmdhNFpxNklLcTNFUnZXWUxOX050TkFqendsNDItX2NDeHE5NURWZHp5Q3NwSmZOQWZmQnI1Zm5fNkxYQkFkRWlqT2NxM0NoLVZZVTBmN05VdkRYdG50TFhxU1VYSzFIYVFiTWp6OFRTazM0Z3NRN0cyc0psRnpOMjZMSVB5TzQ0anF0amlPUVFuNTBqMV9pOVhsQWhnc3RkU3Rn?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "headlines": [
+    "Ramp data shows AI spending stalling just as Anthropic nears its IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Ramp data shows AI spending stalling just as Anthropic nears its IPO.",
+   "meaning": "A potential slowdown in enterprise AI spending could introduce headwinds for upcoming high-profile AI public offerings.",
+   "importance": 6
+  },
+  {
+   "id": "dgnpkz",
+   "lastSeen": "2026-11-07",
+   "title": "India's Coforge joins SpaceX partner network to deploy Grok AI tools for enterprises",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVm1rN0dhNG5aaDhDRVRyQVpMaXVROE8wbUFRVUJLZnYwaUQwZF9jMGtfX0doQjVZM3JaRFZHd2FSNFRvODVIUy1TeXJ3d09OZEZPMDB6cEE0eWhHdDNGa3FTRWRCRkhjaERjTnhudVNMTDV6RmdBX0ZqOTNjbDZFblljUE9INGpzN05KSV81YzdHTlVFS1lKeExydFBaaHVLV0pzR2tyQTBSbHV5SUF3VEY3STZHX0gzZzM1S1VYOWtpSEZsRXhKWjl3YzhQQUpy?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "India's Coforge joins SpaceX partner network to deploy Grok AI tools for enterprises"
+   ],
+   "entities": [
+    "xAI"
+   ],
+   "summary": "India's Coforge joined the SpaceX partner network to deploy Grok AI tools for enterprises.",
+   "meaning": "Enterprise adoption of xAI tools is expanding through global partnerships, showing broader commercialization of foundational models.",
+   "importance": 6
+  },
+  {
+   "id": "9sjrpa",
+   "lastSeen": "2026-11-07",
+   "title": "Is Your Law Firm’s AI Story Ready for Answer Engines and Clients?",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUVBRYXZuR0VvQ19CejhrWkJpN1lDQU12NEtNSnBobi0xcXJfVU1IZGQzNkpiSkdXOU1kbzhGOFhWYTNKN3c5cXVMWEQ3MVhPYjdKN1daaG9pLUxSMzFucmpubGJ0UWI2Nmd4UVFPbmFyaF9kVXRoNGRxZHY1a1lYTzhJZ2wzdHNFSUU1Z29OOEtrUEpIRGhjOWFrNA?oc=5",
+   "source": "Law.com",
+   "domain": "law.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "Law.com"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "headlines": [
+    "Is Your Law Firm’s AI Story Ready for Answer Engines and Clients?"
+   ],
+   "entities": [],
+   "summary": "An analysis questions whether law firms' AI stories are ready for answer engines and clients.",
+   "meaning": "Legal AI adoption is increasingly shifting toward client-facing visibility and integration with answer engines, directly impacting the legal sector.",
+   "importance": 6
+  },
+  {
+   "id": "3912g3",
+   "lastSeen": "2026-11-07",
+   "title": "Reba McEntire Could See Herself As A Real Estate Agent",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE15QjJXMTFmb0QxLWpFSUdxNkhobmcwM3VZRnFzaTJiQlI0XzY4Q0hwZWhFa0poME1QUmNwYzdwcTdOSWNKSUI1V0xMMFBvel9TTktBQm1JTXZCNHlJbHRYN1hQNTNJZmw0aXRXNVJqZ2tuT1k?oc=5",
+   "source": "Inman Real Estate News",
+   "domain": "inman.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "Inman Real Estate News"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "headlines": [
+    "Reba McEntire Could See Herself As A Real Estate Agent"
+   ],
+   "entities": [],
+   "summary": "Reba McEntire expressed that she could see herself as a real estate agent.",
+   "meaning": "This is a celebrity-related lifestyle piece with minimal relevance to the intersection of AI and real estate.",
+   "importance": 1
+  },
   {
    "id": "po3deg",
    "lastSeen": "2026-11-06",
@@ -4133,7 +5296,10 @@
    ],
    "entities": [
     "Anthropic"
-   ]
+   ],
+   "summary": "Reports discuss what Anthropic’s upcoming IPO means for the ETF market.",
+   "meaning": "As top-tier AI companies go public, they will reshape broader investment products and tech-focused exchange-traded funds.",
+   "importance": 5
   },
   {
    "id": "gonzby",
@@ -4152,7 +5318,10 @@
    ],
    "entities": [
     "Anthropic"
-   ]
+   ],
+   "summary": "Fidelity and Capital Group stand to reap billions in the Anthropic IPO.",
+   "meaning": "Early institutional backers are set for massive financial returns, underscoring the lucrative nature of early-stage AI investments.",
+   "importance": 6
   },
   {
    "id": "1ic429j",
@@ -4171,7 +5340,10 @@
    ],
    "entities": [
     "Anthropic"
-   ]
+   ],
+   "summary": "Anthropic Fever Fuels Race Among ETF Issuers to Offer Pre-IPO Exposure.",
+   "meaning": "通用AI领域的资本热度持续攀升，相关前IPO投资机会受到市场追捧，反映出行业头部企业的资本吸引力。",
+   "importance": 7
   },
   {
    "id": "yllr63",
@@ -4190,7 +5362,10 @@
    ],
    "entities": [
     "Anthropic"
-   ]
+   ],
+   "summary": "Alex Kantrowitz indicates that Anthropic does not have a lot of flexibility on the timing of its IPO.",
+   "meaning": "分析指出Anthropic在上市时间上选择有限，这可能受到其业务发展与市场竞争节奏的制约。",
+   "importance": 6
   },
   {
    "id": "137r65v",
@@ -4209,7 +5384,54 @@
    ],
    "entities": [
     "Microsoft AI"
-   ]
+   ],
+   "summary": "Microsoft declined an option to expand its Texas data center deal with Nscale, according to a source.",
+   "meaning": "微软在基础设施布局上有所调整，反映出大厂在算力扩张时的策略变化。",
+   "importance": 5
+  },
+  {
+   "id": "1ha5s78",
+   "lastSeen": "2026-11-07",
+   "title": "Meta says US users can now video chat with their Muse AI avatar",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYTlsX0wxZ3dEaEhiYm9fOUc4TEJka2dNUDdta2MtcDNEejlxMW1CZ3lFazBfZlFFb1owbWFjN1JLc21nVTlsQjlxdXNrZnlFRmNrcUJnQmpDRnFNLVdtR3cxQ1g4am9GTHZhLTNSZk9sTWh3QlQ5dzUtS3VvNkl0WVFwOVdydjVWTGpSRHI0RktrUFdmYU9yNHBHN3ZvZ1E?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-11-05",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "headlines": [
+    "Meta says US users can now video chat with their Muse AI avatar"
+   ],
+   "entities": [
+    "Meta GenAI / FAIR"
+   ],
+   "summary": "Meta announced that US users can now video chat with their Muse AI avatar.",
+   "meaning": "Meta在消费级AI交互上持续推进，为普通用户带来了更直观的AI应用体验。",
+   "importance": 5
+  },
+  {
+   "id": "6w12ti",
+   "lastSeen": "2026-11-07",
+   "title": "T-Mobile owner on Elon Musk launching a wireless carrier: ‘Welcome to the party’",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUlR2cjVLemFmaW1PbFcyV2lGbzNMUWhQTUxLYXdsWVhLQXBqQmVqWVFGQWRpelhHM2hSV2plcUpkTUpVVFJQbXlrOEpqWm5HX1lMcEZzaG9yUGREM0g2T09FMldQbGVSeFFuSFlTNmV3cjRJRk5CRVp2TUptNW5SNEhWRUd3TjlFTGdqZkFTbw?oc=5",
+   "source": "The Verge",
+   "domain": "theverge.com",
+   "published": "2026-11-05",
+   "outlets": [
+    "The Verge"
+   ],
+   "themes": [],
+   "headlines": [
+    "T-Mobile owner on Elon Musk launching a wireless carrier: ‘Welcome to the party’"
+   ],
+   "entities": [
+    "Elon Musk"
+   ],
+   "summary": "T-Mobile owner responded to Elon Musk launching a wireless carrier by saying 'Welcome to the party'.",
+   "meaning": "通信巨头对新入局者展现出开放态度，跨界竞争可能加速相关领域的技术与服务演进。",
+   "importance": 4
   },
   {
    "id": "yxhydb",
@@ -4228,7 +5450,10 @@
    "headlines": [
     "Legal AI Startup Harvey Has Held Early Talks About an IPO"
    ],
-   "entities": []
+   "entities": [],
+   "summary": "Legal AI startup Harvey has held early talks about an IPO.",
+   "meaning": "法律AI赛道头部初创公司传出上市意向，表明垂直领域AI商业化落地正在获得资本市场的高度认可。",
+   "importance": 8
   },
   {
    "id": "tiadq",
@@ -4247,7 +5472,10 @@
    "headlines": [
     "AI firms eye Weil amid law firm's wind-down"
    ],
-   "entities": []
+   "entities": [],
+   "summary": "AI firms are eying Weil amidst the law firm's wind-down.",
+   "meaning": "传统法律机构的变动为AI企业切入法律垂直场景提供了潜在的整合与合作机会。",
+   "importance": 7
   },
   {
    "id": "18gnv40",
@@ -4489,7 +5717,10 @@
    ],
    "entities": [
     "Meta GenAI / FAIR"
-   ]
+   ],
+   "summary": "Meta is no longer naming its AI models after fruit.",
+   "meaning": "Meta对其AI模型的命名策略进行了调整，展现出更加成熟和规范的品牌形象管理。",
+   "importance": 3
   },
   {
    "id": "k5hyx5",
@@ -4508,7 +5739,10 @@
    ],
    "entities": [
     "Elon Musk"
-   ]
+   ],
+   "summary": "Reports note that even $200 million could not help Elon Musk buy Texas.",
+   "meaning": "这反映了大型科技项目在地方拓展时面临的现实阻力，属于行业周边的趣闻动态。",
+   "importance": 3
   },
   {
    "id": "ocdsrz",
@@ -4527,7 +5761,10 @@
    ],
    "entities": [
     "Hugging Face"
-   ]
+   ],
+   "summary": "Hugging Face CEO stated that open-source models will convince people AI isn't bad.",
+   "meaning": "开源AI的发展和普及有助于增强公众对技术的信任，对整个开源生态及开发者社区具有积极意义。",
+   "importance": 6
   },
   {
    "id": "d8aiyz",
@@ -4546,7 +5783,10 @@
    ],
    "entities": [
     "Meta GenAI / FAIR"
-   ]
+   ],
+   "summary": "Meta acquired AI coding startup Conductor. This move expands Meta's AI capabilities in software development.",
+   "meaning": "As a major industry move in general AI, it reflects the ongoing consolidation and talent acquisition in the AI coding space.",
+   "importance": 6
   },
   {
    "id": "1e7tfpr",
@@ -4587,7 +5827,10 @@
    "headlines": [
     "Taipei hospital builds kidney injury risk AI"
    ],
-   "entities": []
+   "entities": [],
+   "summary": "A Taipei hospital has built a kidney injury risk AI. This clinical application aims to assess patient risks.",
+   "meaning": "This is a direct example of medical AI in hospital deployment, showing how clinical AI is being adopted for diagnosis and risk prediction.",
+   "importance": 8
   },
   {
    "id": "v2xfj8",
@@ -4613,6 +5856,33 @@
    "summary": "Apple 推出了 Watch AI 监听工具和新健康应用的测试版。",
    "meaning": "这是个人健康 AI 的重要进展，展示了科技巨头如何利用智能穿戴设备帮助普通人管理日常健康。",
    "importance": 9
+  },
+  {
+   "id": "1vd84sj",
+   "lastSeen": "2026-11-07",
+   "title": "Ex-Legora and Big Law attorneys get a16z Speedrun backing for Athena, bringing the AI-native legal service to commercial real estate",
+   "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNZEQyOExEWHV3TkMtWlhjUnoxTWVxbl9sY08wVTdKanB2YW03U1dtMnFhcENMZVRubHVmeDJEMmgwVUpSX2ZIclplN0hQam1FMWlleWxHMFdhenR3cjB0RS1xMnV2RmxhQXlJWFpyYUNSMXRTbVBaMEdVd3p1bUkxQjFXd2dTZElpbUxPZDI1aHBtbnluLVRxYm1OSUFvV3Bkbi1mZkotSFhHY3ZxMjk4ODlkcktJSUYwd2dvQnBxYnZENUxkNFJ4YmxBTVpIMC1zcUFrZ1lGTTVKbTRGaExwajhBRGpfLUtmeEl4dXN1OVY2VUczRThmcTFTX29BcEk5Z1FuUTByNVZNRVFBRXRSZ3RDakNOc0FhdkE?oc=5",
+   "source": "markets.businessinsider.com",
+   "domain": "markets.businessinsider.com",
+   "published": "2026-11-03",
+   "outlets": [
+    "Forbes",
+    "markets.businessinsider.com",
+    "VentureBeat"
+   ],
+   "themes": [
+    "法律 AI",
+    "房产 AI"
+   ],
+   "headlines": [
+    "Meet Athena, The Commercial Real Estate Law Firm Powered By AI",
+    "Ex-Legora and Big Law attorneys get a16z Speedrun backing for Athena, bringing the AI-native legal service to commercial real estate",
+    "AI tools for commercial real estate are changing how deals get sourced"
+   ],
+   "entities": [],
+   "summary": "名为 Athena 的商业房地产律师事务所正式亮相，采用 AI 技术驱动。",
+   "meaning": "体现了法律 AI 与房产 AI 在垂直细分领域的落地，垂直行业正迎来 AI 原生律所的挑战。",
+   "importance": 6
   },
   {
    "id": "1uyxaml",
@@ -4760,7 +6030,9 @@
    ],
    "themes": [],
    "headlines": [
-    "Watch Dan Ives Sees Anthropic IPO Facing Valuation Pressure"
+    "Watch Dan Ives Sees Anthropic IPO Facing Valuation Pressure",
+    "Watch Anthropic IPO Valuation Expectations Hit After AI Rout",
+    "Watch Anthropic IPO Valuation Under Pressure After Tech Rout"
    ],
    "entities": [
     "Anthropic"
@@ -4789,31 +6061,6 @@
    ],
    "summary": "随着 Anthropic 申请在纳斯达克上市，相关平台推出了 ANTHUSD 预 IPO CFD。资本市场正积极布局其上市交易。",
    "meaning": "预示着 AI 行业头部企业的资本化进程正在加速。",
-   "importance": 6
-  },
-  {
-   "id": "1vd84sj",
-   "lastSeen": "2026-11-03",
-   "title": "Ex-Legora and Big Law attorneys get a16z Speedrun backing for Athena, bringing the AI-native legal service to commercial real estate",
-   "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNZEQyOExEWHV3TkMtWlhjUnoxTWVxbl9sY08wVTdKanB2YW03U1dtMnFhcENMZVRubHVmeDJEMmgwVUpSX2ZIclplN0hQam1FMWlleWxHMFdhenR3cjB0RS1xMnV2RmxhQXlJWFpyYUNSMXRTbVBaMEdVd3p1bUkxQjFXd2dTZElpbUxPZDI1aHBtbnluLVRxYm1OSUFvV3Bkbi1mZkotSFhHY3ZxMjk4ODlkcktJSUYwd2dvQnBxYnZENUxkNFJ4YmxBTVpIMC1zcUFrZ1lGTTVKbTRGaExwajhBRGpfLUtmeEl4dXN1OVY2VUczRThmcTFTX29BcEk5Z1FuUTByNVZNRVFBRXRSZ3RDakNOc0FhdkE?oc=5",
-   "source": "markets.businessinsider.com",
-   "domain": "markets.businessinsider.com",
-   "published": "2026-11-03",
-   "outlets": [
-    "Forbes",
-    "markets.businessinsider.com"
-   ],
-   "themes": [
-    "法律 AI",
-    "房产 AI"
-   ],
-   "headlines": [
-    "Meet Athena, The Commercial Real Estate Law Firm Powered By AI",
-    "Ex-Legora and Big Law attorneys get a16z Speedrun backing for Athena, bringing the AI-native legal service to commercial real estate"
-   ],
-   "entities": [],
-   "summary": "名为 Athena 的商业房地产律师事务所正式亮相，采用 AI 技术驱动。",
-   "meaning": "体现了法律 AI 与房产 AI 在垂直细分领域的落地，垂直行业正迎来 AI 原生律所的挑战。",
    "importance": 6
   },
   {
@@ -4855,7 +6102,10 @@
    ],
    "entities": [
     "Anthropic"
-   ]
+   ],
+   "summary": "New York Angels' Bob Peck stated that Anthropic's IPO will be a positive catalyst for tech. The comment highlights market expectations surrounding the company.",
+   "meaning": "It highlights investment trends in foundational AI labs, signaling broader market confidence in general AI developments.",
+   "importance": 5
   },
   {
    "id": "j56x22",
@@ -5093,6 +6343,58 @@
    "summary": "有关 Anthropic IPO 的相关文件和报道释出了需要了解的信息。这标示着该公司正向公开市场迈进。",
    "meaning": "大模型领头羊的上市进程将直接影响整个 AI 资本市场的走向与投资信心。",
    "importance": 6
+  },
+  {
+   "id": "1hap7xj",
+   "lastSeen": "2026-11-07",
+   "title": "Watch Anthropic IPO Investors Weigh Valuation as Low as $1.2 Trillion",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYno1T2FmYnUtVEppX0NseWxQYzlad1BvbHdOdFZnVnhwRGMtTXFJUnlyT0pUSk56ZS1WUFl5U2FWdXJ4ZWNrUDdRelU0VGZ0V2k1bEpkOTBRWWF1clo0RS1PUEdPTVBvaEphZ1lpaU5Sb2lEMGJJaWg5Q2JUSFdyYnlXQ29yc0RnYV9hMjlwV2xtN21NQzJaOEdpcDFTMjBBSWJGTHNCYTcwRmx5Z3c?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "WSJ",
+    "CNBC",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Investors Push for Cautious Valuation Closer to $1.5 Trillion",
+    "Exclusive | Major Investors Are Skeptical Anthropic IPO Can Achieve $1.5 Trillion Valuation",
+    "Investors brace for lower Anthropic valuation, calling $1.5 trillion a 'stretch'",
+    "Watch Anthropic IPO Investors Weigh Valuation as Low as $1.2 Trillion",
+    "Watch Anthropic IPO Buyers See Valuation as Low as $1.1 Trillion"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic investors are pushing for a cautious valuation closer to $1.5 trillion.",
+   "meaning": "Investor expectations regarding massive valuations highlight the immense market pressure and capital intensity surrounding leading foundation model companies.",
+   "importance": 6
+  },
+  {
+   "id": "7ifwmi",
+   "lastSeen": "2026-11-07",
+   "title": "Elon Musk mocks OpenAI CEO Sam Altman's claim that PCs having RAM is terrible — 'The people deserve to have their RAM too!'",
+   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQajhhRlBGOFRIZVJBQ2VCTTNBSmF0cGdfM3JXWVQ3d0JDM1RCT1VwdnVfUmxxOXQtMHFNdFo0T19MRm9ZTkI5a05KUVBrT1dGSmRxUnhMN0pERHpkTHBmWkhuX0hIS1NIYi04UXlkUU9vSFJJUHA0cThrSEw0bUdSdTc4Z0pmZFhwaU85Y1RWUGZFRFRjeTBmcjcwdUZNWVdDcGlUMEt1LVh3U09SWWdxUmptU19wREszbDI2WXdsemlCekJXdHlucHJJdzh6NGNSNDdPcmZlUkFmdTFPOUVpSXhtSVZFc1pkOVdUcDkyVEFERzJlb3hJV3Q4eVllUG5JSk52UE5SWXo4VDlQbE9iWEN3?oc=5",
+   "source": "Tom's Hardware",
+   "domain": "tomshardware.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "headlines": [
+    "Elon Musk mocks OpenAI CEO Sam Altman's claim that PCs having RAM is terrible — 'The people deserve to have their RAM too!'"
+   ],
+   "entities": [
+    "Sam Altman",
+    "Elon Musk",
+    "OpenAI"
+   ],
+   "summary": "Elon Musk mocked OpenAI CEO Sam Altman's claim that PCs having RAM is terrible, stating that people deserve to have their RAM too. The exchange highlights differing views on hardware architecture.",
+   "meaning": "An amusing industry anecdote concerning general AI leaders, though it has limited direct impact on practical applications.",
+   "importance": 3
   },
   {
    "id": "1wfiuz1",
@@ -5480,29 +6782,6 @@
    "importance": 5
   },
   {
-   "id": "1hap7xj",
-   "lastSeen": "2026-11-03",
-   "title": "Anthropic Investors Push for Cautious Valuation Closer to $1.5 Trillion",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTDhmTmZkVWhzazBUYVdXNUx1OTRkRDFidXNnblM1R0lFNVQ2OS1zRFV2aTFtS2drOEhOVEVSSjZzZDN0Z053X3NrMnJEVTRGQm1EOHh6aDJYWC16bTVPdlpxVk10Vkh0ZkNrdkx1YzFodGc1WVQ4NkpPanN3TnZPZjcxYmcwS0xaSk1DelBQUzM4RFpNNVdubXR5WlRZZXA2b3paamIwdkcwVEpUTWFNSDBuWGQ?oc=5",
-   "source": "WSJ",
-   "domain": "wsj.com",
-   "published": "2026-11-02",
-   "outlets": [
-    "WSJ"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic Investors Push for Cautious Valuation Closer to $1.5 Trillion",
-    "Exclusive | Major Investors Are Skeptical Anthropic IPO Can Achieve $1.5 Trillion Valuation"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic investors are pushing for a cautious valuation closer to $1.5 trillion.",
-   "meaning": "Investor expectations regarding massive valuations highlight the immense market pressure and capital intensity surrounding leading foundation model companies.",
-   "importance": 6
-  },
-  {
    "id": "hi1b2s",
    "lastSeen": "2026-11-03",
    "title": "Anthropic posts $17B quarterly revenue but losses continue in fresh IPO filing",
@@ -5674,7 +6953,10 @@
    ],
    "entities": [
     "Anthropic"
-   ]
+   ],
+   "summary": "Anthropic's revenue growth is slowing, and compute financing risks are mounting ahead of its IPO. These financial and operational challenges emerge as the company prepares to go public.",
+   "meaning": "It reveals the financial pressures and high computing costs faced by top-tier general AI labs, worth watching for industry health.",
+   "importance": 6
   },
   {
    "id": "71i0u6",
@@ -5693,7 +6975,32 @@
    ],
    "entities": [
     "Cohere"
-   ]
+   ],
+   "summary": "Ottawa has taken a stake in Cohere as the AI company opens a $4.9 billion funding round. The Canadian government is backing the domestic AI champion.",
+   "meaning": "Highlights state investment in major AI players, reflecting geopolitical and national strategy in general AI development.",
+   "importance": 6
+  },
+  {
+   "id": "1ms844o",
+   "lastSeen": "2026-11-07",
+   "title": "66-Year-Old Yann LeCun’s New Paper Challenges Scaling Law: 109M-Parameter Model Outperforms 72B-Parameter Counterpart — Larger AI Models Don’t Necessarily Understand the World Better",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1wOGNwaVk1NVRZdWcxdko5M2VyUzFQOVE2MzgxTW00cDd6XzRCUU9XTDhScjJfOUN6S2x6MjZvbHRKcGZVRXdNa2ZJa2w1UFJaR2tB?oc=5",
+   "source": "36氪",
+   "domain": "eu.36kr.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "36氪"
+   ],
+   "themes": [],
+   "headlines": [
+    "66-Year-Old Yann LeCun’s New Paper Challenges Scaling Law: 109M-Parameter Model Outperforms 72B-Parameter Counterpart — Larger AI Models Don’t Necessarily Understand the World Better"
+   ],
+   "entities": [
+    "Yann LeCun"
+   ],
+   "summary": "66-year-old Yann LeCun's new paper challenges the scaling law, showing a 109M-parameter model outperforms a 72B-parameter counterpart. The research suggests that larger AI models do not necessarily understand the world better.",
+   "meaning": "This challenges current mainstream scaling assumptions in general AI research, potentially pointing toward more efficient model architectures.",
+   "importance": 7
   },
   {
    "id": "1whwoh9",
@@ -5760,6 +7067,31 @@
    "summary": "Legal Tech startup Litmas AI has launched an updated agentic litigation platform.",
    "meaning": "法律 AI 领域的持续迭代正在推进，智能体技术在诉讼领域的落地值得法律从业者关注。",
    "importance": 5
+  },
+  {
+   "id": "zby504",
+   "lastSeen": "2026-11-07",
+   "title": "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkZzbnhBaW1mZXJzZ0NBNDQxUk1CQW5WNTc0eDYxTGVvZGtIVTRjTGs5THBLLTRMZDFLM0o0ZWpSZU5qNDhxbjNUYXdvVk9wVVI4V01WRFdXQndvcHZndkl4aWE0NkpGVHJtZUlZUW9EX19xeF9HR0RXcUU5VlM1Rm15OTRIaENTeDVLTWhTdWhzWkItMk5JU2tEbXRyN2hrU1NhT3RXZE9FRkdE?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-01",
+   "outlets": [
+    "Tom's Hardware",
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Sam Altman meets with Samsung leadership to secure more RAM for data centers amid crushing shortages — OpenAI CEO travels to South Korea to meet Samsung leadership to discuss future AI data centers",
+    "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy"
+   ],
+   "entities": [
+    "Sam Altman",
+    "OpenAI"
+   ],
+   "summary": "OpenAI CEO Sam Altman met with Samsung leadership in South Korea to secure more RAM for data centers amid crushing shortages and discussed how AI will transform energy economics.",
+   "meaning": "Addresses the hardware and infrastructure bottlenecks facing general AI scaling, which ultimately influences the cost and availability of AI services.",
+   "importance": 6
   },
   {
    "id": "1w2yjjm",
@@ -6018,417 +7350,25 @@
    "summary": "Google与OpenAI、Anthropic一道，承诺推出新的网络数据抓取控制措施。",
    "meaning": "关乎法律AI与通用数据版权规范，标志着主流AI巨头正逐步在训练数据抓取合规与创作者权益保护上达成共识。",
    "id": "1w8z8fw"
-  },
-  {
-   "id": "7ifwmi",
-   "lastSeen": "2026-11-04",
-   "title": "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkZzbnhBaW1mZXJzZ0NBNDQxUk1CQW5WNTc0eDYxTGVvZGtIVTRjTGs5THBLLTRMZDFLM0o0ZWpSZU5qNDhxbjNUYXdvVk9wVVI4V01WRFdXQndvcHZndkl4aWE0NkpGVHJtZUlZUW9EX19xeF9HR0RXcUU5VlM1Rm15OTRIaENTeDVLTWhTdWhzWkItMk5JU2tEbXRyN2hrU1NhT3RXZE9FRkdE?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Tom's Hardware",
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "headlines": [
-    "Elon Musk mocks OpenAI CEO Sam Altman's claim that PCs having RAM is terrible — 'The people deserve to have their RAM too!'",
-    "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
-    "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization",
-    "Sam Altman meets with Samsung leadership to secure more RAM for data centers amid crushing shortages — OpenAI CEO travels to South Korea to meet Samsung leadership to discuss future AI data centers"
-   ],
-   "entities": [
-    "Sam Altman",
-    "OpenAI"
-   ],
-   "summary": "Elon Musk 嘲笑了 OpenAI CEO Sam Altman 关于个人电脑拥有内存（RAM）是很糟糕的说法，表示民众也应拥有内存。",
-   "meaning": "属于行业领袖之间的公开互动和通用 AI 领域的花絮，对普通人的实际应用参考价值一般。",
-   "importance": 3
-  },
-  {
-   "id": "10p9l18",
-   "lastSeen": "2026-11-04",
-   "title": "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkZzbnhBaW1mZXJzZ0NBNDQxUk1CQW5WNTc0eDYxTGVvZGtIVTRjTGs5THBLLTRMZDFLM0o0ZWpSZU5qNDhxbjNUYXdvVk9wVVI4V01WRFdXQndvcHZndkl4aWE0NkpGVHJtZUlZUW9EX19xeF9HR0RXcUU5VlM1Rm15OTRIaENTeDVLTWhTdWhzWkItMk5JU2tEbXRyN2hrU1NhT3RXZE9FRkdE?oc=5",
-   "source": "Bloomberg",
-   "domain": "bloomberg.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Tom's Hardware",
-    "Bloomberg"
-   ],
-   "themes": [],
-   "headlines": [
-    "OpenAI CEO says it's 'quite terrible' for your PC to have RAM — Sam Altman says data centers offer better utilization",
-    "Sam Altman meets with Samsung leadership to secure more RAM for data centers amid crushing shortages — OpenAI CEO travels to South Korea to meet Samsung leadership to discuss future AI data centers",
-    "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
-    "Elon Musk mocks OpenAI CEO Sam Altman's claim that PCs having RAM is terrible — 'The people deserve to have their RAM too!'"
-   ],
-   "entities": [
-    "Sam Altman",
-    "OpenAI"
-   ],
-   "summary": "OpenAI CEO Sam Altman 称个人电脑有 RAM 是件相当糟糕的事并前往韩国三星会面以确保数据中心内存。同时该言论遭到 Elon Musk 的嘲笑。",
-   "meaning": "反映了算力与硬件短缺对 AI 巨头基础设施布局的深刻影响，关注底层硬件有助于理解 AI 发展的瓶颈。",
-   "importance": 5
-  },
-  {
-   "title": "美方称“英伟达CEO黄仁勋成情报接触目标”，外交部：有关报道捕风捉影，纯属对华污蔑抹黑",
-   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BZmxFaGxUWDBxeWZGS3RuR28wQVU1MVAtSm94WUhWcmdFTl9MYkozaWFHa2RpbHhDRExlcENQMEFtZHpFNXBZaDZ5YnM3S3owTExXaTlKVnMyRXJqU1JENQ?oc=5",
-   "source": "ThePaper.cn",
-   "domain": "thepaper.cn",
-   "published": "2026-10-30",
-   "outlets": [
-    "ThePaper.cn"
-   ],
-   "themes": [],
-   "headlines": [
-    "美方称“英伟达CEO黄仁勋成情报接触目标”，外交部：有关报道捕风捉影，纯属对华污蔑抹黑"
-   ],
-   "entities": [
-    "Jensen Huang",
-    "NVIDIA Research"
-   ],
-   "summary": "针对美方称NVIDIA首席执行官黄仁勋成为情报接触目标一事，中国外交部回应称相关报道捕风捉影，纯属对华污蔑抹黑。",
-   "meaning": "涉及中国与全球半导体巨头的地缘政治互动，反映出围绕AI核心芯片产业的国际博弈仍在持续发酵。",
-   "id": "1ad2y60"
-  },
-  {
-   "title": "Sam Altman Unveils OpenAI's Groundbreaking New Model: \"I Was So Excited I Couldn't Sleep For Two Consecutive Nights\"",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE96NlQ2SDFvSFpuQ010dlBKZ0JFaXdHRS1NRmRRQTBBcm54bzFJd3hwUXJWZlNGeTRFeWlnRGsxVUZMdno0alNRZ3F3cURHNHpUS0JF?oc=5",
-   "source": "36Kr",
-   "domain": "eu.36kr.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "36Kr"
-   ],
-   "themes": [],
-   "headlines": [
-    "Sam Altman Unveils OpenAI's Groundbreaking New Model: \"I Was So Excited I Couldn't Sleep For Two Consecutive Nights\""
-   ],
-   "entities": [
-    "Sam Altman",
-    "OpenAI"
-   ],
-   "summary": "OpenAI首席执行官Sam Altman公布了一款突破性的新模型，并称自己兴奋得连续两晚失眠。",
-   "meaning": "作为通用AI领域的重磅事件，新模型的推出或将再次刷新大语言模型能力上限并引发新一轮技术迭代。",
-   "id": "mahsl0"
-  },
-  {
-   "title": "Hon Hai Chairman Says AI Demand Is Real After Meeting Sam Altman",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWE5jdWc5ZVRoeTA3TlJmN0FZTjNhZG9FU3d1S0hLRlVKcG1iaWNEYmdpcWRwUFFIVTk3NkpuZENzOUpRajUzaVdsM0RqM0RUb2k4a29qVWRGb1ctcTJSQzVSV3dOb1BsT0JiQmppbDdSYUN3VVhrN01nRHJMcHBFZHFqNWcyMnVZdDZUbGwzWm1MSXk0cFE1b21TXzd3clg5ZTVmVWVtZlAxSGxTZXJOenRRcnNYb0J6Wng4?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Bloomberg.com",
-    "Bloomberg"
-   ],
-   "themes": [],
-   "entities": [
-    "Sam Altman"
-   ],
-   "headlines": [
-    "Hon Hai Chairman Says AI Demand Is Real After Meeting Sam Altman"
-   ],
-   "summary": "Hon Hai（鸿海）董事长在与 OpenAI 首席执行官 Sam Altman 会面后表示，人工智能的需求是真实存在的。",
-   "meaning": "硬件制造龙头与头部通用 AI 公司的接触进一步确认了底层算力与硬件需求的真实性，有助于缓解市场对 AI 泡沫的担忧。",
-   "id": "iaymhh",
-   "lastSeen": "2026-11-02"
-  },
-  {
-   "title": "Sam Altman says he has ‘empathy’ for mathematicians who are upset about AI",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQUJXUmlIdHhSSElOdjlZWVM3MEk3ZF9FQmc5dWhFYjBycGNqak14emNBelU4STJWdXlNb2FPZEVRSmJKa19TTDE0S0Z2YjRKOTdlN2hkRkFrcm9XcWxWV1p4azZSdkZvOWdCYXBxRHh4ZUptMW5nbW9OTHlHUHIyaWtLSmxPN3ZJ?oc=5",
-   "source": "Business Insider",
-   "domain": "businessinsider.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Business Insider"
-   ],
-   "themes": [],
-   "entities": [
-    "Sam Altman"
-   ],
-   "headlines": [
-    "Sam Altman says he has ‘empathy’ for mathematicians who are upset about AI"
-   ],
-   "summary": "OpenAI首席执行官Sam Altman表示，他对那些因AI发展而感到不安的数学家抱有同理心。",
-   "meaning": "揭示了前沿通用AI正深入高难度学术与科学计算领域，其对专业科研人员职业生态带来的冲击正受到高层关注。",
-   "id": "a7uv96"
-  },
-  {
-   "title": "'He's let the AI loose.' - Ari Emanuel on Sam Altman",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQZkdOd1RqM0czZGhHWWNLeWwzX2hPemlyRFlWMGlOS3o0REFUd0toaFYxZmpFcGJIaEczYWNzNVlNOTNndGlDb3RPcUEtdlJuSHBxT0lNXzRIRWgzTWxLSG9rV3pWWGl2LS1ocGFGdjNsTEloWUdKaUhxbDVMQTEtbEt0cHVLdGlsM0NzR2J5TWRhRG9tMDZxVVlWZ0pZWm5uRnRweU9NOEtIZnVFalpoTGk5VWgtSHJNX0UtbFpnaEhWaUg4N28zQl9weDBUbEV1VFRtV3BRYnEwcTJvamlvQ3BvUGFjMXhmNU5XTUhnZkt6ZzRwSlE?oc=5",
-   "source": "The Washington Post",
-   "domain": "washingtonpost.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "The Washington Post"
-   ],
-   "themes": [],
-   "entities": [
-    "Sam Altman"
-   ],
-   "headlines": [
-    "'He's let the AI loose.' - Ari Emanuel on Sam Altman"
-   ],
-   "summary": "知名娱乐与体育经纪巨头掌门人 Ari Emanuel 谈及 Sam Altman 时评价称，他已经把 AI 放出了牢笼。",
-   "meaning": "文娱与体育界核心领袖对 OpenAI 及其领导者的公开发声，反映出通用 AI 对创意、传媒及体育产业潜在冲击已引起行业高层高度警惕。",
-   "id": "pschri"
-  },
-  {
-   "title": "李开复为何选择临平？“AI六小虎”零一万物落子杭州背后",
-   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1rckg5dHVKNGQxWmZRT0ZrNjZCTXZ3alhqREM5OGR4THBHOTh6dDJpa1FSUWNOcWpBV0t3blN3MmxqQzk5clExUkdIandYTEF2Qm9WZC1Mck1RalhnX2dfYw?oc=5",
-   "source": "ThePaper.cn",
-   "domain": "thepaper.cn",
-   "published": "2026-10-30",
-   "outlets": [
-    "ThePaper.cn"
-   ],
-   "themes": [],
-   "entities": [
-    "Kai-Fu Lee"
-   ],
-   "headlines": [
-    "李开复为何选择临平？“AI六小虎”零一万物落子杭州背后"
-   ],
-   "summary": "李开复创立的“AI六小虎”之一零一万物正式落子杭州临平区。",
-   "meaning": "属于读者高度关心的中国 AI 赛道动态，显示出国内头部大模型初创企业正加速推进与地方产业生态的深度落地和区域布局。",
-   "id": "14bxklw"
-  },
-  {
-   "title": "Nvidia in talks to give credit support for Nscale's deal with Anthropic, The Information reports",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOeFZKQnF5QVdNQlBQRzNMTE5PbjhUSXF0Y0NzYXpyaVJFeGplang3clhEYUtGUF9Fd2tPRjE0VllQVjV0cncwdU9za2RGZkFjQ2ZSTGdpQ3hXSkRBSjVtY2tvTzhEVTYtUkxYQjdfc1A3blJMd0c2ajJTUFp0eGMtOEtMbEk2NGl2Y2hrRFVlSHVaT1VQWi1qaGhLTkoyZVhXWFVFaXpDVEpZQV90MFNSZzN2dTl0WXJWZEhBRzJmUFVpNzI2Smc?oc=5",
-   "source": "Reuters",
-   "domain": "reuters.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Reuters"
-   ],
-   "themes": [],
-   "entities": [
-    "Anthropic"
-   ],
-   "headlines": [
-    "Nvidia in talks to give credit support for Nscale's deal with Anthropic, The Information reports"
-   ],
-   "summary": "据 The Information 报道，Nvidia 正在洽谈为 Nscale 与 Anthropic 之间的交易提供信用支持。",
-   "meaning": "芯片巨头通过金融与信用支持深度绑定下游算力云及核心大模型厂商，体现了通用 AI 产业链上下游合作模式的持续演进。",
-   "id": "18fo7el"
-  },
-  {
-   "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone tells investors",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcjg3X1I0NkVyZEpOZEh0cmZLdFpJYVFOOTJwdm9nNTBJSGJwcEF6T25KRFBBeDBpLWZtOWNKMjdKeHhxZF9zOUVyUmVjT2pSQm01YmgwS0dnZWFXa3ZVc2tfSW5aUE5sSFJtc2lUVUlQUjROZjRxU0M3MFBKVWg1alAyZUU?oc=5",
-   "source": "Financial Times",
-   "domain": "ft.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Financial Times"
-   ],
-   "themes": [],
-   "entities": [
-    "Anthropic"
-   ],
-   "headlines": [
-    "Anthropic may not secure investment-grade rating after IPO, Blackstone tells investors"
-   ],
-   "summary": "Blackstone（黑石）告知投资者，Anthropic 在首次公开募股（IPO）后可能无法获得投资级信用评级。",
-   "meaning": "顶级投资机构开始审视大模型独角兽未来的信用风险，表明资本市场对头部通用 AI 公司高额资本开支与盈利可持续性的评估正趋于理性。",
-   "id": "grofam"
-  },
-  {
-   "title": "Anthropic expected to receive high 'junk' rating from credit agencies following IPO, FT report says",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOVXpfTXdqVDgtSDYzSkp0TmVFdW5yZ0lyRXdfNk9tdHY3d05BQzdvZ1ZLRXEyQ2FuWkdCRF9SRnBhNTFMRG5fN0VKT0tVUVNXZm92clZwOEh0Z2NPYlhRQWhxT1FZTWhkTmM1a2dOdFpvaU00UmY4S1lNWEEycnpZNjlzdWtubWpLWmEwQS1rRHNFWTBXRzdtWVNjQWlqaU1CazVYM01VcktOdDdJcFJkazdjSUVkVV9fUDJhaFIzVEFNV292QlJz?oc=5",
-   "source": "TechCrunch",
-   "domain": "techcrunch.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "TechCrunch"
-   ],
-   "themes": [],
-   "entities": [
-    "Anthropic"
-   ],
-   "headlines": [
-    "Anthropic expected to receive high 'junk' rating from credit agencies following IPO, FT report says"
-   ],
-   "summary": "据英国《金融时报》（FT）报道，信用评级机构预计在 Anthropic 上市后将其评为高等级的“垃圾级”（非投资级）。",
-   "meaning": "与前述机构观点呼应，反映出评级机构对顶尖大模型研发企业上市后的资产负债表与财务抗风险能力持谨慎态度。",
-   "id": "1r4jjtd"
-  },
-  {
-   "title": "Behind DeepSeek’s $16 Billion Funding: Chinese Tech Titans and State Players",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaVRfR3gweXFFQmFnT3VtZW9tOXZuaWpKeUFnUHNDSEtDTVEzS1MzTjU4UkZlWGxESE4wYUxVLTBjV3FpTEVJcWw5blBSZ3VEdEhrT1hLZTh1dGNNaWczenc3cVp6VnhhYnZoUWdoZXRRWDhUUTBqM016aWVUQ0t0bHpLV3lVTUdoNlRDZThFZGViR3ZNcW5ZLUFYSHpNb1hlR0tIck42LXN5bXdxOWc?oc=5",
-   "source": "The Information",
-   "domain": "theinformation.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "The Information"
-   ],
-   "themes": [],
-   "entities": [
-    "DeepSeek"
-   ],
-   "headlines": [
-    "Behind DeepSeek’s $16 Billion Funding: Chinese Tech Titans and State Players"
-   ],
-   "summary": "媒体披露 DeepSeek 160 亿美元融资背后浮现中国科技巨头与国有资本的身影。",
-   "meaning": "这是中国 AI 领域的重磅融资动向，表明本土顶尖大模型正获得国家资本与产业巨头的集中支持，对中国通用 AI 战略布局具有标杆意义。",
-   "id": "195x7vj"
-  },
-  {
-   "title": "Foxconn working on a new tie-up with OpenAI, says there is no AI bubble",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONzVucjcwZFNveGxHdm5KS1M5UEotQXQyVDJNNmNCY211QXpxNTJFc0ZQcXhkbzlXNTAySlZlQWFvRzl2bnBrd2d1UXZ2eXZCU0Q4WW1ZQVdWWXBaWkxvOV9zY0lYdkxaSU1kRWEtMHdEMXFpZ2ZSQ0xDYm5RUEg3cEhfT3NnTllHcU1ZRUtaNFZ5N042elFCYkoxNHk4NXJzVmRBOFloajNWd0Z4RjUzcnpvRQ?oc=5",
-   "source": "Reuters",
-   "domain": "reuters.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Reuters"
-   ],
-   "themes": [],
-   "headlines": [
-    "Foxconn working on a new tie-up with OpenAI, says there is no AI bubble"
-   ],
-   "entities": [
-    "OpenAI"
-   ],
-   "summary": "Foxconn（富士康）正推进与 OpenAI 展开新的合作，并明确表示当前并不存在 AI 泡沫。",
-   "meaning": "全球电子代工巨头加码与通用 AI 龙头的战略协同，直接传递出对全球 AI 基础设施与端侧应用长期需求的坚定信心。",
-   "id": "1wgu09u"
-  },
-  {
-   "id": "1m4e1o8",
-   "lastSeen": "2026-11-02",
-   "title": "Want to invest in Anthropic before its IPO? These 5 funds offer exposure to the AI giant.",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOb0FEYWdoVzk1Ym1YZmZmMzMyQkU4MnFIM2NUcThKY2xPczJ1dk1udmVUTWdEbmVrNzVpYkxMRzMwMTZGQ29sUkhoN3dkY2M0Tnl5X3hqcGpKUXJqSktmUzhPRU9PbWdwV3lIZElmbC01Q3ppVlVqTGgwa0tmSEZjWWtHakVhMGRLa2dIVDgzQjlJVHR1VnJn?oc=5",
-   "source": "Business Insider",
-   "domain": "businessinsider.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Business Insider"
-   ],
-   "themes": [],
-   "headlines": [
-    "Want to invest in Anthropic before its IPO? These 5 funds offer exposure to the AI giant."
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Five funds offer exposure to Anthropic for investors looking to invest before its IPO.",
-   "meaning": "Highlights retail and institutional investment channels opening up around top-tier private AI giants.",
-   "importance": 6
-  },
-  {
-   "id": "1b5ecmm",
-   "lastSeen": "2026-11-03",
-   "title": "The big questions remaining after Anthropic’s blockbuster IPO prospectus",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9VYXRVZG52ZU8wZ183VXZkS192WXFoWm5uRm0wNE1PZFZBblEyTklTWnZodHhNVUIyZlNaZGI1Y2xRaGJqZ3FTSVplcjNaM2tZVzF6UlNpRTd4S0dlQzVrak5jOHFQN2tfdkpMalkzWXlvVjl5T0hpb9IBfkFVX3lxTFBsbUVyNW9GLVlJZ3dpSHl2MXVZa0pxdDRiN2FnakZCa3lwVDJFOXdiSW9iYTh3UnhOZ0xhYklQSnJXVmoxaGpwckIyNzkzWm9hTVhVOFBrZTFHbnV5LWVBcFdiRGFqMXUyRXZXNjM5Z1ZNVXdiR1E3eFlzLU04Zw?oc=5",
-   "source": "CNBC",
-   "domain": "cnbc.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "CNBC"
-   ],
-   "themes": [],
-   "headlines": [
-    "The big questions remaining after Anthropic’s blockbuster IPO prospectus"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic's blockbuster IPO prospectus leaves several big questions remaining for the market.",
-   "meaning": "As major AI labs transition to public entities, their disclosures set financial and operational precedents for the entire generative AI sector.",
-   "importance": 6
-  },
-  {
-   "title": "Legaltech Rundown: Legora Introduces New Research Feature, Filevine Launches AI Voice Agents, and More",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeW5CNmFVNHFuNG12MUpNUjdEQkt0MlZUc1FNTGpYNDZ1eS00cWw1UkpYSGtfVVBNQy1fY0t3UEphbm9OTXZ4aE92WE5BS2hDYTNPRzNUbTZWVmVaUk14N1JvSUt3cmJwLVdaMjFzbHRRY2tvU2ZhRncxUzRSNWpBVEFtTUgyY0dwb3lDRFlyS25RTnppZkw1MmxYeG9sSVlsMjRCaDdnSlRrUEZKelJ5Y2phemxzNWdoMm1laTVQTlpYN1dRUnF1dzFHLWFTaDlFNDVmeG5FbWtvOGpjWFQw?oc=5",
-   "source": "Law.com",
-   "domain": "law.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Law.com"
-   ],
-   "themes": [
-    "法律 AI"
-   ],
-   "headlines": [
-    "Legaltech Rundown: Legora Introduces New Research Feature, Filevine Launches AI Voice Agents, and More"
-   ],
-   "entities": [],
-   "summary": "在法律科技领域，Legora推出了新的研究检索功能，Filevine则上线了AI语音智能体（AI Voice Agents）。",
-   "meaning": "这体现了法律AI应用正从基础的文本辅助，向更垂直深入的专业检索与自动化语音交互服务演进。",
-   "id": "9q9obn"
-  },
-  {
-   "id": "hc3yg9",
-   "lastSeen": "2026-11-02",
-   "title": "Does AI Make Legal Operations More Essential or Less Necessary?",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRi1COFlNeFFYZE1LOFRMVFNMYTRpOXkxdjcyQzFaUmp1YTc2dGZJc2lIVjlReF8zNnhtb1ZNamM5ZXRoejk0dEhFdTVkeFZQQ1piaGNxcEZjc2pKMHUxRlBNVVBIR2RDYTZvVkUyTUhGMjdDWm5FQmdEM2VxOC0zOS1wZjZuYWNkZUFXQzhSeWtCU2NfR1VPdTltWVJWWkwyOVRUODJXTUxOYTg?oc=5",
-   "source": "Law.com",
-   "domain": "law.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Law.com"
-   ],
-   "themes": [
-    "法律 AI"
-   ],
-   "headlines": [
-    "Does AI Make Legal Operations More Essential or Less Necessary?"
-   ],
-   "entities": [],
-   "summary": "An analysis questions whether AI makes legal operations more essential or less necessary.",
-   "meaning": "This touches directly on the legal AI domain, addressing how automation and AI adoption are reshaping the demand for legal operations and workforce structures.",
-   "importance": 6
-  },
-  {
-   "id": "gjgrem",
-   "lastSeen": "2026-11-03",
-   "title": "Who’s responsible when clinical AI goes wrong? AMA weighs in",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOT2VSWk5GUUp3c212d2tRb2ZVcW1DZ3ladlhSNllmcmtTX3RmVmhNX0txNWd3VTE3VzBNdnc1c3BUWlVQcDdSSFRlWnpqb2tQdE9jN0VDemlua0RSTDlvamhVaUxLVnY4SXFldlUxa3BnR1pNcWhrOE9Ld3JnRmV5aFlZQjA2M3dpeUVuTFprU0RyOUpNY245elhkaWhGdzdpc0dBb1ZPQ1F6dlE?oc=5",
-   "source": "Fierce Healthcare",
-   "domain": "fiercehealthcare.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Fierce Healthcare"
-   ],
-   "themes": [
-    "医疗 AI"
-   ],
-   "headlines": [
-    "Who’s responsible when clinical AI goes wrong? AMA weighs in"
-   ],
-   "entities": [],
-   "summary": "The AMA has weighed in on the issue of responsibility when clinical AI goes wrong.",
-   "meaning": "医疗 AI 责任归属问题受到行业协会关注，直接关系到医疗 AI 在临床落地的安全边界与合规性。",
-   "importance": 7
-  },
-  {
-   "id": "i64xss",
-   "lastSeen": "2026-11-03",
-   "title": "Industry Voices—The other AI divide is already opening in healthcare",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbXhMcE0tQmdoZl95RjlucVVsazJRWVNxUWtpX0VZT3lGejBxbHVSSDRlXzZrUndZSkRhN0g0bGJNODVzcDI2R1VrZFBGcWlERk5yN1RCYWc2RVpVYWJnNmdaQS0yd29aWHFGR1J3TDB3cVpWRlVMV0FkRjBMX0k3T2JFRTQ3bnNBTzNpdmxNR0pMdWVJNjkwUk9jbjJoZXFaLTQ4MmozQS1jTG1odGRoZWVFaUs2QQ?oc=5",
-   "source": "Fierce Healthcare",
-   "domain": "fiercehealthcare.com",
-   "published": "2026-10-30",
-   "outlets": [
-    "Fierce Healthcare"
-   ],
-   "themes": [
-    "医疗 AI"
-   ],
-   "headlines": [
-    "Industry Voices—The other AI divide is already opening in healthcare"
-   ],
-   "entities": [],
-   "summary": "Industry voices highlight that another AI divide is already opening in healthcare.",
-   "meaning": "医疗行业内部正在显现新的 AI 鸿沟，提醒我们关注医疗 AI 普及过程中的不平等问题。",
-   "importance": 6
   }
  ],
  "digests": [
+  {
+   "date": "2026-11-07",
+   "ids": [
+    "5jh82e",
+    "10pesz8",
+    "1vd84sj",
+    "9cdk9n",
+    "dl31kz",
+    "1yt763s",
+    "1hap7xj",
+    "zby504",
+    "3p7z20"
+   ],
+   "scanned": 142,
+   "events": 107
+  },
   {
    "date": "2026-11-06",
    "ids": [
@@ -6510,10 +7450,10 @@
   }
  ],
  "weekly": [
+  "5jh82e",
   "po3deg",
   "v2xfj8",
-  "60m66c",
-  "xggvob",
-  "1rqs2zj"
+  "10pesz8",
+  "1vd84sj"
  ]
 }

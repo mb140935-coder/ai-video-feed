@@ -24,6 +24,8 @@ const SPEECH = /毕业|致辞|演讲|典礼|开学|speech|commencement|keynote|a
 // Second-hand material: clips, compilations, commentary ("XX访谈引热议"), readings, AI voices, and gossip about
 // the person. What the title doesn't give away, Gemini catches later (summarize.mjs "firsthand").
 const SECONDHAND = /片段|切片|剪辑|合集|混剪|精华|精彩|解说|解读|解析|逐帧|面相|看相|命理|风水|盘点|金句|语录|句话|二创|reaction|反应|点评|揭秘|传奇|发家|身家|豪门|千金|赌王|八卦|绯闻|婚|嫁|分家|争产|遗产|恩怨|起底|曝光|吐槽|鬼畜|AI配音|配音|朗读|书评|有声|小说|励志|热议|引发|如何理解|如何看待|怎么看待|启示|背后|评论|观后感|#|shorts|highlights?|clip|reacts?|explained|breakdown/i;
+// Gossip and clickbait from 营销号 ("74岁唐国强终于承认与刘晓庆真实关系…【巨星访谈】"): even when the title says 访谈.
+const GOSSIP = /终于|承认|真实关系|真相|前妻|前夫|妻子|丈夫|老公|老婆|儿子|女儿|情史|恋情|旧爱|竟|莫名|万万|没想到|惊人|震惊|晚年|现状|近况|落魄|患病|病逝|去世|离世|泪|哭|挨骂|巨星|娱乐|通透|豁然开朗|浮云|太.{0,3}了[!！:：]|看哭|破防|炸裂|绝了/;
 
 const escapeRegExp = text => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const decode = s => s.replace(/<[^>]+>/g, '').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&');
@@ -227,7 +229,7 @@ export const dedupePeople = (items, people, report) => {
   report.push(`people: ${removed} duplicate uploads dropped`);
 };
 
-export const PEOPLE_TITLE_OK =(person, title) => new RegExp(person.names.map(escapeRegExp).join('|'), 'i').test(title) && !SECONDHAND.test(title);
+export const PEOPLE_TITLE_OK =(person, title) => new RegExp(person.names.map(escapeRegExp).join('|'), 'i').test(title) && !SECONDHAND.test(title) && !GOSSIP.test(title);
 
 // Hand-picked 人物访谈 (docs/people-picks.json: [{ person, url, note?, title?, channel?, published?, minutes? }]; the last four only for links that are not Bilibili or YouTube), for interviews the search misses or its
 // title rules would skip. They are added once with the platform's own title, date and length, marked picked (kept

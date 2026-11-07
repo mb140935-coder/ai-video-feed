@@ -247,6 +247,18 @@ try {
   report.push(`added_videos: not read (${error.message})`);
 }
 
+// Videos deleted with 🗑 on the page: "junk:<key>" rows in watched_items. They leave the feed for good, and the
+// 人物访谈 search treats them as rejected so it never finds them again. If the table can't be read, use last run's list.
+let junk = new Set(previous.junk || []);
+try {
+  const response = await fetch(`${SUPABASE_URL}/rest/v1/watched_items?select=key&key=like.junk:*`, { headers: { apikey: SUPABASE_ANON_KEY } });
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  junk = new Set((await response.json()).map(row => row.key.slice('junk:'.length)));
+  report.push(`deleted on the page: ${junk.size}`);
+} catch (error) {
+  report.push(`watched_items (deleted videos): not read (${error.message}); using last run's ${junk.size}`);
+}
+
 // Followed channels become sources with no title filter: the user picked them. When the table can't be read,
 // keep the previous channel list so their videos don't vanish for one run.
 const channels = {};
@@ -360,7 +372,7 @@ if (youtubeNames.size) report.push(`bilibili follows: ${[...items.values()].filt
 let peopleState = previous.people || {};
 if (interviewPeople) {
   try {
-    peopleState = await searchPeople(interviewPeople, items, previous.people || {}, report, YOUTUBE_API_KEY, new Set(previous.peopleRejected || []));
+    peopleState = await searchPeople(interviewPeople, items, previous.people || {}, report, YOUTUBE_API_KEY, new Set([...(previous.peopleRejected || []), ...junk]));
   } catch (error) {
     report.push(`people: FAILED ${error.message}`);
   }
@@ -419,9 +431,10 @@ if (addedRows) {
 
 // 人物访谈 items don't count toward MAX_ITEMS: they stay until marked 已看 or the person is removed.
 const newestFirst = (a, b) => b.published.localeCompare(a.published);
+const live = [...items.values()].filter(item => !junk.has(item.key));
 let kept = [
-  ...[...items.values()].filter(item => item.via !== 'people').sort(newestFirst).slice(0, MAX_ITEMS),
-  ...[...items.values()].filter(item => item.via === 'people').sort(newestFirst)
+  ...live.filter(item => item.via !== 'people').sort(newestFirst).slice(0, MAX_ITEMS),
+  ...live.filter(item => item.via === 'people').sort(newestFirst)
 ];
 // Keep the old timestamp when nothing changed, so the job doesn't commit an identical file.
 let news = previous.news || [];
@@ -488,7 +501,7 @@ Object.values(channels).forEach(info => { if (info.id) info.count = kept.filter(
 // The full description only feeds the highlight; it is not kept in the feed.
 Object.values(videos).forEach(info => { delete info.description; });
 
-const content = { items: kept, videos, channels, people: peopleState, peopleRejected, watchAdded, news, ...digest };
+const content = { items: kept, videos, channels, people: peopleState, peopleRejected, junk: [...junk], watchAdded, news, ...digest };
 const { updated: previousUpdated, ...previousContent } = previous;
 const unchanged = JSON.stringify(previousContent) === JSON.stringify(content);
 fs.writeFileSync(outPath, `${JSON.stringify({ updated: unchanged ? previousUpdated : new Date().toISOString(), ...content }, null, 1)}\n`);

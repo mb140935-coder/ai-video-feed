@@ -155,6 +155,9 @@
     .watch-row-arrow { flex: none; color: var(--faint); }
     .counter { cursor: pointer; pointer-events: auto; }
     .actions button.fav-toggle { cursor: pointer; }
+    .actions button.junk-button { color: var(--muted); cursor: pointer; }
+    .actions button.junk-button.armed { border-color: #c0392b; background: #c0392b; color: #fff; }
+    .junk-toggle { width: 100%; border: 0; border-top: 1px solid var(--line); padding: 12px 18px; background: transparent; color: var(--muted); font: inherit; font-size: 12px; text-align: left; cursor: pointer; }
     .tag.kind-tag { border-color: var(--purple-line); color: var(--purple); font-weight: 700; }
     .actions button.watch-toggle { color: var(--green); border-color: var(--green-line); font-weight: 700; cursor: pointer; }
     .toast-action { margin-left: 10px; border: 0; padding: 0; background: transparent; color: var(--toast-link); font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
@@ -1438,7 +1441,10 @@
       // copy for when Supabase is unreachable.
       const FAVORITE_PREFIX = 'fav:';
       const DEMOTE_PREFIX = 'demote:';
-      const isPlacementKey = key => key.startsWith(FAVORITE_PREFIX) || key.startsWith(DEMOTE_PREFIX);
+      // 🗑 删除: "junk:<watch key>" rows. A deleted video is also 已看 (so it hides everywhere), left out of 已看历史
+      // and listed under 已删除 there instead; the daily job drops it for good (tools/update-feed.mjs).
+      const JUNK_PREFIX = 'junk:';
+      const isPlacementKey = key => key.startsWith(FAVORITE_PREFIX) || key.startsWith(DEMOTE_PREFIX) || key.startsWith(JUNK_PREFIX);
       const favoritesStorageKey = 'ai-video-feed-favorites-v1';
       const demotedStorageKey = 'ai-video-feed-demoted-v1';
       const loadKeySet = storageKey => {
@@ -1448,6 +1454,12 @@
         } catch { return new Set(); }
       };
       const favorites = loadKeySet(favoritesStorageKey);
+      const junkStorageKey = 'ai-video-feed-junk-v1';
+      const junked = loadKeySet(junkStorageKey);
+      const saveJunk = () => {
+        try { localStorage.setItem(junkStorageKey, JSON.stringify([...junked])); } catch { /* Session only. */ }
+        updateWatchHistoryCount();
+      };
       const demoted = loadKeySet(demotedStorageKey);
       const cardKey = card => card?.querySelector('.watch-toggle')?.dataset.watchKey || '';
       const belongsInCurated = card => card.dataset.home ? !demoted.has(cardKey(card)) : favorites.has(cardKey(card));
@@ -1510,6 +1522,7 @@
         };
         const favoritesChanged = update(FAVORITE_PREFIX, favorites);
         if (update(DEMOTE_PREFIX, demoted) || favoritesChanged) savePlacement();
+        if (update(JUNK_PREFIX, junked)) saveJunk();
       };
       const toggleCurated = card => {
         const key = cardKey(card);
@@ -1544,7 +1557,57 @@
         if (!button || !actions) return;
         button.classList.remove('tag');
         actions.appendChild(button);
+        addJunkButton(card);
       };
+
+      const setWatched = (key, watched) => {
+        if (watched) {
+          watchedItems.add(key);
+          watchedTimes.set(key, new Date().toISOString());
+        } else watchedItems.delete(key);
+        persistWatchedItems();
+        sendSharedWatchChange(key, watched);
+        document.querySelectorAll('.watch-toggle').forEach(button => {
+          if (button.dataset.watchKey === key) syncWatchedButton(button, watched);
+        });
+      };
+      const setJunk = (key, on) => {
+        if (on) junked.add(key);
+        else junked.delete(key);
+        sendSharedWatchChange(JUNK_PREFIX + key, on);
+        saveJunk();
+        setWatched(key, on);
+        appearanceSearch.dispatchEvent(new Event('input'));
+        refreshCuratedCounters();
+      };
+      // 🗑 删除 at the end of the action row; tap twice (confirm() is blocked on some iPads).
+      function addJunkButton(card) {
+        const actions = card.querySelector('.actions');
+        const key = cardKey(card);
+        if (!actions || !key || actions.querySelector('.junk-button')) return;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'junk-button';
+        button.textContent = '🗑 删除';
+        button.addEventListener('click', () => {
+          if (!button.classList.contains('armed')) {
+            button.classList.add('armed');
+            button.textContent = '确认删除？';
+            setTimeout(() => { button.classList.remove('armed'); button.textContent = '🗑 删除'; }, 4000);
+            return;
+          }
+          button.classList.remove('armed');
+          button.textContent = '🗑 删除';
+          const title = card.querySelector('h1')?.textContent.trim() || '这条视频';
+          if (activeCard === card) {
+            pauseAllExcept(null);
+            activeCard = null;
+          }
+          setJunk(key, true);
+          showToast([`已删除“${title}”。`, { text: '撤销', action: () => setJunk(key, false) }], 6000);
+        });
+        actions.appendChild(button);
+      }
 
       const canonicalMediaKey = rawUrl => {
         if (!rawUrl) return '';
@@ -2166,11 +2229,9 @@
           const card = button.closest('.card');
           if (card && !cardsByKey.has(button.dataset.watchKey)) cardsByKey.set(button.dataset.watchKey, card);
         });
-        const keys = [...watchedItems].filter(key => !key.startsWith(NEWS_PREFIX)).reverse().sort((a, b) => (watchedTimes.get(b) || '').localeCompare(watchedTimes.get(a) || ''));
-        if (!keys.length) {
-          makeText(historyList, 'div', 'history-empty', '还没有标记为已看的视频。看完一条后点卡片上的“○ 未看”，它就会出现在这里。');
-          return;
-        }
+        const keys = [...watchedItems].filter(key => !key.startsWith(NEWS_PREFIX) && !junked.has(key)).reverse().sort((a, b) => (watchedTimes.get(b) || '').localeCompare(watchedTimes.get(a) || ''));
+        if (!keys.length) makeText(historyList, 'div', 'history-empty', '还没有标记为已看的视频。看完一条后点卡片上的“○ 未看”，它就会出现在这里。');
+        renderJunkList(cardsByKey);
         keys.forEach(key => {
           const card = cardsByKey.get(key);
           const row = document.createElement('div');
@@ -2215,10 +2276,46 @@
           row.appendChild(buttons);
           historyList.appendChild(row);
         });
+        historyList.appendChild(historyList.querySelector('.junk-section') || document.createElement('div'));
+      };
+
+      // 已删除 N 条, folded at the bottom of 已看历史; 恢复 brings a video back unwatched.
+      let junkOpen = false;
+      const renderJunkList = cardsByKey => {
+        if (!junked.size) return;
+        const section = document.createElement('div');
+        section.className = 'junk-section';
+        const toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'junk-toggle';
+        toggle.textContent = `${junkOpen ? '▾' : '▸'} 已删除 ${junked.size} 条`;
+        toggle.addEventListener('click', () => {
+          junkOpen = !junkOpen;
+          renderWatchHistory();
+        });
+        section.appendChild(toggle);
+        if (junkOpen) [...junked].reverse().forEach(key => {
+          const card = cardsByKey.get(key);
+          const row = document.createElement('div');
+          row.className = 'history-item';
+          const text = document.createElement('div');
+          text.className = 'history-item-text';
+          makeText(text, 'div', 'history-item-title', card?.querySelector('h1')?.textContent || '这条视频已不在当前信息流里');
+          const source = card?.querySelector('.source')?.textContent;
+          if (source) makeText(text, 'div', 'history-item-meta', source);
+          row.appendChild(text);
+          const restore = document.createElement('button');
+          restore.type = 'button';
+          restore.textContent = '恢复';
+          restore.addEventListener('click', () => setJunk(key, false));
+          row.appendChild(restore);
+          section.appendChild(row);
+        });
+        historyList.appendChild(section);
       };
 
       updateWatchHistoryCount = () => {
-        historyCount.textContent = String([...watchedItems].filter(key => !key.startsWith(NEWS_PREFIX)).length);
+        historyCount.textContent = String([...watchedItems].filter(key => !key.startsWith(NEWS_PREFIX) && !junked.has(key)).length);
         if (!historySheet.hidden) renderWatchHistory();
       };
 

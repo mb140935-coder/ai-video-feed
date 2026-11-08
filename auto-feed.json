@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T19:00:51.089Z",
+ "updated": "2026-11-08T01:28:13.997Z",
  "items": [
   {
    "key": "youtube:erzdOM2oZCg",
@@ -4703,13 +4703,11 @@
   "channel:@siliconvalleygirl": {
    "url": "https://www.youtube.com/@SiliconValleyGirl",
    "id": "UCiq1FIgtEK7LRAOB1JXTPig",
-   "name": "Silicon Valley Girl",
    "count": 6
   },
   "channel:@xiaojunpodcast": {
    "url": "https://www.youtube.com/@xiaojunpodcast",
    "id": "UC3Sv1JuKpbOx3csUO8FAo5g",
-   "name": "张小珺 Podcast",
    "count": 0
   },
   "channel:@cheekypint": {
@@ -4734,84 +4732,84 @@
  "people": {
   "王坚": {
    "keywords": "阿里云 城市大脑 院士 之江实验室 阿里巴巴 云栖",
-   "searched": "2026-11-07",
+   "searched": "2026-11-08",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "徐新": {
    "keywords": "今日资本 投资 京东 美团 网易严选",
-   "searched": "2026-11-07",
+   "searched": "2026-11-08",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "何超琼": {
    "keywords": "",
-   "searched": "2026-11-07",
+   "searched": "2026-11-08",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "施一公": {
    "keywords": "",
-   "searched": "2026-11-07",
+   "searched": "2026-11-08",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "Warren Buffett": {
    "keywords": "",
-   "searched": "2026-11-07",
+   "searched": "2026-11-08",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "Charlie Munger": {
    "keywords": "",
-   "searched": "2026-11-07",
+   "searched": "2026-11-08",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "姚明": {
    "keywords": "",
-   "searched": "2026-11-07",
+   "searched": "2026-11-08",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "邓亚萍": {
    "keywords": "",
-   "searched": "2026-11-07",
+   "searched": "2026-11-08",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "杨振宁": {
    "keywords": "",
-   "searched": "2026-11-07",
+   "searched": "2026-11-08",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "奥尼尔": {
    "keywords": "NBA",
-   "searched": "2026-11-07",
+   "searched": "2026-11-08",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "刘晓庆": {
    "keywords": "",
-   "searched": "2026-11-07",
+   "searched": "2026-11-08",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "张雪": {
    "keywords": "机车 摩托车",
-   "searched": "2026-11-07",
+   "searched": "2026-11-08",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
@@ -5371,7 +5369,8 @@
    "themes": [],
    "headlines": [
     "Nvidia CEO Jensen Huang seen as target of Chinese spy plot, according to the New York Times",
-    "Nvidia CEO called in by lawmakers over ties to alleged Chinese spy"
+    "Nvidia CEO called in by lawmakers over ties to alleged Chinese spy",
+    "\"Congress will investigate\": Nvidia CEO Jensen Huang faces probe over alleged Chinese spy ties"
    ],
    "entities": [
     "Jensen Huang"
@@ -5756,6 +5755,28 @@
    "importance": 4
   },
   {
+   "id": "jote8",
+   "lastSeen": "2026-11-08",
+   "title": "Meta warns that election backlash against data centers could make AI expansion harder",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOY21mOFBzQUMwT294N0tJbjFRLTloX05WNmtsRlV5NWJHekZTSElCRG9fandsM3VyTktxNlZ4bzY3T29qemJnZlBnbjBrVkZITUdWclFWVmhLSnpkLUtWNk5Sd1ZNWnpia1NiZHJ0QURyZFYyU0ZDMnBsenhZUWFTTkV2QUd5TU85SVRZOElzTXVPV1N4OWZzeEtraEFkZEUwR3NNOF9Lc1pLQjBNbVRTUmpoaWkwZmh4dTdmX3h3?oc=5",
+   "source": "TechCrunch",
+   "domain": "techcrunch.com",
+   "published": "2026-11-05",
+   "outlets": [
+    "TechCrunch"
+   ],
+   "themes": [],
+   "headlines": [
+    "Meta warns that election backlash against data centers could make AI expansion harder"
+   ],
+   "entities": [
+    "Meta GenAI / FAIR"
+   ],
+   "summary": "Meta warns that election backlash against data centers could make AI expansion harder. This highlights growing public and political resistance to the physical infrastructure powering artificial intelligence.",
+   "meaning": "Infrastructure bottlenecks and environmental pushback against data centers could directly impact the scaling speed of major AI systems, which is crucial for the entire industry.",
+   "importance": 6
+  },
+  {
    "id": "yxhydb",
    "lastSeen": "2026-11-06",
    "title": "Legal AI Startup Harvey Has Held Early Talks About an IPO",
@@ -5798,6 +5819,30 @@
    "summary": "AI firms are eying Weil amidst the law firm's wind-down.",
    "meaning": "传统法律机构的变动为AI企业切入法律垂直场景提供了潜在的整合与合作机会。",
    "importance": 7
+  },
+  {
+   "id": "1r2o0iq",
+   "lastSeen": "2026-11-08",
+   "title": "Liang Wenfeng Steps Down: What Is DeepSeek Seeking After His Departure?",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE16TURqREs5OFh0dVVKYm53dlpWcHA2SjRlSUJFQ0EtczU0cEY1U1NiaEJWY19qNzdjZE9ERzdDV3dlUEMycEdESDdNTlJxYnc0alg0?oc=5",
+   "source": "36氪",
+   "domain": "eu.36kr.com",
+   "published": "2026-11-04",
+   "outlets": [
+    "36氪",
+    "36Kr"
+   ],
+   "themes": [],
+   "headlines": [
+    "Liang Wenfeng Steps Down: What Is DeepSeek Seeking After His Departure?"
+   ],
+   "entities": [
+    "Liang Wenfeng",
+    "DeepSeek"
+   ],
+   "summary": "Liang Wenfeng卸任，引发了关于DeepSeek在他离开后追求什么的讨论。",
+   "meaning": "作为中国AI领域的重量级玩家，高层变动直接关系到DeepSeek未来的发展路线与中国AI竞争格局。",
+   "importance": 8
   },
   {
    "id": "18gnv40",
@@ -5867,29 +5912,6 @@
    "summary": "Sam Altman recently adopted a new social media nickname to joke about AI's high demand for memory. This playful jab highlights ongoing resource challenges in the AI industry.",
    "meaning": "虽然属于行业趣闻，但它侧面反映了算力和内存瓶颈依然是当前AI发展的重要话题，属于通用AI领域的轻松花絮。",
    "importance": 3
-  },
-  {
-   "id": "1r2o0iq",
-   "lastSeen": "2026-11-07",
-   "title": "Liang Wenfeng Steps Down: What Is DeepSeek Seeking After His Departure?",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE16TURqREs5OFh0dVVKYm53dlpWcHA2SjRlSUJFQ0EtczU0cEY1U1NiaEJWY19qNzdjZE9ERzdDV3dlUEMycEdESDdNTlJxYnc0alg0?oc=5",
-   "source": "36氪",
-   "domain": "eu.36kr.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "36氪"
-   ],
-   "themes": [],
-   "headlines": [
-    "Liang Wenfeng Steps Down: What Is DeepSeek Seeking After His Departure?"
-   ],
-   "entities": [
-    "Liang Wenfeng",
-    "DeepSeek"
-   ],
-   "summary": "Liang Wenfeng卸任，引发了关于DeepSeek在他离开后追求什么的讨论。",
-   "meaning": "作为中国AI领域的重量级玩家，高层变动直接关系到DeepSeek未来的发展路线与中国AI竞争格局。",
-   "importance": 8
   },
   {
    "id": "1h8pskb",
@@ -6132,6 +6154,28 @@
    "summary": "Meta acquired AI coding startup Conductor. This move expands Meta's AI capabilities in software development.",
    "meaning": "As a major industry move in general AI, it reflects the ongoing consolidation and talent acquisition in the AI coding space.",
    "importance": 6
+  },
+  {
+   "id": "3m07n",
+   "lastSeen": "2026-11-08",
+   "title": "AMD CEO Lisa Su: It is a very strong time in terms of demand for compute",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPajB3ck9XcUN2Qi1rR3hZMVFwUGpibmJwRlJFYmJCRHhJWTZKUlREVUtyeTB5aVFsdEdXUjdSbnpGRWw3Z1NpUUYwNmhfSWd3WU4xMDdUdGJIUWJhRlQ4NmlrN0xIN3F4TDhUeTJCczBneW8wc01Kd0NrU3Zfc0NJNzFtWnZMdDFWWFkwLUdEcHI3SmpEX2IySWxlOVdSQkNUM2RWM3R0RGthSlJMcWc?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-11-04",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "AMD CEO Lisa Su: It is a very strong time in terms of demand for compute"
+   ],
+   "entities": [
+    "Lisa Su"
+   ],
+   "summary": "AMD CEO Lisa Su stated that it is a very strong time in terms of demand for compute. This reflects the ongoing robust market need for hardware processing power.",
+   "meaning": "Strong compute demand underpins the continued hardware expansion for AI training and deployment, signaling that foundational scaling remains a priority.",
+   "importance": 5
   },
   {
    "id": "1e7tfpr",
@@ -7350,6 +7394,28 @@
    "importance": 7
   },
   {
+   "id": "jbfsw8",
+   "lastSeen": "2026-11-08",
+   "title": "OpenAI slashes funding target by $10 billion amid tech rout, FT reports (Oct. 30)",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTWw3N0l5dm5KUi1FQmllTEpEeUdkY1k5TVlFNTlnWWFlbTgtdUJfZE9RMjZiQlJEVXU2VFo2blVaWk1MZzNYMm9OYmdrSngtSk02YnhKNDdVMVZkS3hIMHpWZ2dnRjJZWjBzQ0lFRU4ySFFUQzdTdnUzN3JETGtCYlo3Y3kxeGJseG5veVJMSVVCRDVPYzB3TXQyaFE?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI slashes funding target by $10 billion amid tech rout, FT reports (Oct. 30)"
+   ],
+   "entities": [
+    "OpenAI"
+   ],
+   "summary": "According to the FT report on October 30, OpenAI slashed its funding target by $10 billion amid a tech rout. The adjustment comes during a broader market correction.",
+   "meaning": "Capital constraints and market corrections could affect aggressive AI scaling strategies, offering a reality check on soaring industry valuations and investment flows.",
+   "importance": 7
+  },
+  {
    "id": "1whwoh9",
    "lastSeen": "2026-11-02",
    "title": "Will AI Change the Identity of Law Firm Partners?",
@@ -7489,6 +7555,30 @@
    "summary": "DeepSeek 在与 OpenAI 和 Anthropic 的编程竞赛中推出了 AI“超级代理”。这展示了中国 AI 在前沿模型和智能体领域的最新进展，直接对标国际顶尖大厂。",
    "meaning": "中国 AI 企业的持续发力值得重点关注，这加剧了全球大模型与编程智能体的竞争态势。",
    "importance": 9
+  },
+  {
+   "id": "1sihf7u",
+   "lastSeen": "2026-11-08",
+   "title": "SpaceX loses bid to dismiss lawsuit over xAI data center pollution — facility allegedly emits over 5,000 tons of nitrogen oxides and 47 tons of cancer-causing formaldehyde annually",
+   "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPN056XzB3dnBhMEVmd1l5cWRwUkZvTmx2Si1QVEpuUGZ2UXYyejlKOXNzQUlOYV9FSGgtMnMyZm8wNGRYX3hob1FxZkt4X0ZKd2ZORks3N0I1OHFCV0Z5SHU4NzhFb1pSbHVBTXdiczlwdGd5U3c5bWliVGxuMFhHeDhQVHNQTDNQQ2hIZ21pUEt1R3l5em8zZ1N3TmdoaWxYTk5Nb1BYNWt1X2M1MHJ3aG11TUFPbkVXNDNVME1HcldudkJTeVFCVVVlUTZRUUZJOWRlV3FQamV3czlRWXRNeWF0OENCVlZ4YVd3aE1JcWFObVI0cE9oc3hzVjVZUlhnczN5ZG9SNzVqZW0zcUNYSURhYzRoUU11VUpuRHpmM0RsTG8?oc=5",
+   "source": "Tom's Hardware",
+   "domain": "tomshardware.com",
+   "published": "2026-11-01",
+   "outlets": [
+    "Engadget",
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "headlines": [
+    "Judge Says xAI Must Face NAACP Lawsuit On Data Center Pollution",
+    "SpaceX loses bid to dismiss lawsuit over xAI data center pollution — facility allegedly emits over 5,000 tons of nitrogen oxides and 47 tons of cancer-causing formaldehyde annually"
+   ],
+   "entities": [
+    "xAI"
+   ],
+   "summary": "A judge ruled that xAI must face an NAACP lawsuit regarding data center pollution, with SpaceX also losing its bid to dismiss the case. The facility allegedly emits over 5,000 tons of nitrogen oxides and 47 tons of cancer-causing formaldehyde annually.",
+   "meaning": "Environmental and legal challenges surrounding AI data centers are escalating into major litigation, highlighting the hidden community and health costs of rapid AI infrastructure buildout.",
+   "importance": 6
   },
   {
    "title": "Anthropic’s $2T IPO could create millionaires—but it’s asking candidates what they’d do if stock hit zero",
@@ -7657,72 +7747,6 @@
    "summary": "OpenAI wants everyone to refer to AI data centers as 'compute campuses'.",
    "meaning": "OpenAI 试图重新定义算力基础设施的称呼，反映出 AI 大厂对算力规模和园区化布局的重视。",
    "importance": 6
-  },
-  {
-   "title": "OpenAI Raises Less Than Half of $30 Billion Target in Latest Round",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTW9TMmVsZkc2b05TYkloVW41X050RjdtZ1F5U01TRnJOSEthYTJpcDdPWVhJb0FvRGEteHgtbVhSS0lOVEZ3T2N5MTNpSUNWNXpETThZR0RvcFQwY2Q5R3ctRUFvM1ZtdFdMaXhGSnpPM2FiLUhORXNrem84cUpfVGpuQ0VmaGNsZUlxUVQ0dk4zQUE2cWFzUk8yM1R3cjc3dEczVw?oc=5",
-   "source": "WSJ",
-   "domain": "wsj.com",
-   "published": "2026-10-31",
-   "outlets": [
-    "WSJ",
-    "TechCrunch"
-   ],
-   "themes": [],
-   "entities": [
-    "OpenAI"
-   ],
-   "headlines": [
-    "OpenAI Raises Less Than Half of $30 Billion Target in Latest Round",
-    "OpenAI reportedly lowers funding target for new round"
-   ],
-   "summary": "据报道，OpenAI在最新一轮融资中下调了目标，募集金额不及原定300亿美元目标的一半。",
-   "meaning": "这说明即使是通用AI头部领头羊，在面对巨额融资需求时也遭遇了资本市场的阻力与审慎评估。",
-   "id": "cy4nkz"
-  },
-  {
-   "title": "OpenAI slashes funding target by $10 billion amid tech rout, FT reports",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTWw3N0l5dm5KUi1FQmllTEpEeUdkY1k5TVlFNTlnWWFlbTgtdUJfZE9RMjZiQlJEVXU2VFo2blVaWk1MZzNYMm9OYmdrSngtSk02YnhKNDdVMVZkS3hIMHpWZ2dnRjJZWjBzQ0lFRU4ySFFUQzdTdnUzN3JETGtCYlo3Y3kxeGJseG5veVJMSVVCRDVPYzB3TXQyaFE?oc=5",
-   "source": "Reuters",
-   "domain": "reuters.com",
-   "published": "2026-10-31",
-   "outlets": [
-    "Reuters",
-    "Financial Times"
-   ],
-   "themes": [],
-   "entities": [
-    "OpenAI"
-   ],
-   "headlines": [
-    "OpenAI slashes funding target by $10 billion amid tech rout, FT reports",
-    "OpenAI slashes funding target by $10bn as tech anxieties mount",
-    "OpenAI slashes funding target by $10 billion amid tech rout, FT reports (Oct. 30)"
-   ],
-   "summary": "据英国《金融时报》报道，在科技股暴跌与行业焦虑加剧的背景下，OpenAI将融资目标大幅削减了100亿美元。",
-   "meaning": "AI资本热潮正受到宏观市场波动的冲击，头部通用AI公司的资金链和超大规模估值正面临现实考验。",
-   "id": "jbfsw8"
-  },
-  {
-   "title": "Google Joins OpenAI And Anthropic In Promising New Scraping Controls",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSDZQYjdOaVRyUmdwSW1OVHQ1UjFpN1Z6NmxQZHNRUElQODJpbHB1eVlRWWJkQndBMVAwczBJbGtqUU1YOWJrNnppWHFYLWJkcjBfODR6SFpiNFR1SWVIOFNMVGsxbzVjbTFYdFF3SjN6ZzkyT0tRNk5BcUkta1lFdkxSci0?oc=5",
-   "source": "Engadget",
-   "domain": "engadget.com",
-   "published": "2026-10-31",
-   "outlets": [
-    "Engadget"
-   ],
-   "themes": [],
-   "entities": [
-    "OpenAI",
-    "Anthropic"
-   ],
-   "headlines": [
-    "Google Joins OpenAI And Anthropic In Promising New Scraping Controls"
-   ],
-   "summary": "Google与OpenAI、Anthropic一道，承诺推出新的网络数据抓取控制措施。",
-   "meaning": "关乎法律AI与通用数据版权规范，标志着主流AI巨头正逐步在训练数据抓取合规与创作者权益保护上达成共识。",
-   "id": "1w8z8fw"
   }
  ],
  "digests": [
@@ -7841,8 +7865,8 @@
  "weekly": [
   "5jh82e",
   "v2xfj8",
+  "1r2o0iq",
   "10pesz8",
-  "po3deg",
-  "1vd84sj"
+  "po3deg"
  ]
 }

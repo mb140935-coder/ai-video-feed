@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T01:28:13.997Z",
+ "updated": "2026-11-09T01:45:35.826Z",
  "items": [
   {
    "key": "youtube:erzdOM2oZCg",
@@ -1561,6 +1561,28 @@
    "highlight": "No Priors节目邀请了OpenEvidence创始人Daniel Nadler，讨论了该公司如何解决医疗领域的语义搜索问题，在短短18个月内被40%的美国医生采用。他们探讨了将医生视为消费者的策略以及技术将如何重塑医学和医学教育。"
   },
   {
+   "key": "bilibili:BV1nvW761EUZ",
+   "url": "https://www.bilibili.com/video/BV1nvW761EUZ",
+   "title": "讲AI的视频很多，只有这位中国工程院院士王坚的访谈讲的是最深刻的",
+   "channel": "底层思想",
+   "published": "2026-11-08",
+   "summary": "",
+   "tab": "people",
+   "person": "王坚",
+   "tags": [
+    "人物访谈",
+    "王坚"
+   ],
+   "minutes": 15,
+   "found": "2026-11-09",
+   "via": "people",
+   "highlight": "中国工程院院士王坚分享了关于AI的深刻访谈和思考。",
+   "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
    "key": "bilibili:BV1Yg4i6xEGj",
    "url": "https://www.bilibili.com/video/BV1Yg4i6xEGj",
    "title": "杨振宁演讲，顶级学者的思维，让人受益匪浅！",
@@ -1601,6 +1623,28 @@
    "via": "people",
    "highlight": "Warren Buffett 在 Omaha Archive 的视频中讨论了金钱管理中的个人动机问题。视频内容基于 Berkshire Hathaway 和 CNBC 的素材，仅供教育和评论使用。",
    "kind": "judgment",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
+  },
+  {
+   "key": "bilibili:BV1NS4t6oEG8",
+   "url": "https://www.bilibili.com/video/BV1NS4t6oEG8",
+   "title": "施一公罕见深度分享：点醒无数硕博的科研方法论",
+   "channel": "博士升",
+   "published": "2026-11-05",
+   "summary": "",
+   "tab": "people",
+   "person": "施一公",
+   "tags": [
+    "人物访谈",
+    "施一公"
+   ],
+   "minutes": 23,
+   "found": "2026-11-09",
+   "via": "people",
+   "highlight": "施一公分享了针对硕博研究生的科研方法论。",
+   "kind": "method",
    "sports": false,
    "firsthand": true,
    "field": "none"
@@ -4732,90 +4776,91 @@
  "people": {
   "王坚": {
    "keywords": "阿里云 城市大脑 院士 之江实验室 阿里巴巴 云栖",
-   "searched": "2026-11-08",
+   "searched": "2026-11-09",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "徐新": {
    "keywords": "今日资本 投资 京东 美团 网易严选",
-   "searched": "2026-11-08",
+   "searched": "2026-11-09",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "何超琼": {
    "keywords": "",
-   "searched": "2026-11-08",
+   "searched": "2026-11-09",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "施一公": {
    "keywords": "",
-   "searched": "2026-11-08",
+   "searched": "2026-11-09",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "Warren Buffett": {
    "keywords": "",
-   "searched": "2026-11-08",
+   "searched": "2026-11-09",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "Charlie Munger": {
    "keywords": "",
-   "searched": "2026-11-08",
+   "searched": "2026-11-09",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "姚明": {
    "keywords": "",
-   "searched": "2026-11-08",
+   "searched": "2026-11-09",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "邓亚萍": {
    "keywords": "",
-   "searched": "2026-11-08",
+   "searched": "2026-11-09",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "杨振宁": {
    "keywords": "",
-   "searched": "2026-11-08",
+   "searched": "2026-11-09",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "奥尼尔": {
    "keywords": "NBA",
-   "searched": "2026-11-08",
+   "searched": "2026-11-09",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "刘晓庆": {
    "keywords": "",
-   "searched": "2026-11-08",
+   "searched": "2026-11-09",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "张雪": {
    "keywords": "机车 摩托车",
-   "searched": "2026-11-08",
+   "searched": "2026-11-09",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   }
  },
  "peopleRejected": [
+  "youtube:KhvSMTQh_zo",
   "youtube:TChnGMsBnNg",
   "youtube:ebjK9JsHE4E",
   "bilibili:BV1pBxe6vEfY",
@@ -4854,6 +4899,96 @@
  "watchAdded": [],
  "news": [
   {
+   "id": "1hm27uo",
+   "lastSeen": "2026-11-09",
+   "title": "Here's what smart people are saying about Nvidia's investigation of CEO Jensen Huang",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONkYxOXlfaXpDRUotV1lQNnRsNExLNkpkb204eS1vbTBjNDdOZ01ZY2VxWEpST0VXSE1teHVuZUhuTHhDSHlwRThHNl8tWFNnQmJiSEtULUhtb3VBWHFPZllXUUcyazVoUUFza1lnR2NxSUU0dldPSzl1Z3ZQYUxpcDdfWm5DZ0RYY1ZkV0dKLUlteWYwR1ZWTw?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-09",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "Here's what smart people are saying about Nvidia's investigation of CEO Jensen Huang"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ],
+   "summary": "Nvidia CEO Jensen Huang is the subject of an investigation, according to commentary from smart people.",
+   "meaning": "As a key figure in the hardware driving the entire AI boom, executive developments around Nvidia are crucial to monitor.",
+   "importance": 6
+  },
+  {
+   "id": "6qacn8",
+   "lastSeen": "2026-11-09",
+   "title": "Anthropic secures $3.4 billion generator deal for AI data centers, FT reports",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTUktcGxpNENhQ1llV2F3a3V5RUZya0dDc0ZLeFVTZmFqclBqSVhuYkNiSFpSTkkwVnZ2NkFVVEVjQjZPLTJzMGMyU0dnaFg0X1pPd2pMV0ZCWWtMWlpSdTNvckRlaGxLcWs1SnljenEwcUs0N0doWG0yRDdET2o4YlZMVWl6c2lpYWJ1emstVFI1S3VyUXdIdG1xdmZpS3k3ZW5LVUpibUZ0SWxmZUNLNXN0SDBMZE5nWFJZdDlQSQ?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-08",
+   "outlets": [
+    "Reuters",
+    "Bloomberg"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic secures $3.4 billion generator deal for AI data centers, FT reports",
+    "Anthropic Buys Power for AI Data Centers in $3.4B Deal, FT Says"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic has secured a $3.4 billion generator deal for AI data centers, according to Financial Times reports.",
+   "meaning": "This highlights the massive infrastructure and energy investments required to scale large AI models.",
+   "importance": 7
+  },
+  {
+   "id": "1i8hrgu",
+   "lastSeen": "2026-11-09",
+   "title": "Anthropic strikes $3.4bn deal to generate gas-fired power for data centres",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQaDhoaHlMZk8tNWhZWlFEczhOc1FpNnZjcnlZTF9MUDJrVG5mb2NvUkdzZlBldmx2YkhEMkQtdVRuaXpWYkhTcDd2N3VLWlFvLW81S0ttcWxKTUlkdXBOMWRNZUIzS0o4ZVM1Y1dpbUIxRG4waXdxRVlncjJiVTM2TGtTZ0g?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-11-08",
+   "outlets": [
+    "Financial Times"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic strikes $3.4bn deal to generate gas-fired power for data centres"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic has struck a $3.4 billion deal to generate gas-fired power for data centres.",
+   "meaning": "Reflecting the energy bottlenecks in AI expansion, power acquisition has become a major strategic move for frontier lab companies.",
+   "importance": 7
+  },
+  {
+   "id": "hwg9by",
+   "lastSeen": "2026-11-09",
+   "title": "7 AI tools for real estate that are actually worth your time",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4zSmxxSVptMzZETERoOWY1QUNZajJyRTJOOXRNSW1aZEpfd3h1TFhVbHVRal9rc1RKT1VTQmU4bVRsUENQQi1kNE81UWxTMFhXRG8xdmptbEl5RzBuSUZHYlY1UDlRN2NoRE5kcWt3Y3c?oc=5",
+   "source": "Inman Real Estate News",
+   "domain": "inman.com",
+   "published": "2026-11-08",
+   "outlets": [
+    "Inman Real Estate News"
+   ],
+   "themes": [
+    "房产 AI"
+   ],
+   "headlines": [
+    "7 AI tools for real estate that are actually worth your time"
+   ],
+   "entities": [],
+   "summary": "A selection of 7 AI tools for real estate has been highlighted as genuinely worth your time.",
+   "meaning": "Directly touches on real estate AI adoption, offering practical applications for professionals and everyday property processes.",
+   "importance": 7
+  },
+  {
    "id": "dl31kz",
    "lastSeen": "2026-11-07",
    "title": "Anthropic’s IPO Seen as AI’s True Reckoning",
@@ -4874,28 +5009,6 @@
    "summary": "Anthropic的IPO被视为AI行业的一次真正清算。这意味着市场正在重新评估AI企业的商业价值。",
    "meaning": "作为通用AI领域的重要事件，它反映了资本风向的变化，值得持续关注。",
    "importance": 8
-  },
-  {
-   "id": "uptgg4",
-   "lastSeen": "2026-11-07",
-   "title": "US intelligence believes Jensen Huang had romantic relationship with Chinese spy in honeypot operation — spy suspect linked to company accused of smuggling $2 billion in AI chips",
-   "url": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxPOHM5bTRmeUdpQ0tPcjRZWWlvSlZLQkFfRS1CWFVsQXRoaVlPVFl4VjhoeDdpUGViYXZiRFAtYUVxMnhzSHVkV1E2eGtXcldZbTgyM2tCSUMxS2xnVnphYWZTZkdPY3NYMkhxVjR5OVdQc2ZVX2doOUkzN0FKaE9GZ0ZCWFNPWmc0dGF1bkdnRTJpeVd1bVZrYU11QVliUnNvOFMzS1V4RUw5WlpmVVpvUmg0LTFzX2twSjFtekdGVldTbjhCUmZzbi1RcVVneVN4dENaSzlxa0VUWkNMSWllOVlwZktWZ0xQa1dpYjFTaGR6UVhvNFNtTWJHSzJSbVpDS3Z0Tk5pMG5OTTZQN0w5cm02TVoySncyN1EwWFlRVThBYzlPbTJVUm1GRWJrbnEwR3lvTmRqaVpwODhwRW5aSGNCSE1pd2hyWGFkc1FZMjM0VXFsRjBRU2hZeFBmX2lDanRF?oc=5",
-   "source": "Tom's Hardware",
-   "domain": "tomshardware.com",
-   "published": "2026-11-07",
-   "outlets": [
-    "Tom's Hardware"
-   ],
-   "themes": [],
-   "headlines": [
-    "US intelligence believes Jensen Huang had romantic relationship with Chinese spy in honeypot operation — spy suspect linked to company accused of smuggling $2 billion in AI chips"
-   ],
-   "entities": [
-    "Jensen Huang"
-   ],
-   "summary": "美国情报部门认为Jensen Huang曾与中国间谍有恋爱关系，该嫌疑人涉嫌参与走私20亿美元AI芯片的公司。",
-   "meaning": "这涉及芯片供应链安全及中国AI发展背景下的地缘政治风险，对关注中国AI及全球半导体格局的读者具有很高关注度。",
-   "importance": 7
   },
   {
    "id": "1t0ivil",
@@ -4942,8 +5055,89 @@
    "importance": 8
   },
   {
+   "id": "uptgg4",
+   "lastSeen": "2026-11-09",
+   "title": "US intelligence believes Jensen Huang had romantic relationship with Chinese spy in honeypot operation — spy suspect linked to company accused of smuggling $2 billion in AI chips",
+   "url": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxPOHM5bTRmeUdpQ0tPcjRZWWlvSlZLQkFfRS1CWFVsQXRoaVlPVFl4VjhoeDdpUGViYXZiRFAtYUVxMnhzSHVkV1E2eGtXcldZbTgyM2tCSUMxS2xnVnphYWZTZkdPY3NYMkhxVjR5OVdQc2ZVX2doOUkzN0FKaE9GZ0ZCWFNPWmc0dGF1bkdnRTJpeVd1bVZrYU11QVliUnNvOFMzS1V4RUw5WlpmVVpvUmg0LTFzX2twSjFtekdGVldTbjhCUmZzbi1RcVVneVN4dENaSzlxa0VUWkNMSWllOVlwZktWZ0xQa1dpYjFTaGR6UVhvNFNtTWJHSzJSbVpDS3Z0Tk5pMG5OTTZQN0w5cm02TVoySncyN1EwWFlRVThBYzlPbTJVUm1GRWJrbnEwR3lvTmRqaVpwODhwRW5aSGNCSE1pd2hyWGFkc1FZMjM0VXFsRjBRU2hZeFBmX2lDanRF?oc=5",
+   "source": "Tom's Hardware",
+   "domain": "tomshardware.com",
+   "published": "2026-11-07",
+   "outlets": [
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "headlines": [
+    "US intelligence believes Jensen Huang had romantic relationship with Chinese spy in honeypot operation — spy suspect linked to company accused of smuggling $2 billion in AI chips"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ],
+   "summary": "US intelligence reportedly believes Nvidia CEO Jensen Huang had a romantic relationship with a Chinese spy in a honeypot operation, with the suspect linked to a firm accused of smuggling $2 billion in AI chips.",
+   "meaning": "A high-stakes geopolitical and security development involving a central leader in the global semiconductor and AI hardware ecosystem.",
+   "importance": 8
+  },
+  {
+   "id": "12sz7kn",
+   "lastSeen": "2026-11-09",
+   "title": "Law Firms Have Malpractice Insurance. Should Their A.I. Agents?",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaXFuOUJSYi1iVEUzaFZ1Yk90dW9TTldVaXpyNXpoUnJqMW9OTEkzZVNOdl9yVFFMTi1Nb1RLSERwLTByY2J4SXlqWVNRY3pfZG50TnZTdzJUN3Z2ZVEzcVFuQ0VNX2pBRWdjaUJMNEJtQUI3NC1nNURiOGMzbEt1V0M1ODlRRE5iTHFVQnJUY2s5YlFhaG45MjdSdDBrR1VYSXFVWnRoWUc?oc=5",
+   "source": "The New York Times",
+   "domain": "nytimes.com",
+   "published": "2026-11-07",
+   "outlets": [
+    "The New York Times"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "headlines": [
+    "Law Firms Have Malpractice Insurance. Should Their A.I. Agents?"
+   ],
+   "entities": [],
+   "summary": "An exploration has been raised over whether law firms' AI agents should carry malpractice insurance, given that law firms already do.",
+   "meaning": "A fascinating intersection of legal AI liabilities and professional accountability as autonomous agents enter legal practice.",
+   "importance": 7
+  },
+  {
+   "id": "uptgg4",
+   "lastSeen": "2026-11-09",
+   "title": "Read the Statements From Nvidia’s Board and CEO Jensen Huang",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSWRiUGFlN2dtR1drNzJEbGU1R0JldDl2ZS10dVUyQVJQamFXejVMaEpPOUlxdkt1MlZJb1pQNDVNVzBqd2ptN0RoY1h2SDE2N29qbmRsQUxUMUdTaUdzV0JlMHdBVDJGeE96QXBVN25qcThKT01kUGRDMVJWeUxaYlNFd0ZwWkgtSE0xa1dIVlNmWTBQUjNLMHljOUNjOUNWMUZYMk1WQXVOQQ?oc=5",
+   "source": "Bloomberg",
+   "domain": "bloomberg.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "Tom's Hardware",
+    "CNBC",
+    "TechCrunch",
+    "Axios",
+    "AP News",
+    "Semafor",
+    "Business Insider",
+    "Bloomberg",
+    "Engadget"
+   ],
+   "themes": [],
+   "headlines": [
+    "US intelligence believes Jensen Huang had romantic relationship with Chinese spy in honeypot operation — spy suspect linked to company accused of smuggling $2 billion in AI chips",
+    "Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+    "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+    "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
+    "\"Congress will investigate\": Nvidia CEO Jensen Huang faces probe over alleged Chinese spy ties",
+    "Nvidia CEO Jensen Huang seen as target of Chinese spy plot, according to the New York Times",
+    "Nvidia investigating reports that CEO Jensen Huang was targeted by Chinese intelligence",
+    "Nvidia CEO Jensen Huang admits to having an affair with suspected Chinese spy — Jensen apologizes in letter to staff, company board forms independent committee to investigate"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ],
+   "summary": "美国情报部门认为Jensen Huang曾与中国间谍有恋爱关系，该嫌疑人涉嫌参与走私20亿美元AI芯片的公司。",
+   "meaning": "这涉及芯片供应链安全及中国AI发展背景下的地缘政治风险，对关注中国AI及全球半导体格局的读者具有很高关注度。",
+   "importance": 7
+  },
+  {
    "id": "5jh82e",
-   "lastSeen": "2026-11-07",
+   "lastSeen": "2026-11-09",
    "title": "OpenAI gets $11 billion funding at $1.25 trillion valuation, source says",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdlpNRm5XVy11c3hLY0NRdjh2T3VmOE1LOWQ2LXlvcFhmZlFJYkQya3N3QWxud2UteUZpWVlCTXVHUXZZTjIwRlVQaUhqOGhyM2lDaDJTSGcxMnE5MzhOZ1NHYlJIc1p5bHRxaVZjZDd4MFY2RWMtRkNlYkhSVkdpMlRBWi1PYUNmZGNydXZnOTZFMTFoOHR0azBpUlU1aHpVdFA4dlhCV0dDNm91VE0xSVg0bXZhcF9jaVAzcXYzaldOdw?oc=5",
    "source": "Reuters",
@@ -4952,7 +5146,8 @@
    "outlets": [
     "Bloomberg.com",
     "Reuters",
-    "TechCrunch"
+    "TechCrunch",
+    "Bloomberg"
    ],
    "themes": [],
    "headlines": [
@@ -4966,6 +5161,35 @@
    "summary": "根据报道，OpenAI完成了110亿美元的融资，估值达到1.25万亿美元。这一巨额融资显示出顶级AI巨头依然受到资本追捧。",
    "meaning": "这是通用AI领域不能错过的重大进展，标志着头部企业的资金和估值进入新阶段。",
    "importance": 9
+  },
+  {
+   "id": "vhe5zs",
+   "lastSeen": "2026-11-09",
+   "title": "Anthropic IPO Buyers See Valuation as Low as $1.1 Trillion",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSnFFOWdvbmtEcGNObXJldm1QTGRoeXRMbnQ1THZ6REh2bDE4V2U4VmNDbVdOWHRtNm9TaGdCbTBrZUotOWdNZWszbmNoSUpjWnlNN2NNZ1NUcUJPVWRKb2s2RTlPZ19hNGZoR28tSWllbWFzQ0FNTUdoYl9GODVmb1JSdElLd0l0dWFSTktsbFBqSW1YVFJ2SU90anhWZjNMT0RJaFJJWlpfTUVtaDduTw?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-06",
+   "outlets": [
+    "Bloomberg.com",
+    "WSJ",
+    "Bloomberg",
+    "Forbes"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic IPO Buyers See Valuation as Low as $1.1 Trillion",
+    "Exclusive | Major Investors Are Skeptical Anthropic IPO Can Achieve $1.5 Trillion Valuation",
+    "Watch Anthropic IPO Investors Weigh Valuation as Low as $1.2 Trillion",
+    "Watch Anthropic IPO Buyers See Valuation as Low as $1.1 Trillion",
+    "Anthropic IPO Valuation Talk Falls To $1.3 Trillion After The AI Stock Rout"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Potential Anthropic IPO buyers see valuation as low as $1.1 trillion.",
+   "meaning": "This highlights differing market perceptions of leading AI labs' worth as they approach the public market.",
+   "importance": 6
   },
   {
    "id": "10pesz8",
@@ -5037,32 +5261,6 @@
    "summary": "据报道中国曾招募AI高管以监视Jensen Huang。相关媒体报道了这一涉及AI界领袖的安全传闻。",
    "meaning": "涉及中国AI相关背景及行业领袖的安全动态，可作为行业八卦和宏观背景了解。",
    "importance": 4
-  },
-  {
-   "id": "vhe5zs",
-   "lastSeen": "2026-11-07",
-   "title": "Anthropic IPO Buyers See Valuation as Low as $1.1 Trillion",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSnFFOWdvbmtEcGNObXJldm1QTGRoeXRMbnQ1THZ6REh2bDE4V2U4VmNDbVdOWHRtNm9TaGdCbTBrZUotOWdNZWszbmNoSUpjWnlNN2NNZ1NUcUJPVWRKb2s2RTlPZ19hNGZoR28tSWllbWFzQ0FNTUdoYl9GODVmb1JSdElLd0l0dWFSTktsbFBqSW1YVFJ2SU90anhWZjNMT0RJaFJJWlpfTUVtaDduTw?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-11-06",
-   "outlets": [
-    "Bloomberg.com",
-    "WSJ"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic IPO Buyers See Valuation as Low as $1.1 Trillion",
-    "Exclusive | Major Investors Are Skeptical Anthropic IPO Can Achieve $1.5 Trillion Valuation",
-    "Watch Anthropic IPO Investors Weigh Valuation as Low as $1.2 Trillion",
-    "Watch Anthropic IPO Buyers See Valuation as Low as $1.1 Trillion"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Potential Anthropic IPO buyers see valuation as low as $1.1 trillion.",
-   "meaning": "This highlights differing market perceptions of leading AI labs' worth as they approach the public market.",
-   "importance": 6
   },
   {
    "id": "ygjn0c",
@@ -5329,6 +5527,35 @@
    "importance": 1
   },
   {
+   "id": "1ql9o8o",
+   "lastSeen": "2026-11-09",
+   "title": "Nvidia CEO Jensen Huang seen as target of Chinese spy plot, according to the New York Times",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRkFYeXcyTVdDV0VFRkxvUUk2VVAxZTdIdWVmRnEtako3WmxxRW9pc1J6N29zR05DR0s2WDlmZmJVb2RWOFRzZ1NsLUs4N2Zna1M0c2c3TjluNmlSRHJWWDNkdkcyNXk4QmdEUDlnMFpOT0FySmFSSktRY21CczdmaHpCLS1uMkQ2UHc4SUt4NjJOQlBjRUNtWG5iUUxvNmRrMTJzUVBvcGh2Ny1ZcHVuWDNISVFnUnRwS2c2NExtRW5lMWZNOW1vZ056dlI3Zw?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-11-05",
+   "outlets": [
+    "CNBC",
+    "Axios",
+    "BBC",
+    "The Washington Post"
+   ],
+   "themes": [],
+   "headlines": [
+    "Nvidia CEO Jensen Huang seen as target of Chinese spy plot, according to the New York Times",
+    "Nvidia CEO called in by lawmakers over ties to alleged Chinese spy",
+    "\"Congress will investigate\": Nvidia CEO Jensen Huang faces probe over alleged Chinese spy ties",
+    "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
+    "Nvidia board to investigate CEO over relationship with suspected Chinese spy"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ],
+   "summary": "纽约时报报道称，Nvidia CEO Jensen Huang成为中国间谍阴谋的目标。该消息引发了外界对半导体行业领袖安全的关注。",
+   "meaning": "侧面反映了AI硬件巨头高管在全球地缘与科技竞争中的敏感地位。",
+   "importance": 4
+  },
+  {
    "id": "po3deg",
    "lastSeen": "2026-11-06",
    "title": "OpenAI, ready to IPO in 2027, now counts majority of sales from enterprises, Brockman says",
@@ -5353,31 +5580,6 @@
    "summary": "OpenAI president Greg Brockman stated that the company could be ready for an IPO in 2027 and noted that a majority of its sales now come from enterprises.",
    "meaning": "As one of the most anticipated general AI events, OpenAI moving towards a 2027 IPO and scaling enterprise sales signals the maturation and commercial viability of foundational AI models.",
    "importance": 9
-  },
-  {
-   "id": "1ql9o8o",
-   "lastSeen": "2026-11-07",
-   "title": "Nvidia CEO Jensen Huang seen as target of Chinese spy plot, according to the New York Times",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRkFYeXcyTVdDV0VFRkxvUUk2VVAxZTdIdWVmRnEtako3WmxxRW9pc1J6N29zR05DR0s2WDlmZmJVb2RWOFRzZ1NsLUs4N2Zna1M0c2c3TjluNmlSRHJWWDNkdkcyNXk4QmdEUDlnMFpOT0FySmFSSktRY21CczdmaHpCLS1uMkQ2UHc4SUt4NjJOQlBjRUNtWG5iUUxvNmRrMTJzUVBvcGh2Ny1ZcHVuWDNISVFnUnRwS2c2NExtRW5lMWZNOW1vZ056dlI3Zw?oc=5",
-   "source": "CNBC",
-   "domain": "cnbc.com",
-   "published": "2026-11-05",
-   "outlets": [
-    "CNBC",
-    "Axios"
-   ],
-   "themes": [],
-   "headlines": [
-    "Nvidia CEO Jensen Huang seen as target of Chinese spy plot, according to the New York Times",
-    "Nvidia CEO called in by lawmakers over ties to alleged Chinese spy",
-    "\"Congress will investigate\": Nvidia CEO Jensen Huang faces probe over alleged Chinese spy ties"
-   ],
-   "entities": [
-    "Jensen Huang"
-   ],
-   "summary": "纽约时报报道称，Nvidia CEO Jensen Huang成为中国间谍阴谋的目标。该消息引发了外界对半导体行业领袖安全的关注。",
-   "meaning": "侧面反映了AI硬件巨头高管在全球地缘与科技竞争中的敏感地位。",
-   "importance": 4
   },
   {
    "id": "1dzb6rw",
@@ -6764,6 +6966,30 @@
    "importance": 6
   },
   {
+   "id": "7ifwmi",
+   "lastSeen": "2026-11-09",
+   "title": "Elon Musk mocks OpenAI CEO Sam Altman's claim that PCs having RAM is terrible — 'The people deserve to have their RAM too!'",
+   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQajhhRlBGOFRIZVJBQ2VCTTNBSmF0cGdfM3JXWVQ3d0JDM1RCT1VwdnVfUmxxOXQtMHFNdFo0T19MRm9ZTkI5a05KUVBrT1dGSmRxUnhMN0pERHpkTHBmWkhuX0hIS1NIYi04UXlkUU9vSFJJUHA0cThrSEw0bUdSdTc4Z0pmZFhwaU85Y1RWUGZFRFRjeTBmcjcwdUZNWVdDcGlUMEt1LVh3U09SWWdxUmptU19wREszbDI2WXdsemlCekJXdHlucHJJdzh6NGNSNDdPcmZlUkFmdTFPOUVpSXhtSVZFc1pkOVdUcDkyVEFERzJlb3hJV3Q4eVllUG5JSk52UE5SWXo4VDlQbE9iWEN3?oc=5",
+   "source": "Tom's Hardware",
+   "domain": "tomshardware.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "headlines": [
+    "Elon Musk mocks OpenAI CEO Sam Altman's claim that PCs having RAM is terrible — 'The people deserve to have their RAM too!'"
+   ],
+   "entities": [
+    "Sam Altman",
+    "Elon Musk",
+    "OpenAI"
+   ],
+   "summary": "Elon Musk mocked OpenAI CEO Sam Altman's claim that personal computers having RAM is terrible, stating that people deserve to have their RAM.",
+   "meaning": "A public clash between major AI industry leaders regarding consumer hardware and computing fundamentals.",
+   "importance": 4
+  },
+  {
    "id": "1ryp4vi",
    "lastSeen": "2026-11-07",
    "title": "Anthropic Investors Push for Cautious Valuation Closer to $1.5 Trillion",
@@ -6972,6 +7198,29 @@
    "summary": "随着大型 IPO 临近，Anthropic 承诺投入 895 亿美元的支出。这显示了其巨大的资金消耗和扩张计划。",
    "meaning": "大额资金承诺凸显了前沿 AI 公司高昂的算力与研发成本，有助于了解当前大模型竞争的烧钱规模。",
    "importance": 6
+  },
+  {
+   "id": "1ms844o",
+   "lastSeen": "2026-11-09",
+   "title": "66-Year-Old Yann LeCun’s New Paper Challenges Scaling Law: 109M-Parameter Model Outperforms 72B-Parameter Counterpart — Larger AI Models Don’t Necessarily Understand the World Better",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1wOGNwaVk1NVRZdWcxdko5M2VyUzFQOVE2MzgxTW00cDd6XzRCUU9XTDhScjJfOUN6S2x6MjZvbHRKcGZVRXdNa2ZJa2w1UFJaR2tB?oc=5",
+   "source": "36氪",
+   "domain": "eu.36kr.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "36氪",
+    "eu.36kr.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "66-Year-Old Yann LeCun’s New Paper Challenges Scaling Law: 109M-Parameter Model Outperforms 72B-Parameter Counterpart — Larger AI Models Don’t Necessarily Understand the World Better"
+   ],
+   "entities": [
+    "Yann LeCun"
+   ],
+   "summary": "66-year-old Yann LeCun's new paper challenges the scaling law, showing a 109M-parameter model outperforms a 72B-parameter counterpart. The research suggests that larger AI models do not necessarily understand the world better.",
+   "meaning": "This challenges current mainstream scaling assumptions in general AI research, potentially pointing toward more efficient model architectures.",
+   "importance": 7
   },
   {
    "id": "8200cb",
@@ -7372,28 +7621,6 @@
    "importance": 6
   },
   {
-   "id": "1ms844o",
-   "lastSeen": "2026-11-07",
-   "title": "66-Year-Old Yann LeCun’s New Paper Challenges Scaling Law: 109M-Parameter Model Outperforms 72B-Parameter Counterpart — Larger AI Models Don’t Necessarily Understand the World Better",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1wOGNwaVk1NVRZdWcxdko5M2VyUzFQOVE2MzgxTW00cDd6XzRCUU9XTDhScjJfOUN6S2x6MjZvbHRKcGZVRXdNa2ZJa2w1UFJaR2tB?oc=5",
-   "source": "36氪",
-   "domain": "eu.36kr.com",
-   "published": "2026-11-02",
-   "outlets": [
-    "36氪"
-   ],
-   "themes": [],
-   "headlines": [
-    "66-Year-Old Yann LeCun’s New Paper Challenges Scaling Law: 109M-Parameter Model Outperforms 72B-Parameter Counterpart — Larger AI Models Don’t Necessarily Understand the World Better"
-   ],
-   "entities": [
-    "Yann LeCun"
-   ],
-   "summary": "66-year-old Yann LeCun's new paper challenges the scaling law, showing a 109M-parameter model outperforms a 72B-parameter counterpart. The research suggests that larger AI models do not necessarily understand the world better.",
-   "meaning": "This challenges current mainstream scaling assumptions in general AI research, potentially pointing toward more efficient model architectures.",
-   "importance": 7
-  },
-  {
    "id": "jbfsw8",
    "lastSeen": "2026-11-08",
    "title": "OpenAI slashes funding target by $10 billion amid tech rout, FT reports (Oct. 30)",
@@ -7414,6 +7641,50 @@
    "summary": "According to the FT report on October 30, OpenAI slashed its funding target by $10 billion amid a tech rout. The adjustment comes during a broader market correction.",
    "meaning": "Capital constraints and market corrections could affect aggressive AI scaling strategies, offering a reality check on soaring industry valuations and investment flows.",
    "importance": 7
+  },
+  {
+   "id": "yr0iqx",
+   "lastSeen": "2026-11-09",
+   "title": "DeepSeek Unveils Autonomous Coding Agent Prototype",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNXhyOWhiLW00bk9LNG5JOHRySVNHMF83WEhoblJ5ck1qSlUzZFcwYkRCTTJ3WXVoYUlUellRZ0hHbGEteldoaVJSWmJwclgzWEstRm52bGN2RkQ2b05XZkp1R29uMERxMGl0amY0aThhMlh2M0VlYm9mRFhvak9NMWNIQm5lR2tuUXktWTZad1lnUTBjemc?oc=5",
+   "source": "The Information",
+   "domain": "theinformation.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "The Information"
+   ],
+   "themes": [],
+   "headlines": [
+    "DeepSeek Unveils Autonomous Coding Agent Prototype"
+   ],
+   "entities": [
+    "DeepSeek"
+   ],
+   "summary": "DeepSeek has unveiled an autonomous coding agent prototype.",
+   "meaning": "Shows ongoing capability upgrades from a notable Chinese AI entity in automated software engineering.",
+   "importance": 8
+  },
+  {
+   "id": "q2152j",
+   "lastSeen": "2026-11-09",
+   "title": "SpaceX loses bid to dismiss lawsuit over xAI data center pollution — facility allegedly emits over 5,000 tons of nitrogen oxides and 47 tons of cancer-causing formaldehyde annually",
+   "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPN056XzB3dnBhMEVmd1l5cWRwUkZvTmx2Si1QVEpuUGZ2UXYyejlKOXNzQUlOYV9FSGgtMnMyZm8wNGRYX3hob1FxZkt4X0ZKd2ZORks3N0I1OHFCV0Z5SHU4NzhFb1pSbHVBTXdiczlwdGd5U3c5bWliVGxuMFhHeDhQVHNQTDNQQ2hIZ21pUEt1R3l5em8zZ1N3TmdoaWxYTk5Nb1BYNWt1X2M1MHJ3aG11TUFPbkVXNDNVME1HcldudkJTeVFCVVVlUTZRUUZJOWRlV3FQamV3czlRWXRNeWF0OENCVlZ4YVd3aE1JcWFObVI0cE9oc3hzVjVZUlhnczN5ZG9SNzVqZW0zcUNYSURhYzRoUU11VUpuRHpmM0RsTG8?oc=5",
+   "source": "Tom's Hardware",
+   "domain": "tomshardware.com",
+   "published": "2026-11-02",
+   "outlets": [
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "headlines": [
+    "SpaceX loses bid to dismiss lawsuit over xAI data center pollution — facility allegedly emits over 5,000 tons of nitrogen oxides and 47 tons of cancer-causing formaldehyde annually"
+   ],
+   "entities": [
+    "xAI"
+   ],
+   "summary": "SpaceX lost a bid to dismiss a lawsuit over xAI data center pollution, where the facility allegedly emits over 5,000 tons of nitrogen oxides and 47 tons of cancer-causing formaldehyde annually.",
+   "meaning": "Exposes the environmental and regulatory backlash faced by massive AI data center scaling initiatives.",
+   "importance": 5
   },
   {
    "id": "1whwoh9",
@@ -7480,276 +7751,25 @@
    "summary": "Legal Tech startup Litmas AI has launched an updated agentic litigation platform.",
    "meaning": "法律 AI 领域的持续迭代正在推进，智能体技术在诉讼领域的落地值得法律从业者关注。",
    "importance": 5
-  },
-  {
-   "id": "7ifwmi",
-   "lastSeen": "2026-11-07",
-   "title": "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkZzbnhBaW1mZXJzZ0NBNDQxUk1CQW5WNTc0eDYxTGVvZGtIVTRjTGs5THBLLTRMZDFLM0o0ZWpSZU5qNDhxbjNUYXdvVk9wVVI4V01WRFdXQndvcHZndkl4aWE0NkpGVHJtZUlZUW9EX19xeF9HR0RXcUU5VlM1Rm15OTRIaENTeDVLTWhTdWhzWkItMk5JU2tEbXRyN2hrU1NhT3RXZE9FRkdE?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "Tom's Hardware",
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "headlines": [
-    "Elon Musk mocks OpenAI CEO Sam Altman's claim that PCs having RAM is terrible — 'The people deserve to have their RAM too!'",
-    "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
-    "Sam Altman meets with Samsung leadership to secure more RAM for data centers amid crushing shortages — OpenAI CEO travels to South Korea to meet Samsung leadership to discuss future AI data centers"
-   ],
-   "entities": [
-    "Sam Altman",
-    "OpenAI"
-   ],
-   "summary": "Elon Musk mocked OpenAI CEO Sam Altman's claim that PCs having RAM is terrible, stating that people deserve to have their RAM too. The exchange highlights differing views on hardware architecture.",
-   "meaning": "An amusing industry anecdote concerning general AI leaders, though it has limited direct impact on practical applications.",
-   "importance": 3
-  },
-  {
-   "id": "zby504",
-   "lastSeen": "2026-11-07",
-   "title": "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkZzbnhBaW1mZXJzZ0NBNDQxUk1CQW5WNTc0eDYxTGVvZGtIVTRjTGs5THBLLTRMZDFLM0o0ZWpSZU5qNDhxbjNUYXdvVk9wVVI4V01WRFdXQndvcHZndkl4aWE0NkpGVHJtZUlZUW9EX19xeF9HR0RXcUU5VlM1Rm15OTRIaENTeDVLTWhTdWhzWkItMk5JU2tEbXRyN2hrU1NhT3RXZE9FRkdE?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "Tom's Hardware",
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "headlines": [
-    "Sam Altman meets with Samsung leadership to secure more RAM for data centers amid crushing shortages — OpenAI CEO travels to South Korea to meet Samsung leadership to discuss future AI data centers",
-    "Watch OpenAI CEO Sam Altman Says AI Will Transform the Economics of Energy"
-   ],
-   "entities": [
-    "Sam Altman",
-    "OpenAI"
-   ],
-   "summary": "OpenAI CEO Sam Altman met with Samsung leadership in South Korea to secure more RAM for data centers amid crushing shortages and discussed how AI will transform energy economics.",
-   "meaning": "Addresses the hardware and infrastructure bottlenecks facing general AI scaling, which ultimately influences the cost and availability of AI services.",
-   "importance": 6
-  },
-  {
-   "id": "1w2yjjm",
-   "lastSeen": "2026-11-02",
-   "title": "DeepSeek Unveils Autonomous Coding Agent Prototype",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNXhyOWhiLW00bk9LNG5JOHRySVNHMF83WEhoblJ5ck1qSlUzZFcwYkRCTTJ3WXVoYUlUellRZ0hHbGEteldoaVJSWmJwclgzWEstRm52bGN2RkQ2b05XZkp1R29uMERxMGl0amY0aThhMlh2M0VlYm9mRFhvak9NMWNIQm5lR2tuUXktWTZad1lnUTBjemc?oc=5",
-   "source": "The Information",
-   "domain": "theinformation.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "South China Morning Post",
-    "The Information"
-   ],
-   "themes": [],
-   "headlines": [
-    "DeepSeek unveils AI ‘super agent’ in coding race with OpenAI, Anthropic",
-    "DeepSeek Unveils Autonomous Coding Agent Prototype"
-   ],
-   "entities": [
-    "DeepSeek"
-   ],
-   "summary": "DeepSeek 在与 OpenAI 和 Anthropic 的编程竞赛中推出了 AI“超级代理”。这展示了中国 AI 在前沿模型和智能体领域的最新进展，直接对标国际顶尖大厂。",
-   "meaning": "中国 AI 企业的持续发力值得重点关注，这加剧了全球大模型与编程智能体的竞争态势。",
-   "importance": 9
-  },
-  {
-   "id": "1sihf7u",
-   "lastSeen": "2026-11-08",
-   "title": "SpaceX loses bid to dismiss lawsuit over xAI data center pollution — facility allegedly emits over 5,000 tons of nitrogen oxides and 47 tons of cancer-causing formaldehyde annually",
-   "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPN056XzB3dnBhMEVmd1l5cWRwUkZvTmx2Si1QVEpuUGZ2UXYyejlKOXNzQUlOYV9FSGgtMnMyZm8wNGRYX3hob1FxZkt4X0ZKd2ZORks3N0I1OHFCV0Z5SHU4NzhFb1pSbHVBTXdiczlwdGd5U3c5bWliVGxuMFhHeDhQVHNQTDNQQ2hIZ21pUEt1R3l5em8zZ1N3TmdoaWxYTk5Nb1BYNWt1X2M1MHJ3aG11TUFPbkVXNDNVME1HcldudkJTeVFCVVVlUTZRUUZJOWRlV3FQamV3czlRWXRNeWF0OENCVlZ4YVd3aE1JcWFObVI0cE9oc3hzVjVZUlhnczN5ZG9SNzVqZW0zcUNYSURhYzRoUU11VUpuRHpmM0RsTG8?oc=5",
-   "source": "Tom's Hardware",
-   "domain": "tomshardware.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "Engadget",
-    "Tom's Hardware"
-   ],
-   "themes": [],
-   "headlines": [
-    "Judge Says xAI Must Face NAACP Lawsuit On Data Center Pollution",
-    "SpaceX loses bid to dismiss lawsuit over xAI data center pollution — facility allegedly emits over 5,000 tons of nitrogen oxides and 47 tons of cancer-causing formaldehyde annually"
-   ],
-   "entities": [
-    "xAI"
-   ],
-   "summary": "A judge ruled that xAI must face an NAACP lawsuit regarding data center pollution, with SpaceX also losing its bid to dismiss the case. The facility allegedly emits over 5,000 tons of nitrogen oxides and 47 tons of cancer-causing formaldehyde annually.",
-   "meaning": "Environmental and legal challenges surrounding AI data centers are escalating into major litigation, highlighting the hidden community and health costs of rapid AI infrastructure buildout.",
-   "importance": 6
-  },
-  {
-   "title": "Anthropic’s $2T IPO could create millionaires—but it’s asking candidates what they’d do if stock hit zero",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPSlBiVFRIMmt2WEVQTjRoQ21LTElPODlaUVNwWTJyUWxrNUw0amktMS12NDhEUGNYT2Q0bEE4S1lCd3ZNbFAzWEY1dDMyNjhObmJzRG51bndoNEt6ck80U1h5b0JHSF84MTAtMmJpR0dCSzRORWpLZU1EbUEyVzdiM2haTVFkelhTYXlKNU9ndEpmWXhkQS1kMXBRLUp6RDJ4LVpjVTJZYUdVY1NZd3NIYkFWN2M1RXZ5M09TY3JaRXlObURIY0VXV1lmNGJCWmFpeHdmOW52Y1d5c0ZIQ2VDY0l5Sng?oc=5",
-   "source": "Fortune",
-   "domain": "fortune.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "Fortune"
-   ],
-   "themes": [],
-   "entities": [
-    "Anthropic"
-   ],
-   "headlines": [
-    "Anthropic’s $2T IPO could create millionaires—but it’s asking candidates what they’d do if stock hit zero"
-   ],
-   "summary": "Anthropic未来可能达2万亿美元的IPO或将造就一批百万富翁，但该公司在面试中询问候选人若股票归零会怎么做。",
-   "meaning": "这反映出顶级通用AI独角兽在估值暴涨的同时，也在未雨绸缪地对员工进行风险意识筛选与预期管理。",
-   "id": "1bxlsmj"
-  },
-  {
-   "title": "Anthropic's internal AI use is now worth more than employee pay, at the prices it charges customers",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPckZlQklSTUE5MnZLZDM2U1RWbGFtQzRmVU1mTTk5YUVLNEVta3FmZnM5OWIxUW9DN253ZlctTGk4RFEybHFGQU9hXzNSdkE5SGZRbjNKLUd6RE9OaEN6NWkzd2dpcnRDRjdGR01DN0JyQWVjcFhkaEs5UmlmNS1oZV9VSVhjbHk3d0M3aHVwa0lfODdOZFF4NnVHSTBRUy1EZlE?oc=5",
-   "source": "Business Insider",
-   "domain": "businessinsider.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "Business Insider"
-   ],
-   "themes": [],
-   "entities": [
-    "Anthropic"
-   ],
-   "headlines": [
-    "Anthropic's internal AI use is now worth more than employee pay, at the prices it charges customers"
-   ],
-   "summary": "按向客户收取的定价计算，Anthropic内部使用AI的价值如今已超过了员工的薪酬总额。",
-   "meaning": "这展示了AI研发机构内部高度AI化运营的降本增效潜力，是观察通用AI重塑企业生产力结构的重要指标。",
-   "id": "1nigclj"
-  },
-  {
-   "title": "Judge rejects xAI’s bid to dismiss NAACP lawsuit over its gas turbines",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSS1pOGFFTE5KRnZ6dzNlbDVqUUlrMVJ2TnZXckE1Y0RicldtNURRLTE4UHhWQlpONmEyUG5raDdxX0hwZlREU3hBWnRXR0VjLXpUdmNIOGFlY01nZmJwZzM1X2J3R202eVh3ODg0S201U3hndmJrbng0bVVuSVdqcFBmZHI4RDIxVVpr?oc=5",
-   "source": "The Next Web",
-   "domain": "thenextweb.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "The Next Web"
-   ],
-   "themes": [],
-   "entities": [
-    "xAI"
-   ],
-   "headlines": [
-    "Judge rejects xAI’s bid to dismiss NAACP lawsuit over its gas turbines"
-   ],
-   "summary": "一名法官驳回了xAI试图撤销NAACP就其燃气轮机提起的诉讼的请求。",
-   "meaning": "属于法律与AI基础设施的交叉纠纷，表明AI超级算力中心的能耗和环保问题正面临越来越严格的法律审查。",
-   "id": "m514or"
-  },
-  {
-   "title": "Microsoft AI chief says AI is not conscious and we should keep it that way",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOV1ZmRWdLNVRnWVZxX0w4dXVwU2ZfajVlN0hFOTBiNjNJQ0ZjbUlMSjlvWkw0MVBzeHhmV21mRTV1SExTcUdzOS1NSTB6UzFkSmo4eUNCMzFiWUUxVU5DekZXbDFlaEM5eXNFTHY1LWZ2SXRTYW1CQ1NqWkxMUnctSTFCbHg0d0xTbFFv?oc=5",
-   "source": "Business Insider",
-   "domain": "businessinsider.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "Business Insider"
-   ],
-   "themes": [],
-   "headlines": [
-    "Microsoft AI chief says AI is not conscious and we should keep it that way"
-   ],
-   "entities": [
-    "Microsoft AI"
-   ],
-   "summary": "Microsoft AI chief states that AI is not conscious and should remain that way.",
-   "meaning": "This reflects the ongoing industry debate on AI sentience and safety guardrails, touching on core themes of general AI development.",
-   "id": "1whg2gs"
-  },
-  {
-   "id": "1ojeiuz",
-   "lastSeen": "2026-11-02",
-   "title": "Parents of woman who died of seizure after ChatGPT misguidance sue OpenAI",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQ1BpVmV2di1BOHI2NHZrV3RFTWY3LUw1NG5VVklTNVd5WTdPUmp5djEyNHNqNTkyVHpqMHhiR3FsT1BwbjdzZ3hxMXM4VmpCTDNYY2x2cGhrcmlac2lyZXZ1WG1hYi13Y3R3NkpwV0l1RmNEQU1PcEtvZ0dXa3NzM0xHd3Q0cVdZNXpINg?oc=5",
-   "source": "The Guardian",
-   "domain": "theguardian.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "The Guardian"
-   ],
-   "themes": [],
-   "headlines": [
-    "Parents of woman who died of seizure after ChatGPT misguidance sue OpenAI"
-   ],
-   "entities": [
-    "OpenAI"
-   ],
-   "summary": "由于ChatGPT误导导致一名女子癫痫发作死亡，其父母对OpenAI提起诉讼。这是关于AI生成内容引发严重后果的法律诉讼案例。",
-   "meaning": "这凸显了法律AI与AI责任领域面临的巨大合规及法律风险，当事人因AI误导产生严重后果追究责任，值得法律和通用AI领域高度关注。",
-   "importance": 8
-  },
-  {
-   "id": "ud4q32",
-   "lastSeen": "2026-11-02",
-   "title": "Elon Musk says he is taking over an old Spam factory and a gun range to expand his Colossus 2 AI complex",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQblNHeVNwZ3NJaDN0UmpkUnc1SzJoNnFYbkEwNWVubEpnbFQ2Sk9qQ09EXzlGdTlpUEg5bkdoWmNIZmZVa2p3M3FlSjBoa3RGbG9QcUtsTzNzWGFaOXY3QVRTZ0JCQ0s3TC1kSG8wMm9Ra0V0SUZkYTVfSDhRSThLR0FQUEd6TkpvQXc?oc=5",
-   "source": "Business Insider",
-   "domain": "businessinsider.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "Business Insider"
-   ],
-   "themes": [],
-   "headlines": [
-    "Elon Musk says he is taking over an old Spam factory and a gun range to expand his Colossus 2 AI complex"
-   ],
-   "entities": [
-    "Elon Musk"
-   ],
-   "summary": "Elon Musk表示他将接管一个旧的Spam工厂和一个靶场，以扩展其Colossus 2 AI集群。",
-   "meaning": "展示了头部算力基础设施建设的最新物理扩展，是了解AI底层算力规模的重要动态。",
-   "importance": 7
-  },
-  {
-   "id": "1y6tf77",
-   "lastSeen": "2026-11-02",
-   "title": "Self-improving AI the key step towards AGI but safety is key: Z.ai founder",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTHU5bEJZanQzdkktNEJ5YnVQeGY5Nm0xRlFXRTRqRkM0Q2ZfLW16WjVleHEyeXAyemMzTVFnZFg3Y1VoOUI5a1RTMkxJaXFtRmQwVkJTSHFpalgyMmNjU0IzaDN2dFRKTU83UXVqTTFFQ1BsVGZ1X1hXTEh2YThzMVpGSFZ5WHpyUmlXbVgzclk4YmsxY3lPM0dKUkFhOE9fNGtTUG1Cek5PVDFVaFVyTlI5cllVQdIBtgFBVV95cUxQTHU5bEJZanQzdkktNEJ5YnVQeGY5Nm0xRlFXRTRqRkM0Q2ZfLW16WjVleHEyeXAyemMzTVFnZFg3Y1VoOUI5a1RTMkxJaXFtRmQwVkJTSHFpalgyMmNjU0IzaDN2dFRKTU83UXVqTTFFQ1BsVGZ1X1hXTEh2YThzMVpGSFZ5WHpyUmlXbVgzclk4YmsxY3lPM0dKUkFhOE9fNGtTUG1Cek5PVDFVaFVyTlI5cllVQQ?oc=5",
-   "source": "South China Morning Post",
-   "domain": "amp.scmp.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "South China Morning Post"
-   ],
-   "themes": [],
-   "headlines": [
-    "Self-improving AI the key step towards AGI but safety is key: Z.ai founder"
-   ],
-   "entities": [
-    "Z.ai / Zhipu AI"
-   ],
-   "summary": "Z.ai founder states that self-improving AI is the key step towards AGI while emphasizing that safety is key.",
-   "meaning": "As a prominent Chinese AI perspective, this highlights core industry directions toward AGI and safety, which is crucial for tracking overall AI progress.",
-   "importance": 7
-  },
-  {
-   "id": "1fq58r",
-   "lastSeen": "2026-11-03",
-   "title": "OpenAI Wants Everyone to Call AI Data Centers 'Compute Campuses'",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaDB2b0M4TF9RNnhlZWxmdFVLWFRGQU1GcTVxcDUwbTVDcThhM3UtclBXU2QyYnp3WjM3MFgxN3JIa1hwbVR4NTVua01Sa25JN1A2X3JDWi0tbGZtLVI2aXBKUHZadWRCRXIzc25BbU94RlJna0F4OXAxX3ZmeC1YS3FQclFhM1hsYTRPQmZsWVBVRUFFNUhpMDhmZ1c?oc=5",
-   "source": "Business Insider",
-   "domain": "businessinsider.com",
-   "published": "2026-11-01",
-   "outlets": [
-    "Business Insider"
-   ],
-   "themes": [],
-   "headlines": [
-    "OpenAI Wants Everyone to Call AI Data Centers 'Compute Campuses'"
-   ],
-   "entities": [
-    "OpenAI"
-   ],
-   "summary": "OpenAI wants everyone to refer to AI data centers as 'compute campuses'.",
-   "meaning": "OpenAI 试图重新定义算力基础设施的称呼，反映出 AI 大厂对算力规模和园区化布局的重视。",
-   "importance": 6
   }
  ],
  "digests": [
+  {
+   "date": "2026-11-09",
+   "ids": [
+    "6qacn8",
+    "hwg9by",
+    "1i8hrgu",
+    "12sz7kn",
+    "1hm27uo",
+    "jote8",
+    "1clav9m",
+    "3m07n",
+    "1ic429j"
+   ],
+   "scanned": 127,
+   "events": 93
+  },
   {
    "date": "2026-11-08",
    "ids": [
@@ -7845,28 +7865,13 @@
    ],
    "scanned": 167,
    "events": 119
-  },
-  {
-   "date": "2026-11-02",
-   "ids": [
-    "1w2yjjm",
-    "wpqie7",
-    "1xf7smd",
-    "cy4nkz",
-    "jbfsw8",
-    "1w8z8fw",
-    "481m8t",
-    "jg9obx"
-   ],
-   "scanned": 169,
-   "events": 130
   }
  ],
  "weekly": [
+  "uptgg4",
   "5jh82e",
   "v2xfj8",
-  "1r2o0iq",
-  "10pesz8",
-  "po3deg"
+  "vhe5zs",
+  "1r2o0iq"
  ]
 }

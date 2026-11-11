@@ -156,6 +156,9 @@
     .counter { cursor: pointer; pointer-events: auto; }
     .actions button.fav-toggle { cursor: pointer; }
     .actions button.junk-button { color: var(--muted); cursor: pointer; }
+    .actions button.rewatch-toggle { cursor: pointer; }
+    .actions button.rewatch-toggle.on { border-color: #b7791f; color: #b7791f; }
+    .rewatch-unfinished { display: inline-block; margin-right: 6px; padding: 0 6px; border-radius: 999px; background: #fdf0d5; color: #9a5b00; font-size: 11px; }
     .actions button.junk-button.armed { border-color: #c0392b; background: #c0392b; color: #fff; }
     .junk-toggle { width: 100%; border: 0; border-top: 1px solid var(--line); padding: 12px 18px; background: transparent; color: var(--muted); font: inherit; font-size: 12px; text-align: left; cursor: pointer; }
     .tag.kind-tag { border-color: var(--purple-line); color: var(--purple); font-weight: 700; }
@@ -1556,8 +1559,35 @@
         const actions = card.querySelector('.actions');
         if (!button || !actions) return;
         button.classList.remove('tag');
+        addRewatchToggle(card, actions);
         actions.appendChild(button);
         addJunkButton(card);
+      };
+
+      // ☆ 重看 on the card: save a video to the 重看列表 before finishing it. It stays in the feed, unwatched.
+      function addRewatchToggle(card, actions) {
+        const key = cardKey(card);
+        if (!key || actions.querySelector('.rewatch-toggle')) return;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'rewatch-toggle';
+        button.dataset.rewatchKey = key;
+        button.textContent = '☆ 重看';
+        button.addEventListener('click', async () => {
+          if (isRewatch(key)) {
+            await removeRewatch(key);
+            showToast(['已移出重看列表。'], 3000);
+          } else await addRewatch(key, card);
+          syncRewatchToggles();
+        });
+        actions.appendChild(button);
+      }
+      const syncRewatchToggles = () => {
+        document.querySelectorAll('.rewatch-toggle').forEach(button => {
+          const on = isRewatch(button.dataset.rewatchKey);
+          button.textContent = on ? '★ 已加重看' : '☆ 重看';
+          button.classList.toggle('on', on);
+        });
       };
 
       const setWatched = (key, watched) => {
@@ -2701,8 +2731,8 @@
         addInput.value = '';
       };
 
-      // ★ 重看列表: videos marked 已看 that are worth another look (from the 已看 bar or 已看历史). They stay 已看, so
-      // they never return to the feed; the list plays them in its own player.
+      // ★ 重看列表: videos worth another look — from the 已看 bar, 已看历史, or ☆ 重看 on a card (even before finishing it;
+      // such a video stays in the feed, unwatched, and is tagged 未看完 here). The list plays them in its own player.
       const rewatchSheet = document.getElementById('rewatch-sheet');
       const rewatchList = document.getElementById('rewatch-list');
       const rewatchPlayer = document.getElementById('rewatch-player');
@@ -2792,7 +2822,7 @@
         rewatchList.replaceChildren();
         const rows = rewatchRows().sort((a, b) => (b.created_at || '').localeCompare(a.created_at || ''));
         if (!rows.length) {
-          makeText(rewatchList, 'div', 'history-empty', '还没有值得重看的视频。看完一条点“已看”后，顶部会出现“★ 值得重看”；以前看过的，在“已看历史”里点“☆ 重看”。');
+          makeText(rewatchList, 'div', 'history-empty', '还没有值得重看的视频。视频卡上点“☆ 重看”（没看完也行）；看完点“已看”后，顶部也会出现“★ 值得重看”；以前看过的，在“已看历史”里点“☆ 重看”。');
           return;
         }
         rows.forEach(row => {
@@ -2800,7 +2830,13 @@
           item.className = 'history-item';
           const text = document.createElement('div');
           text.className = 'history-item-text playable';
-          makeText(text, 'div', 'history-item-title', row.title);
+          const title = makeText(text, 'div', 'history-item-title', row.title);
+          if (!watchedItems.has(row.key.slice(REWATCH_PREFIX.length))) {
+            const tag = document.createElement('span');
+            tag.className = 'rewatch-unfinished';
+            tag.textContent = '未看完';
+            title.prepend(tag);
+          }
           const meta = [row.author, row.created_at ? `加入于 ${new Date(row.created_at).toLocaleDateString('zh-CN')}` : ''].filter(Boolean).join(' · ');
           if (meta) makeText(text, 'div', 'history-item-meta', meta);
           text.addEventListener('click', () => openRewatch(row));
@@ -2833,6 +2869,7 @@
         document.getElementById('rewatch-count').textContent = count ? String(count) : '';
         if (!rewatchSheet.hidden) renderRewatchList();
         if (!watchUndo.hidden) syncUndoRewatch();
+        syncRewatchToggles();
       };
       document.getElementById('rewatch-button').addEventListener('click', () => {
         rewatchSheet.hidden = false;

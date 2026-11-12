@@ -1,6 +1,28 @@
 {
- "updated": "2026-11-11T01:59:25.836Z",
+ "updated": "2026-11-12T03:01:27.176Z",
  "items": [
+  {
+   "key": "youtube:2jwTRDvQtUo",
+   "url": "https://www.youtube.com/watch?v=2jwTRDvQtUo",
+   "title": "Nvidia Preparing to Oust CEO Jensen Huang: WSJ",
+   "channel": "Bloomberg Television",
+   "channelId": "UCIALMKvObZNtJ6AmdCLP7Lg",
+   "published": "2026-11-12",
+   "summary": "\"Balance of Power\" focuses on the intersection of politics and global business. On today's show, Rep. Suzan DelBene says there ...",
+   "about": "Jensen Huang：黄仁勋 · NVIDIA CEO。",
+   "tab": "appearances",
+   "tags": [
+    "人物新视频",
+    "Jensen Huang"
+   ],
+   "minutes": 51,
+   "found": "2026-11-12",
+   "via": "person",
+   "highlight": "彭博电视台的节目讨论了有关Nvidia（英伟达）和Jensen Huang（黄仁勋）的国家安全影响、国会调查及相关言论，其中Gregory Allen提到Nvidia围绕Jensen Huang的领导构建且缺乏清晰的继承人。",
+   "kind": "judgment",
+   "sports": false,
+   "field": "none"
+  },
   {
    "key": "youtube:jDxKzlGLCas",
    "url": "https://www.youtube.com/watch?v=jDxKzlGLCas",
@@ -15,7 +37,11 @@
     "前沿实验室"
    ],
    "minutes": 23,
-   "found": "2026-11-11"
+   "found": "2026-11-11",
+   "highlight": "OpenAI DevDay 2026展示了GPT-Live的头脑风暴、游戏及图像生成功能，并介绍了如何为代理添加语音以及设计授权、延迟和中断处理。",
+   "kind": "product",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:pIW_8VyvCuQ",
@@ -31,7 +57,11 @@
     "前沿实验室"
    ],
    "minutes": 28,
-   "found": "2026-11-11"
+   "found": "2026-11-11",
+   "highlight": "OpenAI DevDay 2026演示了如何通过插件扩展将工具、知识和界面带入ChatGPT和Codex，帮助将想法转化为实用的体验并触达新用户。",
+   "kind": "product",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:QRm7VNMnurA",
@@ -47,7 +77,11 @@
     "前沿实验室"
    ],
    "minutes": 21,
-   "found": "2026-11-11"
+   "found": "2026-11-11",
+   "highlight": "OpenAI DevDay 2026介绍了如何使用Astra、ChatGPT Sites和WebMCP将想法转化为互动网页体验，以及如何与同事和代理构建新型界面。",
+   "kind": "product",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:U1IVZy9FhVQ",
@@ -63,7 +97,11 @@
     "前沿实验室"
    ],
    "minutes": 27,
-   "found": "2026-11-11"
+   "found": "2026-11-11",
+   "highlight": "OpenAI DevDay 2026探讨了使用可持续运行的编码代理的经验，涵盖选择重复任务、改善反馈、管理Token预算以及决定工程师何时介入等内容。",
+   "kind": "product",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:b7l_Dhe1h8M",
@@ -79,7 +117,11 @@
     "前沿实验室"
    ],
    "minutes": 20,
-   "found": "2026-11-11"
+   "found": "2026-11-11",
+   "highlight": "OpenAI DevDay 2026介绍了如何通过Agents API与Codex harness进行构建，在环境中运行代理并保持长期任务的进行。",
+   "kind": "product",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:xuoYCRxqffY",
@@ -97,7 +139,55 @@
    ],
    "minutes": 27,
    "found": "2026-11-11",
-   "via": "person"
+   "via": "person",
+   "highlight": "本视频探讨了OpenAI及Sam Altman在2026年9月访谈中的表态，讨论了OpenAI是否选择放慢脚步或面临其他压力。",
+   "kind": "judgment",
+   "sports": false,
+   "field": "none"
+  },
+  {
+   "key": "youtube:xaw79hY5Iv0",
+   "url": "https://www.youtube.com/watch?v=xaw79hY5Iv0",
+   "title": "BREAKING: JENSEN HUANG OUT AS NVIDA CEO",
+   "channel": "threadguy",
+   "channelId": "UCyLaBb4OibRL7KMdd4wZ0OQ",
+   "published": "2026-11-11",
+   "summary": "",
+   "about": "Jensen Huang：黄仁勋 · NVIDIA CEO。",
+   "tab": "appearances",
+   "tags": [
+    "人物新视频",
+    "Jensen Huang"
+   ],
+   "minutes": 51,
+   "found": "2026-11-12",
+   "via": "person",
+   "highlight": "Threadguy发布的视频内容。",
+   "kind": "judgment",
+   "sports": false,
+   "field": "none"
+  },
+  {
+   "key": "youtube:W91qxxcXxmQ",
+   "url": "https://www.youtube.com/watch?v=W91qxxcXxmQ",
+   "title": "Will AI Take Your Job? Kai-Fu Lee and Merouane Debbah",
+   "channel": "Astana Hub",
+   "channelId": "UCQXhGS1_8vpp67VDtD-fROg",
+   "published": "2026-11-11",
+   "summary": "In this new episode of the HubTalks podcast, we ask what comes after generative AI and what it means for jobs and business.",
+   "about": "Kai-Fu Lee：李开复 · 创新工场、零一万物。",
+   "tab": "appearances",
+   "tags": [
+    "人物新视频",
+    "Kai-Fu Lee"
+   ],
+   "minutes": 38,
+   "found": "2026-11-12",
+   "via": "person",
+   "highlight": "Astana Hub播客邀请了01.AI创始人李开复和卡利法大学教授Merouane Debbah，探讨生成式AI之后的趋势、AGI的时间线以及对就业和商业的影响。李开复表示AGI可能在一两年内到来，并讨论了哪些工作会消失、为什么程序员可能比水管工先被替代等话题。",
+   "kind": "judgment",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:yIFhTVMOH98",
@@ -110,10 +200,15 @@
    "about": "Marina Mogilko（Silicon Valley Girl）采访 AI 从业者和研究者，话题偏职业与日常使用。",
    "tab": "appearances",
    "tags": [
+    "医疗 AI",
     "关注频道"
    ],
    "minutes": 44,
-   "found": "2026-11-11"
+   "found": "2026-11-11",
+   "highlight": "Silicon Valley Girl采访了曾领导Google DeepMind研发AlphaFold 3、现任Isomorphic Labs总裁的Max Jaderberg。他分享了团队如何利用AI筛选药物分子、将AI工程赋能生物医药，以及如何培养挑选研究课题的品味。",
+   "kind": "method",
+   "sports": false,
+   "field": "medical"
   },
   {
    "key": "youtube:bdIoODXsu8k",
@@ -129,7 +224,11 @@
     "Podcast"
    ],
    "minutes": 86,
-   "found": "2026-11-11"
+   "found": "2026-11-11",
+   "highlight": "Latent Space播客中，Resend联合创始人兼CEO Zeno Rocha探讨了编码代理与邮件服务提供商的选择、答案引擎优化以及代理在实际产品设计和操作中的各种考量。",
+   "kind": "method",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:-NARhJ7jAj4",
@@ -145,7 +244,11 @@
     "你关注的频道"
    ],
    "minutes": 52,
-   "found": "2026-11-11"
+   "found": "2026-11-11",
+   "highlight": "Revolut创始人兼CEO Nik Storonsky在Cheeky Pint节目中分享了Revolut的全球扩展策略、订阅制金融科技模式，以及利用AI缩短合规审批周期的实践。",
+   "kind": "method",
+   "sports": false,
+   "field": "none"
   },
   {
    "key": "youtube:VDi_-76znJI",
@@ -166,7 +269,8 @@
    "via": "person",
    "kind": "judgment",
    "sports": false,
-   "field": "none"
+   "field": "none",
+   "highlight": "Tech Meets East频道讲述了数学家Tristan Buckmaster完成一项重大数学研究后，Sam Altman的公司利用机器在极短时间内取得了更大突破的故事。"
   },
   {
    "key": "youtube:OdFcLxBXuSo",
@@ -187,38 +291,17 @@
    "via": "person",
    "kind": "judgment",
    "sports": false,
-   "field": "none"
+   "field": "none",
+   "highlight": "NewsX World报道了Russell Brand因性侵罪名被判刑，并引发公众对曾支持他的Elon Musk和Megyn Kelly的争议与讨论。"
   },
   {
-   "key": "youtube:YvEFG-5_o8I",
-   "url": "https://www.youtube.com/watch?v=YvEFG-5_o8I",
-   "title": "LIVE: Nvidia stock price as company investigates CEO Jensen Huang",
-   "channel": "Associated Press",
-   "channelId": "UC52X5wxOL_s5yw0dQk7NtgA",
-   "published": "2026-11-09",
-   "summary": "Watch the stock price for Nvidia's shares as the chip company investigates reports that CEO Jensen Huang was the “target of a ...",
-   "about": "Jensen Huang：黄仁勋 · NVIDIA CEO。",
-   "tab": "appearances",
-   "tags": [
-    "人物新视频",
-    "Jensen Huang"
-   ],
-   "minutes": 161,
-   "found": "2026-11-10",
-   "via": "person",
-   "highlight": "Associated Press直播展示了Nvidia (英伟达) 的股票价格，此前该公司正调查关于CEO Jensen Huang (黄仁勋) 成为外国情报工作目标的报道。",
-   "kind": "judgment",
-   "sports": false,
-   "field": "none"
-  },
-  {
-   "key": "youtube:BCJWA0lgpws",
-   "url": "https://www.youtube.com/watch?v=BCJWA0lgpws",
-   "title": "Nvidia CEO Jensen Huang admits affair with alleged Chinese spy",
-   "channel": "Morning Brew Daily",
-   "channelId": "UCJGeBpBh9_Q0B_EKPmj14Pg",
-   "published": "2026-11-09",
-   "summary": "972: Nvidia's CEO Jensen Huang admits to having an affair with a tech executive who is identified as a Chinese spy by US ...",
+   "key": "youtube:evQcbeOlvWc",
+   "url": "https://www.youtube.com/watch?v=evQcbeOlvWc",
+   "title": "Jensen Huang on Leading Nvidia, Developing a Flat Management Style, and Keeping Humans in the Loop",
+   "channel": "Harvard Business Review",
+   "channelId": "UCWo4IA01TXzBeGJJKWHOG9g",
+   "published": "2026-11-10",
+   "summary": "In this conversation from HBR's Future of Business event in November, 2023, Adi Ignatius speaks with Nvidia's CEO and ...",
    "about": "Jensen Huang：黄仁勋 · NVIDIA CEO。",
    "tab": "appearances",
    "tags": [
@@ -226,10 +309,10 @@
     "Jensen Huang"
    ],
    "minutes": 26,
-   "found": "2026-11-10",
+   "found": "2026-11-12",
    "via": "person",
-   "highlight": "Morning Brew Daily的Neal Freyman和Toby Howell在其谈话节目中讨论了Nvidia (英伟达) CEO Jensen Huang (黄仁勋) 承认与涉嫌中国间谍有染的报道。",
-   "kind": "judgment",
+   "highlight": "哈佛商业评论活动中，Adi Ignatius与Nvidia CEO兼联合创始人Jensen Huang对话，探讨了Nvidia的领导力、扁平化管理风格、应对持续变革以及在AI时代保持人类参与的重要性。",
+   "kind": "method",
    "sports": false,
    "field": "none"
   },
@@ -250,7 +333,8 @@
    "found": "2026-11-11",
    "kind": "judgment",
    "sports": false,
-   "field": "none"
+   "field": "none",
+   "highlight": "阿里巴巴云计算在Apsara Conference Amsterdam 2026上举办了关于Agentic AI的圆桌讨论，行业领袖探讨了智能体从辅助任务向自主执行的转变、编码代理、安全监督以及业务成果。"
   },
   {
    "key": "youtube:v5IJwVnTxzg",
@@ -263,13 +347,15 @@
    "about": "Latent Space：面向 AI 工程师的播客，聊模型、智能体和工程实践。",
    "tab": "appearances",
    "tags": [
+    "医疗 AI",
     "Podcast"
    ],
    "minutes": 164,
    "found": "2026-11-11",
    "kind": "method",
    "sports": false,
-   "field": "none"
+   "field": "medical",
+   "highlight": "Latent Space播客深入对话Handshake AI创始人Garrett Lord及团队，探讨前沿实验室购买的专家训练数据、强化学习环境以及生物学、投资银行和安全对齐领域的AI评估工作。"
   },
   {
    "key": "youtube:akVbr8xMdDE",
@@ -289,6 +375,24 @@
    "kind": "method",
    "sports": false,
    "field": "none"
+  },
+  {
+   "key": "youtube:2dRKk-I7yK0",
+   "url": "https://www.youtube.com/watch?v=2dRKk-I7yK0",
+   "title": "Russell Brand Gets TEN YEARS In Prison, Elon Musk Says UNJUST",
+   "channel": "Timcast",
+   "channelId": "UCe02lGcO-ahAURWuxAJnjdA",
+   "published": "2026-11-09",
+   "summary": "Russell Brand has been sentenced to 10 years and six months in prison for rape and sexual assault, and Elon Musk is calling it ...",
+   "about": "Elon Musk：xAI / Tesla。",
+   "tab": "appearances",
+   "tags": [
+    "人物新视频",
+    "Elon Musk"
+   ],
+   "minutes": 20,
+   "found": "2026-11-12",
+   "via": "person"
   },
   {
    "key": "youtube:dpY7YzZo4kE",
@@ -369,6 +473,42 @@
    "kind": "judgment",
    "sports": false,
    "field": "none"
+  },
+  {
+   "key": "youtube:B80AohaQ9cs",
+   "url": "https://www.youtube.com/watch?v=B80AohaQ9cs",
+   "title": "Sam Altman: Once in a Lifetime Opportunity is Coming",
+   "channel": "Tech Meets East",
+   "channelId": "UCkTWGhKZxgmU9j5tuTsEkxw",
+   "published": "2026-11-07",
+   "summary": "Sam Altman: Once in a Lifetime Opportunity is Coming In the second quarter of 2026, OpenAI brought in $6.7 billion. In the same ...",
+   "about": "Sam Altman：OpenAI CEO。",
+   "tab": "appearances",
+   "tags": [
+    "人物新视频",
+    "Sam Altman"
+   ],
+   "minutes": 29,
+   "found": "2026-11-12",
+   "via": "person"
+  },
+  {
+   "key": "youtube:GTftrftwX0Y",
+   "url": "https://www.youtube.com/watch?v=GTftrftwX0Y",
+   "title": "Sam Altman: The Real Danger of AI Isn't What You Think",
+   "channel": "Tech Meets East",
+   "channelId": "UCkTWGhKZxgmU9j5tuTsEkxw",
+   "published": "2026-11-07",
+   "summary": "Sam Altman: The Real Danger of AI Isn't What You Think On the twentieth of July, 2026, engineers at OpenAI watch their own ...",
+   "about": "Sam Altman：OpenAI CEO。",
+   "tab": "appearances",
+   "tags": [
+    "人物新视频",
+    "Sam Altman"
+   ],
+   "minutes": 28,
+   "found": "2026-11-12",
+   "via": "person"
   },
   {
    "key": "youtube:R56MqmVwbps",
@@ -1534,26 +1674,6 @@
    "field": "none"
   },
   {
-   "key": "youtube:V0IB8iMzrLQ",
-   "url": "https://www.youtube.com/watch?v=V0IB8iMzrLQ",
-   "title": "154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明",
-   "channel": "张小珺 Podcast",
-   "channelId": "UC3Sv1JuKpbOx3csUO8FAo5g",
-   "published": "2026-10-15",
-   "summary": "今天我们的嘉宾是一位美国连续创业者，Dyna Robotics创始人兼CEO Lindon Gao。此前，他做过两段生意，一次完整的创业。Dyna可以说是他的第四次创业了。 在硅谷，Dyna和之前来过我们节目的Pi（Physical Intelligence）的纯大脑研究路线非常不一样。相比从通用智能出发、探索机器人大脑的研究路径，Dyna选择了一条“Product-research”的道路：以具体的工作流为最小单元，从真实任务出发，反…",
-   "about": "张小珺长期深度访谈中国与硅谷的 AI、机器人和科技创业者。",
-   "tab": "appearances",
-   "tags": [
-    "关注频道"
-   ],
-   "minutes": 171,
-   "found": "2026-11-11",
-   "highlight": "美国连续创业者、Dyna Robotics创始人兼CEO Lindon Gao分享了Dyna的Product-research道路，即以具体的工作流为最小单元从真实任务出发来反过来驱动模型的预训练。访谈还探讨了机器人行业的迷雾与抉择以及创业过程中的修心历程。",
-   "kind": "method",
-   "sports": false,
-   "field": "none"
-  },
-  {
    "key": "youtube:7zF2mN9EPxU",
    "url": "https://www.youtube.com/watch?v=7zF2mN9EPxU",
    "title": "AL Interview: Leon Johnson, Omnilex - AI-Native, New Model Law Firm",
@@ -1908,22 +2028,27 @@
    "highlight": "No Priors节目邀请了OpenEvidence创始人Daniel Nadler，讨论了该公司如何解决医疗领域的语义搜索问题，在短短18个月内被40%的美国医生采用。他们探讨了将医生视为消费者的策略以及技术将如何重塑医学和医学教育。"
   },
   {
-   "key": "youtube:YqRF6CVe9HQ",
-   "url": "https://www.youtube.com/watch?v=YqRF6CVe9HQ",
-   "title": "Charlie Munger: 5 Nguyên Tắc Đầu Tư Giúp Bạn Nghĩ Khác Đám Đông",
-   "channel": "KBooks",
-   "channelId": "UCAk3FllyOk6bbbuBWqEuaBg",
-   "published": "2026-11-10",
-   "summary": "Tại sao Charlie Munger không chạy theo đám đông mà vẫn trở thành một trong những nhà đầu tư vĩ đại nhất thế giới?",
+   "key": "youtube:S60cAyfryJk",
+   "url": "https://www.youtube.com/watch?v=S60cAyfryJk",
+   "title": "张雪老板售后直播20261111：关店关店！车主被门店阴阳，机车被放门口拴狗；承认问题并努力改进",
+   "channel": "张雪和他的机车",
+   "channelId": "UCNVq325SdxJcFEr3wjALXkA",
+   "published": "2026-11-12",
+   "summary": "",
    "tab": "people",
-   "person": "Charlie Munger",
+   "person": "张雪",
    "tags": [
     "人物访谈",
-    "Charlie Munger"
+    "张雪"
    ],
-   "minutes": 83,
-   "found": "2026-11-11",
-   "via": "people"
+   "minutes": 34,
+   "found": "2026-11-12",
+   "via": "people",
+   "highlight": "张雪老板在售后直播中回应了车主被门店阴阳及机车被放门口拴狗的问题，承认了存在的问题并表示将努力改进。",
+   "kind": "method",
+   "sports": false,
+   "firsthand": true,
+   "field": "none"
   },
   {
    "key": "bilibili:BV1nvW761EUZ",
@@ -5089,14 +5214,12 @@
   "channel:@siliconvalleygirl": {
    "url": "https://www.youtube.com/@SiliconValleyGirl",
    "id": "UCiq1FIgtEK7LRAOB1JXTPig",
-   "name": "Silicon Valley Girl",
    "count": 7
   },
   "channel:@xiaojunpodcast": {
    "url": "https://www.youtube.com/@xiaojunpodcast",
    "id": "UC3Sv1JuKpbOx3csUO8FAo5g",
-   "name": "张小珺 Podcast",
-   "count": 1
+   "count": 0
   },
   "channel:@cheekypint": {
    "url": "https://www.youtube.com/@CheekyPint",
@@ -5120,90 +5243,92 @@
  "people": {
   "王坚": {
    "keywords": "阿里云 城市大脑 院士 之江实验室 阿里巴巴 云栖",
-   "searched": "2026-11-11",
+   "searched": "2026-11-12",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "徐新": {
    "keywords": "今日资本 投资 京东 美团 网易严选",
-   "searched": "2026-11-11",
+   "searched": "2026-11-12",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "何超琼": {
    "keywords": "",
-   "searched": "2026-11-11",
+   "searched": "2026-11-12",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "施一公": {
    "keywords": "",
-   "searched": "2026-11-11",
+   "searched": "2026-11-12",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "Warren Buffett": {
    "keywords": "",
-   "searched": "2026-11-11",
+   "searched": "2026-11-12",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "Charlie Munger": {
    "keywords": "",
-   "searched": "2026-11-11",
+   "searched": "2026-11-12",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "姚明": {
    "keywords": "",
-   "searched": "2026-11-11",
+   "searched": "2026-11-12",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "邓亚萍": {
    "keywords": "",
-   "searched": "2026-11-11",
+   "searched": "2026-11-12",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "杨振宁": {
    "keywords": "",
-   "searched": "2026-11-11",
+   "searched": "2026-11-12",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "奥尼尔": {
    "keywords": "NBA",
-   "searched": "2026-11-11",
+   "searched": "2026-11-12",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "刘晓庆": {
    "keywords": "",
-   "searched": "2026-11-11",
+   "searched": "2026-11-12",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   },
   "张雪": {
    "keywords": "机车 摩托车",
-   "searched": "2026-11-11",
+   "searched": "2026-11-12",
    "backfill": 2,
    "youtube": "ok",
    "bilibili": "ok"
   }
  },
  "peopleRejected": [
+  "youtube:QtVw0sfgyCE",
+  "youtube:YqRF6CVe9HQ",
   "youtube:KhvSMTQh_zo",
   "youtube:TChnGMsBnNg",
   "youtube:ebjK9JsHE4E",
@@ -5240,10 +5365,82 @@
   "bilibili:BV1CU9MBcEKw",
   "youtube:EsLelViWKwg",
   "youtube:kNvr6vldlqQ",
-  "youtube:IGlFb2YvPIo"
+  "youtube:IGlFb2YvPIo",
+  "youtube:YvEFG-5_o8I",
+  "youtube:BCJWA0lgpws"
  ],
  "watchAdded": [],
  "news": [
+  {
+   "id": "ofq628",
+   "lastSeen": "2026-11-12",
+   "title": "OpenAI, Anthropic Valuations Fuel VC Fears of Startup Correction",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVzBRbmVLSUFUYS1uMjVUUVZVaTFQQmZhTmRGNklQRjhLc1B3MnJPWW1fNkNua014V3NzS2hWREJ2d3YtVElhTXc5VHBId1N2aTJ3M2MwdE5nWmtTT2ZSdDhXSzlyTzdta0RMOFVUTTJqV0ZPWndsc2ZBVHgzTFA0aWFPMnRrcVJHZ1Jmd0FNZHNzU0p5cTZDV050MzJPajlTdWVyMXIwQ2UybFdmNnVYMW5IVVE?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI, Anthropic Valuations Fuel VC Fears of Startup Correction"
+   ],
+   "entities": [
+    "OpenAI",
+    "Anthropic"
+   ],
+   "summary": "OpenAI and Anthropic valuations are fueling venture capital fears of a startup market correction.",
+   "meaning": "High valuations in top AI labs indicate capital concentration, which may signal shifting investment climates for the broader AI ecosystem.",
+   "importance": 6
+  },
+  {
+   "id": "1cfh9q9",
+   "lastSeen": "2026-11-12",
+   "title": "The Anthropic-OpenAI Valuation Gap",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQmxKdGxGRzFhN2ZseTdPTmM1X3JVVTNjNmNtOGFOUzdGYTZYN2piUEZ1LWxiV0FWVHFTdWNTbVYwR1NMV2ZJeTVVRlpOQWUzdU1YVXl0OENFcmhNREFkX0hOSFc1TUZSbEtKXzhEQ2pTVUo4cElUUHBnZ0dHLXNxaUNtODQ0dC1oSThj?oc=5",
+   "source": "The Information",
+   "domain": "theinformation.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "The Information"
+   ],
+   "themes": [],
+   "headlines": [
+    "The Anthropic-OpenAI Valuation Gap"
+   ],
+   "entities": [
+    "OpenAI",
+    "Anthropic"
+   ],
+   "summary": "Reports discuss the valuation gap between Anthropic and OpenAI.",
+   "meaning": "Comparing leading AI lab valuations helps gauge market sentiment and capital distribution in the generative AI sector.",
+   "importance": 5
+  },
+  {
+   "id": "1pqzjft",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic’s IPO Is Said to Be Multiple Times Oversubscribed",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMGtLeG5WQUVLcHhzM3Y1YUFGamt6TFVZYzZJc1JaSEpNNHcwaTJqaGxXdjF5bm9MWnVrWmNadTlyLUZ1cjVCSmVUeUhsOEZLWnBRbnN6X0tqYmRfdGMzakdrWmdOeGNHR01kc0dlTm9tQ0hLLS1lQWt4ZWYyMllYNG9TYWFVTnpPUzFwYlE4ODBRNkVmZ0FRc2kwWGRISHAyQ2l6VlRXMDZLRGhGUmVSMHE2OGZKUQ?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Bloomberg.com",
+    "Quartz"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic’s IPO Is Said to Be Multiple Times Oversubscribed",
+    "Anthropic's IPO is said to be multiple times oversubscribed as roadshow gets under way"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic's IPO is reportedly multiple times oversubscribed as its roadshow gets underway.",
+   "meaning": "Strong institutional demand for AI IPOs shows continued robust market confidence in major AI infrastructure and model developers.",
+   "importance": 7
+  },
   {
    "id": "inkphh",
    "lastSeen": "2026-11-11",
@@ -5289,8 +5486,418 @@
    "importance": 5
   },
   {
+   "id": "1ja1mfi",
+   "lastSeen": "2026-11-12",
+   "title": "Dario Amodei says AI will cure cancer and Alzheimer's in a decade. Doctors aren't buying it.",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVUlHU2pHQjBYRF8xX3dyb3Y1RW0tM0FremhIN3YxY2h4UUMtT29jU0xkbGxxMFJXOTFMT0dianR3emllTjFOZTBkdXh3RWdLLTlCTmtRSDh6VEg4ZnQ2SG1IMzZnb2h0T0Q4Tk5BS1VSaEtXaEZVSEIwaU50N3dCMW1DTzJEVjE5WnBOQWtLQUU3LUZmTHBQSTZ5TXRyMmxheks4WEVqTQ?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "Dario Amodei says AI will cure cancer and Alzheimer's in a decade. Doctors aren't buying it."
+   ],
+   "entities": [
+    "Dario Amodei"
+   ],
+   "summary": "Dario Amodei claims AI will cure cancer and Alzheimer's in a decade, though doctors remain skeptical.",
+   "meaning": "Highlights the massive ambition of AI leaders in medical AI and drug discovery, while reflecting the reality check needed from medical professionals.",
+   "importance": 9
+  },
+  {
+   "id": "h5jl1i",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic's IPO shows how Big Tech is helping fund the AI industry's biggest spending boom",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOb044UEhOWmp4LWF1ZG1obkZkOG8ydkk4aHlreG9SU090ZFh5cDZtVTBCel9BY3NEajFVbVViYTVoTDZVZXgtWHNCQWN0ZWJDTzNOck5ZekVjOEE0QkJmSy1MSEJtNWFyMDFDOEhmM2JpWDlINVlnejliMEhHajNkZmh4bVY2RHpzVFUzb0RSY3VNMkZZX2NNaUlmdW9NbkVaS0V5QzJRaw?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's IPO shows how Big Tech is helping fund the AI industry's biggest spending boom"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic's IPO demonstrates how Big Tech is helping fund the AI industry's largest spending boom.",
+   "meaning": "Illustrates the deep financial ties between tech giants and foundation model developers, shaping the trajectory of medical and general AI research.",
+   "importance": 6
+  },
+  {
+   "id": "vo54y5",
+   "lastSeen": "2026-11-12",
+   "title": "Google is letting staff test a 'fast' new Gemini AI model named Hydrogen",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNX3pBVmNFNV81WUtYNDZTXzExR0NfX3lEU3hHMklmNWExc2Z0VWo5dU5xSnB2Vk0zMGlobDNnc1owTXdIeERRNkh2NGJsdGk4VzhZYkp2a0E4eEJuamxuZkhBNTA3SlFMSF90bFNNZlZGQ1dmcmVHTWlBYjFodmhiUHNRdDlKQ0pnMkgwNHJqZGpsZw?oc=5",
+   "source": "Business Insider",
+   "domain": "businessinsider.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Business Insider"
+   ],
+   "themes": [],
+   "headlines": [
+    "Google is letting staff test a 'fast' new Gemini AI model named Hydrogen"
+   ],
+   "entities": [
+    "Google DeepMind"
+   ],
+   "summary": "Google is allowing staff to test a fast new Gemini AI model named Hydrogen.",
+   "meaning": "Faster foundational models often translate to better responsiveness in downstream consumer and healthcare applications.",
+   "importance": 5
+  },
+  {
+   "id": "p2d6qu",
+   "lastSeen": "2026-11-12",
+   "title": "Jensen Huang affair in D.C.: Resignation calls and moves to tighten Nvidia China exports",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWjJRY2daaGR0MlE5NzU0bndocWZPVF9qODRlRlBzUUVLN1dyNkE2VXlJeUdGanF2NkQ5OGVZMmJTYk9xY244NU9sUHppeFU2dVlHcVRwWFptNG9CSUN6ay1Ic3NVdFJRZTNkY05nQzJJUFJsSVp1N21LRElnSHotZmZyYVR2a25v?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Jensen Huang affair in D.C.: Resignation calls and moves to tighten Nvidia China exports"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ],
+   "summary": "Jensen Huang faces resignation calls and tightening Nvidia China exports amid a D.C. controversy.",
+   "meaning": "Regulatory scrutiny and geopolitical tensions directly impact Nvidia's supply chain and the availability of advanced AI chips in China.",
+   "importance": 8
+  },
+  {
+   "id": "fefuny",
+   "lastSeen": "2026-11-12",
+   "title": "Jensen Huang must resign",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5jOXFMNE9nMTVfMmlacG1jcThXQ0dXakE3MTZyV211S2dRcHZObUNJWE1POUcyUkg1WWQ4M3JMTFdINjN6ekUyeWNFSjVwcWY1MGZnSlg5cUN1Y2ppUnZwY09xRS1YVEFjWjB3eFl5aGRDRENYZHd5ZQ?oc=5",
+   "source": "The Economist",
+   "domain": "economist.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "The Economist"
+   ],
+   "themes": [],
+   "headlines": [
+    "Jensen Huang must resign"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ],
+   "summary": "Calls have been made for Jensen Huang to resign.",
+   "meaning": "Leadership controversies at key hardware suppliers could introduce uncertainty into the global AI chip market.",
+   "importance": 6
+  },
+  {
+   "id": "1jubmgn",
+   "lastSeen": "2026-11-12",
+   "title": "Lawmakers Urge Federal Probe Into Jensen Huang Over Affair With Chinese Spy—And Call For His Resignation",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOOWNxTEVDLXBfcHVuZXhBc0FOaGtKYmgyOXpPUldsZmhSU3JWQ3JUZGVOOWhQTDRaMjdPZS1KdXZTRm01bGxyTWpvTWdsMlU0UHdTMS1rcHU2dWZkOURsRXNkSEdEVmF4SkEtejlWbkZvcU9oa0ZrZ3ZzVlVYbk9VMm04N1g3b0c5RXczZnBPek5mRkZMQmczcThydXhFVW02Zml0RkRjTC1iV21ZTmwtb0FncHp3S1VwaHBDU0tubmtoTTJ3VjlHbUk2ZTR5VHlhbnI3ZGduMnI3eXFJS2xUVWctaGhnWnRXT25DeFhOUQ?oc=5",
+   "source": "Forbes",
+   "domain": "forbes.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Forbes"
+   ],
+   "themes": [],
+   "headlines": [
+    "Lawmakers Urge Federal Probe Into Jensen Huang Over Affair With Chinese Spy—And Call For His Resignation"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ],
+   "summary": "Lawmakers are urging a federal probe into Jensen Huang regarding an affair with a Chinese spy and are calling for his resignation.",
+   "meaning": "Regulatory and political pressures on hardware leaders highlight the geopolitical risks inherent in the AI supply chain.",
+   "importance": 8
+  },
+  {
+   "id": "sqihgz",
+   "lastSeen": "2026-11-12",
+   "title": "Nvidia board’s idolatry of Jensen Huang could open the door to shareholder lawsuits in Delaware Chancery Court",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdE5rdlFZTWpxZV9zZ2lpYS05RzFKYndaaUx6LWJFV2RMNFc2YjhWaGtfeC1CSno1bWt1LU9EVW50d1JxTGd2Tm1uaXF2cXo5Yy1HUzFRZUFteDJYX3YzZ0RwNzNPQWFiSE1rX1lNN3V1TmV2aVFhVkVEVS1ycXRjSFJfMkZRRFl1eDB0WGtZZkh5TlQ4c1QzRkNpSUE?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "headlines": [
+    "Nvidia board’s idolatry of Jensen Huang could open the door to shareholder lawsuits in Delaware Chancery Court"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ],
+   "summary": "Nvidia board's handling of Jensen Huang could lead to shareholder lawsuits in Delaware Chancery Court.",
+   "meaning": "Corporate governance issues at leading hardware manufacturers can create instability for partners relying on their chips.",
+   "importance": 5
+  },
+  {
+   "id": "1j61sst",
+   "lastSeen": "2026-11-12",
+   "title": "How Verizon’s CEO is rolling out his ‘play-to-win’ playbook—and fending off Elon Musk",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTE9IR0NYWkxweFY1V0dmZDZKNm5HUUlnZmdqVFpONGxhb0pvTkNES1RzOEZ0UzFfMklOQjR2TE1GaHRnV2ZxWE5BdWNoaEJPTlpTQ3BJQ25LSkI1eXpVT2hybk56VWl5ekstb25ET1o3WWxBeW9aSnQ1UUZpNVVOeXVsNEFxY0VONXFLX1dWMFdKQ1FYbTQzaEI4V1A?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "headlines": [
+    "How Verizon’s CEO is rolling out his ‘play-to-win’ playbook—and fending off Elon Musk"
+   ],
+   "entities": [
+    "Elon Musk"
+   ]
+  },
+  {
+   "id": "b02jc5",
+   "lastSeen": "2026-11-12",
+   "title": "Watch Kai-Fu Lee Questions Soaring AI Valuations",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTGxFa2dJVkd2TWN0bjUtSHVSNE54VGFZWk5WNWNYdjcwZWQ5ZjBhMnNwdW0yeHh5YzkzNHhBTW1Id0tNUzNZQnE0ZXNMUXBlQkRuNGl4OHBPQjI3YlNkNE1PNU1ONG9ubkxBVUhxcjdSMFE4alBvWTZ1SzJST2VIcmp1OVlJQ1V1TTZXNDdUcUZjXzFYQnJVS2ppQU0zdw?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Watch Kai-Fu Lee Questions Soaring AI Valuations"
+   ],
+   "entities": [
+    "Kai-Fu Lee"
+   ]
+  },
+  {
+   "id": "kf6yar",
+   "lastSeen": "2026-11-12",
+   "title": "OpenAI and Georgia county leaders hit with Mafia-style RICO racketeering lawsuit over $30 billion AI data center — residents allege closed-door conspiracy and NDAs were used to push 3.2-gigawatt ‘Project Camellia’ through",
+   "url": "https://news.google.com/rss/articles/CBMi8AJBVV95cUxPamJCY3otWUdoaXpvanUwaWYtMVF3R2lWeTExLXd1WFhLdjF0bFN4NVBNejJkNUpycWtoZFgwdkFaX0NQbzBYRGgzSFdtbm1RUW5uTjJsR3ZFVmVNb2YxUGstRjVRaFBGMmFIVGthcEQ5Vml3dmszQ0wyeHVwVFVuc0FJa3Jtbm5kR3JWSHBOV1NmeGJURDBsbDRLOWV2eDdwX3NyOUpYSzBZcjFCc2ZFLVZIaGl5U3NWRmlVUDAzUldBcy11ajVXbnpDVDRoSTlnMGZpTlFHYmJzUXlLMS1pN3VOWVNQZHltT3NtWlBQYnhGQjdlNW9VZU5ZWHRUbUtuYUVTTkFadHZFcTEyRVFxbzlwUUhudHpVUzBrZE1SV2gtclFodnJrZkIyT2RKMXlROGFzSmdSTVNxUm9FWDlWUWRNU2g4ZGZGMTJRbWN5ZlBpdzl3NHRNeFlSLTJhcjBLSlZCcnR0RTlJSzVjR1RFTg?oc=5",
+   "source": "Tom's Hardware",
+   "domain": "tomshardware.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Tom's Hardware"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI and Georgia county leaders hit with Mafia-style RICO racketeering lawsuit over $30 billion AI data center — residents allege closed-door conspiracy and NDAs were used to push 3.2-gigawatt ‘Project Camellia’ through"
+   ],
+   "entities": [
+    "OpenAI"
+   ]
+  },
+  {
+   "id": "bdayqk",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic opens Australian retail IPO offering as AI scrutiny intensifies",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOU3JDTlRpUnJBd3B5dFpHcU1KX0RmWE5HN3d4TEN5b3JaZjlLQjBGWmYtcGQ2cF9hbjBLR0Q1X3VRQ2J2c3JCQm90c1kzbk1VcGxxOU1ITkJRYkZLbmpOd2o4QzZ2ZEFSc2NRbGZtSXJDQ3IwNTVaTThJRDAtWUdUd0RLWQ?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic opens Australian retail IPO offering as AI scrutiny intensifies"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "id": "1fffpto",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic Bankers Look to Increase IPO Valuation, Report Says",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUTgtOV9zN3Ywb2UycWxaSlNwOGltSV91cjMtRWdlNnJibWhnTVgtQkZkd0ZYU0NweVB5MEhaMkd6ZVNpUXlra3JiQ2ltcU4xUUUta0pPV2dqb19uWWpLZWVkanNqTnlsVEo2YmdFeGw2M2dNcGtGVHdGb1hBMTN4MFRteXhkbUctZWIxSURUQjcxczZxbmdtbGQ0d3ZLWWJCcjFQQVpwb1pjNHNzWlE?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Bankers Look to Increase IPO Valuation, Report Says"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "id": "156jeoj",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic Investors Shop IPO Shares Early, and at a Big Premium",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNd3UweUVvdTczclFmbWg3OERiOW5sSGk1S0pOX2hHWE1UMVJHUC1TbDlEWERsTGE2d1lBTUNwUEZGWkZrOGNRWDB0WExQNXFuT2JBTEpQRVJOandHMXNzUVRsbktGMV9lNmFFMkRIM1UwcHZmQjRiVlhob3IzODFxYjV3STFGOTVYSTN4MDk4MlNvcHNZNVlNNWJwTy15TFFxYUNCbEZxWUlVQ29tQnNBbzB2bw?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Bloomberg.com"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Investors Shop IPO Shares Early, and at a Big Premium"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "id": "1n8he19",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic’s IPO is too important to fail",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9haWxxajduNkpYU0FLdTRvWnVGc2ZrbWVJVlQ5THlEZnl4NVhfNW83aGJBR0k1eTVnTnFvZVlCLWRPSU83RTZOM1BfdzlNTGNzaWt2a3U2UUxULTNzQ2tjR3ljWEVxTnp2cm9Ec2prMVE?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Financial Times"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic’s IPO is too important to fail"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "id": "a8mtjq",
+   "lastSeen": "2026-11-12",
+   "title": "Claude Traffic Surges 24% In October As Anthropic IPO Looms—Beating AI Rivals",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcnY3SEdBcnM4NEVjV1hISVF0SUxqSjh4MWtkdkI4b1BGS0U0Vi0xV3lUbUVhR0dvalBHOElHX1NtVWJwNzlkb1N3WjBrbjdpZkkwQjZzVEJPVHlyOEphNG1rSUVMYWVYRFhreVhBeEFScFRBYXhmUmV1VGMyN2FWRFJJaFMwNl9PQ1owaTFXc0F5a1lOYXFBX2lnYWRvZndpYXJEazZDU1Ywai10eDd2aDFENWp5U1FMYjl0OS1ZdDJyOUZNMEE?oc=5",
+   "source": "Forbes",
+   "domain": "forbes.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Forbes"
+   ],
+   "themes": [],
+   "headlines": [
+    "Claude Traffic Surges 24% In October As Anthropic IPO Looms—Beating AI Rivals"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "id": "vwo8uy",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic IPO could draw record retail buying, Vanda Research says",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSkc4cW15aGVaZG4tLTR1YVpRUWJzNXVtQ0RyR2d1bEFXTFFIU2xhWEduUmxTUFJWZEt0cVh3ZDNxNnRwV2k0WFlnMlNycWpycVVSNGl0Qy1NMlhvZVBUWVhVVGhISDZpcUxBdGVFQnRXRzhCTGZYZVEzUEh1MjlBOFZ6X2p3eG4tUlF3a3NNUXhzYzU5d0NmcVhqS1QzcG5DMUItVWlDdlJ3U1ZoU0tscy1xa3Fxbnh2dHhPYmpNQ1VZOUk0?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic IPO could draw record retail buying, Vanda Research says"
+   ],
+   "entities": [
+    "Anthropic"
+   ]
+  },
+  {
+   "id": "1vbafbm",
+   "lastSeen": "2026-11-12",
+   "title": "Law firm Latham earmarks cash for associates' AI contributions",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWDRwZDBSVE5Wb3VXcDY4VU9nOWRJcWp0T1F0cEM5ZU1BaExpSHdZc1YwcllKNXZQM2ZVYURRSVZ2MnpyVTZwcGJmWV9zMENsYlo1VDlxMmJrVkhOT1lYT0YtcVE2elRtZk0xcVhfaXpoZkFaOHhtMXNuRDRfeE1tdk1JZVQtRElRLUg5NDVyamxmTHJxWXE2WU9VRGV6R085X3lpVzNEbXhvdzE3ejdr?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "headlines": [
+    "Law firm Latham earmarks cash for associates' AI contributions"
+   ],
+   "entities": []
+  },
+  {
+   "id": "6dcyw7",
+   "lastSeen": "2026-11-12",
+   "title": "COMMENTARY: Law firms want to bring AI to legal aid, but it's not easy",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPY2RQMGEyQVl2RzFvR0FHSXdQX2N6QXNqOXlGbjJ6bFBBc3BldnNrbHdRbGNFMkxpNE1ibnVqeDVwdDRES3BtSGZpNG9ETkdoTkRhQlN4Z3c4dlJlV1N0SWw2dFBMYl91c0FzVFFqNnVUY1lLZF9teHdYaHl5QzA5NmtfeEJMY2JKT1Vza0Nsa01xWS0tblBTUVVDWjJUVFh6R2ZfUA?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [
+    "法律 AI"
+   ],
+   "headlines": [
+    "COMMENTARY: Law firms want to bring AI to legal aid, but it's not easy"
+   ],
+   "entities": [],
+   "summary": "评论指出，律师事务所希望将AI引入法律援助，但这并非易事。",
+   "meaning": "这反映了法律AI在实际落地和普及过程中依然面临现实阻碍，值得关注法律科技的进展。",
+   "importance": 6
+  },
+  {
+   "id": "ajjz6m",
+   "lastSeen": "2026-11-12",
+   "title": "Drugmakers tap China AI app boom to reach doctors as crackdown upends marketing",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNUhMNG1KUG10c1p6SkJRa3N4T3pGcHN6dU9fOWU4MDdEbFJGLV9mQlRRYUVZYU1FQ2kzb2NiTV92elFwQ0ZMalh4VzF4LWJ0NDZXUC1FUzZ4QzMtb0VvRUcxRFVqSmY4VWRpLS1uTHFwZGNxbWtlMHVFZ2YtWW9xU19ha3ctOGVyRE1nbzhpaFVKUXRtdHA1VVRKSld5NDlqcVVURFc0VFVlMGowUVFhcHN4VVM3TWwyRW1EUmNtS1N4dm5R?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [
+    "医疗 AI"
+   ],
+   "headlines": [
+    "Drugmakers tap China AI app boom to reach doctors as crackdown upends marketing"
+   ],
+   "entities": [],
+   "summary": "在打击营销整顿的背景下，药企利用中国的AI应用热潮来接触医生。",
+   "meaning": "这展示了中国AI在医疗行业的实际应用场景，有助于了解AI如何改变医药营销和医疗行业的运作方式。",
+   "importance": 7
+  },
+  {
+   "id": "sctm2t",
+   "lastSeen": "2026-11-12",
+   "title": "90% AI use target at Tainan Municipal Hospital",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTlgwbWt4NWNwWjJHVGZtMTlRSzZ4b0R2SXRnUUJtUGhpeVFfSVNieVk1XzM1YlZnYXNSN1VhczJScTlvOEtUNGtiU05QSzV6cXpFT2Z4cXc3VGlwTnJCMGJOdzZkUlFWLUczeHZ1NkxXU0Q5NFVoVkRXeV95TkJXX1QzZFZ2Y1prSXlZUjQwNA?oc=5",
+   "source": "Healthcare IT News",
+   "domain": "healthcareitnews.com",
+   "published": "2026-11-11",
+   "outlets": [
+    "Healthcare IT News"
+   ],
+   "themes": [
+    "医疗 AI"
+   ],
+   "headlines": [
+    "90% AI use target at Tainan Municipal Hospital"
+   ],
+   "entities": [],
+   "summary": "Tainan Municipal Hospital设定了90%的AI使用目标。",
+   "meaning": "显示了医疗机构对AI落地的极高预期和推进力度，是医疗AI在医院实际应用的一个重要参考。",
+   "importance": 6
+  },
+  {
    "id": "ssttbj",
-   "lastSeen": "2026-11-11",
+   "lastSeen": "2026-11-12",
    "title": "Anthropic Plans IPO Live Stream With Amodei, JPMorgan CEO Dimon",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxON0dvR3VWQlk1NERKbUVWRndYdFJKeU9IUmR2UHRUanVEQkw1WVJwY1A5Wk9uOTk1b0k2cUFwVXFEM1d3MUJlNkRMUDNORklnNjdyTktNM0N0cWtKXy0zZ3Nfb3JlcTNZMUNBMWJjbHdvTXlmeXoxSUNYOTF3VUJPRUJ0VHZ2QmtFV1N5Y0FnTVBNY0NvaHoxMjBoMVktNjhiSzFhQzUtNExnVkNwZmNWRm90NA?oc=5",
    "source": "Bloomberg.com",
@@ -5299,7 +5906,8 @@
    "outlets": [
     "Bloomberg.com",
     "Quartz",
-    "TechCrunch"
+    "TechCrunch",
+    "Bloomberg"
    ],
    "themes": [],
    "headlines": [
@@ -5316,20 +5924,22 @@
   },
   {
    "id": "1fj3e44",
-   "lastSeen": "2026-11-11",
-   "title": "Microsoft Stock Drops After Anthropic Unveils Tools to Rival Office",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbHd5MXVLSkpPZE5NSkxLMWNLSERBN05CSWZNMkpWTUE1bEM4TmMtWmppQXliU3VFbnB6S2dwaFczVlpWSl9IYTBONmJLY09hM0ZFSzAzQXduZUpKby14WXlzNTh3VS1JWkFmYUNMOWdYd0NLaGhIYmloQ1lfOVZHY2FYQzE4N2JKT2t1THNJMzFFc3pRd1pYZUJCOA?oc=5",
-   "source": "Business Insider",
-   "domain": "businessinsider.com",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic Unveils Office Tools Ahead of IPO, Taking on Microsoft",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZlMwX3dzdHpVbEFBcTlGVWlibGtMcDBYOGJwbVJaaWs5X2xiVWM3ZUVDZHBoM1dyM0t1NjNYdVpzTHlYVHhKYTRHbXJTSmpRSFRLZ3FENE9kcXRFcHZVVTloYVJybUJaWWJ0a0ZGcVZpWXA1U2dZNmp1ZjRtbEJWSEtSc1RRbXdsSnh3bjV2WE90SHpBeGJkQ1hfUUtnZV9ldW14RUJoRVFMMFZmVGxBemNXSlM?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
    "published": "2026-11-10",
    "outlets": [
     "Quartz",
-    "Business Insider"
+    "Business Insider",
+    "Bloomberg.com"
    ],
    "themes": [],
    "headlines": [
     "Anthropic is unveiling office tools that rival Microsoft and Google ahead of its IPO",
-    "Microsoft Stock Drops After Anthropic Unveils Tools to Rival Office"
+    "Microsoft Stock Drops After Anthropic Unveils Tools to Rival Office",
+    "Anthropic Unveils Office Tools Ahead of IPO, Taking on Microsoft"
    ],
    "entities": [
     "Anthropic",
@@ -5338,6 +5948,34 @@
    "summary": "Anthropic unveiled office tools that rival Microsoft and Google ahead of its IPO, leading to a drop in Microsoft stock.",
    "meaning": "通用 AI 巨头正加速向传统软件腹地渗透，微软等巨头的市场格局面临直接挑战。",
    "importance": 8
+  },
+  {
+   "id": "btmss7",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic Founders to Cash Out $1.75 Billion in Blockbuster IPO",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQjZtOWRNYjBhbHJRa3R4RGUwUlpWYWpSaXhyQmhEMzAxcHM4YjlzT0hOT21SSWk5SndOMnBLUlNvWV9EeHBmbDVRR3pOLUR2TTdxWnhjUWxYLV8tdVY0cGtVR2k3UlZUa1loLXlFeWxEMWhEMlg3dy0zZWluanFUcmF1MWlELWVzUkZWa1dsdmZReldEdERQZlF3bWhpWWJRak56ZEd2bVJISElIWEVSYjJUMA?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-10",
+   "outlets": [
+    "WSJ",
+    "Bloomberg.com",
+    "TechCrunch",
+    "Quartz"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic Founders’ Stakes Are Worth $18 Billion Apiece at IPO Price",
+    "Anthropic Founders to Cash Out $1.75 Billion in Blockbuster IPO",
+    "All 7 Anthropic founders will each cash out about $250M in IPO",
+    "Anthropic's founders each plan to cash out about $250 million in its IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic founders' stakes are worth $18 billion apiece at the IPO price, and they plan to cash out $1.75 billion in the blockbuster IPO.",
+   "meaning": "创纪录的创始人身价与巨额套现进一步凸显了当前 AI 产业空前的财富效应。",
+   "importance": 5
   },
   {
    "id": "82igcn",
@@ -5391,6 +6029,59 @@
    "entities": [],
    "summary": "Oura is acquiring AI-native primary care and clinical AI startup Counsel Health for $625 million.",
    "meaning": "可穿戴设备巨头 Oura 重金收购医疗 AI 初创公司，标志着个人健康 AI 与临床医疗 AI 的深度融合正加速落地。",
+   "importance": 10
+  },
+  {
+   "id": "194otjc",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic IPO valuation calculator: How much is it really worth?",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNa3ZJT1VnODFlMjkwVmE1Z05vaktUWmUtOGNpY19VVG1DMU9ObkZ6QndkOTlVMmVSZGR4RENBV0RwYTZzM241UXIyazhRWGRyNi1SZVNzWWNjYXBSUjlFUGdXb3U3QklJLXprbVBZLXRjdjd2dGphaEItMFVVTGR0OERfeEc?oc=5",
+   "source": "Financial Times",
+   "domain": "ft.com",
+   "published": "2026-11-10",
+   "outlets": [
+    "Forbes",
+    "Financial Times",
+    "WSJ"
+   ],
+   "themes": [],
+   "headlines": [
+    "Here’s How Much Dario Amodei And His Six Cofounders Could Be Worth Based On Anthropic’s IPO Price Range",
+    "Anthropic IPO valuation calculator: How much is it really worth?",
+    "Anthropic to Seek $1.3 Trillion Valuation in IPO",
+    "Anthropic targets valuation of up to $1.4tn in IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Dario Amodei and his six cofounders' worth is estimated based on Anthropic's IPO price range.",
+   "meaning": "反映了生成式 AI 浪潮中核心创始团队巨大的个人财富增长，也侧面印证了 AI 行业的爆发力。",
+   "importance": 4
+  },
+  {
+   "id": "5o2lht",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic sets IPO price range of $70 to $78, looks to start trading Nov. 19, sources say",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRndodzlpaTVnaEdjdDBCMHNyQlVjclVGb0tXV0xEdkU4YUIxbE83eTdHUFpRN1VYQ3UybWRYckJ4Q0s5UlhZSHRILXgzN0g4MHRveHVrbUlfZnhvcV85dWs3WjI0Y1VPeXBaakY1RTlJazBsZ2NPeFBEcGVLcHRtNXl3UzZ3ZzRDN1JEcUV4dWRMN0NhY1E?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-11-10",
+   "outlets": [
+    "Fortune",
+    "TechCrunch",
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic sets IPO range valuing it at up to $1.4 trillion amid AI stock sell-off",
+    "Anthropic sets IPO price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
+    "Anthropic sets IPO price range of $70 to $78, looks to start trading Nov. 19, sources say"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic set its IPO price range from $70 to $78 per share to reach an implied valuation of up to $1.4 trillion amid an AI stock sell-off.",
+   "meaning": "这是通用 AI 领域里程碑式的超级 IPO，对整个资本市场和 AI 赛道的估值风向具有决定性影响。",
    "importance": 10
   },
   {
@@ -5465,77 +6156,6 @@
    "importance": 6
   },
   {
-   "id": "194otjc",
-   "lastSeen": "2026-11-11",
-   "title": "Here’s How Much Dario Amodei And His Six Cofounders Could Be Worth Based On Anthropic’s IPO Price Range",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPOHJ5V1p3Zy1aQzduTTNrMEhuaUtlMDF5alNVUE41ekl3em00empDYTlaYWFtVHZOczZNbG1XakFSQzU0anhudWVvT2oydm1WODFHQjVzc2hybWNveVZWam5xQWlmeFJNS01OZEQ2c05pUzFSNVhHT09hU0RmeURjTWpTVUp6b3VhenAxYTl0aEhjNzNrQktNQ3hGVUkxaEo2djRlcWFKVXhtcXNETk9sQmNqTzRxblRxTFlIdlVLdkJNZ1U2Smp3VGdtb1F0aXhta0Q2Z0J0bDRMWC1WUkZFY1AzWUZkUHZS?oc=5",
-   "source": "Forbes",
-   "domain": "forbes.com",
-   "published": "2026-11-10",
-   "outlets": [
-    "Forbes"
-   ],
-   "themes": [],
-   "headlines": [
-    "Here’s How Much Dario Amodei And His Six Cofounders Could Be Worth Based On Anthropic’s IPO Price Range"
-   ],
-   "entities": [
-    "Dario Amodei",
-    "Anthropic"
-   ],
-   "summary": "Dario Amodei and his six cofounders' worth is estimated based on Anthropic's IPO price range.",
-   "meaning": "反映了生成式 AI 浪潮中核心创始团队巨大的个人财富增长，也侧面印证了 AI 行业的爆发力。",
-   "importance": 4
-  },
-  {
-   "id": "5o2lht",
-   "lastSeen": "2026-11-11",
-   "title": "Anthropic sets IPO price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQdjJNdmJTYXR1eFhPRm5fN2lYY3p4MUt4UWhUM0ZVT2VKZ2xaU3hWMTkzTlFGUEV4bWFlY3Z0dVRhVHpETWhCejlJaFhOQXpvenBqc2ZLa1hkOGVySmZodC1ndjhwS01oM3BfR1pPdGhHdUwxQ19LRjgwc1dPbTFfX2hkVEVNQXdOTUU2VjdZR1N6WS13Z2Y2TzdvNGZrWmRZZ00zRlY2OEpVTkx2V25BQThIRFJUakRIcUVDd2h5NmdlTFRKaUx2ei1PbGplUDl6?oc=5",
-   "source": "TechCrunch",
-   "domain": "techcrunch.com",
-   "published": "2026-11-10",
-   "outlets": [
-    "Fortune",
-    "TechCrunch"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic sets IPO range valuing it at up to $1.4 trillion amid AI stock sell-off",
-    "Anthropic sets IPO price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic set its IPO price range from $70 to $78 per share to reach an implied valuation of up to $1.4 trillion amid an AI stock sell-off.",
-   "meaning": "这是通用 AI 领域里程碑式的超级 IPO，对整个资本市场和 AI 赛道的估值风向具有决定性影响。",
-   "importance": 10
-  },
-  {
-   "id": "btmss7",
-   "lastSeen": "2026-11-11",
-   "title": "Anthropic Founders to Cash Out $1.75 Billion in Blockbuster IPO",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQjZtOWRNYjBhbHJRa3R4RGUwUlpWYWpSaXhyQmhEMzAxcHM4YjlzT0hOT21SSWk5SndOMnBLUlNvWV9EeHBmbDVRR3pOLUR2TTdxWnhjUWxYLV8tdVY0cGtVR2k3UlZUa1loLXlFeWxEMWhEMlg3dy0zZWluanFUcmF1MWlELWVzUkZWa1dsdmZReldEdERQZlF3bWhpWWJRak56ZEd2bVJISElIWEVSYjJUMA?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-11-10",
-   "outlets": [
-    "WSJ",
-    "Bloomberg.com"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic Founders’ Stakes Are Worth $18 Billion Apiece at IPO Price",
-    "Anthropic Founders to Cash Out $1.75 Billion in Blockbuster IPO"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic founders' stakes are worth $18 billion apiece at the IPO price, and they plan to cash out $1.75 billion in the blockbuster IPO.",
-   "meaning": "创纪录的创始人身价与巨额套现进一步凸显了当前 AI 产业空前的财富效应。",
-   "importance": 5
-  },
-  {
    "id": "5qcoaw",
    "lastSeen": "2026-11-11",
    "title": "OpenAI acquires Odessia, travel startup created by Sonder founder",
@@ -5582,6 +6202,78 @@
    "summary": "Australia is launching a new AI safety regulator following OpenAI's breach of a government portal.",
    "meaning": "安全合规与政府监管正在成为全球 AI 发展的新常态，合规风险值得持续关注。",
    "importance": 6
+  },
+  {
+   "id": "1tg4q3r",
+   "lastSeen": "2026-11-12",
+   "title": "OpenAI is launching verified business profiles and AI agents inside ChatGPT",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5LZDdPYkRUTjBfaGZMNXd2NlBJczBITmVfOE1ZUjFQaWRMVGU5eDN3LUtseXlaU3I5RHJYWThvdVpIUVV5UzZreDRMZzNVQ0lmUnNmTF90TVZ5bUU3TG9YNVgzeUxTdS1BT2tCTnVmZ1VIdw?oc=5",
+   "source": "Quartz",
+   "domain": "qz.com",
+   "published": "2026-11-10",
+   "outlets": [
+    "The Next Web",
+    "Quartz"
+   ],
+   "themes": [],
+   "headlines": [
+    "OpenAI lets businesses claim ChatGPT profiles and launch their own agents",
+    "OpenAI is launching verified business profiles and AI agents inside ChatGPT"
+   ],
+   "entities": [
+    "OpenAI"
+   ],
+   "summary": "OpenAI now allows businesses to claim ChatGPT profiles and launch their own agents.",
+   "meaning": "This gives enterprises more direct tools to deploy custom AI agents, expanding business adoption of conversational AI.",
+   "importance": 6
+  },
+  {
+   "id": "1l3vmda",
+   "lastSeen": "2026-11-12",
+   "title": "The stock market 'dodged a real bullet' — Cramer on Anthropic's new IPO valuation",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUmQ4UjVKMzh2UVMxSzd1MnRVRG5QbGlVbW10S0taOEFTNjFnWTJIVzZJa25KZXNOZnFHN1J2bUJGb3FGT1hxNEl4MUNfY0tsUTA5aUhjeWRhc3htVWVhTE9iR3pkNTBpZ3VIR1NoejlwZnhyMEJ1dnNqaUt3SVVSaU9wRkswT2tIdzEwZm5teVY3bzVpQlVRVTd3YlNidFdjU1RWQmJIcEZLS1RmUEVTS3Jabw?oc=5",
+   "source": "CNBC",
+   "domain": "cnbc.com",
+   "published": "2026-11-10",
+   "outlets": [
+    "The Guardian",
+    "CNBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic targets valuation of up to $1.4tn in stock market flotation",
+    "The stock market 'dodged a real bullet' — Cramer on Anthropic's new IPO valuation"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic is targeting a valuation of up to $1.4 trillion in its upcoming stock market flotation.",
+   "meaning": "This towering valuation target underscores the extreme financial scale and market expectations placed on leading frontier AI developers.",
+   "importance": 8
+  },
+  {
+   "id": "pvia3b",
+   "lastSeen": "2026-11-12",
+   "title": "Nvidia hires leading US law firm to investigate Jensen Huang’s relationship",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVE0zY21CWUpFX2xVMEZJRll3dzgxc19BYXFXLWxxWnk1eF9uSmtEZU5KVDVqZ29KOEVxdUJpdWlJU3IzQzNfUDVubHV3bzA2WFJwRC02eTdHcWZSb2FJX19JY2hsdHlzdHhlMmZMd2JGN080UnJ0R2lERXdocVowRkd5UlAzODVvclJ3eGVRbW5lZWVuaVpKT2tlNkFCWjdZbHVOVGd3a2E5VlhtNjJUbDRURDlVT0thaGtNWXYtMGtLdw?oc=5",
+   "source": "The Guardian",
+   "domain": "theguardian.com",
+   "published": "2026-11-10",
+   "outlets": [
+    "The Guardian",
+    "BBC"
+   ],
+   "themes": [],
+   "headlines": [
+    "Nvidia hires leading US law firm to investigate Jensen Huang’s relationship",
+    "Jensen Huang: Nvidia hires major US law firm to investigate alleged Chinese spy affair"
+   ],
+   "entities": [
+    "Jensen Huang"
+   ],
+   "summary": "Nvidia聘请了美国知名律所，对其CEO Jensen Huang（黄仁勋）的关系及所谓中国间谍传闻进行调查。",
+   "meaning": "涉及头部AI企业的重大管理层与合规动态，对关注通用AI大厂走向的读者有重要参考价值。",
+   "importance": 5
   },
   {
    "id": "kf5chv",
@@ -5669,28 +6361,6 @@
    ],
    "summary": "Jensen Huang's troubles have left the AI industry reeling.",
    "meaning": "As a key figure in AI hardware, any disruption facing Jensen Huang ripples across the entire artificial intelligence ecosystem.",
-   "importance": 6
-  },
-  {
-   "id": "1tg4q3r",
-   "lastSeen": "2026-11-11",
-   "title": "OpenAI lets businesses claim ChatGPT profiles and launch their own agents",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1JRkZ6THppZVEzaHA1TGprQk0tMXlxZlk5NlpHVG1PVExVXzMwd3ZZU0xxTUpvVkpjRmRIV1l0RXVRT0xyRDE5UGlvLUVpeThMOGVlR0lvbWU4OVd4MXd1T3UtNUxLYm1kNDloRmU1WDlVSFJ3V2VjRmkzdEQ?oc=5",
-   "source": "The Next Web",
-   "domain": "thenextweb.com",
-   "published": "2026-11-10",
-   "outlets": [
-    "The Next Web"
-   ],
-   "themes": [],
-   "headlines": [
-    "OpenAI lets businesses claim ChatGPT profiles and launch their own agents"
-   ],
-   "entities": [
-    "OpenAI"
-   ],
-   "summary": "OpenAI now allows businesses to claim ChatGPT profiles and launch their own agents.",
-   "meaning": "This gives enterprises more direct tools to deploy custom AI agents, expanding business adoption of conversational AI.",
    "importance": 6
   },
   {
@@ -5804,28 +6474,6 @@
    "importance": 7
   },
   {
-   "id": "1l3vmda",
-   "lastSeen": "2026-11-11",
-   "title": "Anthropic targets valuation of up to $1.4tn in stock market flotation",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRWZNcUt6ZldxUnNyTXZySGZacWZueTYtS0JOUVZ2S3JUWENYcThEMm9CSnVXX25QTGJYZGc3UVhKNXloQ0pPdUJpbkxZQ3Q1NEdSMzJEWjB5M3UwVDJ5UjhxdllTMEhjQm41UDg1QndqbE5KWkNBZ3RoMlhHSjM5SDkyN2tmQjZjcEpyNGMxVjF1MV9vRmpJb3d4X1NibmRYd3V5TUNxMGtacGJjXzNqRURn?oc=5",
-   "source": "The Guardian",
-   "domain": "theguardian.com",
-   "published": "2026-11-10",
-   "outlets": [
-    "The Guardian"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic targets valuation of up to $1.4tn in stock market flotation"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic is targeting a valuation of up to $1.4 trillion in its upcoming stock market flotation.",
-   "meaning": "This towering valuation target underscores the extreme financial scale and market expectations placed on leading frontier AI developers.",
-   "importance": 8
-  },
-  {
    "id": "7r1yzq",
    "lastSeen": "2026-11-11",
    "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
@@ -5882,7 +6530,8 @@
    ],
    "themes": [],
    "headlines": [
-    "Traders bet on a pop for Anthropic's historic IPO"
+    "Traders bet on a pop for Anthropic's historic IPO",
+    "Jim Cramer: This is the bet you're making if you buy the Anthropic IPO"
    ],
    "entities": [
     "Anthropic"
@@ -5916,6 +6565,120 @@
    "importance": 8
   },
   {
+   "id": "2svfju",
+   "lastSeen": "2026-11-12",
+   "title": "Oura to acquire Counsel Health for $625 million, placing a big bet on AI care",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQc3pXMEd1Y2otU05qQ0daeElmb3JKOUw3VDgzQ0dSZVhESm5ZVjFic3hxSy1mci1Dc0w3d0V3SDR5UVhuNWhWblg5Q0gxOGJ3NXdUdXZ1WFowRzZNU3NXbG5RbHAxSUJKMzBoM0YtU1UtSGhNR1ZzcU4zSVJnTnR6cG8teGhMUzZz?oc=5",
+   "source": "STAT",
+   "domain": "statnews.com",
+   "published": "2026-11-10",
+   "outlets": [
+    "Fierce Healthcare",
+    "STAT"
+   ],
+   "themes": [
+    "个人健康 AI"
+   ],
+   "headlines": [
+    "Oura to acquire AI virtual primary care partner Counsel Health for $625M",
+    "Oura to acquire Counsel Health for $625 million, placing a big bet on AI care"
+   ],
+   "entities": [],
+   "summary": "Oura以6.25亿美元收购AI虚拟初级医疗合作伙伴Counsel Health，同时公布销售额大幅增长153%。",
+   "meaning": "穿戴设备巨头加码个人健康AI服务，展现了个人健康管理与AI深度结合的巨大商业潜力。",
+   "importance": 9
+  },
+  {
+   "id": "1rdsfu0",
+   "lastSeen": "2026-11-12",
+   "title": "Oura to Buy AI Doctor Startup for $625 Million; Posts 153% Sales Jump",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNUc2cW5PUnNMWVdjX3l5Q0NkQWxSS2JXb3A0aXA0TjM1U3U3UW5udHJxX0tUTFhtXzRQNi10bEJCWGoyZlFaM3oxNFBQOEd2ek1uXzBQTzFmQ2xWSmxkbW1JNGhlMlhWdDRjV0JnUmNSYkFQd1dWVHQzRUl3QkQybURoZVk1OHgwbDNSZHJwWm44TFdndmVISlY1NEpKamF2Q3htYm5oQk4tbzZaRkljeVhpdWhicEljaGMySU9YWF9Dc0lQUEsyNQ?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
+   "published": "2026-11-10",
+   "outlets": [
+    "Bloomberg.com",
+    "Bloomberg"
+   ],
+   "themes": [
+    "个人健康 AI"
+   ],
+   "headlines": [
+    "Oura to Buy AI Doctor Startup for $625 Million; Posts 153% Sales Jump",
+    "Watch Oura to Buy AI Doctor Startup"
+   ],
+   "entities": [],
+   "summary": "Oura以6.25亿美元收购AI医生初创公司，并发布了153%的销售额增长。",
+   "meaning": "印证了个人健康AI和智能硬件结合的市场需求正处于高速爆发期。",
+   "importance": 9
+  },
+  {
+   "id": "1jstw1e",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic's lower-than-expected IPO valuation might not top SpaceX, but it's a 'smart' strategy, experts say",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYnVCSTA4VERVbE9QQmhQbjNENjRrSVhqc21PTnV2bFVtdHNCWXRFLUxBWVpqemFlN21FcXhobDh2OGRXTGNqNXJaUXBpOVZjcmk3czg4Tlo3Ukp0NlloaWpTNk44OV9IZDJHUmpKb0hPdndlVjNTZEdsX3hpVUJJT2dMS2dMXzVQd2ZqXzFtSEo2YjlqeGtETDdiWXJLNUNjelQ3Ng?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-11-10",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's lower-than-expected IPO valuation might not top SpaceX, but it's a 'smart' strategy, experts say"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "专家认为Anthropic低于预期的IPO估值可能无法超过SpaceX，但这是一个明智的策略。",
+   "meaning": "反映了当前AI行业头部公司的资本市场表现与估值策略变化，是不可错过的通用AI大事件。",
+   "importance": 7
+  },
+  {
+   "id": "1omwob5",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic's path from AI startup to industry-defining IPO",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQa0R5YUh3ZWFLeEFIWkZaOWRqdUJTVWRveTdmMmpIWDR6enhRam9OX3FzUEpJMkJhUFhHclBKMHFqQldFbW4xRm9seERZNGVpOVVtcW85dWtmckM5czBtcmhzd0hDc1FyV3dmb3luank2MFhHRXNuTkRLU3k5bUFVSU1iRU01b0x3aEMyQm1BcGtmbDg5UXQwWVl0WQ?oc=5",
+   "source": "Reuters",
+   "domain": "reuters.com",
+   "published": "2026-11-10",
+   "outlets": [
+    "Reuters"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic's path from AI startup to industry-defining IPO"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "Anthropic走过了从AI初创公司到定义行业IPO的道路。",
+   "meaning": "标志着头部AI大模型公司走向成熟和资本化的重要里程碑，展现了行业格局的演变。",
+   "importance": 7
+  },
+  {
+   "id": "5o2lht",
+   "lastSeen": "2026-11-12",
+   "title": "Anthropic sets IPO range valuing it at up to $1.4 trillion amid AI stock sell-off",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbV9mQ3ZCMndTelJNc2c1WWNMbUFzbF8tREs3eFFWNlMzV0t4Y2JMcm9xeFFJcVBmT2w4akZNVXFNQVp4TEhzaTN0THhfbUl5R2h2NjhrVXVxMWpkVzJqLVZGeGI5VWRad1JyM05xRDkyWUd3TmxuaWxPWjBUOVVFOA?oc=5",
+   "source": "Fortune",
+   "domain": "fortune.com",
+   "published": "2026-11-10",
+   "outlets": [
+    "Fortune"
+   ],
+   "themes": [],
+   "headlines": [
+    "Anthropic sets IPO range valuing it at up to $1.4 trillion amid AI stock sell-off"
+   ],
+   "entities": [
+    "Anthropic"
+   ],
+   "summary": "在AI股票抛售潮中，Anthropic设定了高达1.4万亿美元估值的IPO区间。",
+   "meaning": "在市场波动背景下揭示了顶级AI独角兽的定价预期，直接影响整个AI板块的资本风向。",
+   "importance": 8
+  },
+  {
    "id": "yyv7pd",
    "lastSeen": "2026-11-11",
    "title": "Real estate is debating AI. It's time to start measuring it",
@@ -5936,50 +6699,6 @@
    "summary": "房产行业正在讨论AI，并认为现在是开始衡量其成效的时候了。",
    "meaning": "房产AI正从概念探讨走向效果评估，对寻找行业落地机遇有参考价值。",
    "importance": 5
-  },
-  {
-   "id": "2svfju",
-   "lastSeen": "2026-11-11",
-   "title": "Oura to acquire AI virtual primary care partner Counsel Health for $625M",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQS01R0tFeUpNc1ZTV2w3U0FsUjJjWHJkNWhmQ0FwTWJqenBnOFo0Vml2Z0xIcnNpVXp3QVhDZDc4bmhYV3RBWkJoWmkyNERiOW1lZXQ0eWV3YWR4MzMwS2VlYVRFQkw3aWxVZ3c0R1VCU0ZTRHgwYW5NTjRobVFlSldQWnlxaTg3SUFrM0ppYi10cHpVRjM5cnFBQUNIRGFPOFFkYkJ2dWQ5T2h2WWk4di1n?oc=5",
-   "source": "Fierce Healthcare",
-   "domain": "fiercehealthcare.com",
-   "published": "2026-11-10",
-   "outlets": [
-    "Fierce Healthcare"
-   ],
-   "themes": [
-    "个人健康 AI"
-   ],
-   "headlines": [
-    "Oura to acquire AI virtual primary care partner Counsel Health for $625M"
-   ],
-   "entities": [],
-   "summary": "Oura以6.25亿美元收购AI虚拟初级医疗合作伙伴Counsel Health，同时公布销售额大幅增长153%。",
-   "meaning": "穿戴设备巨头加码个人健康AI服务，展现了个人健康管理与AI深度结合的巨大商业潜力。",
-   "importance": 9
-  },
-  {
-   "id": "1rdsfu0",
-   "lastSeen": "2026-11-11",
-   "title": "Oura to Buy AI Doctor Startup for $625 Million; Posts 153% Sales Jump",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNUc2cW5PUnNMWVdjX3l5Q0NkQWxSS2JXb3A0aXA0TjM1U3U3UW5udHJxX0tUTFhtXzRQNi10bEJCWGoyZlFaM3oxNFBQOEd2ek1uXzBQTzFmQ2xWSmxkbW1JNGhlMlhWdDRjV0JnUmNSYkFQd1dWVHQzRUl3QkQybURoZVk1OHgwbDNSZHJwWm44TFdndmVISlY1NEpKamF2Q3htYm5oQk4tbzZaRkljeVhpdWhicEljaGMySU9YWF9Dc0lQUEsyNQ?oc=5",
-   "source": "Bloomberg.com",
-   "domain": "bloomberg.com",
-   "published": "2026-11-10",
-   "outlets": [
-    "Bloomberg.com"
-   ],
-   "themes": [
-    "个人健康 AI"
-   ],
-   "headlines": [
-    "Oura to Buy AI Doctor Startup for $625 Million; Posts 153% Sales Jump"
-   ],
-   "entities": [],
-   "summary": "Oura以6.25亿美元收购AI医生初创公司，并发布了153%的销售额增长。",
-   "meaning": "印证了个人健康AI和智能硬件结合的市场需求正处于高速爆发期。",
-   "importance": 9
   },
   {
    "id": "1tz4px9",
@@ -6157,7 +6876,8 @@
    ],
    "themes": [],
    "headlines": [
-    "'It is not the savior of the universe': A faith-based investor's view on the Anthropic IPO"
+    "'It is not the savior of the universe': A faith-based investor's view on the Anthropic IPO",
+    "Anthropic's IPO is an investor referendum on AI"
    ],
    "entities": [
     "Anthropic"
@@ -6737,43 +7457,6 @@
    "importance": 6
   },
   {
-   "id": "uptgg4",
-   "lastSeen": "2026-11-09",
-   "title": "Read the Statements From Nvidia’s Board and CEO Jensen Huang",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSWRiUGFlN2dtR1drNzJEbGU1R0JldDl2ZS10dVUyQVJQamFXejVMaEpPOUlxdkt1MlZJb1pQNDVNVzBqd2ptN0RoY1h2SDE2N29qbmRsQUxUMUdTaUdzV0JlMHdBVDJGeE96QXBVN25qcThKT01kUGRDMVJWeUxaYlNFd0ZwWkgtSE0xa1dIVlNmWTBQUjNLMHljOUNjOUNWMUZYMk1WQXVOQQ?oc=5",
-   "source": "Bloomberg",
-   "domain": "bloomberg.com",
-   "published": "2026-11-06",
-   "outlets": [
-    "Tom's Hardware",
-    "CNBC",
-    "TechCrunch",
-    "Axios",
-    "AP News",
-    "Semafor",
-    "Business Insider",
-    "Bloomberg",
-    "Engadget"
-   ],
-   "themes": [],
-   "headlines": [
-    "US intelligence believes Jensen Huang had romantic relationship with Chinese spy in honeypot operation — spy suspect linked to company accused of smuggling $2 billion in AI chips",
-    "Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy",
-    "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
-    "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
-    "\"Congress will investigate\": Nvidia CEO Jensen Huang faces probe over alleged Chinese spy ties",
-    "Nvidia CEO Jensen Huang seen as target of Chinese spy plot, according to the New York Times",
-    "Nvidia investigating reports that CEO Jensen Huang was targeted by Chinese intelligence",
-    "Nvidia CEO Jensen Huang admits to having an affair with suspected Chinese spy — Jensen apologizes in letter to staff, company board forms independent committee to investigate"
-   ],
-   "entities": [
-    "Jensen Huang"
-   ],
-   "summary": "美国情报部门认为Jensen Huang曾与中国间谍有恋爱关系，该嫌疑人涉嫌参与走私20亿美元AI芯片的公司。",
-   "meaning": "这涉及芯片供应链安全及中国AI发展背景下的地缘政治风险，对关注中国AI及全球半导体格局的读者具有很高关注度。",
-   "importance": 7
-  },
-  {
    "id": "5jh82e",
    "lastSeen": "2026-11-09",
    "title": "OpenAI gets $11 billion funding at $1.25 trillion valuation, source says",
@@ -7206,24 +7889,26 @@
   },
   {
    "id": "1nmsfic",
-   "lastSeen": "2026-11-11",
-   "title": "So, about that Anthropic IPO . . .",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPTDFpWXVOM3NsY0RVRENnZ0xaRXJlbXdmdGh6U3gtWDl4UnN2aWR0X2RWTzRCQnRZM1QzbzBfMzgwSEpiUFp0NUFXZmRIamNhSnFnRUowZUZiYkxNMzNueHdUMFdRWGd5aHVVVGdxcGFyOHJfM2VvajRaMDVSTk5SWFVPWXI?oc=5",
-   "source": "Financial Times",
-   "domain": "ft.com",
+   "lastSeen": "2026-11-12",
+   "title": "What to Know About the Anthropic IPO",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNFZlX0FjZThoNGMzVHJ3VTJid3RxRFJ5Qk1CV2REODVEdTJUR1g0OVRZSjVHVzkwNGhYWXJxeWpubnlhaUtFWjgwT3R3TVNJTFBYbjdibWRBOXhzSGdXRWV5RW5lTmt0SzhKNmIyMjh4Y3g4RTJ1M211X1JLeklBMkpwR09OTzVCY2xlUGljWUUwUzVPT3MzNzdBYllEbU1DUUdIcHRB?oc=5",
+   "source": "Bloomberg.com",
+   "domain": "bloomberg.com",
    "published": "2026-11-05",
    "outlets": [
     "Financial Times",
     "Business Insider",
     "Quartz",
-    "TechCrunch"
+    "TechCrunch",
+    "Bloomberg.com"
    ],
    "themes": [],
    "headlines": [
     "So, about that Anthropic IPO . . .",
     "What Anthropic's Roadshow Video Says About Its IPO Pitch",
     "Anthropic's founders each plan to cash out about $250 million in its IPO",
-    "All 7 Anthropic founders will each cash out about $250M in IPO"
+    "All 7 Anthropic founders will each cash out about $250M in IPO",
+    "What to Know About the Anthropic IPO"
    ],
    "entities": [
     "Anthropic"
@@ -7748,412 +8433,25 @@
    "summary": "AI firms are eying Weil amidst the law firm's wind-down.",
    "meaning": "传统法律机构的变动为AI企业切入法律垂直场景提供了潜在的整合与合作机会。",
    "importance": 7
-  },
-  {
-   "id": "1r2o0iq",
-   "lastSeen": "2026-11-10",
-   "title": "Liang Wenfeng Steps Down: What Is DeepSeek Seeking After His Departure?",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE16TURqREs5OFh0dVVKYm53dlpWcHA2SjRlSUJFQ0EtczU0cEY1U1NiaEJWY19qNzdjZE9ERzdDV3dlUEMycEdESDdNTlJxYnc0alg0?oc=5",
-   "source": "36氪",
-   "domain": "eu.36kr.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "36氪",
-    "36Kr",
-    "eu.36kr.com"
-   ],
-   "themes": [],
-   "headlines": [
-    "Liang Wenfeng Steps Down: What Is DeepSeek Seeking After His Departure?"
-   ],
-   "entities": [
-    "Liang Wenfeng",
-    "DeepSeek"
-   ],
-   "summary": "Liang Wenfeng卸任，引发了关于DeepSeek在他离开后追求什么的讨论。",
-   "meaning": "作为中国AI领域的重量级玩家，高层变动直接关系到DeepSeek未来的发展路线与中国AI竞争格局。",
-   "importance": 8
-  },
-  {
-   "id": "18gnv40",
-   "lastSeen": "2026-11-11",
-   "title": "Anthropic's filing for blockbuster US IPO shows key executives and board",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMXVGRE5pbW9hdXg1cFlZeXFUV0ozemNua3MxenF4TVRneF9oRjlfYmFlSnQ2N2Vhd3dBUXVFQ2hfdE8wcDlWOERkWng2aDh0VGlaRWdfdWR4LUF6WEVScE5OVnl2aEVpdGtfQ3hfRUNNaEplc0xpajBKMkVtbjN5bEYtQU9tQVJwUndHZ1dvUlN4NjgxNV9EUURycEY?oc=5",
-   "source": "Reuters",
-   "domain": "reuters.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "Fortune",
-    "Reuters"
-   ],
-   "themes": [],
-   "headlines": [
-    "Dario Amodei wants 'a country of geniuses in a data center.' Realizing that vision requires risky financial mechanics, Anthropic's IPO filing shows",
-    "Anthropic's filing for blockbuster US IPO shows key executives and board"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic的IPO文件显示，Dario Amodei希望在一个数据中心里打造一个“天才国家”，但实现这一愿景需要承担风险的财务机制。",
-   "meaning": "这展示了头部AI巨头在资本运作和宏大愿景上的最新动向，属于不容错过的通用AI大事。",
-   "importance": 7
-  },
-  {
-   "id": "5v6kzy",
-   "lastSeen": "2026-11-04",
-   "title": "Exclusive: OpenAI targets Microsoft's GitHub with deal for startup",
-   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5OaUdITlV1WEtmam1aNDlWMG4yd1hMZXBSc19qTExTVkdOeTgtbkt0VGtzWklpUlg0VENqOXBmUjlZUjEtNmNPdDdBak01dmRZTlAtd0kyTlA4WFlQdFVVUHluVFpKNjZPQS1CRWRHcw?oc=5",
-   "source": "Axios",
-   "domain": "axios.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "Axios"
-   ],
-   "themes": [],
-   "headlines": [
-    "Exclusive: OpenAI targets Microsoft's GitHub with deal for startup"
-   ],
-   "entities": [
-    "OpenAI",
-    "Microsoft AI"
-   ],
-   "summary": "独家消息称OpenAI通过收购初创公司，将目标对准了Microsoft的GitHub。",
-   "meaning": "这意味着AI代码工具领域的竞争将进一步白热化，直接影响开发者生态与巨头竞争格局。",
-   "importance": 6
-  },
-  {
-   "id": "1r16iok",
-   "lastSeen": "2026-11-06",
-   "title": "Sam Altman joked about AI's thirst for memory with a new social media nickname",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQ0ZjLWNOSHhNLURmZmlPZEdzNVNSSVBybUZ1ZTA5aUlmNVFPeGxMaWtnTFhpaE02WWVEU3YySXJPQU5VclJvQlBITTRkMFNOLVhtQ0Y5NG9UZG5xMktQQ1NZYTMwRW9zcm5LeUdLQTJJZVZTRk1CVGFUdWYzQ01yMEdDTDZhdjBMRUZaNnJuM29HbW1UU25ta0xmUQ?oc=5",
-   "source": "Business Insider",
-   "domain": "businessinsider.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "Business Insider",
-    "Business Insider Africa"
-   ],
-   "themes": [],
-   "headlines": [
-    "Sam Altman joked about AI's thirst for memory with a new social media nickname"
-   ],
-   "entities": [
-    "Sam Altman"
-   ],
-   "summary": "Sam Altman recently adopted a new social media nickname to joke about AI's high demand for memory. This playful jab highlights ongoing resource challenges in the AI industry.",
-   "meaning": "虽然属于行业趣闻，但它侧面反映了算力和内存瓶颈依然是当前AI发展的重要话题，属于通用AI领域的轻松花絮。",
-   "importance": 3
-  },
-  {
-   "id": "1h8pskb",
-   "lastSeen": "2026-11-04",
-   "title": "States agreed to ‘fully, finally, and forever’ release Meta from claims they didn’t know existed",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOT2pKaGZYMG5oYWE0X0RNUjNuYjU4UlVXeHgwazhvMmxDSzc2MmlCUnZLUm1TRTZqbDlqWGIzWDFuaHZ0NzhlRmpjVGItcGdrSFVJNXJJYlpUWDJSU3d6WGVBODlWcWZxUlM1SE5lQS11VUVYaWpXT0ZSNkdYSWgtdVVZQ1hzSmpMUUtCNnVZX0ZNOTRlZUhSa1d3?oc=5",
-   "source": "Fortune",
-   "domain": "fortune.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "Fortune"
-   ],
-   "themes": [],
-   "headlines": [
-    "States agreed to ‘fully, finally, and forever’ release Meta from claims they didn’t know existed"
-   ],
-   "entities": [
-    "Meta GenAI / FAIR"
-   ],
-   "summary": "各州同意“全面、最终且永远”地解除Meta未知的各项索赔。",
-   "meaning": "这减少了Meta在生成式AI等合规方面的潜在法律风险，有利于其后续业务推进。",
-   "importance": 4
-  },
-  {
-   "id": "pqk1y3",
-   "lastSeen": "2026-11-04",
-   "title": "Watch CNBC's full interview with AMD CEO Lisa Su",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOVJIMGQ3dHZfV0EzTWZtdzBaRlVDYTZrVGZzYkRBcnVyNzNfTzBGVzdwQk5aekxvazVyaVNFVjNLRm5yWVJLQmlKZG5uVmtQMW1YZzdVeldwNlFNd1BrNXJRWnNaa1MzY2pXaV9yOGdRczNid1Q1N3J2a2ZmS0dHRHhXenh1anFDY05XVTdqYlYzcEp4?oc=5",
-   "source": "CNBC",
-   "domain": "cnbc.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "CNBC"
-   ],
-   "themes": [],
-   "headlines": [
-    "Watch CNBC's full interview with AMD CEO Lisa Su"
-   ],
-   "entities": [
-    "Lisa Su"
-   ],
-   "summary": "CNBC播出了对AMD CEO Lisa Su的完整采访。",
-   "meaning": "可以了解芯片巨头对AI硬件和行业趋势的最新判断。",
-   "importance": 4
-  },
-  {
-   "id": "1bgyerv",
-   "lastSeen": "2026-11-04",
-   "title": "AMD苏姿丰：AI行业仍处于“非常早期阶段”，计划增加20亿英镑对英投资",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NdFFPVnlqQWROQjVIX3VydnFFQlZPNWQ3MHpXNDluWEtkQU4xQndCY1U1VElpWVB5dVI2NHpmcXo5UEZJRlAxNXVIYVY0ZkdMZmlj?oc=5",
-   "source": "第一财经",
-   "domain": "yicai.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "第一财经"
-   ],
-   "themes": [],
-   "headlines": [
-    "AMD苏姿丰：AI行业仍处于“非常早期阶段”，计划增加20亿英镑对英投资"
-   ],
-   "entities": [
-    "Lisa Su"
-   ],
-   "summary": "AMD CEO Lisa Su表示AI行业仍处于“非常早期阶段”，并计划增加20亿英镑对英投资。",
-   "meaning": "这表明硬件基础设施的投资热潮仍在持续，对支撑整个AI行业的发展至关重要。",
-   "importance": 6
-  },
-  {
-   "id": "1sde4az",
-   "lastSeen": "2026-11-04",
-   "title": "Hugging Face’s CEO Says His P(Doom) Is ‘Close to Zero’",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONkFqQWJLUHBsaXMyaDJVeE5ZM2dnbl9zMFNmdW8wSEN5blEyNFVXVHVfdU9sanRSSjUxRVVrbUxvbHN0WXkzMzc2bllTSjhFN2FlTXNkclVXVWVHSmprcV9GZUp4MHhNdGhjWm5Ccko1cTRMTGstQXFTamZPUDROb3BEVmg3MHM?oc=5",
-   "source": "WIRED",
-   "domain": "wired.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "WIRED"
-   ],
-   "themes": [],
-   "headlines": [
-    "Hugging Face’s CEO Says His P(Doom) Is ‘Close to Zero’"
-   ],
-   "entities": [
-    "Hugging Face"
-   ],
-   "summary": "Hugging Face的CEO表示，他对AI末日论（P(Doom)）的估计“接近零”。",
-   "meaning": "开源社区领袖的理性乐观态度有助于缓解行业对AI安全过度恐慌的情绪。",
-   "importance": 4
-  },
-  {
-   "id": "17ijvop",
-   "lastSeen": "2026-11-04",
-   "title": "OpenAI to Bring Pierre Computer’s Code Storage to Codex Through Acquisition",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMHB3WDNrSi01NF8zXzUyZWdSb0U0ZUZyVlZWUF9jeVBfeHVTNkpESjFRSk1FWTk1aFZNcVl2LTRXdlpnR2N5eTRURXJMZkVRM0o5dlVSZWRuY0dVc2ZRTGRLb3M1WVZjRk54Z0doRGt2MVlDTURZaHR6LWpPR3RiT0FmU19vWWd6dE5iY3FLOWozZkNhSHJENktiRGtmc3dJM2xXSDFyOFNlM0N2b2FLWQ?oc=5",
-   "source": "WSJ",
-   "domain": "wsj.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "WSJ"
-   ],
-   "themes": [],
-   "headlines": [
-    "OpenAI to Bring Pierre Computer’s Code Storage to Codex Through Acquisition"
-   ],
-   "entities": [
-    "OpenAI"
-   ],
-   "summary": "OpenAI将通过收购Pierre Computer，把其代码存储技术引入Codex。",
-   "meaning": "这将进一步增强OpenAI在编程AI助手领域的实力。",
-   "importance": 5
-  },
-  {
-   "id": "5fo04m",
-   "lastSeen": "2026-11-04",
-   "title": "Anthropic is an opportunity to rethink IPO rules",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA5cDVEUkRxQnRYNVFuXzFUUmhUZDVxazZBYVRmN0hnX3YxTm1LWHo5TE53Z1NXRG5nTXhldlhQa2ZKdVFOM0JfODV2clN1WndfODZtNjYyYVlkTlNwU3FtREdlVWRBTlc3eWg4RGl4d08?oc=5",
-   "source": "Financial Times",
-   "domain": "ft.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "Financial Times"
-   ],
-   "themes": [],
-   "headlines": [
-    "Anthropic is an opportunity to rethink IPO rules"
-   ],
-   "entities": [
-    "Anthropic"
-   ],
-   "summary": "Anthropic的上市进程被视为重新思考IPO规则的一个机会。",
-   "meaning": "反映出AI独角兽企业在资本市场正受到特殊关注，可能重塑科技股上市的标准。",
-   "importance": 5
-  },
-  {
-   "id": "1vp0r24",
-   "lastSeen": "2026-11-04",
-   "title": "A rare second exit: AI startup Suplari acquired by Docusign nearly 3 years after Microsoft spinout",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPejYzVEt5YXNiZnJxLVpkalA2Y0g3RWdLNkZRUlpRXzd5X0FGSVhmZFVOOTdDXzJCczNFTllVY1F0SG93T1lmYzlBRzVHVk5jcWJPTExCaG5SdDZ4REtGSmZHNHBzcVRnY0dGT3hQLWF0UGlzN1ZKWHZ3XzRWZklQM3NqbnBmalBHeFdkcWowQ1RmZ0pZUU1YeV8xRmdtUnZhZHYwOE44N0dlUWxhM0lqblZ2OG1TVE9qdERqSERB?oc=5",
-   "source": "GeekWire",
-   "domain": "geekwire.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "GeekWire"
-   ],
-   "themes": [],
-   "headlines": [
-    "A rare second exit: AI startup Suplari acquired by Docusign nearly 3 years after Microsoft spinout"
-   ],
-   "entities": [
-    "Microsoft AI"
-   ],
-   "summary": "AI startup Suplari has been acquired by Docusign nearly three years after spinning out from Microsoft. This represents a rare secondary exit in the current market.",
-   "meaning": "这展示了AI初创企业在微软孵化后走向独立收购的资本路径，对于关注企业级AI并购和通用AI市场动态的读者具有一定参考价值。",
-   "importance": 4
-  },
-  {
-   "id": "14goyi2",
-   "lastSeen": "2026-11-05",
-   "title": "Meta isn't naming its AI models after fruit anymore",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTTJSMm1rRXgwR3VVOER1ZUtiYkQ1aVJpakFldU5vSEV1SVBhZXpGSGdiOU5ZSnowTHRDX2wwaU9fUVlDRUkwQlNlbXVzWk5KSG9KXy1oZnBvMkkzY0lwOUdOckk2WUlZRTZHcFYxS1N1OVpTSWtNVklGd3pBRnkzOVMwUmFFTm5wRnNoTDNvM1Y?oc=5",
-   "source": "Business Insider",
-   "domain": "businessinsider.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "Business Insider"
-   ],
-   "themes": [],
-   "headlines": [
-    "Meta isn't naming its AI models after fruit anymore"
-   ],
-   "entities": [
-    "Meta GenAI / FAIR"
-   ],
-   "summary": "Meta is no longer naming its AI models after fruit.",
-   "meaning": "Meta对其AI模型的命名策略进行了调整，展现出更加成熟和规范的品牌形象管理。",
-   "importance": 3
-  },
-  {
-   "id": "k5hyx5",
-   "lastSeen": "2026-11-05",
-   "title": "Not even $200 million could help Elon Musk buy Texas",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNaUN2cjR4UDV1ZVYzRkYtbTJWVm02enJ2X1JoQUU4VmZtOURGTjAyY0lIM21PUk9XZGphODAtTXBKdUFzZnBINEFveGtFQkVQNjRfbElieHpyVm1aOEdKMmRTdUNnVjBRQ2ZYX0EyN0plTHREeDM4VUpoUkpfdWZHeHI3ODNkTE9FZFc2SVIwbWpWdw?oc=5",
-   "source": "The Verge",
-   "domain": "theverge.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "The Verge"
-   ],
-   "themes": [],
-   "headlines": [
-    "Not even $200 million could help Elon Musk buy Texas"
-   ],
-   "entities": [
-    "Elon Musk"
-   ],
-   "summary": "Reports note that even $200 million could not help Elon Musk buy Texas.",
-   "meaning": "这反映了大型科技项目在地方拓展时面临的现实阻力，属于行业周边的趣闻动态。",
-   "importance": 3
-  },
-  {
-   "id": "ocdsrz",
-   "lastSeen": "2026-11-05",
-   "title": "Watch Open Source Models Will Convince People AI Isn’t Bad: Hugging Face CEO",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNd3ZxTjRZekl3X3dFOHJybDBEckVkdkNxWXVlNEhVMjlhalFZOVNpMnJ5dkU1RC1keGtpcGMwUm1Pa2Jvc2cxRmZRVE12VEhhZXZzN3p6amxFdWEzT3hjOGQyOTlzSFJVNFVxZUwzd010Q3FGMF9jWlZkTWFhRVFfOFhuUWlxcGl3RXYtbU5weFVranR6T2ZRNHRCblBtLXcyaktSUg?oc=5",
-   "source": "WIRED",
-   "domain": "wired.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "WIRED"
-   ],
-   "themes": [],
-   "headlines": [
-    "Watch Open Source Models Will Convince People AI Isn’t Bad: Hugging Face CEO"
-   ],
-   "entities": [
-    "Hugging Face"
-   ],
-   "summary": "Hugging Face CEO stated that open-source models will convince people AI isn't bad.",
-   "meaning": "开源AI的发展和普及有助于增强公众对技术的信任，对整个开源生态及开发者社区具有积极意义。",
-   "importance": 6
-  },
-  {
-   "id": "d8aiyz",
-   "lastSeen": "2026-11-06",
-   "title": "Meta acquires AI coding startup Conductor",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNN19TcVZuaV9yaGFQME5CT1ZVWnlsa3VYY2xTOGRyNXMtcnUtU1o1ckdaTEI3MHlxemp3YTdMYmxHWTE5Wko0MEpNSThPVnBFWWZRZks0N3E3RzRXYnlIakJTR3BUbG9QT1kyMm9aUUMza19TSC1SU0o4N2RzY1lJdmFn?oc=5",
-   "source": "TechCrunch",
-   "domain": "techcrunch.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "TechCrunch"
-   ],
-   "themes": [],
-   "headlines": [
-    "Meta acquires AI coding startup Conductor"
-   ],
-   "entities": [
-    "Meta GenAI / FAIR"
-   ],
-   "summary": "Meta acquired AI coding startup Conductor. This move expands Meta's AI capabilities in software development.",
-   "meaning": "As a major industry move in general AI, it reflects the ongoing consolidation and talent acquisition in the AI coding space.",
-   "importance": 6
-  },
-  {
-   "id": "3m07n",
-   "lastSeen": "2026-11-08",
-   "title": "AMD CEO Lisa Su: It is a very strong time in terms of demand for compute",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPajB3ck9XcUN2Qi1rR3hZMVFwUGpibmJwRlJFYmJCRHhJWTZKUlREVUtyeTB5aVFsdEdXUjdSbnpGRWw3Z1NpUUYwNmhfSWd3WU4xMDdUdGJIUWJhRlQ4NmlrN0xIN3F4TDhUeTJCczBneW8wc01Kd0NrU3Zfc0NJNzFtWnZMdDFWWFkwLUdEcHI3SmpEX2IySWxlOVdSQkNUM2RWM3R0RGthSlJMcWc?oc=5",
-   "source": "CNBC",
-   "domain": "cnbc.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "CNBC"
-   ],
-   "themes": [],
-   "headlines": [
-    "AMD CEO Lisa Su: It is a very strong time in terms of demand for compute"
-   ],
-   "entities": [
-    "Lisa Su"
-   ],
-   "summary": "AMD CEO Lisa Su stated that it is a very strong time in terms of demand for compute. This reflects the ongoing robust market need for hardware processing power.",
-   "meaning": "Strong compute demand underpins the continued hardware expansion for AI training and deployment, signaling that foundational scaling remains a priority.",
-   "importance": 5
-  },
-  {
-   "id": "1e7tfpr",
-   "lastSeen": "2026-11-04",
-   "title": "A Brief History of Generative Legal AI",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaUxOc1dhaEQzbnNTRHNDU29NWlc5SE5YWWxBTnJ1RHp4dkEtVEdqdDVqWW1LbHFaX3ZaUTFQTkI5RF84UnZKOGhCYVBjOEx2STFsQndIb3Z6VFBkVm9JVFh3anJCR0ZMd1ppT19GRTdOUnc4ZTFHV19jNzR1Y19MRFZMUHloQjBuUXVB?oc=5",
-   "source": "Artificial Lawyer",
-   "domain": "artificiallawyer.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "Artificial Lawyer"
-   ],
-   "themes": [
-    "法律 AI"
-   ],
-   "headlines": [
-    "A Brief History of Generative Legal AI"
-   ],
-   "entities": [],
-   "summary": "文章梳理了生成式法律AI的简短发展历史。",
-   "meaning": "直接契合法律AI的发展脉络，有助于了解AI在法律垂直领域的落地演变。",
-   "importance": 7
-  },
-  {
-   "id": "1clav9m",
-   "lastSeen": "2026-11-05",
-   "title": "Taipei hospital builds kidney injury risk AI",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWFNyaTYzU1I5SWV4TW9xWExqSV8xN3lXeDNXM3lnbnpwVGxMM1FvT0hlSXo1aFNKb1FGSHJQaENvOXUwaFhfX2UwM2M3UUJ1djdSUG0wNF9nbEhMWjExREEyenBkNE4zMGNxYjAzYU5naWtVdFlGbnVtMVZ4TkFkQlBuejR0dFJZd0dwbG1nTWdfdw?oc=5",
-   "source": "Healthcare IT News",
-   "domain": "healthcareitnews.com",
-   "published": "2026-11-04",
-   "outlets": [
-    "Healthcare IT News"
-   ],
-   "themes": [
-    "医疗 AI"
-   ],
-   "headlines": [
-    "Taipei hospital builds kidney injury risk AI"
-   ],
-   "entities": [],
-   "summary": "A Taipei hospital has built a kidney injury risk AI. This clinical application aims to assess patient risks.",
-   "meaning": "This is a direct example of medical AI in hospital deployment, showing how clinical AI is being adopted for diagnosis and risk prediction.",
-   "importance": 8
   }
  ],
  "digests": [
+  {
+   "date": "2026-11-12",
+   "ids": [
+    "btmss7",
+    "1l3vmda",
+    "1pqzjft",
+    "1ja1mfi",
+    "ofq628",
+    "194otjc",
+    "1ypm8lu",
+    "5qcoaw",
+    "14nbkhs"
+   ],
+   "scanned": 180,
+   "events": 110
+  },
   {
    "date": "2026-11-11",
    "ids": [
@@ -8249,29 +8547,13 @@
    ],
    "scanned": 126,
    "events": 93
-  },
-  {
-   "date": "2026-11-05",
-   "ids": [
-    "18gnv40",
-    "5v6kzy",
-    "kasxuk",
-    "1e7tfpr",
-    "1j56cas",
-    "60m66c",
-    "ouxiee",
-    "10p9l18",
-    "1bgyerv"
-   ],
-   "scanned": 136,
-   "events": 101
   }
  ],
  "weekly": [
   "1npk57z",
-  "1hm27uo",
-  "1ct7mqv",
-  "vhe5zs",
-  "1lu5q33"
+  "2svfju",
+  "1rdsfu0",
+  "1fj3e44",
+  "1hm27uo"
  ]
 }

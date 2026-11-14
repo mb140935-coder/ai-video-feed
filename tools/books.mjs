@@ -268,7 +268,7 @@ const main = async () => {
   const same = JSON.stringify(content) === JSON.stringify({ books: previous.books || {} });
   report.push(`${rows.length} books, ${searchedThisRun} searched${same ? ', no change' : ''}`);
   console.log(report.join('\n'));
-  if (!same) fs.writeFileSync(outPath, `${JSON.stringify({ updated: new Date().toISOString(), ...content }, null, 2)}\n`);
+  if (!same || !fs.existsSync(outPath)) fs.writeFileSync(outPath, `${JSON.stringify({ updated: new Date().toISOString(), ...content }, null, 2)}\n`);
 };
 
 await main();

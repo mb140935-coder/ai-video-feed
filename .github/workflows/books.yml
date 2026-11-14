@@ -42,6 +42,7 @@ jobs:
       - name: Commit and push
         working-directory: feed
         run: |
+          [ -f books.json ] || exit 0
           git add books.json
           if git diff --cached --quiet; then
             echo "No changes"

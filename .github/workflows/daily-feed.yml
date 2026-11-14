@@ -60,5 +60,10 @@ jobs:
             echo "No changes"
           else
             git commit -m "Update auto feed"
-            git push origin auto-feed
+            # The hourly book list job (books.yml) pushes books.json to the same branch; rebase if it got there first.
+            for attempt in 1 2 3; do
+              git pull --rebase origin auto-feed && git push origin auto-feed && exit 0
+              sleep 10
+            done
+            exit 1
           fi

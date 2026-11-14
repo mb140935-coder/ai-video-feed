@@ -1,0 +1,55 @@
+# Hourly: 📚 我的书单 — finds audiobooks and explanations for books newly added on the page (tools/books.mjs) and
+# writes books.json on the auto-feed branch. A run with no new book changes nothing and commits nothing.
+name: Book list update
+
+on:
+  schedule:
+    - cron: '37 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/books.yml'
+      - 'tools/books.mjs'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: books
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check out the auto-feed branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git fetch --depth 1 origin auto-feed:refs/remotes/origin/auto-feed
+          git worktree add -B auto-feed feed origin/auto-feed
+
+      - name: Search books
+        run: node tools/books.mjs feed/books.json
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      # The daily feed job pushes to the same branch (another file), so rebase onto it when it got there first.
+      - name: Commit and push
+        working-directory: feed
+        run: |
+          git add books.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Update book list"
+          for attempt in 1 2 3; do
+            git pull --rebase origin auto-feed && git push origin auto-feed && exit 0
+            sleep 10
+          done
+          exit 1

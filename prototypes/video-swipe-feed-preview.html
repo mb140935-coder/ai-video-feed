@@ -363,6 +363,24 @@
     /* 📖 阅读: the book list, then a full-screen PDF reader. */
     .reader-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
     .reader-head button, .reader-key-form button { flex: none; min-height: 36px; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 14px; background: var(--raised); color: var(--text); font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; }
+    .reader-head-buttons { display: flex; flex: none; gap: 6px; }
+    .booklist-badge { display: inline-block; min-width: 16px; margin-left: 4px; border-radius: 999px; padding: 0 5px; background: #c0392b; color: #fff; font-size: 11px; line-height: 16px; text-align: center; }
+    .booklist-badge:empty { display: none; }
+    .booklist-book { border-bottom: 1px solid var(--line); padding: 12px 18px 10px; }
+    .booklist-book-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .booklist-book-title { font-size: 15px; font-weight: 800; }
+    .booklist-book-head button, .booklist-video button { flex: none; border: 1px solid var(--line-strong); border-radius: 999px; padding: 4px 10px; background: var(--raised); color: var(--text); font: inherit; font-size: 12px; cursor: pointer; }
+    .booklist-book-head button.armed { border-color: #c0392b; background: #c0392b; color: #fff; }
+    .booklist-status { margin-top: 4px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+    .booklist-section { margin-top: 10px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .booklist-video { margin-top: 10px; }
+    .booklist-video-text { cursor: pointer; }
+    .booklist-video-title { font-size: 13px; font-weight: 700; line-height: 1.4; }
+    .booklist-video-meta { margin-top: 2px; color: var(--muted); font-size: 11px; line-height: 1.5; }
+    .booklist-video-buttons { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+    .booklist-video button.on { border-color: #b7791f; color: #b7791f; }
+    .booklist-links { margin-top: 8px; font-size: 12px; }
+    .booklist-links a { margin-right: 12px; color: var(--accent); }
     .reader-key-form { display: flex; gap: 8px; padding: 14px 18px; border-bottom: 1px solid var(--line); }
     .reader-key-form[hidden] { display: none; }
     .reader-key-form input { flex: 1; min-width: 0; border: 1px solid var(--line-strong); border-radius: 10px; padding: 9px 11px; background: var(--raised); color: var(--text); font: inherit; font-size: 16px; outline: none; }
@@ -558,6 +576,16 @@
         <div class="history-panel">
           <div class="history-head"><span id="rewatch-title">★ 重看列表 · 看完觉得值得再看的</span><button type="button" id="rewatch-close">关闭</button></div>
           <div class="history-list" id="rewatch-list"></div>
+        </div>
+      </div>
+      <div class="history-sheet" id="booklist-sheet" role="dialog" aria-modal="true" aria-labelledby="booklist-title" hidden>
+        <div class="history-panel">
+          <div class="history-head"><span id="booklist-title">📚 我的书单 · 有声书和讲解</span><button type="button" id="booklist-close">关闭</button></div>
+          <form class="add-form" id="booklist-form">
+            <div class="add-row"><input id="booklist-input" type="text" autocomplete="off" spellcheck="false" placeholder="输入书名，如 置身事内、Atomic Habits" aria-label="书名"><button type="submit">加入</button></div>
+            <div class="add-status" id="booklist-status">加入后每小时搜一次 B 站和 YouTube，挑出高质量的有声书（完整朗读）和 15–60 分钟的讲解，通常一小时内出结果。</div>
+          </form>
+          <div class="history-list" id="booklist-list"></div>
         </div>
       </div>
       <div class="history-sheet" id="rewatch-player" role="dialog" aria-modal="true" aria-labelledby="rewatch-player-title" hidden>
@@ -913,7 +941,7 @@
         <div id="appearance-cards"></div>
       </div>
       <div class="feed-panel" id="feed-reader" role="tabpanel" aria-labelledby="tab-reader" hidden>
-        <div class="feed-note reader-head"><span id="reader-note">要读的 AI 资料。</span><button type="button" id="reader-add">＋ 添加 PDF</button></div>
+        <div class="feed-note reader-head"><span id="reader-note">要读的 AI 资料。</span><span class="reader-head-buttons"><button type="button" id="booklist-button">📚 我的书单<span class="booklist-badge" id="booklist-badge"></span></button><button type="button" id="reader-add">＋ 添加 PDF</button></span></div>
         <input type="file" id="reader-file" accept="application/pdf,.pdf" multiple hidden>
         <form class="reader-key-form" id="reader-key-form" hidden><input id="reader-key" type="password" placeholder="输入记一笔的口令" autocomplete="off"><button type="submit">打开书架</button></form>
         <div id="reader-books"></div>
@@ -2495,7 +2523,10 @@
       const isWatchRow = row => row.key.startsWith('watch:');
       // 重看列表: "rewatch:<watch key>" rows keep the link, title and source, so a video stays here after it leaves the feed.
       const isRewatchRow = row => row.key.startsWith(REWATCH_PREFIX);
-      const isListRow = row => isPersonRow(row) || isWatchRow(row) || isRewatchRow(row);
+      // 📚 我的书单: "book:<书名>" rows; tools/books.mjs finds the videos (books.json on the auto-feed branch).
+      const BOOK_PREFIX = 'book:';
+      const isBookRow = row => row.key.startsWith(BOOK_PREFIX);
+      const isListRow = row => isPersonRow(row) || isWatchRow(row) || isRewatchRow(row) || isBookRow(row);
       const addedVideoRows = () => addedRows.filter(row => !isChannelRow(row) && !isListRow(row));
       const addedChannelRows = () => addedRows.filter(isChannelRow);
 
@@ -2749,14 +2780,14 @@
         if (kind === 'url') return `https://${id}`;
         return '';
       };
-      const addRewatch = async (key, card = document.querySelector(`.watch-toggle[data-watch-key="${CSS.escape(key)}"]`)?.closest('.card')) => {
+      const addRewatch = async (key, card = document.querySelector(`.watch-toggle[data-watch-key="${CSS.escape(key)}"]`)?.closest('.card'), info = null) => {
         if (isRewatch(key)) return;
         const row = {
           key: REWATCH_PREFIX + key,
-          url: keyUrl(key) || ' ',
-          title: card?.querySelector('h1')?.textContent.trim() || '视频',
-          author: card?.querySelector('.source')?.textContent.trim() || '',
-          published: card ? cardDate(card) : '',
+          url: info?.url || keyUrl(key) || ' ',
+          title: info?.title || card?.querySelector('h1')?.textContent.trim() || '视频',
+          author: info?.channel || card?.querySelector('.source')?.textContent.trim() || '',
+          published: info?.published || (card ? cardDate(card) : ''),
           created_at: new Date().toISOString()
         };
         if (addedShared) {
@@ -2870,7 +2901,173 @@
         if (!rewatchSheet.hidden) renderRewatchList();
         if (!watchUndo.hidden) syncUndoRewatch();
         syncRewatchToggles();
+        updateBooklist();
       };
+      const booklistSheet = document.getElementById('booklist-sheet');
+      const booklistList = document.getElementById('booklist-list');
+      const booklistInput = document.getElementById('booklist-input');
+      const BOOKS_URL = new URLSearchParams(location.search).get('books') || 'https://raw.githubusercontent.com/mb140935-coder/ai-video-feed/auto-feed/books.json';
+      const booksSeenStorageKey = 'ai-video-feed-books-seen-v1';
+      let bookData = { books: {} };
+      const bookRows = () => addedRows.filter(isBookRow).sort((a, b) => (b.created_at || '').localeCompare(a.created_at || ''));
+      const bookVideos = entry => [...(entry?.audio || []), ...(entry?.explain || [])].filter(video => !junked.has(video.key));
+      const bookSignature = key => bookVideos(bookData.books[key]).map(video => video.key).join(',');
+      const readBooksSeen = () => {
+        try { return JSON.parse(localStorage.getItem(booksSeenStorageKey) || '{}') || {}; } catch { return {}; }
+      };
+      const markBooksSeen = () => {
+        const seen = {};
+        bookRows().forEach(row => { seen[row.key] = bookSignature(row.key); });
+        try { localStorage.setItem(booksSeenStorageKey, JSON.stringify(seen)); } catch { /* Badge resets next visit. */ }
+      };
+      const loadBookData = async () => {
+        try {
+          const response = await fetch(`${BOOKS_URL}${BOOKS_URL.includes('?') ? '&' : '?'}t=${Date.now()}`, { cache: 'no-store' });
+          if (response.ok) bookData = await response.json();
+        } catch { /* Keep what we have. */ }
+        updateBooklist();
+      };
+      // Badge: books whose found videos changed since the list was last opened.
+      function updateBooklist() {
+        const seen = readBooksSeen();
+        const fresh = bookRows().filter(row => bookSignature(row.key) && seen[row.key] !== bookSignature(row.key)).length;
+        document.getElementById('booklist-badge').textContent = fresh ? String(fresh) : '';
+        if (!booklistSheet.hidden) renderBooklist();
+      }
+      const searchLinks = name => {
+        const links = document.createElement('div');
+        links.className = 'booklist-links';
+        [['在喜马拉雅搜', `https://www.ximalaya.com/so/${encodeURIComponent(name)}`], ['在微信读书搜', `https://weread.qq.com/web/search/global?keyword=${encodeURIComponent(name)}`]].forEach(([text, href]) => {
+          const link = document.createElement('a');
+          link.href = href;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.textContent = text;
+          links.appendChild(link);
+        });
+        return links;
+      };
+      const bookVideoRow = video => {
+        const item = document.createElement('div');
+        item.className = 'booklist-video';
+        const text = document.createElement('div');
+        text.className = 'booklist-video-text';
+        makeText(text, 'div', 'booklist-video-title', video.title);
+        const plays = video.plays >= 1e4 ? `${Math.round(video.plays / 1e3) / 10} 万次播放` : video.plays ? `${video.plays} 次播放` : '';
+        const site = video.key.startsWith('bilibili:') ? 'B 站' : 'YouTube';
+        makeText(text, 'div', 'booklist-video-meta', [video.channel, site, video.minutes ? `${video.minutes} 分钟` : '', plays].filter(Boolean).join(' · '));
+        if (video.reason) makeText(text, 'div', 'booklist-video-meta', video.reason);
+        const play = () => openRewatch({ key: REWATCH_PREFIX + video.key, url: video.url, title: video.title, author: video.channel, published: video.published });
+        text.addEventListener('click', play);
+        const buttons = document.createElement('div');
+        buttons.className = 'booklist-video-buttons';
+        const watch = document.createElement('button');
+        watch.type = 'button';
+        watch.textContent = '▶ 看';
+        watch.addEventListener('click', play);
+        const star = document.createElement('button');
+        star.type = 'button';
+        const syncStar = () => {
+          star.textContent = isRewatch(video.key) ? '★ 已加重看' : '☆ 重看';
+          star.classList.toggle('on', isRewatch(video.key));
+        };
+        syncStar();
+        star.addEventListener('click', async () => {
+          await (isRewatch(video.key) ? removeRewatch(video.key) : addRewatch(video.key, null, video));
+          syncStar();
+        });
+        const remove = document.createElement('button');
+        remove.type = 'button';
+        remove.textContent = '删除';
+        remove.title = '删除：质量不好，不再推荐';
+        remove.addEventListener('click', () => {
+          setJunk(video.key, true);
+          renderBooklist();
+          showToast([`已删除“${video.title}”，不会再推荐。`, { text: '撤销', action: () => { setJunk(video.key, false); renderBooklist(); } }], 6000);
+        });
+        buttons.append(watch, star, remove);
+        item.append(text, buttons);
+        return item;
+      };
+      function renderBooklist() {
+        booklistList.replaceChildren();
+        const rows = bookRows();
+        if (!rows.length) {
+          makeText(booklistList, 'div', 'history-empty', '书单还是空的。在上面输入一本书的名字，一小时内这里会出现它的有声书和讲解视频。');
+          return;
+        }
+        rows.forEach(row => {
+          const name = row.title || row.key.slice(BOOK_PREFIX.length);
+          const entry = bookData.books?.[row.key];
+          const book = document.createElement('div');
+          book.className = 'booklist-book';
+          const head = document.createElement('div');
+          head.className = 'booklist-book-head';
+          makeText(head, 'div', 'booklist-book-title', `《${name}》`);
+          const remove = document.createElement('button');
+          remove.type = 'button';
+          remove.textContent = '移出书单';
+          remove.addEventListener('click', () => {
+            if (!remove.classList.contains('armed')) {
+              remove.classList.add('armed');
+              remove.textContent = '确认移出？';
+              setTimeout(() => { remove.classList.remove('armed'); remove.textContent = '移出书单'; }, 4000);
+              return;
+            }
+            removeAdded(row.key);
+          });
+          head.appendChild(remove);
+          book.appendChild(head);
+          const audio = (entry?.audio || []).filter(video => !junked.has(video.key));
+          const explain = (entry?.explain || []).filter(video => !junked.has(video.key));
+          let status = '';
+          if (!entry || entry.status === 'waiting') status = '搜索中…每小时搜一次，通常一小时内出结果。';
+          else if (entry.status === 'failed') status = '这次没搜成，下个小时会再试。';
+          else if (!audio.length && !explain.length) status = 'B 站和 YouTube 上暂时没找到够好的版本（两周后再搜一次）。可以去正版平台找：';
+          else if (entry.judged === false) status = '按播放量和时长挑的，AI 质量判断还没做，下次搜索时补上。';
+          if (status) makeText(book, 'div', 'booklist-status', status);
+          if (audio.length) {
+            makeText(book, 'div', 'booklist-section', '🎧 有声书');
+            audio.forEach(video => book.appendChild(bookVideoRow(video)));
+          }
+          if (explain.length) {
+            makeText(book, 'div', 'booklist-section', '📖 讲解');
+            explain.forEach(video => book.appendChild(bookVideoRow(video)));
+          }
+          book.appendChild(searchLinks(name));
+          booklistList.appendChild(book);
+        });
+      }
+      document.getElementById('booklist-button').addEventListener('click', async () => {
+        booklistSheet.hidden = false;
+        renderBooklist();
+        await loadBookData();
+        markBooksSeen();
+        updateBooklist();
+      });
+      document.getElementById('booklist-close').addEventListener('click', () => { booklistSheet.hidden = true; markBooksSeen(); updateBooklist(); });
+      booklistSheet.addEventListener('click', event => { if (event.target === booklistSheet) { booklistSheet.hidden = true; markBooksSeen(); updateBooklist(); } });
+      document.getElementById('booklist-form').addEventListener('submit', async event => {
+        event.preventDefault();
+        const name = booklistInput.value.replace(/[《》<>「」『』"“”]/g, '').trim();
+        if (!name) return;
+        const key = BOOK_PREFIX + name;
+        if (addedRows.some(row => row.key === key)) {
+          showToast([`《${name}》已经在书单里了。`], 3000);
+          return;
+        }
+        const row = { key, url: ' ', title: name, author: '', published: '', created_at: new Date().toISOString() };
+        if (addedShared) {
+          try { await saveAddedShared([row]); } catch { addedShared = false; }
+        }
+        if (!addedShared) writeLocalAdded([row, ...readLocalAdded()]);
+        addedRows = [row, ...addedRows];
+        booklistInput.value = '';
+        renderAddedVideos();
+        showToast([addedShared ? `《${name}》已加入书单，一小时内出结果。` : `《${name}》先存在这台设备（在线保存暂时连不上，搜索要等连上后才开始）。`], 5000);
+      });
+      loadBookData();
+
       document.getElementById('rewatch-button').addEventListener('click', () => {
         rewatchSheet.hidden = false;
         renderRewatchList();

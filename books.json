@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T21:00:10.162Z",
+  "updated": "2026-11-28T02:56:27.167Z",
   "books": {
     "book:第一性原理, first principles": {
       "title": "第一性原理, first principles",
@@ -7,8 +7,8 @@
       "explain": [],
       "judged": false,
       "status": "none",
-      "searched": "2026-11-14",
-      "checked": "2026-11-14"
+      "searched": "2026-11-28",
+      "checked": "2026-11-28"
     }
   }
 }
